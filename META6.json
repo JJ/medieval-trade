@@ -1,0 +1,24 @@
+{
+  "name": "Medieval Trade scripts",
+  "description": "Scripts Raku for processing FLAME data",
+  "version": "0.0.2",
+  "perl": "6.d",
+  "meta-version": 1,
+  "authors": [
+    "JJ Merelo"
+  ],
+  "auth": "github:JJ",
+  "depends": [
+    "Text::CSV",
+    "JSON::Fast"
+  ],
+  "provides": {
+  },
+  "resources": [],
+  "license": "Artistic-2.0",
+  "tags": [
+    "scripts",
+    "history"
+  ],
+  "source-url": "https://github.com/JJ/medieval-trade"
+}
