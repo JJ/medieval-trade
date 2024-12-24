@@ -1,0 +1,830 @@
+"ID";"location_title";"location_modern_title";"location_other_title";"location_uncertain";"location_lat";"location_long";"LegendID"
+1;"Alexandria ad Aegyptum";"Alexandria";;0;"31.20009005";"29.91873190";5
+2;"Carthago";"Carthage";"Qartaj";0;"36.85291990";"10.32172450";5
+3;"Roma";"Rome";;0;"41.89363823";"12.49981866";5
+4;"Salamis-Konstantia";"Salamis-Constantia";;0;"35.18549596";"33.89333844";5
+5;"Ravenna";"Ravenna";;0;"44.41835980";"12.20352940";5
+6;"Ticinum";"Pavia";;0;"45.18332769";"9.14999694";5
+7;"Mediolanum";"Milan";;0;"45.46327487";"9.18661949";5
+9;"Benevento";"Benevento";;0;"41.12976130";"14.78262080";5
+10;"Catania";"Catania";;0;"37.50787720";"15.08303040";5
+11;"Neapolis";"Naples";;0;"40.85177460";"14.26812440";5
+12;"Syracusae";"Syracuse";;0;"37.07547390";"15.28658610";5
+13;"Sardinia";"Sardinia";;0;"40.12087520";"9.01289260";5
+14;"Londinium";"London";;0;"51.43092090";"-0.09364960";5
+15;"Durovernum";"Canterbury";;0;"51.28023300";"1.07890890";5
+16;"Eburacum";"York";;0;"53.95996510";"-1.08729790";5
+17;"Colonia Augusta Treverorum";"Trier";;0;"49.74999200";"6.63714330";5
+18;"Ambianum";"Amiens";;0;"49.89406536";"2.29575251";5
+19;"Thessalonika";"Thessaloniki";;0;"40.64006290";"22.94441910";5
+20;"Lucca";"Lucca";;0;"43.83762110";"10.49506090";5
+21;"Pisa";"Pisa";;0;"43.72283860";"10.40168880";5
+22;"Pistoia";"Pistoia";;0;"43.93034750";"10.90785870";5
+52;"Nikomedia";"Izmit";;0;"40.76725807";"29.91694217";5
+53;"Kyzikos";"Kyzikos";"Cyzicus";0;"40.38000000";"27.89000000";5
+54;"Sirmium";"Srem";;0;"44.983333";"19.616667";5
+66;"Antioch";"Antakya";"Hatay";0;"36.20066300";"36.16531800";5
+67;"Siscia";"Siscia";;0;"45.48316266";"16.37138283";5
+68;"Heraclea";"Marmara Ereğlisi";;0;"40.97101281";"27.95296653";5
+69;"Cesaragusta";"Zaragoza";;0;"41.64884331";"-0.88920320";5
+70;"Tirazona";"Tarazona";"Tirasona";0;"41.90427900";"-1.72215100";5
+71;"Calagorre";"Calahorra";;0;"42.30704666";"-1.96712517";5
+72;"Lebea";"Herramélluri";;0;"42.50333924";"-3.01943126";5
+73;"Tarracona";"Tarragona";;0;"41.11888284";"1.24449050";5
+74;"Gerunda";"Gerona";;0;"41.97894467";"2.82058540";5
+75;"Barcinona";"Barcelona";;0;"41.38526570";"2.17362252";5
+76;"Rodas";"Rosas";;0;"42.26051656";"3.20809453";5
+77;"Dertosa";"Tortosa";;0;"40.81259129";"0.52146725";5
+78;"Sagunto";"Sagunto";;0;"39.67986330";"-0.27843850";5
+79;"Cestavi";"Gist'in (doubts)";;0;"42.59115713";"0.32959130";5
+80;"Volotania";"Boltaña";;0;"42.44472409";"0.06640920";5
+81;"Labeclosa";"Puebla de Castro";;0;"42.14394601";"0.28724408";5
+82;"Toleto";"Toledo";;0;"39.86385823";"-4.02363523";5
+83;"Recopoli";"Zorita de los Canes";;0;"40.33190181";"-2.88920310";5
+84;"Valentia";"Valencia";;0;"39.46990750";"-0.37628809";5
+85;"Mentesa";"La Guardia";;0;"39.78679490";"-3.47382076";5
+86;"Acci";"Guadix";;0;"37.30117206";"-3.14033047";5
+87;"Castilona";"Linares";;0;"38.09690974";"-3.63698028";5
+88;"Beatia";"Baeza";;0;"37.99670611";"-3.46764561";5
+89;"Iliocrici";"Lorca";;0;"37.67359250";"-1.69683570";5
+90;"Aorariola";"Orihuela";;0;"38.08552550";"-0.94805488";5
+91;"Mave";"Santa María de Mave";;0;"42.72421360";"-4.27404171";5
+92;"Saldania";"Saldaña";;0;"42.51799971";"-4.74197917";5
+93;"Oliovasio";"Monte Cildá (doubts)";;1;"42.74477601";"-4.28849698";5
+94;"Ispali";"Sevilla";;0;"37.39050639";"-5.98402741";5
+95;"Italica";"Santiponce";;0;"37.43519377";"-6.04275127";5
+96;"Karmona";"Carmona";;0;"37.47126906";"-5.64187632";5
+97;"Roda";"Roda de Andalucia (doubts)";;0;"37.20140644";"-4.77885459";5
+98;"Cordoba";"Cordoba";;0;"37.88681566";"-4.77938202";5
+100;"Tucci";"Martos";;0;"37.71822639";"-3.97001355";5
+101;"Eliberri";"Granada";;0;"37.17825301";"-3.59918434";5
+102;"Asidona";"Jerez de la Frontera";;0;"36.68508477";"-6.12567330";5
+103;"Barbi";"Antequera (doubts)";;1;"37.01988103";"-4.55993000";5
+104;"Malaka";"Malaga";;0;"36.72211316";"-4.42165868";5
+105;"Emerita";"Merida";;0;"38.91424160";"-6.34914940";5
+106;"Elvora";"Talavera de la Reina";;0;"39.96288285";"-4.83045525";5
+107;"Olisipona";"Lisboa (doubts)";;1;"38.72225241";"-9.13933661";5
+108;"Lameco";"Lamego";;0;"41.09518019";"-7.81222466";5
+109;"Eminio";"Coimbra";;0;"40.20698276";"-8.43884824";5
+110;"Veseo";"Viseu";;0;"40.65653291";"-7.91253355";5
+111;"Totela";"Tondela (doubts)";;1;"40.51706452";"-8.08025689";5
+112;"Coleia";"Almofala (doubts)";;1;"40.95380608";"-7.79254168";5
+113;"Caliabria";"Aldeia Nova - Castelo de Calabre (doubts)";;1;"40.70973649";"-7.42734406";5
+114;"Egitania";"Idanha-a-Velha";;0;"40.00275742";"-7.15258443";5
+115;"Monecipio";"Terlamonte (doubts, other locations Monsanto and Covilha Velha)";;1;"40.29982495";"-7.43938339";5
+116;"Salmantica";"Salamanca";;0;"40.97002703";"-5.66374442";5
+117;"Bracara";"Braga";;0;"41.54546520";"-8.42647707";5
+118;"Bergancia";"Betanzos - Bragança";;0;"41.80611311";"-6.75673801";5
+119;"Flavas";"Chaves";;0;"41.74177813";"-7.47314202";5
+120;"Laetera";"Vilar de Ledra (around this area, doubts)";;1;"41.51304694";"-7.12686472";5
+121;"Palantucio";"Miranda do Douro Area (oppidum plançoulo?)";;1;"41.49954120";"-6.27123110";5
+122;"Panonias";"Vale de Nogueiras";;0;"41.29144238";"-7.67996443";5
+123;"Turico";"Vila Morta de Santa Cruz da Vilariça_x000D_ (doubts, other location Guimaraes)";;1;"41.37824240";"-6.61041400";5
+125;"Aliobrio";"Cidadelhe (doubts, around this area)";;1;"40.92556025";"-7.11995526";5
+126;"Cepis";"Casteloes de Cepeda";;0;"41.20516741";"-8.33038674";5
+127;"Laurencio / Laure";"Lavra (Laurencio sure here, Laure could be a different mint)";;1;"41.25339876";"-8.70642665";5
+128;"Nandolas";"Tras-os-Montes";"area of Tras-os-Montes or Alto Douro but no concrete location has been accepted";1;"41.58553248";"-6.94060038";4
+129;"Palentiaca";"concelho de Penafiel";;1;"41.21912424";"-8.28017512";5
+130;"Toriviana";"Alvarelhos";;0;"41.31120436";"-8.60925724";5
+132;"Luco";"Lugo";;0;"43.00973839";"-7.55675822";5
+133;"Inceio";"Incio";;0;"42.68787414";"-7.33001547";5
+134;"Aurense";"Orense";;0;"42.33579014";"-7.86387967";5
+135;"Calapa";"Calabor";;0;"41.95589799";"-6.71751327";5
+136;"Cassavio";"Casaio (doubts)";;1;"42.34101280";"-6.80761389";5
+137;"Georres";"Petin";;0;"42.38296620";"-7.12615221";5
+138;"Pincia";"Pinza";;0;"42.16184398";"-7.09792190";5
+139;"Senabria";"Puebla de Sanabria";;0;"42.05437971";"-6.63493927";5
+140;"Susarres";"Bembibre";;0;"42.61734688";"-6.41617241";5
+141;"Astorica";"Astorga";;0;"42.45515713";"-6.05375717";5
+142;"Bergio";"Cacabelos";;0;"42.59864426";"-6.72581189";5
+143;"Fraucello";"Ancient Frogelos its location must be around the area Las Medulas";;1;"42.45957004";"-6.76010596";5
+144;"Leione";"León";;0;"42.59908319";"-5.56753824";5
+145;"Pesicos";"Cangas de Narcea";;0;"43.16255691";"-6.54629429";5
+146;"Petra";"Piedrafita occidental";;0;"43.01916935";"-6.60470327";5
+147;"Semure";"Zamora";;0;"41.50347309";"-5.74678896";5
+148;"Ventosa";"Around Benavente";;0;"41.98540457";"-5.67040705";5
+149;"Conteno";"Cuntis";;0;"42.63409707";"-8.56400476";5
+150;"Mertia";"Merza";;0;"42.77014604";"-8.26320075";5
+151;"Catora";"Catoira";;0;"42.66678426";"-8.72159883";5
+152;"Tude";"Tui";;0;"42.04916415";"-8.64661103";5
+153;"Tornio";"around La Burgueria";;1;"41.95107033";"-8.19191393";5
+154;"Adonis";"Adoes (lots of doubts)";;1;"40.28142761";"-8.45399688";5
+155;"Amiasios";"Amaia (los of doubts)";;1;"43.32316950";"-3.00915030";5
+156;"Asturie";"Astorga";"Probably same mint then Asturica (not in the map)";1;"42.45492842";"-6.05324993";4
+157;"Decrinos";"Tui";"Probably very close to Tude, but still unknown (not in the map)";1;"42.04915186";"-8.64661070";4
+158;"Tulluco";"Alegría-Dulantzi";"Unknown location, maybe around Álava (not in the map)";1;"42.84102862";"-2.51268038";4
+159;"Vallesalsa";"Río Sousa";"Unknown, probably in the Gallaecia (not in the map)";1;"38.70576401";"-9.33056729";4
+160;"Valle.../ Vallegia";"Iruña Oka ";"Unknown, could be in the Gallaecia or Tarraconensis (not in the map)";1;"42.81923553";"-2.82779590";4
+161;"Agenno";"Agen";;0;"44.20314200";"0.61636300";5
+162;"Agaciaco";"Aguessac";;0;"44.15551400";"3.09749600";5
+163;"Atura";"Aire";;0;"46.30007500";"2.48388300";5
+164;"al-Qayrawan";"Kairouan";;0;"35.67752600";"10.10062000";5
+165;"Alisia";"Alaise";;0;"47.01433900";"5.97329500";5
+166;"Albenno";"Albens";;0;"45.78560600";"5.94395900";5
+167;"Albigia";"Albi";;0;"43.92508500";"2.14864100";5
+168;"Elariaco";"Alleyrat";;0;"45.57252100";"2.21729100";5
+169;"Amiasio";"Amaya";;1;"42.64222216";"-4.16385394";4
+170;"Agusta";"Aoste";;0;"45.73495500";"7.31307600";5
+171;"Aquileia";"Aquileia";"Aquilea";0;"45.76816490";"13.36871908";5
+172;"Archbishops of York";"York (uncertain)";;0;"53.95905600";"-1.08153600";5
+173;"Argentate";"Argentat";;0;"45.09230600";"1.93778200";5
+174;"Arelato";"Arles";;0;"43.67664700";"4.62777700";5
+175;"Artona";"Artonne";;0;"46.00420000";"3.14470000";5
+176;"Actriaco";"Autrac";;0;"45.32994600";"3.13238000";5
+177;"Augusteduno";"Autun";;0;"46.95103100";"4.29894800";5
+178;"Aventeco";"Avenches";;0;"46.87957500";"7.04094100";5
+179;"Bannaciaco";"Banassac";;0;"44.43469300";"3.20149400";5
+180;"Barro";"Bar-sur-Corrèze";"Bar";0;"45.34484400";"1.81318200";5
+181;"Vasatis";"Bazas";;0;"44.43204600";"-0.21260100";5
+182;"Vesoncione";"Besancon";;0;"47.23795300";"6.02432500";5
+183;"Biaenate Pago";"Beynat";;0;"45.12471300";"1.72182400";5
+184;"Billiomago";"Billom";;0;"45.72205000";"3.33905800";5
+185;"Burdegala";"Bordeaux";;0;"44.84122500";"-0.58003600";5
+186;"Auseno";"Bourg-d'Oisans";;0;"45.05471300";"6.03066200";5
+187;"Bregusia";"Bourgoin";"Bourgoin-Jallieu";0;"45.58722600";"5.28281200";5
+188;"Brivate";"Brioude";"Brioude (including Church of St. Julien)";0;"45.29529000";"3.38433000";5
+189;"Cadurca";"Cahors";;0;"44.44950000";"1.43650000";5
+190;"Cannaco";"Canac";;0;"44.40488900";"3.07543200";5
+191;"Cassavio";"Casaio ";"Casavio";1;"42.34000400";"-6.80535900";5
+192;"Sanonno";"Cenon";;0;"44.85528800";"-0.52398600";5
+193;"Cabilonno";"Chalon-Sur-Saone";;0;"46.78890000";"4.85296000";5
+194;"Cambarisio";"Chamberet";;0;"45.58341900";"1.72043800";5
+195;"Cantoliano";"Chantilin";"Chantilin, Saint-Jean-de-Soudain";0;"45.56662000";"5.44240500";5
+196;"Catiriaco";"Chatrat";;0;"45.72872500";"3.00556600";5
+197;"Cassoriaco";"Chazerat";;0;"45.03476000";"3.08766300";5
+198;"Chersonesus";"Sevastopol";"Cherson";0;"44.60611500";"33.52247800";5
+199;"Begorra";"Cieutat";;0;"43.12235300";"0.21366500";5
+200;"Arvernus";"Clermont-Ferrand";;0;"45.77745500";"3.08194300";5
+201;"Constantinople";"Istanbul";"Kostantinopolis";0;"41.02345500";"28.95518800";5
+202;"Cornilio";"Cornil";;0;"45.21144700";"1.69157500";5
+204;"Dia Vocontiorum";"Die";"Die (Dia Vocontiorum)";0;"46.60335400";"1.88833400";5
+205;"Divione";"Dijon";;0;"47.32158100";"5.04147000";5
+206;"Trusciaco";"Drugeac";;0;"45.16893100";"2.38356900";5
+207;"Egaboro";"Cabra";;0;"37.47181500";"-4.43356200";5
+208;"Elissa";"Around Lisbon (uncertain)";"Elissa (?)";1;"38.91305700";"-9.03800600";5
+209;"Espaniaco";"Espagnac";;0;"45.22998100";"1.89681000";5
+210;"Ewesis";"Vila Real (exact location uncertain)";;1;"39.93689800";"-0.10102800";5
+211;"Castro Fusci";"Foix";;0;"42.96412700";"1.60523200";5
+212;"Genava";"Geneva";;0;"46.19839200";"6.14229600";5
+213;"Gaciaco";"Gizia";;0;"46.52755900";"5.42166400";5
+214;"Gracinoble";"Grenoble";;0;"45.18852900";"5.72452400";5
+215;"Isauria";"Dereköy/Konya";"Zengibar Kalesi";0;"37.17825700";"32.16866300";5
+216;"Gavalorum";"Javols";;0;"44.69374400";"3.34261000";5
+217;"Juliaco";"Juillac";;0;"45.31725900";"1.32240000";5
+218;"Gemeliaco";"Jumillac-le-Grand";"Jumilhac-le-Grand";0;"45.49362900";"1.06247400";5
+220;"Kings of Northumbria";;;1;"53.95996084";"-1.08730016";4
+221;"Lanticiaco";"Lanzac";;0;"44.87444500";"1.48280400";5
+222;"Laure";"Lavra (?)";;0;"49.28074500";"-0.69865900";5
+223;"Laurentio";"Around Porto (uncertain)";;1;"41.34824600";"-8.41102300";5
+224;"Lausonna";"Lausanne";;0;"46.51996200";"6.63359700";5
+225;"Cummonigo";"Le Pays de Cominges";"Saint-Bertrand-de-Comminges";0;"43.02686500";"0.57097600";5
+226;"Anicio";"Le Puy";;0;"45.04276800";"3.88293600";5
+227;"Lintiniaco";"Lentignac";"Montignac";0;"45.06433200";"1.16138000";5
+228;"Ledoso";"Lezoux";;0;"45.82842200";"3.37952800";5
+229;"Lugdunum";"Lyons";;0;"45.75759262";"4.83231639";5
+230;"Matascone";"Mâcon";"Macon";0;"46.30345000";"4.83250700";5
+231;"Marciliaco";"Marcillat";;0;"46.16705200";"2.63126400";5
+232;"Masilia";"Marseilles";;0;"43.29648200";"5.36978000";5
+233;"Mauriaco";"Mauriac";;0;"45.21997900";"2.33661100";5
+234;"Darantasia";"Moutiers-Tarentaise";;0;"45.50000000";"6.50000000";5
+235;"Narbo";"Narbonne";;0;"43.18427700";"3.00307800";5
+236;"Novo Vico";"Neuvic d'Ussel";;0;"45.38981200";"2.27326900";5
+237;"No mint";;;1;"40.67126786";"-4.10887974";3
+238;"Helorone";"Oloron";;0;"43.19441300";"-0.60529200";5
+239;"Oxsello";"Osselle";;0;"47.14266700";"5.85569300";5
+240;"Petrocoris";"Perigueux";;0;"45.18402900";"0.72111500";5
+241;"Portocale";"Porto";"Portocolae";0;"41.14824600";"-8.61102300";5
+242;"Ricomago";"Riom";;0;"45.89399500";"3.11493200";5
+243;"Rutenus";"Rodez";;0;"44.35100100";"2.57330100";5
+244;"Telemate";"Saint-Amant-Tallende";"Saint-Armand-Tallende";0;"45.66899700";"3.10913900";5
+245;"Cariaco";"Saint-Beauzire";;0;"45.85163300";"3.17900600";5
+246;"Conbenas";"Saint-Bertrand-de-Comminges";"Saint-Bertrand-de-Cominges";0;"43.02686500";"0.57097600";5
+247;"Maurienna";"Saint-Jean-de-Maurienne";;0;"45.27747700";"6.34534200";5
+248;"Conserannis";"Saint-Lizier";;0;"43.00128000";"1.13614500";5
+249;"Acauno";"Saint-Maurice";"Saint-Maurice (Swiss)";0;"46.21483500";"7.00528800";5
+250;"Vellaos";"Saint-Paulien";;0;"45.13585000";"3.81311500";5
+251;"Salona";"Solin";;0;"43.54415900";"16.49192100";5
+252;"Sagraciaco";"Sarrazac";;0;"45.28542400";"0.95012400";5
+253;"Seleukeia Isauriae";"Silifke";"Seleucia";0;"36.59227100";"33.94924900";5
+254;"Sicily";;"Siciliae";1;"37.58779775";"14.15505038";3
+255;"Sidunis";"Sion";;0;"46.23117500";"7.35888000";5
+256;"Sisteron";"Sisteron";;0;"44.19634700";"5.94437900";5
+257;"Sicusio";"Suse";;0;"45.13721200";"7.05397900";5
+258;"Tanja";"Tangier";;0;"35.76513400";"-5.82832400";5
+259;"Tasgunnago";"Tazanat";"Charbonnières-les-Vieilles";0;"45.99556100";"2.99921800";5
+261;"Tilmisan";"Tlemcen";;0;"34.89620000";"-1.31540100";5
+263;"Tholosa";"Toulouse";;0;"43.60446200";"1.44424700";5
+264;"Tripoli";;;0;"32.89667200";"13.17779200";5
+265;"Uncertain mint (England)";;;1;"52.68887338";"-1.25244105";3
+266;"Unknown";;;1;"40.27009002";"-4.63623033";3
+267;"Unknown (Malaka or Cordoba?)";"Malaga or Cordoba";;1;"37.33836474";"-4.51263383";4
+268;"Unknown (Emerita?)";"Mérida";;0;"38.91914223";"-6.34079437";4
+269;"Unknown (Toleto?)";"Toledo";;1;"39.83991251";"-4.01549986";4
+270;"Oxxello";"Ussel";;0;"45.23309200";"7.21158700";5
+271;"Icciomo";"Usson";;0;"45.52736600";"3.33770400";5
+272;"Userca";"Uzerche";;0;"45.42433200";"1.56372800";5
+273;"Ucece";"Uzes";;0;"44.01214100";"4.41967800";5
+274;"Valentia";"Valence? (But maybe Gap=Vapincum)";"Valence";1;"44.93322800";"4.89208100";5
+275;"Vallearitia";"Varzea do Douro (doubts)";;1;"41.08668000";"-8.24837500";5
+276;"Vallegia";"Iruña";"Valle…";1;"42.81855000";"-1.64441600";5
+277;"Valligoli";"Valuejols";"Vallegoles";0;"45.05400200";"2.93355000";5
+278;"Vindicco";"Vendeix";;0;"45.75421200";"3.09410500";5
+279;"Venasque";"Vendesca?";;1;"43.99619700";"5.14651800";5
+280;"Vendogilo";"Vendeuil";;0;"49.71666700";"3.35250000";5
+281;"Vindiciaco";"Vensat";;0;"46.04610000";"3.18610000";5
+282;"Vienna";"Vienne";;0;"46.61211700";"0.46540700";5
+283;"Vivarios";"Viviers";;0;"44.48302100";"4.68984000";5
+284;"Vorocio";"Vouroux";;0;"46.31451400";"3.39804800";5
+285;"Isandone";"Yssandon";;0;"45.20804900";"1.37502000";5
+286;"Antro Vico";"Antre near Vilard d-Heria";;0;"46.41670000";"5.73333000";5
+287;"Argentao";"Arinthod";;0;"46.39350000";"5.56614000";5
+288;"Latona Vico";"Losne";;0;"47.09810000";"5.26423400";5
+289;"Cocciaco";"Cuisia";;0;"46.53750000";"5.40307000";5
+290;"Gredaca";"Graye-et-Charnay";;0;"46.46760000";"5.45265000";5
+291;"Alisia";"Alize-Sainte-Reine";"Alise-Sainte-Reine";0;"47.53640100";"4.49155200";5
+292;"Beleno";"Beaune";;0;"47.02390600";"4.83804300";5
+293;"Cluciaco";"Clucy";;0;"46.94619900";"5.90464100";5
+329;"Dimashq";"Damascus";;0;"33.51306905";"36.30958039";5
+330;"Heliopolis";"Baalbek";"Ba'labaak / بعلبك";0;"34.00862342";"36.20711855";5
+331;"Amman";"Amman";"Philadelphia";0;"31.65860200";"36.32185400";5
+332;"Adraa";"Daraa";"Adhri'at";0;"32.62243400";"36.11097000";5
+333;"Busra";"Bostra";"Bosra";0;"32.51913800";"36.48057300";5
+334;"Hims";"Homs";"Emesa / حمص";0;"34.73332595";"36.71666094";5
+335;"Tartus";"Tartous";;0;"34.89362000";"35.88516900";5
+336;"Tiberias";"Tabariya";"Ṭabarīyya / طبرية";0;"32.78923701";"35.52138059";5
+337;"Baysan";"Beit-Shean";"Scythopolis";0;"32.49675200";"35.49730200";5
+338;"Jerash";"Jarash";;0;"32.23526000";"35.90377400";5
+339;"Akka";"Acre";;0;"32.92817500";"35.07563700";5
+340;"Sephoris";"Saffuriya";;0;"32.73944800";"35.27584000";5
+341;"Iliya (Ayla)";"Jerusalem";"Aelia Capitolina";0;"31.79681300";"35.21376900";5
+342;"Ludd";"Lod";;0;"31.94272600";"34.88477800";5
+343;"Yubna";"Yavne";;0;"31.87618000";"34.73809200";5
+344;"al-Ramla";"Ramla";;0;"31.92799900";"34.86234700";5
+345;"Askalon";"Ashkelon";"Asqalan";0;"31.66448700";"34.57301600";5
+346;"Bayt Jabrin";"Beit Guvrin";"Eleutheropolis";0;"31.61136700";"34.89536000";5
+347;"Baniyas/Nabulus";"Nablus";"Neapolis (Palestine)";0;"32.22049900";"35.25688800";5
+348;"Ghazza";"Gaza";;0;"31.50450400";"34.46543100";5
+349;"Qaysariya";"Caesarea";;0;"32.51149700";"34.90578600";5
+350;"Chalcs ad Belum";"Qinnasrin";"Qinnasrīn / قنسرين";0;"35.98333110";"37.01666232";5
+351;"Bercea";"Aleppo";"Halab / حلب";0;"36.19923830";"37.16371653";4
+352;"Maʿarrat Miṣrīn";"Ma'arrat Misrin";"Maarrat Misrin / Nasrin / معرة مصرين ";0;"36.01030924";"36.67364961";5
+353;"Manbij";"Manbij";"Hierapolis Bambyce/Euphratensis";0;"36.52692400";"37.95592900";5
+354;"Sarmin";"Sarmin";;0;"35.90344200";"36.72574800";5
+355;"Qurus";"Ash Shaykh Khurus";"Cyrrhus";0;"36.73333300";"36.88333300";5
+356;"Tanukh/Saruj?";"Suruç";;0;"36.98941000";"38.37052300";5
+357;"Carrhae";"Harran";"Hellonopolis / Ḥarrān / حران";0;"32.89060807";"36.38482328";4
+358;"al-Ruha";"Sanliurfa";"Edessa";0;"37.16038800";"38.79091600";5
+359;"Nisibin";"Nusaybin";"Nisibis";0;"37.19099600";"41.34555400";5
+360;"al-Madina ma'din amir al-mu'minin";"al-Rusafa";"Sergiopolis";1;"38.75638747";"35.62777706";5
+361;"Lingonas";"Langres";;0;"47.86556400";"5.33141600";5
+362;"Andelao";"Andelot";;0;"48.24238300";"5.29803100";5
+363;"Mosa Vico";"Meuvy";;0;"48.08406400";"5.54858100";5
+364;"Ternodero";"Tonnerre";;0;"47.85646600";"3.97330300";5
+365;"Rotomo";"Rouen";;0;"49.44045900";"1.09396600";5
+366;"Gemedico";"Jumièges";;0;"49.43178300";"0.81755700";5
+367;"Menoiovilla";"Ménouville";;0;"49.15213000";"2.11309800";5
+368;"Nivialcha";"Néaufles-Saint-Martin";;0;"49.27786000";"1.72361100";5
+369;"Velcassino?";"Le Vexin";;0;"49.30309900";"1.93637900";5
+370;"Baiocas";"Bayeux";;0;"49.27604900";"-0.70228900";5
+371;"Apraricia(co)";"Evrecy";;0;"49.09992000";"-0.50114400";5
+372;"Similiaco";"Sémily";;0;"50.60224900";"15.33526000";5
+373;"Abrinktas";"Avranches";;0;"48.68620800";"-1.35794800";5
+374;"Saius";"Sèes";;0;"48.60337800";"0.17345400";5
+375;"Custancia";"Coutances";;0;"49.04779200";"-1.44549100";5
+376;"Briuuri";"Saint-Lô";;0;"49.11570000";"-1.09066400";5
+377;"Coriallo";"Cherbourg";;0;"49.63695600";"-1.62513400";5
+378;"Turonus";"Tours";;0;"47.39004700";"0.68892700";5
+379;"Saint Martin's Basilica";"Tours";;0;"47.39004700";"0.68892700";5
+380;"Alingavias";"Langeais";;0;"47.32393400";"0.40729600";5
+381;"Ambacia";"Amboise";;0;"47.41103500";"0.98369800";5
+382;"Ballatetone";"Ballan-Miré";;0;"47.34132100";"0.61313200";5
+383;"Borgoialo";"Bourgueil";;0;"47.28276900";"0.17888700";5
+384;"Bricca Vico";"Brèches";;0;"47.56924800";"0.38789600";5
+385;"Briotreite";"Biéré";;0;"48.35568800";"-4.75420200";5
+386;"Brixis";"Braye, auj. Reignac";;0;"47.23239200";"0.91638300";5
+387;"Cainone";"Chinon";;0;"47.16671800";"0.24021000";5
+389;"Condate";"Candes";;0;"44.94706300";"1.96972900";5
+390;"Daria/Dariaco";"Dierre";;0;"47.34539000";"0.95211000";5
+391;"Evira";"Esvres";;0;"47.28458200";"0.78617100";5
+392;"Geniliaco";"Génillé";;0;"47.18637800";"1.09612200";5
+393;"Hicciodero";"Yzeures";;0;"46.78527600";"0.86990900";5
+394;"Limariaco";"Limeray";;0;"47.45922000";"1.04085800";5
+395;"Medeconno";"Mougon";;0;"46.29447900";"-0.28802600";5
+396;"Musicaco";"Mouzay";;0;"47.08948900";"0.89247300";5
+398;"Pauliaco";"Pouillé";;0;"45.48235600";"6.09318600";5
+400;"Silaniaco";"Séligny";;0;"46.96392900";"0.57669900";5
+401;"Solonaco";"Sonnay";;0;"45.35450000";"4.90511000";5
+402;"Vidua";"Veuves";;0;"47.47157400";"1.12458300";5
+403;"Cenomannis";"Le Mans";;0;"48.00777800";"0.19953400";5
+404;"Alaona";"Allonnes";;0;"47.96928300";"0.15788200";5
+405;"Arciacas";"Saint-Jean-d'Assé";;0;"48.15063700";"0.12266800";5
+406;"Arciaco";"Assé-le-Riboul";;0;"48.19308000";"0.08666600";5
+407;"Balatonno";"Ballon";;0;"48.17524100";"0.23368000";5
+408;"Bedicco";"Bais";;0;"48.25108600";"-0.36345100";5
+409;"Bellofaeto";"Beaufay";;0;"48.14711400";"0.36219000";5
+410;"Bruciron(no)";"Brulon";;0;"47.96750500";"-0.23551700";5
+411;"Cabiliaco";"Chevillé";;0;"47.94842700";"-0.22390100";5
+412;"Cirialaco";"Sérillac (comm. De Doucelles)";;0;"48.25628600";"0.16986400";5
+413;"Corma";"Cormes";;0;"48.16991400";"0.70384000";5
+414;"Crisciac(o)";"Crissé";;0;"48.16851300";"-0.06021200";5
+415;"Diabolentis";"Jublains";;0;"48.25709200";"-0.49639200";5
+416;"Lacciaco";"Lassay";;0;"46.99820600";"0.05916000";5
+417;"Matoliaco";"Mayet";;0;"47.76043100";"0.27454000";5
+418;"Matovallo";"Saint-Calais";;0;"47.92013700";"0.74344000";5
+419;"Noviomo";"Noyen-sur-Sarthe";;0;"47.87099300";"-0.09736300";5
+420;"Novovico";"Neuvy";;0;"46.56060000";"3.29113000";5
+421;"Sauliaco";"Souillé";;0;"48.11909500";"0.18261300";5
+422;"Sirallo";"Ciral";;0;"48.49458400";"-0.13776800";5
+423;"Solemnis";"Solesmes";;0;"50.18575300";"3.49759200";5
+424;"Wagias";"Vaiges";;0;"48.04110700";"-0.47707600";5
+425;"Redonis";"Rennes";;0;"48.11135900";"-1.68000900";5
+426;"Belciaco/Balaciaco";"Beaucè";;0;"48.33903200";"-1.15555200";5
+428;"Vindello";"Vendel";;0;"48.29921300";"-1.31028000";5
+429;"Andecavis";"Angers";;0;"47.47398800";"-0.55155900";5
+430;"Senonas";"Senonnes";;0;"47.79813400";"-1.20337500";5
+431;"Namnetis";"Nantes";;0;"47.21851600";"-1.56023500";5
+432;"Baiorate";"Béré";;0;"47.71940600";"-1.37572800";5
+433;"Deas";"Saint-Philibert de Grandleiu";;0;"47.03590000";"-1.64051800";5
+434;"Cambidonno";"Campbon";;0;"47.41281600";"-1.96936100";5
+435;"Venetus";"Vannes";;0;"47.65867700";"-2.75990800";5
+436;"Senonis";"Sens";;0;"48.19785600";"3.28260600";5
+437;"Dortenco";"Dourdan";;0;"48.53096900";"2.01089900";5
+438;"Mecledore";"Melun";;0;"48.53538100";"2.65920000";5
+439;"Stampas";"Étampes";;0;"48.43304200";"2.16113800";5
+440;"Carnotas";"Chartres";;0;"48.44700400";"1.48663900";5
+441;"Aloia";"Alluyes";;0;"48.22880600";"1.36361000";5
+442;"Bleso";"Blois";;0;"47.58768600";"1.33376400";5
+443;"Dorocas";"Dreux";;0;"48.73591200";"1.37104900";5
+444;"Riomo";"Ruan";;0;"49.44045900";"1.09396600";5
+445;"Vi(n)docino";"Vendôme";;0;"47.79551800";"1.06616800";5
+446;"Autiziodero";"Auxerre";;0;"47.79540000";"3.58452000";5
+447;"Briodro";"Briare";;0;"47.64107200";"2.74131300";5
+448;"Donnaciaco";"Donay";;0;"45.18212000";"5.10186400";5
+449;"Eliniaco";"Alligny-près-Cosne";;0;"47.45389100";"3.06091400";5
+450;"Nenterac(o)";"Nitry";;0;"47.67227100";"3.87788800";5
+451;"Tricas";"Troyes";;0;"48.29716300";"4.07462600";5
+452;"Arciaca";"Arcis-sur-Aube";;0;"48.53622100";"4.14229900";5
+453;"Briona";"Brienne-la-Vieille";;0;"48.37608300";"4.52837800";5
+454;"Cupidis";"Queudes";;0;"48.65685000";"3.75896000";5
+455;"Latascone";"La Chapelle-Lasson";;0;"48.62668000";"3.83179000";5
+456;"Aurelianis";"Orléans";;0;"47.90273400";"1.90860700";5
+457;"Briennone";"Brinon-sur-Sauldre";;0;"47.56628800";"2.25508300";5
+459;"Petraficta";"Pierrefitte";;0;"46.14532000";"2.23174000";5
+461;"Solaso";"Soulas (comm. De Sandillon)";;0;"47.91430500";"1.91159400";5
+462;"Thaisacas";"Thésée";;0;"47.32582000";"1.30249000";5
+464;"Vosonno";"Vouzon";;0;"47.64420700";"2.05793600";5
+465;"Parisius";"Paris";;0;"48.85650600";"2.35213300";5
+466;"Castra";"Châtre (auj. Arpajon)";;0;"46.58156800";"1.98922900";5
+467;"Catullaco";"Saint-Denis";;0;"48.93577300";"2.35802300";5
+468;"Draverno";"Draveil";;0;"48.67870000";"2.42120000";5
+469;"Exona";"Essonnes";;0;"48.61376800";"2.48034200";5
+470;"Gentiliaco";"Gentilly";;0;"48.81270000";"2.34371000";5
+471;"Locosancto";"Lieusaint";;0;"48.63247600";"2.55096300";5
+472;"Munciaco";"Mousay";;0;"49.04710000";"2.62335500";5
+473;"Palaciolo";"Palaiseau";;0;"48.71702800";"2.24685700";5
+474;"Porto Cristoialo";"Port de Créteil (comm. De Saint-Maur-les-Fossés)";;0;"48.78307300";"2.45183700";5
+475;"Tremolito";"Tremblay";;0;"48.42267100";"-1.47567600";5
+476;"Meldus";"Meaux";;0;"48.95891500";"2.89648600";5
+477;"Claio";"Claye";;0;"48.03697000";"-1.41431800";5
+478;"Columbario";"Coulommieres";;0;"48.88535600";"2.76775000";5
+479;"Crideciaco";"Crécy-la-Chapelle";;0;"48.85531300";"2.93384200";5
+480;"Nevers";"Nevers";;0;"46.99390300";"3.15996400";5
+482;"Cantunaco";"Chantenay-Saint-Imbert";;0;"46.73301700";"3.18317400";5
+483;"Catonaco";"Charrin";;0;"46.78838000";"3.59777000";5
+484;"Dicetia";"Decize";;0;"46.82842600";"3.46161000";5
+485;"Treveris";"Trier";;0;"49.75991200";"6.64449200";5
+486;"Antunacco";"Andernach";;0;"50.43542000";"7.39932500";5
+487;"Bodovreca";"Boppart";;0;"47.40586800";"9.33616100";5
+488;"Epocio";"Carignan";;0;"49.63198600";"5.16825000";5
+489;"Mallo Matiriaco";"Mairy";;0;"49.64944900";"5.04897400";5
+491;"Pontepetrio";"Pierrepont";;0;"49.65416700";"3.79250000";5
+492;"Mettis";"Metz";;0;"49.11969600";"6.17635500";5
+493;"Avanaco";"Augny";;0;"49.05936800";"6.12192100";5
+494;"Bodesio";"Vic-sur-Seille";;0;"48.78132300";"6.53031500";5
+495;"Doso";"Dieuze";;0;"48.81056200";"6.71759900";5
+496;"Marsallo";"Marsal";;0;"43.92990000";"2.28575000";5
+497;"Medianovico";"Moyenvic";;0;"48.77969100";"6.56228200";5
+498;"Sareburgo";"Sarrebourg";;0;"48.73567500";"7.05333000";5
+499;"Tullo";"Toul";;0;"48.67626200";"5.89417600";5
+500;"Granno";"Grand";;0;"48.38610400";"5.48662500";5
+501;"Nanciaco";"Nancy";;0;"48.69280500";"6.18381200";5
+502;"Nasio";"Naix-aux-Forges";;0;"48.63726300";"5.37714000";5
+503;"Novicento";"Void";;0;"48.01799200";"6.65582500";5
+504;"Sauriciaco";"Sorcy";;0;"49.53718500";"4.53501300";5
+505;"Scarponna";"Charpeigne (comm. De Dieulouard)";;0;"47.01569400";"4.82805100";5
+506;"Vindeoera";"Vandœuvre-lès-Nancy";;0;"48.65749900";"6.16539600";5
+507;"Vereduno";"Verdun-sur-Meuse";;0;"49.21223600";"5.62596800";5
+508;"Villa Maorin";"Moranville";;0;"49.17313300";"5.54806800";5
+509;"Remus";"Reims";;0;"49.25778900";"4.03192600";5
+510;"Bridur Corte";"Brieulles-sur-Meuse";;0;"49.33584400";"5.18018800";5
+511;"Mosomo";"Mouzon";;0;"45.80589100";"0.61481600";5
+512;"Oriaco";"Oiry";;0;"49.02336300";"4.04727300";5
+513;"Vico Santi Remidi";"Viel-Saint-Remy";;0;"49.62952500";"4.50339800";5
+514;"Lauduno Cloata";"Laon";;0;"49.56389200";"3.62476000";5
+515;"Suessionis";"Soissons";;0;"49.38166700";"3.32361100";5
+516;"Bainissone";"Binson et Orquigny";;0;"49.09275400";"3.78788100";5
+517;"Chariliaco";"Charly";;0;"45.64937800";"4.79490100";5
+518;"Vindaria";"Vendières";;0;"48.87150000";"3.44706000";5
+519;"Catalaunis";"Châlons-sur-Marne";;0;"48.95662200";"4.36288500";5
+520;"Perta";"Perthes";;0;"48.47862100";"2.54928300";5
+521;"Viromandis";"Saint-Quentin";;0;"49.84861100";"3.28638900";5
+523;"Atravetes";"Arras";;0;"50.29121000";"2.77713600";5
+524;"Camaraco";"Cambrai";;0;"50.17596000";"3.23566100";5
+525;"Falmartis";"Famars";;0;"50.31522300";"3.51704600";5
+526;"Turnaco";"Tournai";;0;"50.60566000";"3.38782600";5
+527;"Silvanectis";"Senlis";;0;"49.20654000";"2.58465800";5
+528;"Plaitiliaco";"Plailly";;0;"49.10353200";"2.58503100";5
+529;"Buriaco";"Bury";;0;"52.24603700";"0.71251700";5
+530;"Camiliaco";"Chambly";;0;"49.16627700";"2.24449900";5
+531;"Ambianis";"Amiens";;0;"49.89417100";"2.29569500";5
+532;"Sancti Petri";"Corbie (Church of St. Peter)";;0;"49.90829100";"2.51107300";5
+533;"Viminao";"Le Vimeu";;1;"50.06500395";"1.67621590";4
+534;"Wico in Pontio";"Étaples";;0;"50.51389700";"1.63885100";5
+535;"Taroanna";"Thérouanne";;0;"50.63633400";"2.25771900";5
+536;"Bononia";"Boulogne";;0;"46.79539100";"-1.31980400";5
+537;"Mogontiaco";"Mainz";;0;"49.99999500";"8.27102400";5
+538;"Argentorato/Strateburgo";"Strasbourg";;0;"48.87217800";"2.57654700";5
+539;"Spira";"Spires";;0;"49.31655500";"8.43361500";5
+540;"Warmacia";"Worms";;0;"49.66151300";"8.32120400";5
+541;"Colonia";"Cologne";;0;"50.93836100";"6.95997400";5
+542;"Tulbiaco";"Zülpich";;0;"50.69222800";"6.64726900";5
+543;"Triecto";"Maastricht";;0;"50.85798500";"5.69698800";5
+544;"Anderpus";"Anvers";;0;"51.22111000";"4.39970800";5
+545;"Choae";"Huy";;0;"50.52153800";"5.23574500";5
+546;"Deonante";"Dinant";;0;"50.26121800";"4.91255700";5
+547;"Namuco";"Namur";;0;"50.46652800";"4.86618900";5
+548;"Dorestate";"Wijk-bij-Duurstede";;0;"51.97750700";"5.32693000";5
+549;"Frisia";"Frisia (Roughly provinces of Friesland, Drenthe, Groningen, Overijsel, Noord-Holland)";;1;"52.95442920";"5.16357375";3
+550;"Basilia";"Basel";;0;"47.55810800";"7.58782600";5
+551;"Betoregas";"Bourges";;0;"47.08056900";"2.39893200";5
+552;"Bareloco";"Barlieu";;0;"47.48805000";"2.62984000";5
+553;"Bellomonte";"Beaumont (comm. De Menetou-Salon)";;0;"47.23154000";"2.48862800";5
+554;"Capudcervi";"Sacierges-Saint-Martin";;0;"46.49445600";"1.36461900";5
+555;"Climone";"Clérmont";;0;"50.65896800";"5.88366800";5
+556;"Dolus Vico";"Déols";;0;"46.82677700";"1.70104300";5
+557;"Duno";"Dun-le-Poëlier";;0;"47.20328600";"1.75340200";5
+558;"Mediolano Castro";"Melliant";;0;"46.78036800";"2.50417200";5
+559;"Onaciaco";"Palluau";;0;"46.94368700";"1.31344100";5
+560;"Rivarinna";"Rivarennes";;0;"46.63573000";"1.38600700";5
+561;"Sesemo";"Souesmes";;0;"47.45765800";"2.17994300";5
+562;"Virisione";"Vierzon";;0;"47.22174900";"2.06914200";5
+563;"Lemovecas";"Limoges";;0;"45.83542400";"1.26448500";5
+564;"Ambaciaco";"Ambazac";;0;"45.95841400";"1.40046300";5
+565;"Analiaco";"Naillat";;0;"46.26486300";"1.63769400";5
+566;"Blatomago";"Blond";;0;"46.04516300";"1.01737300";5
+567;"Breciaco";"Bersac";;0;"44.41177400";"5.74990800";5
+568;"Cabiriaco";"Chabrac";;0;"45.93247100";"0.73824200";5
+569;"Campaniaco";"Champagnac";;0;"45.23557600";"1.20257800";5
+570;"Caronno";"Charron";;0;"46.05973000";"2.56279000";5
+571;"Carovicus";"Château-Chervix";;0;"45.60929600";"1.35329500";5
+572;"Cociaco";"Coussac-Bonneval";;0;"45.51141100";"1.32405300";5
+573;"Conpriniaco";"Compreignac";;0;"45.99192100";"1.27471000";5
+574;"Curisiaco";"Curzac";;0;"45.63254000";"1.53521800";5
+575;"Evauno";"Evaux";;0;"49.13447300";"5.65511200";5
+576;"Ferruciaco";"Saint-Étienne de Fursac";;0;"46.14525400";"1.51138200";5
+577;"Marciaco";"Marsac";;0;"45.06010500";"-0.69152800";5
+578;"Montiniaco";"Montignac";;0;"45.80719500";"1.37131700";5
+580;"Potincaco Castro";"Château-Ponsac";;0;"49.03380600";"6.16081700";5
+581;"Sancto Aredio";"Saint-Yrieix-la-Perche";;0;"45.51990000";"1.20408000";5
+582;"Selaniaco";"Salagnac";;0;"45.31141200";"1.19697700";5
+583;"Serotenno";"Sardent";;0;"46.05138500";"1.85594300";5
+585;"Vallaria";"Vallière";;0;"45.90665800";"2.03498000";5
+586;"Icolisima";"Angoulème";;0;"45.64967600";"0.15686600";5
+587;"Orgadoialo";"Orgedeuil";;0;"45.69044900";"0.49171000";5
+588;"Santonas";"Saintes";;0;"45.74208000";"-0.62993300";5
+589;"Albiaco";"Aujac";;0;"45.84500000";"-0.39416700";5
+590;"Anisiaco";"Annezay";;0;"46.00903600";"-0.71189700";5
+591;"Pectavis";"Poitiers";;0;"46.58026000";"0.34019600";5
+592;"Antebrinnaco";"Ambernac";;0;"45.97995200";"0.54208000";5
+593;"Areduno";"Ardin";;0;"46.47416400";"-0.56123200";5
+594;"Benaiasco";"Benest";;0;"46.18635700";"0.36521300";5
+595;"Braia";"Braye-sous-Faye";;0;"46.99182200";"0.34695800";5
+596;"Brionno";"Brion";;0;"44.75472800";"3.07069900";5
+597;"Briosso";"Brioux";;0;"46.14169700";"-0.22176800";5
+598;"Callaco";"Chaillé-les-Marais";;0;"46.39750000";"-1.02138900";5
+599;"Carvill[…]";"Carville";;0;"48.93055600";"-0.85777800";5
+600;"Cella";"Celle-Lévescault";;0;"46.42560800";"0.18819000";5
+601;"Curciaco";"Courçais";;0;"46.47070000";"2.43378000";5
+603;"Interamnis";"Antran";;0;"46.85258500";"0.54321600";5
+604;"Jusciaco";"Joussé";;0;"46.22716000";"0.47122300";5
+605;"Landuconni";"Le Langon";;0;"46.43861100";"-0.94861100";5
+606;"Locoteiaco";"Ligugé";;0;"46.52016300";"0.33259100";5
+607;"Madronas";"Marnes";;0;"46.85639000";"-0.01945300";5
+608;"Medolo";"Melle";;0;"44.56205400";"7.32049200";5
+609;"Mironno";"Méron";;0;"47.38462378";"-1.12846366";5
+610;"Neioialo";"Nueil";;0;"47.16305000";"0.30849800";5
+611;"Noiordo";"Niort";;0;"46.32394600";"-0.46452100";5
+613;"Porto Vediri";"Le Port Saint-Père";;0;"47.13278500";"-1.74971300";5
+614;"Potento";"Pouant";;0;"47.00525400";"0.27164000";5
+615;"Raciate Vico";"Rezé";;0;"47.19054600";"-1.56952900";5
+616;"Sancti Maxentii";"Saint-Maixent";;0;"48.08957900";"0.65372100";5
+618;"Teodericiaco";"Trizay (Vendée)";"Trizay-sur-le-Lay";0;"46.58976827";"-1.11397383";5
+620;"Tremeolo";"La Trimouille";;0;"46.46715100";"1.03854000";5
+621;"Turturonno";"Tourteron";;0;"49.53741100";"4.63788900";5
+622;"Viriliaco";"Vrillé";;0;"46.94538200";"-0.34539700";5
+623;"Vultaconno";"Voultegon";;0;"46.93155400";"-0.51756500";5
+624;"Crimea";;;1;"45.35889986";"34.29932146";3
+625;"Unknown (Syria)";;;1;"36.16338320";"37.06787527";3
+626;"Unknown (Egypt)";;;1;"30.43801687";"31.44286751";3
+627;"al-Fustat";"Cairo";;0;"30.01796100";"31.23768400";5
+628;"Byzantine military mint (mobile?)";;;1;"34.91184002";"36.89209294";3
+689;"Cisomo Vico";"Ciran-la-Latte";;0;"47.06050700";"0.87340100";5
+930;"Bonna";"Bonn";;0;"50.73743000";"7.09820700";5
+931;"Noviomagus";"Nijmegen";;0;"51.81256300";"5.83722600";5
+932;"Airono";"Airon-Notre-Dame";;0;"50.43683300";"1.65412200";5
+933;"Hispalis";"Seville";;0;"37.38909200";"-5.98445900";5
+934;"Aksum";"Aksum";;0;"14.13403200";"38.74729000";5
+1355;"Hamadān (AH/AHM/KWN AH/KWN AHM)";"Hamedan";"Ancient Ecbatana";0;"34.79929400";"48.51220900";5
+1356;"Amul (AM), Tabaristan";"Amol";;0;"36.469722";"52.350833";5
+1357;"Ardashir-Khwarrah (ART/ARTHŠTR/ ARTHŠTRGDH)";"Firuzabad";"Gor";0;"28.8528648953";"52.5326816606";5
+1358;"Ohrmazd-Ardashir (AW/AWH)";"Ahwaz";"Sūq al-Ahwaz";0;"31.31671200";"48.68438000";5
+1359;"Eran-Khwarrah-Shāpūr (AY/AYL[early])";"Susa";"Bahram";0;"32.1887935";"48.2537285";5
+1360;"Biramkobadh (BRM)";"?";;0;"28.81740500";"52.96509000";3
+1361;"Bishapur (BYŠ/BŠHP/BŠHPW)";"Faliyan";"Veh Sabur";0;"29.7779115";"51.5710073";5
+1362;"Darabgird (DA/DAL/DALAPKR)";"Dārāb";;0;"28.755075";"54.544772";5
+1363;"Jahrum (Near Darabgird) (DA+G/DA+GARWM)";"Jahrom";;0;"28.75595100";"54.55467900";5
+1364;"Fasa (Near Darabgird) (DA+P)";"Fasa";;0;"28.93147600";"53.64264600";5
+1365;"Rew-Ardashir (LYW/ LYWARTHŠT/KWN LYW/GNC LYW)";"Bushehr";"Bandar Bushehr";0;"28.91191900";"50.83672100";5
+1366;"Dašt-Maysan (DŠ or DŠT)";"?";;0;"30.30808500";"51.95434000";3
+1367;"Gay (GD)";"Isfahan";"Jayy / جي";0;"32.65107000";"51.67881000";5
+1368;"Gurgan-Shahristan (GW[later]/GWL)";"Gorgan";"Jorjan";0;"37.2580556";"55.1688888888889";5
+1369;"Khuzistān (HWC)";"Khuzestan";;1;"32.283333";"48.516667";3
+1370;"Karzi (KA/KAL/KALCYDY)";"Karzin";"Kawad-Khwarrah";0;"28.4325";"53.124722";5
+1371;"Qubadh Xwarrah (KWAT)";;;0;"28.85590100";"54.83276400";3
+1372;"Ram-Ohrmazd (LAM)";"Ramhurmuz";"Ramhormozd";0;"31.28";"49.603611";5
+1373;"Ray (LD/LDY/LY)";"Tehran";;0;"35.594267";"51.447163";5
+1374;"?";;;0;"35.95281";"52.63545";3
+1375;"Nihawand (NY)";"Nahavand";"Mah al-Basra";0;"34.18761";"48.367981";5
+1376;"Nahr-Tira (NHR)";;;0;"30.87551300";"49.71313500";3
+1377;"Stakhr (ST/STHL)";"Istakhr";"Estakhr";0;"29.98083300";"52.90944400";5
+1378;"Shiraz (Š/ŠY/ŠYLAC)";"Shiraz";;0;"29.59048485";"52.57565215";5
+1379;"Tawwah (TART)";"Firuzabad";"Firuzabad";0;"28.85298400";"52.53244600";5
+1380;"Ṭabarestān (TPWRSTAN)";"Sari";"Ancient province of Māzandarān";0;"36.56560000";"53.05880000";5
+1381;"Weh-Andiyok-Shapur (WH/WHY)";"Gundeshapur";"Gondishapour";0;"32.28046550";"48.51768850";5
+1382;"Bihqubadh (WYH)";;;0;"28.41233900";"53.36059600";3
+1383;"Weh-az-Amid-Kawad (WYHC)";"Behbahan";"Arrajan";0;"30.66282600";"50.30914100";5
+1384;"Yazd (YZ)";"Yazd";;0;"31.89218700";"54.35877000";5
+1385;"Al-Kūfa (AKWLA)";"Kufa";"الكوفة";0;"32.03443801";"44.40310466";5
+1387;"Ctesiphon (AS)";"Salman Pak";"Asuristan";0;"33.094703";"44.5812226667";5
+1388;"Adurbadagan (AT)";"Ganzak";"Azerbaijān";0;"37.012264";"46.201883";5
+1389;"Mobile Court Mint - Ctesiphon (BBA)";"Salman Pak";"Al-Madain";0;"33.094703";"44.5812226667";5
+1390;"Basra (BCRA/BJRA)";"Al-Baṣra";;0;"30.50810300";"47.78348900";5
+1392;"Maysān (MY)";"Naysan";"Kark-Meshan ";0;"30.80934250";"47.56280400";5
+1393;"Forat-Meshan (PL)";"Maghlub";"Vahman-Ardashir";0;"30.7826951";"47.7010833";5
+1394;"?";"Kut (80km SE of Kut)";;0;"32.33861";"45.93362";5
+1395;"Weh-Kawad (WYH)";"Al-Hindiya";;1;"32.540791";"44.22048";4
+1396;"Weh-az-Andiôk-Khusro (WYHC)";"Al-Madain";"Antiocheia Chosroou";1;"33.048229";"44.582087";4
+1397;"Abarshahr (AP/APL)";"Nishapur";"Nev-Shapur";0;"36.202448";"58.798373";5
+1398;"Anbir (ANBYR)";;;0;"36.78435900";"65.29174800";3
+1399;"Balkh (BHL)";"Balkh";"Ancient Bactria";0;"36.7678774387";"66.9012833898";5
+1400;"? (near Bisotun) (BN)";"Kermanshah";"Ancient Carmania";1;"34.5";"47.5";4
+1401;"Bist, Sakastan (BŠT/ BYST)";"Qal`eh-ye Bost";;0;"31.4881";"64.3717";5
+1402;"Garm-Kirmān (GLM)";"Bam";;1;"29.1156331155";"58.3691478143";5
+1403;"?";;;0;"36.85472";"63.90747";3
+1404;"Herat, Khorasan (HL[later]/HLY/HLYDY/HLYDW)";"Herat";;0;"34.346802";"62.189883";5
+1405;"Kirman (KL)";"Sirjan";"Shiragan";0;"29.43654300";"55.66864500";5
+1406;"Kirmān (KRMAN)";"Kirmān";;0;"30.28387270";"57.08005130";5
+1407;"Marw (ML/MLW/MLWY)";"Merw";"Bayramaly";0;"37.669926";"62.177081";5
+1408;"Marw al-Rudh (MRWRWT)";"?";;0;"37.36288200";"65.20385700";3
+1409;"?";;;0;"29.96604";"57.64526";3
+1410;"Narmāšir (NAR)";"Narmashir";;0;"28.87209090";"58.27906210";5
+1411;"Sarkhas (KH)";;;0;"35.75691500";"62.69897500";3
+1412;"Sakastan (N/S/SK/SKSTN)";"Zaranj";"Sistan";0;"30.96";"61.86";5
+2613;"al-Bab";"Derbent";;0;"42.06742007";"48.28909081";5
+2614;"Caralis";"Cagliari";;0;"39.21488560";"9.10951885";5
+2615;"Constantine in Numidia";;;0;"36.33432480";"6.61617292";5
+2616;"Ostia";;;0;"41.73111174";"12.28626712";5
+2617;"Treviso ";"Treviso ";;0;"45.66688462";"12.24304019";5
+2618;"Wāsiṭ";;"Wasit / واسط";0;"32.69447883";"45.68479395";5
+2619;"Alexandretta";;;0;"36.57741904";"36.18758917";5
+3013;"Rakkah";"Raqqa";"al-Raqqah";0;"35.94999543";"39.01669842";5
+3413;"Unknown (Southern Gaul)";;;1;"45.50442157";"3.20800066";3
+3414;"Unknown (East Roman)";;;1;"34.28554878";"26.83410586";3
+3415;"Arelato or Lugdunum";"Arles or Lyons";;1;"44.65863693";"4.80651678";4
+3813;"Unknown (Gaul)";;;1;"46.34540845";"2.29393791";3
+4213;"Unknown (Roman)";;;1;"36.18338287";"18.67812173";3
+4214;"Unknown (West Roman)";;;1;"38.25543274";"10.70399255";3
+4613;"Unknown (Italy)";;;1;"43.22518924";"12.02218040";3
+4614;"Unknown (Asia Minor)";;;1;"35.64004873";"38.78406171";3
+4615;"Unknown (Balkans)";;;1;"21.85564091";"42.25697554";3
+4616;"Gallic mint or Roma";;;1;"44.92980194";"7.98343573";3
+5013;"Unknown (Palestine)";;;1;"34.96195366";"31.93551259";3
+5014;"Unknown (Sasanian Empire)";;;1;"33.97199334";"48.77921799";3
+5015;"Unknown (Palestine/Jordan)";;;1;"35.81812919";"31.34023499";3
+5016;"Unknown (al-Jazira)";;;1;"39.44145544";"35.98942981";3
+5017;"Unknown (Greater Syria)";;;1;"37.68596718";"34.84343103";3
+5018;"Unknown (North Syria)";;;1;"37.68596718";"36.48565917";3
+5019;"Unknown (Umayyad)";;;1;"33.5130695";"36.3095814";3
+5413;"al-Mawsil";"Mosul";"الموصل";0;"36.34368838";"43.09971206";5
+5414;"Sarmin";;;1;"36.72574637";"35.90343408";4
+5415;"Balih";"Ain al-'Arus (spring)";;1;"38.93999491";"36.67027194";4
+5416;"Irminiya";;;1;"44.57916396";"40.00468353";3
+5813;"Diocletianopolis";"Khirbat a-Sheraf";"Sarafa";0;"34.52171801";"31.61608964";5
+6213;"Jibrin (Uncertain)";"Jibrin";"Jabrin";1;"37.25999526";"36.17999841";3
+6613;"Unknown (Iberia)";;;1;"40.41659708";"-3.70379883";3
+7013;"Aballo";"Avallon";;0;"47.49082832";"3.90916268";5
+7014;"Sagensis ";"Sées";"Sagiens";0;"48.60527321";"0.17193755";5
+7413;"Luna";"Luni";"Ortonovo";0;"44.08471889";"10.04194317";5
+7813;"Armorica";"Armorique";"Aremorica";0;"48.12958319";"-1.67724447";4
+7814;"Solimnli";"Soulangy";"Soulangy (Sarry)";1;"48.94332914";"-0.21888350";5
+7815;"Arelenco";"Arlanc";"Arlanc (Puy-de-Dôme";0;"45.41380770";"3.72461280";5
+8213;"Solliaco Vici";"Sully-sur-Loire";"Sully-sur-Loire (Loiret)";0;"47.76540532";"2.37388797";5
+8214;"Bercillo";"Breuilaufa";"Breuilaufa (Haute-Vienne)";0;"46.04272140";"1.10423610";5
+8215;"Cabanisio";"Chabanais";"Chabanès";0;"45.87355236";"0.71879596";5
+8613;"Tidiricia";"Thiré";"Thiré (Vendée)";0;"46.54999714";"-1.00610414";5
+8614;"Teodericia";"Tercé";"Tercé (Vienne)";0;"46.51660147";"0.56394437";5
+9013;"Dufciaco Curte Sci Martin";"Church of St. Martin at Doussay (Vienne)";"Église Saint-Martin de Doussay";0;"46.84360694";"0.27527075";5
+9014;"Novovico";"Nouic (Haute-Vienne)";"Noic ";0;"46.06083228";"0.92054859";5
+9015;"Beliniancus";"Belin";"Saint-Ouen-en-Belin";0;"47.85161341";"0.23642760";5
+9413;"Theodeberciaco";"Thiverzay";"Thiverzay (Vendée)";0;"46.46728619";"-0.80705543";5
+9415;"VTVAINOCA ";"Vitry-le-Brûlé";"Vitry-en-Perthois (Marne)";0;"48.74833207";"4.62555116";5
+9416;"Sci Martini Loco Teiaco";"Saint-Martin de Ligugé";"Abbey of St. Martin of Ligugé";0;"46.51721963";"0.33111003";5
+9422;"Basniaco";" Besné (Loire-Atlantique)";" Besné ";0;"47.49999928";"-2.49999347";5
+9816;"Gavaronno";"Javron-les-Chapelles";"Javron (Mayenne)";0;"48.41747523";"-0.33529618";5
+13413;"Serdica";"Sofia";;0;"42.69833171";"23.31993240";5
+13414;"Mah (MA/MA/DY)";;"Media";1;"34.799294";"48.512209";4
+13415;"Dinawar?/Dinar? (DYWAN/DYWAS/DYWAT)";"Dinawar?/Shahr-e Ray?";;1;"34.998625";"49.338661";4
+13416;"Armenia (ALM)";"Armenia";;1;"40.01185995";"44.58079045";3
+13417;"Pentapolis";"Ancona?";"Rimini?";0;"43.94709720";"12.63076205";4
+13814;"Vuicus";"Quentovic (Pas de Calais)";;0;"50.52610246";"1.59132959";5
+14213;"Eterales";"Étrelles";;0;"48.06016506";"-1.19386101";5
+14214;"Marcillaco";"Marcillé";;0;"46.19063240";"-0.12722839";5
+14613;"Pagus Pruvinensis";"Provins";;0;"48.56029299";"3.29880237";5
+15013;"Rotomago";"Saint-Ouen de Rouen Abbey (Seine-Maritime)";;0;"49.44312695";"1.09931333";5
+15014;"Vatunaco";"Gannat";"Gatnat";0;"46.09960261";"3.19952056";5
+15015;"Noviomagus Veromanduorum";"Noyon";"Noviomum";0;"49.58055059";"3.00002271";5
+15413;"Emuhliaco";"Moussy (Seine-et-Marne)";"Monceiacum";0;"49.01340354";"3.92516168";5
+15414;"Calanciaco";"Chalancey (Haute-Marne)";;0;"47.67741503";"5.14021395";5
+15415;"Corbulium";"Innise";"Corbeil";0;"48.61390335";"2.48213496";5
+15416;"Cresciaco";"Crécy-en-Ponthieu";"Cressy";0;"50.25214520";"1.88406359";5
+15813;"Vindonissa";"Windisch";;0;"47.47934264";"8.21798585";5
+15814;"Alonum";"Allamps";"Alun";0;"48.54788355";"5.81037512";5
+16213;"Novovico";"Neuvy-en-Champagne";;0;"48.07619295";"-0.01636730";5
+16613;"Latona Vico";"Saint-Jean-de-Losne";;0;"47.10233026";"5.26482825";4
+17013;"Niger locus";"Noirlieu";"Neroloto";0;"48.94620245";"4.81125988";5
+17014;"Cerilia";"Cerilly ";"Cérilly (Allier)";0;"46.61789922";"2.81927269";5
+17413;"Scola";"Palace School mint";"Scolare";1;"48.85669250";"2.35145704";3
+17414;"Calmaciago";"Chaumuzy";;0;"49.17418035";"3.86342946";5
+17415;"Sinemurum";"Semur-en-Auxois";;0;"47.49020918";"4.33286208";5
+17813;"Brilliaco";"Brillac";"Brilhac";0;"46.06094448";"0.77715052";5
+18213;"Urba";"Orbe";"Versus Orbam";0;"46.74427698";"6.53684269";5
+18214;"Luxovium";"Luxeuil Abbey";"Lussovio monasterio";0;"47.81664426";"6.38217975";5
+18215;"Closis";"Cluis";;0;"46.54421431";"1.75026852";5
+18216;"Palacio";"Palace";"Palais";1;"48.85669250";"2.35145704";3
+18613;"Viskeriacum";"Vicherey";"Viskerium";0;"48.38276395";"5.93595062";5
+19013;"Castalia";"Castellón de la Plana";"Castelona";0;"39.98603410";"-0.03772924";5
+19014;"Caranciaco";"Charensat";;0;"45.98591265";"2.63732791";5
+19413;"Marcilia";"Marcilly-en-Gault";;0;"47.46588688";"1.87433484";5
+19414;"Armini Vici";"Armagnac, comm. Saint-Just-sur-Loire";;0;"45.50027243";"4.24055120";4
+19813;"Netis";"Nethen";;0;"50.78333324";"4.66665807";5
+19814;"Castriloci";"Champlieu";;0;"49.30916515";"2.85444173";5
+20213;"Cariciacum";"Quierzy";"Quierzy-sur-Oise";0;"49.57138782";"3.14416638";5
+20214;"Locivelacoro";"Lieuvillers";;0;"49.47015687";"2.49606783";5
+20613;"Cambortese Pago";"Chambourg";"Chambourg-sur-Indre";0;"47.18241599";"0.96845574";5
+20614;"Vindovera";"Vendeuvre";"Vendeuvre-sur-Barse";0;"48.99096216";"-0.07597951";5
+21013;"Palatiolum";"Pfalzel";"Palaceolo";0;"49.78024634";"6.69290701";5
+21014;"Botanisat Vico";"Botans";"Botans (terr. de Belfort)";0;"47.59695179";"6.84834250";5
+21015;"Domnus Germanus";"Domgermain";;0;"48.64253324";"5.82495478";5
+21016;"Camariacum";"Chamery";"Cameraco Vico";0;"49.17247720";"3.95574034";5
+21413;"Epoissium";"Yvois, comm. Carignan";"Ivosium";0;"49.63005103";"5.16646273";5
+21814;"Crennom";"Coren (Cantal)";"Corent";0;"45.66482550";"3.19071707";5
+21815;"Inter Amnes";"Entrammes";"Interamnis";0;"47.99927968";"-0.71645135";5
+21816;"Paternaco";"Pernay";"Parochia Paternacensis";0;"47.44366762";"0.49913990";5
+22213;"Castra Vetera?";"Jaujac";"Castrevieille";0;"44.63637706";"4.25550815";5
+22214;"Aquis Vico";"Aix-en-Othe";"Aquis";0;"48.22340938";"3.73325459";5
+22613;"Fluriniacum";"Fleurigné";"Floriniacum";0;"48.33587810";"-1.12114239";5
+23013;"Calonna Vicus ";"Chalonnes-sur-Loire";"Cellula Calonnensis";0;"47.35161722";"-0.76310985";5
+23014;"Anicium Vellavorum";"Puy-en-Velay";"Podium Vellavorum";0;"45.04597363";"3.88554598";5
+23413;"Ortus";"Eurville-Bienville";"Urtis villa";0;"48.58498982";"5.03681787";5
+23414;"Tremollo";"Tremblay-en-France";"Tremblay-lès-Gonesse";0;"48.98020344";"2.55894990";5
+23813;"Tergiliaco";"La Tardière";;0;"46.66143079";"-0.73237848";5
+24213;"Modeliacus";"Meuilley";"Mailaco";0;"47.14118755";"4.87514806";5
+24613;"Sugilione Vico";"Soulignonne";;0;"45.77699345";"-0.78681639";5
+25013;"Campaniaco";"Champagné";;0;"48.01679873";"0.33178377";5
+25014;"Sollonaco";"Saunay";;0;"47.60398433";"0.97238138";5
+25015;"Sailusacumen";"Seilhac";"Salvieso";0;"45.36635400";"1.71440777";5
+25413;"Issunis";"Issou";"Vulcassinus";0;"48.98809143";"1.79247137";5
+25813;"Arros";"Arros";;1;"42.61945347";"-7.86310640";3
+25814;"Monasterio";"Monestiés";;0;"44.07179916";"2.09647923";5
+25815;"Condatomagus";"Condéon";"Condeom";0;"45.40704095";"-0.13742427";5
+25816;"Ebrora";"Yèvres";"Evra";0;"48.20913358";"1.18882146";5
+25817;"Varinnieo";"Varennes-en-Argonne";"Wöringen";0;"50.04913206";"2.53470437";5
+25818;"Detarnaco Vico?";"Darnac";;0;"46.22356913";"0.95920309";5
+25819;"Gredonense castrum";"Grèzes";"Gredone ";0;"44.51388793";"3.33916368";5
+26213;"Argentomagus";"Argenton-sur-Creuse";"Argentone";0;"46.58868175";"1.51909606";5
+26214;"Avennio";"Avignon";;0;"43.95066726";"4.80660661";5
+26613;"Dea Vocontiorum";"Die";"Dea Augusta Vocontiorum";0;"44.75360701";"5.37027250";5
+27013;"Sabonarias";"Saint-Georges-de-la-Couée";"Sancti Iorgi";1;"47.84158759";"0.58334798";5
+27014;"Tiverius";"Thiviers";"Teverio Vico";0;"45.41836045";"0.92087198";5
+27015;"Eovoricum";"Voivres-lès-le-Mans ";"Vodebris";0;"47.93041399";"0.08533995";5
+27016;"Venisciaco";"Vancé ";;0;"47.83178296";"0.64693074";5
+27413;"Graniaco";"Greignac";;0;"45.86115462";"1.11504283";5
+27813;"Parducio";"Pardoussie, comm. Lessac";"Pardoussie";0;"46.06861096";"0.67461681";4
+27814;"Masiciacus";"Maisey le Duc?";;1;"47.84673036";"4.67732107";5
+27815;"Milico Vico";"Milhac-de-Nontron ";"Emelius Vicus";0;"45.46832831";"0.78138158";5
+28213;"Alsotea";"Alzon";"Saint Martin d'Alzon";0;"43.96757687";"3.43893057";5
+28613;"Campaniaco";"Campigny";"Campinneio";0;"49.24916664";"-0.79888077";5
+28614;"Sarama";"Saran";"Saram";0;"47.94940047";"1.87641893";5
+29013;"Vienna Vico";"Vienne-en-Val";"Ludn(...)";0;"47.80074085";"2.13517865";5
+29413;"Caturiges";"Bar-le-Duc";"Barrum";0;"48.77126147";"5.16237539";5
+29813;"Pagus Wastinensis";"Gastine";;1;"47.69721976";"0.72499433";4
+29814;"Evauno Vici";"Évaux-les-Bains";"Evaus";0;"46.17579883";"2.48689603";5
+29815;"Sanctus Medardus";"Saint-Médard de Soissons";;0;"49.38305190";"3.34361034";5
+29816;"Silviaco";"Servais";;0;"49.62109542";"3.34439187";5
+30613;"Unknown (Southern India) ";"Tamil Nadu";;1;"10.90942591";"78.36652807";3
+31013;"Domburg";"Domburg";;0;"51.56321398";"3.49671919";5
+31014;"Unknown (East Anglia)";;;1;"52.49999604";"0.99999559";4
+31413;"Zaranj (ZL)";"Zaranj";"Drangiana";0;"30.94742377";"61.82475280";5
+31414;"Maracanda";"Samarkand";"Samarqand";0;"39.65499483";"66.97569264";5
+31415;"Rhagae";;"al-Rayy";0;"35.57997914";"51.46335973";5
+31813;"Panjhīr";;"Banjhīr / ﭙنجهير ";0;"34.43384764";"69.79308785";5
+32214;"Al- Sus";;;0;"31.55351367";"49.00771609";5
+32215;"Al- Qaṣrān";;"al-Sīrājān, Shīrayān";0;"35.67765962";"51.70758471";5
+32613;"Abrashahr";;"أبرشهر ";0;"36.2105896";"58.79227395";5
+34213;"Perusia";"Perugia";;0;"12.38990850";"43.11119200";5
+34613;"AW/AR (?)";"Unknown (Sassanian)";;1;"54.56435160";"32.64753140";3
+35413;"Unknown (West Central Europe)";;;1;"7.52312800";"49.65118200";3
+35414;"Unknown (Eastern Central Mediterranean)";;;1;"21.68355400";"34.68460500";3
+35415;"Unknown (Eastern Mediterranean)";;;1;"29.42309300";"34.10441400";3
+35416;"Unknown (around the Adriatic)";;;1;"16.31864600";"42.33976800";3
+35417;"Unknown (Propontis)";;;1;"28.30395000";"40.69248300";3
+35814;"Fayyum";"Fayyum";"Limni";0;"30.74327369";"29.37396980";5
+35815;"al-Ma'arrah";"Maarat al-Numan";;0;"36.67166700";"35.63861100";5
+36213;"Unknown (Africa)";;;1;"15.67787400";"33.48357200";3
+36613;"Unknown (Central Mediterranean)";;;1;"18.31101300";"35.61879100";3
+36614;"Alexandria Troas";"Dalyan";;0;"26.15840100";"39.75028100";5
+36615;"?";"Comitatensian mint";;1;"18.883848";"38.366156";3
+37814;"Unknown (Germany)";;;1;"52.52";"13.405";3
+37815;"Bad Sulza";"Bad Sulza";;0;"51.088";"11.6286";5
+38213;"Arrān";"Derbent";"أران";1;"48.3";"42.05";4
+38214;"al-Taymara";;"Shaqq al-Taymara // التيمره";1;"51.6675";"32.644722";4
+38215;"Dastawā";;"دستوا";1;"49.37";"35.87";4
+38216;"Qumis";"Shahr-e Qumis";"قومس";1;"54.112806";"35.951056";4
+38217;"Manadhir";;"مناذر";1;"48.2";"31.6";4
+38218;"Surraq";;"سرق";1;"48.664722";"30.649722";4
+38613;"Amul (AMW), Khorasan";"Turkmenabat";;0;"39.083333";"63.566667";5
+38615;"Eran-asan-kar-Kawad?/Eran-win(n)ard-Kawad?/Eran-khwarrah-Yazdgerd? (AYL[later])";;;1;"34.991502";"51.318151";3
+38616;"Eran-asan-kar-Kawad?/Eran-Khwarrah-Shapur? (AYLAN)";"Harsin?/Susa?";;1;"33.272427";"47.986912";3
+38617;"? (BŠHP/BŠHPW)";;;1;"33.713192";"52.957918";3
+38618;"?, Fars (BWB)";"Fars";;1;"29.9808333";"52.9094444444444";4
+39013;"Gahrum (GHL)";"Jahrum";"Jahrom";0;"28.5";"53.560556";5
+39014;"Ganj/Ganzak? (GNCKL)";;;1;"30.286078";"57.06556";3
+39015;"Guwaim, Fars (GW[earlier]/GWDMY)";"Juyom";"Joyom";0;"28.260125";"53.980722";5
+39016;"? (H)";;;1;"33.580407";"53.478092";3
+39017;"Herat, Istakhr, Fars (HL[earlier])";"Harat";"Tajabad";0;"30.054698";"54.373675";5
+39018;"Al-Hira, Asuristan (HYL)";"Kufa";;0;"31.883324";"44.449851";5
+39019;"? (KWN BBA)";;;1;"33.2277";"53.42874";3
+39020;"Kholm (HLM)";"Kholm";"Khulm";0;"36.683333";"67.683333";5
+39021;"Royan, Fars (LWD/LWDY)";"Ar-Rudan?";"Rudhan";1;"30.8723337";"55.2716302";4
+39022;"? (NAL/WAL)";;;1;"33.305836";"53.017907";3
+39023;"Purg (PW/PWLGY)";"Forg";"Furk";0;"28.292259";"55.192565";5
+39024;"? (ŠLK)";;;1;"32.880226";"54.090996";3
+39026;"? (WLC)";;;1;"32.637706";"54.356276";3
+39027;"? (S)";;;1;"32.841763";"53.735089";3
+40213;"Unknown (Northern Qi dynasty)";;;0;"36.2748";"114.4002";3
+40613;"Unknown (Tang Dynasty)";;;1;"34.308333";"108.858333";3
+41013;"Unknown (Sui Dynasty)";;;1;"34.308333";"108.858333";3
+41014;"Unknown (Chinese)";;;1;"34.6197";"112.4539";3
+41413;"Gaochang";"Khocho";"Qocho";0;"42.852778";"89.529167";5
+41414;"Unknown (Japanese) ";;;0;"34.691111";"135.795556";3
+41813;"Briodurum";"Brieulles-sur-Meuse";;0;"49.3367";"5.1822";5
+42213;"Ivegio";"Ivoy-le-Pre";;0;"47.3458";"2.4878";4
+42613;"Lexsovias";"Lisieux, Calvados";;0;"49.15";"0.23";5
+42614;"Orione";"Orione";"'Unknown mint west of Paris""";1;"48";"2";3
+43013;"Pseudo-Damascus";"Unknown (Greater Syria)";;1;"33.511612";"36.309102";3
+43014;"Al Wafa liLlah (الوفا للّه)";"Unknown (Greater Syria)";;1;"33.511612";"36.309102";3
+43413;"? (BNG)";;;1;"33.713192";"52.957918";3
+43414;"? (ŠM)";;;1;"33.713192";"52.957918";3
+43813;"Saxobacio";;;1;"0";"0";3
+44213;"Abarqubadh";"Unknown (Maysan Governorate)";"Abar-Kawad";0;"31.280274";"47.492662";4
+44613;"Al-Andalus";"Cordoba";;0;"37.8845813";"-4.7760138";4
+44614;"Al-Mubaraka";"Balkh";;0;"36.7581256";"66.8980826";5
+44615;"Al-Samiya";"Unknown (Iraq)";;1;"33.0955793";"44.1749775";3
+45013;"Ifrīqīya";"Unknown (Tunis)";;0;"35.677222";"10.100833";4
+45014;"Mahi";"Nahavand/Dinavar";"Mahay";1;"36.4447222";"47.9013888888889";4
+45413;"Madinat al-Salam";"Baghdad";;0;"33.3061701";"44.3872213";5
+45414;"Al-Hashimiya";"Kufa";;1;"32.03444";"44.4031125";4
+45813;"Unknown (Caucasus)";;;1;"42.261111";"44.121111";3
+45814;"Kinnasrin";"Qinnasrin";;0;"35.9875";"37.042778";5
+46213;"Panticapaeum";"Kerch";;0;"45.361944";"36.471111";5
+46613;"ZWZWN";"Unknown (Caucasus)";;1;"42.261111";"44.121111";3
+47013;"Al-Furat";"Basra";;1;"30.4952371";"47.8090981";4
+47413;"Unknown (Nezak)";;;0;"33.526354628096";"68.4179079304021";4
+47414;"? (LYN)";;;1;"33.713192";"52.957918";3
+47813;"Taxila";"Taxila";;0;"33.7474551";"72.8073364";5
+47814;"Unknown Kushano-Sassanian mint (S. of Hindu Kush)";"Begram/Peshawar";;1;"34.4785637865307";"70.5073377020833";4
+47815;"Unlocalized Kidarite Mint";"Gandhara";;1;"33.756";"72.8291";4
+48613;"Unknown (Zabulistan)";;;0;"32.1";"67.1";4
+49013;"Sarahs";"Sarakhs";;0;"36.5425";"61.158889";5
+49014;"Khusrau-Shâdh Hurmuz";"Baghdad";;1;"33.3542328411738";"44.5652945736612";4
+49413;"Unknown (Khwarazm)";;"Chorasmia";1;"42.189608";"59.326172";4
+49813;"Nahrbuq";"Baghdad";;1;"33.34058";"44.40088";4
+50213;"Unknown (Hephthalite)";;;1;"36.758056";"66.898056";3
+50613;"Unknown (Termiz)";"Termez";;1;"37.2442466";"67.283151";4
+51013;"Bukhara";"Bukhara";;0;"39.766667";"64.423056";5
+51413;"Chaganiyan";"Budrach";"Jumatepa";0;"38.1898889";"67.9176111111111";5
+51813;"Unknown (Sogdian)";;;1;"40.4";"69.4";3
+52213;"Unknown (India)";"India";;1;"21";"78";3
+52214;"Unknown (Kabulistan)";"Kabul";;1;"34";"69";4
+52613;"Unlocalized Alchon mint ";"Gandhara";;1;"33.756";"72.8291";4
+53013;"Ascalon";"Ashkelon";"Ashqelon";0;"31.6647972122";"34.5505214667";5
