@@ -3,16 +3,19 @@
 use Text::CSV;
 use WWW;
 
-constant GEOAPI_KEY = %ENV<GEOAPIFY_API_KEY>;
+constant GEOAPI_KEY = %*ENV<GEOAPIFY_API_KEY>;
 my @mints = csv(in => 'data-raw/flame-database-last-version-mints.csv', headers => 'auto', sep=>";");
 
 my %mints-out;
 for @mints -> $mint {
-    %mints-out{$mint<id>} = { name => $mint<name> };
-    my $mint_lat = $mint<latitude>;
-    my $mint_lon = $mint<longitude>;
-    my $geo-data= jget "https://api.geoapify.com/v1/geocode/reverse?lat=$mint_lat&lon=$mint_lon&apiKey={GEOAPI_KEY}";
-    say $geo-data;
-    sleep 1;
+    %mints-out{$mint<ID>} = { name => $mint<location-title> };
+    my $mint_lat = $mint<location_lat>;
+    my $mint_lon = $mint<location_long>;
+    my $uri = "https://api.geoapify.com/v1/geocode/reverse?lat=$mint_lat&lon=$mint_lon&apiKey={GEOAPI_KEY}";
+    my $geo-data= jget $uri;
+    say $geo-data<features>[0]<properties><country>;
+    %mints-out{$mint<ID>}<country> = $geo-data<features>[0]<properties><country>;
+    sleep 0.5;
 }
 
+csv( in=> %mints-out, out => "data/mints-geolocated.csv", sep => ";");
