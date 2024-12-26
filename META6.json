@@ -10,7 +10,8 @@
   "auth": "github:JJ",
   "depends": [
     "Text::CSV",
-    "JSON::Fast"
+    "JSON::Fast",
+    "WWW"
   ],
   "provides": {
   },
