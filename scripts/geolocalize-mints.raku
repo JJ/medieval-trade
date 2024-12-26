@@ -22,5 +22,3 @@ for @mints -> $mint {
     }
     sleep 0.5;
 }
-
-csv( in=> %mints-out, out => "data/mints-geolocated.csv", sep => ";");
