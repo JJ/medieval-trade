@@ -1,0 +1,830 @@
+Country;ID;location_title
+Egypt;1;"Alexandria ad Aegyptum"
+Tunisia;2;Carthago
+Italy;3;Roma
+Cyprus;4;Salamis-Konstantia
+Italy;5;Ravenna
+Italy;6;Ticinum
+Italy;7;Mediolanum
+Italy;9;Benevento
+Italy;10;Catania
+Italy;11;Neapolis
+Italy;12;Syracusae
+Italy;13;Sardinia
+"United Kingdom";14;Londinium
+"United Kingdom";15;Durovernum
+"United Kingdom";16;Eburacum
+Germany;17;"Colonia Augusta Treverorum"
+France;18;Ambianum
+Greece;19;Thessalonika
+Italy;20;Lucca
+Italy;21;Pisa
+Italy;22;Pistoia
+Turkey;52;Nikomedia
+Turkey;53;Kyzikos
+Serbia;54;Sirmium
+Turkey;66;Antioch
+Croatia;67;Siscia
+Turkey;68;Heraclea
+Spain;69;Cesaragusta
+Spain;70;Tirazona
+Spain;71;Calagorre
+Spain;72;Lebea
+Spain;73;Tarracona
+Spain;74;Gerunda
+Spain;75;Barcinona
+Spain;76;Rodas
+Spain;77;Dertosa
+Spain;78;Sagunto
+Spain;79;Cestavi
+Spain;80;Volotania
+Spain;81;Labeclosa
+Spain;82;Toleto
+Spain;83;Recopoli
+Spain;84;Valentia
+Spain;85;Mentesa
+Spain;86;Acci
+Spain;87;Castilona
+Spain;88;Beatia
+Spain;89;Iliocrici
+Spain;90;Aorariola
+Spain;91;Mave
+Spain;92;Saldania
+Spain;93;Oliovasio
+Spain;94;Ispali
+Spain;95;Italica
+Spain;96;Karmona
+Spain;97;Roda
+Spain;98;Cordoba
+Spain;100;Tucci
+Spain;101;Eliberri
+Spain;102;Asidona
+Spain;103;Barbi
+Spain;104;Malaka
+Spain;105;Emerita
+Spain;106;Elvora
+Portugal;107;Olisipona
+Portugal;108;Lameco
+Portugal;109;Eminio
+Portugal;110;Veseo
+Portugal;111;Totela
+Portugal;112;Coleia
+Portugal;113;Caliabria
+Portugal;114;Egitania
+Portugal;115;Monecipio
+Spain;116;Salmantica
+Portugal;117;Bracara
+Portugal;118;Bergancia
+Portugal;119;Flavas
+Portugal;120;Laetera
+Portugal;121;Palantucio
+Portugal;122;Panonias
+Portugal;123;Turico
+Portugal;125;Aliobrio
+Portugal;126;Cepis
+Portugal;127;"Laurencio / Laure"
+Portugal;128;Nandolas
+Portugal;129;Palentiaca
+Portugal;130;Toriviana
+Spain;132;Luco
+Spain;133;Inceio
+Spain;134;Aurense
+Spain;135;Calapa
+Spain;136;Cassavio
+Spain;137;Georres
+Spain;138;Pincia
+Spain;139;Senabria
+Spain;140;Susarres
+Spain;141;Astorica
+Spain;142;Bergio
+Spain;143;Fraucello
+Spain;144;Leione
+Spain;145;Pesicos
+Spain;146;Petra
+Spain;147;Semure
+Spain;148;Ventosa
+Spain;149;Conteno
+Spain;150;Mertia
+Spain;151;Catora
+Spain;152;Tude
+Portugal;153;Tornio
+Portugal;154;Adonis
+Spain;155;Amiasios
+Spain;156;Asturie
+Spain;157;Decrinos
+Spain;158;Tulluco
+Portugal;159;Vallesalsa
+Spain;160;"Valle.../ Vallegia"
+France;161;Agenno
+France;162;Agaciaco
+France;163;Atura
+Tunisia;164;al-Qayrawan
+France;165;Alisia
+France;166;Albenno
+France;167;Albigia
+France;168;Elariaco
+Spain;169;Amiasio
+Italy;170;Agusta
+Italy;171;Aquileia
+"United Kingdom";172;"Archbishops of York"
+France;173;Argentate
+France;174;Arelato
+France;175;Artona
+France;176;Actriaco
+France;177;Augusteduno
+Switzerland;178;Aventeco
+France;179;Bannaciaco
+France;180;Barro
+France;181;Vasatis
+France;182;Vesoncione
+France;183;"Biaenate Pago"
+France;184;Billiomago
+France;185;Burdegala
+France;186;Auseno
+France;187;Bregusia
+France;188;Brivate
+France;189;Cadurca
+France;190;Cannaco
+Spain;191;Cassavio
+France;192;Sanonno
+France;193;Cabilonno
+France;194;Cambarisio
+France;195;Cantoliano
+France;196;Catiriaco
+France;197;Cassoriaco
+Russia;198;Chersonesus
+France;199;Begorra
+France;200;Arvernus
+Turkey;201;Constantinople
+France;202;Cornilio
+France;204;"Dia Vocontiorum"
+France;205;Divione
+France;206;Trusciaco
+Spain;207;Egaboro
+Portugal;208;Elissa
+France;209;Espaniaco
+Spain;210;Ewesis
+France;211;"Castro Fusci"
+Switzerland;212;Genava
+France;213;Gaciaco
+France;214;Gracinoble
+Turkey;215;Isauria
+France;216;Gavalorum
+France;217;Juliaco
+France;218;Gemeliaco
+"United Kingdom";220;"Kings of Northumbria"
+France;221;Lanticiaco
+France;222;Laure
+Portugal;223;Laurentio
+Switzerland;224;Lausonna
+France;225;Cummonigo
+France;226;Anicio
+France;227;Lintiniaco
+France;228;Ledoso
+France;229;Lugdunum
+France;230;Matascone
+France;231;Marciliaco
+France;232;Masilia
+France;233;Mauriaco
+France;234;Darantasia
+France;235;Narbo
+France;236;"Novo Vico"
+Spain;237;"No mint"
+France;238;Helorone
+France;239;Oxsello
+France;240;Petrocoris
+Portugal;241;Portocale
+France;242;Ricomago
+France;243;Rutenus
+France;244;Telemate
+France;245;Cariaco
+France;246;Conbenas
+France;247;Maurienna
+France;248;Conserannis
+Switzerland;249;Acauno
+France;250;Vellaos
+Croatia;251;Salona
+France;252;Sagraciaco
+Turkey;253;"Seleukeia Isauriae"
+Italy;254;Sicily
+Switzerland;255;Sidunis
+France;256;Sisteron
+Italy;257;Sicusio
+Morocco;258;Tanja
+France;259;Tasgunnago
+Algeria;261;Tilmisan
+France;263;Tholosa
+Libya;264;Tripoli
+"United Kingdom";265;"Uncertain mint (England)"
+Spain;266;Unknown
+Spain;267;"Unknown (Malaka or Cordoba?)"
+Spain;268;"Unknown (Emerita?)"
+Spain;269;"Unknown (Toleto?)"
+Italy;270;Oxxello
+France;271;Icciomo
+France;272;Userca
+France;273;Ucece
+France;274;Valentia
+Portugal;275;Vallearitia
+Spain;276;Vallegia
+France;277;Valligoli
+France;278;Vindicco
+France;279;Venasque
+France;280;Vendogilo
+France;281;Vindiciaco
+France;282;Vienna
+France;283;Vivarios
+France;284;Vorocio
+France;285;Isandone
+France;286;"Antro Vico"
+France;287;Argentao
+France;288;"Latona Vico"
+France;289;Cocciaco
+France;290;Gredaca
+France;291;Alisia
+France;292;Beleno
+France;293;Cluciaco
+Syria;329;Dimashq
+Lebanon;330;Heliopolis
+Jordan;331;Amman
+Syria;332;Adraa
+Syria;333;Busra
+Syria;334;Hims
+Syria;335;Tartus
+Israel;336;Tiberias
+Israel;337;Baysan
+Jordan;338;Jerash
+Israel;339;Akka
+Israel;340;Sephoris
+Israel;341;"Iliya (Ayla)"
+Israel;342;Ludd
+Israel;343;Yubna
+Israel;344;al-Ramla
+Israel;345;Askalon
+Israel;346;"Bayt Jabrin"
+Palestine;347;Baniyas/Nabulus
+Palestine;348;Ghazza
+Israel;349;Qaysariya
+Syria;350;"Chalcs ad Belum"
+Syria;351;Bercea
+Syria;352;"Maʿarrat Miṣrīn"
+Syria;353;Manbij
+Syria;354;Sarmin
+Syria;355;Qurus
+Turkey;356;Tanukh/Saruj?
+Syria;357;Carrhae
+Turkey;358;al-Ruha
+Turkey;359;Nisibin
+Turkey;360;"al-Madina ma'din amir al-mu'minin"
+France;361;Lingonas
+France;362;Andelao
+France;363;"Mosa Vico"
+France;364;Ternodero
+France;365;Rotomo
+France;366;Gemedico
+France;367;Menoiovilla
+France;368;Nivialcha
+France;369;Velcassino?
+France;370;Baiocas
+France;371;Apraricia(co)
+Czechia;372;Similiaco
+France;373;Abrinktas
+France;374;Saius
+France;375;Custancia
+France;376;Briuuri
+France;377;Coriallo
+France;378;Turonus
+France;379;"Saint Martin's Basilica"
+France;380;Alingavias
+France;381;Ambacia
+France;382;Ballatetone
+France;383;Borgoialo
+France;384;"Bricca Vico"
+France;385;Briotreite
+France;386;Brixis
+France;387;Cainone
+France;389;Condate
+France;390;Daria/Dariaco
+France;391;Evira
+France;392;Geniliaco
+France;393;Hicciodero
+France;394;Limariaco
+France;395;Medeconno
+France;396;Musicaco
+France;398;Pauliaco
+France;400;Silaniaco
+France;401;Solonaco
+France;402;Vidua
+France;403;Cenomannis
+France;404;Alaona
+France;405;Arciacas
+France;406;Arciaco
+France;407;Balatonno
+France;408;Bedicco
+France;409;Bellofaeto
+France;410;Bruciron(no)
+France;411;Cabiliaco
+France;412;Cirialaco
+France;413;Corma
+France;414;Crisciac(o)
+France;415;Diabolentis
+France;416;Lacciaco
+France;417;Matoliaco
+France;418;Matovallo
+France;419;Noviomo
+France;420;Novovico
+France;421;Sauliaco
+France;422;Sirallo
+France;423;Solemnis
+France;424;Wagias
+France;425;Redonis
+France;426;Belciaco/Balaciaco
+France;428;Vindello
+France;429;Andecavis
+France;430;Senonas
+France;431;Namnetis
+France;432;Baiorate
+France;433;Deas
+France;434;Cambidonno
+France;435;Venetus
+France;436;Senonis
+France;437;Dortenco
+France;438;Mecledore
+France;439;Stampas
+France;440;Carnotas
+France;441;Aloia
+France;442;Bleso
+France;443;Dorocas
+France;444;Riomo
+France;445;Vi(n)docino
+France;446;Autiziodero
+France;447;Briodro
+France;448;Donnaciaco
+France;449;Eliniaco
+France;450;Nenterac(o)
+France;451;Tricas
+France;452;Arciaca
+France;453;Briona
+France;454;Cupidis
+France;455;Latascone
+France;456;Aurelianis
+France;457;Briennone
+France;459;Petraficta
+France;461;Solaso
+France;462;Thaisacas
+France;464;Vosonno
+France;465;Parisius
+France;466;Castra
+France;467;Catullaco
+France;468;Draverno
+France;469;Exona
+France;470;Gentiliaco
+France;471;Locosancto
+France;472;Munciaco
+France;473;Palaciolo
+France;474;"Porto Cristoialo"
+France;475;Tremolito
+France;476;Meldus
+France;477;Claio
+France;478;Columbario
+France;479;Crideciaco
+France;480;Nevers
+France;482;Cantunaco
+France;483;Catonaco
+France;484;Dicetia
+Germany;485;Treveris
+Germany;486;Antunacco
+Switzerland;487;Bodovreca
+France;488;Epocio
+France;489;"Mallo Matiriaco"
+France;491;Pontepetrio
+France;492;Mettis
+France;493;Avanaco
+France;494;Bodesio
+France;495;Doso
+France;496;Marsallo
+France;497;Medianovico
+France;498;Sareburgo
+France;499;Tullo
+France;500;Granno
+France;501;Nanciaco
+France;502;Nasio
+France;503;Novicento
+France;504;Sauriciaco
+France;505;Scarponna
+France;506;Vindeoera
+France;507;Vereduno
+France;508;"Villa Maorin"
+France;509;Remus
+France;510;"Bridur Corte"
+France;511;Mosomo
+France;512;Oriaco
+France;513;"Vico Santi Remidi"
+France;514;"Lauduno Cloata"
+France;515;Suessionis
+France;516;Bainissone
+France;517;Chariliaco
+France;518;Vindaria
+France;519;Catalaunis
+France;520;Perta
+France;521;Viromandis
+France;523;Atravetes
+France;524;Camaraco
+France;525;Falmartis
+Belgium;526;Turnaco
+France;527;Silvanectis
+France;528;Plaitiliaco
+"United Kingdom";529;Buriaco
+France;530;Camiliaco
+France;531;Ambianis
+France;532;"Sancti Petri"
+France;533;Viminao
+France;534;"Wico in Pontio"
+France;535;Taroanna
+France;536;Bononia
+Germany;537;Mogontiaco
+France;538;Argentorato/Strateburgo
+Germany;539;Spira
+Germany;540;Warmacia
+Germany;541;Colonia
+Germany;542;Tulbiaco
+Netherlands;543;Triecto
+Belgium;544;Anderpus
+Belgium;545;Choae
+Belgium;546;Deonante
+Belgium;547;Namuco
+Netherlands;548;Dorestate
+Netherlands;549;Frisia
+Switzerland;550;Basilia
+France;551;Betoregas
+France;552;Bareloco
+France;553;Bellomonte
+France;554;Capudcervi
+Belgium;555;Climone
+France;556;"Dolus Vico"
+France;557;Duno
+France;558;"Mediolano Castro"
+France;559;Onaciaco
+France;560;Rivarinna
+France;561;Sesemo
+France;562;Virisione
+France;563;Lemovecas
+France;564;Ambaciaco
+France;565;Analiaco
+France;566;Blatomago
+France;567;Breciaco
+France;568;Cabiriaco
+France;569;Campaniaco
+France;570;Caronno
+France;571;Carovicus
+France;572;Cociaco
+France;573;Conpriniaco
+France;574;Curisiaco
+France;575;Evauno
+France;576;Ferruciaco
+France;577;Marciaco
+France;578;Montiniaco
+France;580;"Potincaco Castro"
+France;581;"Sancto Aredio"
+France;582;Selaniaco
+France;583;Serotenno
+France;585;Vallaria
+France;586;Icolisima
+France;587;Orgadoialo
+France;588;Santonas
+France;589;Albiaco
+France;590;Anisiaco
+France;591;Pectavis
+France;592;Antebrinnaco
+France;593;Areduno
+France;594;Benaiasco
+France;595;Braia
+France;596;Brionno
+France;597;Briosso
+France;598;Callaco
+France;599;Carvill[…]
+France;600;Cella
+France;601;Curciaco
+France;603;Interamnis
+France;604;Jusciaco
+France;605;Landuconni
+France;606;Locoteiaco
+France;607;Madronas
+Italy;608;Medolo
+France;609;Mironno
+France;610;Neioialo
+France;611;Noiordo
+France;613;"Porto Vediri"
+France;614;Potento
+France;615;"Raciate Vico"
+France;616;"Sancti Maxentii"
+France;618;Teodericiaco
+France;620;Tremeolo
+France;621;Turturonno
+France;622;Viriliaco
+France;623;Vultaconno
+Russia;624;Crimea
+Syria;625;"Unknown (Syria)"
+Egypt;626;"Unknown (Egypt)"
+Egypt;627;al-Fustat
+Syria;628;"Byzantine military mint (mobile?)"
+France;689;"Cisomo Vico"
+Germany;930;Bonna
+Netherlands;931;Noviomagus
+France;932;Airono
+Spain;933;Hispalis
+Ethiopia;934;Aksum
+Iran;1355;"Hamadān (AH/AHM/KWN AH/KWN AHM)"
+Iran;1356;"Amul (AM), Tabaristan"
+Iran;1357;"Ardashir-Khwarrah (ART/ARTHŠTR/ ARTHŠTRGDH)"
+Iran;1358;"Ohrmazd-Ardashir (AW/AWH)"
+Iran;1359;"Eran-Khwarrah-Shāpūr (AY/AYL[early])"
+Iran;1360;"Biramkobadh (BRM)"
+Iran;1361;"Bishapur (BYŠ/BŠHP/BŠHPW)"
+Iran;1362;"Darabgird (DA/DAL/DALAPKR)"
+Iran;1363;"Jahrum (Near Darabgird) (DA+G/DA+GARWM)"
+Iran;1364;"Fasa (Near Darabgird) (DA+P)"
+Iran;1365;"Rew-Ardashir (LYW/ LYWARTHŠT/KWN LYW/GNC LYW)"
+Iran;1366;"Dašt-Maysan (DŠ or DŠT)"
+Iran;1367;"Gay (GD)"
+Iran;1368;"Gurgan-Shahristan (GW[later]/GWL)"
+Iran;1369;"Khuzistān (HWC)"
+Iran;1370;"Karzi (KA/KAL/KALCYDY)"
+Iran;1371;"Qubadh Xwarrah (KWAT)"
+Iran;1372;"Ram-Ohrmazd (LAM)"
+Iran;1373;"Ray (LD/LDY/LY)"
+Iran;1374;?
+Iran;1375;"Nihawand (NY)"
+Iran;1376;"Nahr-Tira (NHR)"
+Iran;1377;"Stakhr (ST/STHL)"
+Iran;1378;"Shiraz (Š/ŠY/ŠYLAC)"
+Iran;1379;"Tawwah (TART)"
+Iran;1380;"Ṭabarestān (TPWRSTAN)"
+Iran;1381;"Weh-Andiyok-Shapur (WH/WHY)"
+Iran;1382;"Bihqubadh (WYH)"
+Iran;1383;"Weh-az-Amid-Kawad (WYHC)"
+Iran;1384;"Yazd (YZ)"
+Iraq;1385;"Al-Kūfa (AKWLA)"
+Iraq;1387;"Ctesiphon (AS)"
+Iran;1388;"Adurbadagan (AT)"
+Iraq;1389;"Mobile Court Mint - Ctesiphon (BBA)"
+Iraq;1390;"Basra (BCRA/BJRA)"
+Iraq;1392;"Maysān (MY)"
+Iraq;1393;"Forat-Meshan (PL)"
+Iraq;1394;?
+Iraq;1395;"Weh-Kawad (WYH)"
+Iraq;1396;"Weh-az-Andiôk-Khusro (WYHC)"
+Iran;1397;"Abarshahr (AP/APL)"
+Afghanistan;1398;"Anbir (ANBYR)"
+Afghanistan;1399;"Balkh (BHL)"
+Iran;1400;"? (near Bisotun) (BN)"
+Afghanistan;1401;"Bist, Sakastan (BŠT/ BYST)"
+Iran;1402;"Garm-Kirmān (GLM)"
+Turkmenistan;1403;?
+Afghanistan;1404;"Herat, Khorasan (HL[later]/HLY/HLYDY/HLYDW)"
+Iran;1405;"Kirman (KL)"
+Iran;1406;"Kirmān (KRMAN)"
+Turkmenistan;1407;"Marw (ML/MLW/MLWY)"
+Turkmenistan;1408;"Marw al-Rudh (MRWRWT)"
+Iran;1409;?
+Iran;1410;"Narmāšir (NAR)"
+Turkmenistan;1411;"Sarkhas (KH)"
+Afghanistan;1412;"Sakastan (N/S/SK/SKSTN)"
+Russia;2613;al-Bab
+Italy;2614;Caralis
+Algeria;2615;"Constantine in Numidia"
+Italy;2616;Ostia
+Italy;2617;"Treviso "
+Iraq;2618;Wāsiṭ
+Turkey;2619;Alexandretta
+Syria;3013;Rakkah
+France;3413;"Unknown (Southern Gaul)"
+(Any);3414;"Unknown (East Roman)"
+France;3415;"Arelato or Lugdunum"
+France;3813;"Unknown (Gaul)"
+(Any);4213;"Unknown (Roman)"
+(Any);4214;"Unknown (West Roman)"
+Italy;4613;"Unknown (Italy)"
+Syria;4614;"Unknown (Asia Minor)"
+"Saudi Arabia";4615;"Unknown (Balkans)"
+Italy;4616;"Gallic mint or Roma"
+(Any);5013;"Unknown (Palestine)"
+Iran;5014;"Unknown (Sasanian Empire)"
+(Any);5015;"Unknown (Palestine/Jordan)"
+Turkey;5016;"Unknown (al-Jazira)"
+Turkey;5017;"Unknown (Greater Syria)"
+Turkey;5018;"Unknown (North Syria)"
+Syria;5019;"Unknown (Umayyad)"
+Iraq;5413;al-Mawsil
+Turkey;5414;Sarmin
+Turkey;5415;Balih
+Russia;5416;Irminiya
+(Any);5813;Diocletianopolis
+Turkey;6213;"Jibrin (Uncertain)"
+Spain;6613;"Unknown (Iberia)"
+France;7013;Aballo
+France;7014;"Sagensis "
+Italy;7413;Luna
+France;7813;Armorica
+France;7814;Solimnli
+France;7815;Arelenco
+France;8213;"Solliaco Vici"
+France;8214;Bercillo
+France;8215;Cabanisio
+France;8613;Tidiricia
+France;8614;Teodericia
+France;9013;"Dufciaco Curte Sci Martin"
+France;9014;Novovico
+France;9015;Beliniancus
+France;9413;Theodeberciaco
+France;9415;"VTVAINOCA "
+France;9416;"Sci Martini Loco Teiaco"
+(Any);9422;Basniaco
+France;9816;Gavaronno
+Bulgaria;13413;Serdica
+Iran;13414;"Mah (MA/MA/DY)"
+Iran;13415;"Dinawar?/Dinar? (DYWAN/DYWAS/DYWAT)"
+Armenia;13416;"Armenia (ALM)"
+Italy;13417;Pentapolis
+France;13814;Vuicus
+France;14213;Eterales
+France;14214;Marcillaco
+France;14613;"Pagus Pruvinensis"
+France;15013;Rotomago
+France;15014;Vatunaco
+France;15015;"Noviomagus Veromanduorum"
+France;15413;Emuhliaco
+France;15414;Calanciaco
+France;15415;Corbulium
+France;15416;Cresciaco
+Switzerland;15813;Vindonissa
+France;15814;Alonum
+France;16213;Novovico
+France;16613;"Latona Vico"
+France;17013;"Niger locus"
+France;17014;Cerilia
+France;17413;Scola
+France;17414;Calmaciago
+France;17415;Sinemurum
+France;17813;Brilliaco
+Switzerland;18213;Urba
+France;18214;Luxovium
+France;18215;Closis
+France;18216;Palacio
+France;18613;Viskeriacum
+Spain;19013;Castalia
+France;19014;Caranciaco
+France;19413;Marcilia
+France;19414;"Armini Vici"
+Belgium;19813;Netis
+France;19814;Castriloci
+France;20213;Cariciacum
+France;20214;Locivelacoro
+France;20613;"Cambortese Pago"
+France;20614;Vindovera
+Germany;21013;Palatiolum
+France;21014;"Botanisat Vico"
+France;21015;"Domnus Germanus"
+France;21016;Camariacum
+France;21413;Epoissium
+France;21814;Crennom
+France;21815;"Inter Amnes"
+France;21816;Paternaco
+France;22213;"Castra Vetera?"
+France;22214;"Aquis Vico"
+France;22613;Fluriniacum
+France;23013;"Calonna Vicus "
+France;23014;"Anicium Vellavorum"
+France;23413;Ortus
+France;23414;Tremollo
+France;23813;Tergiliaco
+France;24213;Modeliacus
+France;24613;"Sugilione Vico"
+France;25013;Campaniaco
+France;25014;Sollonaco
+France;25015;Sailusacumen
+France;25413;Issunis
+Spain;25813;Arros
+France;25814;Monasterio
+France;25815;Condatomagus
+France;25816;Ebrora
+France;25817;Varinnieo
+France;25818;"Detarnaco Vico?"
+France;25819;"Gredonense castrum"
+France;26213;Argentomagus
+France;26214;Avennio
+France;26613;"Dea Vocontiorum"
+France;27013;Sabonarias
+France;27014;Tiverius
+France;27015;Eovoricum
+France;27016;Venisciaco
+France;27413;Graniaco
+France;27813;Parducio
+France;27814;Masiciacus
+France;27815;"Milico Vico"
+France;28213;Alsotea
+France;28613;Campaniaco
+France;28614;Sarama
+France;29013;"Vienna Vico"
+France;29413;Caturiges
+France;29813;"Pagus Wastinensis"
+France;29814;"Evauno Vici"
+France;29815;"Sanctus Medardus"
+France;29816;Silviaco
+India;30613;"Unknown (Southern India) "
+Netherlands;31013;Domburg
+"United Kingdom";31014;"Unknown (East Anglia)"
+Afghanistan;31413;"Zaranj (ZL)"
+Uzbekistan;31414;Maracanda
+Iran;31415;Rhagae
+Afghanistan;31813;Panjhīr
+Iran;32214;"Al- Sus"
+Iran;32215;"Al- Qaṣrān"
+Iran;32613;Abrashahr
+Djibouti;34213;Perusia
+Russia;34613;"AW/AR (?)"
+Somalia;35413;"Unknown (West Central Europe)"
+Sudan;35414;"Unknown (Eastern Central Mediterranean)"
+Egypt;35415;"Unknown (Eastern Mediterranean)"
+Yemen;35416;"Unknown (around the Adriatic)"
+"Saudi Arabia";35417;"Unknown (Propontis)"
+Egypt;35814;Fayyum
+Turkey;35815;al-Ma'arrah
+Sudan;36213;"Unknown (Africa)"
+Sudan;36613;"Unknown (Central Mediterranean)"
+"Saudi Arabia";36614;"Alexandria Troas"
+Sudan;36615;?
+Germany;37814;"Unknown (Germany)"
+Germany;37815;"Bad Sulza"
+Russia;38213;Arrān
+Ukraine;38214;al-Taymara
+Ukraine;38215;Dastawā
+Russia;38216;Qumis
+Ukraine;38217;Manadhir
+Ukraine;38218;Surraq
+Turkmenistan;38613;"Amul (AMW), Khorasan"
+Iran;38615;"Eran-asan-kar-Kawad?/Eran-win(n)ard-Kawad?/Eran-khwarrah-Yazdgerd? (AYL[later])"
+Iran;38616;"Eran-asan-kar-Kawad?/Eran-Khwarrah-Shapur? (AYLAN)"
+Iran;38617;"? (BŠHP/BŠHPW)"
+Iran;38618;"?, Fars (BWB)"
+Iran;39013;"Gahrum (GHL)"
+Iran;39014;"Ganj/Ganzak? (GNCKL)"
+Iran;39015;"Guwaim, Fars (GW[earlier]/GWDMY)"
+Iran;39016;"? (H)"
+Iran;39017;"Herat, Istakhr, Fars (HL[earlier])"
+Iraq;39018;"Al-Hira, Asuristan (HYL)"
+Iran;39019;"? (KWN BBA)"
+Afghanistan;39020;"Kholm (HLM)"
+Iran;39021;"Royan, Fars (LWD/LWDY)"
+Iran;39022;"? (NAL/WAL)"
+Iran;39023;"Purg (PW/PWLGY)"
+Iran;39024;"? (ŠLK)"
+Iran;39026;"? (WLC)"
+Iran;39027;"? (S)"
+China;40213;"Unknown (Northern Qi dynasty)"
+China;40613;"Unknown (Tang Dynasty)"
+China;41013;"Unknown (Sui Dynasty)"
+China;41014;"Unknown (Chinese)"
+China;41413;Gaochang
+Japan;41414;"Unknown (Japanese) "
+France;41813;Briodurum
+France;42213;Ivegio
+France;42613;Lexsovias
+France;42614;Orione
+Syria;43013;Pseudo-Damascus
+Syria;43014;"Al Wafa liLlah (الوفا للّه)"
+Iran;43413;"? (BNG)"
+Iran;43414;"? (ŠM)"
+(Any);43813;Saxobacio
+Iraq;44213;Abarqubadh
+Spain;44613;Al-Andalus
+Afghanistan;44614;Al-Mubaraka
+Iraq;44615;Al-Samiya
+Tunisia;45013;Ifrīqīya
+Iran;45014;Mahi
+Iraq;45413;"Madinat al-Salam"
+Iraq;45414;Al-Hashimiya
+Georgia;45813;"Unknown (Caucasus)"
+Syria;45814;Kinnasrin
+Russia;46213;Panticapaeum
+Georgia;46613;ZWZWN
+Iraq;47013;Al-Furat
+Afghanistan;47413;"Unknown (Nezak)"
+Iran;47414;"? (LYN)"
+Pakistan;47813;Taxila
+Afghanistan;47814;"Unknown Kushano-Sassanian mint (S. of Hindu Kush)"
+Pakistan;47815;"Unlocalized Kidarite Mint"
+Afghanistan;48613;"Unknown (Zabulistan)"
+Iran;49013;Sarahs
+Iraq;49014;"Khusrau-Shâdh Hurmuz"
+Turkmenistan;49413;"Unknown (Khwarazm)"
+Iraq;49813;Nahrbuq
+Afghanistan;50213;"Unknown (Hephthalite)"
+Uzbekistan;50613;"Unknown (Termiz)"
+Uzbekistan;51013;Bukhara
+Uzbekistan;51413;Chaganiyan
+Tajikistan;51813;"Unknown (Sogdian)"
+India;52213;"Unknown (India)"
+Afghanistan;52214;"Unknown (Kabulistan)"
+Pakistan;52613;"Unlocalized Alchon mint "
+Israel;53013;Ascalon
