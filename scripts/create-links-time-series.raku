@@ -10,7 +10,13 @@ for @coin-groups -> %coin-group {
                  mint => %coin-group<Mint_ID> );
     next if %coin-group<cg_start_year> eq "" || %coin-group<cg_end_year> eq "";
     if %coin-group<cg_start_year> == 0 {
-        %link<year> = %coin-group<cg_custom_start_century>*100-50;
+        if %coin-group<cg_custom_start_century> > 0 {
+            %link<year> = %coin-group<cg_custom_start_century>*100-50;
+        } elsif %coin-group<cg_custom_end_century> > 0 {
+            %link<year> = %coin-group<cg_custom_end_century>*100-50;
+        } else {
+            next;
+        }
     } else {
         %link<year> = %coin-group<cg_start_year> + floor( (%coin-group<cg_end_year> - %coin-group<cg_start_year>)/2 );
     }
