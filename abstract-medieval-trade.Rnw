@@ -8,7 +8,7 @@ Dept. of Computer Engineering, Automatics and Robotics + CITIC; University of Gr
 {\tt jmerelo@ugr.es}
 }
 
-\title{Finding changepoints in Medieval Mediterranean trade networks}
+\title{Finding changepoints in medieval Mediterranean trade networks}
 
 \abstract{
 <<statphys.abs, echo=FALSE, message=F, fig.height=4, fig.pos="h">>=
