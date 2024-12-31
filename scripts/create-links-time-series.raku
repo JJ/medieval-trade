@@ -9,9 +9,8 @@ for @coin-groups -> %coin-group {
     my %link = ( hoard => %coin-group<CoinFinding_ID>,
                  mint => %coin-group<Mint_ID> );
 
-    %link<year> = floor( (%coin-group<cg_end_year> - %coin-group<cg_start_year>)/2 );
-    say %link;
+    %link<year> = %coin-group<cg_start_year> + floor( (%coin-group<cg_end_year> - %coin-group<cg_start_year>)/2 );
     @links-out.push(%link);
 }
 
-csv( in => @links-out, out => "data/links-data.csv", sep => ";", headers => 'auto' );
+csv( in => @links-out, out => "data/links.csv", sep => ";", headers => 'auto' );
