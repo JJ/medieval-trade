@@ -1,0 +1,299 @@
+\NeedsTeXFormat{LaTeX2e}
+\DeclareCurrentRelease{latest}{2024-10-01}
+
+\RequirePackage[T1]{fontenc}
+\RequirePackage[utf8]{inputenc}
+
+\RequirePackage{expl3}
+\RequirePackage{xparse}
+\RequirePackage{etoolbox}
+\RequirePackage{xspace}
+\RequirePackage{xcolor}
+\RequirePackage[inline]{enumitem}
+
+\RequirePackage{geometry}
+\RequirePackage[numbers,sort&compress]{natbib}
+
+\RequirePackage{caption}
+\RequirePackage{graphicx}
+
+\ExplSyntaxOn
+\ProvidesExplPackage{statphys}{2024/10/01}{1.0.0}{Statphys29 Abstract Template --- SISSA Medialab s.r.l.}
+
+% [Cage]
+
+\setlength{\parindent}{0pt}
+\geometry{a4paper,footskip=55pt,left=30mm,right=20mm,top=20mm,bottom=30mm}
+\definecolor{statphys}{RGB}{22,36,107}
+
+% [Title]
+
+\tl_new:N \l_title_tl
+\msg_new:nnn {statphys-template} {title-repeated} {Macro~\title~used~twice.~Please~check.}
+
+\RenewDocumentCommand{\title}{m}{
+    \tl_if_empty:NTF \l_title_tl
+    {
+        \tl_set:Nn \l_title_tl {#1}
+    }
+    {
+        \msg_error:nn {statphys-template} {title-repeated}
+    }
+}
+
+\cs_new:Nn \l_fontTitle_cs:n {
+    {\sffamily\bfseries\boldmath\LARGE #1}
+}
+
+\cs_new:Nn \l_printTitle_cs:n {
+    \begin{minipage}[t][2.3cm]{\textwidth}
+        \l_fontTitle_cs:n {\l_title_tl\par}
+    \end{minipage}
+    \skip_vertical:n {10pt}
+    {\color{statphys}\rule{.6\textwidth}{3pt}\hspace{3pt}\rule{3pt}{3pt}}
+    \skip_vertical:n {10pt}
+}
+
+% [Abstract]
+
+\tl_new:N \l_abstract_tl
+\tl_set:Nn \l_abstractLabel_tl {ABSTRACT}
+\msg_new:nnn {statphys-template} {abstract-repeated} {Macro~\abstract~used~twice.~Please~check.}
+
+\NewDocumentCommand{\abstract}{+m}{
+    \tl_if_empty:NTF \l_abstract_tl
+    {
+        \tl_set:Nn \l_abstract_tl {{\sloppy #1}}
+    }
+    {
+        \msg_error:nn {statphys-template} {abstract-repeated}
+    }
+}
+
+\cs_new:Nn \l_fontAbstractLabel_cs:n {
+    {\bfseries\sffamily\small #1}
+}
+
+\cs_new:Nn \l_fontAbstract_cs:n {
+    {#1}
+}
+
+\cs_new:Nn \l_printAbstract_cs:n {
+    \l_fontAbstractLabel_cs:n {\color{statphys}\l_abstractLabel_tl\hspace{3pt}\rule{3pt}{3pt}}
+    \skip_vertical:n {3pt}
+    \l_fontAbstract_cs:n {\setlength{\parindent}{15pt}\noindent\l_abstract_tl\par}
+    \skip_vertical:n {10pt}
+}
+
+% [Author]
+
+\seq_new:N \l_authors_seq
+\bool_new:N \l_speaker_bool
+\clist_new:N \l_author_keys_list
+\msg_new:nnn {statphys-template} {speaker-repeated} {Only~one~speaker~can~be~set~via~*~in~\author~macro.~Please~check.}
+\msg_new:nnn {statphys-template} {speaker-mandatory} {One~speaker~must~be~set~via~*~in~\author~macro.~Please~check.}
+
+%% Parsing \author commands
+\RenewDocumentCommand{\author}{smm}{%
+    % usage: \author*{a,b}{A. Uthor}
+    % * stand for speaker
+    \seq_put_right:Nn \l_authors_seq
+    {
+        \tl_set:Nn \l_name_tl {#3}
+        \regex_replace_all:nnN { \s } { \cA\~ } \l_name_tl
+        \l_name_tl
+        \IfBooleanTF{#1}
+        {
+            $^{\ast,#2}$
+            \renewcommand{\thefootnote}{$\ast$}
+            \footnotetext{Presenting~author.}
+        }
+        {
+            $^{#2}$
+        }
+    }
+    \IfBooleanT{#1}
+    {
+        \IfBooleanT {\l_speaker_bool}
+        {
+            \msg_error:nn {statphys-template} {speaker-repeated}
+        }
+        \bool_set_true:N \l_speaker_bool
+    }
+    \clist_put_right:Nn \l_author_keys_list {#2}
+}
+
+\cs_new:Nn \l_fontAuthors_cs:n {
+    {\sffamily\bfseries\large #1}
+}
+
+\cs_new:Nn \l_printAuthors_cs:n {
+    \IfBooleanTF {\l_speaker_bool}
+    {
+        \l_fontAuthors_cs:n {\seq_use:Nn \l_authors_seq { ,~ } \par}
+    }
+    {
+        \msg_error:nn {statphys-template} {speaker-mandatory}
+    }
+}
+
+% [Affiliation]
+
+\seq_new:N \l_affiliations_seq
+\clist_new:N \l_affnote_keys_list
+\msg_new:nnn {statphys-template} {affiliation-keys} {Macro~\affiliation~with~empty~first~argument.~Please~check.}
+\msg_new:nnn {statphys-template} {affiliation-mandatory} {Macro~\affiliation~is~mandatory.~Please~check.}
+
+\NewDocumentCommand{\affiliation}{mm}{
+    \bool_if:nTF {\str_if_empty_p:n {#1}}
+    {
+        \msg_error:nn {statphys-template} {affiliation-keys}
+    }
+    {
+        \seq_put_right:Nn \l_affiliations_seq {\item[$^{#1}$] {#2}}
+        \clist_put_right:Nn \l_affnote_keys_list {#1}
+    }
+}
+
+\cs_new:Nn \l_fontAffiliations_cs:n {
+    {\itshape\small #1}
+}
+
+\cs_new:Nn \l_printAffiliation_cs:n {
+    \seq_if_empty:NTF \l_affiliations_seq
+    {
+        \msg_error:nn {statphys-template} {affiliation-mandatory}
+    }
+    {
+        \l_fontAffiliations_cs:n {\begin{enumerate}[leftmargin=5pt,
+                                    itemsep=-2pt,
+                                    labelsep=0pt,
+                                    parsep=5pt]
+                                    \seq_use:Nn \l_affiliations_seq { }
+                                    \end{enumerate}}
+        \skip_vertical:n {5pt}
+    }
+}
+
+
+\msg_new:nnn {statphys-template} {keys-check} {Key~[#1]~used~for~#2~has~not~been~used~or~declared.}
+\msg_new:nnn {statphys-template} {keys-repeated-check} {An~affiliation~key~is~used~multiple~times.~Please~check.}
+
+\cs_new:Nn \l_check_author_keys_cs:n {
+    \clist_remove_duplicates:N \l_author_keys_list
+    \clist_map_inline:Nn \l_affnote_keys_list {
+        \clist_if_in:NnTF \l_author_keys_list {##1}
+        { }
+        {
+            \msg_error:nnnn {statphys-template} {keys-check} {##1} {affiliation}
+        }
+    }
+    \clist_map_inline:Nn \l_author_keys_list {
+        \clist_if_in:NnTF \l_affnote_keys_list {##1}
+        { }
+        {
+            \msg_error:nnnn {statphys-template} {keys-check} {##1} {author}
+        }
+    }
+    \clist_new:N \l_affnote_unikeys_list
+    \clist_set_eq:NN \l_affnote_unikeys_list \l_affnote_keys_list 
+    \clist_remove_duplicates:N \l_affnote_unikeys_list
+    \int_compare:nNnTF {\clist_count:N \l_affnote_keys_list} = {\clist_count:N \l_affnote_unikeys_list}
+    { }
+    {
+        \msg_error:nn {statphys-template} {keys-repeated-check}
+    }
+}
+
+
+% [Keyword]
+
+\tl_new:N \l_keywords_tl
+\tl_set:Nn \l_keywordsLabel_tl {KEYWORDS}
+\msg_new:nnn {statphys-template} {keywords-repeated} {Macro~\keywords~used~twice.~Please~check.}
+
+\NewDocumentCommand{\keywords}{m}{
+    \tl_if_empty:NTF \l_keywords_tl
+    {
+        \tl_set:Nn \l_keywords_tl {\sloppy #1}
+    }
+    {
+        \msg_error:nn {statphys-template} {keywords-repeated}
+    }
+}
+
+\cs_new:Nn \l_fontKeywordsLabel_cs:n {
+    {\bfseries\sffamily\small #1}
+}
+
+\cs_new:Nn \l_fontKeywords_cs:n {
+    {#1}
+}
+
+
+\cs_new:Nn \l_printKeywords_cs:n {
+    \tl_if_empty:NTF \l_keywords_tl
+    { }
+    {
+        \l_fontKeywordsLabel_cs:n {\color{statphys}\l_keywordsLabel_tl\hspace{3pt}\rule{3pt}{3pt}}
+        \skip_vertical:n {3pt}
+        \l_fontKeywords_cs:n {\l_keywords_tl\par}
+        \skip_vertical:n {10pt}
+    }
+}
+
+% [Frontpage]
+
+\RenewDocumentCommand{\maketitle}{}{
+    \l_printTitle_cs:n {}
+    \l_printAuthors_cs:n {}
+    \l_printAffiliation_cs:n {}
+    \l_printAbstract_cs:n {}
+    \l_printKeywords_cs:n {}
+    \l_check_author_keys_cs:n {}
+}
+
+\AfterEndPreamble{
+    \pagestyle{empty}
+    \maketitle
+}
+
+% [Bibliography]
+
+\tl_set:Nn \l_bibliographyLabel_tl {REFERENCES}
+
+\cs_new:Nn \l_fontBibliographyLabel_cs:n {
+    {\bfseries\sffamily\small #1}
+}
+
+\RenewDocumentCommand{\bibsection}{}{
+    \vspace{3pt}
+    \l_fontBibliographyLabel_cs:n {\color{statphys}REFERENCES\hspace{3pt}\rule{3pt}{3pt}}
+    \vspace{-3pt}
+}
+
+\RenewDocumentCommand{\bibfont}{}{
+    \small
+}
+
+\RenewDocumentCommand{\bibnumfmt}{m}{
+    {\color{statphys}[\textbf{#1}]}
+}
+
+\setlength{\bibsep}{3pt}
+
+% [Footnote]
+
+\renewcommand{\footnoterule}{%
+    \vspace{3pt}
+    {\color{statphys}\rule{0.25\textwidth}{1pt}\hspace{3pt}\rule{1pt}{1pt}}
+    \vspace{3pt}
+}
+
+% Floats
+
+\captionsetup[table]{name=Table,labelformat=simple,labelfont=sc,labelsep=period,font=small}
+\captionsetup[figure]{name=Figure,labelformat=simple,labelfont=sc,labelsep=period,font=small}
+
+
+\ExplSyntaxOff
