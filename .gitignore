@@ -8,5 +8,11 @@ lib/.precomp
 # emacs
 *~
 
-#Rstudio
+# Rstudio
 *.Rproj*
+
+# Latex
+*.tex
+*.log
+*.pdf
+*.synctex.gz
