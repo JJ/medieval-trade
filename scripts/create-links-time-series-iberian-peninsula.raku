@@ -9,15 +9,13 @@ my $iberian-mints = Set.new( @mints.map( { $_<ID> } ) );
 
 my %mint-locations = @mints.map( { $_<ID> => $_<location_title> } ).flat;
 
-say %mint-locations;
-
 my @links-out;
 for @coin-groups -> %coin-group {
     next if %coin-group<Mint_ID> ∉ $iberian-mints;
     next if %coin-group<cg_start_year> eq "" || %coin-group<cg_end_year> eq "";
 
     my %link = ( hoard => %coin-group<CoinFinding_ID>,
-                 mint => %coin-group<> );
+                 mint => %mint-locations{ %coin-group<Mint_ID> });
     if %coin-group<cg_start_year> == 0 {
         if %coin-group<cg_custom_start_century> > 0 {
             %link<year> = %coin-group<cg_custom_start_century>*100-50;
