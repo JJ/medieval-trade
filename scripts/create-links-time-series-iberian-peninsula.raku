@@ -35,4 +35,4 @@ for @coin-groups -> %coin-group {
     @links-out.push(%link);
 }
 
-csv( in => @links-out, out => "data/links.csv", sep => ";", headers => 'auto' );
+csv( in => @links-out, out => "data/iberian-links.csv", sep => ";", headers => 'auto' );
