@@ -16,3 +16,4 @@ lib/.precomp
 *.log
 *.pdf
 *.synctex.gz
+.Rhistory
