@@ -17,3 +17,4 @@ lib/.precomp
 *.pdf
 *.synctex.gz
 .Rhistory
+.Rproj.user
