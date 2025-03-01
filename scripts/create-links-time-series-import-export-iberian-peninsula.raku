@@ -18,11 +18,10 @@ my %finding-locations = @all-findings.map( { $_<ID> => $_<cf_custom_place_name> 
 
 my @links-out;
 for @coin-groups -> %coin-group {
-    next unless %coin-group<CoinFinding_ID> ne "";
     next if %coin-group<cg_start_year> eq "" || %coin-group<cg_end_year> eq "";
     next unless %coin-group<Mint_ID> ∈ $iberian-mints || %coin-group<CoinFinding_ID> ∈ $iberian-findings;
 
-    my %link = ( hoard => %finding-locations{ %coin-group<CoinFinding_ID> // "Unknown hoard" },
+    my %link = ( hoard => %finding-locations{ %coin-group<CoinFinding_ID> } // "Unknown hoard",
                  mint => %mint-locations{ %coin-group<Mint_ID> } // "Unknown mintner");
     if %coin-group<cg_start_year> == 0 {
         if %coin-group<cg_custom_start_century> > 0 {
