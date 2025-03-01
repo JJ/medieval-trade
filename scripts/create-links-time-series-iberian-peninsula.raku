@@ -10,7 +10,7 @@ my %mint-locations = @mints.map( { $_<ID> => $_<location_title> } ).flat;
 
 my @findings = csv(in => 'data-raw/flame-database-last-version-coin-findings-iberian-peninsula.csv', headers => 'auto', sep=>";");
 my $iberian-findings = Set.new( @findings.map( { $_<ID> } ) );
-my %finding-locations = @findings.map( { $_<ID> => $_<cf_custom_place_name> } ).flat;
+my %finding-locations = @findings.map( { $_<ID> => $_<cf_custom_place_name> ?? $_<cf_custom_place_name> !! $_<cf_name> } ).flat;
 
 
 my @links-out;
