@@ -19,3 +19,5 @@ lib/.precomp
 .Rhistory
 .Rproj.user
 auto/
+
+.RData
