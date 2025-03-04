@@ -10,6 +10,16 @@ my %mint-end;
 for @coin-groups -> %group {
     next unless %group<Mint_ID>;
     my $mint = %group<Mint_ID>;
+
+    next if %group<cg_start_year> eq "" && %group<cg_end_year> eq "";
+
+    if %group<cg_start_year> eq "" {
+        %group<cg_start_year> = %group<cg_end_year>;
+    }
+
+    if %group<cg_end_year> eq "" {
+        %group<cg_end_year> = %group<cg_start_year>;
+    }
     if %mint-start{$mint}:!exists {
         %mint-start{$mint} = %group<cg_start_year>;
     } elsif %mint-start{$mint} > %group<cg_start_year> {
