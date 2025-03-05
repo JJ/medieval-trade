@@ -2,7 +2,7 @@
 %  For support, please attach all files needed for compiling as well as the log file, and specify your operating system, LaTeX version, and LaTeX editor.
 
 %=================================================================
-\documentclass[journal,article,submit,pdftex,moreauthors]{Definitions/mdpi}
+\documentclass[histories,article,submit,pdftex,moreauthors]{Definitions/mdpi}
 %\documentclass[preprints,article,submit,pdftex,moreauthors]{Definitions/mdpi}
 % For posting an early version of this manuscript as a preprint, you may use "preprints" as the journal. Changing "submit" to "accept" before posting will remove line numbers.
 
@@ -71,13 +71,8 @@
 % Add packages and commands here. The following packages are loaded in our class file: fontenc, inputenc, calc, indentfirst, fancyhdr, graphicx, epstopdf, lastpage, ifthen, float, amsmath, amssymb, lineno, setspace, enumitem, mathpazo, booktabs, titlesec, etoolbox, tabto, xcolor, colortbl, soul, multirow, microtype, tikz, totcount, changepage, attrib, upgreek, array, tabularx, pbox, ragged2e, tocloft, marginnote, marginfix, enotez, amsthm, natbib, hyperref, cleveref, scrextend, url, geometry, newfloat, caption, draftwatermark, seqsplit
 % cleveref: load \crefname definitions after \begin{document}
 
-%=================================================================
-% Please use the following mathematics environments: Theorem, Lemma, Corollary, Proposition, Characterization, Property, Problem, Example, ExamplesandDefinitions, Hypothesis, Remark, Definition, Notation, Assumption
-%% For proofs, please use the proof environment (the amsthm package is loaded by the MDPI class).
-
-%=================================================================
 % Full title of the paper (Capitalized)
-\Title{Title}
+\Title{Before the collapse: analyzing changes of economic regime in the Iberian peninsula using change point detection methods}
 
 % MDPI internal command: Title for citation in the left column
 \TitleCitation{Title}
@@ -207,176 +202,33 @@ The template details the sections that can be used in a manuscript. Note that th
 
 As the main base for this paper, we have used the FLAMES (Framing the Late Antique and early Medieval Economy) database, which is available from \url{https://coinage.princeton.edu}, in its January 2023 version. This project has published a series of datasets that contain information on coin hoards found all over the world, and spans from the 4th to the 8th century.
 
-We will focus on the Iberian peninsula and the two countries with hoards, Spain and Portugal\footnote{There are no hoards found in Andorra or in the colony of Gibraltar.}.
+We will focus on the Iberian peninsula and the two countries with hoards, Spain and Portugal\endnote{There are no hoards found in Andorra or in the colony of Gibraltar.}.
 
 Any archaeological dataset is a sample of all possible data, and will probably have some biases, as revealed by \cite{rademacher2024data}. Certainly, those countries that are more urbanized will have found more coin hoards than those that are sparsely populated. In that paper, Spain has 36\% of sites with a numismatic rating of "Good" or better, over 461 hoards that have been found; it is among the 4 countries that have been described in the paper as good data quality (\cite{rademacher2024data}, caption to Table 1)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Results}
 
-This section may be divided by subheadings. It should provide a concise and precise description of the experimental results, their interpretation as well as the experimental conclusions that can be drawn.
-\subsection{Subsection}
-\subsubsection{Subsubsection}
+% This section may be divided by subheadings. It should provide a concise and precise description of the experimental results, their interpretation as well as the experimental conclusions that can be drawn.
+% \subsection{Subsection}
+% \subsubsection{Subsubsection}
+%
+% Bulleted lists look like this:
+% \begin{itemize}
+% \item	First bullet;
+% \item	Second bullet;
+% \item	Third bullet.
+% \end{itemize}
+%
+% Numbered lists can be added as follows:
+% \begin{enumerate}
+% \item	First item;
+% \item	Second item;
+% \item	Third item.
+% \end{enumerate}
+%
+% The text continues here.
 
-Bulleted lists look like this:
-\begin{itemize}
-\item	First bullet;
-\item	Second bullet;
-\item	Third bullet.
-\end{itemize}
-
-Numbered lists can be added as follows:
-\begin{enumerate}
-\item	First item;
-\item	Second item;
-\item	Third item.
-\end{enumerate}
-
-The text continues here.
-
-\subsection{Figures, Tables and Schemes}
-
-All figures and tables should be cited in the main text as Figure~\ref{fig1}, Table~\ref{tab1}, etc.
-
-\begin{figure}[H]
-%\isPreprints{\centering}{} % Only used for preprints
-\includegraphics[width=7 cm]{Definitions/logo-mdpi}
-\caption{This is a figure. Schemes follow the same formatting.\label{fig1}}
-\end{figure}
-\unskip
-
-\begin{table}[H]
-%\small % Change table font size
-\caption{This is a table caption. Tables should be placed in the main text near to the first time they are~cited.\label{tab1}}
-%\isPreprints{\centering}{} % Only used for preprints
-\begin{tabularx}{\textwidth}{CCC}
-\toprule
-\textbf{Title 1}	& \textbf{Title 2}	& \textbf{Title 3}\\
-\midrule
-Entry 1		& Data			& Data\\
-Entry 2		& Data			& Data \textsuperscript{1}\\
-\bottomrule
-\end{tabularx}
-
-\noindent{\footnotesize{\textsuperscript{1} Tables may have a footer.}}
-\end{table}
-
-The text continues here (Figure~\ref{fig2} and Table~\ref{tab2}).
-
-% Example of a figure that spans the whole page width and with subfigures. The same concept works for tables, too.
-\begin{figure}[H]
-\centering
-%\isPreprints{}{% This command is only used for ``preprints''.
-\begin{adjustwidth}{-\extralength}{0cm}
-%} % If the paper is ``preprints'', please uncomment this parenthesis.
-\subfloat[\centering]{\includegraphics[width=7.7cm]{Definitions/logo-mdpi}}
-\hfill
-\subfloat[\centering]{\includegraphics[width=7.7cm]{Definitions/logo-mdpi}}\\
-\subfloat[\centering]{\includegraphics[width=7.7cm]{Definitions/logo-mdpi}}
-\hfill
-\subfloat[\centering]{\includegraphics[width=7.7cm]{Definitions/logo-mdpi}}
-%\isPreprints{}{% This command is only used for ``preprints''.
-\end{adjustwidth}
-%} % If the paper is ``preprints'', please uncomment this parenthesis.
-\caption{This is a wide figure. Schemes follow the same formatting. If there are multiple panels, they should be listed as: (\textbf{a}) Description of what is contained in the first panel. (\textbf{b}) Description of what is contained in the second panel. (\textbf{c}) Description of what is contained in the third panel. (\textbf{d}) Description of what is contained in the fourth panel. Figures should be placed in the main text near to the first time they are cited. A caption on a single line should be centered.\label{fig2}}
-\end{figure}
-
-\begin{table}[H]
-\caption{This is a wide table.\label{tab2}}
-%\isPreprints{\centering}{% This command is only used for ``preprints''.
-	\begin{adjustwidth}{-\extralength}{0cm}
-%} % If the paper is ``preprints'', please uncomment this parenthesis.
-%\isPreprints{\begin{tabularx}{\textwidth}{CCCC}}{% This command is only used for ``preprints''.
-		\begin{tabularx}{\fulllength}{CCCC}
-%} % If the paper is ``preprints'', please uncomment this parenthesis.
-			\toprule
-			\textbf{Title 1}	& \textbf{Title 2}	& \textbf{Title 3}     & \textbf{Title 4}\\
-			\midrule
-\multirow[m]{3}{*}{Entry 1 *}	& Data			& Data			& Data\\
-			  	                   & Data			& Data			& Data\\
-			             	      & Data			& Data			& Data\\
-                   \midrule
-\multirow[m]{3}{*}{Entry 2}    & Data			& Data			& Data\\
-			  	                  & Data			& Data			& Data\\
-			             	     & Data			& Data			& Data\\
-			\bottomrule
-		\end{tabularx}
-%		\isPreprints{}{% This command is only used for ``preprints''.
-	\end{adjustwidth}
-%} % If the paper is ``preprints'', please uncomment this parenthesis.
-	\noindent{\footnotesize{* Tables may have a footer.}}
-\end{table}
-
-%\begin{listing}[H]
-%\caption{Title of the listing}
-%\rule{\columnwidth}{1pt}
-%\raggedright Text of the listing. In font size footnotesize, small, or normalsize. Preferred format: left aligned and single spaced. Preferred border format: top border line and bottom border line.
-%\rule{\columnwidth}{1pt}
-%\end{listing}
-
-Text.
-
-Text.
-
-\subsection{Formatting of Mathematical Components}
-
-This is the example 1 of equation:
-\begin{linenomath}
-\begin{equation}
-a = 1,
-\end{equation}
-\end{linenomath}
-the text following an equation need not be a new paragraph. Please punctuate equations as regular text.
-%% If the documentclass option "submit" is chosen, please insert a blank line before and after any math environment (equation and eqnarray environments). This ensures correct linenumbering. The blank line should be removed when the documentclass option is changed to "accept" because the text following an equation should not be a new paragraph.
-
-This is the example 2 of equation:
-%\isPreprints{}{% This command is only used for ``preprints''.
-\begin{adjustwidth}{-\extralength}{0cm}
-%} % If the paper is ``preprints'', please uncomment this parenthesis.
-\begin{equation}
-a = b + c + d + e + f + g + h + i + j + k + l + m + n + o + p + q + r + s + t + u + v + w + x + y + z
-\end{equation}
-%\isPreprints{}{% This command is only used for ``preprints''.
-\end{adjustwidth}
-%} % If the paper is ``preprints'', please uncomment this parenthesis.
-
-%% Example of a page in landscape format (with table and table footnote).
-%\startlandscape
-%\begin{table}[H] %% Table in wide page
-%%\isPreprints{\centering}{} % This command is only used for ``preprints''.
-%\caption{This is a very wide table.\label{tab3}}
-%	\begin{tabularx}{\textwidth}{CCCC}
-%		\toprule
-%		\textbf{Title 1}	& \textbf{Title 2}	& \textbf{Title 3}	& \textbf{Title 4}\\
-%		\midrule
-%		Entry 1		& Data			& Data			& This cell has some longer content that runs over two lines.\\
-%		Entry 2		& Data			& Data			& Data\textsuperscript{1}\\
-%		\bottomrule
-%	\end{tabularx}
-%%\isPreprints{}{% This command is only used for ``preprints''.
-%	\begin{adjustwidth}{+\extralength}{0cm}
-%%} % If the paper is ``preprints'', please uncomment this parenthesis.
-%		\noindent\footnotesize{\textsuperscript{1} This is a table footnote.}
-%%\isPreprints{}{% This command is only used for ``preprints''.
-%	\end{adjustwidth}
-%%} % If the paper is ``preprints'', please uncomment this parenthesis.
-%\end{table}
-%\finishlandscape
-
-
-Please punctuate equations as regular text. Theorem-type environments (including propositions, lemmas, corollaries etc.) can be formatted as follows:
-%% Example of a theorem:
-\begin{Theorem}
-Example text of a theorem.
-\end{Theorem}
-
-The text continues here. Proofs must be formatted as follows:
-
-%% Example of a proof:
-\begin{proof}[Proof of Theorem 1]
-Text of the proof. Note that the phrase ``of Theorem 1'' is optional if it is clear which theorem is being referred to.
-\end{proof}
-The text continues here.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Discussion}
@@ -499,7 +351,7 @@ All appendix sections must be cited in the main text. In the appendices, Figures
 %\isPreprints{}{% This command is only used for ``preprints''.
 \begin{adjustwidth}{-\extralength}{0cm}
 %} % If the paper is ``preprints'', please uncomment this parenthesis.
-%\printendnotes[custom] % Un-comment to print a list of endnotes
+\printendnotes[custom] % Un-comment to print a list of endnotes
 
 \reftitle{References}
 
@@ -509,117 +361,9 @@ All appendix sections must be cited in the main text. In the appendices, Figures
 %=====================================
 % References, variant A: external bibliography
 %=====================================
-% \bibliography{your_external_BibTeX_file}
+\bibliography{trade-early-medieval}
 
-%=====================================
-% References, variant B: internal bibliography
-%=====================================
 
-% ACS format
-\isAPAandChicago{}{%
-\begin{thebibliography}{999}
-% Reference 1
-\bibitem[Author1(year)]{ref-journal}
-Author~1, T. The title of the cited article. {\em Journal Abbreviation} {\bf 2008}, {\em 10}, 142--149.
-% Reference 2
-\bibitem[Author2(year)]{ref-book1}
-Author~2, L. The title of the cited contribution. In {\em The Book Title}; Editor 1, F., Editor 2, A., Eds.; Publishing House: City, Country, 2007; pp. 32--58.
-% Reference 3
-\bibitem[Author1 and Author2 (year)]{ref-book2}
-Author 1, A.; Author 2, B. \textit{Book Title}, 3rd ed.; Publisher: Publisher Location, Country, 2008; pp. 154--196.
-% Reference 4
-\bibitem[Author4(year)]{ref-unpublish}
-Author 1, A.B.; Author 2, C. Title of Unpublished Work. \textit{Abbreviated Journal Name} year, \textit{phrase indicating stage of publication (submitted; accepted; in press)}.
-% Reference 5
-\bibitem[Author8(year)]{ref-url}
-Title of Site. Available online: URL (accessed on Day Month Year).
-% Reference 6
-\bibitem[Author6(year)]{ref-proceeding}
-Author 1, A.B.; Author 2, C.D.; Author 3, E.F. Title of presentation. In Proceedings of the Name of the Conference, Location of Conference, Country, Date of Conference (Day Month Year); Abstract Number (optional), Pagination (optional).
-% Reference 7
-\bibitem[Author7(year)]{ref-thesis}
-Author 1, A.B. Title of Thesis. Level of Thesis, Degree-Granting University, Location of University, Date of Completion.
-\end{thebibliography}
-}
-
-% Chicago format (Used for journal: arts, genealogy, histories, humanities, jintelligence, laws, literature, religions, risks, socsci)
-\isChicagoStyle{%
-\begin{thebibliography}{999}
-% Reference 1
-\bibitem[Aranceta-Bartrina(1999a)]{ref-journal}
-Aranceta-Bartrina, Javier. 1999a. Title of the cited article. \textit{Journal Title} 6: 100--10.
-% Reference 2
-\bibitem[Aranceta-Bartrina(1999b)]{ref-book1}
-Aranceta-Bartrina, Javier. 1999b. Title of the chapter. In \textit{Book Title}, 2nd ed. Edited by Editor 1 and Editor 2. Publication place: Publisher, vol. 3, pp. 54–96.
-% Reference 3
-\bibitem[Baranwal and Munteanu {[1921]}(1955)]{ref-book2}
-Baranwal, Ajay K., and Costea Munteanu. 1955. \textit{Book Title}. Publication place: Publisher, pp. 154--96. First published 1921 (op-tional).
-% Reference 4
-\bibitem[Berry and Smith(1999)]{ref-thesis}
-Berry, Evan, and Amy M. Smith. 1999. Title of Thesis. Level of Thesis, Degree-Granting University, City, Country. Identifi-cation information (if available).
-% Reference 5
-\bibitem[Cojocaru et al.(1999)]{ref-unpublish}
-Cojocaru, Ludmila, Dragos Constatin Sanda, and Eun Kyeong Yun. 1999. Title of Unpublished Work. \textit{Journal Title}, phrase indicating stage of publication.
-% Reference 6
-\bibitem[Driver et al.(2000)]{ref-proceeding}
-Driver, John P., Steffen Rohrs, and Sean Meighoo. 2000. Title of Presentation. In \textit{Title of the Collected Work} (if available). Paper presented at Name of the Conference, Location of Conference, Date of Conference.
-% Reference 7
-\bibitem[Harwood(2008)]{ref-url}
-Harwood, John. 2008. Title of the cited article. Available online: URL (accessed on Day Month Year).
-\end{thebibliography}
-}{}
-
-% APA format (Used for journal: admsci, behavsci, businesses, econometrics, economies, education, ejihpe, games, humans, ijfs, journalmedia, jrfm, languages, psycholint, publications, tourismhosp, youth)
-\isAPAStyle{%
-\begin{thebibliography}{999}
-% Reference 1
-\bibitem[\protect\citeauthoryear{Azikiwe \BBA\ Bello}{{2020a}}]{ref-journal}
-Azikiwe, H., \& Bello, A. (2020a). Title of the cited article. \textit{Journal Title}, \textit{Volume}(Issue),
-Firstpage--Lastpage/Article Number.
-% Reference 2
-\bibitem[\protect\citeauthoryear{Azikiwe \BBA\ Bello}{{2020b}}]{ref-book1}
-Azikiwe, H., \& Bello, A. (2020b). \textit{Book title}. Publisher Name.
-% Reference 3
-\bibitem[Davison(1623/2019)]{ref-book2}
-Davison, T. E. (2019). Title of the book chapter. In A. A. Editor (Ed.), \textit{Title of the book: Subtitle}
-(pp. Firstpage--Lastpage). Publisher Name. (Original work published 1623) (Optional).
-% Reference 4
-\bibitem[Fistek et al.(2017)]{ref-proceeding}
-Fistek, A., Jester, E., \& Sonnenberg, K. (2017, Month Day). Title of contribution [Type of contribution]. Conference Name, Conference City, Conference Country.
-% Reference 5
-\bibitem[Hutcheson(2012)]{ref-thesis}
-Hutcheson, V. H. (2012). \textit{Title of the thesis} [XX Thesis, Name of Institution Awarding the Degree].
-% Reference 6
-\bibitem[Lippincott \& Poindexter(2019)]{ref-unpublish}
-Lippincott, T., \& Poindexter, E. K. (2019). \textit{Title of the unpublished manuscript} [Unpublished manuscript/Manuscript in prepara-tion/Manuscript submitted for publication]. Department Name, Institution Name.
-% Reference 7
-\bibitem[Harwood(2008)]{ref-url}
-Harwood, J. (2008). \textit{Title of the cited article}. Available online: URL (accessed on Day Month Year).
-\end{thebibliography}
-}{}
-
-% If authors have biography, please use the format below
-%\section*{Short Biography of Authors}
-%\bio
-%{\raisebox{-0.35cm}{\includegraphics[width=3.5cm,height=5.3cm,clip,keepaspectratio]{Definitions/author1.pdf}}}
-%{\textbf{Firstname Lastname} Biography of first author}
-%
-%\bio
-%{\raisebox{-0.35cm}{\includegraphics[width=3.5cm,height=5.3cm,clip,keepaspectratio]{Definitions/author2.jpg}}}
-%{\textbf{Firstname Lastname} Biography of second author}
-
-% For the MDPI journals use author-date citation, please follow the formatting guidelines on http://www.mdpi.com/authors/references
-% To cite two works by the same author: \citeauthor{ref-journal-1a} (\citeyear{ref-journal-1a}, \citeyear{ref-journal-1b}). This produces: Whittaker (1967, 1975)
-% To cite two works by the same author with specific pages: \citeauthor{ref-journal-3a} (\citeyear{ref-journal-3a}, p. 328; \citeyear{ref-journal-3b}, p.475). This produces: Wong (1999, p. 328; 2000, p. 475)
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% for journal Sci
-%\reviewreports{\\
-%Reviewer 1 comments and authors’ response\\
-%Reviewer 2 comments and authors’ response\\
-%Reviewer 3 comments and authors’ response
-%}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \PublishersNote{}
 %\isPreprints{}{% This command is only used for ``preprints''.
 \end{adjustwidth}
