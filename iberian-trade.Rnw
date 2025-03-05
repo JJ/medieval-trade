@@ -36,9 +36,9 @@
 \TitleCitation{Before the collapse}
 
 % Author Orchid ID: enter ID or remove command
-\newcommand{\orcidauthorA}{0000-0000-0000-000X} % Add \orcidA{} behind the author's name
+\newcommand{\orcidauthorA}{0000-0002-1385-9741} % Add \orcidA{} behind the author's name
 
-% \Author{Juan J. Merelo-Guervós $^{1,\dagger}$\orcidA{}}
+\Author{Juan J. Merelo-Guervós $^{1,\dagger}$\orcidA{}}
 
 \AuthorNames{Merelo-Guervós, Juan J.}
 
