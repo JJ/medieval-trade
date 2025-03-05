@@ -76,10 +76,6 @@ $^{1}$ \quad Department of Computer Engineering, Automatics and Robotics, Univer
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Materials and Methods}
 
-% Materials and Methods should be described with sufficient details to allow others to replicate and build on published results. Please note that publication of your manuscript implicates that you must make all materials, data, computer code, and protocols associated with the publication available to readers. Please disclose at the submission stage any restrictions on the availability of materials or information. New methods and protocols should be described in detail while well-established methods can be briefly described and appropriately cited.
-
-% Research manuscripts reporting large datasets that are deposited in a publicly avail-able database should specify where the data have been deposited and provide the relevant accession numbers. If the accession numbers have not yet been obtained at the time of submission, please state that they will be provided during review. They must be provided prior to publication.
-
 We have used the FLAMES (Framing the Late Antique and early Medieval Economy) database As the main base for this paper, in its January 2023 version, which is available from \url{https://coinage.princeton.edu}. This project has published a series of datasets that contain information on coin hoards found all over the world, and spans from the 4th to the 8th century.
 
 We will focus on the Iberian peninsula and the two countries with hoards, Spain and Portugal\endnote{There are no hoards found in Andorra or in the colony of Gibraltar.}.
