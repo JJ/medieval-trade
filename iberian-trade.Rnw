@@ -41,12 +41,8 @@
 
 % Author Orchid ID: enter ID or remove command
 \newcommand{\orcidauthorA}{0000-0000-0000-000X} % Add \orcidA{} behind the author's name
-%\newcommand{\orcidauthorB}{0000-0000-0000-000X} % Add \orcidB{} behind the author's name
 
-% Authors, for the paper (add full first names)
-\Author{Juan J. Merelo-Guervós $^{1,\dagger}$\orcidA{}}
-
-%\longauthorlist{yes}
+% \Author{Juan J. Merelo-Guervós $^{1,\dagger}$\orcidA{}}
 
 \AuthorNames{Merelo-Guervós, Juan J.}
 
@@ -56,12 +52,7 @@
 $^{1}$ \quad Department of Computer Engineering, Automatics and Robotics, University of Granada, Granada, Spain; jmerelo@ugr.es
 }
 
-% Contact information of the corresponding author
 \corres{Correspondence: jmerelo@ugr.es}
-
-%\simplesumm{} % Simple summary
-
-%\conference{} % An extended version of a conference paper
 
 % Abstract (Do not insert blank lines, i.e. \\)
 \abstract{A single paragraph of about 200 words maximum. For research articles, abstracts should give a pertinent overview of the work. We strongly encourage authors to use the following style of structured abstracts, but without headings: (1) Background: place the question addressed in a broad context and highlight the purpose of the study; (2) Methods: describe briefly the main methods or treatments applied; (3) Results: summarize the article's main findings; (4) Conclusions: indicate the main conclusions or interpretations. The abstract should be an objective representation of the article, it must not contain results which are not presented and substantiated in the main text and should not exaggerate the main conclusions.}
