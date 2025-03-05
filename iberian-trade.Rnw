@@ -205,6 +205,11 @@ The template details the sections that can be used in a manuscript. Note that th
 
 % Research manuscripts reporting large datasets that are deposited in a publicly avail-able database should specify where the data have been deposited and provide the relevant accession numbers. If the accession numbers have not yet been obtained at the time of submission, please state that they will be provided during review. They must be provided prior to publication.
 
+As the main base for this paper, we have used the FLAMES (Framing the Late Antique and early Medieval Economy) database, which is available from \url{https://coinage.princeton.edu}, in its January 2023 version. This project has published a series of datasets that contain information on coin hoards found all over the world, and spans from the 4th to the 8th century.
+
+We will focus on the Iberian peninsula and the two countries with hoards, Spain and Portugal\footnote{There are no hoards found in Andorra or in the colony of Gibraltar.}.
+
+Any archaeological dataset is a sample of all possible data, and will probably have some biases, as revealed by \cite{rademacher2024data}. Certainly, those countries that are more urbanized will have found more coin hoards than those that are sparsely populated. In that paper, Spain has 36\% of sites with a numismatic rating of "Good" or better, over 461 hoards that have been found; it is among the 4 countries that have been described in the paper as good data quality (\cite{rademacher2024data}, caption to Table 1)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Results}
