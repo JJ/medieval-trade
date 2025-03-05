@@ -8,5 +8,5 @@ library(ggplot2)
 
 ggplot(pollution_links,aes(x=averagePg,y=n))+geom_point()
 
-model <- lm(n ~ averagePg, data=pollution_links)
+model <- glm(n ~ averagePg, data=pollution_links)
 summary(model)
