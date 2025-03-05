@@ -90,7 +90,7 @@ in Portugal and Spain urban hoards more often have a high data
 quality.
 \end{verbatim}
 
-So this gived the subset of the original dataset we are using enough validity to be able to draw some conclusions from its statistical analysis.
+So this gives the subset of the original dataset we are using enough validity to be able to draw some conclusions from its statistical analysis.
 
 
 
