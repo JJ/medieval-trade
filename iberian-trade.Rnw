@@ -91,6 +91,10 @@ So this gives the subset of the original dataset we are using enough validity to
 \subsection{Dataset processing}
 \label{ssec:processing}
 
+The FLAMES datasets include many different files. We have used three of them\begin
+{itemize}
+\item {\bf Coin groups}, which contains individual information on the group of coins found in every hoard and the mint where they were minted; it includes also information on the range of time those coins were minted.
+\item {\bf Hoards}, which contains information on the hoard itself, including the date it was found, the number of coins, and the place where it was found.
 
 \subsection{Overview of coin hoard data}
 \label{ssec:overview}
