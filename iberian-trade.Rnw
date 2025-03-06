@@ -93,8 +93,27 @@ So this gives the subset of the original dataset we are using enough validity to
 
 The FLAMES datasets include many different files. We have used three of them\begin
 {itemize}
-\item {\bf Coin groups}, which contains individual information on the group of coins found in every hoard and the mint where they were minted; it includes also information on the range of time those coins were minted.
+\item {\bf Coin groups}, which contains individual information on the group of coins found in every hoard and the mint where they were minted; it includes also information on the range of time those coins were minted cross referenced to the two files below.
 \item {\bf Hoards}, which contains information on the hoard itself, including the date it was found, the number of coins, and the place where it was found.
+\item {\bf Mints}, that contains location information on said establishments.
+\end{itemize}
+
+We have made a series of processing steps to use them \begin{itemize}
+\item We have geolocated the mints to a specific current country, using the GeoApify service.
+\item We have processed hoards and mints to keep only those that are placed in the two countries in the Iberian Peninsula, Spain and Portugal.
+\item We were interested in the trade links and its number, that is, the number of coin groups from one country found in another country, so we processed all files above to obtain that information. We generated two files with this procedure: \begin{itemize}
+\item Iberian-only trade links, which contains only the trade links where the mint and the coin finding (hoard) are in the Iberian peninsula.
+\item All trade links of hoards found in the Iberian Peninsula or that contain coins minted in it.
+\end{itemize}
+\item We processed the resulting files per decade starting in 0, so that the granularity of the resulting time series of trade links is 10 years.
+\item We filled with 0 all those decades with no links.
+\end{itemize}
+
+As a result, we have two datasets \begin{itemize}
+\item Time series of trade links per decade within the Iberian Peninsula
+\item Time series of trade links per decade between the Iberian Peninsula and elsewhere.
+\end{itemize}
+
 
 \subsection{Overview of coin hoard data}
 \label{ssec:overview}
