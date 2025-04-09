@@ -32,6 +32,8 @@ axis(1, at = ticks, labels=ticks.years)
 Trade networks reflect societal vitality and are thus essential tools to understand historical dynamics, including epochal events. In this paper we will be looking at the Mediterranean trade network reflected in the FLAME dataset, coin hoards found in the region which establish a link from the place the coins were minted and where they were found. We will use changepoint analysis to identify shift points in this trade network, mapping it to actual events (or conjunction of events), and then analyze the existing network prior and after the events. The trade network has regions (identified as current countries) as nodes, and the number of coins of one place found in another as edges.
 Changepoint analysis for the time series of the number of links in the network is shown in the figure, finding a statistically significant changepoint at year \Sexpr{link.changepoint.date[0]} with average links before and after the changepoint plotted. Multiple sequence changepoint, including entropy and high-level network measures, will be also presented, and possible causes for these shifts, looking at historical events as well as changes in edge and node (region) betweenness, will be discussed.
 
+{\bf Funding}: This work is supported by the Ministerio espa\~{n}ol de Econom\'{\i}a y
+Competitividad (Spanish Ministry of Competitivity and Economy) under project PID2023-147409NB-C22.
 }
 
 \begin{document}
