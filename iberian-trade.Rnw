@@ -72,6 +72,10 @@ $^{1}$ \quad Department of Computer Engineering, Automatics and Robotics, Univer
 
 \section{State of the art}
 
+This paper was kicked off by the publication of a preprint by Boehm and Chaney \cite{boehm2024change} which set out to analyze changes in economic regime in the Mediterranean as reflected in coin hoards found during a millennia. This change in economic regime was predicted by Heri Pirenne \cite{Pirenne:2015}, claiming that the real Middle Ages did not start until the onset of the Islamic invasion of the Middle East and North Africa disrupted the trade routes, breaking it into smaller, regional ones, which had to fend for themselves.
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Materials and Methods}
