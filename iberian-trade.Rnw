@@ -78,7 +78,11 @@ The main point of this school of thought is that what traditional historiography
 
 We are going to focus in this paper on the Iberian Peninsula. As a peripheral part of the Roman empire any disruption might have affected it, but in a different way or in a different time frame. This is why we are specially interested in works that focus on this area, like \cite{oddo2024economic,fernandez2017aristocrats}.
 
-The main take away from this paper is that we can use existing datasets that have a basis in trade, like coin hoards, to find evidence of disruption in economic patterns, since trade is at the same time one of the main drivers, as well as indicators, of economic activity. And the era under study was not short on epochal events that could have caused such disruptions.
+The main take away from this paper is that we can use existing datasets that have a basis in trade, like coin hoards, to find evidence of disruption in economic patterns, since trade is at the same time one of the main drivers, as well as indicators, of economic activity. And the era under study was not short on epochal events that could have caused such disruptions. Of course, the final fall of the Western Roman Empire should have some kind of impact \cite{martínez18:iberia}, since the Roman central administration definitely vanishes by mid 5th century. However, modern historiographical analysis, following Pirenne, tells us to look further than that into other kind of factors. One of the most important factors that impacted the whole Roman empire were the Antonine and Ciprian plagues, which happened in the 2nd and 3rd centuries \cite{lead:pollution} and had lasting effects spanning at least five centuries.
+
+Focusing on the Iberian peninsula, the Visigoth invasion did produce some discontinuity, but trade continued diminishing during the 5th and 6th centuries, although most changes were relatively slow \cite{fernandez2017aristocrats}.
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
