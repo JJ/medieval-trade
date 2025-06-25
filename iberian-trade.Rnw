@@ -92,8 +92,8 @@ By focusing on the analysis of the trade patterns coin hoards reveal, and using 
 \section{Materials and Methods}
 
 <<trade.setup, echo=FALSE>>=
-load("data/all_iberian_links_decade.rds")
-load("data/iberian_links_decade.rds")
+all_iberian_links_decade <- readRDS("data/all_iberian_links_decade.rds")
+
 @
 
 We have used the FLAMES (Framing the Late Antique and early Medieval Economy) database As the main base for this paper, in its January 2023 version, which is available from \url{https://coinage.princeton.edu}. This project has published a series of datasets that contain information on coin hoards found all over the world, and spans from the 4th to the 8th century. This dataset formed the basis for \cite{coins}, although it was enhanced with more data.
