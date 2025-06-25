@@ -96,7 +96,7 @@ all_iberian_links_decade <- readRDS("data/all_iberian_links_decade.rds")
 
 @
 
-We have used the FLAMES (Framing the Late Antique and early Medieval Economy) database As the main base for this paper, in its January 2023 version, which is available from \url{https://coinage.princeton.edu}. This project has published a series of datasets that contain information on coin hoards found all over the world, and spans from the 4th to the 8th century. This dataset formed the basis for \cite{coins}, although it was enhanced with more data.
+We have used the FLAMES (Framing the Late Antique and early Medieval Economy) database As the main base for this paper, in its September 2024 version, which is available from \url{https://coinage.princeton.edu/flame-database-last-version}. This project has published a series of datasets that contain information on coin hoards found all over the world, and spans from the 4th to the 8th century. This dataset formed the basis for \cite{coins}, although it was enhanced with more data.
 
 We will focus on the Iberian peninsula and the two countries with hoards, Spain and Portugal\endnote{There are no hoards found in Andorra or in the colony of Gibraltar.}.
 
