@@ -184,7 +184,7 @@ As a result, we have two datasets \begin{itemize}
 %=====================================
 % References, variant A: external bibliography
 %=====================================
-\bibliography{trade-early-medieval}
+\bibliography{trade-early-medieval,ours,change-point}
 
 
 \PublishersNote{}
