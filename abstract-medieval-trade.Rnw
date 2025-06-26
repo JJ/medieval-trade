@@ -12,7 +12,6 @@ Dept. of Computer Engineering, Automatics and Robotics + CITIC; University of Gr
 
 \abstract{
 <<statphys.abs, echo=FALSE, message=F, fig.height=4, fig.pos="h">>=
-library(ggplot2)
 links_year <- readRDS("data/links_year.rds")
 links_year$links <- links_year$n
 links_year$n <- NULL
