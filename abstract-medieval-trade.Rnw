@@ -32,7 +32,7 @@ Trade networks reflect societal vitality and are thus essential tools to underst
 Changepoint analysis for the time series of the number of links in the network is shown in the figure, finding a statistically significant changepoint at year \Sexpr{link.changepoint.date[0]} with average links before and after the changepoint plotted. Multiple sequence changepoint, including entropy and high-level network measures, will be also presented, and possible causes for these shifts, looking at historical events as well as changes in edge and node (region) betweenness, will be discussed.
 
 {\bf Funding}: This work is supported by the Ministerio espa\~{n}ol de Econom\'{\i}a y
-Competitividad (Spanish Ministry of Competitivity and Economy) under project PID2023-147409NB-C22.
+Competitividad (Spanish Ministry of Competitivity and Economy) under project PID2023-147409NB-C21.
 }
 
 \begin{document}
