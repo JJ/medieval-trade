@@ -1,4 +1,4 @@
-# Late antiquity trade analysis via social networks and shift point analysis
+# Late antiquity trade analysis via social networks and shift point analysis 𓊝
 
 ![Change point analysis for coin hoards"](statphys-changepoint.png)
 
@@ -17,7 +17,7 @@ For the time being, these papers:
   the
   paper. [`scripts/abstract-medieval-trade.R`](scripts/abstract-medieval-trade.R)
   contain the extracted script that generates the chart in the paper, slightly
-  modified for the actual poster. 
+  modified for the actual poster.
 
 ## Data
 
@@ -29,6 +29,5 @@ directly.
 
 (c) JJ Merelo, 2025. Data and code are licensed under the [Affero GPL
 license](LICENSE).
-
 
 
