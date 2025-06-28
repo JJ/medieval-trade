@@ -5,6 +5,8 @@
 Repository for papers, data and stuff related to the analysis of coin hoards for
 change points in late Antiquity/early Middle Ages in Europe.
 
+The [repository with code, paper source and data is in GitHub](https://github.com/JJ/medieval-trade).
+
 ## Papers
 
 For the time being, these papers:
