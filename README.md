@@ -8,12 +8,12 @@ change points in late Antiquity/early Middle Ages in Europe.
 For the time being, these papers:
 
 * "Finding changepoints in medieval Mediterranean trade networks", check the
-  [paper source](abstract-medieval-trade.Rnw) as well as [the paper](). The file
+  [paper source](abstract-medieval-trade.Rnw) as well as [the paper](https://github.com/JJ/medieval-trade/releases/download/v1.02/abstract-medieval-trade.pdf). The file
   [`data/links_year.rds`](data/links_year.rds) contains the data processed for
   the
   paper. [`scripts/abstract-medieval-trade.R`](scripts/abstract-medieval-trade.R)
   contain the extracted script that generates the chart in the paper, slightly
-  modified for the actual poster.
+  modified for the actual poster. 
 
 ## Data
 
