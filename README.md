@@ -1,5 +1,7 @@
 # Late antiquity trade analysis via social networks and shift point analysis
 
+![Change point analysis for coin hoards"](statphys-changepoint.png)
+
 Repository for papers, data and stuff related to the analysis of coin hoards for
 change points in late Antiquity/early Middle Ages in Europe.
 
