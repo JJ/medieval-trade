@@ -11,7 +11,7 @@ The [repository with code, paper source and data is in GitHub](https://github.co
 
 For the time being, these papers:
 
-* "Finding changepoints in medieval Mediterranean trade networks", check the
+* For [Statphys 29](https://statphys29.org/): "Finding changepoints in medieval Mediterranean trade networks", check the
   [paper source](abstract-medieval-trade.Rnw) as well as [the paper](https://github.com/JJ/medieval-trade/releases/download/v1.02/abstract-medieval-trade.pdf). The file
   [`data/links_year.rds`](data/links_year.rds) contains the data processed for
   the
