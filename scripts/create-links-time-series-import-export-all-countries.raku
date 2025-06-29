@@ -40,7 +40,7 @@ for @coin-groups -> %coin-group {
     }
 
     die %coin-group unless %link<hoard>;
-    die %finding-locations unless %link<mint>;
+    die %finding-locations unless %link<mint> ~~ Str;
     @links-out.push(%link);
 
 }
