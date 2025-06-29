@@ -37,7 +37,6 @@ for @coin-groups -> %coin-group {
         say %coin-group;
     }
 
-    die "Wrong hoard " ~ %link ~ " with " ~ %coin-group unless %link<hoard>;
     die "Wrong mint %link " ~ %finding-locations unless %link<mint> ~~ Str;
     @links-out.push(%link);
 
