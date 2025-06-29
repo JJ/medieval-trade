@@ -21,8 +21,6 @@ for @coin-groups -> %coin-group {
 
     my $mint;
     if (%coin-group<Mint_ID> eq "") || ( %mint-locations{ %coin-group<Mint_ID> } eq "" ) || ( ~%mint-locations{ %coin-group<Mint_ID> } eq "(Any)" ) {
-        say %coin-group;
-        say ~%mint-locations{ %coin-group<Mint_ID> };
         $mint = "Unknown mintner-" ~ $unknown-mint-id++;
     } else  {
         $mint = %mint-locations{ %coin-group<Mint_ID> };
