@@ -33,25 +33,59 @@ And we will also use a different methodology. We would need to find a point in t
 
 We will organize the rest of the paper as follows. First we will present the methodology used to process the data and obtain the time series needed for changepoint analysis in Section \ref{sec:meth}. Then we will try to find the changepoint(s) present in the data in Section \ref{sec:res}. By analyzing different data sources, we will try to identify different factors that might lead to that change point. Finally, we will present our conclusions and future lines of work in Section \ref{sec:concl}.
 
+\section{Methodology}\label{sec:meth}
+
 <<statphys.abs, echo=FALSE, message=F, fig.height=4, fig.pos="h">>=
+all_links <- read.csv("data/all-links.csv", sep=";")
+
 links_year <- readRDS("data/links_year.rds")
 links_year$links <- links_year$n
 links_year$n <- NULL
-# ggplot(links_year, aes(x=year, y=links)) + geom_point() + geom_smooth()
-
-library(changepoint)
-
-link.changepoint <- cpt.mean(links_year$links)
-link.changepoint.date <- links_year$year[link.changepoint@cpts]
-ticks <- c(1,100,200,300,400)
-ticks.years <- links_year$year[ticks]
-
-plot(link.changepoint,xaxt = 'n')
-axis(1, at = ticks, labels=ticks.years)
 
 @
 
-\section{Methodology}\label{sec:meth}
+
+As indicated, the dataset used is the FLAMES dataset in its September 2024 version. The dataset contains what are called {\em coin groups}, groups of coins minted in the same place and period, several of which form a {\em coin hoard}. Most mints and hoards are geolocated. Coin groups are identified also by minting period.
+
+From this database we have extracted four fields:\begin{itemize}
+\item Hoard, an unique identifier for the hoard; using an inverse geocoding service we have converted this also to a current territory when possible.
+\item Mint, every one of which has an unique identifier; when possible, this has been mapped to its current territory as above.
+\item Year. In most cases what it includes is a minting period. This has been converted to the year in the midpoint; in the case it was identified by a century we have used the year 50 in the century. Those pairs that have no identifiable year have been eliminated.
+\item Number of coins, the number of coins in the hoard minted in that specific place.
+\end{itemize}
+
+The dataset, which includes \Sexpr{length(all_links$year)} pairs, is publicly available at the GitHub repository \url{https://jj.github.io/medieval-trade} under a free license, together with the scripts used to create it.
+
+From this initial dataset, a new dataset with the number of links per year has been created, by simply adding up the number of pairs of places that appear for every year.
+
+<<statphys.changepoint, echo=FALSE, message=F, fig.height=4, fig.pos="h">>=
+library(dplyr)
+library(tidyr)
+
+links_year <- links_year %>%
+  complete(year = full_seq(year, 1), fill = list(links = 0))
+
+links_year <- links_year %>%
+  filter(year >= 300 & year <= 775)
+
+library(changepoint)
+
+link.changepoint <- cpt.meanvar(links_year$links)
+link.changepoint.date <- links_year$year[link.changepoint@cpts]
+ticks <- c(1,100,200,300,400,500,600)
+ticks.years <- links_year$year[ticks]
+
+# set y label to "# links"
+par(mar = c(5.1, 8.1, 4.1, 2.1))
+plot(link.changepoint,xaxt = 'n', xlab="", ylab="", main="Number of links per year and mean before/after changepoint")
+# move position of tick labels down so that it does not overlaps ticks
+offset <- -0.05
+axis(1, at = ticks, labels=ticks.years)
+mtext("# Links", side=2, line=2, cex=1.5)
+mtext("Year", side=1, line=3, cex=1.5)
+@
+
+
 
 \section{Results}\label{sec:res}
 
