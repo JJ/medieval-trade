@@ -24,6 +24,12 @@ for @coin-groups -> %coin-group {
     my %link = ( hoard => %finding-locations{ %coin-group<CoinFinding_ID> } // "Unknown hoard-" ~$unknown-hoard-id++,
                  mint => %mint-locations{ %coin-group<Mint_ID> } // "Unknown mintner-" ~$unknown-mint-id++,);
 
+    if (%link<mint> !~~ /^[A..Z]/) {
+         say "Processing ", %coin-group;
+         say "Obtaining mint location for ", %coin-group<Mint_ID>;
+         say "Mint location: ", %link<mint>;
+    }
+
     if %coin-group<cg_start_year> == 0 {
         if %coin-group<cg_custom_start_century> > 0 {
             %link<year> = %coin-group<cg_custom_start_century>*100-50;
