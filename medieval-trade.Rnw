@@ -17,6 +17,8 @@ Changepoint analysis for the time series of the number of links in the network f
 
 \section{Introduction}
 
+When researching history, there are few certainties and usually many questions. Even in basic matters, such as when an {\em age} starts or ends, there are as many results as methodologies to establish them; case in point the boundary between Antiquity and the Middle Ages in Europe and the Middle East. It is generally accepted that Antiquity finished when the last Western Roman emperor was ousted, that is, by the fall of the Roman Empire in 476 CE
+
 
 <<statphys.abs, echo=FALSE, message=F, fig.height=4, fig.pos="h">>=
 links_year <- readRDS("data/links_year.rds")
@@ -40,5 +42,7 @@ axis(1, at = ticks, labels=ticks.years)
 \section{Funding and acknowledgements}
 This work is supported by the Ministerio espa\~{n}ol de Econom\'{\i}a y
 Competitividad (Spanish Ministry of Competitivity and Economy) under project PID2023-147409NB-C21.
+
+\bibliography{trade-early-medieval,ours,change-point,history}
 
 \end{document}
