@@ -10,10 +10,9 @@ my %mint-locations = @mints.map( { $_<ID> => $_<Country> } ).flat;
 
 my @findings = csv(in => 'data-raw/flame-database-last-version-coin-findings.csv', headers => 'auto', sep=>";");
 my $findings = Set.new( @findings.map( { $_<ID> } ) );
+my %finding-locations = @findings.map( { $_<ID> => $_<Region>  } ).flat;
 
-my @all-findings = csv(in => 'data-raw/flame-database-last-version-coin-findings.csv', headers => 'auto', sep=>";");
-my %finding-locations = @all-findings.map( { $_<ID> => $_<Region> ?? $_<Region> !! $_<cf_name> } ).flat;
-
+say %finding-locations;
 my @links-out;
 my $unknown-hoard-id = 0;
 my $unknown-mint-id = 0;
@@ -23,12 +22,6 @@ for @coin-groups -> %coin-group {
 
     my %link = ( hoard => %finding-locations{ %coin-group<CoinFinding_ID> } // "Unknown hoard-" ~$unknown-hoard-id++,
                  mint => %mint-locations{ %coin-group<Mint_ID> } // "Unknown mintner-" ~$unknown-mint-id++,);
-
-    if (%link<mint> !~~ /^[A..Z]/) {
-         say "Processing ", %coin-group;
-         say "Obtaining mint location for ", %coin-group<Mint_ID>;
-         say "Mint location: ", %link<mint>;
-    }
 
     if %coin-group<cg_start_year> == 0 {
         if %coin-group<cg_custom_start_century> > 0 {
