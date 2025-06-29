@@ -1,6 +1,6 @@
 \documentclass[12pt,a4paper]{book}
 \usepackage{statphys}[latest]
-
+\usepackage{hyperref}
 \author*{a}{J. J. Merelo}
 
 \affiliation{a}{
@@ -17,8 +17,19 @@ Changepoint analysis for the time series of the number of links in the network f
 
 \section{Introduction}
 
-When researching history, there are few certainties and usually many questions. Even in basic matters, such as when an {\em age} starts or ends, there are as many results as methodologies to establish them; case in point the boundary between Antiquity and the Middle Ages in Europe and the Middle East. It is generally accepted that Antiquity finished when the last Western Roman emperor was ousted, that is, by the fall of the Roman Empire in 476 CE \cite{gibbon2015decline}.
+When researching history, there are few certainties and usually many questions. Even in basic matters, such as when an {\em age} starts or ends, there are as many results as methodologies to establish them; case in point the boundary between Antiquity and the Middle Ages in Europe and the Middle East. It is generally accepted that Antiquity finished when the last Western Roman emperor was ousted, that is, by the fall of the Roman Empire in 476 CE \cite{gibbon2015decline}. However, in his book "Mohammed and Charlemagne", Henri Pirenne \cite{pirenne2013mohammed} proposed a different, bold thesis: As Brown says \cite{pirennesaid}:
 
+\begin{quote}
+... It was only with the Arab conquests of the eastern and southern Mediterranean in the seventh century A.D. that this Mediterranean-wide economy was disrupted. Islam marks a breach in the continuum of ancient civilization incomparably deeper than that of the Germanic Invasions.
+\end{quote}
+
+This thesis points to a different historiographical methodology, one that would be later called the "Annales" school \cite{forster1978achievements} after the French journal that included most of the historians that pushed it forward; a methodology that takes into account not only sources that write about the fact that one "Big Man" succeeds another, and that signal big changes when a "Very Big Man" is substituted by many small ones, or very different ones, but also all kinds of other, non-written, sources, including all that is known about the {\em material culture} (all kind of artifacts found in archaeological digs) as well as any kind of geographical, environmental and climatic data that is known about a certain period.
+
+Who is right? In general, history still follows Gibbon, but very recently Pirenne's hypothesis has been put to test in a paper \cite{coins} that looks at the rate of economic growth of different societies using data on found coin hoards, that is, data on literally treasure chests stashed all over the world. These treasure chests contains the aforementioned coins, and by establishing the origin of those coins, there can be certainty that there is some kind of trade links between origin and destination.
+
+The dataset used in that paper is not available for the time being; however, part of the dataset, the so called FLAMES database, which spans a smaller period, is available online at \url{https://coinage.princeton.edu/flame-database-last-version}. This is the database that we will use in this paper.
+
+And we will also use a different methodology. We would need to find a point in time that implies a watershed change, an epochal shift with lasting effects that can effectively be set as the boundary, if not between two different ages, at least between two very different periods. The statistical tools that are used for that purpose are called changepoint analysis methods; while initially applied in the domain of physics to detect abrupt climate variations \cite{beaulieu2012change} it was soon adopted by history, for instance to analyze deaths in battle \cite{battle:deaths}, the age of the elected Venetian doges \cite{histories3010003} or how the time series of marriages in the same city reflect the fate of the Venetian Republic at large \cite{histories4020012}.
 
 <<statphys.abs, echo=FALSE, message=F, fig.height=4, fig.pos="h">>=
 links_year <- readRDS("data/links_year.rds")
