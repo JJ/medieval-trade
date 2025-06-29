@@ -19,8 +19,16 @@ for @coin-groups -> %coin-group {
     next if %coin-group<cg_start_year> eq "" || %coin-group<cg_end_year> eq "";
     next unless %coin-group<Mint_ID> ∈ $mints-set || %coin-group<CoinFinding_ID> ∈ $findings;
 
+    my $mint;
+    if (%coin-group<Mint_ID> eq "") || ( %mint-locations{ %coin-group<Mint_ID> } eq "" ) || ( ~%mint-locations{ %coin-group<Mint_ID> } eq "(Any)" ) {
+        say %coin-group;
+        say ~%mint-locations{ %coin-group<Mint_ID> };
+        $mint = "Unknown mintner-" ~ $unknown-mint-id++;
+    } else  {
+        $mint = %mint-locations{ %coin-group<Mint_ID> };
+    }
     my %link = ( hoard => %finding-locations{ %coin-group<CoinFinding_ID> } // "Unknown hoard-" ~ $unknown-hoard-id++,
-                 mint => %mint-locations{ %coin-group<Mint_ID> } // "Unknown mintner-" ~ $unknown-mint-id++,);
+                 mint => $mint );
 
     if %coin-group<cg_start_year> == 0 {
         if %coin-group<cg_custom_start_century> > 0 {

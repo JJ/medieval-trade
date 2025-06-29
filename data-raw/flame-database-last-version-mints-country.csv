@@ -599,18 +599,18 @@ ID;location_title;location_modern_title;location_other_title;location_uncertain;
 2619;Alexandretta;;;0;36.57741904;36.18758917;5;Turkey
 3013;Rakkah;Raqqa;al-Raqqah;0;35.94999543;39.01669842;5;Syria
 3413;Unknown (Southern Gaul);;;1;45.50442157;3.20800066;3;France
-3414;Unknown (East Roman);;;1;34.28554878;26.83410586;3;(Any)
+3414;Unknown (East Roman);;;1;34.28554878;26.83410586;3;Turkey
 3415;Arelato or Lugdunum;Arles or Lyons;;1;44.65863693;4.80651678;4;France
 3813;Unknown (Gaul);;;1;46.34540845;2.29393791;3;France
-4213;Unknown (Roman);;;1;36.18338287;18.67812173;3;(Any)
-4214;Unknown (West Roman);;;1;38.25543274;10.70399255;3;(Any)
+4213;Unknown (Roman);;;1;36.18338287;18.67812173;3;Italy
+4214;Unknown (West Roman);;;1;38.25543274;10.70399255;3;Italy
 4613;Unknown (Italy);;;1;43.22518924;12.02218040;3;Italy
 4614;Unknown (Asia Minor);;;1;35.64004873;38.78406171;3;Syria
 4615;Unknown (Balkans);;;1;21.85564091;42.25697554;3;Saudi Arabia
 4616;Gallic mint or Roma;;;1;44.92980194;7.98343573;3;Italy
-5013;Unknown (Palestine);;;1;34.96195366;31.93551259;3;(Any)
+5013;Unknown (Palestine);;;1;34.96195366;31.93551259;3;Palestine
 5014;Unknown (Sasanian Empire);;;1;33.97199334;48.77921799;3;Iran
-5015;Unknown (Palestine/Jordan);;;1;35.81812919;31.34023499;3;(Any)
+5015;Unknown (Palestine/Jordan);;;1;35.81812919;31.34023499;3;Palestina
 5016;Unknown (al-Jazira);;;1;39.44145544;35.98942981;3;Turkey
 5017;Unknown (Greater Syria);;;1;37.68596718;34.84343103;3;Turkey
 5018;Unknown (North Syria);;;1;37.68596718;36.48565917;3;Turkey
@@ -619,7 +619,7 @@ ID;location_title;location_modern_title;location_other_title;location_uncertain;
 5414;Sarmin;;;1;36.72574637;35.90343408;4;Turkey
 5415;Balih;Ain al-'Arus (spring);;1;38.93999491;36.67027194;4;Turkey
 5416;Irminiya;;;1;44.57916396;40.00468353;3;Russia
-5813;Diocletianopolis;Khirbat a-Sheraf;Sarafa;0;34.52171801;31.61608964;5;(Any)
+5813;Diocletianopolis;Khirbat a-Sheraf;Sarafa;0;34.52171801;31.61608964;5;Bulgaria
 6213;Jibrin (Uncertain);Jibrin;Jabrin;1;37.25999526;36.17999841;3;Turkey
 6613;Unknown (Iberia);;;1;40.41659708;-3.70379883;3;Spain
 7013;Aballo;Avallon;;0;47.49082832;3.90916268;5;France
@@ -639,7 +639,7 @@ ID;location_title;location_modern_title;location_other_title;location_uncertain;
 9413;Theodeberciaco;Thiverzay;Thiverzay (Vendée);0;46.46728619;-0.80705543;5;France
 9415;VTVAINOCA ;Vitry-le-Brûlé;Vitry-en-Perthois (Marne);0;48.74833207;4.62555116;5;France
 9416;Sci Martini Loco Teiaco;Saint-Martin de Ligugé;Abbey of St. Martin of Ligugé;0;46.51721963;0.33111003;5;France
-9422;Basniaco; Besné (Loire-Atlantique); Besné ;0;47.49999928;-2.49999347;5;(Any)
+9422;Basniaco; Besné (Loire-Atlantique); Besné ;0;47.49999928;-2.49999347;5;France
 9816;Gavaronno;Javron-les-Chapelles;Javron (Mayenne);0;48.41747523;-0.33529618;5;France
 13413;Serdica;Sofia;;0;42.69833171;23.31993240;5;Bulgaria
 13414;Mah (MA/MA/DY);;Media;1;34.799294;48.512209;4;Iran
