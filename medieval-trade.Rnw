@@ -1,0 +1,44 @@
+\documentclass[12pt,a4paper]{book}
+\usepackage{statphys}[latest]
+
+\author*{a}{J. J. Merelo}
+
+\affiliation{a}{
+Dept. of Computer Engineering, Automatics and Robotics + CITIC; University of Granada, Spain;
+{\tt jmerelo@ugr.es}
+}
+
+\title{Finding changepoints in medieval European and Middle-Eastern trade networks}
+
+\abstract{Trade networks reflect societal vitality and are thus essential tools to understand historical dynamics, including epochal events. In this paper we will be looking at the Mediterranean trade network reflected in the FLAME dataset, coin hoards found in the region which establish a link from the place the coins were minted and where they were found. We will use changepoint analysis to identify shift points in this trade network, mapping it to actual events (or conjunction of events), and then analyze the existing network prior and after the events. The trade network has regions (identified as current countries) as nodes, and the number of coins of one place found in another as edges.
+Changepoint analysis for the time series of the number of links in the network finds a statistically significant changepoint with average links before and after the changepoint plotted. Multiple sequence changepoint, including entropy and high-level network measures, will be also presented, and possible causes for these shifts, looking at historical events as well as changes in edge and node (region) betweenness, will be discussed.}
+
+\begin{document}
+
+\section{Introduction}
+
+
+<<statphys.abs, echo=FALSE, message=F, fig.height=4, fig.pos="h">>=
+links_year <- readRDS("data/links_year.rds")
+links_year$links <- links_year$n
+links_year$n <- NULL
+# ggplot(links_year, aes(x=year, y=links)) + geom_point() + geom_smooth()
+
+library(changepoint)
+
+link.changepoint <- cpt.mean(links_year$links)
+link.changepoint.date <- links_year$year[link.changepoint@cpts]
+ticks <- c(1,100,200,300,400)
+ticks.years <- links_year$year[ticks]
+
+plot(link.changepoint,xaxt = 'n')
+axis(1, at = ticks, labels=ticks.years)
+
+@
+
+
+\section{Funding and acknowledgements}
+This work is supported by the Ministerio espa\~{n}ol de Econom\'{\i}a y
+Competitividad (Spanish Ministry of Competitivity and Economy) under project PID2023-147409NB-C21.
+
+\end{document}
