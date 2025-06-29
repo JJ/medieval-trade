@@ -31,6 +31,8 @@ The dataset used in that paper is not available for the time being; however, par
 
 And we will also use a different methodology. We would need to find a point in time that implies a watershed change, an epochal shift with lasting effects that can effectively be set as the boundary, if not between two different ages, at least between two very different periods. The statistical tools that are used for that purpose are called changepoint analysis methods; while initially applied in the domain of physics to detect abrupt climate variations \cite{beaulieu2012change} it was soon adopted by history, for instance to analyze deaths in battle \cite{battle:deaths}, the age of the elected Venetian doges \cite{histories3010003} or how the time series of marriages in the same city reflect the fate of the Venetian Republic at large \cite{histories4020012}.
 
+We will organize the rest of the paper as follows. First we will present the methodology used to process the data and obtain the time series needed for changepoint analysis in Section \ref{sec:meth}. Then we will try to find the changepoint(s) present in the data in Section \ref{sec:res}. By analyzing different data sources, we will try to identify different factors that might lead to that change point. Finally, we will present our conclusions and future lines of work in Section \ref{sec:concl}.
+
 <<statphys.abs, echo=FALSE, message=F, fig.height=4, fig.pos="h">>=
 links_year <- readRDS("data/links_year.rds")
 links_year$links <- links_year$n
@@ -49,6 +51,11 @@ axis(1, at = ticks, labels=ticks.years)
 
 @
 
+\section{Methodology}\label{sec:meth}
+
+\section{Results}\label{sec:res}
+
+\section{Conclusions and future lines of work}\label{sec:concl}
 
 \section{Funding and acknowledgements}
 This work is supported by the Ministerio espa\~{n}ol de Econom\'{\i}a y
