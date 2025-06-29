@@ -26,7 +26,8 @@ for @coin-groups -> %coin-group {
         $mint = %mint-locations{ %coin-group<Mint_ID> };
     }
     my %link = ( hoard => %finding-locations{ %coin-group<CoinFinding_ID> } // "Unknown hoard-" ~ $unknown-hoard-id++,
-                 mint => $mint );
+                 mint => $mint,
+                num_coins => %coin-group<cg_num_coins>);
 
     if %coin-group<cg_start_year> == 0 {
         if %coin-group<cg_custom_start_century> > 0 {
