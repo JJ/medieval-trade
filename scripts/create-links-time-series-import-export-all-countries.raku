@@ -12,7 +12,6 @@ my @findings = csv(in => 'data-raw/flame-database-last-version-coin-findings.csv
 my $findings = Set.new( @findings.map( { $_<ID> } ) );
 my %finding-locations = @findings.map( { $_<ID> => $_<Region>  } ).flat;
 
-say %finding-locations;
 my @links-out;
 my $unknown-hoard-id = 0;
 my $unknown-mint-id = 0;
@@ -20,8 +19,8 @@ for @coin-groups -> %coin-group {
     next if %coin-group<cg_start_year> eq "" || %coin-group<cg_end_year> eq "";
     next unless %coin-group<Mint_ID> ∈ $mints-set || %coin-group<CoinFinding_ID> ∈ $findings;
 
-    my %link = ( hoard => %finding-locations{ %coin-group<CoinFinding_ID> } // "Unknown hoard-" ~$unknown-hoard-id++,
-                 mint => %mint-locations{ %coin-group<Mint_ID> } // "Unknown mintner-" ~$unknown-mint-id++,);
+    my %link = ( hoard => %finding-locations{ %coin-group<CoinFinding_ID> } // "Unknown hoard-" ~ $unknown-hoard-id++,
+                 mint => %mint-locations{ %coin-group<Mint_ID> } // "Unknown mintner-" ~ $unknown-mint-id++,);
 
     if %coin-group<cg_start_year> == 0 {
         if %coin-group<cg_custom_start_century> > 0 {
@@ -38,8 +37,8 @@ for @coin-groups -> %coin-group {
         say %coin-group;
     }
 
-    die %coin-group unless %link<hoard>;
-    die %finding-locations unless %link<mint> ~~ Str;
+    die "Wrong hoard " ~ %link ~ " with " ~ %coin-group unless %link<hoard>;
+    die "Wrong mint %link " ~ %finding-locations unless %link<mint> ~~ Str;
     @links-out.push(%link);
 
 }
