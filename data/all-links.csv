@@ -4565,14 +4565,14 @@ Cyprus;Turkey;15;592
 Cyprus;Turkey;1;592
 Cyprus;Turkey;6;592
 Cyprus;Turkey;1;625
-"Palestinian Territory";Ethiopia;1;345
-"Palestinian Territory";Ethiopia;7;350
+Palestine;Ethiopia;1;345
+Palestine;Ethiopia;7;350
 Jordan;Ethiopia;1;350
 Israel;Ethiopia;1;350
-"Palestinian Territory";Ethiopia;1;387
+Palestine;Ethiopia;1;387
 Israel;Ethiopia;1;650
 Israel;Ethiopia;1;504
-"Palestinian Territory";Ethiopia;1;350
+Palestine;Ethiopia;1;350
 Italy;Tunisia;2;526
 Italy;Tunisia;1;506
 Italy;Italy;3;517
@@ -5117,37 +5117,37 @@ Syria;Turkey;1;644
 Syria;Turkey;2;644
 Syria;Syria;1;673
 Syria;Syria;1;722
-"Palestinian Territory";Turkey;1;326
-"Palestinian Territory";Croatia;1;334
-"Palestinian Territory";Turkey;1;352
-"Palestinian Territory";Turkey;1;365
-"Palestinian Territory";"Unknown mintner-294";1;369
-"Palestinian Territory";"Unknown mintner-295";1;387
-"Palestinian Territory";"Unknown mintner-296";2;401
-"Palestinian Territory";"Unknown mintner-297";4;362
-"Palestinian Territory";Turkey;1;387
-"Palestinian Territory";"Unknown mintner-298";11;400
-"Palestinian Territory";Egypt;1;402
-"Palestinian Territory";"Unknown mintner-299";8;449
-"Palestinian Territory";Tunisia;1;449
-"Palestinian Territory";Turkey;1;508
-"Palestinian Territory";Turkey;1;508
-"Palestinian Territory";Turkey;2;514
-"Palestinian Territory";Turkey;2;528
-"Palestinian Territory";Turkey;3;546
-"Palestinian Territory";Turkey;1;575
-"Palestinian Territory";Turkey;1;583
-"Palestinian Territory";Turkey;1;585
-"Palestinian Territory";Turkey;1;586
-"Palestinian Territory";Turkey;1;587
-"Palestinian Territory";Turkey;1;590
-"Palestinian Territory";Turkey;1;592
-"Palestinian Territory";Turkey;1;607
-"Palestinian Territory";Egypt;1;615
-"Palestinian Territory";Turkey;1;654
-"Palestinian Territory";Israel;2;705
-"Palestinian Territory";Israel;4;734
-"Palestinian Territory";Syria;5;734
+Palestine;Turkey;1;326
+Palestine;Croatia;1;334
+Palestine;Turkey;1;352
+Palestine;Turkey;1;365
+Palestine;"Unknown mintner-294";1;369
+Palestine;"Unknown mintner-295";1;387
+Palestine;"Unknown mintner-296";2;401
+Palestine;"Unknown mintner-297";4;362
+Palestine;Turkey;1;387
+Palestine;"Unknown mintner-298";11;400
+Palestine;Egypt;1;402
+Palestine;"Unknown mintner-299";8;449
+Palestine;Tunisia;1;449
+Palestine;Turkey;1;508
+Palestine;Turkey;1;508
+Palestine;Turkey;2;514
+Palestine;Turkey;2;528
+Palestine;Turkey;3;546
+Palestine;Turkey;1;575
+Palestine;Turkey;1;583
+Palestine;Turkey;1;585
+Palestine;Turkey;1;586
+Palestine;Turkey;1;587
+Palestine;Turkey;1;590
+Palestine;Turkey;1;592
+Palestine;Turkey;1;607
+Palestine;Egypt;1;615
+Palestine;Turkey;1;654
+Palestine;Israel;2;705
+Palestine;Israel;4;734
+Palestine;Syria;5;734
 Syria;Turkey;4;628
 Syria;Turkey;1;571
 Syria;Turkey;1;508
@@ -5167,24 +5167,24 @@ Syria;Turkey;1;592
 Syria;Cyprus;2;627
 Syria;Turkey;1;550
 Syria;Tunisia;1;572
-"Palestinian Territory";Turkey;1;335
-"Palestinian Territory";Turkey;1;400
-"Palestinian Territory";Greece;2;551
-"Palestinian Territory";Turkey;1;652
-"Palestinian Territory";Turkey;1;654
-"Palestinian Territory";Italy;1;645
-"Palestinian Territory";Italy;1;336
-"Palestinian Territory";Italy;1;369
-"Palestinian Territory";Italy;2;387
-"Palestinian Territory";Italy;1;378
-"Palestinian Territory";Turkey;1;504
-"Palestinian Territory";Turkey;2;504
-"Palestinian Territory";Turkey;1;539
-"Palestinian Territory";Turkey;1;541
-"Palestinian Territory";Egypt;1;580
-"Palestinian Territory";Turkey;1;654
-"Palestinian Territory";Turkey;2;654
-"Palestinian Territory";Syria;1;671
+Palestine;Turkey;1;335
+Palestine;Turkey;1;400
+Palestine;Greece;2;551
+Palestine;Turkey;1;652
+Palestine;Turkey;1;654
+Palestine;Italy;1;645
+Palestine;Italy;1;336
+Palestine;Italy;1;369
+Palestine;Italy;2;387
+Palestine;Italy;1;378
+Palestine;Turkey;1;504
+Palestine;Turkey;2;504
+Palestine;Turkey;1;539
+Palestine;Turkey;1;541
+Palestine;Egypt;1;580
+Palestine;Turkey;1;654
+Palestine;Turkey;2;654
+Palestine;Syria;1;671
 Jordan;Turkey;2;334
 Jordan;Turkey;7;336
 Jordan;Turkey;3;331
@@ -5466,64 +5466,64 @@ Egypt;Egypt;5;332
 Egypt;Turkey;1;338
 Egypt;Egypt;4;338
 Egypt;Egypt;1;354
-"Palestinian Territory";Turkey;1;332
-"Palestinian Territory";Italy;1;354
-"Palestinian Territory";Italy;1;344
-"Palestinian Territory";Turkey;1;391
-"Palestinian Territory";Turkey;2;508
-"Palestinian Territory";Turkey;1;522
-"Palestinian Territory";Turkey;2;532
-"Palestinian Territory";Turkey;1;571
-"Palestinian Territory";Turkey;1;571
-"Palestinian Territory";Turkey;1;583
-"Palestinian Territory";Turkey;1;590
-"Palestinian Territory";Turkey;1;596
-"Palestinian Territory";Egypt;1;550
-"Palestinian Territory";Italy;5;331
-"Palestinian Territory";Turkey;1;327
-"Palestinian Territory";Italy;1;343
-"Palestinian Territory";Italy;1;354
-"Palestinian Territory";Turkey;1;369
-"Palestinian Territory";Turkey;1;369
-"Palestinian Territory";Italy;1;369
-"Palestinian Territory";Egypt;1;379
-"Palestinian Territory";Italy;1;400
-"Palestinian Territory";Italy;1;393
-"Palestinian Territory";Italy;15;412
-"Palestinian Territory";Turkey;1;465
-"Palestinian Territory";Turkey;2;504
-"Palestinian Territory";Turkey;1;550
-"Palestinian Territory";Turkey;1;550
-"Palestinian Territory";Turkey;5;550
-"Palestinian Territory";Egypt;1;550
-"Palestinian Territory";Turkey;7;543
-"Palestinian Territory";Turkey;1;522
-"Palestinian Territory";Turkey;2;522
-"Palestinian Territory";Turkey;2;522
-"Palestinian Territory";Turkey;1;522
-"Palestinian Territory";Turkey;2;546
-"Palestinian Territory";Turkey;5;546
-"Palestinian Territory";Egypt;1;546
-"Palestinian Territory";Turkey;1;538
-"Palestinian Territory";Greece;1;568
-"Palestinian Territory";Turkey;1;571
-"Palestinian Territory";Turkey;1;578
-"Palestinian Territory";Turkey;1;590
-"Palestinian Territory";Turkey;1;584
-"Palestinian Territory";Turkey;1;588
-"Palestinian Territory";Turkey;1;597
-"Palestinian Territory";Turkey;2;592
-"Palestinian Territory";Turkey;1;600
-"Palestinian Territory";Egypt;2;600
-"Palestinian Territory";Turkey;3;600
-"Palestinian Territory";Turkey;3;600
-"Palestinian Territory";Turkey;1;606
-"Palestinian Territory";Turkey;1;625
-"Palestinian Territory";Turkey;1;639
-"Palestinian Territory";Turkey;2;654
-"Palestinian Territory";Greece;1;335
-"Palestinian Territory";Turkey;1;654
-"Palestinian Territory";Turkey;7;654
+Palestine;Turkey;1;332
+Palestine;Italy;1;354
+Palestine;Italy;1;344
+Palestine;Turkey;1;391
+Palestine;Turkey;2;508
+Palestine;Turkey;1;522
+Palestine;Turkey;2;532
+Palestine;Turkey;1;571
+Palestine;Turkey;1;571
+Palestine;Turkey;1;583
+Palestine;Turkey;1;590
+Palestine;Turkey;1;596
+Palestine;Egypt;1;550
+Palestine;Italy;5;331
+Palestine;Turkey;1;327
+Palestine;Italy;1;343
+Palestine;Italy;1;354
+Palestine;Turkey;1;369
+Palestine;Turkey;1;369
+Palestine;Italy;1;369
+Palestine;Egypt;1;379
+Palestine;Italy;1;400
+Palestine;Italy;1;393
+Palestine;Italy;15;412
+Palestine;Turkey;1;465
+Palestine;Turkey;2;504
+Palestine;Turkey;1;550
+Palestine;Turkey;1;550
+Palestine;Turkey;5;550
+Palestine;Egypt;1;550
+Palestine;Turkey;7;543
+Palestine;Turkey;1;522
+Palestine;Turkey;2;522
+Palestine;Turkey;2;522
+Palestine;Turkey;1;522
+Palestine;Turkey;2;546
+Palestine;Turkey;5;546
+Palestine;Egypt;1;546
+Palestine;Turkey;1;538
+Palestine;Greece;1;568
+Palestine;Turkey;1;571
+Palestine;Turkey;1;578
+Palestine;Turkey;1;590
+Palestine;Turkey;1;584
+Palestine;Turkey;1;588
+Palestine;Turkey;1;597
+Palestine;Turkey;2;592
+Palestine;Turkey;1;600
+Palestine;Egypt;2;600
+Palestine;Turkey;3;600
+Palestine;Turkey;3;600
+Palestine;Turkey;1;606
+Palestine;Turkey;1;625
+Palestine;Turkey;1;639
+Palestine;Turkey;2;654
+Palestine;Greece;1;335
+Palestine;Turkey;1;654
+Palestine;Turkey;7;654
 Israel;Turkey;1;332
 Israel;Italy;1;337
 Israel;Turkey;2;354
@@ -7394,8 +7394,8 @@ Egypt;Greece;6;532
 Cyprus;Greece;1;592
 Syria;Greece;1;583
 Syria;Greece;1;578
-"Palestinian Territory";Greece;4;528
-"Palestinian Territory";Greece;1;619
+Palestine;Greece;4;528
+Palestine;Greece;1;619
 Israel;Greece;1;582
 Israel;Greece;1;587
 Iraq;Greece;1;588
@@ -7509,32 +7509,32 @@ Syria;Greece;1;583
 Syria;Greece;1;571
 Syria;Greece;2;616
 Israel;Greece;1;601
-"Palestinian Territory";Greece;1;619
-"Palestinian Territory";Greece;1;532
-"Palestinian Territory";Greece;1;566
-"Palestinian Territory";Greece;1;576
-"Palestinian Territory";Greece;2;568
-"Palestinian Territory";Greece;1;574
-"Palestinian Territory";Greece;1;583
-"Palestinian Territory";Greece;1;584
-"Palestinian Territory";Greece;1;586
-"Palestinian Territory";Greece;1;589
-"Palestinian Territory";Greece;2;601
-"Palestinian Territory";Greece;3;619
-"Palestinian Territory";Greece;1;585
+Palestine;Greece;1;619
+Palestine;Greece;1;532
+Palestine;Greece;1;566
+Palestine;Greece;1;576
+Palestine;Greece;2;568
+Palestine;Greece;1;574
+Palestine;Greece;1;583
+Palestine;Greece;1;584
+Palestine;Greece;1;586
+Palestine;Greece;1;589
+Palestine;Greece;2;601
+Palestine;Greece;3;619
+Palestine;Greece;1;585
 Israel;Greece;1;563
 Israel;Greece;5;571
 Israel;Greece;2;580
 Israel;Greece;3;592
 Israel;Greece;1;568
-"Palestinian Territory";Greece;1;571
-"Palestinian Territory";Greece;1;575
-"Palestinian Territory";Greece;1;616
+Palestine;Greece;1;571
+Palestine;Greece;1;575
+Palestine;Greece;1;616
 Jordan;Greece;1;601
 Jordan;Greece;1;616
-"Palestinian Territory";Greece;1;522
-"Palestinian Territory";Greece;1;569
-"Palestinian Territory";Greece;1;563
+Palestine;Greece;1;522
+Palestine;Greece;1;569
+Palestine;Greece;1;563
 Jordan;Greece;1;569
 Jordan;Greece;1;565
 Israel;Greece;1;532
@@ -7550,7 +7550,7 @@ Israel;Greece;1;572
 Israel;Greece;1;576
 Israel;Greece;1;571
 Israel;Greece;1;584
-"Palestinian Territory";Greece;1;566
+Palestine;Greece;1;566
 Macedonia;Greece;1;583
 Bulgaria;Greece;1;569
 Bulgaria;Greece;1;574
@@ -7560,23 +7560,23 @@ Macedonia;Greece;1;550
 Macedonia;Greece;1;571
 Lebanon;Greece;1;550
 Israel;Greece;2;522
-"Palestinian Territory";Greece;1;522
+Palestine;Greece;1;522
 Israel;Greece;1;528
 Israel;Greece;1;532
 Israel;Greece;1;564
-"Palestinian Territory";Greece;1;563
-"Palestinian Territory";Greece;3;571
+Palestine;Greece;1;563
+Palestine;Greece;3;571
 Israel;Greece;1;571
-"Palestinian Territory";Greece;1;571
+Palestine;Greece;1;571
 Israel;Greece;4;571
-"Palestinian Territory";Greece;21;571
+Palestine;Greece;21;571
 Israel;Greece;4;571
 Israel;Greece;4;571
 Israel;Greece;2;571
-"Palestinian Territory";Greece;1;580
-"Palestinian Territory";Greece;25;592
-"Palestinian Territory";Greece;1;606
-"Palestinian Territory";Greece;1;618
+Palestine;Greece;1;580
+Palestine;Greece;25;592
+Palestine;Greece;1;606
+Palestine;Greece;1;618
 Israel;Greece;1;613
 Serbia;Greece;1;557
 Greece;Greece;6;545
@@ -7925,7 +7925,7 @@ Lebanon;Turkey;1;725
 Lebanon;Turkey;1;725
 Lebanon;Turkey;1;725
 Lebanon;Egypt;1;725
-Lebanon;Palestina;1;725
+Lebanon;Palestine;1;725
 Lebanon;Turkey;1;750
 Lebanon;Turkey;1;750
 Lebanon;Turkey;1;750
@@ -7976,7 +7976,7 @@ Lebanon;Israel;1;725
 Lebanon;Israel;1;725
 Lebanon;Israel;1;725
 Lebanon;Greece;1;625
-Israel;Palestina;1;725
+Israel;Palestine;1;725
 Israel;Syria;1;734
 Israel;Syria;1;742
 Israel;Turkey;1;725
@@ -7995,17 +7995,17 @@ Israel;Israel;1;725
 Israel;Israel;1;725
 Israel;Syria;1;743
 Israel;Syria;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
 Israel;Egypt;1;725
 Israel;Turkey;1;725
 Israel;Turkey;1;725
 Israel;Turkey;1;725
 Israel;Egypt;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
 Israel;Israel;1;725
 Israel;Turkey;1;725
 Israel;Israel;1;709
@@ -8052,7 +8052,7 @@ Israel;Turkey;1;722
 Israel;Bulgaria;1;722
 Israel;Israel;1;722
 Israel;Israel;1;722
-Israel;Palestina;1;722
+Israel;Palestine;1;722
 Israel;Turkey;1;722
 Israel;Turkey;1;722
 Israel;Turkey;1;722
@@ -8406,15 +8406,13 @@ Israel;Turkey;1;725
 Israel;Turkey;1;725
 Israel;Turkey;1;725
 Israel;Syria;1;725
-Israel;Palestina;1;725
+Israel;Palestine;1;725
 Israel;Turkey;1;725
-Israel;Palestina;1;725
-Israel;Turkey;1;725
-Israel;Turkey;1;725
-Israel;Turkey;1;725
-Israel;Palestina;1;725
+Israel;Palestine;1;725
 Israel;Turkey;1;725
 Israel;Turkey;1;725
+Israel;Turkey;1;725
+Israel;Palestine;1;725
 Israel;Turkey;1;725
 Israel;Turkey;1;725
 Israel;Turkey;1;725
@@ -8426,10 +8424,6 @@ Israel;Turkey;1;725
 Israel;Turkey;1;725
 Israel;Turkey;1;725
 Israel;Turkey;1;725
-Israel;Turkey;1;725
-Israel;Turkey;1;725
-Israel;Turkey;1;725
-Israel;Egypt;1;725
 Israel;Turkey;1;725
 Israel;Turkey;1;725
 Israel;Turkey;1;725
@@ -8439,8 +8433,14 @@ Israel;Egypt;1;725
 Israel;Turkey;1;725
 Israel;Turkey;1;725
 Israel;Turkey;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
+Israel;Turkey;1;725
+Israel;Turkey;1;725
+Israel;Egypt;1;725
+Israel;Turkey;1;725
+Israel;Turkey;1;725
+Israel;Turkey;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
 Israel;Turkey;1;680
 Israel;Turkey;1;680
 Israel;Turkey;1;655
@@ -8545,8 +8545,8 @@ Israel;Syria;1;705
 Israel;Syria;1;680
 Israel;Syria;1;725
 Israel;Syria;1;730
-Israel;Palestina;1;725
-Israel;Palestina;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
 Israel;Egypt;1;738
 Israel;Turkey;1;655
 Israel;Turkey;1;655
@@ -8670,14 +8670,12 @@ Jordan;Turkey;1;734
 Jordan;Turkey;1;734
 Jordan;Turkey;1;734
 Jordan;Turkey;1;734
-Jordan;Palestina;1;725
-Jordan;Palestina;1;725
-Jordan;Palestina;1;725
+Jordan;Palestine;1;725
+Jordan;Palestine;1;725
+Jordan;Palestine;1;725
 Jordan;Israel;1;725
-Jordan;Palestina;1;725
-Jordan;Palestina;1;725
-Jordan;Israel;1;725
-Jordan;Israel;1;725
+Jordan;Palestine;1;725
+Jordan;Palestine;1;725
 Jordan;Israel;1;725
 Jordan;Israel;1;725
 Jordan;Israel;1;725
@@ -8712,18 +8710,20 @@ Jordan;Israel;1;725
 Jordan;Israel;1;725
 Jordan;Israel;1;725
 Jordan;Israel;1;725
-Jordan;Palestina;1;725
-Jordan;Palestina;1;725
-Jordan;Palestina;1;725
-Jordan;Palestina;1;725
-Jordan;Palestina;1;725
-Jordan;Palestina;1;725
-Jordan;Palestina;1;725
-Jordan;Palestina;1;725
-Jordan;Palestina;1;725
-Jordan;Palestina;1;725
-Jordan;Palestina;1;725
-Jordan;Palestina;1;725
+Jordan;Israel;1;725
+Jordan;Israel;1;725
+Jordan;Palestine;1;725
+Jordan;Palestine;1;725
+Jordan;Palestine;1;725
+Jordan;Palestine;1;725
+Jordan;Palestine;1;725
+Jordan;Palestine;1;725
+Jordan;Palestine;1;725
+Jordan;Palestine;1;725
+Jordan;Palestine;1;725
+Jordan;Palestine;1;725
+Jordan;Palestine;1;725
+Jordan;Palestine;1;725
 Jordan;Jordan;1;680
 Jordan;Jordan;1;680
 Jordan;Turkey;1;612
@@ -8766,7 +8766,7 @@ Israel;Syria;1;695
 Israel;Syria;1;695
 Israel;Syria;1;745
 Israel;Egypt;1;738
-Israel;Palestina;1;725
+Israel;Palestine;1;725
 Israel;Turkey;1;725
 Israel;Turkey;1;725
 Israel;Turkey;1;725
@@ -8802,7 +8802,7 @@ Israel;Syria;1;745
 Israel;Egypt;1;750
 Israel;Turkey;1;641
 Israel;Israel;1;695
-Israel;Palestina;1;725
+Israel;Palestine;1;725
 Israel;Spain;1;723
 Israel;Iran;1;620
 Israel;Turkey;1;655
@@ -8835,17 +8835,17 @@ Israel;Israel;1;725
 Israel;Israel;1;725
 Israel;Israel;1;725
 Israel;Israel;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
 Israel;Israel;1;725
 Israel;Israel;1;725
 Israel;Israel;1;725
@@ -8853,14 +8853,14 @@ Israel;Israel;1;725
 Israel;Israel;1;725
 Israel;Israel;1;725
 Israel;Israel;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
 Israel;Turkey;1;725
-Israel;Palestina;1;725
+Israel;Palestine;1;725
 Israel;Turkey;1;734
 Israel;Turkey;1;734
 Israel;Turkey;1;734
@@ -8951,7 +8951,7 @@ Israel;Israel;1;725
 Israel;Israel;1;725
 Israel;Syria;1;725
 Israel;Egypt;1;738
-Israel;Palestina;1;725
+Israel;Palestine;1;725
 Israel;Egypt;1;725
 Israel;Egypt;1;725
 Israel;Turkey;1;725
@@ -9028,15 +9028,15 @@ Israel;Israel;1;725
 Israel;Israel;1;725
 Israel;Israel;1;725
 Israel;Israel;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
 Israel;Turkey;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
 Israel;Egypt;1;725
 Israel;Turkey;1;725
 Israel;Turkey;1;725
@@ -9098,13 +9098,13 @@ Israel;Turkey;1;725
 Israel;Spain;1;649
 Israel;Israel;1;725
 Israel;Syria;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
 Israel;Turkey;1;725
 Israel;Israel;1;725
 Israel;Israel;1;725
-Israel;Palestina;1;725
+Israel;Palestine;1;725
 Israel;Turkey;1;680
 Israel;Israel;1;680
 Israel;Turkey;1;655
@@ -9149,15 +9149,15 @@ Israel;Turkey;1;725
 Israel;Turkey;1;725
 Jordan;Iran;1;609
 Jordan;Turkey;1;725
-Jordan;Palestina;1;725
+Jordan;Palestine;1;725
 Jordan;Turkey;1;619
 Jordan;Turkey;1;612
 Jordan;Turkey;1;625
 Jordan;Turkey;1;625
 Jordan;Israel;1;725
-Jordan;Palestina;1;725
+Jordan;Palestine;1;725
 Jordan;Turkey;1;725
-Jordan;Palestina;1;725
+Jordan;Palestine;1;725
 Jordan;Turkey;1;680
 Jordan;Turkey;1;680
 Jordan;Turkey;1;655
@@ -9188,10 +9188,10 @@ Israel;Turkey;1;725
 Israel;Israel;1;725
 Israel;Israel;1;725
 Israel;Israel;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
 Israel;Turkey;1;680
 Israel;Turkey;1;680
 Israel;Turkey;1;680
@@ -9208,7 +9208,7 @@ Israel;Turkey;1;725
 Israel;Israel;1;680
 Israel;Syria;1;725
 Israel;Syria;1;680
-Israel;Palestina;1;725
+Israel;Palestine;1;725
 Israel;Turkey;1;725
 Israel;Turkey;1;725
 Israel;Israel;1;725
@@ -9340,7 +9340,7 @@ Israel;Turkey;1;655
 Israel;Israel;1;725
 Israel;Israel;1;725
 Israel;Turkey;1;725
-Israel;Palestina;1;725
+Israel;Palestine;1;725
 Israel;Turkey;1;725
 Jordan;Turkey;1;725
 Jordan;Turkey;1;725
@@ -9555,24 +9555,24 @@ Turkey;Syria;1;725
 Turkey;Turkey;1;654
 Turkey;Turkey;1;654
 Turkey;Turkey;1;639
-Israel;Palestina;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
-Israel;Palestina;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
+Israel;Palestine;1;725
 Israel;Turkey;1;647
 Israel;Turkey;1;655
 Israel;Turkey;1;725
 Israel;Turkey;1;654
 Israel;Turkey;1;625
-Israel;Palestina;1;725
+Israel;Palestine;1;725
 Israel;Turkey;1;725
-Israel;Palestina;1;725
+Israel;Palestine;1;725
 Israel;Turkey;1;655
 Israel;Turkey;1;629
 Israel;Turkey;1;635
@@ -9681,11 +9681,11 @@ Syria;Egypt;1;725
 Syria;Egypt;1;725
 Syria;Egypt;1;725
 Syria;Egypt;1;725
-Syria;Palestina;1;725
-Syria;Palestina;1;725
-Syria;Palestina;1;725
-Syria;Palestina;1;725
-Syria;Palestina;1;725
+Syria;Palestine;1;725
+Syria;Palestine;1;725
+Syria;Palestine;1;725
+Syria;Palestine;1;725
+Syria;Palestine;1;725
 Syria;Turkey;1;725
 Syria;Turkey;1;725
 Syria;Turkey;1;725
@@ -9760,19 +9760,19 @@ Israel;Turkey;1;750
 Israel;Turkey;1;750
 Israel;Turkey;1;750
 Israel;Egypt;1;738
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Turkey;1;655
-"Palestinian Territory";Egypt;1;639
-"Palestinian Territory";Israel;1;725
-"Palestinian Territory";Turkey;1;613
-"Palestinian Territory";Turkey;1;625
-"Palestinian Territory";Turkey;1;612
-"Palestinian Territory";Israel;1;725
-"Palestinian Territory";Israel;1;680
+Palestine;Turkey;1;725
+Palestine;Turkey;1;725
+Palestine;Turkey;1;725
+Palestine;Turkey;1;725
+Palestine;Turkey;1;725
+Palestine;Turkey;1;655
+Palestine;Egypt;1;639
+Palestine;Israel;1;725
+Palestine;Turkey;1;613
+Palestine;Turkey;1;625
+Palestine;Turkey;1;612
+Palestine;Israel;1;725
+Palestine;Israel;1;680
 Israel;Egypt;1;725
 Israel;Turkey;1;725
 Israel;Turkey;1;725
@@ -9793,197 +9793,197 @@ Israel;Israel;1;695
 Israel;Egypt;1;725
 Israel;Egypt;1;750
 Turkey;Iraq;1;136
-"Palestinian Territory";Israel;1;725
-"Palestinian Territory";Syria;1;725
-"Palestinian Territory";Syria;1;725
-"Palestinian Territory";Syria;1;725
-"Palestinian Territory";Syria;1;725
-"Palestinian Territory";Israel;1;725
-"Palestinian Territory";Turkey;1;734
-"Palestinian Territory";Turkey;1;734
-"Palestinian Territory";Turkey;1;734
-"Palestinian Territory";Turkey;1;734
-"Palestinian Territory";Egypt;1;725
-"Palestinian Territory";Israel;1;725
+Palestine;Israel;1;725
+Palestine;Syria;1;725
+Palestine;Syria;1;725
+Palestine;Syria;1;725
+Palestine;Syria;1;725
+Palestine;Israel;1;725
+Palestine;Turkey;1;734
+Palestine;Turkey;1;734
+Palestine;Turkey;1;734
+Palestine;Turkey;1;734
+Palestine;Egypt;1;725
+Palestine;Israel;1;725
 Israel;Turkey;1;625
 Israel;Turkey;1;631
 Israel;Turkey;1;725
 Israel;Turkey;1;725
 Israel;Turkey;1;725
 Israel;Turkey;1;655
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Israel;1;725
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Turkey;1;655
-"Palestinian Territory";Turkey;1;655
+Palestine;Turkey;1;725
+Palestine;Israel;1;725
+Palestine;Turkey;1;725
+Palestine;Turkey;1;655
+Palestine;Turkey;1;655
 Israel;Turkey;1;725
 Israel;Israel;1;725
-"Palestinian Territory";Turkey;1;655
-"Palestinian Territory";Israel;1;725
-"Palestinian Territory";Israel;1;725
-"Palestinian Territory";Israel;1;725
-"Palestinian Territory";Israel;1;725
-"Palestinian Territory";Israel;1;725
-"Palestinian Territory";Israel;1;725
-"Palestinian Territory";Israel;1;725
-"Palestinian Territory";Jordan;1;680
-"Palestinian Territory";Syria;1;725
-"Palestinian Territory";Syria;1;725
-"Palestinian Territory";Syria;1;725
-"Palestinian Territory";Syria;1;725
-"Palestinian Territory";Syria;1;725
-"Palestinian Territory";Syria;1;725
-"Palestinian Territory";Syria;1;725
-"Palestinian Territory";Syria;1;725
-"Palestinian Territory";Syria;1;725
-"Palestinian Territory";Syria;1;725
-"Palestinian Territory";Syria;1;725
-"Palestinian Territory";Syria;1;725
-"Palestinian Territory";Syria;1;725
-"Palestinian Territory";Syria;1;725
-"Palestinian Territory";Syria;1;725
-"Palestinian Territory";Syria;1;725
-"Palestinian Territory";Syria;1;725
-"Palestinian Territory";Syria;1;725
-"Palestinian Territory";Syria;1;725
-"Palestinian Territory";Syria;1;725
-"Palestinian Territory";Syria;1;725
-"Palestinian Territory";Syria;1;725
-"Palestinian Territory";Syria;1;725
-"Palestinian Territory";Syria;1;725
-"Palestinian Territory";Syria;1;725
-"Palestinian Territory";Syria;1;725
-"Palestinian Territory";Syria;1;725
-"Palestinian Territory";Syria;1;725
-"Palestinian Territory";Syria;1;725
-"Palestinian Territory";Syria;1;725
-"Palestinian Territory";Syria;1;745
-"Palestinian Territory";Syria;1;745
-"Palestinian Territory";Syria;1;745
-"Palestinian Territory";Syria;1;745
-"Palestinian Territory";Syria;1;745
-"Palestinian Territory";Syria;1;745
-"Palestinian Territory";Syria;1;745
-"Palestinian Territory";Syria;1;745
-"Palestinian Territory";Syria;1;745
-"Palestinian Territory";Syria;1;745
-"Palestinian Territory";Syria;1;745
-"Palestinian Territory";Syria;1;745
-"Palestinian Territory";Syria;1;734
-"Palestinian Territory";Syria;1;725
-"Palestinian Territory";Syria;1;725
-"Palestinian Territory";Egypt;1;725
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Egypt;1;725
-"Palestinian Territory";Egypt;1;725
-"Palestinian Territory";Egypt;1;725
-"Palestinian Territory";Egypt;1;725
-"Palestinian Territory";Egypt;1;725
-"Palestinian Territory";Egypt;1;725
-"Palestinian Territory";Egypt;1;725
-"Palestinian Territory";Egypt;1;725
-"Palestinian Territory";Egypt;1;725
-"Palestinian Territory";Egypt;1;725
-"Palestinian Territory";Egypt;1;725
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Palestina;1;725
-"Palestinian Territory";Palestina;1;725
-"Palestinian Territory";Palestina;1;725
-"Palestinian Territory";Palestina;1;725
-"Palestinian Territory";Palestina;1;725
-"Palestinian Territory";Palestina;1;725
-"Palestinian Territory";Palestina;1;725
-"Palestinian Territory";Palestina;1;725
-"Palestinian Territory";Palestina;1;725
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Israel;1;725
-"Palestinian Territory";Israel;1;725
-"Palestinian Territory";Israel;1;725
-"Palestinian Territory";Israel;1;725
-"Palestinian Territory";Israel;1;725
-"Palestinian Territory";Israel;1;725
-"Palestinian Territory";Israel;1;725
-"Palestinian Territory";Israel;1;725
-"Palestinian Territory";Israel;1;725
-"Palestinian Territory";Israel;1;725
-"Palestinian Territory";Israel;1;725
-"Palestinian Territory";Israel;1;725
-"Palestinian Territory";Israel;1;725
-"Palestinian Territory";Israel;1;725
-"Palestinian Territory";Israel;1;725
-"Palestinian Territory";Israel;1;725
-"Palestinian Territory";Turkey;1;734
-"Palestinian Territory";Turkey;78;750
-"Palestinian Territory";Turkey;1;753
-"Palestinian Territory";Egypt;1;749
-"Palestinian Territory";Israel;1;725
-"Palestinian Territory";Turkey;1;734
-"Palestinian Territory";Turkey;1;734
-"Palestinian Territory";Turkey;1;734
-"Palestinian Territory";Turkey;1;734
-"Palestinian Territory";Syria;1;743
-"Palestinian Territory";Israel;1;725
-"Palestinian Territory";Israel;1;725
-"Palestinian Territory";Israel;1;725
-"Palestinian Territory";Egypt;1;725
-"Palestinian Territory";Egypt;1;750
-"Palestinian Territory";Egypt;1;750
-"Palestinian Territory";Egypt;1;750
-"Palestinian Territory";Egypt;1;750
-"Palestinian Territory";Egypt;1;750
-"Palestinian Territory";Egypt;1;750
-"Palestinian Territory";Egypt;1;750
-"Palestinian Territory";Egypt;1;750
-"Palestinian Territory";Egypt;1;750
-"Palestinian Territory";Egypt;1;750
-"Palestinian Territory";Turkey;1;735
-"Palestinian Territory";Turkey;1;734
-"Palestinian Territory";Turkey;1;734
-"Palestinian Territory";Turkey;1;734
-"Palestinian Territory";Turkey;1;734
-"Palestinian Territory";Turkey;1;734
-"Palestinian Territory";Turkey;1;734
-"Palestinian Territory";Turkey;1;734
-"Palestinian Territory";Turkey;1;734
-"Palestinian Territory";Turkey;1;734
-"Palestinian Territory";Turkey;1;734
-"Palestinian Territory";Turkey;1;734
-"Palestinian Territory";Turkey;1;734
-"Palestinian Territory";Turkey;1;734
-"Palestinian Territory";Turkey;1;734
-"Palestinian Territory";Turkey;1;734
-"Palestinian Territory";Israel;1;725
-"Palestinian Territory";Israel;1;725
-"Palestinian Territory";Israel;1;725
-"Palestinian Territory";Israel;1;725
+Palestine;Turkey;1;655
+Palestine;Israel;1;725
+Palestine;Israel;1;725
+Palestine;Israel;1;725
+Palestine;Israel;1;725
+Palestine;Israel;1;725
+Palestine;Israel;1;725
+Palestine;Israel;1;725
+Palestine;Jordan;1;680
+Palestine;Syria;1;725
+Palestine;Syria;1;725
+Palestine;Syria;1;725
+Palestine;Syria;1;725
+Palestine;Syria;1;725
+Palestine;Syria;1;725
+Palestine;Syria;1;725
+Palestine;Syria;1;725
+Palestine;Syria;1;725
+Palestine;Syria;1;725
+Palestine;Syria;1;725
+Palestine;Syria;1;725
+Palestine;Syria;1;725
+Palestine;Syria;1;725
+Palestine;Syria;1;725
+Palestine;Syria;1;725
+Palestine;Syria;1;725
+Palestine;Syria;1;725
+Palestine;Syria;1;725
+Palestine;Syria;1;725
+Palestine;Syria;1;725
+Palestine;Syria;1;725
+Palestine;Syria;1;725
+Palestine;Syria;1;725
+Palestine;Syria;1;725
+Palestine;Syria;1;725
+Palestine;Syria;1;725
+Palestine;Syria;1;725
+Palestine;Syria;1;725
+Palestine;Syria;1;725
+Palestine;Syria;1;745
+Palestine;Syria;1;745
+Palestine;Syria;1;745
+Palestine;Syria;1;745
+Palestine;Syria;1;745
+Palestine;Syria;1;745
+Palestine;Syria;1;745
+Palestine;Syria;1;745
+Palestine;Syria;1;745
+Palestine;Syria;1;745
+Palestine;Syria;1;745
+Palestine;Syria;1;745
+Palestine;Syria;1;734
+Palestine;Syria;1;725
+Palestine;Syria;1;725
+Palestine;Egypt;1;725
+Palestine;Turkey;1;725
+Palestine;Turkey;1;725
+Palestine;Turkey;1;725
+Palestine;Turkey;1;725
+Palestine;Turkey;1;725
+Palestine;Turkey;1;725
+Palestine;Turkey;1;725
+Palestine;Turkey;1;725
+Palestine;Turkey;1;725
+Palestine;Turkey;1;725
+Palestine;Turkey;1;725
+Palestine;Turkey;1;725
+Palestine;Turkey;1;725
+Palestine;Turkey;1;725
+Palestine;Turkey;1;725
+Palestine;Turkey;1;725
+Palestine;Turkey;1;725
+Palestine;Turkey;1;725
+Palestine;Turkey;1;725
+Palestine;Turkey;1;725
+Palestine;Turkey;1;725
+Palestine;Turkey;1;725
+Palestine;Turkey;1;725
+Palestine;Turkey;1;725
+Palestine;Turkey;1;725
+Palestine;Egypt;1;725
+Palestine;Egypt;1;725
+Palestine;Egypt;1;725
+Palestine;Egypt;1;725
+Palestine;Egypt;1;725
+Palestine;Egypt;1;725
+Palestine;Egypt;1;725
+Palestine;Egypt;1;725
+Palestine;Egypt;1;725
+Palestine;Egypt;1;725
+Palestine;Egypt;1;725
+Palestine;Turkey;1;725
+Palestine;Turkey;1;725
+Palestine;Turkey;1;725
+Palestine;Turkey;1;725
+Palestine;Turkey;1;725
+Palestine;Palestine;1;725
+Palestine;Palestine;1;725
+Palestine;Palestine;1;725
+Palestine;Palestine;1;725
+Palestine;Palestine;1;725
+Palestine;Palestine;1;725
+Palestine;Palestine;1;725
+Palestine;Palestine;1;725
+Palestine;Palestine;1;725
+Palestine;Turkey;1;725
+Palestine;Israel;1;725
+Palestine;Israel;1;725
+Palestine;Israel;1;725
+Palestine;Israel;1;725
+Palestine;Israel;1;725
+Palestine;Israel;1;725
+Palestine;Israel;1;725
+Palestine;Israel;1;725
+Palestine;Israel;1;725
+Palestine;Israel;1;725
+Palestine;Israel;1;725
+Palestine;Israel;1;725
+Palestine;Israel;1;725
+Palestine;Israel;1;725
+Palestine;Israel;1;725
+Palestine;Israel;1;725
+Palestine;Turkey;1;734
+Palestine;Turkey;78;750
+Palestine;Turkey;1;753
+Palestine;Egypt;1;749
+Palestine;Israel;1;725
+Palestine;Turkey;1;734
+Palestine;Turkey;1;734
+Palestine;Turkey;1;734
+Palestine;Turkey;1;734
+Palestine;Syria;1;743
+Palestine;Israel;1;725
+Palestine;Israel;1;725
+Palestine;Israel;1;725
+Palestine;Egypt;1;725
+Palestine;Egypt;1;750
+Palestine;Egypt;1;750
+Palestine;Egypt;1;750
+Palestine;Egypt;1;750
+Palestine;Egypt;1;750
+Palestine;Egypt;1;750
+Palestine;Egypt;1;750
+Palestine;Egypt;1;750
+Palestine;Egypt;1;750
+Palestine;Egypt;1;750
+Palestine;Turkey;1;735
+Palestine;Turkey;1;734
+Palestine;Turkey;1;734
+Palestine;Turkey;1;734
+Palestine;Turkey;1;734
+Palestine;Turkey;1;734
+Palestine;Turkey;1;734
+Palestine;Turkey;1;734
+Palestine;Turkey;1;734
+Palestine;Turkey;1;734
+Palestine;Turkey;1;734
+Palestine;Turkey;1;734
+Palestine;Turkey;1;734
+Palestine;Turkey;1;734
+Palestine;Turkey;1;734
+Palestine;Turkey;1;734
+Palestine;Israel;1;725
+Palestine;Israel;1;725
+Palestine;Israel;1;725
+Palestine;Israel;1;725
 Israel;Turkey;1;655
 Israel;Turkey;1;655
 Israel;Turkey;1;625
@@ -10144,24 +10144,24 @@ Israel;Israel;1;725
 Israel;Israel;1;725
 Israel;Israel;1;725
 Israel;Israel;1;725
-Israel;Palestina;1;725
-"Palestinian Territory";Egypt;1;725
-"Palestinian Territory";Israel;1;725
-"Palestinian Territory";Turkey;1;725
+Israel;Palestine;1;725
+Palestine;Egypt;1;725
+Palestine;Israel;1;725
+Palestine;Turkey;1;725
 Israel;Turkey;1;725
-Israel;Palestina;1;725
+Israel;Palestine;1;725
 Israel;Turkey;1;680
 Israel;Turkey;1;725
 Israel;Turkey;1;655
-Israel;Palestina;1;725
+Israel;Palestine;1;725
 Israel;Israel;1;725
 Israel;Turkey;1;680
 Israel;Israel;1;680
-"Palestinian Territory";Turkey;1;655
-"Palestinian Territory";Palestina;1;725
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Turkey;1;725
-"Palestinian Territory";Turkey;1;725
+Palestine;Turkey;1;655
+Palestine;Palestine;1;725
+Palestine;Turkey;1;725
+Palestine;Turkey;1;725
+Palestine;Turkey;1;725
 Jordan;Turkey;1;725
 Jordan;Turkey;1;725
 Jordan;Turkey;1;725
@@ -10178,8 +10178,8 @@ Jordan;Turkey;1;725
 Jordan;Israel;1;725
 Jordan;Turkey;1;631
 Jordan;Turkey;1;725
-"Palestinian Territory";Turkey;1;603
-"Palestinian Territory";Turkey;1;655
+Palestine;Turkey;1;603
+Palestine;Turkey;1;655
 Israel;Turkey;1;725
 Israel;Egypt;1;725
 Jordan;Turkey;1;725
@@ -10206,9 +10206,9 @@ Jordan;Turkey;1;725
 Jordan;Turkey;1;725
 Jordan;Turkey;1;725
 Jordan;Turkey;1;725
-Jordan;Palestina;1;725
+Jordan;Palestine;1;725
 Jordan;Turkey;1;725
-Jordan;Palestina;1;725
+Jordan;Palestine;1;725
 Jordan;Turkey;1;725
 Jordan;Turkey;1;725
 Jordan;Jordan;1;695
@@ -10268,7 +10268,7 @@ Jordan;Syria;1;728
 Jordan;Syria;1;730
 Jordan;Syria;1;739
 Jordan;Egypt;1;738
-Jordan;Palestina;1;725
+Jordan;Palestine;1;725
 Jordan;Israel;1;725
 Jordan;Turkey;1;725
 Jordan;Israel;1;680
@@ -15687,11 +15687,11 @@ Greece;Turkey;1;617
 Greece;Greece;1;617
 Greece;Greece;1;618
 Greece;Turkey;3;614
-"Palestinian Territory";Turkey;1;504
-"Palestinian Territory";Turkey;1;659
-"Palestinian Territory";Turkey;1;659
-"Palestinian Territory";Israel;1;671
-"Palestinian Territory";Syria;4;722
+Palestine;Turkey;1;504
+Palestine;Turkey;1;659
+Palestine;Turkey;1;659
+Palestine;Israel;1;671
+Palestine;Syria;4;722
 France;Germany;1;384
 France;Italy;1;387
 France;Germany;4;385
@@ -16124,24 +16124,24 @@ Italy;Iran;1;356
 Italy;Iran;1;350
 Italy;Iran;1;412
 Italy;Iran;1;373
-"Palestinian Territory";Egypt;1;612
-"Palestinian Territory";Turkey;1;650
-"Palestinian Territory";Turkey;1;592
-"Palestinian Territory";Turkey;1;579
-"Palestinian Territory";Turkey;1;580
-"Palestinian Territory";Turkey;1;578
-"Palestinian Territory";Turkey;1;578
-"Palestinian Territory";Turkey;1;578
-"Palestinian Territory";Turkey;1;578
-"Palestinian Territory";Turkey;1;546
-"Palestinian Territory";Turkey;1;450
-"Palestinian Territory";Turkey;11;500
-"Palestinian Territory";Italy;1;416
-"Palestinian Territory";Turkey;1;380
-"Palestinian Territory";Italy;1;392
-"Palestinian Territory";Italy;2;350
-"Palestinian Territory";Italy;1;362
-"Palestinian Territory";Italy;3;362
+Palestine;Egypt;1;612
+Palestine;Turkey;1;650
+Palestine;Turkey;1;592
+Palestine;Turkey;1;579
+Palestine;Turkey;1;580
+Palestine;Turkey;1;578
+Palestine;Turkey;1;578
+Palestine;Turkey;1;578
+Palestine;Turkey;1;578
+Palestine;Turkey;1;546
+Palestine;Turkey;1;450
+Palestine;Turkey;11;500
+Palestine;Italy;1;416
+Palestine;Turkey;1;380
+Palestine;Italy;1;392
+Palestine;Italy;2;350
+Palestine;Italy;1;362
+Palestine;Italy;3;362
 "Czech Republic";Croatia;1;325
 "Czech Republic";Croatia;1;328
 "Czech Republic";Egypt;1;325
@@ -16402,24 +16402,24 @@ Italy;Italy;2;637
 Ukraine;Spain;1;749
 Ukraine;Turkey;1;712
 Spain;Spain;2;577
-"Palestinian Territory";Turkey;1;592
-"Palestinian Territory";Turkey;1;502
-"Palestinian Territory";Turkey;1;504
-"Palestinian Territory";Turkey;1;571
-"Palestinian Territory";Turkey;1;580
-"Palestinian Territory";Turkey;1;595
-"Palestinian Territory";Turkey;2;650
-"Palestinian Territory";Spain;1;650
-"Palestinian Territory";Turkey;1;625
-"Palestinian Territory";Turkey;1;613
-"Palestinian Territory";Syria;1;694
-"Palestinian Territory";Syria;1;671
-"Palestinian Territory";Turkey;4;654
-"Palestinian Territory";Turkey;1;653
-"Palestinian Territory";Syria;2;722
-"Palestinian Territory";Syria;1;695
-"Palestinian Territory";Syria;1;722
-"Palestinian Territory";Syria;1;728
+Palestine;Turkey;1;592
+Palestine;Turkey;1;502
+Palestine;Turkey;1;504
+Palestine;Turkey;1;571
+Palestine;Turkey;1;580
+Palestine;Turkey;1;595
+Palestine;Turkey;2;650
+Palestine;Spain;1;650
+Palestine;Turkey;1;625
+Palestine;Turkey;1;613
+Palestine;Syria;1;694
+Palestine;Syria;1;671
+Palestine;Turkey;4;654
+Palestine;Turkey;1;653
+Palestine;Syria;2;722
+Palestine;Syria;1;695
+Palestine;Syria;1;722
+Palestine;Syria;1;728
 Italy;Turkey;1;430
 "United Kingdom";Germany;1;340
 "United Kingdom";"Unknown mintner-490";3;359
@@ -23961,9 +23961,9 @@ Israel;Spain;2;625
 Israel;Syria;2;722
 Syria;Turkey;1;387
 Syria;Turkey;1;332
-"Palestinian Territory";Italy;3;646
-"Palestinian Territory";Iraq;1;722
-"Palestinian Territory";Syria;1;743
+Palestine;Italy;3;646
+Palestine;Iraq;1;722
+Palestine;Syria;1;743
 Italy;Italy;2;337
 Italy;Italy;1;412
 Italy;Italy;4;371
@@ -27859,7 +27859,7 @@ Greece;Turkey;1;544
 Greece;Turkey;1;560
 Greece;Turkey;1;575
 Greece;Turkey;1;578
-"Palestinian Territory";Ethiopia;1;622
+Palestine;Ethiopia;1;622
 Cyprus;Turkey;1;656
 Cyprus;Turkey;1;656
 Cyprus;Turkey;1;663
@@ -28711,8 +28711,8 @@ Syria;Turkey;1;522
 Syria;Turkey;1;546
 Syria;Turkey;1;571
 Syria;Turkey;1;571
-"Palestinian Territory";Syria;1;725
-"Palestinian Territory";Italy;2;362
+Palestine;Syria;1;725
+Palestine;Italy;2;362
 Greece;Turkey;3;677
 Greece;Turkey;2;677
 Tunisia;"Unknown mintner-1684";2;326
@@ -36272,12 +36272,12 @@ Greece;Turkey;1;569
 Greece;Turkey;1;571
 Greece;Turkey;1;571
 Greece;Turkey;1;574
-Israel;Palestina;10;725
+Israel;Palestine;10;725
 Israel;Israel;1;680
 Israel;Turkey;4;655
 Israel;Turkey;1;635
 Israel;Turkey;1;629
-Israel;Palestina;2;725
+Israel;Palestine;2;725
 Israel;Turkey;2;725
 Israel;Turkey;1;625
 Israel;Turkey;1;654
@@ -36313,7 +36313,7 @@ Turkey;Egypt;1;696
 Turkey;Syria;2;696
 Turkey;Syria;136;722
 Turkey;Iran;1;715
-Turkey;Palestina;1;716
+Turkey;Palestine;1;716
 Turkey;Armenia;1;716
 Turkey;Iraq;1;701
 Turkey;Lebanon;6;700
@@ -44427,12 +44427,12 @@ Israel;Spain;2;321
 Israel;Italy;1;321
 Israel;Turkey;4;338
 Israel;Turkey;2;335
-"Palestinian Territory";Spain;0;343
-"Palestinian Territory";Spain;0;349
-"Palestinian Territory";Spain;0;350
-"Palestinian Territory";Spain;0;362
-"Palestinian Territory";Spain;0;350
-"Palestinian Territory";Spain;0;350
+Palestine;Spain;0;343
+Palestine;Spain;0;349
+Palestine;Spain;0;350
+Palestine;Spain;0;362
+Palestine;Spain;0;350
+Palestine;Spain;0;350
 Israel;Turkey;1;349
 Israel;Turkey;1;369
 Israel;Turkey;1;387
@@ -49623,1089 +49623,1089 @@ Hungary;Italy;2;321
 Hungary;Croatia;3;321
 Hungary;Turkey;1;321
 Hungary;Spain;1;369
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;321
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Egypt;1;350
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Egypt;1;321
-"Palestinian Territory";Turkey;1;321
-"Palestinian Territory";Turkey;1;321
-"Palestinian Territory";Turkey;1;321
-"Palestinian Territory";Turkey;1;321
-"Palestinian Territory";Turkey;1;321
-"Palestinian Territory";Turkey;1;321
-"Palestinian Territory";Turkey;1;321
-"Palestinian Territory";Turkey;1;321
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Spain;1;321
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Italy;1;349
-"Palestinian Territory";Turkey;1;321
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Turkey;1;321
-"Palestinian Territory";Turkey;1;321
-"Palestinian Territory";Turkey;1;321
-"Palestinian Territory";Turkey;1;321
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Turkey;1;338
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Turkey;1;343
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Turkey;1;343
-"Palestinian Territory";Spain;1;343
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;338
-"Palestinian Territory";Turkey;1;343
-"Palestinian Territory";Spain;1;321
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Turkey;1;338
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;343
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Turkey;1;343
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Greece;1;349
-"Palestinian Territory";Italy;1;349
-"Palestinian Territory";Italy;1;349
-"Palestinian Territory";Italy;1;349
-"Palestinian Territory";Croatia;1;349
-"Palestinian Territory";Croatia;1;349
-"Palestinian Territory";Croatia;1;349
-"Palestinian Territory";Croatia;1;349
-"Palestinian Territory";Croatia;1;349
-"Palestinian Territory";Greece;1;349
-"Palestinian Territory";Greece;1;349
-"Palestinian Territory";Greece;1;349
-"Palestinian Territory";Greece;1;349
-"Palestinian Territory";Greece;1;349
-"Palestinian Territory";Greece;1;349
-"Palestinian Territory";Greece;1;349
-"Palestinian Territory";Italy;1;349
-"Palestinian Territory";Greece;1;349
-"Palestinian Territory";Greece;1;349
-"Palestinian Territory";Greece;1;349
-"Palestinian Territory";Greece;1;349
-"Palestinian Territory";Greece;1;349
-"Palestinian Territory";Greece;1;349
-"Palestinian Territory";Greece;1;349
-"Palestinian Territory";Greece;1;349
-"Palestinian Territory";Greece;1;349
-"Palestinian Territory";Greece;1;349
-"Palestinian Territory";Greece;1;349
-"Palestinian Territory";Greece;1;349
-"Palestinian Territory";Greece;1;349
-"Palestinian Territory";Greece;1;349
-"Palestinian Territory";Greece;1;349
-"Palestinian Territory";Italy;1;349
-"Palestinian Territory";Italy;1;349
-"Palestinian Territory";Egypt;1;362
-"Palestinian Territory";Italy;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Italy;1;349
-"Palestinian Territory";Italy;1;349
-"Palestinian Territory";Italy;1;349
-"Palestinian Territory";Italy;1;349
-"Palestinian Territory";Italy;1;349
-"Palestinian Territory";Italy;1;349
-"Palestinian Territory";Italy;1;349
-"Palestinian Territory";Italy;1;349
-"Palestinian Territory";Italy;1;349
-"Palestinian Territory";Italy;1;349
-"Palestinian Territory";Italy;1;349
-"Palestinian Territory";Italy;1;349
-"Palestinian Territory";Italy;1;349
-"Palestinian Territory";Italy;1;349
-"Palestinian Territory";Italy;1;349
-"Palestinian Territory";Italy;1;349
-"Palestinian Territory";Italy;1;349
-"Palestinian Territory";Italy;1;349
-"Palestinian Territory";Italy;1;349
-"Palestinian Territory";Italy;1;349
-"Palestinian Territory";Italy;1;349
-"Palestinian Territory";Italy;1;349
-"Palestinian Territory";Italy;1;349
-"Palestinian Territory";Italy;1;349
-"Palestinian Territory";Italy;1;349
-"Palestinian Territory";Egypt;1;350
-"Palestinian Territory";Egypt;1;362
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;362
-"Palestinian Territory";Turkey;1;362
-"Palestinian Territory";Turkey;1;362
-"Palestinian Territory";Turkey;1;362
-"Palestinian Territory";Turkey;1;350
-"Palestinian Territory";Turkey;1;350
-"Palestinian Territory";Turkey;1;350
-"Palestinian Territory";Turkey;1;350
-"Palestinian Territory";Turkey;1;362
-"Palestinian Territory";Turkey;1;362
-"Palestinian Territory";Turkey;1;362
-"Palestinian Territory";Turkey;1;362
-"Palestinian Territory";Turkey;1;362
-"Palestinian Territory";Turkey;1;362
-"Palestinian Territory";Turkey;1;362
-"Palestinian Territory";Turkey;1;362
-"Palestinian Territory";Turkey;1;362
-"Palestinian Territory";Italy;1;362
-"Palestinian Territory";Greece;1;362
-"Palestinian Territory";Croatia;1;362
-"Palestinian Territory";Croatia;1;362
-"Palestinian Territory";Serbia;1;362
-"Palestinian Territory";Serbia;1;362
-"Palestinian Territory";Italy;1;362
-"Palestinian Territory";Italy;1;362
-"Palestinian Territory";Turkey;1;362
-"Palestinian Territory";Italy;1;362
-"Palestinian Territory";Italy;1;362
-"Palestinian Territory";Italy;1;362
-"Palestinian Territory";Turkey;1;362
-"Palestinian Territory";Turkey;1;362
-"Palestinian Territory";Turkey;1;362
-"Palestinian Territory";Turkey;1;362
-"Palestinian Territory";Turkey;1;362
-"Palestinian Territory";Egypt;1;362
-"Palestinian Territory";Egypt;1;350
-"Palestinian Territory";Egypt;1;362
-"Palestinian Territory";Egypt;1;362
-"Palestinian Territory";Egypt;1;362
-"Palestinian Territory";Egypt;1;362
-"Palestinian Territory";Egypt;1;362
-"Palestinian Territory";Egypt;1;362
-"Palestinian Territory";Egypt;1;362
-"Palestinian Territory";Egypt;1;362
-"Palestinian Territory";Egypt;1;362
-"Palestinian Territory";Egypt;1;362
-"Palestinian Territory";Egypt;1;362
-"Palestinian Territory";Egypt;1;362
-"Palestinian Territory";Egypt;1;362
-"Palestinian Territory";Egypt;1;350
-"Palestinian Territory";Egypt;1;350
-"Palestinian Territory";Turkey;1;362
-"Palestinian Territory";Egypt;1;350
-"Palestinian Territory";Turkey;1;362
-"Palestinian Territory";Turkey;1;362
-"Palestinian Territory";Turkey;1;362
-"Palestinian Territory";Turkey;1;350
-"Palestinian Territory";Egypt;1;350
-"Palestinian Territory";Egypt;1;350
-"Palestinian Territory";Egypt;1;362
-"Palestinian Territory";Egypt;1;350
-"Palestinian Territory";Egypt;1;362
-"Palestinian Territory";Egypt;1;362
-"Palestinian Territory";Egypt;1;350
-"Palestinian Territory";Egypt;1;350
-"Palestinian Territory";Egypt;1;350
-"Palestinian Territory";Egypt;1;350
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;350
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;362
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Italy;1;349
-"Palestinian Territory";Croatia;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Turkey;1;362
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Greece;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;350
-"Palestinian Territory";Spain;1;350
-"Palestinian Territory";Spain;1;350
-"Palestinian Territory";Spain;1;350
-"Palestinian Territory";Spain;1;350
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;350
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;350
-"Palestinian Territory";Spain;1;350
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;350
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;350
-"Palestinian Territory";Spain;1;350
-"Palestinian Territory";Spain;1;350
-"Palestinian Territory";Spain;1;350
-"Palestinian Territory";Spain;1;350
-"Palestinian Territory";Spain;1;350
-"Palestinian Territory";Spain;1;350
-"Palestinian Territory";Spain;1;350
-"Palestinian Territory";Spain;1;350
-"Palestinian Territory";Spain;1;350
-"Palestinian Territory";Spain;1;350
-"Palestinian Territory";Spain;1;350
-"Palestinian Territory";Spain;1;350
-"Palestinian Territory";Spain;1;350
-"Palestinian Territory";Spain;1;350
-"Palestinian Territory";Spain;1;350
-"Palestinian Territory";Spain;1;350
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Spain;1;350
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Egypt;1;349
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
-"Palestinian Territory";Spain;1;349
+Palestine;Spain;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Egypt;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Turkey;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Egypt;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;321
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Egypt;1;350
+Palestine;Spain;1;349
+Palestine;Egypt;1;321
+Palestine;Turkey;1;321
+Palestine;Turkey;1;321
+Palestine;Turkey;1;321
+Palestine;Turkey;1;321
+Palestine;Turkey;1;321
+Palestine;Turkey;1;321
+Palestine;Turkey;1;321
+Palestine;Turkey;1;321
+Palestine;Spain;1;349
+Palestine;Turkey;1;349
+Palestine;Spain;1;321
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Turkey;1;349
+Palestine;Italy;1;349
+Palestine;Turkey;1;321
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Turkey;1;321
+Palestine;Turkey;1;321
+Palestine;Turkey;1;321
+Palestine;Turkey;1;321
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Turkey;1;338
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Spain;1;349
+Palestine;Turkey;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Turkey;1;343
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Turkey;1;343
+Palestine;Spain;1;343
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;338
+Palestine;Turkey;1;343
+Palestine;Spain;1;321
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Turkey;1;338
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;343
+Palestine;Egypt;1;349
+Palestine;Turkey;1;343
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Greece;1;349
+Palestine;Italy;1;349
+Palestine;Italy;1;349
+Palestine;Italy;1;349
+Palestine;Croatia;1;349
+Palestine;Croatia;1;349
+Palestine;Croatia;1;349
+Palestine;Croatia;1;349
+Palestine;Croatia;1;349
+Palestine;Greece;1;349
+Palestine;Greece;1;349
+Palestine;Greece;1;349
+Palestine;Greece;1;349
+Palestine;Greece;1;349
+Palestine;Greece;1;349
+Palestine;Greece;1;349
+Palestine;Italy;1;349
+Palestine;Greece;1;349
+Palestine;Greece;1;349
+Palestine;Greece;1;349
+Palestine;Greece;1;349
+Palestine;Greece;1;349
+Palestine;Greece;1;349
+Palestine;Greece;1;349
+Palestine;Greece;1;349
+Palestine;Greece;1;349
+Palestine;Greece;1;349
+Palestine;Greece;1;349
+Palestine;Greece;1;349
+Palestine;Greece;1;349
+Palestine;Greece;1;349
+Palestine;Greece;1;349
+Palestine;Italy;1;349
+Palestine;Italy;1;349
+Palestine;Egypt;1;362
+Palestine;Italy;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Italy;1;349
+Palestine;Italy;1;349
+Palestine;Italy;1;349
+Palestine;Italy;1;349
+Palestine;Italy;1;349
+Palestine;Italy;1;349
+Palestine;Italy;1;349
+Palestine;Italy;1;349
+Palestine;Italy;1;349
+Palestine;Italy;1;349
+Palestine;Italy;1;349
+Palestine;Italy;1;349
+Palestine;Italy;1;349
+Palestine;Italy;1;349
+Palestine;Italy;1;349
+Palestine;Italy;1;349
+Palestine;Italy;1;349
+Palestine;Italy;1;349
+Palestine;Italy;1;349
+Palestine;Italy;1;349
+Palestine;Italy;1;349
+Palestine;Italy;1;349
+Palestine;Italy;1;349
+Palestine;Italy;1;349
+Palestine;Italy;1;349
+Palestine;Egypt;1;350
+Palestine;Egypt;1;362
+Palestine;Turkey;1;349
+Palestine;Turkey;1;362
+Palestine;Turkey;1;362
+Palestine;Turkey;1;362
+Palestine;Turkey;1;362
+Palestine;Turkey;1;350
+Palestine;Turkey;1;350
+Palestine;Turkey;1;350
+Palestine;Turkey;1;350
+Palestine;Turkey;1;362
+Palestine;Turkey;1;362
+Palestine;Turkey;1;362
+Palestine;Turkey;1;362
+Palestine;Turkey;1;362
+Palestine;Turkey;1;362
+Palestine;Turkey;1;362
+Palestine;Turkey;1;362
+Palestine;Turkey;1;362
+Palestine;Italy;1;362
+Palestine;Greece;1;362
+Palestine;Croatia;1;362
+Palestine;Croatia;1;362
+Palestine;Serbia;1;362
+Palestine;Serbia;1;362
+Palestine;Italy;1;362
+Palestine;Italy;1;362
+Palestine;Turkey;1;362
+Palestine;Italy;1;362
+Palestine;Italy;1;362
+Palestine;Italy;1;362
+Palestine;Turkey;1;362
+Palestine;Turkey;1;362
+Palestine;Turkey;1;362
+Palestine;Turkey;1;362
+Palestine;Turkey;1;362
+Palestine;Egypt;1;362
+Palestine;Egypt;1;350
+Palestine;Egypt;1;362
+Palestine;Egypt;1;362
+Palestine;Egypt;1;362
+Palestine;Egypt;1;362
+Palestine;Egypt;1;362
+Palestine;Egypt;1;362
+Palestine;Egypt;1;362
+Palestine;Egypt;1;362
+Palestine;Egypt;1;362
+Palestine;Egypt;1;362
+Palestine;Egypt;1;362
+Palestine;Egypt;1;362
+Palestine;Egypt;1;362
+Palestine;Egypt;1;350
+Palestine;Egypt;1;350
+Palestine;Turkey;1;362
+Palestine;Egypt;1;350
+Palestine;Turkey;1;362
+Palestine;Turkey;1;362
+Palestine;Turkey;1;362
+Palestine;Turkey;1;350
+Palestine;Egypt;1;350
+Palestine;Egypt;1;350
+Palestine;Egypt;1;362
+Palestine;Egypt;1;350
+Palestine;Egypt;1;362
+Palestine;Egypt;1;362
+Palestine;Egypt;1;350
+Palestine;Egypt;1;350
+Palestine;Egypt;1;350
+Palestine;Egypt;1;350
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;350
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;362
+Palestine;Spain;1;362
+Palestine;Spain;1;362
+Palestine;Spain;1;362
+Palestine;Spain;1;362
+Palestine;Spain;1;362
+Palestine;Spain;1;362
+Palestine;Spain;1;362
+Palestine;Spain;1;362
+Palestine;Spain;1;362
+Palestine;Spain;1;362
+Palestine;Spain;1;362
+Palestine;Spain;1;362
+Palestine;Spain;1;362
+Palestine;Spain;1;362
+Palestine;Spain;1;362
+Palestine;Spain;1;362
+Palestine;Spain;1;362
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Spain;1;362
+Palestine;Spain;1;362
+Palestine;Spain;1;362
+Palestine;Spain;1;362
+Palestine;Spain;1;362
+Palestine;Spain;1;362
+Palestine;Spain;1;362
+Palestine;Spain;1;362
+Palestine;Spain;1;362
+Palestine;Spain;1;362
+Palestine;Spain;1;362
+Palestine;Spain;1;362
+Palestine;Turkey;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;362
+Palestine;Spain;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Spain;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Spain;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;362
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Italy;1;349
+Palestine;Croatia;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Turkey;1;362
+Palestine;Spain;1;349
+Palestine;Turkey;1;349
+Palestine;Spain;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;362
+Palestine;Greece;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;350
+Palestine;Spain;1;350
+Palestine;Spain;1;350
+Palestine;Spain;1;350
+Palestine;Spain;1;350
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;350
+Palestine;Turkey;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Turkey;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;350
+Palestine;Spain;1;350
+Palestine;Spain;1;349
+Palestine;Spain;1;350
+Palestine;Spain;1;349
+Palestine;Spain;1;350
+Palestine;Spain;1;350
+Palestine;Spain;1;350
+Palestine;Spain;1;350
+Palestine;Spain;1;350
+Palestine;Spain;1;350
+Palestine;Spain;1;350
+Palestine;Spain;1;350
+Palestine;Spain;1;350
+Palestine;Spain;1;350
+Palestine;Spain;1;350
+Palestine;Spain;1;350
+Palestine;Spain;1;350
+Palestine;Spain;1;350
+Palestine;Spain;1;350
+Palestine;Spain;1;350
+Palestine;Spain;1;350
+Palestine;Spain;1;362
+Palestine;Spain;1;362
+Palestine;Spain;1;362
+Palestine;Spain;1;362
+Palestine;Spain;1;350
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Egypt;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;362
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Egypt;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Turkey;1;349
+Palestine;Egypt;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Egypt;1;349
+Palestine;Spain;1;362
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
+Palestine;Spain;1;349
 Israel;Spain;150;350
 Israel;Spain;1;349
 Israel;Greece;1;387
@@ -59166,13 +59166,13 @@ Israel;Spain;1;347
 Israel;Turkey;1;349
 Israel;Spain;1;352
 Israel;Spain;1;380
-"Palestinian Territory";Spain;3;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Spain;1;369
-"Palestinian Territory";Spain;6;371
-"Palestinian Territory";Spain;2;373
-"Palestinian Territory";Spain;1;389
-"Palestinian Territory";Spain;1;350
+Palestine;Spain;3;349
+Palestine;Turkey;1;349
+Palestine;Spain;1;369
+Palestine;Spain;6;371
+Palestine;Spain;2;373
+Palestine;Spain;1;389
+Palestine;Spain;1;350
 Israel;Spain;9;499
 Israel;Spain;1;494
 Israel;Spain;2;482
@@ -59873,19 +59873,19 @@ Israel;Turkey;1;338
 Israel;Turkey;1;321
 Israel;Turkey;1;349
 Israel;Spain;1;465
-"Palestinian Territory";Spain;7;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Turkey;1;362
-"Palestinian Territory";Egypt;1;362
-"Palestinian Territory";Spain;1;362
-"Palestinian Territory";Turkey;2;321
-"Palestinian Territory";Italy;1;321
-"Palestinian Territory";Germany;1;343
-"Palestinian Territory";Turkey;1;387
-"Palestinian Territory";Italy;1;349
-"Palestinian Territory";Greece;1;349
-"Palestinian Territory";Spain;1;387
+Palestine;Spain;7;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;349
+Palestine;Turkey;1;362
+Palestine;Egypt;1;362
+Palestine;Spain;1;362
+Palestine;Turkey;2;321
+Palestine;Italy;1;321
+Palestine;Germany;1;343
+Palestine;Turkey;1;387
+Palestine;Italy;1;349
+Palestine;Greece;1;349
+Palestine;Spain;1;387
 Israel;Turkey;2;321
 Israel;Egypt;1;343
 Israel;Egypt;1;338
@@ -60848,8 +60848,8 @@ Germany;Italy;1;349
 Germany;Germany;1;349
 Greece;Turkey;6;321
 Greece;Turkey;6;321
-"Palestinian Territory";Turkey;0;343
-"Palestinian Territory";Turkey;0;343
+Palestine;Turkey;0;343
+Palestine;Turkey;0;343
 Italy;Italy;0;371
 Italy;Greece;0;371
 Luxembourg;France;0;349
@@ -68306,254 +68306,254 @@ Romania;Turkey;1;571
 Romania;Greece;1;568
 Romania;Greece;1;572
 Romania;Greece;1;594
-"Palestinian Territory";Turkey;1;342
-"Palestinian Territory";Italy;1;343
-"Palestinian Territory";Italy;1;350
-"Palestinian Territory";Italy;1;412
-"Palestinian Territory";Italy;1;412
-"Palestinian Territory";Egypt;1;336
-"Palestinian Territory";Egypt;1;338
-"Palestinian Territory";Italy;1;354
-"Palestinian Territory";Turkey;1;325
-"Palestinian Territory";Italy;1;352
-"Palestinian Territory";Italy;2;417
-"Palestinian Territory";Italy;1;371
-"Palestinian Territory";Turkey;1;532
-"Palestinian Territory";Turkey;1;533
-"Palestinian Territory";Turkey;1;532
-"Palestinian Territory";Greece;1;571
-"Palestinian Territory";Turkey;1;551
-"Palestinian Territory";Italy;1;430
-"Palestinian Territory";Turkey;1;661
-"Palestinian Territory";Greece;1;564
-"Palestinian Territory";Turkey;1;327
-"Palestinian Territory";Turkey;1;327
-"Palestinian Territory";Italy;1;332
-"Palestinian Territory";Turkey;1;332
-"Palestinian Territory";Turkey;1;333
-"Palestinian Territory";Turkey;1;333
-"Palestinian Territory";Egypt;1;334
-"Palestinian Territory";Italy;2;333
-"Palestinian Territory";Italy;2;333
-"Palestinian Territory";Turkey;1;336
-"Palestinian Territory";Egypt;1;336
-"Palestinian Territory";Italy;2;341
-"Palestinian Territory";Italy;2;335
-"Palestinian Territory";Turkey;2;338
-"Palestinian Territory";Turkey;1;338
-"Palestinian Territory";Egypt;2;338
-"Palestinian Territory";Turkey;1;347
-"Palestinian Territory";Greece;2;347
-"Palestinian Territory";Italy;1;344
-"Palestinian Territory";Turkey;2;347
-"Palestinian Territory";Bulgaria;5;347
-"Palestinian Territory";Turkey;1;347
-"Palestinian Territory";Turkey;1;347
-"Palestinian Territory";Turkey;1;349
-"Palestinian Territory";Italy;1;349
-"Palestinian Territory";Turkey;19;358
-"Palestinian Territory";Italy;11;354
-"Palestinian Territory";Turkey;4;353
-"Palestinian Territory";Italy;1;358
-"Palestinian Territory";Italy;18;354
-"Palestinian Territory";Italy;2;358
-"Palestinian Territory";Italy;1;358
-"Palestinian Territory";Italy;9;359
-"Palestinian Territory";Italy;2;361
-"Palestinian Territory";Italy;1;369
-"Palestinian Territory";Italy;2;372
-"Palestinian Territory";Italy;1;379
-"Palestinian Territory";Italy;1;389
-"Palestinian Territory";Italy;1;389
-"Palestinian Territory";Italy;6;389
-"Palestinian Territory";Italy;1;393
-"Palestinian Territory";Italy;3;395
-"Palestinian Territory";Italy;1;427
-"Palestinian Territory";Egypt;2;376
-"Palestinian Territory";Turkey;2;398
-"Palestinian Territory";Italy;1;427
-"Palestinian Territory";Italy;4;377
-"Palestinian Territory";Italy;3;432
-"Palestinian Territory";Italy;1;393
-"Palestinian Territory";Turkey;3;430
-"Palestinian Territory";Turkey;3;453
-"Palestinian Territory";Turkey;1;508
-"Palestinian Territory";Turkey;1;508
-"Palestinian Territory";Turkey;1;522
-"Palestinian Territory";Turkey;1;532
-"Palestinian Territory";Turkey;5;532
-"Palestinian Territory";Turkey;1;532
-"Palestinian Territory";Turkey;1;533
-"Palestinian Territory";Turkey;1;539
-"Palestinian Territory";Turkey;1;541
-"Palestinian Territory";Turkey;1;557
-"Palestinian Territory";Turkey;1;569
-"Palestinian Territory";Turkey;1;576
-"Palestinian Territory";Turkey;1;576
-"Palestinian Territory";Turkey;1;578
-"Palestinian Territory";Turkey;1;586
-"Palestinian Territory";Turkey;1;586
-"Palestinian Territory";Turkey;1;592
-"Palestinian Territory";Turkey;1;591
-"Palestinian Territory";Turkey;1;601
-"Palestinian Territory";Egypt;1;592
-"Palestinian Territory";Turkey;1;613
-"Palestinian Territory";Turkey;1;619
-"Palestinian Territory";Turkey;1;612
-"Palestinian Territory";Turkey;1;654
-"Palestinian Territory";Turkey;1;639
-"Palestinian Territory";Turkey;1;639
-"Palestinian Territory";Turkey;1;639
-"Palestinian Territory";Egypt;1;625
-"Palestinian Territory";Turkey;8;650
-"Palestinian Territory";Israel;1;671
-"Palestinian Territory";Israel;1;683
-"Palestinian Territory";Syria;1;722
-"Palestinian Territory";Israel;1;722
-"Palestinian Territory";Syria;4;705
-"Palestinian Territory";Syria;1;753
-"Palestinian Territory";Italy;1;338
-"Palestinian Territory";Turkey;1;347
-"Palestinian Territory";Croatia;1;331
-"Palestinian Territory";Italy;1;347
-"Palestinian Territory";Italy;2;342
-"Palestinian Territory";Turkey;1;347
-"Palestinian Territory";Turkey;1;327
-"Palestinian Territory";Turkey;7;355
-"Palestinian Territory";Italy;11;354
-"Palestinian Territory";Turkey;1;358
-"Palestinian Territory";Italy;1;358
-"Palestinian Territory";Turkey;3;342
-"Palestinian Territory";Italy;1;342
-"Palestinian Territory";Egypt;1;347
-"Palestinian Territory";Italy;2;347
-"Palestinian Territory";Turkey;2;347
-"Palestinian Territory";Italy;2;347
-"Palestinian Territory";Italy;2;343
-"Palestinian Territory";Italy;1;345
-"Palestinian Territory";Italy;2;352
-"Palestinian Territory";Italy;1;338
-"Palestinian Territory";Turkey;1;362
-"Palestinian Territory";Turkey;1;362
-"Palestinian Territory";Turkey;1;358
-"Palestinian Territory";Italy;1;358
-"Palestinian Territory";Italy;1;391
-"Palestinian Territory";Italy;3;385
-"Palestinian Territory";Turkey;1;369
-"Palestinian Territory";Turkey;1;369
-"Palestinian Territory";Italy;1;371
-"Palestinian Territory";Italy;1;371
-"Palestinian Territory";Turkey;1;369
-"Palestinian Territory";Italy;1;371
-"Palestinian Territory";Italy;1;375
-"Palestinian Territory";Italy;1;380
-"Palestinian Territory";Turkey;2;387
-"Palestinian Territory";Italy;1;389
-"Palestinian Territory";Greece;1;385
-"Palestinian Territory";Turkey;1;385
-"Palestinian Territory";Turkey;1;385
-"Palestinian Territory";Turkey;1;380
-"Palestinian Territory";Italy;1;383
-"Palestinian Territory";Turkey;1;390
-"Palestinian Territory";Italy;1;376
-"Palestinian Territory";Italy;2;371
-"Palestinian Territory";Italy;1;395
-"Palestinian Territory";Italy;1;376
-"Palestinian Territory";Italy;1;375
-"Palestinian Territory";Italy;2;391
-"Palestinian Territory";Turkey;1;391
-"Palestinian Territory";Turkey;1;389
-"Palestinian Territory";Italy;4;393
-"Palestinian Territory";Turkey;1;387
-"Palestinian Territory";Turkey;1;402
-"Palestinian Territory";Turkey;1;405
-"Palestinian Territory";Italy;1;393
-"Palestinian Territory";Turkey;1;398
-"Palestinian Territory";Italy;2;384
-"Palestinian Territory";Turkey;1;398
-"Palestinian Territory";Egypt;1;415
-"Palestinian Territory";Turkey;1;414
-"Palestinian Territory";Turkey;3;407
-"Palestinian Territory";Italy;1;405
-"Palestinian Territory";Turkey;1;407
-"Palestinian Territory";Turkey;2;407
-"Palestinian Territory";Turkey;1;405
-"Palestinian Territory";Turkey;1;415
-"Palestinian Territory";Turkey;2;447
-"Palestinian Territory";Turkey;1;430
-"Palestinian Territory";Italy;1;440
-"Palestinian Territory";Italy;1;433
-"Palestinian Territory";Italy;3;441
-"Palestinian Territory";Turkey;4;430
-"Palestinian Territory";Turkey;5;453
-"Palestinian Territory";Turkey;1;465
-"Palestinian Territory";Turkey;1;465
-"Palestinian Territory";Spain;1;478
-"Palestinian Territory";Italy;2;408
-"Palestinian Territory";Italy;1;426
-"Palestinian Territory";Italy;31;365
-"Palestinian Territory";Italy;1;357
-"Palestinian Territory";Greece;1;522
-"Palestinian Territory";Turkey;1;522
-"Palestinian Territory";Turkey;1;522
-"Palestinian Territory";Turkey;2;524
-"Palestinian Territory";Turkey;1;532
-"Palestinian Territory";Turkey;1;532
-"Palestinian Territory";Turkey;1;556
-"Palestinian Territory";Egypt;1;550
-"Palestinian Territory";Egypt;1;569
-"Palestinian Territory";Turkey;1;567
-"Palestinian Territory";Turkey;1;571
-"Palestinian Territory";Turkey;1;603
-"Palestinian Territory";Turkey;3;654
-"Palestinian Territory";Syria;1;700
-"Palestinian Territory";Israel;1;710
-"Palestinian Territory";Syria;1;722
-"Palestinian Territory";Spain;65;537
-"Palestinian Territory";Italy;1;349
-"Palestinian Territory";Turkey;1;354
-"Palestinian Territory";Italy;3;358
-"Palestinian Territory";Spain;1;365
-"Palestinian Territory";Croatia;1;371
-"Palestinian Territory";Italy;2;369
-"Palestinian Territory";Italy;1;371
-"Palestinian Territory";Italy;4;373
-"Palestinian Territory";Italy;3;369
-"Palestinian Territory";Italy;2;400
-"Palestinian Territory";Italy;1;400
-"Palestinian Territory";Italy;1;383
-"Palestinian Territory";Turkey;3;380
-"Palestinian Territory";Italy;7;382
-"Palestinian Territory";Turkey;1;380
-"Palestinian Territory";Turkey;1;390
-"Palestinian Territory";Italy;3;386
-"Palestinian Territory";Italy;1;386
-"Palestinian Territory";Turkey;2;383
-"Palestinian Territory";Italy;1;383
-"Palestinian Territory";Turkey;3;391
-"Palestinian Territory";Italy;6;395
-"Palestinian Territory";Turkey;2;405
-"Palestinian Territory";Egypt;1;405
-"Palestinian Territory";Turkey;2;393
-"Palestinian Territory";Turkey;1;398
-"Palestinian Territory";Turkey;1;407
-"Palestinian Territory";Turkey;3;389
-"Palestinian Territory";Italy;16;393
-"Palestinian Territory";Turkey;2;398
-"Palestinian Territory";Turkey;1;405
-"Palestinian Territory";Turkey;4;407
-"Palestinian Territory";Italy;5;363
-"Palestinian Territory";Italy;4;374
-"Palestinian Territory";Italy;3;362
-"Palestinian Territory";Egypt;1;374
-"Palestinian Territory";Spain;1;422
-"Palestinian Territory";Spain;1;422
-"Palestinian Territory";Spain;1;430
-"Palestinian Territory";Turkey;1;407
-"Palestinian Territory";Turkey;1;430
-"Palestinian Territory";Turkey;1;525
-"Palestinian Territory";Turkey;1;538
-"Palestinian Territory";Syria;1;722
+Palestine;Turkey;1;342
+Palestine;Italy;1;343
+Palestine;Italy;1;350
+Palestine;Italy;1;412
+Palestine;Italy;1;412
+Palestine;Egypt;1;336
+Palestine;Egypt;1;338
+Palestine;Italy;1;354
+Palestine;Turkey;1;325
+Palestine;Italy;1;352
+Palestine;Italy;2;417
+Palestine;Italy;1;371
+Palestine;Turkey;1;532
+Palestine;Turkey;1;533
+Palestine;Turkey;1;532
+Palestine;Greece;1;571
+Palestine;Turkey;1;551
+Palestine;Italy;1;430
+Palestine;Turkey;1;661
+Palestine;Greece;1;564
+Palestine;Turkey;1;327
+Palestine;Turkey;1;327
+Palestine;Italy;1;332
+Palestine;Turkey;1;332
+Palestine;Turkey;1;333
+Palestine;Turkey;1;333
+Palestine;Egypt;1;334
+Palestine;Italy;2;333
+Palestine;Italy;2;333
+Palestine;Turkey;1;336
+Palestine;Egypt;1;336
+Palestine;Italy;2;341
+Palestine;Italy;2;335
+Palestine;Turkey;2;338
+Palestine;Turkey;1;338
+Palestine;Egypt;2;338
+Palestine;Turkey;1;347
+Palestine;Greece;2;347
+Palestine;Italy;1;344
+Palestine;Turkey;2;347
+Palestine;Bulgaria;5;347
+Palestine;Turkey;1;347
+Palestine;Turkey;1;347
+Palestine;Turkey;1;349
+Palestine;Italy;1;349
+Palestine;Turkey;19;358
+Palestine;Italy;11;354
+Palestine;Turkey;4;353
+Palestine;Italy;1;358
+Palestine;Italy;18;354
+Palestine;Italy;2;358
+Palestine;Italy;1;358
+Palestine;Italy;9;359
+Palestine;Italy;2;361
+Palestine;Italy;1;369
+Palestine;Italy;2;372
+Palestine;Italy;1;379
+Palestine;Italy;1;389
+Palestine;Italy;1;389
+Palestine;Italy;6;389
+Palestine;Italy;1;393
+Palestine;Italy;3;395
+Palestine;Italy;1;427
+Palestine;Egypt;2;376
+Palestine;Turkey;2;398
+Palestine;Italy;1;427
+Palestine;Italy;4;377
+Palestine;Italy;3;432
+Palestine;Italy;1;393
+Palestine;Turkey;3;430
+Palestine;Turkey;3;453
+Palestine;Turkey;1;508
+Palestine;Turkey;1;508
+Palestine;Turkey;1;522
+Palestine;Turkey;1;532
+Palestine;Turkey;5;532
+Palestine;Turkey;1;532
+Palestine;Turkey;1;533
+Palestine;Turkey;1;539
+Palestine;Turkey;1;541
+Palestine;Turkey;1;557
+Palestine;Turkey;1;569
+Palestine;Turkey;1;576
+Palestine;Turkey;1;576
+Palestine;Turkey;1;578
+Palestine;Turkey;1;586
+Palestine;Turkey;1;586
+Palestine;Turkey;1;592
+Palestine;Turkey;1;591
+Palestine;Turkey;1;601
+Palestine;Egypt;1;592
+Palestine;Turkey;1;613
+Palestine;Turkey;1;619
+Palestine;Turkey;1;612
+Palestine;Turkey;1;654
+Palestine;Turkey;1;639
+Palestine;Turkey;1;639
+Palestine;Turkey;1;639
+Palestine;Egypt;1;625
+Palestine;Turkey;8;650
+Palestine;Israel;1;671
+Palestine;Israel;1;683
+Palestine;Syria;1;722
+Palestine;Israel;1;722
+Palestine;Syria;4;705
+Palestine;Syria;1;753
+Palestine;Italy;1;338
+Palestine;Turkey;1;347
+Palestine;Croatia;1;331
+Palestine;Italy;1;347
+Palestine;Italy;2;342
+Palestine;Turkey;1;347
+Palestine;Turkey;1;327
+Palestine;Turkey;7;355
+Palestine;Italy;11;354
+Palestine;Turkey;1;358
+Palestine;Italy;1;358
+Palestine;Turkey;3;342
+Palestine;Italy;1;342
+Palestine;Egypt;1;347
+Palestine;Italy;2;347
+Palestine;Turkey;2;347
+Palestine;Italy;2;347
+Palestine;Italy;2;343
+Palestine;Italy;1;345
+Palestine;Italy;2;352
+Palestine;Italy;1;338
+Palestine;Turkey;1;362
+Palestine;Turkey;1;362
+Palestine;Turkey;1;358
+Palestine;Italy;1;358
+Palestine;Italy;1;391
+Palestine;Italy;3;385
+Palestine;Turkey;1;369
+Palestine;Turkey;1;369
+Palestine;Italy;1;371
+Palestine;Italy;1;371
+Palestine;Turkey;1;369
+Palestine;Italy;1;371
+Palestine;Italy;1;375
+Palestine;Italy;1;380
+Palestine;Turkey;2;387
+Palestine;Italy;1;389
+Palestine;Greece;1;385
+Palestine;Turkey;1;385
+Palestine;Turkey;1;385
+Palestine;Turkey;1;380
+Palestine;Italy;1;383
+Palestine;Turkey;1;390
+Palestine;Italy;1;376
+Palestine;Italy;2;371
+Palestine;Italy;1;395
+Palestine;Italy;1;376
+Palestine;Italy;1;375
+Palestine;Italy;2;391
+Palestine;Turkey;1;391
+Palestine;Turkey;1;389
+Palestine;Italy;4;393
+Palestine;Turkey;1;387
+Palestine;Turkey;1;402
+Palestine;Turkey;1;405
+Palestine;Italy;1;393
+Palestine;Turkey;1;398
+Palestine;Italy;2;384
+Palestine;Turkey;1;398
+Palestine;Egypt;1;415
+Palestine;Turkey;1;414
+Palestine;Turkey;3;407
+Palestine;Italy;1;405
+Palestine;Turkey;1;407
+Palestine;Turkey;2;407
+Palestine;Turkey;1;405
+Palestine;Turkey;1;415
+Palestine;Turkey;2;447
+Palestine;Turkey;1;430
+Palestine;Italy;1;440
+Palestine;Italy;1;433
+Palestine;Italy;3;441
+Palestine;Turkey;4;430
+Palestine;Turkey;5;453
+Palestine;Turkey;1;465
+Palestine;Turkey;1;465
+Palestine;Spain;1;478
+Palestine;Italy;2;408
+Palestine;Italy;1;426
+Palestine;Italy;31;365
+Palestine;Italy;1;357
+Palestine;Greece;1;522
+Palestine;Turkey;1;522
+Palestine;Turkey;1;522
+Palestine;Turkey;2;524
+Palestine;Turkey;1;532
+Palestine;Turkey;1;532
+Palestine;Turkey;1;556
+Palestine;Egypt;1;550
+Palestine;Egypt;1;569
+Palestine;Turkey;1;567
+Palestine;Turkey;1;571
+Palestine;Turkey;1;603
+Palestine;Turkey;3;654
+Palestine;Syria;1;700
+Palestine;Israel;1;710
+Palestine;Syria;1;722
+Palestine;Spain;65;537
+Palestine;Italy;1;349
+Palestine;Turkey;1;354
+Palestine;Italy;3;358
+Palestine;Spain;1;365
+Palestine;Croatia;1;371
+Palestine;Italy;2;369
+Palestine;Italy;1;371
+Palestine;Italy;4;373
+Palestine;Italy;3;369
+Palestine;Italy;2;400
+Palestine;Italy;1;400
+Palestine;Italy;1;383
+Palestine;Turkey;3;380
+Palestine;Italy;7;382
+Palestine;Turkey;1;380
+Palestine;Turkey;1;390
+Palestine;Italy;3;386
+Palestine;Italy;1;386
+Palestine;Turkey;2;383
+Palestine;Italy;1;383
+Palestine;Turkey;3;391
+Palestine;Italy;6;395
+Palestine;Turkey;2;405
+Palestine;Egypt;1;405
+Palestine;Turkey;2;393
+Palestine;Turkey;1;398
+Palestine;Turkey;1;407
+Palestine;Turkey;3;389
+Palestine;Italy;16;393
+Palestine;Turkey;2;398
+Palestine;Turkey;1;405
+Palestine;Turkey;4;407
+Palestine;Italy;5;363
+Palestine;Italy;4;374
+Palestine;Italy;3;362
+Palestine;Egypt;1;374
+Palestine;Spain;1;422
+Palestine;Spain;1;422
+Palestine;Spain;1;430
+Palestine;Turkey;1;407
+Palestine;Turkey;1;430
+Palestine;Turkey;1;525
+Palestine;Turkey;1;538
+Palestine;Syria;1;722
 Turkey;Turkey;1;325
 Turkey;Turkey;1;332
 Turkey;Turkey;1;407
@@ -69616,10 +69616,10 @@ Turkey;Turkey;1;655
 Turkey;Turkey;1;656
 Turkey;Turkey;1;653
 Turkey;Turkey;1;656
-"Palestinian Territory";Turkey;1;658
-"Palestinian Territory";Syria;1;671
-"Palestinian Territory";Italy;1;639
-"Palestinian Territory";Syria;2;722
+Palestine;Turkey;1;658
+Palestine;Syria;1;671
+Palestine;Italy;1;639
+Palestine;Syria;2;722
 Bulgaria;Greece;1;540
 Bulgaria;Greece;1;544
 Bulgaria;Greece;1;540
@@ -73209,17 +73209,17 @@ Syria;Iraq;1;747
 Syria;Iraq;2;748
 Syria;Iraq;1;745
 Syria;Turkmenistan;1;749
-"Palestinian Territory";Iran;1;474
-"Palestinian Territory";Iraq;1;486
-"Palestinian Territory";Iran;1;492
-"Palestinian Territory";Iran;1;503
-"Palestinian Territory";Iran;1;510
-"Palestinian Territory";Iran;1;520
-"Palestinian Territory";Turkmenistan;1;521
-"Palestinian Territory";Iran;1;523
-"Palestinian Territory";Iraq;1;523
-"Palestinian Territory";Iraq;1;533
-"Palestinian Territory";Iran;1;539
+Palestine;Iran;1;474
+Palestine;Iraq;1;486
+Palestine;Iran;1;492
+Palestine;Iran;1;503
+Palestine;Iran;1;510
+Palestine;Iran;1;520
+Palestine;Turkmenistan;1;521
+Palestine;Iran;1;523
+Palestine;Iraq;1;523
+Palestine;Iraq;1;533
+Palestine;Iran;1;539
 Germany;Germany;1;332
 Germany;Italy;1;389
 Germany;France;1;369
@@ -75414,7 +75414,7 @@ Georgia;Syria;5;733
 Georgia;Syria;2;743
 Georgia;Syria;3;747
 Georgia;Syria;1;749
-"Palestinian Territory";Iran;1;625
+Palestine;Iran;1;625
 Syria;Iran;1;352
 Syria;Iran;1;471
 Syria;Iran;1;471
@@ -82856,25 +82856,25 @@ Romania;Turkey;1;606
 "United Kingdom";Croatia;8;378
 "United Kingdom";Spain;118;378
 "United Kingdom";Spain;6;355
-"Palestinian Territory";Italy;1;362
-"Palestinian Territory";Spain;1;425
-"Palestinian Territory";Spain;1;500
-"Palestinian Territory";Turkey;1;502
-"Palestinian Territory";Turkey;1;515
-"Palestinian Territory";Turkey;1;520
-"Palestinian Territory";Turkey;1;525
-"Palestinian Territory";Turkey;1;568
-"Palestinian Territory";Greece;1;576
-"Palestinian Territory";Greece;2;576
-"Palestinian Territory";Turkey;1;582
-"Palestinian Territory";Turkey;1;583
-"Palestinian Territory";Egypt;1;615
-"Palestinian Territory";Syria;1;722
-"Palestinian Territory";Turkey;1;567
-"Palestinian Territory";Turkey;1;573
-"Palestinian Territory";Turkey;1;586
-"Palestinian Territory";Turkey;1;612
-"Palestinian Territory";Turkey;1;612
+Palestine;Italy;1;362
+Palestine;Spain;1;425
+Palestine;Spain;1;500
+Palestine;Turkey;1;502
+Palestine;Turkey;1;515
+Palestine;Turkey;1;520
+Palestine;Turkey;1;525
+Palestine;Turkey;1;568
+Palestine;Greece;1;576
+Palestine;Greece;2;576
+Palestine;Turkey;1;582
+Palestine;Turkey;1;583
+Palestine;Egypt;1;615
+Palestine;Syria;1;722
+Palestine;Turkey;1;567
+Palestine;Turkey;1;573
+Palestine;Turkey;1;586
+Palestine;Turkey;1;612
+Palestine;Turkey;1;612
 "United Kingdom";Germany;4;332
 "United Kingdom";France;2;332
 "United Kingdom";Spain;1;332
@@ -83051,7 +83051,7 @@ Jordan;Syria;1;722
 Jordan;Israel;2;671
 Jordan;Syria;1;722
 Jordan;Syria;6;722
-Jordan;Palestina;17;722
+Jordan;Palestine;17;722
 Jordan;Israel;2;722
 Jordan;Palestine;1;722
 Jordan;Syria;3;722
@@ -83060,7 +83060,7 @@ Jordan;Syria;3;722
 Jordan;Syria;1;722
 Jordan;Syria;1;722
 Jordan;Syria;1;722
-Jordan;Palestina;1;722
+Jordan;Palestine;1;722
 Jordan;Israel;3;671
 Jordan;Syria;1;722
 Jordan;Syria;1;722
@@ -83683,148 +83683,148 @@ Romania;Turkey;1;328
 Romania;Italy;1;371
 Romania;Turkey;1;391
 Romania;Turkey;1;606
-"Palestinian Territory";Turkey;1;508
-"Palestinian Territory";Turkey;1;508
-"Palestinian Territory";Turkey;2;508
-"Palestinian Territory";Turkey;1;508
-"Palestinian Territory";Turkey;1;508
-"Palestinian Territory";Turkey;1;508
-"Palestinian Territory";Turkey;1;508
-"Palestinian Territory";Turkey;2;508
-"Palestinian Territory";Turkey;1;508
-"Palestinian Territory";Turkey;1;508
-"Palestinian Territory";Turkey;3;508
-"Palestinian Territory";Turkey;1;522
-"Palestinian Territory";Turkey;1;522
-"Palestinian Territory";Turkey;1;522
-"Palestinian Territory";Turkey;1;522
-"Palestinian Territory";Turkey;1;522
-"Palestinian Territory";Turkey;1;522
-"Palestinian Territory";Turkey;1;522
-"Palestinian Territory";Turkey;1;522
-"Palestinian Territory";Turkey;1;522
-"Palestinian Territory";Turkey;1;522
-"Palestinian Territory";Turkey;1;522
-"Palestinian Territory";Turkey;1;532
-"Palestinian Territory";Turkey;1;532
-"Palestinian Territory";Turkey;1;532
-"Palestinian Territory";Turkey;1;532
-"Palestinian Territory";Turkey;1;532
-"Palestinian Territory";Turkey;1;532
-"Palestinian Territory";Turkey;1;532
-"Palestinian Territory";Turkey;3;533
-"Palestinian Territory";Turkey;1;533
-"Palestinian Territory";Turkey;2;533
-"Palestinian Territory";Turkey;1;533
-"Palestinian Territory";Turkey;2;533
-"Palestinian Territory";Turkey;1;533
-"Palestinian Territory";Turkey;2;543
-"Palestinian Territory";Tunisia;1;536
-"Palestinian Territory";Turkey;1;538
-"Palestinian Territory";Turkey;1;540
-"Palestinian Territory";Turkey;1;541
-"Palestinian Territory";Turkey;1;553
-"Palestinian Territory";Turkey;2;557
-"Palestinian Territory";Turkey;1;562
-"Palestinian Territory";Turkey;1;567
-"Palestinian Territory";Turkey;1;567
-"Palestinian Territory";Turkey;1;568
-"Palestinian Territory";Turkey;1;569
-"Palestinian Territory";Turkey;2;569
-"Palestinian Territory";Turkey;1;569
-"Palestinian Territory";Turkey;1;569
-"Palestinian Territory";Turkey;1;569
-"Palestinian Territory";Turkey;1;570
-"Palestinian Territory";Turkey;1;570
-"Palestinian Territory";Greece;1;571
-"Palestinian Territory";Turkey;2;571
-"Palestinian Territory";Turkey;1;571
-"Palestinian Territory";Turkey;1;571
-"Palestinian Territory";Turkey;1;572
-"Palestinian Territory";Turkey;1;571
-"Palestinian Territory";Turkey;1;571
-"Palestinian Territory";Turkey;1;572
-"Palestinian Territory";Turkey;1;572
-"Palestinian Territory";Turkey;1;574
-"Palestinian Territory";Turkey;1;575
-"Palestinian Territory";Turkey;1;575
-"Palestinian Territory";Turkey;1;575
-"Palestinian Territory";Turkey;1;575
-"Palestinian Territory";Greece;1;575
-"Palestinian Territory";Turkey;1;576
-"Palestinian Territory";Turkey;1;576
-"Palestinian Territory";Turkey;1;576
-"Palestinian Territory";Turkey;1;577
-"Palestinian Territory";Turkey;2;565
-"Palestinian Territory";Turkey;1;569
-"Palestinian Territory";Turkey;1;574
-"Palestinian Territory";Egypt;5;549
-"Palestinian Territory";Turkey;1;578
-"Palestinian Territory";Turkey;1;578
-"Palestinian Territory";Turkey;1;580
-"Palestinian Territory";Turkey;1;580
-"Palestinian Territory";Turkey;1;580
-"Palestinian Territory";Turkey;1;580
-"Palestinian Territory";Turkey;1;582
-"Palestinian Territory";Turkey;1;582
-"Palestinian Territory";Turkey;1;583
-"Palestinian Territory";Turkey;1;585
-"Palestinian Territory";Turkey;1;586
-"Palestinian Territory";Turkey;1;586
-"Palestinian Territory";Turkey;1;586
-"Palestinian Territory";Turkey;1;586
-"Palestinian Territory";Turkey;1;586
-"Palestinian Territory";Turkey;1;586
-"Palestinian Territory";Turkey;1;588
-"Palestinian Territory";Turkey;1;587
-"Palestinian Territory";Turkey;1;588
-"Palestinian Territory";Turkey;1;588
-"Palestinian Territory";Turkey;1;588
-"Palestinian Territory";Turkey;1;588
-"Palestinian Territory";Turkey;1;589
-"Palestinian Territory";Turkey;1;589
-"Palestinian Territory";Turkey;1;591
-"Palestinian Territory";Turkey;1;591
-"Palestinian Territory";Turkey;1;592
-"Palestinian Territory";Turkey;2;592
-"Palestinian Territory";Turkey;1;593
-"Palestinian Territory";Turkey;1;595
-"Palestinian Territory";Turkey;1;595
-"Palestinian Territory";Turkey;1;597
-"Palestinian Territory";Turkey;1;597
-"Palestinian Territory";Turkey;2;598
-"Palestinian Territory";Turkey;1;598
-"Palestinian Territory";Turkey;1;603
-"Palestinian Territory";Turkey;1;603
-"Palestinian Territory";Turkey;1;606
-"Palestinian Territory";Turkey;1;603
-"Palestinian Territory";Turkey;1;604
-"Palestinian Territory";Turkey;1;606
-"Palestinian Territory";Turkey;1;607
-"Palestinian Territory";Turkey;1;606
-"Palestinian Territory";Turkey;1;608
-"Palestinian Territory";Turkey;1;606
-"Palestinian Territory";Turkey;1;611
-"Palestinian Territory";Turkey;1;612
-"Palestinian Territory";Turkey;1;612
-"Palestinian Territory";Syria;1;671
-"Palestinian Territory";Turkey;1;613
-"Palestinian Territory";Turkey;1;615
-"Palestinian Territory";Turkey;1;615
-"Palestinian Territory";Greece;1;616
-"Palestinian Territory";Turkey;1;633
-"Palestinian Territory";Italy;1;625
-"Palestinian Territory";Egypt;2;625
-"Palestinian Territory";Egypt;3;623
-"Palestinian Territory";Lebanon;1;673
-"Palestinian Territory";Syria;1;681
-"Palestinian Territory";Syria;1;673
-"Palestinian Territory";Syria;1;673
-"Palestinian Territory";Syria;1;673
-"Palestinian Territory";Syria;1;673
-"Palestinian Territory";Syria;1;673
-"Palestinian Territory";Syria;1;673
-"Palestinian Territory";Israel;1;671
+Palestine;Turkey;1;508
+Palestine;Turkey;1;508
+Palestine;Turkey;2;508
+Palestine;Turkey;1;508
+Palestine;Turkey;1;508
+Palestine;Turkey;1;508
+Palestine;Turkey;1;508
+Palestine;Turkey;2;508
+Palestine;Turkey;1;508
+Palestine;Turkey;1;508
+Palestine;Turkey;3;508
+Palestine;Turkey;1;522
+Palestine;Turkey;1;522
+Palestine;Turkey;1;522
+Palestine;Turkey;1;522
+Palestine;Turkey;1;522
+Palestine;Turkey;1;522
+Palestine;Turkey;1;522
+Palestine;Turkey;1;522
+Palestine;Turkey;1;522
+Palestine;Turkey;1;522
+Palestine;Turkey;1;522
+Palestine;Turkey;1;532
+Palestine;Turkey;1;532
+Palestine;Turkey;1;532
+Palestine;Turkey;1;532
+Palestine;Turkey;1;532
+Palestine;Turkey;1;532
+Palestine;Turkey;1;532
+Palestine;Turkey;3;533
+Palestine;Turkey;1;533
+Palestine;Turkey;2;533
+Palestine;Turkey;1;533
+Palestine;Turkey;2;533
+Palestine;Turkey;1;533
+Palestine;Turkey;2;543
+Palestine;Tunisia;1;536
+Palestine;Turkey;1;538
+Palestine;Turkey;1;540
+Palestine;Turkey;1;541
+Palestine;Turkey;1;553
+Palestine;Turkey;2;557
+Palestine;Turkey;1;562
+Palestine;Turkey;1;567
+Palestine;Turkey;1;567
+Palestine;Turkey;1;568
+Palestine;Turkey;1;569
+Palestine;Turkey;2;569
+Palestine;Turkey;1;569
+Palestine;Turkey;1;569
+Palestine;Turkey;1;569
+Palestine;Turkey;1;570
+Palestine;Turkey;1;570
+Palestine;Greece;1;571
+Palestine;Turkey;2;571
+Palestine;Turkey;1;571
+Palestine;Turkey;1;571
+Palestine;Turkey;1;572
+Palestine;Turkey;1;571
+Palestine;Turkey;1;571
+Palestine;Turkey;1;572
+Palestine;Turkey;1;572
+Palestine;Turkey;1;574
+Palestine;Turkey;1;575
+Palestine;Turkey;1;575
+Palestine;Turkey;1;575
+Palestine;Turkey;1;575
+Palestine;Greece;1;575
+Palestine;Turkey;1;576
+Palestine;Turkey;1;576
+Palestine;Turkey;1;576
+Palestine;Turkey;1;577
+Palestine;Turkey;2;565
+Palestine;Turkey;1;569
+Palestine;Turkey;1;574
+Palestine;Egypt;5;549
+Palestine;Turkey;1;578
+Palestine;Turkey;1;578
+Palestine;Turkey;1;580
+Palestine;Turkey;1;580
+Palestine;Turkey;1;580
+Palestine;Turkey;1;580
+Palestine;Turkey;1;582
+Palestine;Turkey;1;582
+Palestine;Turkey;1;583
+Palestine;Turkey;1;585
+Palestine;Turkey;1;586
+Palestine;Turkey;1;586
+Palestine;Turkey;1;586
+Palestine;Turkey;1;586
+Palestine;Turkey;1;586
+Palestine;Turkey;1;586
+Palestine;Turkey;1;588
+Palestine;Turkey;1;587
+Palestine;Turkey;1;588
+Palestine;Turkey;1;588
+Palestine;Turkey;1;588
+Palestine;Turkey;1;588
+Palestine;Turkey;1;589
+Palestine;Turkey;1;589
+Palestine;Turkey;1;591
+Palestine;Turkey;1;591
+Palestine;Turkey;1;592
+Palestine;Turkey;2;592
+Palestine;Turkey;1;593
+Palestine;Turkey;1;595
+Palestine;Turkey;1;595
+Palestine;Turkey;1;597
+Palestine;Turkey;1;597
+Palestine;Turkey;2;598
+Palestine;Turkey;1;598
+Palestine;Turkey;1;603
+Palestine;Turkey;1;603
+Palestine;Turkey;1;606
+Palestine;Turkey;1;603
+Palestine;Turkey;1;604
+Palestine;Turkey;1;606
+Palestine;Turkey;1;607
+Palestine;Turkey;1;606
+Palestine;Turkey;1;608
+Palestine;Turkey;1;606
+Palestine;Turkey;1;611
+Palestine;Turkey;1;612
+Palestine;Turkey;1;612
+Palestine;Syria;1;671
+Palestine;Turkey;1;613
+Palestine;Turkey;1;615
+Palestine;Turkey;1;615
+Palestine;Greece;1;616
+Palestine;Turkey;1;633
+Palestine;Italy;1;625
+Palestine;Egypt;2;625
+Palestine;Egypt;3;623
+Palestine;Lebanon;1;673
+Palestine;Syria;1;681
+Palestine;Syria;1;673
+Palestine;Syria;1;673
+Palestine;Syria;1;673
+Palestine;Syria;1;673
+Palestine;Syria;1;673
+Palestine;Syria;1;673
+Palestine;Israel;1;671
 Italy;Italy;10;537
 Italy;Italy;1;507
 Italy;Turkey;1;537
