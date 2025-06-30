@@ -110,16 +110,15 @@ This date is interesting, since it predates the fall of the Roman Empire by seve
 
 <<statphys.graph, echo=FALSE, message=F, warning=F, fig.height=4, fig.pos="h", fig.cap="Trade network graph, with vertex size related to betweenness centrality">>=
 library(dplyr)
-all_links <- read.csv("data/all-links.csv", sep=";")
+all_links_raw <- read.csv("data/all-links.csv", sep=";")
 
-# Eliminate all links that start by "Unknown"
-#
-all_links <- all_links %>%
+all_links_raw <- all_links_raw %>%
   filter(!grepl("^Unknown", hoard) & !grepl("^Unknown", mint))
 
 library(igraph)
 
 all_links$num_coins <- as.numeric(all_links$num_coins)
+
 all_links <- all_links %>%
   group_by(hoard, mint) %>%
   summarise(weight = sum(num_coins, na.rm=TRUE)) %>%
@@ -131,7 +130,6 @@ all_links_network <- graph_from_data_frame(all_links, directed=FALSE)
 
 V(all_links_network)$betweenness <- betweenness(all_links_network, directed=FALSE)
 
-# avoid that all central nodes cluster together
 par(mar=c(0,0,0,0)+.65)
 plot(all_links_network,
      vertex.size=log(V(all_links_network)$betweenness) * 2,
@@ -148,6 +146,81 @@ The original dataset contains information on the actual polities that produced a
 Additionally, we have eliminated all vertices with an unknown location and we have set as weights the number of coins in every specific coin group; that is, if Turkey is linked to Italy, the number of coins will indicate the strength of that particular link. The resulting network is shown in Figure \ref{fig:statphys.graph}. In this graph we also represent the betweenness centrality of the vertices, and use a layout that puts the most central vertex, that is Turkey, in the middle. We are clearly dealing here with the Eastern Roman empire, with its capital city in Constantinople, current Istanbul.
 
 The main purpose of this graph is to show the overall connectivity, so that we can perceive the differences between and after the changepoint.
+
+<<statphys.split, echo=FALSE, message=F, warning=F, fig.height=4, fig.pos="h!tbp", fig.cap="Trade network before the changepoint">>=
+all_links_raw$year <- as.numeric(all_links_raw$year)
+all_links_raw$num_coins <- as.numeric(all_links_raw$num_coins)
+
+changepoint_date <- link.changepoint.date[1]
+all_links_before <- all_links_raw[ all_links_raw$year < changepoint_date, ]
+
+all_links_before <- all_links_before %>%
+  group_by(hoard, mint) %>%
+  summarise(weight = sum(num_coins, na.rm=TRUE)) %>%
+  ungroup()
+
+all_links_before <- all_links_before %>% filter(weight > 0)
+
+all_links_before_network <- graph_from_data_frame(all_links_before, directed=FALSE)
+
+V(all_links_before_network)$betweenness <- betweenness(all_links_before_network, directed=FALSE)
+
+all_links_before_network <- delete_vertices(all_links_before_network, which(degree(all_links_before_network) <= 1))
+
+par(mar=c(0,0,0,0)+.65)
+plot(all_links_before_network,
+     vertex.size=log(V(all_links_before_network)$betweenness) * 2,
+     layout=layout_with_dh,
+     vertex.label.cex=0.5, vertex.label.color="black", vertex.color=rgb(1,1,0,0.5),
+     edge.width=1+E(all_links_before_network)$weight/5000,
+     edge.color="gray")
+
+@
+
+We have split the graph in a {\em before} and {\em after} the date, with the objective of trying to find out if the change in overall connectivity of the network can explain the change point. We have simply used the coin group date for the split. The graph before the changepoint date is shown in Figure \ref{fig:statphys.split}, where vertex size is proportional to betweenness and edge width proportional to the number of coins, adding all coin groups with those two nodes as origin {\em or} destination.
+
+<<statphys.before.betweenness.table, echo=FALSE, message=F, warning=F, fig.height=4, fig.pos="h!tbp", fig.cap="Betweenness centrality before changepoint">>=
+library(knitr)
+kable(
+  data.frame(
+    node=V(all_links_before_network)$name,
+    betweenness=V(all_links_before_network)$betweenness
+  ) %>%
+    arrange(desc(betweenness)) %>%
+    head(10),
+  caption="Betweenness centrality before changepoint"
+)
+@
+
+We show in Table \ref{tab:statphys.before.betweenness.table} the ten nodes with highest betweenness centrality before the changepoint. The fact that Serbia is in the top position is mildly surprising; at the time it was part of the trade routes between Eastern and Western Roman empire, as well as including in its territory the all important Danube river, trade route \cite{habaj2017trade} as well as natural border between the Roman empire and the rest of Europe. Turkey is, of course, the Byzantine empire. What comes next is the United Kingdom and Spain which, as Figure \ref{fig:statphys.split} show, have a very strong connection between them. This is in part explained by the fact that the number of hoards found in these two current countries seems to be higher in the FLAMES database, but still those were territories that were an important part of the Roman empire with their mines (tin in the UK, iron, silver and mercury in Spain) and important ports. We need to see, anyway, what changed after the found date.
+
+<<statphys.split.after, echo=FALSE, message=F, warning=F, fig.height=4, fig.pos="h!tbp", fig.cap="Trade network after the changepoint">>=
+all_links_after <- all_links_raw[ all_links_raw$year >= changepoint_date, ]
+
+all_links_after <- all_links_after %>%
+  group_by(hoard, mint) %>%
+  summarise(weight = sum(num_coins, na.rm=TRUE)) %>%
+  ungroup()
+
+all_links_after <- all_links_after %>% filter(weight > 0)
+
+all_links_after_network <- graph_from_data_frame(all_links_after, directed=FALSE)
+
+V(all_links_after_network)$betweenness <- betweenness(all_links_after_network, directed=FALSE)
+
+all_links_after_network <- delete_vertices(all_links_after_network, which(degree(all_links_after_network) <= 1))
+
+par(mar=c(0,0,0,0)+.65)
+plot(all_links_after_network,
+    layout=layout_with_dh,
+     vertex.size=log(1+V(all_links_after_network)$betweenness) * 2,
+     vertex.label.cex=0.5, vertex.label.color="black", vertex.color=rgb(1,1,0,0.5),
+     edge.width=1+E(all_links_after_network)$weight/5000,
+     edge.color="gray")
+
+@
+
+The scenario drawn in Figure \ref{fig:statphys.split.after} is dramatically different, much more decentralized, with formerly central actors displaced to the periphery (like Italy or Spain), strong links (like the one between UK and Spain, and Italy and Bulgaria) vanished, and a bigger distribution of trade hubs among the continents; the importance of the Asian nodes, which were barely represented before, is quite evident.
 
 \section{Conclusions and future lines of work}\label{sec:concl}
 

@@ -24,6 +24,6 @@ V(all_links_network)$betweenness <- betweenness(all_links_network, directed=FALS
 # avoid that all central nodes cluster together
 plot(all_links_network,
      vertex.size=log(V(all_links_network)$betweenness) * 2,
-     layout=layout.fruchterman.reingold(all_links_network, niter=10000),
-     vertex.label.cex=0.5, vertex.label.color="black",
+     layout=layout.reingold.tilford(all_links_network, circular=T),
+     vertex.label.cex=0.5, vertex.label.color="black", vertex.color=rgb(1,1,0,0.5),
      edge.color="gray")
