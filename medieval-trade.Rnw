@@ -89,7 +89,7 @@ mtext("Year", side=1, line=3, cex=1.5)
 
 \section{Results}\label{sec:res}
 
-<<statphys.graph, echo=FALSE, message=F, fig.height=4, fig.pos="h">>=
+<<statphys.graph, echo=FALSE, message=F, warning=F, fig.height=4, fig.pos="h">>=
 library(dplyr)
 all_links <- read.csv("data/all-links.csv", sep=";")
 
