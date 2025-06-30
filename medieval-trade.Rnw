@@ -265,7 +265,13 @@ ggplot(comparison.table, aes(x=1:nrow(comparison.table))) +
   theme(legend.title=element_blank())+scale_y_log10()
 @
 
-\section{Conclusions and future lines of work}\label{sec:concl}
+What Figure \cite{statphys.bw.before.after} establishes is the stark change in trading patterns before and after the changepoint. The more centralized network before the changepoint has nodes with higher betweenness, but also less nodes with a high betweenness, descending very fast after the first few nodes. The subsequent network has lower betweenness overall, but the slope is also less steep, with many more nodes with a significant betweenness after the top 20.
+
+At the end of the day, what this implies is that the change of regime has a high impact in the trading patterns, but also that de demise of one of the nodes in that trading network in the Balkans or around the Danube river might have been one possible cause for that change.
+
+\section{Conclusions, discussion and future lines of work}\label{sec:concl}
+
+
 
 \section{Funding and acknowledgements}
 This work is supported by the Ministerio espa\~{n}ol de Econom\'{\i}a y
