@@ -15,7 +15,15 @@ all_links <- all_links %>%
   summarise(weight = sum(num_coins, na.rm=TRUE)) %>%
   ungroup()
 
+all_links <- all_links %>% filter(weight > 0)
+
 all_links_network <- graph_from_data_frame(all_links, directed=FALSE)
 
+V(all_links_network)$betweenness <- betweenness(all_links_network, directed=FALSE)
 
-plot(all_links_network)
+# avoid that all central nodes cluster together
+plot(all_links_network,
+     vertex.size=log(V(all_links_network)$betweenness) * 2,
+     layout=layout.fruchterman.reingold(all_links_network, niter=10000),
+     vertex.label.cex=0.5, vertex.label.color="black",
+     edge.color="gray")
