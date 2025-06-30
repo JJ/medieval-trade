@@ -134,6 +134,7 @@ all_links_network <- graph_from_data_frame(all_links, directed=FALSE)
 V(all_links_network)$betweenness <- betweenness(all_links_network, directed=FALSE)
 
 # avoid that all central nodes cluster together
+par(mar=c(0,0,0,0)+.65)
 plot(all_links_network,
      vertex.size=log(V(all_links_network)$betweenness) * 2,
      layout=layout.reingold.tilford(all_links_network, circular=T),
