@@ -56,7 +56,21 @@ From this database we have extracted four fields:\begin{itemize}
 
 The dataset, which includes \Sexpr{length(all_links$year)} pairs, is publicly available at the GitHub repository \url{https://jj.github.io/medieval-trade} under a free license, together with the scripts used to create it.
 
-From this initial dataset, a new dataset with the number of links per year has been created, by simply adding up the number of pairs of places that appear for every year.
+<<statphys.links, echo=FALSE, message=F, fig.height=4, fig.pos="h">>=
+library(ggplot2)
+ggplot(links_year, aes(x=year, y=links)) +
+  geom_point() +
+  labs(x="Year", y="# Links") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  ggtitle("Number of links per year in the FLAME dataset")
+@
+
+From this initial dataset, a new dataset with the number of links per year has been created, by simply adding up the number of pairs of places that appear for every year. The resulting dataset is shown in Figure \ref{fig:statphys.links}. As it can be seen, it spans from the 2nd century to the 9th century, although the data for both tips of the range is very sparse.
+
+
+
+\section{Results}\label{sec:res}
 
 <<statphys.changepoint, echo=FALSE, message=F, fig.height=4, fig.pos="h">>=
 library(dplyr)
@@ -87,7 +101,6 @@ mtext("Year", side=1, line=3, cex=1.5)
 
 
 
-\section{Results}\label{sec:res}
 
 <<statphys.graph, echo=FALSE, message=F, warning=F, fig.height=4, fig.pos="h">>=
 library(dplyr)
