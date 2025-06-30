@@ -237,7 +237,7 @@ kable(
 
 The list of territories with the highest betweenness is shown in Figure \ref{tab:statphys.after.betweenness.table}. With Turkey and Syria, both part of the Byzantine empire, in the top positions, it clearly shows its importance in the world after the regime changed. But the trade network after the year \Sexpr{link.changepoint.date} has Italy, now capital of the Ostrogoth and after Lombard kingdom, as an important node. The presence of Russia and Greece again shows how the Byzantine empire was the most important kingdom in that era.
 
-<<statphys.bw.before.after, warning=F, echo=FALSE, message=F, fig.height=4, fig.pos="h!tbp", fig.cap="Entropy of the trade network before and after the changepoint">>=
+<<statphys.bw.before.after, warning=F, echo=FALSE, message=F, fig.height=4, fig.pos="h!tbp", fig.cap="Betweenness centrality of the top nodes before and after the changepoint">>=
 data.frame(
     node=V(all_links_after_network)$name,
     betweenness=V(all_links_after_network)$betweenness
@@ -262,7 +262,6 @@ ggplot(comparison.table, aes(x=1:nrow(comparison.table))) +
   labs(x="Node #", y="Betweenness Centrality") +
   scale_color_manual(values=c("Before"="blue", "After"="red")) +
   theme_minimal() +
-  ggtitle("Betweenness Centrality Before and After Changepoint") +
   theme(legend.title=element_blank())+scale_y_log10()
 @
 
