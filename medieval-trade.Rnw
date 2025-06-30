@@ -106,11 +106,9 @@ mtext("Year", side=1, line=3, cex=1.5)
 
 We have applied the {\sf cpt.meanvar} method in the {\sf changepoint} package \cite{killick} to the time series, which gives a statistical significant change point. The reason why we have used a method that analyzes a changepoint in {\em mean} and {\em variance} is because the data seems to change in magnitude as well as variability, so we thought this one would find the change point with the highest precision. The result, of this algorithm is shown in Figure \ref{fig:statphys.changepoint}, which plots the average number of links before and after the change point in red. The found changepoint is at year \Sexpr{link.changepoint.date} CE.
 
-This is interesting, since it predates the fall of the Roman Empire by several decades; but it of course also predates the Islamic expansion, although there seems to be a brief "renaissance" in 500 CE, so researching additional changepoints might yield some insight on what happened.
+This date is interesting, since it predates the fall of the Roman Empire by several decades; but it of course also predates the Islamic expansion, although there seems to be a brief "renaissance" in 500 CE, so researching additional changepoints might yield some insight on what happened. But at any rate we will need to understand why this is happening.
 
-
-
-<<statphys.graph, echo=FALSE, message=F, warning=F, fig.height=4, fig.pos="h">>=
+<<statphys.graph, echo=FALSE, message=F, warning=F, fig.height=4, fig.pos="h", fig.cap="Trade network graph, with vertex size related to betweenness centrality">>=
 library(dplyr)
 all_links <- read.csv("data/all-links.csv", sep=";")
 
@@ -141,6 +139,15 @@ plot(all_links_network,
      vertex.label.cex=0.5, vertex.label.color="black", vertex.color=rgb(1,1,0,0.5),
      edge.color="gray")
 @
+
+
+One of the angles we can explore is to take into account that we are, in fact, looking at a trade {\em network}, with vertices being the producers and consumers of coins, and edges the fact that a coin group contains coins created in a different place. In order to work with this network, we need to normalize the places so that they are mapped to a fixed vertex.
+
+The original dataset contains information on the actual polities that produced and consumed the coins, with the specific kingdoms and even kings mentioned. However, this is not useful to research the network, since polities evolve and disappear and specific places would appear as different vertices depending on when the coin group was found or pressed. Since most coin hoards are geolocated, we will map the coordinates to {\em current} countries or territories, always taking into account that this is not the actual state or country that produced them. However, it will give us an idea of the relevance and centrality of the different territories back then. When necessary, we will map them back to the original locations, if it is relevant to our analysis.
+
+Additionally, we have eliminated all vertices with an unknown location and we have set as weights the number of coins in every specific coin group; that is, if Turkey is linked to Italy, the number of coins will indicate the strength of that particular link. The resulting network is shown in Figure \ref{fig:statphys.graph}. In this graph we also represent the betweenness centrality of the vertices, and use a layout that puts the most central vertex, that is Turkey, in the middle. We are clearly dealing here with the Eastern Roman empire, with its capital city in Constantinople, current Istanbul.
+
+The main purpose of this graph is to show the overall connectivity, so that we can perceive the differences between and after the changepoint.
 
 \section{Conclusions and future lines of work}\label{sec:concl}
 
