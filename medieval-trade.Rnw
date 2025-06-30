@@ -56,7 +56,7 @@ From this database we have extracted four fields:\begin{itemize}
 
 The dataset, which includes \Sexpr{length(all_links$year)} pairs, is publicly available at the GitHub repository \url{https://jj.github.io/medieval-trade} under a free license, together with the scripts used to create it.
 
-<<statphys.links, echo=FALSE, message=F, fig.height=4, fig.pos="h">>=
+<<statphys.links, echo=FALSE, message=F, fig.height=4, fig.pos="h!tbp", fig.cap="Initial datasets with links per year">>=
 library(ggplot2)
 ggplot(links_year, aes(x=year, y=links)) +
   geom_point() +
@@ -68,11 +68,16 @@ ggplot(links_year, aes(x=year, y=links)) +
 
 From this initial dataset, a new dataset with the number of links per year has been created, by simply adding up the number of pairs of places that appear for every year. The resulting dataset is shown in Figure \ref{fig:statphys.links}. As it can be seen, it spans from the 2nd century to the 9th century, although the data for both tips of the range is very sparse.
 
-
+This is the initial dataset we will explore right next.
 
 \section{Results}\label{sec:res}
 
-<<statphys.changepoint, echo=FALSE, message=F, fig.height=4, fig.pos="h">>=
+Some additional massaging is applied in order to get the changepoint analysis to work properly. Two additional processing steps have been performed:\begin{itemize}
+\item Years with missing values have been set to 0, so that we have a data point for every year, and years without links count as such.
+\item The dataset has been filtered to only include years between 300 and 775, as the data before and after that is very sparse.
+\end{itemize}
+
+<<statphys.changepoint, echo=FALSE, message=F, fig.height=4, fig.pos="h!tbp", fig.cap="Number of links per year and mean before/after changepoint">>=
 library(dplyr)
 library(tidyr)
 
@@ -91,7 +96,7 @@ ticks.years <- links_year$year[ticks]
 
 # set y label to "# links"
 par(mar = c(5.1, 8.1, 4.1, 2.1))
-plot(link.changepoint,xaxt = 'n', xlab="", ylab="", main="Number of links per year and mean before/after changepoint")
+plot(link.changepoint,xaxt = 'n', xlab="", ylab="")
 # move position of tick labels down so that it does not overlaps ticks
 offset <- -0.05
 axis(1, at = ticks, labels=ticks.years)
@@ -99,6 +104,9 @@ mtext("# Links", side=2, line=2, cex=1.5)
 mtext("Year", side=1, line=3, cex=1.5)
 @
 
+We have applied the {\sf cpt.meanvar} method in the {\sf changepoint} package \cite{killick} to the time series, which gives a statistical significant change point. The reason why we have used a method that analyzes a changepoint in {\em mean} and {\em variance} is because the data seems to change in magnitude as well as variability, so we thought this one would find the change point with the highest precision. The result, of this algorithm is shown in Figure \ref{fig:statphys.changepoint}, which plots the average number of links before and after the change point in red. The found changepoint is at year \Sexpr{link.changepoint.date} CE.
+
+This is interesting, since it predates the fall of the Roman Empire by several decades; but it of course also predates the Islamic expansion, although there seems to be a brief "renaissance" in 500 CE, so researching additional changepoints might yield some insight on what happened.
 
 
 
