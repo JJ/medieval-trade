@@ -271,6 +271,11 @@ At the end of the day, what this implies is that the change of regime has a high
 
 \section{Conclusions, discussion and future lines of work}\label{sec:concl}
 
+History is characterized by abrupt changes brought by a variety of factors. In general, however, historiography has looked at singular events (battles, deaths of rulers) registered in the written record for those changes. The combination of available data on material culture and statistical methods, sometimes picked up from the physical deficiencies, can lend new insights not only on when the changes occur, but on the possible causes of those changes.
+
+In this report, we have looked at coin hoard data from the FLAME dataset and created a timeline of trade links in from late Antiquity to the Early Middle Ages. An analysis of that timeline has yielded a statistically significant changepoint in the year \Sexpr{link.changepoint.date} CE. Since this possible boundary between those two periods occurs earlier than previously predicted, we need to find possible causes, and we use the same dataset to establish them: by using those same links as a trade network with regions as nodes, we see that the period previous to the fall was characterized by a highly centralized network where the vertex with the highest betweenness was along the Danube river, in Serbia. The network after the changepoint is much more decentralized, with many more nodes in Asia, and with the most central node in Turkey, that is, the Byzantine Empire.
+
+Since the date is very close to the battle of Adrianople \cite{adrianople}.
 
 
 \section{Funding and acknowledgements}
