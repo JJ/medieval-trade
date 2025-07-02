@@ -51,7 +51,7 @@ author = {Merelo Guervos, Juan Julián},
 
 ## Data
 
-Data was obtained from the FLAMEs database. [`data-raw`](data-raw) contains
+Data was obtained from the FLAMEs database. [`data-raw`](data-raw/) contains
 unprocessed files, [`data/`](data/) the files once processed, that can be used
 directly.
 
