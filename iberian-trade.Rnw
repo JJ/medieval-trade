@@ -84,7 +84,11 @@ Focusing on the Iberian peninsula, the Visigoth invasion did produce some discon
 
 These multitude of factors can produce abrupt changes in time series, but you need to apply rigorous statistical methods to be able to find the precise change point and then work back and try to explain the change in historical trends through the other data, historiographical, environmental and archaeological, that is available. This approach is called, in general, change point analysis, and it has been repeatedly applied to historical data including battle deaths \cite{battle:deaths}, use of force by US presidents \cite{hee2010structural}, analysis of the actual life terms served by Venetian doges \cite{histories3010003} and how shifts in marriage patterns explain the different shift points in the Republic of Venice \cite{histories4020012}; the technique was initially created for climate variations \cite{beaulieu2012change} but since then, different algorithms, including Bayesian ones, have been applied to the analysis of historical time series \cite{western_kleykamp_2017}.
 
-By focusing on the analysis of the trade patterns that coin hoards reveal, and using change point detection methods and focusing on a specific area, we should be able to find more precisely what group of trends produced those changes and if there were some specific events that produced those trends or their change. The dataset used and the methodology applied to it will be explained next.
+A recent report \cite{changepoint.statphys} analyzed the whole dataset of coin hoards and found a change point in the early 5th century. An additional social network analysis discovered that the center of the network, previously based in the Danubian area, had collapsed after the changepoint, hypothesizing that the loss of the Danube and adjoining Roman-maintained and -guarded roads after the defeat of Adrianople and the inclusion of {\em foederati} homelands South of the river provoked a general disruption of trade patterns, and thus, by definition, the actual Fall of the Roman Empire and the beginning of the Middle Ages.
+
+By focusing on the analysis of the trade patterns that coin hoards reveal, and using change point detection methods and focusing on a specific area, we should be able to find more precisely what group of trends produced those changes and if there were some specific events that produced those trends or their change. The variation in the dates of the changepoint might also reveal cause-effect chains in one direction of the other, or find with higher precision chain of events that led to change of a global scale.
+
+How we processed the dataset used and the methodology applied to it in this paper will be explained next.
 
 
 
@@ -152,7 +156,7 @@ As a result, we have two synchronous datasets \begin{itemize}
 
 % This section is not mandatory, but can be added to the manuscript if the discussion is unusually long or complex.
 
-\funding{Please add: ``This research received no external funding'' or ``This research was funded by NAME OF FUNDER grant number XXX.'' and  and ``The APC was funded by XXX''. Check carefully that the details given are accurate and use the standard spelling of funding agency names at \url{https://search.crossref.org/funding}, any errors may affect your future funding.}
+\funding{This work is supported by the Ministerio espa\~{n}ol de Econom\'{\i}a y Competitividad (Spanish Ministry of Competitivity and Economy) under project PID2023-147409NB-C21.}
 
 \dataavailability{.}
 
