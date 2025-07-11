@@ -96,7 +96,17 @@ How we processed the dataset used and the methodology applied to it in this pape
 \section{Materials and Methods}
 
 <<trade.setup, echo=FALSE>>=
-all_iberian_links_decade <- readRDS("data/all_iberian_links_decade.rds")
+library(dplyr)
+iberian_links_decade <- readRDS("data/iberian_links_decade.rds")
+min_decade <- min(iberian_links_decade$decade)
+max_decade <- max(iberian_links_decade$decade)
+all_iberian_links_decade <- readRDS("data/all_iberian_links_decade.rds") %>% filter( decade >= min_decade & decade <= max_decade)
+
+links_time_series <- data.frame(  decade = iberian_links_decade$decade,
+  interior_links = iberian_links_decade$n,
+  exterior_links = all_iberian_links_decade$n
+  )
+
 
 @
 
@@ -128,14 +138,33 @@ We have made a series of processing steps to use them \begin{itemize}
 \item Iberian-only trade links, which contains only the trade links where the mint and the coin finding (hoard) are in the Iberian peninsula.
 \item All trade links of hoards found in the Iberian Peninsula or that contain coins minted in it.
 \end{itemize}
-\item We processed the resulting files per decade starting in 0, so that the granularity of the resulting time series of trade links is 10 years.
-\item We filled with 0 all those decades with no links.
+\item We processed the resulting files per decade starting in 0, so that the granularity of the resulting time series of trade links is 10 years. The main reason for doing so was the fact that many years had zero links, so grouping them by decade seemed a good way to smooth differences that could have happened fron a single year to the next.
+\item We filled with 0s all those decades with no links.
+\item Finally, we shortened the time series so that they start and end in the same year.
 \end{itemize}
 
-As a result, we have two synchronous datasets \begin{itemize}
-\item Time series of trade links per decade within the Iberian Peninsula
+As a result, we have two synchronous datasets with \Sexpr{length(links_time_series$decade)} decades that start in the decade \Sexpr{min_decade} and end in the decade \Sexpr{max_decade} \begin{itemize}
+\item Time series of trade links per decade within the Iberian Peninsula.
 \item Time series of trade links per decade between the Iberian Peninsula and elsewhere.
 \end{itemize}
+
+These processed datasets are available in R data format in the repository for this paper, \url{https://github.com/JJ/medieval-trade}.
+
+<<trade.plot, echo=FALSE, fig.cap="Time series of interior and exterior trade links for the Iberian Peninsula">>=
+library(ggplot2)
+library(ggthemes)
+ggplot(links_time_series, aes(x=decade)) +
+  geom_line(aes(y=interior_links, color="Interior links"), size=1) +
+  geom_line(aes(y=exterior_links, color="Exterior links"), size=1) +
+  scale_color_manual(values=c("Interior links"="#E69F00", "Exterior links"="#56B4E9")) +
+  labs(title="Trade links in the Iberian Peninsula",
+       x="Decade",
+       y="Number of trade links") +
+  theme_minimal() +
+  theme(legend.title = element_blank())
+@
+
+Figure \ref{fig:trade.plot} is a representation of the time series.
 
 
 \subsection{Overview of coin hoard data}
