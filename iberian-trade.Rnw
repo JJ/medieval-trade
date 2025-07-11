@@ -84,7 +84,7 @@ Focusing on the Iberian peninsula, the Visigoth invasion did produce some discon
 
 These multitude of factors can produce abrupt changes in time series, but you need to apply rigorous statistical methods to be able to find the precise change point and then work back and try to explain the change in historical trends through the other data, historiographical, environmental and archaeological, that is available. This approach is called, in general, change point analysis, and it has been repeatedly applied to historical data including battle deaths \cite{battle:deaths}, use of force by US presidents \cite{hee2010structural}, analysis of the actual life terms served by Venetian doges \cite{histories3010003} and how shifts in marriage patterns explain the different shift points in the Republic of Venice \cite{histories4020012}; the technique was initially created for climate variations \cite{beaulieu2012change} but since then, different algorithms, including Bayesian ones, have been applied to the analysis of historical time series \cite{western_kleykamp_2017}.
 
-By focusing on the analysis of the trade patterns coin hoards reveal, and using change point detection methods and focusing on a specific area, we should be able to find more precisely what group of trends produced those changes and if there were some specific events that produced those trends or their change. The dataset used and the methodology applied to it will be explained next.
+By focusing on the analysis of the trade patterns that coin hoards reveal, and using change point detection methods and focusing on a specific area, we should be able to find more precisely what group of trends produced those changes and if there were some specific events that produced those trends or their change. The dataset used and the methodology applied to it will be explained next.
 
 
 
@@ -96,9 +96,9 @@ all_iberian_links_decade <- readRDS("data/all_iberian_links_decade.rds")
 
 @
 
-We have used the FLAMES (Framing the Late Antique and early Medieval Economy) database As the main base for this paper, in its September 2024 version, which is available from \url{https://coinage.princeton.edu/flame-database-last-version}. This project has published a series of datasets that contain information on coin hoards found all over the world, and spans from the 4th to the 8th century. This dataset formed the basis for \cite{coins}, although it was enhanced with more data.
+We have used the FLAMES ({\em Framing the Late Antique and early Medieval Economy} ) database As the main base for this paper, in its September 2024 version, which is available from \url{https://coinage.princeton.edu/flame-database-last-version}. This project has published a series of datasets that contain information on coin hoards found all over the world, and spans from the 4th to the 8th century. This dataset formed the basis for \cite{coins}, although it was enhanced with more data.
 
-We will focus on the Iberian peninsula and the two countries with hoards, Spain and Portugal\endnote{There are no hoards found in Andorra or in the colony of Gibraltar.}.
+We will focus on the Iberian peninsula and the two countries with hoards, Spain and Portugal\endnote{There are no hoards found in Andorra or in the UK colony of Gibraltar.}.
 
 We might wonder about the validity of this dataset as an, if not complete, at least unbiased representative of the activity we want to study. Any archaeological dataset is a sample of all possible data, and will probably have some biases, as revealed by \cite{rademacher2024data}. Certainly, those countries that are more urbanized will have found more coin hoards than those that are sparsely populated. In that paper, Spain has 36\% of sites with a numismatic rating of "Good" or better, over 461 hoards that have been found; it is among the 4 countries that have been described in the paper as good data quality (\cite{rademacher2024data}, caption to Table 1); in the conclusion, it affirms that
 \begin{verbatim}
