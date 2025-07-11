@@ -17,6 +17,8 @@ my @all-findings = csv(in => 'data-raw/flame-database-last-version-coin-findings
 my %finding-locations = @all-findings.map( { $_<ID> => $_<cf_custom_place_name> ?? $_<cf_custom_place_name> !! $_<cf_name> } ).flat;
 
 my @links-out;
+my @iberian-links-out;
+
 for @coin-groups -> %coin-group {
     next if %coin-group<cg_start_year> eq "" || %coin-group<cg_end_year> eq "";
     next unless %coin-group<Mint_ID> ∈ $iberian-mints || %coin-group<CoinFinding_ID> ∈ $iberian-findings;
@@ -40,7 +42,8 @@ for @coin-groups -> %coin-group {
 
     die %coin-group unless %link<hoard>;
     @links-out.push(%link);
-
+    @iberian-links-out.push(%link) if %coin-group<Mint_ID> ∈ $iberian-mints && %coin-group<CoinFinding_ID> ∈ $iberian-findings;;
 }
 
 csv( in => @links-out, out => "data/all-iberian-links.csv", sep => ";", headers => 'auto' );
+csv( in => @iberian-links-out, out => "data/iberian-links.csv", sep => ";", headers => 'auto' );
