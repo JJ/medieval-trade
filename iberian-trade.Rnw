@@ -68,7 +68,18 @@ $^{1}$ \quad Department of Computer Engineering, Automatics and Robotics, Univer
 
 % The template details the sections that can be used in a manuscript. Note that the order and names of article sections may differ from the requirements of the journal (e.g., the positioning of the Materials and Methods section). Please check the instructions on the authors' page of the journal to verify the correct order and names. For any questions, please contact the editorial office of the journal or support@mdpi.com. For LaTeX-related questions please contact latex@mdpi.com.%\endnote{This is an endnote.} % To use endnotes, please un-comment \printendnotes below (before References). Only journal Laws uses \footnote.
 
+In a previous report \cite{changepoint.statphys} we found a changepoint for the whole dataset of coin hoards, which we called {\em the Danubian hypothesis}: a change of trading regime bringing about abrupt changes all across the empire, essentially caused by the loss of the Danube river and accompanying Roman roads as a viable route due to the settling of non-Roman {\em nations} (called {\em foederati}) which no longer had the capability, or will, of maintaining those ways in working order. That caused a collapse in inter-Roman empires commerce, and eventually a change from Antiquity to the Middle Ages, acknowledged by most historiographers a few decades later. To be sure, the battle of Adrianople, which dilapidated several Roman legions and killed the emperor Vales, has been acknowledged for a long time as one factor defining the shift from Antiquity to Middle Ages \cite{burns1973battle}, although that view has received some criticism lately \cite{yilmazata2018notes}. We proved in \cite{changepoint.statphys} that the disruption in the trade patterns, as reflected in the complex network before and after the changepoint, spanned the whole region covered by the dataset. However, the same analysis revealed a link between Great Britain and Spain which vanished and was at least as important as the link between Italy and Bulgaria/Turkey through the Danube that also disappeared after the changepoint. The analysis is not able to reveal, however, if this was another cause or rather an effect of the change in regime.
+
+This is why, in this paper, we will focus on the Iberian peninsula. There are several reasons for this: first, the quality and quantity of the hoards found here and the precision with which mints can be ascertained from these findings; second, as a peripheral part of the empire, it might have experimented disruption before or after the main changepoint, and to find out which one is the case would contribute to the understanding of the change from Antiquity to the Middle Ages. Finally, there is a very extensive historiographical literature on the Iberian peninsula (for instance, \cite{martínez18:iberia}), which might find easier to connect epochal changes to trends or specific events.
+
+Thus, there are two interrelated research questions that we will work with in this paper: \begin{itemize}
+\item[Research question 1] Is there a changepoint in the Iberian peninsula trade links? Is it connected to the Danubian hypothesis?
+\item[Research question 2] If that is the case, can we find a local cause for this changepoint that is concomitant or caused by the Danubian hypothesis?
+\end{itemize}
+
 % The order of the section titles is different for some journals. Please refer to the "Instructions for Authors” on the journal homepage.
+%
+%
 
 \section{State of the art}
 
