@@ -72,7 +72,7 @@ $^{1}$ \quad Department of Computer Engineering, Automatics and Robotics, Univer
 
 \section{State of the art}
 
-This paper was kicked off by the publication of a preprint by Boehm and Chaney \cite{boehm2024change} which set out to analyze changes in economic regime in the Mediterranean as reflected in coin hoards found during a millennia. This change in economic regime was predicted by Henri Pirenne \cite{Pirenne:2015}, claiming that the real Middle Ages did not start until the onset of the Islamic invasion of the Middle East and North Africa disrupted the trade routes, breaking it into smaller, regional ones, which had to fend for themselves.
+This paper was kicked off by the publication of a preprint by \cite{coins} which set out to analyze changes in economic regime in the Mediterranean as reflected in coin hoards found during a millennia. This change in economic regime was predicted by Henri Pirenne \cite{Pirenne:2015}, claiming that the real Middle Ages did not start until the onset of the Islamic invasion of the Middle East and North Africa disrupted the trade routes, breaking it into smaller, regional ones, which had to fend for themselves.
 
 The main point of this school of thought is that what traditional historiography has considered break points, in this case the fall of the Roman Empire, need to be reconsidered in the light of all kind of data available to us, including the one we are using in this paper, coin hoards as a proxy for trade, and only reach a conclusion after this data has been analyzed and tested statistically. Fro instance, \cite{doi:10.1073/pnas.2419630121} look at lead pollution and levels of lead in blood, leading to cognitive decline which explains that fall; lead has been studied for some time as a disruptive factor in the Roman Empire, for instance in \cite{lead:pollution}, which use a different data source.
 
@@ -95,7 +95,7 @@ How we processed the dataset used and the methodology applied to it in this pape
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Materials and Methods}
 
-<<trade.setup, echo=FALSE>>=
+<<trade.setup, echo=FALSE, warning=FALSE, message=F>>=
 library(dplyr)
 iberian_links_decade <- readRDS("data/iberian_links_decade.rds")
 min_decade <- min(iberian_links_decade$decade)
@@ -153,8 +153,8 @@ These processed datasets are available in R data format in the repository for th
 library(ggplot2)
 library(ggthemes)
 ggplot(links_time_series, aes(x=decade)) +
-  geom_line(aes(y=interior_links, color="Interior links"), size=1) +
-  geom_line(aes(y=exterior_links, color="Exterior links"), size=1) +
+  geom_line(aes(y=interior_links, color="Interior links"), linewidth=1) +
+  geom_line(aes(y=exterior_links, color="Exterior links"), linewidth=1) +
   scale_color_manual(values=c("Interior links"="#E69F00", "Exterior links"="#56B4E9")) +
   labs(title="Trade links in the Iberian Peninsula",
        x="Decade",
