@@ -20,10 +20,10 @@ model <- lm(averagePg ~ n, data=pollution_links)
 summary(model)
 
 # find cross-correlation between the time series of lead pollution and the number of links
-#
-library(zoo)
+
 pollution_ts <- ts(pollution_data$averagePg, start=min(pollution_data$decade), frequency=10)
 links_ts <- ts(links_decade$n, start=min(links_decade$decade), frequency=10)
 cross_correlation <- ccf(pollution_ts, links_ts, lag.max=10)
-summary(cross_correlation)
+plot(cross_correlation, main="Cross-Correlation between Lead Pollution and Links", xlab="Lag", ylab="Cross-Correlation")
+
 
