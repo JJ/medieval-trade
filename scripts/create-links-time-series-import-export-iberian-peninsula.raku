@@ -10,7 +10,6 @@ my $iberian-mints = Set.new( @mints.map( { $_<ID> } ) );
 my @all-mints = csv(in => 'data-raw/flame-database-last-version-mints-country.csv', headers => 'auto', sep=>";");
 my %mint-locations = @all-mints.map( { $_<ID> => $_<location_title> } ).flat;
 my %mint-regions = @all-mints.map( { $_<ID> => $_<Country> } ).flat;
-say %mint-regions;
 
 my @findings = csv(in => 'data-raw/flame-database-last-version-coin-findings-iberian-peninsula.csv', headers => 'auto', sep=>";");
 my $iberian-findings = Set.new( @findings.map( { $_<ID> } ) );
@@ -50,7 +49,6 @@ for @coin-groups -> %coin-group {
     %link-regions<year> = %link<year>;
     @links-out.push(%link);
     @iberian-links-out.push(%link) if %coin-group<Mint_ID> ∈ $iberian-mints && %coin-group<CoinFinding_ID> ∈ $iberian-findings;
-    say %link-regions;
     @regional-links-out.push(%link-regions) if %link-regions<hoard> !~~ /Unknown/ && %link-regions<mint> !~~ /Unknown/;
 }
 
