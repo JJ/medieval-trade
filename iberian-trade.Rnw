@@ -227,9 +227,9 @@ At any rate, we would need to discuss the validity of the dataset, which we will
 \subsection{Dataset validation}
 
 There are many inherent biases in any archaeological dataset, something we have already acknowledged in subsection \ref{ssec:overview}. The biases, as indicated in \cite{FLAME:bias}, mainly concern regional representation and their relative importance; the authors assert that
-\begin{verbatim}
+\begin{quote}
 ... FLAME is not a representative sample of the ancient monetary circulation.
-\end{verbatim}
+\end{quote}
 
 The FLAME database stands at the rear end of a funnel that receives all coins but drops those that did not survive, were not excavated or were excavated but not studied, or those that were studied but not published. The bias that every one of those {\em filters} introduce is unknown. However, the authors also affirm that those known unknowns, as well as the unknown unknowns, do not render the dataset totally useless, and in fact it has been used repeatedly, more notably in \cite{coins}, where it is only part of the database, and in \cite{changepoint.statphys}, where it is the main source of data.
 
@@ -242,7 +242,7 @@ links_decade$decade <- links_decade$year
 
 pollution_ts <- ts(pollution_data$averagePg, start=min(pollution_data$decade), frequency=10)
 links_ts <- ts(links_decade$n, start=min(links_decade$decade), frequency=10)
-cross_correlation <- ccf(pollution_ts, links_ts, lag.max=10)
+cross_correlation <- ccf(pollution_ts, links_ts, lag.max=10, plot=F)
 plot(cross_correlation, xlab="Lag", ylab="Cross-Correlation")
 @
 
