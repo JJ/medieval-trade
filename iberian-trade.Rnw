@@ -160,7 +160,7 @@ As a result, we have two synchronous datasets with \Sexpr{length(links_time_seri
 
 These processed datasets are available in R data format in the repository for this paper, \url{https://github.com/JJ/medieval-trade}.
 
-<<trade.plot, echo=FALSE, fig.cap="Time series of interior and exterior trade links for the Iberian Peninsula", fig.height=5>>=
+<<trade.plot, echo=FALSE, fig.cap="Time series of interior and exterior trade links for the Iberian Peninsula", fig.height=4>>=
 library(ggplot2)
 library(ggthemes)
 ggplot(links_time_series, aes(x=decade)) +
@@ -174,8 +174,7 @@ ggplot(links_time_series, aes(x=decade)) +
   theme(legend.title = element_blank())
 @
 
-Figure \ref{fig:trade.plot} is a representation of the time series.
-
+Figure \ref{fig:trade.plot} is a representation of the two time series mentioned, that is, {\em interior} and exterior links. The pattern in the time series is very similar among them, and also similar to the one in \cite{changepoint.statphys}; however, there are interesting dissimilarities which might make the analysis totally different.
 
 \subsection{Overview of coin hoard data}
 \label{ssec:overview}
