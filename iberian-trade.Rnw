@@ -220,6 +220,8 @@ kable(head(ranked_edge_weights,10), caption="Top edge weights in the regional ne
 
 The top edges of that network are shown in Table \ref{tab:trade.edge.weights}. At the top is the connection between Spain and the United Kingdom that was already pointed out in the introduction. Obviously connections between the two parts of the Iberian peninsula and Italy are important, as well as the connection between Spain and Turkey, where Constantinople, the capital of the Eastern Roman Empire, was placed. Connection between the two countries in the region, Spain and Portugal, are not as important as the connections between Spain and France. Connections further away than France, to Germany, and to the Palestinian Territory, are also at the top. This indicates a trade network that was maritime in a big part and which extended through the Mediterranean to the middle east; also that {\em internal} commerce, although important, was not the main source of imports or exports for any of the countries, which had better relationship with the capital of the empire (represented here by Italy and Turkey) than with each other.
 
+The importance of trade with the United Kingdom might be, to a certain point, the evidence of a certain bias in the dataset, since the abundance of hoards in the UK is higher than in other places due to its population density and other sources of bias; this is mentioned explicitly by \cite{flames:bias}, which mentions a series of legislative measures that have made coin hoards found there more likely to end up in the database.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Results}
 \label{sec:results}
