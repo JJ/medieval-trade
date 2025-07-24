@@ -179,7 +179,9 @@ Figure \ref{fig:trade.plot} is a representation of the two time series mentioned
 \subsection{Overview of coin hoard data}
 \label{ssec:overview}
 
+<<trade.overview, echo=FALSE, fig.height=4>>=
 
+@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Results}
