@@ -77,6 +77,8 @@ Thus, there are two interrelated research questions that we will work with in th
 \item{\em Research question 2} If that is the case, can we find a local cause for this changepoint that is concomitant or caused by the Danubian hypothesis?
 \end{itemize}
 
+The rest of the paper is organized as follows: next we will present the current state of the art in the application of change point detection methods in history, as well as any other analysis that try to research the boundary between Antiquity and the Middle Ages. We will describe and show an overview of the dataset in Section \ref{sec:materials}. The data will be analyzed, trying to respond the research question, in Section \ref{sec:results}. Finally, we will discuss these results and present our conclusions in Section \ref{sec:conclusions}.
+
 % The order of the section titles is different for some journals. Please refer to the "Instructions for Authors” on the journal homepage.
 %
 %
@@ -105,6 +107,7 @@ How we processed the dataset used and the methodology applied to it in this pape
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Materials and Methods}
+\label{sec:materials}
 
 <<trade.setup, echo=FALSE, warning=FALSE, message=F>>=
 library(dplyr)
@@ -219,10 +222,12 @@ The top edges of that network are shown in Table \ref{tab:trade.edge.weights}. A
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Results}
+\label{sec:results}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Discussion}
+\section{Discussion and conclussions}
+\label{sec:conclussion}
 
 % Authors should discuss the results and how they can be interpreted from the perspective of previous studies and of the working hypotheses. The findings and their implications should be discussed in the broadest context possible. Future research directions may also be highlighted.
 
