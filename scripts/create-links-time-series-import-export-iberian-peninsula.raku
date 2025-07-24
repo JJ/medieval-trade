@@ -47,6 +47,7 @@ for @coin-groups -> %coin-group {
     }
 
     die %coin-group unless %link<hoard>;
+    %link-regions<year> = %link<year>;
     @links-out.push(%link);
     @iberian-links-out.push(%link) if %coin-group<Mint_ID> ∈ $iberian-mints && %coin-group<CoinFinding_ID> ∈ $iberian-findings;
     say %link-regions;
