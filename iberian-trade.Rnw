@@ -226,7 +226,17 @@ At any rate, we would need to discuss the validity of the dataset, which we will
 
 \subsection{Dataset validation}
 
-The FLAME
+There are many inherent biases in any archaeological dataset, something we have already acknowledged in subsection \ref{ssec:overview}. The biases, as indicated in \cite{FLAME:bias}, mainly concern regional representation and their relative importance; the authors assert that
+\begin{verbatim}
+... FLAME is not a representative sample of the ancient monetary circulation.
+\end{verbatim}
+
+The FLAME database stands at the rear end of a funnel that receives all coins but drops those that did not survive, were not excavated or were excavated but not studied, or those that were studied but not published. The bias that every one of those {\em filters} introduce is unknown. However, the authors also affirm that those known unknowns, as well as the unknown unknowns, do not render the dataset totally useless, and in fact it has been used repeatedly, more notably in \cite{coins}, where it is only part of the database, and in \cite{changepoint.statphys}, where it is the main source of data.
+
+Besides, reginal distribution is not the main focus of this paper, as we are mainly concerned with the detection of change point in a time series; in this sense, temporal biases would greatly affect results, in the sense that if a change in the number of links is indicative simply of absence of evidence for that particular period and not absence of links, the result would be compromised. \cite{FLAME:bias} mentions that the early medieval period has only very recently been a source of interest, and that in many cases sites linked to that period will not be excavated and even, in some cases, bulldozed. As a matter of fact, there is a notable absence of links in some specific decades, as shown in Figure \ref{fig:trade.plot}. On the other hand, we should take into account that while there is bias in choosing the places where to excavate, the year where coins where minted or used is an {\em output} which cannot be filtered beforehand. This means that unless some specific region was the only source of coins or hoards for a specific period, or coins from some period were simply dropped or results not published, we should expect an (unquantified) smaller bias in the time series of links we are using in this paper.
+
+Additionally, we will try to connect our results to other sources of information, be it written or from material culture, so that they can be validated in an independent way. At any rate, any data used in this paper will be published with a free license from the repository at \url{https://github.com/JJ/medieval-trade}, so that it can be validated indepentenly.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Results}
