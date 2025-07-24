@@ -237,16 +237,16 @@ Besides, regional distribution is not the main focus of this paper, as we are ma
 
 <<trade.validation.lead, echo=FALSE, fig.height=4, fig.cap="Cross-correlation between per-decade trade links and lead pollution", message=FALSE>>=
 pollution_data <- read.csv("data/pollution-data.csv", sep=";")
-links_decade <- readRDS("data/links_year.rds")
-links_decade$decade <- links_decade$year
+pollution_data_filtered <- pollution_data %>%
+  filter(decade >= min_decade & decade <= max_decade)
 
-pollution_ts <- ts(pollution_data$averagePg, start=min(pollution_data$decade), frequency=10)
-links_ts <- ts(links_decade$n, start=min(links_decade$decade), frequency=10)
-cross_correlation <- ccf(pollution_ts, links_ts, lag.max=10, plot=F)
+cross_correlation <- ccf(pollution_data$averagePg, iberian_links_decade$n, lag.max=10, plot=F)
 plot(cross_correlation, xlab="Lag", ylab="Cross-Correlation")
+
 @
 
-An additional source of cross-validation is using other time series related to economic activity. In their paper \cite{mcconnell:pollution:2}, that follows up a previous one \cite{mcconnell:pollution}, the authors establish a connection between the economic activity (and other events that are bound to impact it, like war and plagues) and lead pollution measured in ice cores; since lead is released into the atmosphere as a result of mining and minting activities, there could be a correlation between hoard and lead data. By using the dataset they have released, we have analyzed cross-correlation between the two time series shown in Figure \ref{fig:trade.validation.lead}. The two time series are significantly correlated in the interval -30 years to +10 years, as shown by ACF values surpassing the dashed blue line. This would be an additional validation for the time series, which, despite the bias in the original data, would be representative enough of this economic activity to support the validity of our responses to the research questions.
+An additional source of cross-validation is using other time series related to economic activity. In their paper \cite{mcconnell:pollution:2}, that follows up a previous one \cite{lead:pollution}, the authors establish a connection between the economic activity (and other events that are bound to impact it, like war and plagues) and lead pollution measured in ice cores; since lead is released into the atmosphere as a result of mining and minting activities, there could be a correlation between hoard and lead data. By using the dataset they have released, we have analyzed cross-correlation between the two time series shown in Figure \ref{fig:trade.validation.lead}. The two time series are significantly correlated in the interval for -30, -60 and -70 years of lag, as shown by ACF values surpassing the dashed blue line, that is, a change in lead pollution would lead to changes in links 3, 6 or 7 decades later (equivalent to one or two generations).\footnote{By itself, this result would open an interesting avenue to explore, but will will use it here only for the purpose of validating our dataset.}
+This would be an additional validation for the time series, which, despite the bias in the original data, would be representative enough of this economic activity to support the validity of our responses to the research questions.
 
 Additionally, we will try to connect our results to other sources of information, be it written or from material culture, so that they can be validated in an independent way. At any rate, any data used in this paper will be published with a free license from the repository at \url{https://github.com/JJ/medieval-trade}, so that it can be validated independently.
 
@@ -257,15 +257,10 @@ Additionally, we will try to connect our results to other sources of information
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Discussion and conclussions}
-\label{sec:conclussion}
+\section{Discussion and conclusions}
+\label{sec:conclusions}
 
 % Authors should discuss the results and how they can be interpreted from the perspective of previous studies and of the working hypotheses. The findings and their implications should be discussed in the broadest context possible. Future research directions may also be highlighted.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Conclusions}
-
-% This section is not mandatory, but can be added to the manuscript if the discussion is unusually long or complex.
 
 \funding{This work is supported by the Ministerio espa\~{n}ol de Econom\'{\i}a y Competitividad (Spanish Ministry of Competitivity and Economy) under project PID2023-147409NB-C21.}
 
