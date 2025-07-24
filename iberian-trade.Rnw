@@ -123,7 +123,7 @@ links_time_series <- data.frame(  decade = iberian_links_decade$decade,
 
 @
 
-We have used the FLAMES ({\em Framing the Late Antique and early Medieval Economy} ) database As the main base for this paper, in its September 2024 version, which is available from \url{https://coinage.princeton.edu/flame-database-last-version}. This project has published a series of datasets that contain information on coin hoards found all over the world, and spans from the 4th to the 8th century. This dataset formed the basis for \cite{coins}, although it was enhanced with more data that has not been published so far.
+We have used the FLAME ({\em Framing the Late Antique and early Medieval Economy} ) database As the main base for this paper, in its September 2024 version, which is available from \url{https://coinage.princeton.edu/flame-database-last-version}. This project has published a series of datasets that contain information on coin hoards found all over the world, and spans from the 4th to the 8th century. This dataset formed the basis for \cite{coins}, although it was enhanced with more data that has not been published so far.
 
 We will focus on the Iberian peninsula and the two countries with hoards and mints, Spain and Portugal\footnote{There are no hoards found in Andorra or in the UK colony of Gibraltar.}. We simply included in our datasets hoards or mints that had been geolocated to these two countries.
 
@@ -137,7 +137,7 @@ So this gives the subset of the original dataset we are using enough validity to
 \subsection{Dataset processing}
 \label{ssec:processing}
 
-The FLAMES datasets include many different files. We have used three of them\begin
+The FLAME datasets include many different files. We have used three of them\begin
 {itemize}
 \item {\bf Coin groups}, which contains individual information on the group of coins found in every hoard and the mint where they were minted; it includes also information on the range of time those coins were minted cross referenced to the two files below.
 \item {\bf Hoards}, which contains information on the hoard itself, including the date it was found, the number of coins, and the place where it was found.
@@ -220,7 +220,13 @@ kable(head(ranked_edge_weights,10), caption="Top edge weights in the regional ne
 
 The top edges of that network are shown in Table \ref{tab:trade.edge.weights}. At the top is the connection between Spain and the United Kingdom that was already pointed out in the introduction. Obviously connections between the two parts of the Iberian peninsula and Italy are important, as well as the connection between Spain and Turkey, where Constantinople, the capital of the Eastern Roman Empire, was placed. Connection between the two countries in the region, Spain and Portugal, are not as important as the connections between Spain and France. Connections further away than France, to Germany, and to the Palestinian Territory, are also at the top. This indicates a trade network that was maritime in a big part and which extended through the Mediterranean to the middle east; also that {\em internal} commerce, although important, was not the main source of imports or exports for any of the countries, which had better relationship with the capital of the empire (represented here by Italy and Turkey) than with each other.
 
-The importance of trade with the United Kingdom might be, to a certain point, the evidence of a certain bias in the dataset, since the abundance of hoards in the UK is higher than in other places due to its population density and other sources of bias; this is mentioned explicitly by \cite{flames:bias}, which mentions a series of legislative measures that have made coin hoards found there more likely to end up in the database.
+The importance of trade with the United Kingdom might be, to a certain point, the evidence of a certain bias in the dataset, since the abundance of hoards in the UK is higher than in other places due to its population density and other sources of bias; this is mentioned explicitly by \cite{FLAME:bias}, which mentions a series of legislative measures that have made coin hoards found there more likely to end up in the database. On the other hand, it has been clearly established by scholars that Spain and the UK shared material culture \cite{fernandez2017aristocrats} and that the trade in raw materials, luxury items, as well as transshipment through Spain of goods produced elsewhere, mainly in Africa, was intense \cite{Wickham:2005} and long-lasting.
+
+At any rate, we would need to discuss the validity of the dataset, which we will do in the next subsection.
+
+\subsection{Dataset validation}
+
+The FLAME
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Results}
@@ -244,7 +250,7 @@ The importance of trade with the United Kingdom might be, to a certain point, th
 
 \acknowledgments{I am grateful to my professors of History of Antiquity and Middle Ages at the degree of Art History at the University of Granada, who by mentioning Henry Pirenne in class, led me down a rabbit hole that eventually produced this paper.}
 
-\conflictsofinterest{The authors declare no conflicts of interest.}
+\conflictsofinterest{The author declares no conflicts of interest.}
 
 
 
