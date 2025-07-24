@@ -179,8 +179,19 @@ Figure \ref{fig:trade.plot} is a representation of the two time series mentioned
 \subsection{Overview of coin hoard data}
 \label{ssec:overview}
 
-<<trade.overview, echo=FALSE, fig.height=4>>=
+<<trade.overview, echo=FALSE, fig.height=4, fig.cap="MDS plot of the regional network using (current) regions as nodes", message=FALSE>>=
+library(igraph)
+regional_links <- read.csv("data/regional-links.csv", sep=";", header=TRUE)
 
+regional_graph <- graph_from_data_frame(regional_links, directed=FALSE)
+E(regional_graph)$weight <- 1
+regional_graph <- simplify(regional_graph, edge.attr.comb=list(weight="sum"))
+par(mar=c(0,0,0,0)+0.1)
+plot(regional_graph, vertex.size=2, vertex.label.cex=0.6, edge.arrow.size=0.2,
+     vertex.label.color="black", vertex.label.family="sans", edge.color="gray", edge.width=1+0.5*log(E(regional_graph)$weight),
+     layout=layout_with_dh,
+     vertex.label.dist=0.5,
+     main="Regional trade links in the Iberian Peninsula")
 @
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
