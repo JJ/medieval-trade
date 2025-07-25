@@ -257,15 +257,19 @@ Additionally, we will try to connect our results to other sources of information
 
 <<trade.changepoint, echo=FALSE, fig.height=4, fig.cap="Changepoint detection in the Iberian trade links time series", message=FALSE>>=
 library(changepoint)
-all_links_changepoint <- cpt.meanvar(all_iberian_links_decade$n, test.stat="Normal", penalty="BIC")
+all_links_changepoint <- cpt.meanvar(all_iberian_links_decade$n, test.stat="Normal")
 links_changepoint_date <- all_iberian_links_decade$decade[all_links_changepoint@cpts]
 ticks <- c(1,10,20,30,40)
 ticks.years <- all_iberian_links_decade$decade[ticks]
 
 plot(all_links_changepoint,xaxt = 'n')
 axis(1, at = ticks, labels=ticks.years)
+@
 
-# Checking against other tests
+After we have established the validity of the dataset, we will go ahead and try and answer the first research question, namely the existence of a changepoint in this subset of the data analized in \cite{changepoint.statphys}. As we did in that case, we have used the {\sf cpt.meanvar} function of the {\sf changepoint} package \cite{killick}, which includes several functions for this kind of thing. The function chosen, {\sf cpt.meanvar}, looks for a point of maximum change in the mean and the variance; since variability in the time series is extreme, this option looked like the most reasonable for this kind of study. Additionally, the Bayes Information Criterion has been used for the penalty function, balancing the quality of the model with its complexity.
+
+
+<<trade.changepoint.stats, echo=FALSE, message=FALSE>>=
 library(trend)
 all_links_changepoint_lanzante <- lanzante.test(all_iberian_links_decade$n, method="rrod.test")
 all_links_changepoint_pettit <- pettitt.test(all_iberian_links_decade$n)
@@ -273,7 +277,7 @@ all_links_changepoint_bu <- bu.test(all_iberian_links_decade$n)
 all_links_changepoint_br <- br.test(all_iberian_links_decade$n)
 @
 
-After we have established the validity of the dataset, we will go ahead and try and answer the first research question.
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
