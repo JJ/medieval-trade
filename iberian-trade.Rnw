@@ -255,6 +255,26 @@ Additionally, we will try to connect our results to other sources of information
 \section{Results}
 \label{sec:results}
 
+<<trade.changepoint, echo=FALSE, fig.height=4, fig.cap="Changepoint detection in the Iberian trade links time series", message=FALSE>>=
+library(changepoint)
+all_links_changepoint <- cpt.meanvar(all_iberian_links_decade$n, test.stat="Normal", penalty="BIC")
+links_changepoint_date <- all_iberian_links_decade$decade[all_links_changepoint@cpts]
+ticks <- c(1,10,20,30,40)
+ticks.years <- all_iberian_links_decade$decade[ticks]
+
+plot(all_links_changepoint,xaxt = 'n')
+axis(1, at = ticks, labels=ticks.years)
+
+# Checking against other tests
+library(trend)
+all_links_changepoint_lanzante <- lanzante.test(all_iberian_links_decade$n, method="rrod.test")
+all_links_changepoint_pettit <- pettitt.test(all_iberian_links_decade$n)
+all_links_changepoint_bu <- bu.test(all_iberian_links_decade$n)
+all_links_changepoint_br <- br.test(all_iberian_links_decade$n)
+@
+
+After we have established the validity of the dataset, we will go ahead and try and answer the first research question.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Discussion and conclusions}
