@@ -316,7 +316,7 @@ Before looking for a possible cause, we should try and place the {\em internal} 
 
 <<trade.changepoint.internal, echo=FALSE, fig.height=4, fig.cap="Changepoint in the internal Iberian trade links time series, with mean before and after the changepoint in red", message=FALSE>>=
 links_changepoint <- cpt.meanvar(iberian_links_decade$n)
-internal_links_changepoint_date <- iberian_links_decade$decade[links_changepoint@cpts]
+internal_links_changepoint_date <- iberian_links_decade$decade[links_changepoint@cpts[1]]
 ticks <- c(1,10,20,30,40)
 ticks.years <- iberian_links_decade$decade[ticks]
 
@@ -333,8 +333,52 @@ axis(1, at = ticks, labels=ticks.years)
 
 The changepoint plot with averages before and after it is shown in Figure \ref{fig:trade.changepoint.internal}. The changepoint is in the year \Sexpr{internal_links_changepoint_date[1]}, an earlier date than previously detected, but still in the same range. The interesting thing is that intra-Iberian trade was disrupted very soon after the Battle of Adrianople \citep{burns1973battle}, which might indicate some signs of the decay in the periphery of the empire (the Iberian peninsula was literally {\em finis terrae}).
 
+<<trade.changepoint.multi, echo=FALSE, message=FALSE, fig.cap="Multi-changepoint detection using ecp", fig.height=4>>=
+external_iberian_links <- all_iberian_links_decade$n - iberian_links_decade$n
 
+library(ecp)
+z_links <- matrix(c(external_iberian_links, iberian_links_decade$n), ncol=2)
 
+multi_changepoint <- e.divisive(z_links, min.size=5)
+multi_changepoint_decade <- iberian_links_decade$decade[multi_changepoint$estimate[2]]
+
+external_internal_df <- data.frame(
+  decade = iberian_links_decade$decade,
+  external_links = external_iberian_links,
+  internal_links = iberian_links_decade$n
+)
+
+# plot time series using ggplot2 with a vertical line in x=multi_changepoint$estimate[2]
+library(ggplot2)
+ggplot(external_internal_df, aes(x=decade)) +
+  geom_line(aes(y=external_links, color="External links"), linewidth=1) +
+  geom_line(aes(y=internal_links, color="Internal links"), linewidth=1) +
+  geom_vline(xintercept = multi_changepoint_decade, linetype="dashed", color="red") +
+  scale_color_manual(values=c("External links"="#E69F00", "Internal links"="#56B4E9")) +
+  labs(title="Trade links in the Iberian Peninsula",
+       x="Decade",
+       y="Number of trade links") +
+  theme_minimal() +
+  theme(legend.title = element_blank())
+
+@
+
+In this case, there are specific methods for finding changepoints in time series with multiple columns, like this one. In order to apply the procedure, we first subtract the number of internal links from the number of total links to have two different synchronous sequences, with trade links inside and outside the Iberian peninsula. On this two-column array, we apply the {\tt e.divisive} function from the {\sf ecp} package in R \cite{ecp-article} which implements a hierarchical divisive estimation procedure, finding changepoints and applying again the same procedure to the resulting fragments. The result is shown in Figure \ref{fig:trade.changepoint.multi}, with the vertical dashed line indicating the changepoint found\footnote{It finds anothe in the second decade of the sequence, which we have dismissed as not significative.}, which shows a vertical dashed line for the changepoint found at \Sexpr{multi_changepoint_decade}.
+
+<<trade.changepoints.found, echo=FALSE, message=FALSE>>=
+changepoint_dates_found <- data.frame(
+  Method = c("All links, cpt.meanvar", "All links, Lanzante/Pettitt", "Internal links, cpt.meanvar", "Multi-sequence, e.divisive"),
+  changepoint = c(links_changepoint_date[1],
+                  all_iberian_links_decade$decade[all_links_changepoint_lanzante$estimate],
+                  internal_links_changepoint_date,
+                  multi_changepoint_decade))
+
+kable(changepoint_dates_found, caption="Changepoints found in the Iberian trade links time series", col.names=c("Method", "Changepoint year")) %>%
+  kable_styling(full_width = F, position = "left") %>%
+  column_spec(1, bold = TRUE) %>%
+  column_spec(2, width = "3cm") %>%
+  row_spec(0, bold = TRUE)
+@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
