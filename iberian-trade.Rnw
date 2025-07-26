@@ -275,7 +275,6 @@ plot(all_links_changepoint,xaxt = 'n',
      col = "blue", lwd = 2, cex.main = 1.5, cex.lab = 1.2, cex.axis = 1.2)
 axis(1, at = ticks, labels=ticks.years)
 
-
 @
 
 After we have established the validity of the dataset, we will go ahead and try and answer the first research question, namely the existence of a changepoint in this subset of the data analyzed in \cite{changepoint.statphys}. As we did in that case, we have used the {\sf cpt.meanvar} function of the {\sf changepoint} package \citep{killick}, which includes several functions for this kind of thing. The function chosen, {\sf cpt.meanvar}, looks for a point of maximum change in the mean and the variance; since variability in the time series is extreme, this option looked like the most reasonable for this kind of study. Default values have been used for all the other function parameters except for the method, which has been set to AMOC ("at most one change") to ensure that we get a single changepoint \footnote{This was the default in one of the versions of the package we used but was changed when we upgraded; adding this (currently) non-default value helped reproducibility across package versions, if sacrificing a bit usability for non-technical users.}; if we want this kind of quantitative methods introduced into Digital Humanities and specifically into the study of history, the simplest possible method is the best way to make adoption easier. The result, with averages before and after the changepoint, is shown in Figure \ref{fig:trade.changepoint}.
