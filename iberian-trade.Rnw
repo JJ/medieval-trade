@@ -379,6 +379,41 @@ kable(changepoint_dates_found, caption="Changepoints found in the Iberian trade 
   row_spec(0, bold = TRUE)
 @
 
+This would allow us to answer, at least partially, RQ1: yes, there is a statistically significant regime change reflected in the time series of external, internal and aggregated trade links extracted from connections between hoards and mints. Different methods will give us different change points with the same statistical significance, but they all fall within the same \Sexpr{max(changepoint_dates_found$changepoint)-min(changepoint_dates_found$changepoint)} year period that starts in \Sexpr{min(changepoint_dates_found$changepoint)}. This period starts soon after the {\em Danubian hypothesis}, as a matter of fact so we might give a tentative positive answer to the second part of the research question. But we will need to dig deeper into the data to give a more definitive answer.
+
+In order to do that, we will look at specific trade links, and how they evolved with time.
+
+<<trade.link.evolution, echo=F, message=F, warning=F, fig.cap="Evolution through time of the number of links with the main trading partners of the Iberian Peninsula.", fig.height=5>>=
+library(purrr)
+regional_links$decade <- 10* floor(regional_links$year/10)
+regional_links %>% mutate(cs=pmap_chr(list(mint,hoard), ~paste(sort(c(...)), collapse = " - "))) -> regional_links_pasted
+
+regional_links_pasted %>% group_by(decade, cs) %>% summarise( links = n()) -> regional_links_summary
+top_links <- c("Spain - United Kingdom","Italy - Spain","France - Spain","Spain - Turkey", "Spain - Spain", "Portugal - Spain","Portugal - Turkey", "Netherlands - Spain","Italy - Portugal", "Palestinian Territory - Spain", "Germany - Spain")
+
+regional_links_summary$normalized_trade_link <- ifelse( regional_links_summary$cs %in% top_links, regional_links_summary$cs, "Other")
+
+regional_links_summary$trade_link <- as.factor(regional_links_summary$cs)
+library(pals)
+ggplot()+
+  geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Spain - United Kingdom",],aes(x=decade, y=links, color="UK"))+
+  geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Italy - Spain",],aes(x=decade, y=links, color="Italy"))+
+  geom_line( data=regional_links_summary[regional_links_summary$trade_link == "France - Spain",],aes(x=decade, y=links, color="France"))+
+  geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Spain - Turkey",],aes(x=decade, y=links, color="Turkey"))+
+  geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Spain - Spain",],aes(x=decade, y=links, color="Internal Spain"))+
+  geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Portugal - Spain",],aes(x=decade, y=links, color="Portugal"))+
+  geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Portugal - Turkey",],aes(x=decade, y=links, color="Portugal-Turkey"))+
+  geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Netherlands - Spain",],aes(x=decade, y=links, color="Netherlands"))+
+  geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Italy - Portugal",],aes(x=decade, y=links, color="Portugal-Italy"))+
+  geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Palestinian Territory - Spain",],aes(x=decade, y=links, color="Palestine"))+
+  geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Germany - Spain",],aes(x=decade, y=links, color="Germany"))+
+  scale_colour_manual(values=unname(glasbey()))+
+  xlim(c(300,700))
+
+ggplot(regional_links_summary, aes( x=decade, y=links))+geom_bar(stat="identity", aes(fill=normalized_trade_link))+
+  scale_fill_manual(values=unname(glasbey()))+theme_minimal()+
+  xlim(c(300,700))
+@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Discussion and conclusions}
