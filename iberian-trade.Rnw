@@ -428,7 +428,13 @@ ggplot(regional_links_summary, aes( x=decade, y=links))+geom_bar(stat="identity"
   xlim(c(300,700))
 @
 
-As is notable, the
+As is notable, the economy mostly collapsed, but that also meant that different trade links started to have more importance; we reproduce in Figure \ref{fig:trade.link.evolution.relative} the same sequence indicating percentages of links, again with the "Other" category taking all links not in the top ten; what we see is that from the approximately the year 410 most links occur with these other countries, except for brief periods where France and the Eastern Roman empire have the most importance. By the end of the 5th and during the 6th century, there are very few interchanges, but whatever trade is taking place is merely internal; we can refer again back to Figure \ref{fig:trade.link.evolution} where we see a that in those dates internal date is essentially the only one taking place; during all those years, links with Eastern Roman Empire (Turkey) are constant and in most case more important than those with the Western Empire. As a matter of fact, the indicated period matches the occupation by the Byzantine empire of parts of Southern Spain \cite{Wickham:2005}. The (weak) economic revival during those years would be a worthy field of study.
+
+Although partially answered already, we can turn our attention to the second research question, relative to the local causes for the change of regime revealed by the different statistical methods. And looking at Figures \ref{fig:trade.link.evolution} and \ref{fig:trade.link.evolution.relative} we can see that the economy of the Iberian peninsula was heavily dependent to the point of being almost one and the same with the Roman settlers and armies in the United Kingdom. When they left, they took the Iberian peninsula economy with it; initially almost literally, since commerce continued with other areas where these armies were battling others, France and the Netherlands; eventually, not even these new sources of income, or the brief period of intense trade connections with the Eastern Empire, were able to overcome the fall of demand; those were, anyway, long-distance trade links that, without intermediate stages (like the Italian peninsula or Sicily) could not substitute for trading partners situated at a shorter distance. Internal demand was never intense enough, and also related to trade with the UK, to pick up the slack, leading eventually to the collapse we mention in the paper title.
+
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Discussion and conclusions}
