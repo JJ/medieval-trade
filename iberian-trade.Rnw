@@ -408,9 +408,9 @@ ggplot()+
   geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Palestinian Territory - Spain",],aes(x=decade, y=links, color="Palestine"))+
   geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Germany - Spain",],aes(x=decade, y=links, color="Germany"))+
   scale_colour_manual(values=unname(glasbey()))+
-  xlim(c(300,700))
+  xlim(c(300,700))+ theme_minimal()
 
-ggplot(regional_links_summary, aes( x=decade, y=links))+geom_bar(stat="identity", aes(fill=normalized_trade_link))+
+ggplot(regional_links_summary, aes( x=decade, y=links))+geom_bar(stat="identity", position="fill", aes(fill=normalized_trade_link))+
   scale_fill_manual(values=unname(glasbey()))+theme_minimal()+
   xlim(c(300,700))
 @
