@@ -319,8 +319,6 @@ internal_links_changepoint_date <- iberian_links_decade$decade[links_changepoint
 ticks <- c(1,10,20,30,40)
 ticks.years <- iberian_links_decade$decade[ticks]
 
-# change x axis label to "Year" and y axis label to "number of links"
-
 plot(links_changepoint,xaxt = 'n',
      xlab = "Year",
      ylab = "Number of links",
@@ -397,10 +395,12 @@ regional_links_summary$trade_link <- as.factor(regional_links_summary$cs)
 library(pals)
 ggplot()+
   geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Spain - United Kingdom",],aes(x=decade, y=links, color="UK"))+
+  geom_point( data=regional_links_summary[regional_links_summary$trade_link == "Spain - United Kingdom",],aes(x=decade, y=links, color="UK"))+
   geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Italy - Spain",],aes(x=decade, y=links, color="Italy"))+
   geom_line( data=regional_links_summary[regional_links_summary$trade_link == "France - Spain",],aes(x=decade, y=links, color="France"))+
   geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Spain - Turkey",],aes(x=decade, y=links, color="Turkey"))+
   geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Spain - Spain",],aes(x=decade, y=links, color="Internal Spain"))+
+  geom_point( data=regional_links_summary[regional_links_summary$trade_link == "Spain - Spain",],aes(x=decade, y=links, color="Internal Spain"))+
   geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Portugal - Spain",],aes(x=decade, y=links, color="Portugal"))+
   geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Portugal - Turkey",],aes(x=decade, y=links, color="Portugal-Turkey"))+
   geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Netherlands - Spain",],aes(x=decade, y=links, color="Netherlands"))+
@@ -409,7 +409,20 @@ ggplot()+
   geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Germany - Spain",],aes(x=decade, y=links, color="Germany"))+
   scale_colour_manual(values=unname(glasbey()))+
   xlim(c(300,700))+ theme_minimal()
+@
 
+In Figure \ref{trade.link.evolution} we show the evolution in time of the top links (as indicated in Table \ref{tab:trade.edge.weights}); these, unless noted otherwise, are connections with Spain. We see a crash in the number of links all across the board, but we note that the links with the United Kingdom (highlighted also with points at every value) started to decline several decades before the changepoints indicated above. Several different links took its place, notably Italy, Turkey (which hosted both capitals of the empire), but also France, the Netherlands, and most notably, connections within the current territory of Spain (also marked with points), which reach its peak here. Eventually, these also fall to a minimum level right around the time of the found changepoint.
+
+None of these point directly to a direct impact of the Danubian hypothesis. The peak in links right before the changepoint in "border" territories such as France and the Netherlands might be due to two different reasons: in times of trouble, when different groups such as the Vandals or the Alans were pressuring from the Rhine \cite{heather2009did}, people resorted to burying their treasures; but the second reason is that since there were troops fighting in those areas which needed to be supplied, the trade with them increased over other, relatively more peaceful, times.
+
+However, what is clear is that the changepoint is a downstream event caused by the collapse in trade with the United Kingdom. What happened there in the 380s was the first removal of Roman troops due to the invasion of the Gaul by the usurper Magnus Maximus \cite{EmergingPowersinEurasianComparison2001100}.
+
+In that sense, although both events occurred in a sequence, there is no evidence of a direct relationship between them, that is, the defeat and consequent settlement of different peoples South of the Danube did not provoke the intervention of troops in Britain and subsequent collapse of the economy; we might establish some indirect cause-effect relationship, however: the loss of the {\em via militaris} and the Danube, and the troops lost at the battle of Adrianople, impeded any help of troops from those provinces (which included also Goths) to the Western emperor attacked by the usurper; in that sense, they are both part of a larger pattern of resettlement of different human groups displaced by climate change and other human groups, crossing the natural borders of the empire, which made the extensive logistic and trade routes maintained by the empire go into disrepair, as well as provoke a collapse of economic demand of goods traded across a long distance.
+
+This will make the response of the second part of research question one partially negative: the change in economic regime revealed by coin hoards in the Iberian peninsula had as main factor the loss of the territories in current United Kingdom as a trading partner; this had only a very indirect relationship with the Danubian hypothesis, with a common, and further removed, cause for both a more likely hypothesis. This common cause would explain the very approximate synchronicity of changes of regime in the Iberian peninsula and the Empire as a whole.
+
+
+<<trade.link.evolution.relative, echo=F, message=F, warning=F, fig.cap="Evolution through time of the number of links with the main trading partners of the Iberian Peninsula.", fig.height=5>>=
 ggplot(regional_links_summary, aes( x=decade, y=links))+geom_bar(stat="identity", position="fill", aes(fill=normalized_trade_link))+
   scale_fill_manual(values=unname(glasbey()))+theme_minimal()+
   xlim(c(300,700))
