@@ -261,7 +261,7 @@ Additionally, we will try to connect our results to other sources of information
 
 <<trade.changepoint, echo=FALSE, fig.height=4, fig.cap="Changepoint in the Iberian trade links time series, with mean before and after the changepoint in red", message=FALSE>>=
 library(changepoint)
-all_links_changepoint <- cpt.meanvar(all_iberian_links_decade$n)
+all_links_changepoint <- cpt.meanvar(all_iberian_links_decade$n, method="AMOC")
 links_changepoint_date <- all_iberian_links_decade$decade[all_links_changepoint@cpts]
 ticks <- c(1,10,20,30,40)
 ticks.years <- all_iberian_links_decade$decade[ticks]
@@ -278,7 +278,7 @@ axis(1, at = ticks, labels=ticks.years)
 
 @
 
-After we have established the validity of the dataset, we will go ahead and try and answer the first research question, namely the existence of a changepoint in this subset of the data analyzed in \cite{changepoint.statphys}. As we did in that case, we have used the {\sf cpt.meanvar} function of the {\sf changepoint} package \citep{killick}, which includes several functions for this kind of thing. The function chosen, {\sf cpt.meanvar}, looks for a point of maximum change in the mean and the variance; since variability in the time series is extreme, this option looked like the most reasonable for this kind of study. Default values have been used for all the other function parameters; if we want this kind of quantitative methods introduced into Digital Humanities and specifically into the study of history, the simplest possible method is the best way to make adoption easier. The result, with averages before and after the changepoint, is shown in Figure \ref{fig:trade.changepoint}.
+After we have established the validity of the dataset, we will go ahead and try and answer the first research question, namely the existence of a changepoint in this subset of the data analyzed in \cite{changepoint.statphys}. As we did in that case, we have used the {\sf cpt.meanvar} function of the {\sf changepoint} package \citep{killick}, which includes several functions for this kind of thing. The function chosen, {\sf cpt.meanvar}, looks for a point of maximum change in the mean and the variance; since variability in the time series is extreme, this option looked like the most reasonable for this kind of study. Default values have been used for all the other function parameters except for the method, which has been set to AMOC ("at most one change") to ensure that we get a single changepoint \footnote{This was the default in one of the versions of the package we used but was changed when we upgraded; adding this (currently) non-default value helped reproducibility across package versions, if sacrificing a bit usability for non-technical users.}; if we want this kind of quantitative methods introduced into Digital Humanities and specifically into the study of history, the simplest possible method is the best way to make adoption easier. The result, with averages before and after the changepoint, is shown in Figure \ref{fig:trade.changepoint}.
 
 
 <<trade.changepoint.stats, echo=FALSE, message=FALSE>>=
@@ -307,7 +307,7 @@ kable(all_links_changepoint_stats, caption="Changepoint detection statistics for
   row_spec(0, bold = TRUE)
 @
 
-As it can be observed, there is a statistically significant changepoint in the year \Sexpr{links_changepoint_date[1]}. This is roughly 20 years after the year found in \cite{changepoint.statphys}, but still almost 40 years short of the Fall of the Roman Empire with the ousting of the last emperor by Odoacre \cite{Chapter1WhenDidtheWestRomanEmpireFall}. We will validate this approach using other methods, to find a bracket of possible changepoints; this way we can have a better idea of the time period when the change happened. We have used two non-parametric tests, Lanzante's \citep{lanzante1996resistant} and Pettit's \citep{pettitt1979non} as well as Buishand's range test, which applies to normal variables \citep{buishand1982some}.
+As it can be observed, there is a statistically significant changepoint in the year \Sexpr{links_changepoint_date[1]}. This is roughly 20 years after the year found in \cite{changepoint.statphys}, but still half a century short of the Fall of the Roman Empire with the ousting of the last emperor by Odoacre \cite{Chapter1WhenDidtheWestRomanEmpireFall}. We will validate this approach using other methods, to find a bracket of possible changepoints; this way we can have a better idea of the time period when the change happened. We have used two non-parametric tests, Lanzante's \citep{lanzante1996resistant} and Pettit's \citep{pettitt1979non} as well as Buishand's range test, which applies to normal variables \citep{buishand1982some}.
 
 The results of the different changepoint methods are shown in Table \ref{tab:trade.changepoint.stats}. They are at both sides of the changepoint detected by the first method, thus giving an interval of possible changepoint years between \Sexpr{min(all_links_changepoint_stats$changepoint)}
 and \Sexpr{max(all_links_changepoint_stats$changepoint)}. Please observe that all changepoints are statistically significant, the difference in output being the different methods used to detect them; however, Buishand's methods are for normal variables, a fact that is not guaranteed in this case; although statistically significant, we should probably lend more credibility to the non-parametric methods, which, besides, are consistent with each other. We would then have a range of dates between \Sexpr{links_changepoint_date[1]} and \Sexpr{all_iberian_links_decade$decade[all_links_changepoint_lanzante$estimate]}.
@@ -315,7 +315,7 @@ and \Sexpr{max(all_links_changepoint_stats$changepoint)}. Please observe that al
 Before looking for a possible cause, we should try and place the {\em internal} Iberian traffic changepoint, this being an important component of all the trade links; any variation withing the range we have would point out to important internal causes for the change of regime, that would contribute (or detract) from any external cause.
 
 <<trade.changepoint.internal, echo=FALSE, fig.height=4, fig.cap="Changepoint in the internal Iberian trade links time series, with mean before and after the changepoint in red", message=FALSE>>=
-links_changepoint <- cpt.meanvar(iberian_links_decade$n)
+links_changepoint <- cpt.meanvar(iberian_links_decade$n, method="AMOC")
 internal_links_changepoint_date <- iberian_links_decade$decade[links_changepoint@cpts[1]]
 ticks <- c(1,10,20,30,40)
 ticks.years <- iberian_links_decade$decade[ticks]
