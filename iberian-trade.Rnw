@@ -463,7 +463,7 @@ Looking again at Figure \ref{fig:trade.plot}, and the small surge in trade by th
 
 We could discuss if these results contradict current historiography. We can argue that they, in fact, do not. The relationship between the battle of Adrianople and the fall of the empire is sufficiently accepted by historiographers, as well as the common material culture across the Atlantic coast during the late empire. However, what we present in this paper is first a methodology to use datasets to establish precise dates for changes of regime in historic time series, and then apply further analysis to the data from which the time series has been created, before and after the changepoint, to establish rigorous cause-effect relationships. This methodology was initiated in \cite{histories3010003} and extended and systematized in \cite{histories4020012}. In this paper we present it explicitly, and apply it in a more significant historical change, the shift from Antiquity to Middle Ages.
 
-
+By applying this methodology to the FLAME database, it would be interesting to research causes and effects in other parts of the empire. Italy would be specially interesting, but also the United Kingdom itself, as well as all North Africa, although in this case there is probably less data and we would have to wait for a more complete database. Finally, using leas pollution databases not only for validation, but as part of the changepoint analysis, as well as other climatological or food production data would allow a more {\em tout court} research of the initial causes of this collapse, and how each of them affected this collapse in different and unique ways.
 
 
 
