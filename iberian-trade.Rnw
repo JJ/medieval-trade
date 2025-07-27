@@ -88,7 +88,13 @@ Thus, there are two interrelated research questions that we will work with in th
 \item{\em Research question 2} If that is the case, can we find a local cause for this changepoint that is concomitant or caused by the Danubian hypothesis?
 \end{itemize}
 
-One of the issues with a statistical approach to the study of history is the nonexistence of a methodology that goes back from the statistically established facts to the historical facts they are supposed to prove. In this paper we adapt the methodology we used in \citep{changepoint.statphys} to the subset of data referring to the Iberian peninsula.
+One of the issues with a statistical approach to the study of history is the nonexistence of a methodology that goes back from the statistically established facts to the historical facts they are supposed to prove. In this paper we adapt the methodology we used in \citep{changepoint.statphys} to the subset of data referring to the Iberian peninsula. The methodology consists on the following steps \begin{enumerate}
+\item Validate the dataset by recurring to internal checks or checks against other existing dataset for the same era.
+\item Use changepoint detection methods to find a changepoint in the time series, validating it by using different changepoint detection methods.
+\item Use separate and joint changepoint detection methods for different time series referred to the same events to establish sequence of these changepoints.
+\item Analyze data before and after the changepoint to establish the factors that contributed to it. Use again statistical analysis for doing it, from complex network analysis to other kind of methods.
+\item Go back from this statistical analysis to the historical events that have caused them, trying to establish historical facts.
+\end{enumerate}
 
 The rest of the paper is organized as follows: next we will present the current state of the art in the application of change point detection methods in history, as well as any other analysis that try to research the boundary between Antiquity and the Middle Ages. We will describe and show an overview of the dataset in Section \ref{sec:materials}. The data will be analyzed, trying to respond the research question, in Section \ref{sec:results}. Finally, we will discuss these results and present our conclusions in Section \ref{sec:conclusions}.
 
