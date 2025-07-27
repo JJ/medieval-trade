@@ -51,10 +51,11 @@ $^{1}$ \quad Department of Computer Engineering, Automatics and Robotics, Univer
 \corres{Correspondence: jmerelo@ugr.es}
 
 % Abstract (Do not insert blank lines, i.e. \\)
-\abstract{}
+\abstract{History tries to make sense of disparate data trying to create a discourse of a sequence of events with crisp cause-effect relationships. This is specially difficult for the change of historical ages that signal an epochal shift in a specific part of the world that concerns all aspects of life, from economy to politics and religion. In this research it is fruitful to look at data and follow a well established methodology to claim when something happened and how. This is what we are doing in this paper, where we use historical coin hoard data, a proxy for economic activity and commerce, to establish when the shift from Antiquity to the Middle Ages occurred in a peripheric part of the Roman Empire, the Iberian peninsula. We will apply different changepoint analysis methods to a time series created from that data to establish when the economic collapse that produced that change occurred, and work back from that result to actual historical events to find its proximal causes. This paper not only tries to settle that boundary, but also proposes a methodology for applying it to other sequence of historical events.
+}
 
 % Keywords
-\keyword{keyword 1; keyword 2; keyword 3 (List three to ten pertinent keywords specific to the article; yet reasonably common within the subject discipline.)}
+\keyword{Cliometrics, economic history, historiography, changepoint analysis, fall of the Roman Empire, Iberian peninsula, late Antiquity, Early Middle Ages}
 
 % The fields PACS, MSC, and JEL may be left empty or commented out if not applicable
 %\PACS{J0101}
