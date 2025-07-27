@@ -88,6 +88,8 @@ Thus, there are two interrelated research questions that we will work with in th
 \item{\em Research question 2} If that is the case, can we find a local cause for this changepoint that is concomitant or caused by the Danubian hypothesis?
 \end{itemize}
 
+One of the issues with a statistical approach to the study of history is the nonexistence of a methodology that goes back from the statistically established facts to the historical facts they are supposed to prove. In this paper we adapt the methodology we used in \citep{changepoint.statphys} to the subset of data referring to the Iberian peninsula.
+
 The rest of the paper is organized as follows: next we will present the current state of the art in the application of change point detection methods in history, as well as any other analysis that try to research the boundary between Antiquity and the Middle Ages. We will describe and show an overview of the dataset in Section \ref{sec:materials}. The data will be analyzed, trying to respond the research question, in Section \ref{sec:results}. Finally, we will discuss these results and present our conclusions in Section \ref{sec:conclusions}.
 
 % The order of the section titles is different for some journals. Please refer to the "Instructions for Authors” on the journal homepage.
