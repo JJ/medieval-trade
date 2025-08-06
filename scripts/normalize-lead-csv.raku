@@ -11,7 +11,7 @@ loop (my $i = 0; $i < @pollution.elems; $i+=DECADE ){
     my $average = sum(@filtered-values.map: *.<Non-bg-lead-flux>)/@filtered-values.elems;
     my $decade = floor(@pollution[$i]<Year>/10)*10;
     my %pollution-decade = ( decade => $decade,
-                             averagePg => $average );
+                             averageNonBgLeadFlux => $average );
     @pollution-decade.push(%pollution-decade);
 }
 
