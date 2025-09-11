@@ -181,7 +181,7 @@ We have made a series of processing steps to use them \begin{itemize}
 \item Finally, we shortened the time series so that they start and end in the same year.
 \end{itemize}
 
-As a result, we have two synchronous datasets with \Sexpr{length(links_time_series$decade)} decades that start in the decade \Sexpr{min_decade} and end in the decade \Sexpr{max_decade} \begin{itemize}
+As a result, we have two synchronous datasets with \Sexpr{length(links_time_series$decade)} decades that start in the decade \Sexpr{min_decade} and end in the decade \rev{that starts in the year} \Sexpr{max_decade} \begin{itemize}
 \item Time series of trade links per decade within the Iberian Peninsula.
 \item Time series of trade links per decade between the Iberian Peninsula and elsewhere.
 \end{itemize}
