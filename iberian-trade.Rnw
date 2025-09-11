@@ -436,6 +436,7 @@ ggplot()+
   geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Palestinian Territory - Spain",],aes(x=decade, y=links, color="Palestine"))+
   geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Germany - Spain",],aes(x=decade, y=links, color="Germany"))+
   scale_colour_manual(values=unname(glasbey()))+
+  labs( x="Decade",y="Number of links") +
   xlim(c(300,700))+ theme_minimal()
 @
 
@@ -452,7 +453,7 @@ This will make the response of the second part of research question one partiall
 
 <<trade.link.evolution.relative, echo=F, message=F, warning=F, fig.cap="Evolution through time of the number of links with the main trading partners of the Iberian Peninsula.", fig.height=5>>=
 ggplot(regional_links_summary, aes( x=decade, y=links))+geom_bar(stat="identity", position="fill", aes(fill=normalized_trade_link))+
-  scale_fill_manual(values=unname(glasbey()))+theme_minimal()+
+  scale_fill_manual(values=unname(glasbey()))+theme_minimal()+labs( x="Decade",y="Proportion of links") +
   xlim(c(300,700))
 @
 
