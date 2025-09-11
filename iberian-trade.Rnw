@@ -159,7 +159,7 @@ So, this gives the subset of the original dataset we are using enough validity t
 \subsection{Dataset processing}
 \label{ssec:processing}
 
-The FLAME \rev{database} include many different \rev{datasets}. We have used three of them\rev{:}\begin
+The FLAME \rev{database} includes many different \rev{datasets}. We have used three of them\rev{:}\begin
 {itemize}
 \item {\bf Coin groups}, which contains individual information on the group of coins found in every hoard and the mint where they were minted; it includes also information on the range of time those coins were minted cross referenced to the two files below.
 \item {\bf Hoards}, which contains information on the hoard itself, including the date it was found, the number of coins, and the place where it was found.
