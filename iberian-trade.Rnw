@@ -102,9 +102,6 @@ One of the issues with a statistical approach to the study of history is the non
 
 The rest of the paper is organized as follows: next we will present the current state of the art in the application of change point detection methods in history, as well as any other analysis that try to research the boundary between Antiquity and the Middle Ages. We will describe and show an overview of the dataset in Section \ref{sec:materials}. The data will be analyzed, trying to respond to the research questions in Section \ref{sec:results}. Finally, we will discuss these results and present our conclusions in Section \ref{sec:conclusions}.
 
-% The order of the section titles is different for some journals. Please refer to the "Instructions for Authors” on the journal homepage.
-%
-%
 
 \section{State of the art}
 
