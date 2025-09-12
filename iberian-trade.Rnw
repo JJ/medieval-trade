@@ -170,6 +170,7 @@ We have used three of them\rev{:}\begin{itemize}
 We have made a series of processing steps to use them \begin{itemize}
 \item We have geolocated the mints to a specific current country, using the GeoApify service.
 \item We have processed hoards and mints to keep only those that are placed in the two countries in the Iberian Peninsula, Spain and Portugal.
+\item \rev{The FLAME database includes two fields with the start and end date estimated (and published) for the coin hoard. We have used the midpoint as the date for the whole hoard.}
 \item We were interested in the trade links and its number, that is, the number of coin groups from one country found in another country, so we processed all files above to obtain that information. We generated two files with this procedure: \begin{itemize}
 \item Iberian-only trade links, which contain only the trade links where the mint and the coin finding (hoard) are in the Iberian Peninsula.
 \item All trade links of hoards found in the Iberian Peninsula or that contain coins minted in it.
