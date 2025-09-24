@@ -28,7 +28,7 @@
 %\pdfoutput=1 % Uncommented for upload to arXiv.org
 %\CorrStatement{yes}  % For updates
 %\longauthorlist{yes} % For many authors that exceed the left citation part
-\newcommand{\rev}[1]{{\color{purple} #1}}
+\newcommand{\rev}[1]{#1}
 
 % Full title of the paper (Capitalized)
 \Title{Before the collapse: analyzing changes of economic regime in the Iberian Peninsula using change point detection methods}
