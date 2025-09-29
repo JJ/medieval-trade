@@ -32,7 +32,7 @@
 \newcommand{\rev}[1]{{\color{purple} #1}}
 
 % Full title of the paper (Capitalized)
-\Title{Before the collapse: analyzing changes of economic regime in the Iberian Peninsula using change point detection methods}
+\Title{Analyzing \rev{Late Antiquity} changes of economic regime in the Iberian Peninsula \rev{and its causes} \rev{via} change point detection methods}
 
 % MDPI internal command: Title for citation in the left column
 \TitleCitation{Before the collapse}
