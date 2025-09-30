@@ -90,8 +90,9 @@ From a statistical point of view, a \rev{change of regime or shift} is called a 
 
 Thus, there are two interrelated research questions that we will work with in this paper: \begin{itemize}
 \item{\em Research question 1} Is there a changepoint in the Iberian Peninsula trade link time series?
-\item\rev{{\em Research question 2} Is there a specific change in the network that can explain that changepoint}
+\item\rev{{\em Research question 2} Is there a specific change in the network that can explain that changepoint?}
 \item{\em Research question \rev{3}} \rev{If that is the case, can that change in the network be explained by known historically established factors or events?}
+\item\rev{{\em Research question 4} Working in the other causal direction, would this be a new factor that would explain the fall of the Roman Empire and thus the end of Antiquity and the beginning of the Middle Ages?}
 \end{itemize}
 
 One of the issues with a statistical approach to the study of history is the nonexistence of a methodology that goes back from the statistically established facts to the historical facts they are supposed to prove. In this paper we adapt the methodology we used in \citep{changepoint.statphys} to the subset of data referring to the Iberian Peninsula. The methodology consists of the following steps \begin{enumerate}
