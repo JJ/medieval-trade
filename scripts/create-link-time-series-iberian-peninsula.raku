@@ -30,20 +30,27 @@ for @coin-groups -> %coin-group {
                  mint => %mint-locations{ %coin-group<Mint_ID> } // "Unknown mintner");
     my %link-regions = ( hoard => %finding-regions{ %coin-group<CoinFinding_ID> } // "Unknown hoard region",
                         mint => %mint-regions{ %coin-group<Mint_ID> } // "Unknown mintner region");
+    my $start_year, $end_year;
     if %coin-group<cg_start_year> == 0 {
         if %coin-group<cg_custom_start_century> > 0 {
-            %link<year> = %coin-group<cg_custom_start_century>*100-50;
+            $start_year = %coin-group<cg_custom_start_century>*100;
+            $end_year = $start_year + 100;
         } elsif %coin-group<cg_custom_end_century> > 0 {
-            %link<year> = %coin-group<cg_custom_end_century>*100-50;
+            $start_year = %coin-group<cg_custom_end_century>*100;
+            $end_year = $start_year + 100;
         } else {
             next;
         }
     } else {
-        %link<year> = %coin-group<cg_start_year> + floor( (%coin-group<cg_end_year> - %coin-group<cg_start_year>)/2 );
+        $start_year = %coin-group<cg_start_year>;
+        $end_year = %coin-group<cg_start_year>;
     }
     if %link<year> == 0 {
         say %coin-group;
     }
+
+    my $probability = 1/( $end_year - $start_year );
+
 
     die %coin-group unless %link<hoard>;
     %link-regions<year> = %link<year>;
