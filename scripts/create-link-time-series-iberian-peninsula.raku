@@ -66,7 +66,7 @@ for @coin-groups -> %coin-group {
         }
         if %coin-group<Mint_ID> ∈ $iberian-mints && %coin-group<CoinFinding_ID> ∈ $iberian-findings {
             %annual-iberian-link-probability{$year} += $probability;
-            %iberian-links-out{$year}{@edge[0]}{@edge[1]} += $probability ;
+            %iberian-links-out{$year}{@edge[0]}{@edge[1]} += $probability;
         }
     }
 
@@ -85,9 +85,8 @@ sub convert_to_array_of_hashes( %hash ) {
     my @array;
     for %hash.keys.sort: { $^a <=> $^b } -> $key {
         for %hash{$key}.keys -> $key2 {
-            say "Key $key, $key2; value: %hash{$key}{$key2}";
-            for %hash{$key}{$key2}.keys -> $key3, $value3 {
-                @array.push({ year => $key, region1 => $key2, region2 => $key3, value => $value3 });
+            for %hash{$key}{$key2}.keys -> $key3 {
+                @array.push({ year => $key, region1 => $key2, region2 => $key3, value => %hash{$key}{$key2}{$key3}});
             }
         }
     }
