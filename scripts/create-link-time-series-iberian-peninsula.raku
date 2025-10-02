@@ -51,7 +51,6 @@ for @coin-groups -> %coin-group {
         say %coin-group;
     }
 
-    say "Years $start_year - $end_year";
     my $probability;
     if ( $start_year == $end_year ) {
         $probability = 1;
@@ -84,9 +83,10 @@ csv( in => convert_to_array_of_hashes(%regional-links-out), out => "data/annual-
 
 sub convert_to_array_of_hashes( %hash ) {
     my @array;
-    for %hash.kv.sort: { $^a[0] <=> $^b[0] } -> $key, %value {
-        for %value.kv -> $key2, %value2 {
-            for %value2.kv -> $key3, $value3 {
+    for %hash.keys.sort: { $^a <=> $^b } -> $key {
+        for %hash{$key}.keys -> $key2 {
+            say "Key $key, $key2; value: %hash{$key}{$key2}";
+            for %hash{$key}{$key2}.keys -> $key3, $value3 {
                 @array.push({ year => $key, region1 => $key2, region2 => $key3, value => $value3 });
             }
         }
