@@ -18,19 +18,19 @@ my @all-findings = csv(in => 'data-raw/flame-database-last-version-coin-findings
 my %finding-locations = @all-findings.map( { $_<ID> => $_<cf_custom_place_name> ?? $_<cf_custom_place_name> !! $_<cf_name> } ).flat;
 my %finding-regions = @all-findings.map( { $_<ID> => $_<Region> } ).flat;
 
-my @links-out;
-my @iberian-links-out;
-my @regional-links-out;
+my %iberian-links-out;
+my %regional-links-out;
+my %annual-link-probability;
 
 for @coin-groups -> %coin-group {
     next if %coin-group<cg_start_year> eq "" || %coin-group<cg_end_year> eq "";
     next unless %coin-group<Mint_ID> ∈ $iberian-mints || %coin-group<CoinFinding_ID> ∈ $iberian-findings;
 
-    my %link = ( hoard => %finding-locations{ %coin-group<CoinFinding_ID> } // "Unknown hoard",
-                 mint => %mint-locations{ %coin-group<Mint_ID> } // "Unknown mintner");
-    my %link-regions = ( hoard => %finding-regions{ %coin-group<CoinFinding_ID> } // "Unknown hoard region",
-                        mint => %mint-regions{ %coin-group<Mint_ID> } // "Unknown mintner region");
-    my $start_year, $end_year;
+    my $hoard-region =  %finding-regions{ %coin-group<CoinFinding_ID> } // "Unknown hoard region",
+    my $mint-region = %mint-regions{ %coin-group<Mint_ID> } // "Unknown mintner region";
+
+    my $start_year;
+    my $end_year;
     if %coin-group<cg_start_year> == 0 {
         if %coin-group<cg_custom_start_century> > 0 {
             $start_year = %coin-group<cg_custom_start_century>*100;
@@ -50,15 +50,17 @@ for @coin-groups -> %coin-group {
     }
 
     my $probability = 1/( $end_year - $start_year );
-
+    my @edge = ( $hoard-region, $mint-region ).sort;
+    for $start_year .. $end_year -> $year {
+        %annual-link-probability{$year} += $probability;
+        %regional-links-out{$year}{@edge[0]}{@edge[1]} += $probability;
+        %iberian-links-out{$year}{@edge[0]}{@edge[1]} += $probability if %coin-group<Mint_ID> ∈ $iberian-mints && %coin-group<CoinFinding_ID> ∈ $iberian-findings;
+    }
 
     die %coin-group unless %link<hoard>;
-    %link-regions<year> = %link<year>;
-    @links-out.push(%link);
-    @iberian-links-out.push(%link) if %coin-group<Mint_ID> ∈ $iberian-mints && %coin-group<CoinFinding_ID> ∈ $iberian-findings;
-    @regional-links-out.push(%link-regions) if %link-regions<hoard> !~~ /Unknown/ && %link-regions<mint> !~~ /Unknown/;
+
 }
 
-csv( in => @links-out, out => "data/all-iberian-links.csv", sep => ";", headers => 'auto' );
-csv( in => @iberian-links-out, out => "data/iberian-links.csv", sep => ";", headers => 'auto' );
-csv( in => @regional-links-out, out => "data/regional-links.csv", sep => ";", headers => 'auto' );
+csv( in => %annual-link-probability, out => "data/annual-link-probability.csv", sep => ";", headers => 'auto' );
+csv( in => %iberian-links-out, out => "data/annual-iberian-links.csv", sep => ";", headers => 'auto' );
+csv( in => %regional-links-out, out => "data/annual-regional-links.csv", sep => ";", headers => 'auto' );
