@@ -43,24 +43,51 @@ for @coin-groups -> %coin-group {
         }
     } else {
         $start_year = %coin-group<cg_start_year>;
-        $end_year = %coin-group<cg_start_year>;
+        $end_year = %coin-group<cg_end_year>;
     }
-    if %link<year> == 0 {
+    if $start_year == 0 or $end_year == 0 {
         say %coin-group;
     }
 
-    my $probability = 1/( $end_year - $start_year );
+    say "Years $start_year - $end_year";
+    my $probability;
+    if ( $start_year == $end_year ) {
+        $probability = 1;
+    } else {
+        $probability = 1/( $end_year - $start_year);
+    }
     my @edge = ( $hoard-region, $mint-region ).sort;
-    for $start_year .. $end_year -> $year {
+    loop ( my $year = $start_year; $year <= $end_year; $year+= 1 ) {
+        say "In the loop $year";
         %annual-link-probability{$year} += $probability;
         %regional-links-out{$year}{@edge[0]}{@edge[1]} += $probability;
         %iberian-links-out{$year}{@edge[0]}{@edge[1]} += $probability if %coin-group<Mint_ID> ∈ $iberian-mints && %coin-group<CoinFinding_ID> ∈ $iberian-findings;
     }
 
-    die %coin-group unless %link<hoard>;
-
 }
 
-csv( in => %annual-link-probability, out => "data/annual-link-probability.csv", sep => ";", headers => 'auto' );
-csv( in => %iberian-links-out, out => "data/annual-iberian-links.csv", sep => ";", headers => 'auto' );
-csv( in => %regional-links-out, out => "data/annual-regional-links.csv", sep => ";", headers => 'auto' );
+say %annual-link-probability;
+my @array-of-annual-link-probabilities;
+for %annual-link-probability.kv.sort: { $^b[0] <=> $^b[0] } -> $year, $value {
+    say "Year $year: $value";
+    @array-of-annual-link-probabilities.push({ year => $year, link_density => $value });
+}
+
+say %iberian-links-out;
+say %regional-links-out;
+
+csv( in => @array-of-annual-link-probabilities, out => "data/annual-link-probability.csv", sep => ";", headers => 'auto' );
+csv( in => convert_to_array_of_hashes(%iberian-links-out), out => "data/annual-iberian-links.csv", sep => ";", headers => 'auto' );
+csv( in => convert_to_array_of_hashes(%regional-links-out), out => "data/annual-regional-links.csv", sep => ";", headers => 'auto' );
+
+sub convert_to_array_of_hashes( %hash ) {
+    my @array;
+    for %hash.kv.sort: { $^a[0] <=> $^b[0] } -> $key, %value {
+        for %value.kv -> $key2, %value2 {
+            for %value2.kv -> $key3, $value3 {
+                @array.push({ year => $key, region1 => $key2, region2 => $key3, value => $value3 });
+            }
+        }
+    }
+    return @array;
+}
