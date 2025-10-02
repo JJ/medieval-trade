@@ -21,6 +21,8 @@ my %finding-regions = @all-findings.map( { $_<ID> => $_<Region> } ).flat;
 my %iberian-links-out;
 my %regional-links-out;
 my %annual-link-probability;
+my %annual-all-iberian-link-probability;
+my %annual-iberian-link-probability;
 
 for @coin-groups -> %coin-group {
     next if %coin-group<cg_start_year> eq "" || %coin-group<cg_end_year> eq "";
@@ -58,25 +60,25 @@ for @coin-groups -> %coin-group {
     }
     my @edge = ( $hoard-region, $mint-region ).sort;
     loop ( my $year = $start_year; $year <= $end_year; $year+= 1 ) {
-        say "In the loop $year";
         %annual-link-probability{$year} += $probability;
         %regional-links-out{$year}{@edge[0]}{@edge[1]} += $probability;
-        %iberian-links-out{$year}{@edge[0]}{@edge[1]} += $probability if %coin-group<Mint_ID> ∈ $iberian-mints && %coin-group<CoinFinding_ID> ∈ $iberian-findings;
+        if %coin-group<Mint_ID> ∈ $iberian-mints || %coin-group<CoinFinding_ID> ∈ $iberian-findings {
+            %annual-all-iberian-link-probability{$year} += $probability;
+        }
+        if %coin-group<Mint_ID> ∈ $iberian-mints && %coin-group<CoinFinding_ID> ∈ $iberian-findings {
+            %annual-iberian-link-probability{$year} += $probability;
+            %iberian-links-out{$year}{@edge[0]}{@edge[1]} += $probability ;
+        }
     }
 
-}
-
-say %annual-link-probability;
-my @array-of-annual-link-probabilities;
-for %annual-link-probability.kv.sort: { $^b[0] <=> $^b[0] } -> $year, $value {
-    say "Year $year: $value";
-    @array-of-annual-link-probabilities.push({ year => $year, link_density => $value });
 }
 
 say %iberian-links-out;
 say %regional-links-out;
 
-csv( in => @array-of-annual-link-probabilities, out => "data/annual-link-probability.csv", sep => ";", headers => 'auto' );
+csv( in => convert_hash_to_sorted_array_of_hashes(%annual-link-probability), out => "data/annual-link-probability.csv", sep => ";", headers => 'auto' );
+csv( in => convert_hash_to_sorted_array_of_hashes(%annual-all-iberian-link-probability), out => "data/annual-all-iberian-link-probability.csv", sep => ";", headers => 'auto' );
+csv( in => convert_hash_to_sorted_array_of_hashes(%annual-iberian-link-probability), out => "data/annual-iberian-link-probability.csv", sep => ";", headers => 'auto' );
 csv( in => convert_to_array_of_hashes(%iberian-links-out), out => "data/annual-iberian-links.csv", sep => ";", headers => 'auto' );
 csv( in => convert_to_array_of_hashes(%regional-links-out), out => "data/annual-regional-links.csv", sep => ";", headers => 'auto' );
 
@@ -88,6 +90,14 @@ sub convert_to_array_of_hashes( %hash ) {
                 @array.push({ year => $key, region1 => $key2, region2 => $key3, value => $value3 });
             }
         }
+    }
+    return @array;
+}
+
+sub convert_hash_to_sorted_array_of_hashes( %hash ) {
+    my @array;
+    for %hash.keys.sort: { $^a <=> $^b } -> $key {
+        @array.push({ year => $key, link_density => %hash{$key} });
     }
     return @array;
 }
