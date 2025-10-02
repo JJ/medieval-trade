@@ -138,14 +138,16 @@ How we processed the dataset used and the methodology applied to it in this pape
 
 <<trade.setup, echo=FALSE, warning=FALSE, message=F>>=
 library(dplyr)
-iberian_links_decade <- readRDS("data/iberian_links_decade.rds")
-min_decade <- min(iberian_links_decade$decade)
-max_decade <- max(iberian_links_decade$decade)
-all_iberian_links_decade <- readRDS("data/all_iberian_links_decade.rds") %>% filter( decade >= min_decade & decade <= max_decade)
+annual_iberian_links <- read.csv("data/annual-iberian-link-probability.csv",sep=";")
 
-links_time_series <- data.frame(  decade = iberian_links_decade$decade,
-  interior_links = iberian_links_decade$n,
-  exterior_links = all_iberian_links_decade$n
+min_year <- min(annual_iberian_links$year)
+max_year <- max(annual_iberian_links$year)
+
+all_annual_iberian_links <- read.csv("data/annual-all-iberian-link-probability.csv", sep=";") %>% filter( year >= min_year & year <= max_year)
+
+links_time_series <- data.frame(  year = annual_iberian_links$year,
+  interior_links = annual_iberian_links$link_density,
+  exterior_links = all_annual_iberian_links$link_density
   )
 
 @
@@ -195,12 +197,12 @@ These processed datasets are available in R data format in the repository for th
 <<trade.plot, echo=FALSE, fig.cap="Time series of interior and exterior trade links for the Iberian Peninsula", fig.height=4>>=
 library(ggplot2)
 library(ggthemes)
-ggplot(links_time_series, aes(x=decade)) +
+ggplot(links_time_series, aes(x=year)) +
   geom_line(aes(y=interior_links, color="Interior links"), linewidth=1) +
   geom_line(aes(y=exterior_links, color="All links"), linewidth=1) +
-  scale_color_manual(values=c("Interior links"="#E69F00", "Exterior links"="#56B4E9")) +
+  scale_color_manual(values=c("Interior links"="#E69F00", "All links"="#56B4E9")) +
   labs(title="Trade links in the Iberian Peninsula",
-       x="Decade",
+       x="Year",
        y="Number of trade links") +
   theme_minimal() +
   theme(legend.title = element_blank())
