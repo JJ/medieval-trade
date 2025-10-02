@@ -177,22 +177,20 @@ We have used three of them\edit{:}\begin{itemize}
 We have made a series of processing steps to use them \begin{itemize}
 \item We have geolocated the mints to a specific current country, using the GeoApify service.
 \item We have processed hoards and mints to keep only those that are placed in the two countries in the Iberian Peninsula, Spain and Portugal.
-\item \edit{The FLAME database includes two fields with the start and end date estimated (and published) for the coin hoard. We have used the midpoint as the date for the whole hoard.}
-\item We were interested in the trade links and its number, that is, the number of coin groups from one country found in another country, so we processed all files above to obtain that information. We generated two files with this procedure: \begin{itemize}
+\item The FLAME database includes two fields with the start and end date estimated (and published) for the coin hoard. \rev{What we have done is assign equal probability to every year in the range. If, for instance, the range goes from 310 to 320, every year will get 0.1 probability. We have called this variable {\em link density}; years included in more ranges will have a higher {\em link density}, years included in less will get correspondingly less. We have chosen this way of processing the data, unlike \cite{iberian:trade}, since the ranges of some hoards were several centuries wide, and besides needed additional processing to work with decades instead of years, as in this case. This will correspondingly enhance the precision of the solution.}
+\item We were interested in the trade link \rev{density} that is, the number of coin groups from one country found in another country, so we processed all files above to obtain that information. We generated two files with this procedure: \begin{itemize}
 \item Iberian-only trade links, which contain only the trade links where the mint and the coin finding (hoard) are in the Iberian Peninsula.
 \item All trade links of hoards found in the Iberian Peninsula or that contain coins minted in it.
 \end{itemize}
-\item We processed the resulting files per decade starting in 0, so that the granularity of the resulting time series of trade links is 10 years. The main reason for doing so was the fact that many years had zero links, so grouping them by decade seemed a good way to smooth differences that could have happened from a single year to the next.
-\item We filled with 0s all those decades with no links.
-\item Finally, we shortened the time series so that they start and end in the same year.
+\item Finally, we shortened the \rev{second} time series so that they start and end in the same year.
 \end{itemize}
 
-As a result, we have two synchronous datasets with \Sexpr{length(links_time_series$decade)} decades that start in the decade \Sexpr{min_decade} and end in the decade \edit{that starts in the year} \Sexpr{max_decade} \begin{itemize}
-\item Time series of trade links per decade within the Iberian Peninsula.
-\item Time series of trade links per decade between the Iberian Peninsula and elsewhere.
+As a result, we have two synchronous datasets with \Sexpr{length(links_time_series$decade)} decades that start in the \rev{year} \Sexpr{min_year} and end in the \rev{year} \Sexpr{max_year} \begin{itemize}
+\item Time series of trade link \rev{density} per \rev{year} within the Iberian Peninsula.
+\item Time series of trade link \rev{density} per \rev{year} between the Iberian Peninsula and elsewhere.
 \end{itemize}
 
-These processed datasets are available in R data format in the repository for this paper, \url{https://github.com/JJ/medieval-trade}.
+These processed datasets are available in R data format in the repository for this paper, \url{https://github.com/JJ/medieval-trade}\footnote{\rev{Please read the README.md file for specific location of the files used here.}}.
 
 <<trade.plot, echo=FALSE, fig.cap="Time series of interior and exterior trade links for the Iberian Peninsula", fig.height=4>>=
 library(ggplot2)
@@ -201,9 +199,9 @@ ggplot(links_time_series, aes(x=year)) +
   geom_line(aes(y=interior_links, color="Interior links"), linewidth=1) +
   geom_line(aes(y=exterior_links, color="All links"), linewidth=1) +
   scale_color_manual(values=c("Interior links"="#E69F00", "All links"="#56B4E9")) +
-  labs(title="Trade links in the Iberian Peninsula",
+  labs(title="Trade link density in the Iberian Peninsula",
        x="Year",
-       y="Number of trade links") +
+       y="Trade link density") +
   theme_minimal() +
   theme(legend.title = element_blank())
 @
@@ -215,14 +213,13 @@ Figure \ref{fig:trade.plot} is a representation of the two time series mentioned
 
 <<trade.overview, echo=FALSE, fig.height=4, fig.cap="Graph plot of the regional network using (current) regions as nodes. Edge size is proportional to weight, that is, number of links", message=FALSE>>=
 library(igraph)
-regional_links <- read.csv("data/regional-links.csv", sep=";", header=TRUE)
-
+regional_links <- read.csv("data/annual-regional-links.csv", sep=";", header=TRUE)
+regional_links$weight <- regional_links$value
 regional_graph <- graph_from_data_frame(regional_links, directed=FALSE)
-E(regional_graph)$weight <- 1
 regional_graph <- simplify(regional_graph, edge.attr.comb=list(weight="sum"))
 par(mar=c(0,0,0,0)+0.1)
 plot(regional_graph, vertex.size=2, vertex.label.cex=0.6, edge.arrow.size=0.2,
-     vertex.label.color="black", vertex.label.family="sans", edge.color="gray", edge.width=1+0.5*log(E(regional_graph)$weight),
+     vertex.label.color="black", vertex.label.family="sans", edge.color="gray", edge.width=1+log(E(regional_graph)$weight),
      layout=layout_with_dh,
      vertex.label.dist=0.5)
 @
