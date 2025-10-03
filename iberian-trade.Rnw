@@ -280,7 +280,7 @@ global_nonbgleadflux_average <- mean(polution_data_positive$NonBgLeadFlux)
 pollution_data_filtered <- pollution_data %>%
   filter(year >= min_year & year <= max_year)
 
-pollution_data_filtered$NonBgLeadFlux <- ifelse(pollution_data_filtered$NonBgLeadFlux <= 0, global_nonbgleadflux_average, pollution_data_filtered$NonBgLeadFlux) 
+pollution_data_filtered$NonBgLeadFlux <- ifelse(pollution_data_filtered$NonBgLeadFlux <= 0, global_nonbgleadflux_average, pollution_data_filtered$NonBgLeadFlux)
 
 cross_correlation <- ccf(pollution_data_filtered$NonBgLeadFlux, links_time_series$exterior_links, lag.max=30, plot=F)
 plot(cross_correlation, xlab="Lag", ylab="Cross-Correlation", main="")
@@ -399,11 +399,11 @@ In this case, there are specific methods for finding changepoints in time series
 
 <<trade.changepoints.found, echo=FALSE, message=FALSE>>=
 changepoint_dates_found <- data.frame(
-  Method = c("All links, cpt.meanvar", "All links, Lanzante/Pettitt", "Internal links, cpt.meanvar", "Multi-sequence, e.divisive"),
+  Method = c("All links, cpt.meanvar", "All links, Lanzante/Pettitt", "Internal links, cpt.mean", "Multi-sequence, e.divisive"),
   changepoint = c(links_changepoint_date[1],
-                  all_iberian_links_decade$decade[all_links_changepoint_lanzante$estimate],
+                  all_annual_iberian_links$year[all_links_changepoint_lanzante$estimate],
                   internal_links_changepoint_date,
-                  multi_changepoint_decade))
+                  multi_changepoint_year))
 
 kable(changepoint_dates_found, caption="Changepoints found in the Iberian trade links time series", col.names=c("Method", "Changepoint year")) %>%
   kable_styling(full_width = F, position = "left") %>%
