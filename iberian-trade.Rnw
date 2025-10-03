@@ -350,9 +350,9 @@ and \Sexpr{max(all_links_changepoint_stats$changepoint)}. Please observe that al
 Before looking for a possible cause, we should try and place the {\em internal} Iberian traffic changepoint, this being an important component of all the trade links; any variation withing the range we have would point out to important internal causes for the change of regime, that would contribute (or detract) from any external cause.
 
 <<trade.changepoint.internal, echo=FALSE, fig.height=4, fig.cap="Changepoint in the internal Iberian trade links time series, with mean before and after the changepoint in red.", message=FALSE>>=
-links_changepoint <- cpt.meanvar(iberian_links_decade$n, method="AMOC")
-internal_links_changepoint_date <- iberian_links_decade$decade[links_changepoint@cpts[1]]
-ticks <- c(1,10,20,30,40)
+links_changepoint <- cpt.mean(annual_iberian_links$link_density, method="AMOC")
+internal_links_changepoint_date <- annual_iberian_links$year[links_changepoint@cpts[1]]
+ticks <- c(1,100,200,300,400,500)
 ticks.years <- iberian_links_decade$decade[ticks]
 
 plot(links_changepoint,xaxt = 'n',
