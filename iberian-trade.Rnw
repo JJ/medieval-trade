@@ -345,7 +345,7 @@ kable(all_links_changepoint_stats, caption="Changepoint detection statistics for
 As it can be observed, there is a statistically significant changepoint in the year \Sexpr{links_changepoint_date[1]}. This is roughly 20 years after the year found in \cite{changepoint.statphys}, but still half a century short of the Fall of the Roman Empire with the ousting of the last emperor by Odoacre \cite{Chapter1WhenDidtheWestRomanEmpireFall}. We will validate this approach using other methods, to find a bracket of possible changepoints; this way we can have a better idea of the time period when the change happened. We have used two non-parametric tests, Lanzante's \citep{lanzante1996resistant} and Pettit's \citep{pettitt1979non} as well as Buishand's range test, which applies to normal variables \citep{buishand1982some}.
 
 The results of the different changepoint methods are shown in Table \ref{tab:trade.changepoint.stats}. They are at both sides of the changepoint detected by the first method, thus giving an interval of possible changepoint years between \Sexpr{min(all_links_changepoint_stats$changepoint)}
-and \Sexpr{max(all_links_changepoint_stats$changepoint)}. Please observe that all changepoints are statistically significant, the difference in output being the different methods used to detect them; however, Buishand's methods are for normal variables, a fact that is not guaranteed in this case; although statistically significant, we should probably lend more credibility to the non-parametric methods, which, besides, are consistent with each other. We would then have a range of dates between \Sexpr{links_changepoint_date[1]} and \Sexpr{all_iberian_links_decade$decade[all_links_changepoint_lanzante$estimate]}.
+and \Sexpr{max(all_links_changepoint_stats$changepoint)}. Please observe that all changepoints are statistically significant, the difference in output being the different methods used to detect them; however, Buishand's methods are for normal variables, a fact that is not guaranteed in this case; although statistically significant, we should probably lend more credibility to the non-parametric methods, which, besides, are consistent with each other. We would then have a range of dates between \Sexpr{links_changepoint_date[1]} and \Sexpr{all_annual_iberian_links$year[all_links_changepoint_lanzante$estimate]}.
 
 Before looking for a possible cause, we should try and place the {\em internal} Iberian traffic changepoint, this being an important component of all the trade links; any variation withing the range we have would point out to important internal causes for the change of regime, that would contribute (or detract) from any external cause.
 
@@ -395,7 +395,7 @@ ggplot(external_internal_df, aes(x=year)) +
 
 @
 
-In this case, there are specific methods for finding changepoints in time series with multiple columns, like this one. In order to apply the procedure, we first subtract the number of internal links from the number of total links to have two different synchronous sequences, with trade links inside and outside the Iberian Peninsula. On this two-column array, we apply the {\tt e.divisive} function from the {\sf ecp} package in R \cite{ecp-article} which implements a hierarchical divisive estimation procedure, finding changepoints and applying again the same procedure to the resulting fragments. The result is shown in Figure \ref{fig:trade.changepoint.multi}, with the vertical dashed line indicating the changepoint found\footnote{It finds anothe in the second decade of the sequence, which we have dismissed as not significative.}, which shows a vertical dashed line for the changepoint found at \Sexpr{multi_changepoint_decade}.
+In this case, there are specific methods for finding changepoints in time series with multiple columns, like this one. In order to apply the procedure, we first subtract the number of internal links from the number of total links to have two different synchronous sequences, with trade links inside and outside the Iberian Peninsula. On this two-column array, we apply the {\tt e.divisive} function from the {\sf ecp} package in R \cite{ecp-article} which implements a hierarchical divisive estimation procedure, finding changepoints and applying again the same procedure to the resulting fragments. The result is shown in Figure \ref{fig:trade.changepoint.multi}, with the vertical dashed line indicating the changepoint found\footnote{It finds anothe in the second decade of the sequence, which we have dismissed as not significative.}, which shows a vertical dashed line for the changepoint found at \Sexpr{multi_changepoint_year}.
 
 <<trade.changepoints.found, echo=FALSE, message=FALSE>>=
 changepoint_dates_found <- data.frame(
@@ -419,9 +419,11 @@ In order to do that, we will look at specific trade links, and how they evolved 
 <<trade.link.evolution, echo=F, message=F, warning=F, fig.cap="Evolution through time of the number of links with the main trading partners of the Iberian Peninsula.", fig.height=5>>=
 library(purrr)
 regional_links$decade <- 10* floor(regional_links$year/10)
-regional_links %>% mutate(cs=pmap_chr(list(mint,hoard), ~paste(sort(c(...)), collapse = " - "))) -> regional_links_pasted
+regional_links %>% mutate(cs=pmap_chr(list(region1,region2), ~paste(sort(c(...)), collapse = " - "))) -> regional_links_pasted
 
-regional_links_pasted %>% group_by(decade, cs) %>% summarise( links = n()) -> regional_links_summary
+# create a sum per decade and cs
+regional_links_pasted %>% group_by(decade, cs) %>%  summarise( links =  sum(value)) -> regional_links_summary
+
 top_links <- c("Spain - United Kingdom","Italy - Spain","France - Spain","Spain - Turkey", "Spain - Spain", "Portugal - Spain","Portugal - Turkey", "Netherlands - Spain","Italy - Portugal", "Palestinian Territory - Spain", "Germany - Spain")
 
 regional_links_summary$normalized_trade_link <- ifelse( regional_links_summary$cs %in% top_links, regional_links_summary$cs, "Other")
