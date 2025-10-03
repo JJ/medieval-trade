@@ -273,11 +273,16 @@ The second type of bias we should expect is temporal, that is, some periods get 
 
 
 <<trade.validation.lead, echo=FALSE, fig.height=4, fig.cap="Cross-correlation between per-decade trade links and lead pollution", message=FALSE>>=
-pollution_data <- read.csv("data/pollution-data.csv", sep=";")
-pollution_data_filtered <- pollution_data %>%
-  filter(decade >= min_decade & decade <= max_decade)
+pollution_data <- read.csv("data/annual-pollution-data.csv", sep=";")
+polution_data_positive <- pollution_data %>% filter(NonBgLeadFlux > 0)
+global_nonbgleadflux_average <- mean(polution_data_positive$NonBgLeadFlux)
 
-cross_correlation <- ccf(pollution_data$averagePg, iberian_links_decade$n, lag.max=10, plot=F)
+pollution_data_filtered <- pollution_data %>%
+  filter(year >= min_year & year <= max_year)
+
+pollution_data_filtered$NonBgLeadFlux <- ifelse(pollution_data_filtered$NonBgLeadFlux <= 0, global_nonbgleadflux_average, pollution_data_filtered$NonBgLeadFlux) 
+
+cross_correlation <- ccf(pollution_data_filtered$NonBgLeadFlux, links_time_series$exterior_links, lag.max=30, plot=F)
 plot(cross_correlation, xlab="Lag", ylab="Cross-Correlation", main="")
 
 @
