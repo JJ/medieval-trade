@@ -300,12 +300,10 @@ Additionally, we will try to connect our results to other sources of information
 
 <<trade.changepoint, echo=FALSE, fig.height=4, fig.cap="Changepoint in the Iberian trade links time series, with mean before and after the changepoint in red.", message=FALSE>>=
 library(changepoint)
-all_links_changepoint <- cpt.meanvar(all_iberian_links_decade$n, method="AMOC")
-links_changepoint_date <- all_iberian_links_decade$decade[all_links_changepoint@cpts]
-ticks <- c(1,10,20,30,40)
-ticks.years <- all_iberian_links_decade$decade[ticks]
-
-# change x axis label to "Year" and y axis label to "number of links"
+all_links_changepoint <- cpt.meanvar(all_annual_iberian_links$link_density, method="AMOC")
+links_changepoint_date <- all_annual_iberian_links$year[all_links_changepoint@cpts]
+ticks <- c(1,100,200,300,400,500)
+ticks.years <- all_annual_iberian_links$year[ticks]
 
 plot(all_links_changepoint,xaxt = 'n',
      xlab = "Year",
