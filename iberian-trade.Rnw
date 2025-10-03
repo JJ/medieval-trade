@@ -319,10 +319,10 @@ After we have established the validity of the dataset, we will go ahead and try 
 
 <<trade.changepoint.stats, echo=FALSE, message=FALSE>>=
 library(trend)
-all_links_changepoint_lanzante <- lanzante.test(all_iberian_links_decade$n, method="rrod.test")
-all_links_changepoint_pettitt <- pettitt.test(all_iberian_links_decade$n)
-all_links_changepoint_bu <- bu.test(all_iberian_links_decade$n)
-all_links_changepoint_br <- br.test(all_iberian_links_decade$n)
+all_links_changepoint_lanzante <- lanzante.test(all_annual_iberian_links$link_density, method="rrod.test")
+all_links_changepoint_pettitt <- pettitt.test(all_annual_iberian_links$link_density)
+all_links_changepoint_bu <- bu.test(all_annual_iberian_links$link_density)
+all_links_changepoint_br <- br.test(all_annual_iberian_links$link_density)
 
 all_links_changepoint_stats <- data.frame(
   Method = c("Lanzante", "Pettitt", "Bu", "Br"),
@@ -330,10 +330,10 @@ all_links_changepoint_stats <- data.frame(
               all_links_changepoint_pettitt$p.value,
               all_links_changepoint_bu$p.value,
               all_links_changepoint_br$p.value),
-  changepoint = c(all_iberian_links_decade$decade[all_links_changepoint_lanzante$estimate],
-                  all_iberian_links_decade$decade[all_links_changepoint_pettitt$estimate],
-                  all_iberian_links_decade$decade[all_links_changepoint_bu$estimate],
-                  all_iberian_links_decade$decade[all_links_changepoint_br$estimate]))
+  changepoint = c(all_annual_iberian_links$year[all_links_changepoint_lanzante$estimate],
+                  all_annual_iberian_links$year[all_links_changepoint_pettitt$estimate],
+                  all_annual_iberian_links$year[all_links_changepoint_bu$estimate],
+                  all_annual_iberian_links$year[all_links_changepoint_br$estimate]))
 
 kable(all_links_changepoint_stats, caption="Changepoint detection statistics for the Iberian trade links time series.", col.names=c("Method", "p-value", "Changepoint year")) %>%
   kable_styling(full_width = F, position = "left") %>%
