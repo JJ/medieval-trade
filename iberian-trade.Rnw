@@ -446,7 +446,7 @@ ggplot()+
   geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Germany - Spain",],aes(x=decade, y=links, color="Germany"))+
   scale_colour_manual(values=unname(glasbey()))+
   labs( x="Decade",y="Number of links") +
-  xlim(c(300,700))+ theme_minimal()
+  xlim(c(250,750))+ theme_minimal()
 @
 
 In Figure \ref{fig:trade.link.evolution} we show the evolution in time of the top links (as indicated in Table \ref{tab:trade.edge.weights}); these, unless noted otherwise, are connections with Spain. We see a crash in the number of links across the board, but we note that the links with the United Kingdom (highlighted also with points at every value) started to decline several decades before the changepoints indicated above. Several different links took its place, notably Italy, Turkey (which hosted both capitals of the empire), but also France, the Netherlands, and most notably, connections within the current territory of Spain (also marked with points), which reach its peak here. Eventually, these also fall to a minimum level right around the time of the found changepoint.
