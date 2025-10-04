@@ -71,6 +71,9 @@ for @coin-groups -> %coin-group {
             %iberian-links-out{$year}{@edge[0]}{@edge[1]} += $probability;
         }
     }
+    if %coin-group<Mint_ID> ∈ $iberian-mints || %coin-group<CoinFinding_ID> ∈ $iberian-findings {
+        @date-ranges.push: [$start_year, $end_year];
+    }
 }
 
 csv( in => @date-ranges, out => "data/date-ranges.csv", sep => ";", headers => <Start_year End_year> );
