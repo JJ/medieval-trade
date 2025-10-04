@@ -416,7 +416,7 @@ This would allow us to answer, at least partially, RQ1: yes, there is a statisti
 
 In order to do that, we will look at specific trade links, and how they evolved with time.
 
-<<trade.link.evolution, echo=F, message=F, warning=F, fig.cap="Evolution through time of the number of links with the main trading partners of the Iberian Peninsula.", fig.height=4>>=
+<<trade.link.evolution, echo=F, message=F, warning=F, fig.cap="Evolution through time of the \\protect\\rev{average trade link density by decade} with the main trading partners of the Iberian Peninsula.", fig.height=4>>=
 library(purrr)
 regional_links$decade <- 10* floor(regional_links$year/10)
 regional_links %>% mutate(cs=pmap_chr(list(region1,region2), ~paste(sort(c(...)), collapse = " - "))) -> regional_links_pasted
