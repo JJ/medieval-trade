@@ -64,13 +64,13 @@ for @coin-groups -> %coin-group {
         %regional-links-out{$year}{@edge[0]}{@edge[1]} += $probability;
         if %coin-group<Mint_ID> ∈ $iberian-mints || %coin-group<CoinFinding_ID> ∈ $iberian-findings {
             %annual-all-iberian-link-probability{$year} += $probability;
+            @date-ranges.push: [$start_year, $end_year];
         }
         if %coin-group<Mint_ID> ∈ $iberian-mints && %coin-group<CoinFinding_ID> ∈ $iberian-findings {
             %annual-iberian-link-probability{$year} += $probability;
             %iberian-links-out{$year}{@edge[0]}{@edge[1]} += $probability;
         }
     }
-    @date-ranges.push: [$start_year, $end_year];
 }
 
 csv( in => @date-ranges, out => "data/date-ranges.csv", sep => ";", headers => <Start_year End_year> );
