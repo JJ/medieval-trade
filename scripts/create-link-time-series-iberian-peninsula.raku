@@ -72,9 +72,6 @@ for @coin-groups -> %coin-group {
 
 }
 
-say %iberian-links-out;
-say %regional-links-out;
-
 csv( in => convert_hash_to_sorted_array_of_hashes(%annual-link-probability), out => "data/annual-link-probability.csv", sep => ";", headers => 'auto' );
 csv( in => convert_hash_to_sorted_array_of_hashes(%annual-all-iberian-link-probability), out => "data/annual-all-iberian-link-probability.csv", sep => ";", headers => 'auto' );
 csv( in => convert_hash_to_sorted_array_of_hashes(%annual-iberian-link-probability), out => "data/annual-iberian-link-probability.csv", sep => ";", headers => 'auto' );

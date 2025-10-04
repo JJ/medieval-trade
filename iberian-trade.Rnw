@@ -177,17 +177,18 @@ We have used three of them\edit{:}\begin{itemize}
 We have made a series of processing steps to use them \begin{itemize}
 \item We have geolocated the mints to a specific current country, using the GeoApify service.
 \item We have processed hoards and mints to keep only those that are placed in the two countries in the Iberian Peninsula, Spain and Portugal.
-\item The FLAME database includes two fields with the start and end date estimated (and published) for the coin hoard. \rev{What we have done is assign equal probability to every year in the range. If, for instance, the range goes from 310 to 320, every year will get 0.1 probability. We have called this variable {\em link density}; years included in more ranges will have a higher {\em link density}, years included in less will get correspondingly less. We have chosen this way of processing the data, unlike \cite{iberian:trade}, since the ranges of some hoards were several centuries wide, and besides needed additional processing to work with decades instead of years, as in this case. This will correspondingly enhance the precision of the solution.}
 \item We were interested in the trade link \rev{density} that is, the number of coin groups from one country found in another country, so we processed all files above to obtain that information. We generated two files with this procedure: \begin{itemize}
 \item Iberian-only trade links, which contain only the trade links where the mint and the coin finding (hoard) are in the Iberian Peninsula.
 \item All trade links of hoards found in the Iberian Peninsula or that contain coins minted in it.
 \end{itemize}
-\item Finally, we shortened the \rev{second} time series so that they start and end in the same year.
 \end{itemize}
+
+The FLAME database includes two fields with the start and end date estimated (and published) for the coin hoard\rev{; we will need to process these ranges into a time series so that we assign a specific value to every year in the series, which is what every time-series algorithm needs.
+What we have done is assign equal probability to every year in the range. If, for instance, the range goes from 310 to 320, every year will get 0.1 probability. We have called this variable {\em link density}; years included in more ranges will have a higher {\em link density}, years included in less will get correspondingly less. We have chosen this way of processing the data, unlike \cite{iberian:trade}, since the ranges of some hoards were several centuries wide, and besides needed additional processing to work with decades instead of years, as in this case. This will correspondingly enhance the precision of the solution.}
 
 As a result, we have two synchronous datasets with \Sexpr{length(links_time_series$decade)} decades that start in the \rev{year} \Sexpr{min_year} and end in the \rev{year} \Sexpr{max_year} \begin{itemize}
 \item Time series of trade link \rev{density} per \rev{year} within the Iberian Peninsula.
-\item Time series of trade link \rev{density} per \rev{year} between the Iberian Peninsula and elsewhere.
+\item Time series of trade link \rev{density} per \rev{year} between the Iberian Peninsula and elsewhere. \rev{This time series was shortened to match the same beginning and end year as the previous one.}
 \end{itemize}
 
 These processed datasets are available in R data format in the repository for this paper, \url{https://github.com/JJ/medieval-trade}\footnote{\rev{Please read the README.md file for specific location of the files used here.}}.
