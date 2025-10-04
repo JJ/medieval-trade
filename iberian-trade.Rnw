@@ -487,7 +487,7 @@ This will make the response of the second part of research question one partiall
 <<trade.link.evolution.relative, echo=F, message=F, warning=F, fig.cap="Evolution through time of the number of links with the main trading partners of the Iberian Peninsula.", fig.height=5>>=
 ggplot(regional_links_summary, aes( x=decade, y=links))+geom_bar(stat="identity", position="fill", aes(fill=normalized_trade_link))+
   scale_fill_manual(values=unname(glasbey()))+theme_minimal()+labs( x="Decade",y="Proportion of links") +
-  xlim(c(300,700))
+  xlim(c(300,750))
 @
 
 As is notable, the economy mostly collapsed, but that also meant that different trade links started to have more importance; we reproduce in Figure \ref{fig:trade.link.evolution.relative} the same sequence indicating percentages of links, again with the "Other" category taking all links not in the top ten; what we see is that from the approximately the year 410 most links occur with these other countries, except for brief periods where France and the Eastern Roman empire have the most importance. By the end of the 5th and during the 6th century, there are very few interchanges, but whatever trade is taking place is merely internal; we can refer again back to Figure \ref{fig:trade.link.evolution} where we see a that in those dates internal date is essentially the only one taking place; during all those years, links with Eastern Roman Empire (Turkey) are constant and in most case more important than those with the Western Empire. As a matter of fact, the indicated period matches the occupation by the Byzantine empire of parts of Southern Spain \citep{Wickham:2005}. The (weak) economic revival during those years would be a worthy field of study.
