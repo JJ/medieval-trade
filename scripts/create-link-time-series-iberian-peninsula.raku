@@ -23,7 +23,7 @@ my %regional-links-out;
 my %annual-link-probability;
 my %annual-all-iberian-link-probability;
 my %annual-iberian-link-probability;
-my @date-ranges=[<Start_year End_year>];
+my @date-ranges=[];
 
 for @coin-groups -> %coin-group {
     next if %coin-group<cg_start_year> eq "" || %coin-group<cg_end_year> eq "";
@@ -73,7 +73,7 @@ for @coin-groups -> %coin-group {
     @date-ranges.push: [$start_year, $end_year];
 }
 
-csv( in => @date-ranges, out => "data/date-ranges.csv", sep => ";", headers => 'auto' );
+csv( in => @date-ranges, out => "data/date-ranges.csv", sep => ";", headers => <Start_year End_year> );
 csv( in => convert_hash_to_sorted_array_of_hashes(%annual-link-probability), out => "data/annual-link-probability.csv", sep => ";", headers => 'auto' );
 csv( in => convert_hash_to_sorted_array_of_hashes(%annual-all-iberian-link-probability), out => "data/annual-all-iberian-link-probability.csv", sep => ";", headers => 'auto' );
 csv( in => convert_hash_to_sorted_array_of_hashes(%annual-iberian-link-probability), out => "data/annual-iberian-link-probability.csv", sep => ";", headers => 'auto' );
