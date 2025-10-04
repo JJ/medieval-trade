@@ -183,15 +183,32 @@ We have made a series of processing steps to use them \begin{itemize}
 \end{itemize}
 \end{itemize}
 
-The FLAME database includes two fields with the start and end date estimated (and published) for the coin hoard\rev{; we will need to process these ranges into a time series so that we assign a specific value to every year in the series, which is what every time-series algorithm needs.
-What we have done is assign equal probability to every year in the range. If, for instance, the range goes from 310 to 320, every year will get 0.1 probability. We have called this variable {\em link density}; years included in more ranges will have a higher {\em link density}, years included in less will get correspondingly less. We have chosen this way of processing the data, unlike \cite{iberian:trade}, since the ranges of some hoards were several centuries wide, and besides needed additional processing to work with decades instead of years, as in this case. This will correspondingly enhance the precision of the solution.}
+The FLAME database includes two fields with the start and end date estimated (and published) for the coin hoard\rev{; we will need to process these ranges into a time series so that we assign a specific value to every year in the series, which is what algorithms that deal with this kind of data need.
+
+<<trade.date.ranges, echo=FALSE, warning=F, message=F, fig.height=4, fig.cap="Histogram of the span of date ranges.">>=
+library(ggplot2)
+date_ranges <- read.csv("data/date-ranges.csv", sep=";")
+date_ranges$span <- date_ranges$End_year - date_ranges$Start_year
+ggplot(date_ranges, aes(x=span)) +
+  geom_histogram(fill="lightblue", color="black") +
+  labs(x="Span (years)",
+       y="Count") +
+  scale_y_log10() +
+  theme_minimal()
+@
+
+A logarithmic histogram of the span of these ranges is shown in figure \ref{fig:trade.date.ranges}. Most of them are in the 10-50 year range, but there is a certain amount of them that is much wider, more than 100 years; most of them are ranges of coin groups of which only the century is known. Using a single number, such as the average, to represent this span would introduce some artifacts such as the over-representation of the years "50" in a century. In \cite{iberian:trade}, we adopted that solution, which is valid as a first approximation had, however, a drawback: averages had to be taken by decade since some years in the time series were simply void of any value.
+
+Assigning a value to a random variable for which we only know it has occurred in a moment within the interval is, in general, known as {\em interval censoring} \citep{interval:censoring}. Literature includes many methods to deal with this problem, depending on the width of the ranges, what we know about the variable within the range, and the precision we want to obtain of the analysis of the time series. Allocating the variable at any point, as we indicated above, is a simple method, might be valid in the case precision of the result is not so important, and the ranges are not too wide. Unfortunately, as shown in Figure \ref{fig:trade.date.ranges}, that is not the case here, so we have to adopt another method; there are several methods available, including uniformly random allocation and random imputation. In this last case, we would have to run repeatedly the analysis to obtain a consensus on the result. This latter process, however, is relatively sophisticated and would increase the difficulty of the methodology on this paper, so we have adopted the former as a good compromise between result quality and simplicity.
+
+Thus, what we have done is allocate equal probability to every year in the range. If, for instance, the range goes from 310 to 320, every year will get 0.1 probability. We have called this variable {\em link density}; years included in more ranges will have a higher {\em link density}, years included in less will get correspondingly less. We have chosen this way of processing the data, unlike \cite{iberian:trade}, since the ranges of some hoards were several centuries wide, and besides needed additional processing to work with decades instead of years, as in this case. This will correspondingly enhance the precision of the solution.}
 
 As a result, we have two synchronous datasets with \Sexpr{length(links_time_series$decade)} decades that start in the \rev{year} \Sexpr{min_year} and end in the \rev{year} \Sexpr{max_year} \begin{itemize}
 \item Time series of trade link \rev{density} per \rev{year} within the Iberian Peninsula.
 \item Time series of trade link \rev{density} per \rev{year} between the Iberian Peninsula and elsewhere. \rev{This time series was shortened to match the same beginning and end year as the previous one.}
 \end{itemize}
 
-These processed datasets are available in R data format in the repository for this paper, \url{https://github.com/JJ/medieval-trade}\footnote{\rev{Please read the README.md file for specific location of the files used here.}}.
+These processed datasets are available in R data format in the repository for this paper, \url{https://github.com/JJ/medieval-trade}\footnote{\rev{Please read the README.md file for specific location of the datasets used here.}}.
 
 <<trade.plot, echo=FALSE, fig.cap="Time series of interior and exterior trade links for the Iberian Peninsula", fig.height=4>>=
 library(ggplot2)
