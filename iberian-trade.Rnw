@@ -188,7 +188,7 @@ The FLAME database includes two fields with the start and end date estimated (an
 <<trade.date.ranges, echo=FALSE, warning=F, message=F, fig.height=4, fig.cap="Histogram of the span of date ranges.">>=
 library(ggplot2)
 date_ranges <- read.csv("data/date-ranges.csv", sep=";")
-date_ranges$span <- date_ranges$End_year - date_ranges$Start_year
+date_ranges$span <- 1+date_ranges$End_year - date_ranges$Start_year
 ggplot(date_ranges, aes(x=span)) +
   geom_histogram(fill="lightblue", color="black") +
   labs(x="Span (years)",
