@@ -35,7 +35,7 @@
 \Title{Analyzing \rev{Late Antiquity shifts of trade} regime in the Iberian Peninsula \rev{and their causes via} change point detection methods}
 
 % MDPI internal command: Title for citation in the left column
-\TitleCitation{Before the collapse}
+\TitleCitation{}
 
 % Author Orchid ID: enter ID or remove command
 \newcommand{\orcidauthorA}{0000-0002-1385-9741} % Add \orcidA{} behind the author's name
