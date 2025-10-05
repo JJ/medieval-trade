@@ -443,8 +443,7 @@ This would allow us to answer, at least partially, RQ1: yes, there is a statisti
 
 Additionally, a visual inspection of Figure \ref{fig:trade.changepoint.multi} shows that the changepoint found does not occur, indeed, in a structural break in the data. There are several sharp increases and drops; the changepoint detection methods, since they look at averages before and after the point, are not necessarily affected by these, maybe structural, breaks. However, they may reveal a structural change in the underlying network, which we will try to analyze next trying to answer RQ2.}
 
-% What we had here before was the response to the second part of the initial RQ1. This NEEDS TO CHANGE: TODO.
-In order to do that, we will look at specific trade links, and how they evolved with time.
+\rev{Research question 2 asks if there is some change in the network that can explain that changepoint. As we have explained, FLAME data can be processed into a network with regions as nodes and {\em link density}, resulting from processing the probability of a link occurring in a specific year in the range where the coin hoard was dated, as edges.} In order to \rev{answer that question}, we will look at specific trade links, and how they evolved with time, \rev{especially before and after the found changepoint.}
 
 <<trade.link.evolution, echo=F, message=F, warning=F, fig.cap="Evolution through time of the \\protect\\rev{average trade link density by decade} with the main trading partners of the Iberian Peninsula.", fig.height=4>>=
 library(purrr)
