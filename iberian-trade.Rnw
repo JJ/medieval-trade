@@ -210,7 +210,7 @@ Assigning a value to a random variable for which we only know it has occurred in
 
 Thus, what we have done is allocate uniform probability to every year in the range. If, for instance, the range goes from 310 to 320, every year will get 0.1 probability. We have called this variable {\em link density}; years included in more ranges will have a higher {\em link density}, years included in less will get correspondingly less. We have chosen this way of processing the data, unlike \cite{iberian:trade}, since the ranges of some hoards were several centuries wide, and besides needed additional processing to work with decades instead of years, as in this case. This will correspondingly enhance the precision of the solution.}
 
-As a result, we have two synchronous datasets with \Sexpr{length(links_time_series$decade)} decades that start in the \rev{year} \Sexpr{min_year} and end in the \rev{year} \Sexpr{max_year} \begin{itemize}
+As a result, we have two synchronous datasets with \Sexpr{length(links_time_series$year)} \rev{rows} that start in the \rev{year} \Sexpr{min_year} and end in the \rev{year} \Sexpr{max_year}, \rev{namely}: \begin{itemize}
 \item Time series of trade link \rev{density} per \rev{year} within the Iberian Peninsula.
 \item Time series of trade link \rev{density} per \rev{year} between the Iberian Peninsula and elsewhere. \rev{This time series was shortened to match the same beginning and end year as the previous one.}
 \end{itemize}
@@ -292,7 +292,7 @@ The main reason for this is that the FLAME database stands at the rear end of a 
 
 We should probably consider also the fact that, in some cases, imitative currency, that is, currency that simply follows a pre-existing pattern or die, but is not indeed minted by the original authority, was in circulation in the territories once they were abandoned by Roman authorities. As far as we can tell, the FLAME database will not identify the original, but the imitative currency mint, thus taking into account the correct time frame where it was minted. This identification itself considers the absence of mints in some territories; they will simply not appear as the origin of coins in the database, thus not biasing the result. In general, FLAME database will only include data on hoards that are properly identified by a publication, as indicated in \cite{FLAME:bias}, which includes any imitation coins that will be identified by production mint, and not the pattern they used. The main issue with this geographic data is the inherent regional primary bias \citep{pyzyk2021regional}. However, we can assume that this bias is constant through time; since we are interested in the evolution of connections \rev{among and within} regions, this primary bias should not affect the results.
 
-\edit{Finally}, regional distribution is not the main focus of this paper, as we are mainly concerned with the detection of change point in a time series; in this sense, temporal biases would greatly affect results, in the sense that if a change in the number of links is indicative simply of absence of evidence for that particular period and not absence of links, the result would be compromised. \cite{FLAME:bias} mentions that the early medieval period has only very recently been a source of interest, and that in many cases sites linked to that period will not be excavated and even, in some cases, bulldozed. As a matter of fact, there is a notable absence of links in some specific decades, as shown in Figure \ref{fig:trade.plot}. On the other hand, we should take into account that while there is bias in choosing the places to excavate, the year where coins were minted or used is an {\em output} which cannot be filtered beforehand. This means that unless some specific region was the only source of coins or hoards for a specific period, or coins from some period were simply dropped or results not published, we should expect an (unquantified) smaller bias in the time series of links we are using in this paper.
+\edit{Finally}, regional distribution is not the main focus of this paper, as we are mainly concerned with the detection of change point in a time series; in this sense, temporal biases would greatly affect results, in the sense that if a change in the number of links is indicative simply of absence of evidence for that particular period and not absence of links, the result would be compromised. \cite{FLAME:bias} mentions that the early medieval period has only very recently been a source of interest, and that in many cases sites linked to that period will not be excavated and even, in some cases, bulldozed. On the other hand, we should take into account that while there is bias in choosing the places to excavate, the year where coins were minted or used is an {\em output} which cannot be filtered beforehand. This means that unless some specific region was the only source of coins or hoards for a specific period, or coins from some period were simply dropped or results not published, we should expect an (unquantified) smaller bias in the time series of links we are using in this paper.
 
 The second type of bias we should expect is temporal, that is, some periods get more hoards than others, so that the number of hoards found reflect  the interest of numismatists and archaeologists on those periods more than the economic activity. We will try to validate qualitatively the time series with known studies in the period and area we are interested; for instance, we can match the highs and lows in the time series with existing research in the area of numismatics and economics history. \cite{kurt2020minting} describes history, economic and minting activity of the Visigothic reigns in the Iberian Peninsula, and notes that it was kept at a low level, mainly reproducing Eastern Empire coins. This dearth of economic activity can be seen \ref{fig:trade.overview}, with a long depression lasting for two centuries and reflected in very few trade links during the 5th and 6th centuries. This low activity is qualified in \cite{castro2016absent}, noting also a certain recovery in the 7th century after a minimum of coin weight in the first half of the century, followed by a certain recuperation in the early 8th century. Again, this peak is shown by the end of the time series that we are using in this paper, Figure \ref{fig:trade.overview}. Additionally, a small peak during the 7th century matches the invasion of the Spanish South-East by the Byzantine empire that made the circulation of coins minted there much more common together with a certain increase in commerce and economic activity \citep{pliego2020rethinking} during that period. In general, this series, at least qualitatively, matches known economic activity patterns and the corresponding circulation of coins in our area of study, the Iberian Peninsula.
 
@@ -413,8 +413,8 @@ ggplot(external_internal_df, aes(x=year)) +
   geom_vline(xintercept = multi_changepoint_year, linetype="dashed", color="red") +
   scale_color_manual(values=c("External links"="#E69F00", "Internal links"="#56B4E9")) +
   labs(title="Trade links in the Iberian Peninsula",
-       x="Decade",
-       y="Number of trade links") +
+       x="Year",
+       y="Trade density") +
   theme_minimal() +
   theme(legend.title = element_blank())
 
@@ -472,7 +472,7 @@ ggplot()+
   geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Palestinian Territory - Spain",],aes(x=decade, y=links, color="Palestine"))+
   geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Germany - Spain",],aes(x=decade, y=links, color="Germany"))+
   scale_colour_manual(values=unname(glasbey()))+
-  labs( x="Decade",y="Number of links") +
+  labs( x="Year",y="Link density") +
   xlim(c(250,750))+ theme_minimal()
 @
 
@@ -513,7 +513,7 @@ This will make the response of the second part of research question one partiall
 
 <<trade.link.evolution.relative, echo=F, message=F, warning=F, fig.cap="Evolution through time of the number of links with the main trading partners of the Iberian Peninsula.", fig.height=5>>=
 ggplot(regional_links_summary, aes( x=decade, y=links))+geom_bar(stat="identity", position="fill", aes(fill=normalized_trade_link))+
-  scale_fill_manual(values=unname(glasbey()))+theme_minimal()+labs( x="Decade",y="Proportion of links") +
+  scale_fill_manual(values=unname(glasbey()))+theme_minimal()+labs( x="Year",y="Proportion of links") +
   xlim(c(300,750))
 @
 
