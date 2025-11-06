@@ -214,7 +214,7 @@ As a result, we have two synchronous datasets with \Sexpr{length(links_time_seri
 
 These processed datasets are available in R data format in the repository for this paper, \url{https://github.com/JJ/medieval-trade}\footnote{\edit{Please read the README.md file for specific location of the datasets used here.}}.
 
-<<trade.plot, echo=FALSE, fig.cap="Time series of interior and exterior trade links for the Iberian Peninsula", fig.height=4>>=
+<<trade.plot, echo=FALSE, fig.cap="Time series of interior and exterior trade link density for the Iberian Peninsula", fig.height=4>>=
 library(ggplot2)
 library(ggthemes)
 ggplot(links_time_series, aes(x=year)) +
@@ -233,7 +233,7 @@ Figure \ref{fig:trade.plot} is a representation of the two time series mentioned
 \subsection{Overview of coin hoard data}
 \label{ssec:overview}
 
-<<trade.overview, echo=FALSE, fig.height=4, fig.cap="Graph plot of the regional network using (current) regions as nodes. Edge size is proportional to weight, that is, number of links", message=FALSE>>=
+<<trade.overview, echo=FALSE, fig.height=4, fig.cap="Graph plot of the regional network using (current) regions as nodes. Edge size is proportional to weight, that is, link density", message=FALSE>>=
 library(igraph)
 regional_links <- read.csv("data/annual-regional-links.csv", sep=";", header=TRUE)
 regional_links$weight <- regional_links$value
@@ -246,7 +246,7 @@ plot(regional_graph, vertex.size=2, vertex.label.cex=0.6, edge.arrow.size=0.2,
      vertex.label.dist=0.5)
 @
 
-The connectivity of the dataset is represented in figure \ref{fig:trade.overview}; where, as shown above, the vertices are current-day regions, and edges have a weight equivalent to the overall number of links.\footnote{Please note that we are showing only connections from Spain and Portugal to other places, thus the network is centered in Spain with a secondary center in Portugal; it should be understood only for visualization and not for network analysis, since all connections between nodes that are not Spain and Portugal have been dropped.}
+The connectivity of the dataset is represented in figure \ref{fig:trade.overview}; where, as shown above, the vertices are current-day regions, and edges have a weight equivalent to the overall link density.\footnote{Please note that we are showing only connections from Spain and Portugal to other places, thus the network is centered in Spain with a secondary center in Portugal; it should be understood only for visualization and not for network analysis, since all connections between nodes that are not Spain and Portugal have been dropped.}
 
 <<trade.edge.weights, echo=FALSE, fig.height=4, fig.cap="Edge weights in the regional network", message=FALSE>>=
 library(dplyr)
@@ -289,7 +289,7 @@ The main reason for this is that the FLAME database stands at the rear end of a 
 
 We should probably consider also the fact that, in some cases, imitative currency, that is, currency that simply follows a pre-existing pattern or die, but is not indeed minted by the original authority, was in circulation in the territories once they were abandoned by Roman authorities. As far as we can tell, the FLAME database will not identify the original, but the imitative currency mint, thus taking into account the correct time frame where it was minted. This identification itself considers the absence of mints in some territories; they will simply not appear as the origin of coins in the database, thus not biasing the result. In general, FLAME database will only include data on hoards that are properly identified by a publication, as indicated in \cite{FLAME:bias}, which includes any imitation coins that will be identified by production mint, and not the pattern they used. The main issue with this geographic data is the inherent regional primary bias \citep{pyzyk2021regional}. However, we can assume that this bias is constant through time; since we are interested in the evolution of connections \edit{among and within} regions, this primary bias should not affect the results.
 
-\edit{Finally}, regional distribution is not the main focus of this paper, as we are mainly concerned with the detection of change point in a time series; in this sense, temporal biases would greatly affect results, in the sense that if a change in the number of links is indicative simply of absence of evidence for that particular period and not absence of links, the result would be compromised. \cite{FLAME:bias} mentions that the early medieval period has only very recently been a source of interest, and that in many cases sites linked to that period \edit{would} not be excavated and even, in some cases, bulldozed. On the other hand, we should take into account that while there is bias in choosing the places to excavate, the year where coins were minted or used is an {\em output} \edit{or result of these excavations} which cannot be filtered beforehand. This means that unless some specific region was the only source of coins or hoards for a specific period, or coins from some period were simply dropped or results not published, we should expect an (unquantified) smaller bias in the time series of links we are using in this paper.
+\edit{Finally}, regional distribution is not the main focus of this paper, as we are mainly concerned with the detection of change point in a time series; in this sense, temporal biases would greatly affect results, in the sense that if a change in the link density is indicative simply of absence of evidence for that particular period and not absence of links, the result would be compromised. \cite{FLAME:bias} mentions that the early medieval period has only very recently been a source of interest, and that in many cases sites linked to that period \edit{would} not be excavated and even, in some cases, bulldozed. On the other hand, we should take into account that while there is bias in choosing the places to excavate, the year where coins were minted or used is an {\em output} \edit{or result of these excavations} which cannot be filtered beforehand. This means that unless some specific region was the only source of coins or hoards for a specific period, or coins from some period were simply dropped or results not published, we should expect an (unquantified) smaller bias in the time series of links we are using in this paper.
 
 The second type of bias we should expect is temporal, that is, some periods get more hoards than others, so that the number of hoards found reflects the interest of numismatists and archaeologists on those periods more than the economic activity. We will try to validate qualitatively the time series with known studies in the period and area we are interested; for instance, we can match the highs and lows in the time series with existing research in the area of numismatics and economics history. \cite{kurt2020minting} describes history, economic and minting activity of the Visigothic reigns in the Iberian Peninsula, and notes that it was kept at a low level, mainly reproducing Eastern Empire coins. This dearth of \edit{trade links} can be seen \edit{in Figure} \ref{fig:trade.overview}, with a long depression lasting for two centuries and reflected in very few trade links during the 5th and 6th centuries. This low activity is qualified in \cite{castro2016absent}, noting also a certain recovery in the 7th century after a minimum of coin weight in the first half of the century, followed by a certain recuperation in the early 8th century. Again, this peak is shown by the end of the time series that we are using in this paper, Figure \ref{fig:trade.overview}. Additionally, a small peak during the 7th century matches the invasion of the Spanish South-East by the Byzantine empire that made the circulation of coins minted there much more common together with a certain increase in commerce and economic activity \citep{pliego2020rethinking} during that period. In general, this series, at least qualitatively, matches known economic activity patterns and the corresponding circulation of coins in our area of study, the Iberian Peninsula.
 
@@ -319,7 +319,7 @@ Additionally, we will try to connect our results to other sources of information
 \section{Results}
 \label{sec:results}
 
-<<trade.changepoint, echo=FALSE, fig.height=4, fig.cap="Changepoint in the Iberian trade links time series, with mean before and after the changepoint in red.", message=FALSE>>=
+<<trade.changepoint, echo=FALSE, fig.height=4, fig.cap="Changepoint in the time series of Iberian trade link density, with mean before and after the changepoint in red.", message=FALSE>>=
 library(changepoint)
 all_links_changepoint <- cpt.meanvar(all_annual_iberian_links$link_density, method="AMOC")
 links_changepoint_date <- all_annual_iberian_links$year[all_links_changepoint@cpts]
@@ -328,7 +328,7 @@ ticks.years <- all_annual_iberian_links$year[ticks]
 
 plot(all_links_changepoint,xaxt = 'n',
      xlab = "Year",
-     ylab = "Number of links",
+     ylab = "Link density",
      main = "",
      col = "blue", lwd = 2, cex.main = 1.5, cex.lab = 1.2, cex.axis = 1.2)
 axis(1, at = ticks, labels=ticks.years)
@@ -370,7 +370,7 @@ and \Sexpr{max(all_links_changepoint_stats$changepoint)}. Please observe that al
 
 Before looking for a possible cause, we should try and place the {\em internal} Iberian traffic changepoint, this being an important component of all the trade links; any variation withing the range we have would point out to important internal causes for the change of regime, that would contribute (or detract) from any external cause.
 
-<<trade.changepoint.internal, echo=FALSE, fig.height=4, fig.cap="Changepoint in the internal Iberian trade links time series, with mean before and after the changepoint in red.", message=FALSE>>=
+<<trade.changepoint.internal, echo=FALSE, fig.height=4, fig.cap="Changepoint in the time series of intra-Iberian trade link density, with mean before and after the changepoint in red.", message=FALSE>>=
 links_changepoint <- cpt.mean(annual_iberian_links$link_density, method="AMOC")
 internal_links_changepoint_date <- annual_iberian_links$year[links_changepoint@cpts[1]]
 ticks <- c(1,100,200,300,400,500)
@@ -378,7 +378,7 @@ ticks.years <- annual_iberian_links$year[ticks]
 
 plot(links_changepoint,xaxt = 'n',
      xlab = "Year",
-     ylab = "Number of links",
+     ylab = "Link density",
      main = "",
      col = "green", lwd = 2, cex.main = 1.5, cex.lab = 1.2, cex.axis = 1.2)
 axis(1, at = ticks, labels=ticks.years)
@@ -474,7 +474,7 @@ ggplot()+
   xlim(c(250,750))+ theme_minimal()
 @
 
-In Figure \ref{fig:trade.link.evolution} we show the evolution in time of the top links (as indicated in Table \ref{tab:trade.edge.weights}); these, unless noted otherwise, are connections with Spain. We see a crash in the number of links across the board, but we note that the links with the United Kingdom (highlighted also with points at every value) started to decline several decades before the changepoints indicated above. Several different \edit{trading partners then became the main ones}, notably Italy, Turkey (which hosted both capitals of the empire), but also France, the Netherlands, and most notably, connections within the current territory of Spain (also marked with \edit{dots in that figure}), which reach its peak here. Eventually, these also fall to a minimum level right around the time of the found changepoint \edit{in the first quarter of the 5th century}.
+In Figure \ref{fig:trade.link.evolution} we show the evolution in time of the top links (as indicated in Table \ref{tab:trade.edge.weights}); these, unless noted otherwise, are connections with Spain. We see a crash in the link density across the board, but we note that the links with the United Kingdom (highlighted also with points at every value) started to decline several decades before the changepoints indicated above. Several different \edit{trading partners then became the main ones}, notably Italy, Turkey (which hosted both capitals of the empire), but also France, the Netherlands, and most notably, connections within the current territory of Spain (also marked with \edit{dots in that figure}), which reach its peak here. Eventually, these also fall to a minimum level right around the time of the found changepoint \edit{in the first quarter of the 5th century}.
 
 <<trade.link.evolution.detail, echo=F, message=F, warning=F, fig.cap="Detail of the ratio of average trade links after the changepoint for the main trading partners.", fig.height=4>>=
 regional_links_pasted_precp <- regional_links_pasted %>% filter( year < multi_changepoint_year )
@@ -498,7 +498,7 @@ ggplot(differences_links, aes(x=reorder(cs, -difference), y=difference, fill=cs)
   theme(legend.position = "none")
 @
 
-\edit{We have a different look at how trade changed after the changepoint in Figure \ref{fig:trade.link.evolution.detail}, where we show the ratio of average number of links after and before the changepoint for the top links; that is, we take the annual average {\em link density} before the changepoint in year \Sexpr{multi_changepoint_year} and divide it by the same average after the changepoint. Even taking into account that this average includes some years that might have not been very representative (beginning of the series, see Figure \ref{fig:trade.link.evolution.relative}, the fact that trade for the main partners such as Italy, and the most important one, the UK, must have had a impact in the life of the inhabitants of the peninsula, even more so when internal trade seems to have decreased tenfold or more (in the case of trade between the areas now covered by Portugal and Spain).}
+\edit{We have a different look at how trade changed after the changepoint in Figure \ref{fig:trade.link.evolution.detail}, where we show the ratio of average link density after and before the changepoint for the top links; that is, we take the annual average {\em link density} before the changepoint in year \Sexpr{multi_changepoint_year} and divide it by the same average after the changepoint. Even taking into account that this average includes some years that might have not been very representative (beginning of the series, see Figure \ref{fig:trade.link.evolution.relative}, the fact that trade for the main partners such as Italy, and the most important one, the UK, must have had a impact in the life of the inhabitants of the peninsula, even more so when internal trade seems to have decreased tenfold or more (in the case of trade between the areas now covered by Portugal and Spain).}
 
 The peak in \edit{link density} right before the changepoint in "border" territories such as France and the Netherlands might be due to two different reasons: in times of trouble, when different groups such as the Vandals or the Alans were pressuring from the Rhine \citep{heather2009did} \edit{and} people resorted to burying their treasures, \edit{thus biasing the number of hoards found}; but the second reason is that since there were troops fighting in those areas which needed to be supplied, the trade with them increased over other, relatively more peaceful, times. \edit{However, inherent biases in the dataset make it impossible to establish, just from data, which of the two reasons was more important or if there was a third, different cause, of these small peaks in trade. At any rate, this is a secondary issue, which only illustrates how network analysis might help establish hypotheses that would then have to be proved using cliometrics, classical or a {\em tout court} approach.}
 
@@ -506,7 +506,7 @@ However, what is clear is that the changepoint is a downstream event caused by t
 
 \edit{In general, this points to local causes in the collapse of trade, with no evidence of a direct causal relationship with changepoints encountered in the global trade links dataset analyzed in \cite{changepoint.statphys}. There is no evidence that} the defeat and consequent settlement of different peoples South of the Danube provoke\edit{d the flight of troops from Britain} and subsequent\edit{or maybe concomitant, probable} collapse of the economy\edit{. W}e might establish some indirect cause-effect relationship, however: the loss of the {\em via militaris} and the Danube \citep{larnach2016all} \edit{as a trading venue}, and the troops lost at the battle of Adrianople, impeded any help of troops from those provinces (which included also Goths) to the Western emperor attacked by the usurper; in that sense, they are both part of a larger pattern of resettlement of different human groups displaced by climate change and other human groups, crossing the natural borders of the empire, which made the extensive logistic and trade routes maintained by the empire go into disrepair, as well as provoke a collapse of demand of goods traded across a long distance.
 
-<<trade.link.evolution.relative, echo=F, message=F, warning=F, fig.cap="Evolution through time of the number of links with the main trading partners of the Iberian Peninsula.", fig.height=5>>=
+<<trade.link.evolution.relative, echo=F, message=F, warning=F, fig.cap="Evolution through time of the link density with the main trading partners of the Iberian Peninsula.", fig.height=5>>=
 ggplot(regional_links_summary, aes( x=decade, y=links))+geom_bar(stat="identity", position="fill", aes(fill=normalized_trade_link))+
   scale_fill_manual(values=unname(glasbey()))+theme_minimal()+labs( x="Year",y="Proportion of links") +
   xlim(c(300,750))
