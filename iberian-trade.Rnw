@@ -27,12 +27,12 @@
 %\pdfoutput=1 % Uncommented for upload to arXiv.org
 %\CorrStatement{yes}  % For updates
 %\longauthorlist{yes} % For many authors that exceed the left citation part
-\newcommand{\rev}[1]{#1}
+\newcommand{\edit}[1]{#1}
 % rev should highlight changes in the revised version with a different color
-\newcommand{\edit}[1]{{\color{purple} #1}}
+\newcommand{\rev}[1]{{\color{purple} #1}}
 
 % Full title of the paper (Capitalized)
-\Title{Analyzing \edit{Late Antiquity shifts of trade} regime in the Iberian Peninsula \edit{and their causes via} change point detection methods}
+\Title{Analyzing Late Antiquity shifts of trade regime in the Iberian Peninsula and their causes via change point detection methods}
 
 % MDPI internal command: Title for citation in the left column
 \TitleCitation{}
@@ -44,15 +44,12 @@
 
 \AuthorNames{Merelo-Guervós, Juan J.}
 
-
-% Affiliations / Addresses (Add [1] after \address if there is only one affiliation.)
 \address{%
 $^{1}$ \quad Department of Computer Engineering, Automatics and Robotics, University of Granada, Granada, Spain; jmerelo@ugr.es
 }
 
 \corres{Correspondence: jmerelo@ugr.es}
 
-% Abstract (Do not insert blank lines, i.e. \\)
 \abstract{History attempts to make sense of disparate data trying to create a discourse \edit{that lays a series of} events with crisp cause-effect relationships \edit{in a sequence}. \edit{Epochal shifts, such as the change from Antiquity to Middle Ages, are especially complex since they involve a large number of economic, political and even religious factors which occur over long periods and that might overlap and feed back each other, making this cause-effects sequence difficult to establish.}
 In this research we adopt a data-driven and well-established methodology to identify, with a certain degree of precision, the moment when a shift happened, and from there arrive at its possible causes. In this paper we will use historical coin hoard data to \edit{find out whether such a shift is detected} in a peripheral part of the Roman Empire, the Iberian Peninsula. \edit{To do so, w}e will apply different changepoint analysis methods to a time series \edit{of trade links} created from that data, and work back from that result, \edit{analyzing the structure of the trade networks before and after the link. Thus, we move from identifying {\em when} the shift happened to identifying {\em where} it took place, which in turn allows us to get investigate {\em why} it happened; namely,} historical events \edit{that could have caused it}. This methodology can be used to analyze epochal changes in several steps using time-stamped network data, \edit{possibly finding disregarded causes or cause-effect links that could have been overlooked by qualitative methods.}
 }
