@@ -1,0 +1,1784 @@
+[
+  {
+    "Name": "Cyrene-Apollonia",
+    "Lower_Date": 9999,
+    "Low_Date_E": 9999,
+    "Upper_Date": 100,
+    "Up_Date_E": 45,
+    "Segment_s": "Conjectured",
+    "passabilit": 0.588945
+  },
+  {
+    "Name": "Coptos-Myos Hormos",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Certain",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Myos Hormos",
+    "Lower_Date": 100,
+    "Low_Date_E": 50,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Myos Hormos",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Myos Hormos",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": 1,
+    "Up_Date_E": 49,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Myos Hormos",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Myos Hormos",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Myos Hormos",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Myos Hormos",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Myos Hormos",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": -49,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Edfu Apollonopolis Magna-Marsa Nakari",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": -49,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Edfu Apollonopolis Magna-Marsa Nakari",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": -49,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Edfu Apollonopolis Magna-Marsa Nakari",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": -49,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Edfu Apollonopolis Magna-Marsa Nakari",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": -49,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Edfu Apollonopolis Magna-Berenike",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": -49,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Edfu Apollonopolis Magna-Berenike",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": 150,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Edfu Apollonopolis Magna-Berenike",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 150,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Edfu Apollonopolis Magna-Berenike",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": 150,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Edfu Apollonopolis Magna-Berenike",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": 150,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Edfu Apollonopolis Magna-Berenike",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": 150,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Edfu Apollonopolis Magna-Berenike",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 150,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Edfu Apollonopolis Magna-Berenike",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Edfu Apollonopolis Magna-Berenike",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": 150,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Edfu Apollonopolis Magna-Berenike",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": 150,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Edfu Apollonopolis Magna-Berenike",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": -49,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Edfu Apollonopolis Magna-Berenike",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 150,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Edfu Apollonopolis Magna-Berenike",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 150,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Edfu Apollonopolis Magna-Berenike",
+    "Lower_Date": 200,
+    "Low_Date_E": 50,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": 200,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 0.808426
+  },
+  {
+    "Name": "Edfu Apollonopolis Magna-Berenike",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": 200,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 0.80985
+  },
+  {
+    "Name": "Edfu Apollonopolis Magna-Berenike",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": 100,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 0.792423
+  },
+  {
+    "Name": "Edfu Apollonopolis Magna-Berenike",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": 100,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 0.808843
+  },
+  {
+    "Name": "Edfu Apollonopolis Magna-Berenike",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Edfu Apollonopolis Magna-Berenike",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Myos Hormos-Berenike",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Edfu Apollonopolis Magna-Marsa Nakari",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": 1,
+    "Up_Date_E": 49,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Edfu Apollonopolis Magna-Marsa Nakari",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Marsa Nakari-Berenike",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Marsa Nakari-Berenike",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Edfu Apollonopolis Magna-Berenike",
+    "Lower_Date": 250,
+    "Low_Date_E": 50,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Edfu Apollonopolis Magna-Berenike",
+    "Lower_Date": 250,
+    "Low_Date_E": 50,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Kaine-Mons Claudianus",
+    "Lower_Date": 100,
+    "Low_Date_E": 50,
+    "Upper_Date": 150,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Kaine-Mons Claudianus",
+    "Lower_Date": 100,
+    "Low_Date_E": 50,
+    "Upper_Date": 150,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Kaine-Mons Claudianus",
+    "Lower_Date": 100,
+    "Low_Date_E": 50,
+    "Upper_Date": 150,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Kaine-Mons Claudianus",
+    "Lower_Date": 100,
+    "Low_Date_E": 50,
+    "Upper_Date": 150,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Kaine-Mons Claudianus",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Kaine-Mons Claudianus",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Kaine-Mons Claudianus",
+    "Lower_Date": 100,
+    "Low_Date_E": 50,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Kaine-Mons Claudianus",
+    "Lower_Date": 100,
+    "Low_Date_E": 50,
+    "Upper_Date": 200,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Kaine-Mons Porphyrites",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Kaine-Mons Porphyrites",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Kaine-Mons Porphyrites",
+    "Lower_Date": 250,
+    "Low_Date_E": 50,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Kaine-Mons Porphyrites",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Kaine-Mons Porphyrites",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Kaine-Mons Porphyrites",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 150,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Kaine-Mons Porphyrites",
+    "Lower_Date": 100,
+    "Low_Date_E": 50,
+    "Upper_Date": 150,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Kaine-Mons Porphyrites",
+    "Lower_Date": 100,
+    "Low_Date_E": 50,
+    "Upper_Date": 150,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Kaine-Mons Porphyrites",
+    "Lower_Date": 100,
+    "Low_Date_E": 50,
+    "Upper_Date": 150,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Kaine-Mons Porphyrites",
+    "Lower_Date": 200,
+    "Low_Date_E": 50,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Kaine-Mons Porphyrites",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 150,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Kaine-Mons Porphyrites",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 50,
+    "Up_Date_E": 0,
+    "Segment_s": "Certain",
+    "passabilit": 0.564201
+  },
+  {
+    "Name": "Kaine-Mons Porphyrites",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 100,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Kaine-Mons Porphyrites",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 50,
+    "Up_Date_E": 0,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Kaine-Mons Porphyrites",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": -49,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 200,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": -49,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": 100,
+    "Low_Date_E": 50,
+    "Upper_Date": 200,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": 300,
+    "Low_Date_E": 50,
+    "Upper_Date": 300,
+    "Up_Date_E": 9999,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": 300,
+    "Low_Date_E": 50,
+    "Upper_Date": 300,
+    "Up_Date_E": 9999,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": 300,
+    "Low_Date_E": 50,
+    "Upper_Date": 300,
+    "Up_Date_E": 9999,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 200,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": 100,
+    "Low_Date_E": 50,
+    "Upper_Date": 200,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 50,
+    "Up_Date_E": 0,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 200,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Edfu Apollonopolis Magna-Berenike",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": -49,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 150,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 100,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": 200,
+    "Low_Date_E": 50,
+    "Upper_Date": 200,
+    "Up_Date_E": 0,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Edfu Apollonopolis Magna-Berenike",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": 150,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Edfu Apollonopolis Magna-Berenike",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": 150,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": 250,
+    "Low_Date_E": 50,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": 100,
+    "Low_Date_E": 50,
+    "Upper_Date": 150,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Deir Abu Shaar-Myos Hormos",
+    "Lower_Date": 150,
+    "Low_Date_E": 50,
+    "Upper_Date": 150,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Deir Abu Shaar-Myos Hormos",
+    "Lower_Date": 150,
+    "Low_Date_E": 50,
+    "Upper_Date": 150,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Deir Abu Shaar-Myos Hormos",
+    "Lower_Date": 150,
+    "Low_Date_E": 50,
+    "Upper_Date": 150,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Deir Abu Shaar-Myos Hormos",
+    "Lower_Date": 100,
+    "Low_Date_E": 50,
+    "Upper_Date": 200,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Kaine-Mons Porphyrites",
+    "Lower_Date": 150,
+    "Low_Date_E": 50,
+    "Upper_Date": 150,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": -49,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": 200,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": -49,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Kaine-Mons Porphyrites",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Kaine-Mons Porphyrites",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 50,
+    "Up_Date_E": 0,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Kaine-Mons Porphyrites",
+    "Lower_Date": 250,
+    "Low_Date_E": 50,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Kaine-Mons Porphyrites",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Kaine-Mons Porphyrites",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 50,
+    "Up_Date_E": 0,
+    "Segment_s": "Conjectured",
+    "passabilit": 0.772024
+  },
+  {
+    "Name": "Kaine-Mons Porphyrites",
+    "Lower_Date": 250,
+    "Low_Date_E": 50,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 0.772024
+  },
+  {
+    "Name": "Kaine-Mons Porphyrites",
+    "Lower_Date": 200,
+    "Low_Date_E": 50,
+    "Upper_Date": 200,
+    "Up_Date_E": 0,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Kaine-Mons Porphyrites",
+    "Lower_Date": 250,
+    "Low_Date_E": 50,
+    "Upper_Date": 250,
+    "Up_Date_E": 0,
+    "Segment_s": "Certain",
+    "passabilit": 0.563913
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": 100,
+    "Low_Date_E": 50,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Edfu Apollonopolis Magna-Berenike",
+    "Lower_Date": 200,
+    "Low_Date_E": 50,
+    "Upper_Date": 200,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Edfu Apollonopolis Magna-Berenike",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": 300,
+    "Low_Date_E": 50,
+    "Upper_Date": 300,
+    "Up_Date_E": 9999,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 50,
+    "Up_Date_E": 0,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": 300,
+    "Low_Date_E": 50,
+    "Upper_Date": 300,
+    "Up_Date_E": 9999,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": 200,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": -49,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 200,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 0.783295
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 200,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": -49,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": -49,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": 200,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": -49,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": 100,
+    "Low_Date_E": 50,
+    "Upper_Date": 200,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Berenike",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": 200,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Myos Hormos",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Edfu Apollonopolis Magna-Berenike",
+    "Lower_Date": 200,
+    "Low_Date_E": 50,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Myos Hormos",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Myos Hormos",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Myos Hormos",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coptos-Myos Hormos",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Deir Abu Shaar-Myos Hormos",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Deir Abu Shaar-Myos Hormos",
+    "Lower_Date": 50,
+    "Low_Date_E": 49,
+    "Upper_Date": 250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Edfu Apollonopolis Magna-Berenike",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": -49,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Edfu Apollonopolis Magna-Berenike",
+    "Lower_Date": -200,
+    "Low_Date_E": 9999,
+    "Upper_Date": 150,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Julias-Caesarea Paneas",
+    "Lower_Date": 130,
+    "Low_Date_E": 10,
+    "Upper_Date": 700,
+    "Up_Date_E": 100,
+    "Segment_s": "Certain",
+    "passabilit": 1
+  },
+  {
+    "Name": "Sea of Galilee-Neue",
+    "Lower_Date": 162,
+    "Low_Date_E": 0,
+    "Upper_Date": 700,
+    "Up_Date_E": 100,
+    "Segment_s": "Certain",
+    "passabilit": 1
+  },
+  {
+    "Name": "Sea of Galilee-Neue",
+    "Lower_Date": 162,
+    "Low_Date_E": 0,
+    "Upper_Date": 700,
+    "Up_Date_E": 100,
+    "Segment_s": "Certain",
+    "passabilit": 1
+  },
+  {
+    "Name": "Sea of Galilee-Neue",
+    "Lower_Date": 162,
+    "Low_Date_E": 0,
+    "Upper_Date": 700,
+    "Up_Date_E": 100,
+    "Segment_s": "Certain",
+    "passabilit": 1
+  },
+  {
+    "Name": "Golan-Tell Ashtara",
+    "Lower_Date": 200,
+    "Low_Date_E": 38,
+    "Upper_Date": 700,
+    "Up_Date_E": 100,
+    "Segment_s": "Certain",
+    "passabilit": 1
+  },
+  {
+    "Name": "Golan-Tell Ashtara",
+    "Lower_Date": 200,
+    "Low_Date_E": 38,
+    "Upper_Date": 700,
+    "Up_Date_E": 100,
+    "Segment_s": "Certain",
+    "passabilit": 1
+  },
+  {
+    "Name": "Zoara-Aeropolis",
+    "Lower_Date": 150,
+    "Low_Date_E": 50,
+    "Upper_Date": 200,
+    "Up_Date_E": 50,
+    "Segment_s": "Certain",
+    "passabilit": 0.437827
+  },
+  {
+    "Name": "Golan Road",
+    "Lower_Date": 200,
+    "Low_Date_E": 38,
+    "Upper_Date": 700,
+    "Up_Date_E": 100,
+    "Segment_s": "Certain",
+    "passabilit": 1
+  },
+  {
+    "Name": "Golan Road",
+    "Lower_Date": 200,
+    "Low_Date_E": 38,
+    "Upper_Date": 700,
+    "Up_Date_E": 100,
+    "Segment_s": "Certain",
+    "passabilit": 1
+  },
+  {
+    "Name": "Hebron-En Tamar",
+    "Lower_Date": 9999,
+    "Low_Date_E": 9999,
+    "Upper_Date": 350,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 0.789604
+  },
+  {
+    "Name": "Hebron-En Tamar",
+    "Lower_Date": 9999,
+    "Low_Date_E": 9999,
+    "Upper_Date": 350,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 0.736434
+  },
+  {
+    "Name": "Gharandal-Horvat Dafit",
+    "Lower_Date": 9999,
+    "Low_Date_E": 9999,
+    "Upper_Date": 350,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Gharandal-Horvat Dafit",
+    "Lower_Date": 9999,
+    "Low_Date_E": 9999,
+    "Upper_Date": 350,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Yotvata-Rujm Taba",
+    "Lower_Date": 9999,
+    "Low_Date_E": 9999,
+    "Upper_Date": 350,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Zoara-Aeropolis",
+    "Lower_Date": 150,
+    "Low_Date_E": 50,
+    "Upper_Date": 200,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Zoara-Aeropolis",
+    "Lower_Date": 150,
+    "Low_Date_E": 50,
+    "Upper_Date": 200,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 0.642816
+  },
+  {
+    "Name": "Sea of Galilee-Neue",
+    "Lower_Date": 162,
+    "Low_Date_E": 0,
+    "Upper_Date": 700,
+    "Up_Date_E": 100,
+    "Segment_s": "Conjectured",
+    "passabilit": 0.592035
+  },
+  {
+    "Name": "Laodicea ad Lycum-Hierapolis",
+    "Lower_Date": 9999,
+    "Low_Date_E": 9999,
+    "Upper_Date": 700,
+    "Up_Date_E": 50,
+    "Segment_s": "Certain",
+    "passabilit": 0.744677
+  },
+  {
+    "Name": "Milet-Didyma",
+    "Lower_Date": -500,
+    "Low_Date_E": 100,
+    "Upper_Date": -250,
+    "Up_Date_E": 50,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Maastricht-Heerlen",
+    "Lower_Date": -10,
+    "Low_Date_E": 20,
+    "Upper_Date": 406,
+    "Up_Date_E": 300,
+    "Segment_s": "Certain",
+    "passabilit": 0.546363
+  },
+  {
+    "Name": "Coriovallum-Iuliacum",
+    "Lower_Date": -10,
+    "Low_Date_E": 20,
+    "Upper_Date": 406,
+    "Up_Date_E": 300,
+    "Segment_s": "Hypothetical",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coriovallum-Iuliacum",
+    "Lower_Date": -10,
+    "Low_Date_E": 20,
+    "Upper_Date": 406,
+    "Up_Date_E": 300,
+    "Segment_s": "Certain",
+    "passabilit": 1
+  },
+  {
+    "Name": "Maastricht-Heerlen",
+    "Lower_Date": -10,
+    "Low_Date_E": 20,
+    "Upper_Date": 406,
+    "Up_Date_E": 300,
+    "Segment_s": "Certain",
+    "passabilit": 1
+  },
+  {
+    "Name": "Maastricht-Heerlen",
+    "Lower_Date": -10,
+    "Low_Date_E": 20,
+    "Upper_Date": 406,
+    "Up_Date_E": 300,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Tongeren-Maastricht",
+    "Lower_Date": -10,
+    "Low_Date_E": 20,
+    "Upper_Date": 406,
+    "Up_Date_E": 300,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coriovallum-Iuliacum",
+    "Lower_Date": -10,
+    "Low_Date_E": 20,
+    "Upper_Date": 406,
+    "Up_Date_E": 300,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coriovallum-Iuliacum",
+    "Lower_Date": -10,
+    "Low_Date_E": 20,
+    "Upper_Date": 406,
+    "Up_Date_E": 300,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coriovallum-Iuliacum",
+    "Lower_Date": -10,
+    "Low_Date_E": 20,
+    "Upper_Date": 406,
+    "Up_Date_E": 300,
+    "Segment_s": "Certain",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coriovallum-Iuliacum",
+    "Lower_Date": -10,
+    "Low_Date_E": 20,
+    "Upper_Date": 406,
+    "Up_Date_E": 300,
+    "Segment_s": "Certain",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coriovallum-Iuliacum",
+    "Lower_Date": -10,
+    "Low_Date_E": 20,
+    "Upper_Date": 406,
+    "Up_Date_E": 300,
+    "Segment_s": "Certain",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coriovallum-Iuliacum",
+    "Lower_Date": -10,
+    "Low_Date_E": 20,
+    "Upper_Date": 406,
+    "Up_Date_E": 300,
+    "Segment_s": "Certain",
+    "passabilit": 1
+  },
+  {
+    "Name": "Maastricht-Tüddern",
+    "Lower_Date": 9999,
+    "Low_Date_E": 9999,
+    "Upper_Date": 406,
+    "Up_Date_E": 9999,
+    "Segment_s": "Certain",
+    "passabilit": 1
+  },
+  {
+    "Name": "Maastricht-Tüddern",
+    "Lower_Date": 9999,
+    "Low_Date_E": 9999,
+    "Upper_Date": 406,
+    "Up_Date_E": 9999,
+    "Segment_s": "Hypothetical",
+    "passabilit": 1
+  },
+  {
+    "Name": "Maastricht-Heerlen",
+    "Lower_Date": -10,
+    "Low_Date_E": 20,
+    "Upper_Date": 406,
+    "Up_Date_E": 300,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Maastricht-Heerlen",
+    "Lower_Date": -10,
+    "Low_Date_E": 20,
+    "Upper_Date": 406,
+    "Up_Date_E": 300,
+    "Segment_s": "Certain",
+    "passabilit": 1
+  },
+  {
+    "Name": "Maastricht-Heerlen",
+    "Lower_Date": -10,
+    "Low_Date_E": 20,
+    "Upper_Date": 406,
+    "Up_Date_E": 300,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Maastricht-Heerlen",
+    "Lower_Date": -10,
+    "Low_Date_E": 20,
+    "Upper_Date": 406,
+    "Up_Date_E": 300,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Maastricht-Heerlen",
+    "Lower_Date": -10,
+    "Low_Date_E": 20,
+    "Upper_Date": 406,
+    "Up_Date_E": 300,
+    "Segment_s": "Certain",
+    "passabilit": 1
+  },
+  {
+    "Name": "Maastricht-Heerlen",
+    "Lower_Date": -10,
+    "Low_Date_E": 20,
+    "Upper_Date": 406,
+    "Up_Date_E": 300,
+    "Segment_s": "Hypothetical",
+    "passabilit": 1
+  },
+  {
+    "Name": "Woerden",
+    "Lower_Date": 50,
+    "Low_Date_E": 9999,
+    "Upper_Date": 250,
+    "Up_Date_E": 9999,
+    "Segment_s": "Certain",
+    "passabilit": 1
+  },
+  {
+    "Name": "Tongeren-Maastricht",
+    "Lower_Date": -10,
+    "Low_Date_E": 30,
+    "Upper_Date": 406,
+    "Up_Date_E": 300,
+    "Segment_s": "Certain",
+    "passabilit": 1
+  },
+  {
+    "Name": "Alphen a/d Rijn-Zwammerdam",
+    "Lower_Date": 150,
+    "Low_Date_E": 9999,
+    "Upper_Date": 300,
+    "Up_Date_E": 9999,
+    "Segment_s": "Certain",
+    "passabilit": 1
+  },
+  {
+    "Name": "Zwammerdam",
+    "Lower_Date": 100,
+    "Low_Date_E": 9999,
+    "Upper_Date": 200,
+    "Up_Date_E": 9999,
+    "Segment_s": "Certain",
+    "passabilit": 1
+  },
+  {
+    "Name": "Alphen a/d Rijn-Zwammerdam\n",
+    "Lower_Date": 150,
+    "Low_Date_E": 9999,
+    "Upper_Date": 200,
+    "Up_Date_E": 9999,
+    "Segment_s": "Certain",
+    "passabilit": 1
+  },
+  {
+    "Name": "Alphen a/d Rijn-Zwammerdam",
+    "Lower_Date": 150,
+    "Low_Date_E": 9999,
+    "Upper_Date": 300,
+    "Up_Date_E": 9999,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Woerden-De Meern",
+    "Lower_Date": 80,
+    "Low_Date_E": 9999,
+    "Upper_Date": 200,
+    "Up_Date_E": 9999,
+    "Segment_s": "Certain",
+    "passabilit": 1
+  },
+  {
+    "Name": "Woerden-De Meern",
+    "Lower_Date": 100,
+    "Low_Date_E": 9999,
+    "Upper_Date": 300,
+    "Up_Date_E": 9999,
+    "Segment_s": "Certain",
+    "passabilit": 1
+  },
+  {
+    "Name": "Woerden-De Meern",
+    "Lower_Date": 80,
+    "Low_Date_E": 9999,
+    "Upper_Date": 200,
+    "Up_Date_E": 9999,
+    "Segment_s": "Certain",
+    "passabilit": 1
+  },
+  {
+    "Name": "De Meern",
+    "Lower_Date": 75,
+    "Low_Date_E": 0,
+    "Upper_Date": 250,
+    "Up_Date_E": 9999,
+    "Segment_s": "Certain",
+    "passabilit": 1
+  },
+  {
+    "Name": "De Meern-Vechten",
+    "Lower_Date": 150,
+    "Low_Date_E": 9999,
+    "Upper_Date": 725,
+    "Up_Date_E": 9999,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "De Meern-Vechten",
+    "Lower_Date": 150,
+    "Low_Date_E": 9999,
+    "Upper_Date": 725,
+    "Up_Date_E": 9999,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "De Meern-Vechten",
+    "Lower_Date": 150,
+    "Low_Date_E": 9999,
+    "Upper_Date": 725,
+    "Up_Date_E": 9999,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Vechten-Rijswijk (GE)",
+    "Lower_Date": 125,
+    "Low_Date_E": 0,
+    "Upper_Date": 200,
+    "Up_Date_E": 9999,
+    "Segment_s": "Certain",
+    "passabilit": 1
+  },
+  {
+    "Name": "Coriovallum-Iuliacum",
+    "Lower_Date": -10,
+    "Low_Date_E": 20,
+    "Upper_Date": 406,
+    "Up_Date_E": 300,
+    "Segment_s": "Hypothetical",
+    "passabilit": 1
+  },
+  {
+    "Name": "Maastricht-Heerlen",
+    "Lower_Date": -10,
+    "Low_Date_E": 20,
+    "Upper_Date": 406,
+    "Up_Date_E": 300,
+    "Segment_s": "Certain",
+    "passabilit": 1
+  },
+  {
+    "Name": "Maastricht-Heerlen",
+    "Lower_Date": -10,
+    "Low_Date_E": 20,
+    "Upper_Date": 406,
+    "Up_Date_E": 300,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Rossum-Wamel",
+    "Lower_Date": 9999,
+    "Low_Date_E": 9999,
+    "Upper_Date": 200,
+    "Up_Date_E": 9999,
+    "Segment_s": "Hypothetical",
+    "passabilit": 1
+  },
+  {
+    "Name": "Maastricht-Heerlen",
+    "Lower_Date": -10,
+    "Low_Date_E": 20,
+    "Upper_Date": 406,
+    "Up_Date_E": 300,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Maastricht-Heerlen",
+    "Lower_Date": -10,
+    "Low_Date_E": 20,
+    "Upper_Date": 406,
+    "Up_Date_E": 300,
+    "Segment_s": "Certain",
+    "passabilit": 1
+  },
+  {
+    "Name": "Maastricht-Heerlen",
+    "Lower_Date": -10,
+    "Low_Date_E": 20,
+    "Upper_Date": 406,
+    "Up_Date_E": 300,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Maastricht-Heerlen",
+    "Lower_Date": -10,
+    "Low_Date_E": 20,
+    "Upper_Date": 406,
+    "Up_Date_E": 300,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Maastricht-Heerlen",
+    "Lower_Date": -10,
+    "Low_Date_E": 20,
+    "Upper_Date": 406,
+    "Up_Date_E": 300,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Maastricht-Heerlen",
+    "Lower_Date": -10,
+    "Low_Date_E": 20,
+    "Upper_Date": 406,
+    "Up_Date_E": 300,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Maastricht-Heerlen",
+    "Lower_Date": -10,
+    "Low_Date_E": 20,
+    "Upper_Date": 406,
+    "Up_Date_E": 300,
+    "Segment_s": "Conjectured",
+    "passabilit": 1
+  },
+  {
+    "Name": "Maastricht-Heerlen",
+    "Lower_Date": -10,
+    "Low_Date_E": 20,
+    "Upper_Date": 406,
+    "Up_Date_E": 300,
+    "Segment_s": "Certain",
+    "passabilit": 1
+  },
+  {
+    "Name": "Tongeren-Maastricht",
+    "Lower_Date": -10,
+    "Low_Date_E": 20,
+    "Upper_Date": 406,
+    "Up_Date_E": 300,
+    "Segment_s": "Certain",
+    "passabilit": 1
+  },
+  {
+    "Name": "Tongeren-Maastricht",
+    "Lower_Date": -10,
+    "Low_Date_E": 20,
+    "Upper_Date": 406,
+    "Up_Date_E": 300,
+    "Segment_s": "Certain",
+    "passabilit": 1
+  },
+  {
+    "Name": "Tongeren-Maastricht",
+    "Lower_Date": -10,
+    "Low_Date_E": 20,
+    "Upper_Date": 406,
+    "Up_Date_E": 300,
+    "Segment_s": "Certain",
+    "passabilit": 1
+  }
+]
