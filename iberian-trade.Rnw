@@ -17,7 +17,7 @@
 \pubyear{2025}
 \copyrightyear{2025}
 \datereceived{ }
-\daterevised{ } % Comment out if no revised date
+% \daterevised{ } % Comment out if no revised date
 \dateaccepted{ }
 \datepublished{ }
 %\datecorrected{} % For corrected papers: "Corrected: XXX" date in the original paper.
@@ -263,6 +263,8 @@ ranked_edge_weights <- data.frame(
 ) %>%
   arrange(desc(weight))
 
+top_edges <- head(ranked_edge_weights, 10)
+
 library(kableExtra)
 kable(head(ranked_edge_weights,10), caption="Top edge weights in the regional network", col.names=c("Origin", "Destination", "Weight")) %>%
 
@@ -444,15 +446,16 @@ Additionally, a visual inspection of Figure \ref{fig:trade.changepoint.multi} sh
 
 \edit{Research question 2 asks if there is some change in the network that can explain that changepoint. As we have explained, FLAME data can be processed into a network with regions as nodes and {\em link density}, resulting from processing the probability of a link occurring in a specific year in the range where the coin hoard was dated, as edges.} In order to \edit{answer that question}, we will look at specific trade links, and how they evolved with time, especially before and after the changepoint  found.
 
-<<trade.link.evolution, echo=F, message=F, warning=F, fig.cap="Evolution through time of the \\protect\\edit{average trade link density by decade} with the main trading partners of the Iberian Peninsula.", fig.height=4>>=
+<<trade.link.evolution, echo=F, message=F, warning=F, fig.cap="Evolution through time of the average trade link density by decade with the main trading partners of the Iberian Peninsula.", fig.height=4>>=
 library(purrr)
 regional_links$decade <- 10* floor(regional_links$year/10)
 regional_links %>% mutate(cs=pmap_chr(list(region1,region2), ~paste(sort(c(...)), collapse = " - "))) -> regional_links_pasted
 
-# create a sum per decade and cs
 regional_links_pasted %>% group_by(decade, cs) %>%  summarise( links =  sum(value)) -> regional_links_summary
 
-top_links <- c("Spain - United Kingdom","Italy - Spain","France - Spain","Spain - Turkey", "Spain - Spain", "Portugal - Spain","Portugal - Turkey", "Netherlands - Spain","Italy - Portugal", "Palestinian Territory - Spain", "Germany - Spain")
+top_links <- paste0( top_edges$origin, " - ", top_edges$destination)
+
+# top_links <- c("Spain - United Kingdom","Italy - Spain","France - Spain","Spain - Turkey", "Spain - Spain", "Portugal - Spain","Portugal - Turkey", "Netherlands - Spain","Italy - Portugal", "Palestinian Territory - Spain", "Germany - Spain")
 
 regional_links_summary$normalized_trade_link <- ifelse( regional_links_summary$cs %in% top_links, regional_links_summary$cs, "Other")
 
