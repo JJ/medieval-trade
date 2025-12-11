@@ -62,7 +62,10 @@ for @coin-groups -> %coin-group {
     } else {
         $probability = 1/( $end_year - $start_year);
     }
-    my @edge = ( $hoard-region, $mint-region ).sort;
+
+    say "<{$hoard-region}> <{$mint-region}>";
+    my @edge = ( normalize_to_iberian_peninsula($hoard-region), normalize_to_iberian_peninsula($mint-region) ).sort;
+    say @edge;
     loop ( my $year = $start_year; $year <= $end_year; $year+= 1 ) {
         %annual-link-probability{$year} += $probability;
         %regional-links-out{$year}{@edge[0]}{@edge[1]} += $probability;
@@ -84,6 +87,10 @@ csv( in => convert_hash_to_sorted_array_of_hashes(%annual-all-iberian-link-proba
 csv( in => convert_hash_to_sorted_array_of_hashes(%annual-iberian-link-probability), out => "data/annual-iberian-link-probability.csv", sep => ";", headers => 'auto' );
 csv( in => convert_to_array_of_hashes(%iberian-links-out), out => "data/annual-iberian-links.csv", sep => ";", headers => 'auto' );
 csv( in => convert_to_array_of_hashes(%regional-links-out), out => "data/annual-regional-links.csv", sep => ";", headers => 'auto' );
+
+sub normalize_to_iberian_peninsula( $country ) {
+    return ( $country eq "Spain" || $country eq "Portugal" ) ?? "Iberian Peninsula" !! $country;
+}
 
 sub convert_to_array_of_hashes( %hash ) {
     my @array;
