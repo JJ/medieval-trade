@@ -461,23 +461,35 @@ regional_links_summary$normalized_trade_link <- ifelse( regional_links_summary$c
 
 regional_links_summary$trade_link <- as.factor(regional_links_summary$cs)
 library(pals)
-ggplot()+
-  geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Spain - United Kingdom",],aes(x=decade, y=links, color="UK"))+
-  geom_point( data=regional_links_summary[regional_links_summary$trade_link == "Spain - United Kingdom",],aes(x=decade, y=links, color="UK"))+
-  geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Italy - Spain",],aes(x=decade, y=links, color="Italy"))+
-  geom_line( data=regional_links_summary[regional_links_summary$trade_link == "France - Spain",],aes(x=decade, y=links, color="France"))+
-  geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Spain - Turkey",],aes(x=decade, y=links, color="Turkey"))+
-  geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Spain - Spain",],aes(x=decade, y=links, color="Internal Spain"))+
-  geom_point( data=regional_links_summary[regional_links_summary$trade_link == "Spain - Spain",],aes(x=decade, y=links, color="Internal Spain"))+
-  geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Portugal - Spain",],aes(x=decade, y=links, color="Portugal"))+
-  geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Portugal - Turkey",],aes(x=decade, y=links, color="Portugal-Turkey"))+
-  geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Netherlands - Spain",],aes(x=decade, y=links, color="Netherlands"))+
-  geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Italy - Portugal",],aes(x=decade, y=links, color="Portugal-Italy"))+
-  geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Palestinian Territory - Spain",],aes(x=decade, y=links, color="Palestine"))+
-  geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Germany - Spain",],aes(x=decade, y=links, color="Germany"))+
-  scale_colour_manual(values=unname(glasbey()))+
+links_graph <- ggplot() + geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Iberian Peninsula - United Kingdom",],aes(x=decade, y=links, color="UK"))+
+  geom_point( data=regional_links_summary[regional_links_summary$trade_link == "Iberian Peninsula - United Kingdom",],aes(x=decade, y=links, color="UK"))
+
+for ( link in top_links[2:length(top_links)] ) {
+  nodes <- unlist( strsplit( link, " - " ) )
+
+  line_color <- ifelse( nodes[1] == "Iberian Peninsula", nodes[2], nodes[1])
+  print(line_color)
+  links_graph <- links_graph + geom_line( data=regional_links_summary[regional_links_summary$trade_link == link,],aes(x=decade, y=links, color=!!line_color))
+  links_graph
+}
+
+  # geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Italy - Spain",],aes(x=decade, y=links, color="Italy"))+
+  # geom_line( data=regional_links_summary[regional_links_summary$trade_link == "France - Spain",],aes(x=decade, y=links, color="France"))+
+  # geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Spain - Turkey",],aes(x=decade, y=links, color="Turkey"))+
+  # geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Spain - Spain",],aes(x=decade, y=links, color="Internal Spain"))+
+  # geom_point( data=regional_links_summary[regional_links_summary$trade_link == "Spain - Spain",],aes(x=decade, y=links, color="Internal Spain"))+
+  # geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Portugal - Spain",],aes(x=decade, y=links, color="Portugal"))+
+  # geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Portugal - Turkey",],aes(x=decade, y=links, color="Portugal-Turkey"))+
+  # geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Netherlands - Spain",],aes(x=decade, y=links, color="Netherlands"))+
+  # geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Italy - Portugal",],aes(x=decade, y=links, color="Portugal-Italy"))+
+  # geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Palestinian Territory - Spain",],aes(x=decade, y=links, color="Palestine"))+
+  # geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Germany - Spain",],aes(x=decade, y=links, color="Germany"))+
+
+links_graph <- links_graph + scale_colour_manual(values=unname(glasbey()))+
   labs( x="Year",y="Link density") +
   xlim(c(250,750))+ theme_minimal()
+
+links_graph
 @
 
 In Figure \ref{fig:trade.link.evolution} we show the evolution in time of the top links (as indicated in Table \ref{tab:trade.edge.weights}); these, unless noted otherwise, are connections with Spain. We see a crash in the link density across the board, but we note that the links with the United Kingdom (highlighted also with points at every value) started to decline several decades before the changepoints indicated above. Several different \edit{trading partners then became the main ones}, notably Italy, Turkey (which hosted both capitals of the empire), but also France, the Netherlands, and most notably, connections within the current territory of Spain (also marked with dots in that figure), which reach its peak here. Eventually, these also fall to a minimum level right around the time of the found changepoint in the first quarter of the 5th century.
