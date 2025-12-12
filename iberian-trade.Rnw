@@ -487,7 +487,6 @@ for ( link in top_links[2:length(top_links)] ) {
   nodes <- unlist( strsplit( link, " - " ) )
 
   line_color <- ifelse( nodes[1] == "Iberian Peninsula", nodes[2], nodes[1])
-  print(line_color)
   links_graph <- links_graph + geom_line( data=regional_links_summary[regional_links_summary$trade_link == link,],aes(x=decade, y=links, color=!!line_color))
 }
 
@@ -522,7 +521,9 @@ ggplot(differences_links, aes(x=reorder(cs, -difference), y=difference, fill=cs)
   theme(legend.position = "none")
 @
 
-\edit{We have a different look at how trade changed after the changepoint in Figure \ref{fig:trade.link.evolution.detail}, where we show the ratio of average link density after and before the changepoint for the top links; that is, we take the annual average {\em link density} before the changepoint in year \Sexpr{multi_changepoint_year} and divide it by the same average after the changepoint. Even taking into account that this average includes some years that might have not been very representative (beginning of the series, see Figure \ref{fig:trade.link.evolution.relative}, the fact that trade for the main partners such as Italy, and the most important one, the UK, must have had a impact in the life of the inhabitants of the peninsula, even more so when internal trade seems to have decreased tenfold or more (in the case of trade between the areas now covered by Portugal and Spain).}
+We have a different look at how trade changed after the changepoint in Figure \ref{fig:trade.link.evolution.detail}, where we show the ratio of average link density after and before the changepoint for the top links; that is, we take the annual average {\em link density} before the changepoint in year \Sexpr{multi_changepoint_year} and divide it by the same average after the changepoint. The bars are sorted in decreasing order.
+
+Even taking into account that this average includes some years that might have not been very representative (beginning of the series, see Figure \ref{fig:trade.link.evolution.relative}, what we see is that there is only a trading partner that has doubled its importance, Greece; Greece was only, however, the 8th most important trading partner (see Table \ref{tab:trade.edge.weights}), with a volume 1/10th of that of the UK.   The fact that trade for the main partners such as Italy, and the most important one, the UK, must have had a impact in the life of the inhabitants of the peninsula, even more so when internal trade seems to have decreased tenfold or more (in the case of trade between the areas now covered by Portugal and Spain).
 
 The peak in link density right before the changepoint in "border" territories such as France and the Netherlands might be due to two different reasons: in times of trouble, when different groups such as the Vandals or the Alans were pressuring from the Rhine \citep{heather2009did} and people resorted to burying their treasures, \edit{thus biasing the number of hoards found}; but the second reason is that since there were troops fighting in those areas which needed to be supplied, the trade with them increased over other, relatively more peaceful, times. However, inherent biases in the dataset make it impossible to establish, just from data, which of the two reasons was more important or if there was a third, different cause, of these small peaks in trade. At any rate, this is a secondary issue, which only illustrates how network analysis might help establish hypotheses that would then have to be proved using cliometrics using micro or macro data.
 
