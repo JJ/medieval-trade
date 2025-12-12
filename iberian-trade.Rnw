@@ -185,7 +185,7 @@ We have used three \edit{FLAME datasets} from the database:\begin{itemize}
 
 We have made a series of processing steps to create the final datasets used in the paper. These will be described below
 
-\subsubsection{Geolocation}
+\subsubsection{Geolocation}\label{sss:geolocation}
 
 We have {\em geolocated} and assigned the mints and hoards to a specific current territory, using the GeoApify service. These are geographical markings more than actual polities; in many cases, besides, the minting place is not exactly known, in which case it gets assigned the conventional center of a current territory.
 
@@ -231,7 +231,7 @@ As a result, we have two synchronous datasets with \Sexpr{length(links_time_seri
 
 These processed datasets are available in R data format in the repository for this paper, \url{https://github.com/JJ/medieval-trade}\footnote{\edit{Please read the README.md file for specific location of the datasets used here.}}.
 
-<<trade.plot, echo=FALSE, fig.cap="Time series of interior and all trade link density for the Iberian Peninsula", fig.height=4>>=
+<<trade.plot, echo=FALSE, fig.cap="Time series of interior and all trade link density for the Iberian Peninsula", fig.height=4, fig.pos="h!tb">>=
 library(ggplot2)
 library(ggthemes)
 ggplot(links_time_series, aes(x=year)) +
@@ -263,7 +263,7 @@ plot(regional_graph, vertex.size=2, vertex.label.cex=0.6, edge.arrow.size=0.2,
      vertex.label.dist=0.5)
 @
 
-The connectivity of the dataset is represented in Figure \ref{fig:trade.overview}. In this Figure, as stated above, the vertices are current-day territories, and edges have a weight equivalent to the sum of the link density; intra-Iberian peninsula links, acting as self-loops, have been dropped when creating the network.
+The connectivity of the dataset is represented in Figure \ref{fig:trade.overview}. In this Figure, as stated in Section \ref{sss:geolocation}, the vertices are current-day territories, and edges have a weight equivalent to the sum of the link density; intra-Iberian peninsula links, acting as self-loops, have been dropped when creating the network.
 
 <<trade.edge.weights, echo=FALSE, fig.height=4, fig.cap="Edge weights in the regional network", message=FALSE>>=
 library(dplyr)
@@ -291,7 +291,9 @@ kable(top_edges_table, caption="Top edge weights in the regional network", col.n
   row_spec(0, bold = TRUE)
 @
 
-The top edges of that network are shown in Table \ref{tab:trade.edge.weights}. At the top is the connection between Spain and the United Kingdom that was already pointed out in the introduction \edit{to this section}. Obviously, connections between the two parts of the Iberian Peninsula and Italy are important, as well as the connection between Spain and Turkey, where Constantinople, the capital of the Eastern Roman Empire, was placed. Connection between the two countries in the region, Spain and Portugal, are not as important as the connections between Spain and France. Connections further away than France, to Germany, and to the Palestinian Territory, are also at the top. This indicates a trade network that was maritime in a big part and which extended through the Mediterranean to the middle east; also that {\em internal} commerce, although important, was not the main source of imports or exports for any of the countries, which had better relationship with the capital of the empire (represented here by Italy and Turkey) than with each other.
+The top edges of that network are shown in Table \ref{tab:trade.edge.weights}. At the top is the connection between Spain and the United Kingdom that was already pointed out in the introduction \edit{to this section}. Obviously, connections between the  Iberian Peninsula and Italy are important, as well as the connection with Turkey, where Constantinople, the capital of the Eastern Roman Empire, was situated. Next is France, notably the neighbouring country so this should be expected. Connections further away than France, to the Netherlands, Germany, Sweden and to the Palestinian Territory and Greece, are also among the top connections.
+
+This indicates a trade network that was maritime in a big part and which extended through the Mediterranean to the Middle East and through the Atlantic to Sweden. This is, however, the overall picture for the whole period under study.
 
 The importance of trade with the United Kingdom might be, to a certain point, the evidence of a certain bias in the dataset, since the abundance of hoards in the UK is higher than in other places due to its population density and other sources of bias; this is mentioned explicitly by \cite{FLAME:bias}, which mentions a series of legislative measures that have made coin hoards found there more likely to end up in the database. On the other hand, it has been clearly established by scholars that Spain and the UK shared material culture \citep{fernandez2017aristocrats} and that the trade in raw materials, luxury items, as well as transshipment through Spain of goods produced elsewhere, mainly in Africa, was intense \citep{Wickham:2005} and long-lasting.
 
