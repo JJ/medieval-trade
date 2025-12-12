@@ -189,7 +189,7 @@ We have made a series of processing steps to create the final datasets used in t
 
 We have {\em geolocated} and assigned the mints and hoards to a specific current territory, using the GeoApify service. These are geographical markings more than actual polities; in many cases, besides, the minting place is not exactly known, in which case it gets assigned the conventional center of a current territory.
 
-In the case we identify current territories with polities in the time under analysis, we will use the most probable one; for instance, Turkey will be identified with the Eastern Roman empire, and Italy as the main site of the Western Roman empire. Please bear in mind that the main focus of this paper are the territories with which the Iberian Peninsula traded (as reflected by hoards) not so much as the polities that controlled those territories. These will be considered insomuch as they affect the interpretation of the results, but not as an important factor to obtain the results. 
+In the case we identify current territories with polities in the time under analysis, we will use the most probable one; for instance, Turkey will be identified with the Eastern Roman empire, and Italy as the main site of the Western Roman empire. Please bear in mind that the main focus of this paper are the territories with which the Iberian Peninsula traded (as reflected by hoards) not so much as the polities that controlled those territories. These will be considered insomuch as they affect the interpretation of the results, but not as an important factor to obtain the results.
 
 For instance, if Morocco is a node that shows up in the results, we will take into account only the territory it occupies, and use the fact that it was first a Roman territory and then under the control of the Vandals for additional interpretation within the temporal framework that obtained by the analysis \citep{rousseau2012companion}.
 
@@ -301,9 +301,9 @@ At any rate, we would need to discuss the validity of the dataset, which we will
 
 \subsection{Dataset validation}\label{ssec:validation}
 
-\edit{In order to start our research on solid ground, we need to validate the dataset we are using, extracted from the FLAME database, finding independent proofs that, on one hand, the data it is based on is reliable, and on the other, how and in what way biases present in the data might affect results. This pre-analysis needs to be complemented later with a complementary one focused on how known biases might have affected said results.}
+In order to start our research on solid ground, we need to validate the dataset we are using, extracted from the FLAME database, finding independent proofs that, on one hand, the data it is based on is reliable, and on the other, how and in what way biases present in the data might affect results. This pre-analysis needs to be complemented later with a complementary one focused on how known biases might have affected said results.
 
-\edit{It is well known that there} are many inherent biases in any archaeological dataset, something we have already acknowledged in subsection \ref{ssec:overview}. The biases, as indicated \edit{by} \cite{FLAME:bias}, mainly concern regional representation and their relative importance; the authors \edit{plainly} assert that
+It is well known that there are many inherent biases in any archaeological dataset, something we have already acknowledged in subsection \ref{ssec:overview}. The biases, as indicated by \cite{FLAME:bias}, mainly concern regional representation and their relative importance; the authors \edit{plainly} assert that
 \begin{quote}
 ... FLAME is not a representative sample of the ancient monetary circulation.
 \end{quote}
