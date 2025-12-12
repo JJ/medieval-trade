@@ -266,11 +266,16 @@ ranked_edge_weights <- data.frame(
 top_edges <- head(ranked_edge_weights, 10)
 
 library(kableExtra)
-kable(head(ranked_edge_weights,10), caption="Top edge weights in the regional network", col.names=c("Origin", "Destination", "Weight")) %>%
+
+top_edges_table <- top_edges
+top_edges_table$node <- ifelse(top_edges_table$origin == "Iberian Peninsula", top_edges$destination, top_edges$origin)
+
+top_edges_table$origin <- NULL
+top_edges_table$destination <- NULL
+
+kable(top_edges_table, caption="Top edge weights in the regional network", col.names=c("Weight", "Node")) %>%
   kable_styling(full_width = F, position = "left") %>%
-  column_spec(1, bold = TRUE) %>%
   column_spec(2, bold = TRUE) %>%
-  column_spec(3, width = "3cm") %>%
   row_spec(0, bold = TRUE)
 @
 
