@@ -376,10 +376,11 @@ all_links_changepoint_stats <- data.frame(
   changepoint = c(all_annual_iberian_links$year[all_links_changepoint_lanzante$estimate],
                   all_annual_iberian_links$year[all_links_changepoint_pettitt$estimate],
                   all_annual_iberian_links$year[all_links_changepoint_bu$estimate],
-                  all_annual_iberian_links$year[all_links_changepoint_br$estimate]))
+                  all_annual_iberian_links$year[all_links_changepoint_br$estimate]),
+  changepoint.decades = c(460,460,400,400))
 
 # center table in page
-kable(all_links_changepoint_stats, caption="Changepoint detection statistics for the Iberian trade links time series. p < 0.05 in all cases.", col.names=c("Method", "Changepoint year")) %>%
+kable(all_links_changepoint_stats, caption="Changepoint detection statistics for the Iberian trade links time series. p < 0.05 in all cases. Check text for reference on the last column.", col.names=c("Method", "Changepoint year", "Changepoint (midpoint method)")) %>%
   kable_styling(full_width = F, position = "center") %>%
   column_spec(1, bold = TRUE) %>%
   column_spec(2, width = "3cm") %>%
@@ -388,8 +389,10 @@ kable(all_links_changepoint_stats, caption="Changepoint detection statistics for
 
 As can be observed, there is a statistically significant changepoint in the year \Sexpr{links_changepoint_date[1]}. This is roughly 20 years after the year found in \cite{changepoint.statphys}, but still half a century short of the Fall of the Roman Empire with the ousting of the last emperor by Odoacre \citep{Chapter1WhenDidtheWestRomanEmpireFall}. We will validate this approach using other methods, to find a bracket of possible changepoints; this way we can have a better idea of the time period when the change happened. We have used two non-parametric tests, Lanzante's \citep{lanzante1996resistant} and Pettitt's \citep{pettitt1979non} as well as Buishand's range test, which applies to normal variables \citep{buishand1982some}.
 
-The results of the different changepoint methods are shown in Table \ref{tab:trade.changepoint.stats}. They are at both sides of the changepoint detected by the first method, thus giving an interval of possible changepoint years between \Sexpr{min(all_links_changepoint_stats$changepoint)}
-and \Sexpr{max(all_links_changepoint_stats$changepoint)}. Please observe that all changepoints are statistically significant, the difference in output being the different methods used to detect them; however, Buishand's methods are for normal variables, a fact that is not guaranteed in this case; although statistically significant, we should probably lend more credibility to the non-parametric methods, which, besides, are consistent with each other\edit{; w}e would then have a range of dates between \Sexpr{links_changepoint_date[1]} and \Sexpr{all_annual_iberian_links$year[all_links_changepoint_lanzante$estimate]}.
+The results of the different changepoint methods are shown in Table \ref{tab:trade.changepoint.stats}; we include in the last column the results we published in \cite{iberian.trade}; in that case, coin hoards were assigned to the midpoint of the period  in which they had been found; additionally, the number of trade links was added over a decade instead of representing it as uniform probability across the period as we do here. Our main intention by presenting them here alongside changepoints computed for this paper is to show the (relative) robustness independently of the method that has been used to convert from periods to a time series.
+
+In the case of the current changepoints, they are at both sides of the changepoint detected by the first method (see Figure \ref{fig:trade.changepoint}), thus giving an interval of possible changepoint years between \Sexpr{min(all_links_changepoint_stats$changepoint)}
+and \Sexpr{max(all_links_changepoint_stats$changepoint)}. Please observe that all changepoints are statistically significant, the difference in output being the different methods used to detect them; however, Buishand's methods need normal variables, a fact that is not guaranteed in this case; although statistically significant, we should probably lend more credibility to the non-parametric methods (Lanzante and Pettitt), which, besides, are consistent with each other; we would then have a range of dates between \Sexpr{links_changepoint_date[1]} and \Sexpr{all_annual_iberian_links$year[all_links_changepoint_lanzante$estimate]}.
 
 Before looking for a possible cause, we should try and place the {\em internal} Iberian traffic changepoint, this being an important component of all the trade links; any variation withing the range we have would point out to important internal causes for the change of regime, that would contribute (or detract) from any external cause.
 
@@ -410,7 +413,7 @@ axis(1, at = ticks, labels=ticks.years)
 
 The changepoint plot with averages before and after it is shown in Figure \ref{fig:trade.changepoint.internal}. The changepoint is in the year \Sexpr{internal_links_changepoint_date[1]}, an earlier date than previously detected, but still in the same range. The interesting thing is that intra-Iberian trade was disrupted very soon after the Battle of Adrianople \citep{burns1973battle}, which might indicate some signs of the decay in the periphery of the empire (the Iberian Peninsula was literally {\em finis terrae}).
 
-<<trade.changepoint.multi, echo=FALSE, message=FALSE, fig.cap="Link density graph, showing internal and external link density as well as the changepoint found using the {\\protect\\sf ecp} multi-changepoint method.", fig.height=4>>=
+<<trade.changepoint.multi, echo=FALSE, message=FALSE, fig.cap="Link density graph, showing internal and external link density as well as the changepoint found using the {\\protect\\sf ecp} multi-sequence method.", fig.height=4>>=
 external_iberian_links <- all_annual_iberian_links$link_density - annual_iberian_links$link_density
 
 library(ecp)
@@ -450,7 +453,7 @@ changepoint_dates_found <- data.frame(
                   multi_changepoint_year))
 
 kable(changepoint_dates_found, caption="Changepoints found in the Iberian trade links time series", col.names=c("Method", "Changepoint year")) %>%
-  kable_styling(full_width = F, position = "left") %>%
+  kable_styling(full_width = F, position = "center") %>%
   column_spec(1, bold = TRUE) %>%
   column_spec(2, width = "3cm") %>%
   row_spec(0, bold = TRUE)
@@ -462,7 +465,7 @@ This would allow us to answer, at least partially, RQ1: yes, there is a statisti
 
 Additionally, a visual inspection of Figure \ref{fig:trade.changepoint.multi} shows that the changepoint found does not occur, indeed, in a structural break in the data. There are several sharp increases and drops; the changepoint detection methods, since they look at averages before and after the point, are not necessarily affected by these, maybe structural, breaks. However, they may reveal a structural change in the underlying network, which we will try to analyze next trying to answer RQ2.}
 
-\edit{Research question 2 asks if there is some change in the network that can explain that changepoint. As we have explained, FLAME data can be processed into a network with regions as nodes and {\em link density}, resulting from processing the probability of a link occurring in a specific year in the range where the coin hoard was dated, as edges.} In order to \edit{answer that question}, we will look at specific trade links, and how they evolved with time, especially before and after the changepoint  found.
+Research question 2 asks if there is some change in the network that can explain that changepoint. As we have explained, FLAME data can be processed into a network with regions as nodes and {\em link density}, resulting from processing the probability of a link occurring in a specific year in the range where the coin hoard was dated, as edges. In order to answer that question, we will look at specific trade links, and how they evolved with time, especially before and after the changepoint  found.
 
 <<trade.link.evolution, echo=F, message=F, warning=F, fig.cap="Evolution through time of the average trade link density by decade with the main trading partners of the Iberian Peninsula, as well as internal links. These and the trade links to the UK are marked also with points for clarity.", fig.height=4>>=
 library(purrr)
@@ -523,7 +526,7 @@ ggplot(differences_links, aes(x=reorder(cs, -difference), y=difference, fill=cs)
 
 We have a different look at how trade changed after the changepoint in Figure \ref{fig:trade.link.evolution.detail}, where we show the ratio of average link density after and before the changepoint for the top links; that is, we take the annual average {\em link density} before the changepoint in year \Sexpr{multi_changepoint_year} and divide it by the same average after the changepoint. The bars are sorted in decreasing order.
 
-Even taking into account that this average includes some years that might have not been very representative (beginning of the series, see Figure \ref{fig:trade.link.evolution.relative}, what we see is that there is only a trading partner that has doubled its importance, Greece; Greece was only, however, the 8th most important trading partner (see Table \ref{tab:trade.edge.weights}), with a volume 1/10th of that of the UK.   The fact that trade for the main partners such as Italy, and the most important one, the UK, must have had a impact in the life of the inhabitants of the peninsula, even more so when internal trade seems to have decreased tenfold or more (in the case of trade between the areas now covered by Portugal and Spain).
+Even taking into account that this average includes some years that might have not been very representative (beginning of the series, see Figure \ref{fig:trade.link.evolution.relative}, what we see is that there is only a trading partner that has doubled its importance, Greece; Greece was only, however, the 8th most important trading partner (see Table \ref{tab:trade.edge.weights}), with a volume 1/10th of that of the UK. The fact that trade for the main partners such as Italy, and the most important one, the UK, must have had a impact in the life of the inhabitants of the peninsula, even more so when internal trade seems to have decreased tenfold or more (in the case of trade between the areas now covered by Portugal and Spain).
 
 The peak in link density right before the changepoint in "border" territories such as France and the Netherlands might be due to two different reasons: in times of trouble, when different groups such as the Vandals or the Alans were pressuring from the Rhine \citep{heather2009did} and people resorted to burying their treasures, \edit{thus biasing the number of hoards found}; but the second reason is that since there were troops fighting in those areas which needed to be supplied, the trade with them increased over other, relatively more peaceful, times. However, inherent biases in the dataset make it impossible to establish, just from data, which of the two reasons was more important or if there was a third, different cause, of these small peaks in trade. At any rate, this is a secondary issue, which only illustrates how network analysis might help establish hypotheses that would then have to be proved using cliometrics using micro or macro data.
 
