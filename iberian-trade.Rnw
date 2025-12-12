@@ -183,16 +183,26 @@ We have used three \edit{FLAME datasets} from the database:\begin{itemize}
 \item {\bf Mints}, that contains location information on said establishments.
 \end{itemize}
 
-We have made a series of processing steps to use them \begin{itemize}
-\item We have {\em geolocated} and assigned the mints and hoards to a specific current territory, using the GeoApify service. These are geographical markings more than actual polities; in many cases, besides, the minting place is not exactly known, in which case it gets assigned the conventional center of a current territory. In the case we identify current territories with polities in the time under analysis, we will use the most probable one; for instance, Turkey will be identified with the Eastern Roman empire, and Italy as the main site of the Western Roman empire. Please bear in mind that the main focus of this paper are the territories with which the Iberian Peninsula traded (as reflected by hoards) not so much as the polities that controlled those territories. These will be considered insomuch as they affect the interpretation of the results, but not as an important factor to obtain the results. For instance, if Morocco is a node that shows up in the results, we will take into account only the territory it occupies, and use the fact that it was first a Roman territory and then under the control of the Vandals for additional interpretation within the temporal framework that obtained by the analysis \citep{rousseau2012companion}.  
-\item We have processed hoards and mints to keep only those that are placed in the two countries in the Iberian Peninsula, Spain and Portugal.
-\item We were interested in the trade link density, that is, the number of coin groups from one country found in another country, so we processed all files above to obtain that information. We generated two files with this procedure: \begin{itemize}
+We have made a series of processing steps to create the final datasets used in the paper. These will be described below
+
+\subsubsection{Geolocation}
+
+We have {\em geolocated} and assigned the mints and hoards to a specific current territory, using the GeoApify service. These are geographical markings more than actual polities; in many cases, besides, the minting place is not exactly known, in which case it gets assigned the conventional center of a current territory.
+
+In the case we identify current territories with polities in the time under analysis, we will use the most probable one; for instance, Turkey will be identified with the Eastern Roman empire, and Italy as the main site of the Western Roman empire. Please bear in mind that the main focus of this paper are the territories with which the Iberian Peninsula traded (as reflected by hoards) not so much as the polities that controlled those territories. These will be considered insomuch as they affect the interpretation of the results, but not as an important factor to obtain the results. 
+
+For instance, if Morocco is a node that shows up in the results, we will take into account only the territory it occupies, and use the fact that it was first a Roman territory and then under the control of the Vandals for additional interpretation within the temporal framework that obtained by the analysis \citep{rousseau2012companion}.
+
+From the result of this step, we have processed hoards and mints to keep only those that are placed in the two countries in the Iberian Peninsula, Spain and Portugal. These two names have been substituted by the generic territory under study, the Iberian Peninsula.
+
+We were interested in the trade link density, that is, the number of coin groups from one country found in another country, so we processed all files above to obtain that information. We generated two files with this procedure: \begin{itemize}
 \item Iberian-only trade links, which contain only the trade links where the mint and the coin finding (hoard) are in the Iberian Peninsula.
 \item All trade links of hoards found in the Iberian Peninsula or that contain coins minted in it.
 \end{itemize}
-\end{itemize}
 
-The FLAME database includes two fields with the start and end date estimated (and published) for the coin hoard\edit{; we will need to process these ranges into a time series so that we assign a specific value to every year in the it, which is what algorithms that deal with this kind of data need.
+\subsubsection{Processing into a time series}
+
+The FLAME database includes two fields with the start and end date estimated (and published) for the coin hoard; we will need to process these ranges into a time series so that we assign a specific value to every year in the it, which is what algorithms that deal with this kind of data need.
 
 <<trade.date.ranges, echo=FALSE, warning=F, message=F, fig.height=4, fig.cap="Histogram of the span of date ranges.">>=
 library(ggplot2)
@@ -210,16 +220,18 @@ In order to make an informed choice on this allocation, a logarithmic histogram 
 
 Assigning a value to a random variable for which we only know it has occurred in a moment within the interval is, in general, known as {\em interval censoring} \citep{interval:censoring}. Literature includes many methods to deal with this problem, depending on the width of the ranges, what we know about the variable within the range, and the precision we want to obtain from the analysis of the time series. Allocating the variable at any point, as we did before, is a simple method which might be valid in the case precision of the result is not so important, and the ranges are not too wide. Unfortunately, as shown in Figure \ref{fig:trade.date.ranges}, that is not the case in this dataset, so we must adopt another method; there are several methods available, including uniformly random allocation and multiple random imputation. In the latter case, we would have to run repeatedly the analysis to obtain a consensus on the result. This process, however, is relatively sophisticated and would increase the difficulty of the methodology we use, compromising its use by computational history practitioners, so we have adopted the former, that is, uniform allocation, as a good compromise between result quality and simplicity.
 
-Thus, what we have done is allocate uniform probability to every year in the range. If, for instance, the range goes from 310 to 320, every year will get 0.1 probability. We have called this variable {\em link density}; years included in more ranges will have a higher {\em link density}, years included in less will get correspondingly less. We have chosen this way of processing the data, unlike \cite{iberian:trade}, since the ranges of some hoards were several centuries wide, and besides needed additional processing to work with decades instead of years, as in this case. This will correspondingly enhance the precision of the solution.}
+Thus, what we have done is allocate uniform probability to every year in the range. If, for instance, the range goes from 310 to 320, every year will get 0.1 probability. We have called this variable {\em link density}; years included in more ranges will have a higher {\em link density}, years included in less will get correspondingly less. We have chosen this way of processing the data, unlike \cite{iberian:trade}, since the ranges of some hoards were several centuries wide, and besides needed additional processing to work with decades instead of years, as in this case. This will correspondingly enhance the precision of the solution.
+
+\subsubsection{Description of the final datasets}
 
 As a result, we have two synchronous datasets with \Sexpr{length(links_time_series$year)} \edit{rows} that start in the \edit{year} \Sexpr{min_year} and end in the \edit{year} \Sexpr{max_year}, \edit{namely}: \begin{itemize}
 \item Time series of trade link \edit{density} per \edit{year} within the Iberian Peninsula.
-\item Time series of trade link \edit{density} per \edit{year} between the Iberian Peninsula and elsewhere. \edit{This time series was shortened to match the same beginning and end year as the previous one.}
+\item Time series of trade link density per year between the Iberian Peninsula and elsewhere. \edit{This time series was shortened to match the same beginning and end year as the previous one.}
 \end{itemize}
 
 These processed datasets are available in R data format in the repository for this paper, \url{https://github.com/JJ/medieval-trade}\footnote{\edit{Please read the README.md file for specific location of the datasets used here.}}.
 
-<<trade.plot, echo=FALSE, fig.cap="Time series of interior and exterior trade link density for the Iberian Peninsula", fig.height=4>>=
+<<trade.plot, echo=FALSE, fig.cap="Time series of interior and all trade link density for the Iberian Peninsula", fig.height=4>>=
 library(ggplot2)
 library(ggthemes)
 ggplot(links_time_series, aes(x=year)) +
@@ -233,7 +245,7 @@ ggplot(links_time_series, aes(x=year)) +
   theme(legend.title = element_blank())
 @
 
-Figure \ref{fig:trade.plot} is a representation of the two time series mentioned, that is, {\em interior} and exterior links. The  \edit{two time series follow a similar "drop" pattern in the same or very similar period}; however, there are interesting dissimilarities which might make the analysis totally different. \footnote{\edit{Please note the small {\em tails} before roughly the year 300 and after 750, which are probably artifacts due to the way the coin hoard date ranges are processed into what we call {\em link density}; their value indicates that they are probably coming from a single or a small amount of coin groups. Since this value is very small, its influence in the result is correspondingly small so we will perform no additional assumptions (such as starting in a period that is covered by a certain number of coin groups) to eliminate them. However, a researcher following this methodology might need to take this into account.}}
+Figure \ref{fig:trade.plot} is a representation of the two time series mentioned, that is, {\em interior} and all links (including interior ones). The  \edit{two time series follow a similar "drop" pattern in the same or very similar period}; however, there are interesting dissimilarities which might make the analysis totally different. \footnote{\edit{Please note the small {\em tails} before roughly the year 300 and after 750, which are probably artifacts due to the way the coin hoard date ranges are processed into what we call {\em link density}; their value indicates that they are probably coming from a single or a small amount of coin groups. Since this value is very small, its influence in the result is correspondingly small so we will perform no additional assumptions (such as starting in a period that is covered by a certain number of coin groups) to eliminate them. However, a researcher following this methodology might need to take this into account.}}
 
 \subsection{Overview of coin hoard data}
 \label{ssec:overview}
