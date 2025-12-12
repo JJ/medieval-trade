@@ -251,7 +251,7 @@ plot(regional_graph, vertex.size=2, vertex.label.cex=0.6, edge.arrow.size=0.2,
      vertex.label.dist=0.5)
 @
 
-The connectivity of the dataset is represented in figure \ref{fig:trade.overview}; where, as shown above, the vertices are current-day regions, and edges have a weight equivalent to the overall link density.\footnote{Please note that we are showing only connections from Spain and Portugal to other places, thus the network is centered in Spain with a secondary center in Portugal; it should be understood only for visualization and not for network analysis, since all connections between nodes that are not Spain and Portugal have been dropped.}
+The connectivity of the dataset is represented in Figure \ref{fig:trade.overview}. In this Figure, as stated above, the vertices are current-day territories, and edges have a weight equivalent to the sum of the link density; intra-Iberian peninsula links, acting as self-loops, have been dropped when creating the network.
 
 <<trade.edge.weights, echo=FALSE, fig.height=4, fig.cap="Edge weights in the regional network", message=FALSE>>=
 library(dplyr)
@@ -274,7 +274,7 @@ top_edges_table$origin <- NULL
 top_edges_table$destination <- NULL
 
 kable(top_edges_table, caption="Top edge weights in the regional network", col.names=c("Weight", "Node")) %>%
-  kable_styling(full_width = F, position = "left") %>%
+  kable_styling(full_width = F, position = "center") %>%
   column_spec(2, bold = TRUE) %>%
   row_spec(0, bold = TRUE)
 @
