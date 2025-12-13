@@ -477,7 +477,7 @@ regional_links_pasted %>% group_by(decade, cs) %>%  summarise( links =  sum(valu
 top_edges$sorted_edges <- paste0( pmin( top_edges$origin, top_edges$destination), " - ", pmax( top_edges$origin, top_edges$destination))
 top_links <- top_edges$sorted_edges
 
-regional_links_summary$normalized_trade_link <- ifelse( regional_links_summary$cs %in% top_links, regional_links_summary$cs, "Other")
+regional_links_summary$normalized_trade_link <- ifelse( regional_links_summary$cs %in% c( top_links, "Iberian Peninsula - Iberian Peninsula"), regional_links_summary$cs, "Other")
 
 regional_links_summary$trade_link <- as.factor(regional_links_summary$cs)
 library(pals)
