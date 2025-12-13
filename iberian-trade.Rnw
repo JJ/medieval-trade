@@ -557,9 +557,10 @@ From the analysis above what is clear is that the changepoint is a downstream ev
 
 \edit{In general, this points to local causes in the collapse of trade, with no evidence of a direct causal relationship with changepoints encountered in the global trade links dataset analyzed in \cite{changepoint.statphys}. There is no evidence that} the defeat and consequent settlement of different peoples South of the Danube provoke\edit{d the flight of troops from Britain} and subsequent or maybe concomitant, probable collapse of the economy. We might establish some indirect cause-effect relationship, however: the loss of the {\em via militaris} and the Danube \citep{larnach2016all} \edit{as a trading venue}, and the troops lost at the battle of Adrianople, impeded any help of troops from those provinces (which included also Goths) to the Western emperor attacked by the usurper; in that sense, they are both part of a larger pattern of resettlement of different human groups displaced by climate change and other human groups, crossing the natural borders of the empire, which made the extensive logistic and trade routes maintained by the empire go into disrepair, as well as provoke a collapse of demand of goods traded across a long distance.
 
-<<trade.link.evolution.relative, echo=F, message=F, warning=F, fig.cap="Evolution through time of the link density with the main trading partners of the Iberian Peninsula.", fig.height=5>>=
+<<trade.link.evolution.relative, echo=F, message=F, warning=F, fig.cap="Evolution through time of the link density with the main trading partners of the Iberian Peninsula.The red dashed line indicates the computed changeopoint.", fig.height=5>>=
 ggplot(regional_links_summary, aes( x=decade, y=links))+geom_bar(stat="identity", position="fill", aes(fill=normalized_trade_link))+
   scale_fill_manual(values=unname(glasbey()))+theme_minimal()+labs( x="Year",y="Proportion of links") +
+  geom_vline(xintercept = multi_changepoint_year, linetype="dashed", color="red") +
   xlim(c(300,750))
 @
 
