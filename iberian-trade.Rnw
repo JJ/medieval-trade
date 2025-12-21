@@ -349,6 +349,10 @@ Additionally, we will try to connect our results to other sources of information
 library(changepoint)
 all_links_changepoint <- cpt.meanvar(all_annual_iberian_links$link_density, method="AMOC")
 links_changepoint_date <- all_annual_iberian_links$year[all_links_changepoint@cpts]
+
+all_links_changepoint_filtered <- cpt.meanvar(all_annual_iberian_links_filtered$link_density, method="AMOC")
+links_changepoint_date_filtered <- all_annual_iberian_links_filtered$year[all_links_changepoint_filtered@cpts]
+
 ticks <- c(1,100,200,300,400,500)
 ticks.years <- all_annual_iberian_links$year[ticks]
 
@@ -493,7 +497,7 @@ In this case, there are specific methods for finding changepoints in time series
 
 <<trade.changepoints.found, echo=FALSE, message=FALSE>>=
 changepoint_dates_found <- data.frame(
-  Method = c("All links, cpt.meanvar", "All links, Lanzante/Pettitt", "All links, Lanzante/Pettitt (filtered)", "Internal links, cpt.mean (+filtered)", "Multi-sequence, e.divisive (+filtered)"),
+  Method = c("All links, cpt.meanvar (+filtered)", "All links, Lanzante/Pettitt", "All links, Lanzante/Pettitt (filtered)", "Internal links, cpt.mean (+filtered)", "Multi-sequence, e.divisive (+filtered)"),
   changepoint = c(links_changepoint_date[1],
                   all_annual_iberian_links$year[all_links_changepoint_lanzante$estimate],
                   all_annual_iberian_links_filtered$year[all_links_changepoint_lanzante_filtered$estimate],
@@ -501,7 +505,7 @@ changepoint_dates_found <- data.frame(
                   multi_changepoint_year))
 
 kable(changepoint_dates_found, caption="Changepoints found in the Iberian trade links time series", col.names=c("Method", "Changepoint year")) %>%
-  kable_styling(full_width = F, position = "center") %>%
+  kable_styling(position = "center") %>%
   column_spec(1, bold = TRUE) %>%
   column_spec(2, width = "3cm") %>%
   row_spec(0, bold = TRUE)
@@ -509,7 +513,7 @@ kable(changepoint_dates_found, caption="Changepoints found in the Iberian trade 
 
 This would allow us to answer, at least partially, RQ1: yes, there is a statistically significant regime change reflected in the time series of external, internal and aggregated trade links extracted from connections between hoards and mints. Different methods will give us different change points with the same statistical significance, but they all fall within the same \Sexpr{max(changepoint_dates_found$changepoint)-min(changepoint_dates_found$changepoint)}-year period that starts in \Sexpr{min(changepoint_dates_found$changepoint)}.
 
-Table \ref{tab:trade.changepoints.found} summarizes the changepoints found using the different methods described above, including results with and without filtering hoards with a long date range. Except for the Lanzante/Pettitt tests, there is no change in the dates found by the different changepoint detection methods. It is specially interesting to find no change in the {\sf e.divisive} method, which being a multi-sequence method, is the most robust of all.
+Table \ref{tab:trade.changepoints.found} summarizes the changepoints found using the different methods described above, including results with and without filtering hoards with a long date range; in the case the date found by both method is the same we use "(+filtered)" in the row name. Except for the Lanzante/Pettitt tests, there is no change in the dates found by the different changepoint detection methods. It is specially interesting to find no change in the {\sf e.divisive} method, which being a multi-sequence method, is the most robust of all.
 
 We should stop for a moment to discuss how biases in the original data would affect this result, that is, a date on which the change of trade regime we were looking for took place. The first question we should ask is: Is the absence of evidence evidence of absence? That is, coin hoards in the area under study disappear due to lack of trade or change of trading routes, or people stopped hoarding coins, or these hoards were simply not dug up yet? To a certain point, historical and archaeological records point to changes in economic regime, certainly so in Britain \citep{walton2016coinage}. But the second question is if the how the shift point found in the data is affected by these biases, including those acknowledged in \ref{ssec:validation}; the honest answer is that we do not know. However, while the algorithms we have used help us find a value that is statistically significant, subsequent processing, using network analysis, is relatively more robust since it takes into account a bigger amount of data. We will see the results of this analysis next; we could work with the start or the end of the date range mentioned in the previous paragraph, the midpoint, or the one found by multi-sequence analysis, which is statistically the soundest, the qualitative results will be substantially similar. This multiple analysis is needed, however, to clearly establish that range, as well as the points where the change of regime is most likely.
 
