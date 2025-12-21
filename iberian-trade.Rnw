@@ -320,7 +320,7 @@ The second type of bias we should expect is temporal, that is, some periods get 
 
 Additionally, a time series needs to undergo a series of tests to check that the hypotheses on which the analysis that will be performed on it are valid. The first condition a time series needs to fulfill is non-stationarity, that is, the data we observe is not simply noise around a constant mean.
 
-<<trade.stationarity.test, echo=FALSE, message=FALSE>>=
+<<trade.stationarity.test, echo=FALSE, message=FALSE, warning=F>>=
 library(tseries)
 adf_interior <- adf.test(links_time_series$interior_links)
 adf_exterior <- adf.test(links_time_series$exterior_links)
@@ -363,28 +363,34 @@ This would be an additional validation for the time series, which, despite the a
 
 \subsection{Checking the time series against known events}
 
-A visual inspection of the time series can be used to check it against known historical events; the fact that they appear in the series with a plausible impact would be a source of additional validation.
+Additionally, we will try to connect our results to other sources of information, be it written or from material culture, so that they can be validated in an independent way. A visual inspection of the time series can be used to check it against known historical events; the fact that they appear in the series with a plausible impact would be a source of additional validation.
 
-<<trade.events, echo=FALSE, fig.height=4, fig.cap="Time series of interior and all trade link density for the Iberian Peninsula, with known historical events indicated.", fig.pos="h!tb">>=
+<<trade.events, echo=FALSE, fig.height=5, fig.cap="Time series of interior link density for the Iberian Peninsula, with known historical events indicated.", fig.pos="h!tb">>=
 ggplot(links_time_series, aes(x=year)) +
-  geom_line(aes(y=interior_links, color="Interior links"), linewidth=1) +
-  geom_line(aes(y=exterior_links, color="All links"), linewidth=1) +
+  geom_line(aes(y=interior_links, color="Interior links"), linewidth=2) +
   scale_color_manual(values=c("Interior links"="#E69F00", "All links"="#56B4E9")) +
   labs(title="Trade link density in the Iberian Peninsula",
        x="Year",
        y="Trade link density") +
-  theme_minimal() +
-  theme(legend.title = element_blank())+ # vertical dashed line year = 340 labeled "Restoration Emerita Augusta"
+  theme_minimal() + # suppress legend
+  theme(legend.position = "none") +
   geom_vline(xintercept=340, linetype="dashed", color="red") +
-  annotate("text", x=336, y=max(links_time_series$exterior_links)*0.9, label="340: Restoration Emeriga Augusta", color="red", angle=90, vjust=-0.5) +
+  annotate("text", x=336, y=max(links_time_series$interior_links)*0.75, label="340: Restoration Emerita Augusta", color="red", angle=90, vjust=-0.7) +
   geom_vline(xintercept=385, linetype="dashed", color="blue") +
-  annotate("text", x=383, y=max(links_time_series$exterior_links)*0.9, label="385: End of Priscillianism", color="blue", angle=90, vjust=-0.5) +
+  annotate("text", x=383, y=max(links_time_series$interior_links)*0.85, label="385: End of Priscillianism", color="blue", angle=90, vjust=-0.7) +
   geom_vline(xintercept=409, linetype="dashed", color="purple") +
-  annotate("text", x=407, y=max(links_time_series$exterior_links)*0.9, label="409: Vandal invasion", color="purple", angle=90, vjust=-0.5)
-
+  annotate("text", x=407, y=max(links_time_series$interior_links)*0.85, label="409: Vandal invasion", color="purple", angle=90, vjust=-0.7)+
+  geom_vline(xintercept=461, linetype="dashed", color="gold") +
+  annotate("text", x=458, y=max(links_time_series$interior_links)*0.8, label="461: Broken links with Rome", color="gold", angle=90, vjust=-0.7)+
+  geom_vline(xintercept=552, linetype="dashed", color="darkgray") +
+  annotate("text", x=549, y=max(links_time_series$interior_links)*0.6, label="554: Partly conquered by the Byzantine empire", color="darkgray", angle=90, vjust=-0.7)+
+  geom_vline(xintercept=653, linetype="dashed", color="black") +
+  annotate("text", x=650, y=max(links_time_series$interior_links)*0.7, label="653: Reassertion of centralized power", color="black", angle=90, vjust=-0.7)+
+  geom_vline(xintercept=711, linetype="dashed", color="darkgreen") +
+  annotate("text", x=708, y=max(links_time_series$interior_links)*0.6, label="711: Invasion by the Umayyad Caliphate", color="darkgreen", angle=90, vjust=-0.7)
 @
 
-Additionally, we will try to connect our results to other sources of information, be it written or from material culture, so that they can be validated in an independent way. At any rate, any data used in this paper will be published with a free license from the repository at \url{https://github.com/JJ/medieval-trade}, so that it can be validated independently.
+At any rate, any data used in this paper will be published with a free license from the repository at \url{https://github.com/JJ/medieval-trade}, so that it can be validated independently.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Results}
