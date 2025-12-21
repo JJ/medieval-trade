@@ -345,7 +345,7 @@ Additionally, we will try to connect our results to other sources of information
 \section{Results}
 \label{sec:results}
 
-<<trade.changepoint, echo=FALSE, fig.height=4, fig.cap="Changepoint in the time series of Iberian trade link density, with mean before and after the changepoint in red.", message=FALSE>>=
+<<trade.changepoint, echo=FALSE, fig.height=4, fig.cap="Changepoint in the time series of Iberian trade link density, with mean before and after the changepoint in red. This changepoint has been established following the cpt.meanvar method.", message=FALSE>>=
 library(changepoint)
 all_links_changepoint <- cpt.meanvar(all_annual_iberian_links$link_density, method="AMOC")
 links_changepoint_date <- all_annual_iberian_links$year[all_links_changepoint@cpts]
