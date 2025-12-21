@@ -316,7 +316,28 @@ We should probably consider also the fact that, in some cases, imitative currenc
 
 Finally, regional distribution is not the main focus of this paper, as we are mainly concerned with the detection of change point in a time series; in this sense, temporal biases would greatly affect results, in the sense that if a change in the link density is indicative simply of absence of evidence for that particular period and not absence of links, the result would be compromised. \cite{FLAME:bias} mention that the early medieval period has only very recently been a source of interest, and that in many cases sites linked to that period \edit{would} not be excavated and even, in some cases, bulldozed. On the other hand, we should take into account that while there is bias in choosing the places to excavate, the year where coins were minted or used is an {\em output} or result of these excavations which cannot be filtered beforehand. This means that unless some specific region was the only source of coins or hoards for a specific period, or coins from some period were simply dropped or results not published, we should expect an (unquantified) smaller bias in the time series of links we are using in this paper.
 
-The second type of bias we should expect is temporal, that is, some periods get more hoards than others, so that the number of hoards found reflects the interest of numismatists and archaeologists in those periods more than the economic activity. We will try to validate qualitatively the time series with known studies in the period and area we are interested; for instance, we can match the highs and lows in the time series with existing research in the area of numismatics and economics history. \cite{kurt2020minting} describes history, economic and minting activity of the Visigothic reigns in the Iberian Peninsula, and notes that it was kept at a low level, mainly reproducing Eastern Empire coins. This dearth of \edit{trade links} can be seen \edit{in Figure} \ref{fig:trade.overview}, with a long depression lasting for two centuries and reflected in very few trade links during the 5th and 6th centuries. This low activity is qualified in \cite{castro2016absent}, noting also a certain recovery in the 7th century after a minimum of coin weight in the first half of the century, followed by a certain recuperation in the early 8th century. Again, this peak is shown by the end of the time series that we are using in this paper, Figure \ref{fig:trade.overview}. Additionally, a small peak during the 7th century matches the invasion of the Spanish South-East by the Byzantine empire that made the circulation of coins minted there much more common together with a certain increase in commerce and economic activity \citep{pliego2020rethinking} during that period. In general, this series, at least qualitatively, matches known economic activity patterns and the corresponding circulation of coins in our area of study, the Iberian Peninsula.
+The second type of bias we should expect is temporal, that is, some periods get more hoards than others, so that the number of hoards found reflects the interest of numismatists and archaeologists in those periods more than the economic activity. We will try to validate qualitatively the time series with known studies in the period and area we are interested; for instance, we can match the highs and lows in the time series with existing research in the area of numismatics and economics history. \cite{kurt2020minting} describes history, economic and minting activity of the Visigothic reigns in the Iberian Peninsula, and notes that it was kept at a low level, mainly reproducing Eastern Empire coins. This dearth of trade links can be seen in Figure \ref{fig:trade.overview}, with a long depression lasting for two centuries and reflected in very few trade links during the 5th and 6th centuries. This low activity is qualified in \cite{castro2016absent}, noting also a certain recovery in the 7th century after a minimum of coin weight in the first half of the century, followed by a certain recuperation in the early 8th century. Again, this peak is shown by the end of the time series that we are using in this paper, Figure \ref{fig:trade.overview}. Additionally, a small peak during the 7th century matches the invasion of the Spanish South-East by the Byzantine empire that made the circulation of coins minted there much more common together with a certain increase in commerce and economic activity \citep{pliego2020rethinking} during that period. In general, this series, at least qualitatively, matches known economic activity patterns and the corresponding circulation of coins in our area of study, the Iberian Peninsula.
+
+Additionally, a time series needs to undergo a series of tests to check that the hypotheses on which the analysis that will be performed on it are valid. The first condition a time series needs to fulfill is non-stationarity, that is, the data we observe is not simply noise around a constant mean.
+
+<<trade.stationarity.test, echo=FALSE, message=FALSE>>=
+library(tseries)
+adf_interior <- adf.test(links_time_series$interior_links)
+adf_exterior <- adf.test(links_time_series$exterior_links)
+kpss_interior <- kpss.test(links_time_series$interior_links)
+kpss_exterior <- kpss.test(links_time_series$exterior_links)
+
+stationarity_test <- data.frame(
+  Series = c("Interior links", "Exterior links"),
+  ADF_statistic = c(adf_interior$statistic, adf_exterior$statistic),
+  KPSS_p_value = c(kpss_interior$statistic, kpss_exterior$statistic)
+)
+
+kable(stationarity_test, caption="Stationarity tests for the two time series", col.names=c("Series", "ADF Statistic", "KPSS statistic")) %>%
+  kable_styling(full_width = F, position = "center") %>%
+  column_spec(1, bold = TRUE) %>%
+  row_spec(0, bold = TRUE)
+@
 
 
 <<trade.validation.lead, echo=FALSE, fig.height=4, fig.cap="Cross-correlation between \\protect\\edit{annual trade density} and lead pollution", message=FALSE>>=
@@ -346,6 +367,19 @@ Additionally, we will try to connect our results to other sources of information
 \label{sec:results}
 
 <<trade.changepoint, echo=FALSE, fig.height=4, fig.cap="Changepoint in the time series of Iberian trade link density, with mean before and after the changepoint in red. This changepoint has been established following the cpt.meanvar method.", message=FALSE, fig.pos="h!tb">>=
+
+# Function definition
+pad_with_zeros <- function(vec){
+  for( year in min(vec$year):max(vec$year) ){
+    if (!(year %in% vec$year)) {
+      vec <- rbind(vec, data.frame(year=year, link_density=0))
+    }
+  }
+  vec <- vec[order(vec$year), ]
+  return(vec)
+}
+
+
 library(changepoint)
 all_links_changepoint <- cpt.meanvar(all_annual_iberian_links$link_density, method="AMOC")
 links_changepoint_date <- all_annual_iberian_links$year[all_links_changepoint@cpts]
@@ -373,16 +407,6 @@ After we have established the validity of the dataset, we will go ahead and try 
 
 <<trade.changepoint.stats, echo=FALSE, message=FALSE>>=
 library(trend)
-
-pad_with_zeros <- function(vec){
-  for( year in min(vec$year):max(vec$year) ){
-    if (!(year %in% vec$year)) {
-      vec <- rbind(vec, data.frame(year=year, link_density=0))
-    }
-  }
-  vec <- vec[order(vec$year), ]
-  return(vec)
-}
 
 annual_iberian_links_filtered <- read.csv("data/annual-iberian-link-probability-filtered.csv",sep=";") %>% filter( year >= min_year & year <= max_year)
 annual_iberian_links_filtered <- pad_with_zeros(annual_iberian_links_filtered)
