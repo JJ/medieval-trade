@@ -27,3 +27,4 @@ auto/
 .RData.vscode
 .vscode/
 .RData
+*.docx

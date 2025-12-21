@@ -52,6 +52,8 @@ for @coin-groups -> %coin-group {
         say %coin-group;
     }
 
+    next if $end_year - $start_year > 100;
+
     if %coin-group<Mint_ID> ∈ $iberian-mints || %coin-group<CoinFinding_ID> ∈ $iberian-findings {
         @date-ranges.push: [$start_year, $end_year];
     }
@@ -81,12 +83,12 @@ for @coin-groups -> %coin-group {
 }
 
 @date-ranges.unshift: ["Start_year", "End_year"];
-csv( in => @date-ranges, out => "data/date-ranges.csv", sep => ";", headers => "auto" );
-csv( in => convert_hash_to_sorted_array_of_hashes(%annual-link-probability), out => "data/annual-link-probability.csv", sep => ";", headers => 'auto' );
-csv( in => convert_hash_to_sorted_array_of_hashes(%annual-all-iberian-link-probability), out => "data/annual-all-iberian-link-probability.csv", sep => ";", headers => 'auto' );
-csv( in => convert_hash_to_sorted_array_of_hashes(%annual-iberian-link-probability), out => "data/annual-iberian-link-probability.csv", sep => ";", headers => 'auto' );
-csv( in => convert_to_array_of_hashes(%iberian-links-out), out => "data/annual-iberian-links.csv", sep => ";", headers => 'auto' );
-csv( in => convert_to_array_of_hashes(%regional-links-out), out => "data/annual-regional-links.csv", sep => ";", headers => 'auto' );
+csv( in => @date-ranges, out => "data/date-ranges-filtered.csv", sep => ";", headers => "auto" );
+csv( in => convert_hash_to_sorted_array_of_hashes(%annual-link-probability), out => "data/annual-link-probability-filtered.csv", sep => ";", headers => 'auto' );
+csv( in => convert_hash_to_sorted_array_of_hashes(%annual-all-iberian-link-probability), out => "data/annual-all-iberian-link-probability-filtered.csv", sep => ";", headers => 'auto' );
+csv( in => convert_hash_to_sorted_array_of_hashes(%annual-iberian-link-probability), out => "data/annual-iberian-link-probability-filtered.csv", sep => ";", headers => 'auto' );
+csv( in => convert_to_array_of_hashes(%iberian-links-out), out => "data/annual-iberian-links-filtered.csv", sep => ";", headers => 'auto' );
+csv( in => convert_to_array_of_hashes(%regional-links-out), out => "data/annual-regional-links-filtered.csv", sep => ";", headers => 'auto' );
 
 sub normalize_to_iberian_peninsula( $country ) {
     return ( $country eq "Spain" || $country eq "Portugal" ) ?? "Iberian Peninsula" !! $country;
