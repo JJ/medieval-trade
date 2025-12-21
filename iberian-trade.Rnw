@@ -333,12 +333,13 @@ stationarity_test <- data.frame(
   KPSS_p_value = c(kpss_interior$statistic, kpss_exterior$statistic)
 )
 
-kable(stationarity_test, caption="Stationarity tests for the two time series", col.names=c("Series", "ADF Statistic", "KPSS statistic")) %>%
+kable(stationarity_test, caption="Stationarity tests for the time series of internal and complete trade link density.", col.names=c("Series", "ADF Statistic", "KPSS statistic")) %>%
   kable_styling(full_width = F, position = "center") %>%
   column_spec(1, bold = TRUE) %>%
   row_spec(0, bold = TRUE)
 @
 
+We have used Augmented Dickey-Fuller \cite{said1984testing} and KPSS \cite{kwiatkowski1992testing} to test for this stationarity; the statistic values shown in Table \ref{tab:trade.stationarity.test} indicate that both the interior and the complete trade link density series exhibit non-stationarity with a statistically significant level. This enables us to proceed with the rest of the analysis, validating the use of change point detection methods.
 
 <<trade.validation.lead, echo=FALSE, fig.height=4, fig.cap="Cross-correlation between \\protect\\edit{annual trade density} and lead pollution", message=FALSE>>=
 pollution_data <- read.csv("data/annual-pollution-data.csv", sep=";")
