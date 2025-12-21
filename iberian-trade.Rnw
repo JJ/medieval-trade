@@ -359,7 +359,30 @@ plot(cross_correlation, xlab="Lag", ylab="Cross-correlation", main="")
 An additional source of validation for this dataset is using a different, independently gathered, time series related to \edit{trade} activity.  \cite{mcconnell:pollution:2} in their paper that follows up a previous one \citep{lead:pollution} establish a connection between the economic activity (and other events that are bound to impact it, like war and plagues) and lead pollution measured in ice cores; since lead is released into the atmosphere as a result of mining and minting activities, there could be a correlation between hoard and lead data. By using the dataset they have released, substituting missing values by series average,
 we have analyzed cross-correlation between the two time series shown in Figure \ref{fig:trade.validation.lead}, which shows a very strong correlation between contamination and trade density with a lag that of several decades, indicated by lag values surpassing the dashed blue line, that is, a change in trade link density in either direction is correlated with lead presence in the atmosphere several decades later.\footnote{By itself, this result would open an interesting avenue to explore, but will use it here only for the purpose of validating our dataset.} Please note that \cite{oddo2024economic} finds a similar negative correlation between lead pollution and silver coin circulation; however, this correlation is not delayed as we find here. It can be argued that this contemporary negative correlation could be later on cause of a negative correlation in trade link density; however, this is not the main point of this paper so we are not going to delve into this. Let it be said, however, that similar correlation results in the same direction have been proved, which could be an additional source of validation of this dataset we are using.
 
-This would be an additional validation for the time series, which, despite the acknowledged biases in the original data, would be representative enough of this \edit{trade} activity we are analyzing, the number of trade links to support the validity of the results we will present as responses to the research questions.
+This would be an additional validation for the time series, which, despite the acknowledged biases in the original data, would be representative enough of this trade activity we are analyzing, the number of trade links to support the validity of the results we will present as responses to the research questions.
+
+\subsection{Checking the time series against known events}
+
+A visual inspection of the time series can be used to check it against known historical events; the fact that they appear in the series with a plausible impact would be a source of additional validation.
+
+<<trade.events, echo=FALSE, fig.height=4, fig.cap="Time series of interior and all trade link density for the Iberian Peninsula, with known historical events indicated.", fig.pos="h!tb">>=
+ggplot(links_time_series, aes(x=year)) +
+  geom_line(aes(y=interior_links, color="Interior links"), linewidth=1) +
+  geom_line(aes(y=exterior_links, color="All links"), linewidth=1) +
+  scale_color_manual(values=c("Interior links"="#E69F00", "All links"="#56B4E9")) +
+  labs(title="Trade link density in the Iberian Peninsula",
+       x="Year",
+       y="Trade link density") +
+  theme_minimal() +
+  theme(legend.title = element_blank())+ # vertical dashed line year = 340 labeled "Restoration Emerita Augusta"
+  geom_vline(xintercept=340, linetype="dashed", color="red") +
+  annotate("text", x=336, y=max(links_time_series$exterior_links)*0.9, label="340: Restoration Emeriga Augusta", color="red", angle=90, vjust=-0.5) +
+  geom_vline(xintercept=385, linetype="dashed", color="blue") +
+  annotate("text", x=383, y=max(links_time_series$exterior_links)*0.9, label="385: End of Priscillianism", color="blue", angle=90, vjust=-0.5) +
+  geom_vline(xintercept=409, linetype="dashed", color="purple") +
+  annotate("text", x=407, y=max(links_time_series$exterior_links)*0.9, label="409: Vandal invasion", color="purple", angle=90, vjust=-0.5)
+
+@
 
 Additionally, we will try to connect our results to other sources of information, be it written or from material culture, so that they can be validated in an independent way. At any rate, any data used in this paper will be published with a free license from the repository at \url{https://github.com/JJ/medieval-trade}, so that it can be validated independently.
 
