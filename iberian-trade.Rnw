@@ -422,7 +422,7 @@ and \Sexpr{max(all_links_changepoint_stats$changepoint)}. Please observe that al
 
 Before looking for a possible cause, we should try and place the {\em internal} Iberian traffic changepoint, this being an important component of all the trade links; any variation withing the range we have would point out to important internal causes for the change of regime, that would contribute (or detract) from any external cause.
 
-<<trade.changepoint.internal, echo=FALSE, fig.height=4, fig.cap="Changepoint in the time series of intra-Iberian trade link density, with mean before and after the changepoint in red.", message=FALSE>>=
+<<trade.changepoint.internal, echo=FALSE, fig.height=4, fig.cap="Changepoint in the time series of intra-Iberian trade link density, with mean before and after the changepoint found using the {\\protect\\sf cpt.mean} method in red.", message=FALSE>>=
 links_changepoint <- cpt.mean(annual_iberian_links$link_density, method="AMOC")
 internal_links_changepoint_date <- annual_iberian_links$year[links_changepoint@cpts[1]]
 
@@ -454,8 +454,20 @@ z_links_filtered <- matrix(c(external_iberian_links_filtered, annual_iberian_lin
 multi_changepoint <- e.divisive(z_links, min.size=100)
 multi_changepoint_year <- annual_iberian_links$year[multi_changepoint$estimate[2]]
 
+multi_changepoint_50y <- e.divisive(z_links, min.size=50)
+multi_changepoint_year_50y <- annual_iberian_links$year[multi_changepoint_50y$estimate[2]]
+
+multi_changepoint_200y <- e.divisive(z_links, min.size=200)
+multi_changepoint_year_200y <- annual_iberian_links$year[multi_changepoint_200y$estimate[2]]
+
 multi_changepoint_filtered <- e.divisive(z_links_filtered, min.size=100)
 multi_changepoint_year_filtered <- annual_iberian_links_filtered$year[multi_changepoint_filtered$estimate[2]]
+
+multi_changepoint_filtered_50y <- e.divisive(z_links_filtered, min.size=50)
+multi_changepoint_year_filtered_50y <- annual_iberian_links_filtered$year[multi_changepoint_filtered_50y$estimate[2]]
+
+multi_changepoint_filtered_200y <- e.divisive(z_links_filtered, min.size=200)
+multi_changepoint_year_filtered_200y <- annual_iberian_links_filtered$year[multi_changepoint_filtered_200y$estimate[2]]
 
 external_internal_df <- data.frame(
   year = annual_iberian_links$year,
