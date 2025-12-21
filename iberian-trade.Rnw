@@ -345,7 +345,7 @@ Additionally, we will try to connect our results to other sources of information
 \section{Results}
 \label{sec:results}
 
-<<trade.changepoint, echo=FALSE, fig.height=4, fig.cap="Changepoint in the time series of Iberian trade link density, with mean before and after the changepoint in red. This changepoint has been established following the cpt.meanvar method.", message=FALSE>>=
+<<trade.changepoint, echo=FALSE, fig.height=4, fig.cap="Changepoint in the time series of Iberian trade link density, with mean before and after the changepoint in red. This changepoint has been established following the cpt.meanvar method.", message=FALSE, fig.pos="h!tb">>=
 library(changepoint)
 all_links_changepoint <- cpt.meanvar(all_annual_iberian_links$link_density, method="AMOC")
 links_changepoint_date <- all_annual_iberian_links$year[all_links_changepoint@cpts]
@@ -382,9 +382,6 @@ annual_iberian_links_filtered <- pad_with_zeros(annual_iberian_links_filtered)
 
 all_annual_iberian_links_filtered <- read.csv("data/annual-all-iberian-link-probability-filtered.csv", sep=";") %>% filter( year >= min_year & year <= max_year)
 all_annual_iberian_links_filtered <- pad_with_zeros(all_annual_iberian_links_filtered)
-
-
-
 
 all_links_changepoint_lanzante <- lanzante.test(all_annual_iberian_links$link_density, method="rrod.test")
 all_links_changepoint_pettitt <- pettitt.test(all_annual_iberian_links$link_density)
