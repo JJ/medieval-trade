@@ -154,7 +154,7 @@ links_time_series <- data.frame(  year = annual_iberian_links$year,
 
 @
 
-We have used the FLAME ({\em Framing the Late Antique and early Medieval Economy}) database as the \edit{foundation} for this paper in its September 2024 version, which is available from \url{https://coinage.princeton.edu/flame-database-last-version}. This project has published a series of datasets that contain information on coin hoards found all over the world \edit{spanning} from the 4th to the 8th century. \edit{These datasets} formed the basis for \cite{coins}, although it was enhanced with more data that has not been published \edit{in data form} so far.
+We have used the FLAME ({\em Framing the Late Antique and early Medieval Economy}) database as the \edit{foundation} for this paper in its September 18, 2024 version, which is available from \url{https://coinage.princeton.edu/flame-database-last-version}. This project has published a series of datasets that contain information on coin hoards found all over the world \edit{spanning} from the 4th to the 8th century. \edit{These datasets} formed the basis for \cite{coins}, although it was enhanced with more data that has not been published \edit{in data form} so far.
 
 We will focus on the Iberian Peninsula and the two countries with hoards and mints, Spain and Portugal\footnote{There are no hoards found in Andorra or in the UK colony of Gibraltar.}. We simply included in our datasets hoards or mints that had been geolocated to these two countries.
 
@@ -350,6 +350,9 @@ library(changepoint)
 all_links_changepoint <- cpt.meanvar(all_annual_iberian_links$link_density, method="AMOC")
 links_changepoint_date <- all_annual_iberian_links$year[all_links_changepoint@cpts]
 
+all_annual_iberian_links_filtered <- read.csv("data/annual-all-iberian-link-probability-filtered.csv", sep=";") %>% filter( year >= min_year & year <= max_year)
+all_annual_iberian_links_filtered <- pad_with_zeros(all_annual_iberian_links_filtered)
+
 all_links_changepoint_filtered <- cpt.meanvar(all_annual_iberian_links_filtered$link_density, method="AMOC")
 links_changepoint_date_filtered <- all_annual_iberian_links_filtered$year[all_links_changepoint_filtered@cpts]
 
@@ -383,9 +386,6 @@ pad_with_zeros <- function(vec){
 
 annual_iberian_links_filtered <- read.csv("data/annual-iberian-link-probability-filtered.csv",sep=";") %>% filter( year >= min_year & year <= max_year)
 annual_iberian_links_filtered <- pad_with_zeros(annual_iberian_links_filtered)
-
-all_annual_iberian_links_filtered <- read.csv("data/annual-all-iberian-link-probability-filtered.csv", sep=";") %>% filter( year >= min_year & year <= max_year)
-all_annual_iberian_links_filtered <- pad_with_zeros(all_annual_iberian_links_filtered)
 
 all_links_changepoint_lanzante <- lanzante.test(all_annual_iberian_links$link_density, method="rrod.test")
 all_links_changepoint_pettitt <- pettitt.test(all_annual_iberian_links$link_density)
@@ -493,7 +493,8 @@ ggplot(external_internal_df, aes(x=year)) +
 
 @
 
-In this case, there are specific methods for finding changepoints in time series with multiple columns, like this one. In order to apply the procedure, we first subtract the number of internal links from the number of total links to have two different synchronous sequences, with trade links inside and outside the Iberian Peninsula. On this two-column array, we apply the {\tt e.divisive} function from the {\sf ecp} package in R \citep{ecp-article} which implements a hierarchical divisive estimation procedure, finding changepoints and applying again the same procedure to the resulting fragments. The result is shown in Figure \ref{fig:trade.changepoint.multi}, with the vertical dashed line indicating the changepoint found, which shows a vertical dashed line for the changepoint found at \Sexpr{multi_changepoint_year}.
+In this case, there are specific methods for finding changepoints in time series with multiple columns, like this one. In order to apply the procedure, we first subtract the number of internal links from the number of total links to have two different and synchronous sequences, with trade links inside and outside the Iberian Peninsula. On this two-column array, we apply the {\tt e.divisive} function from the {\sf ecp} package in R \citep{ecp-article} which implements a hierarchical divisive estimation procedure, finding changepoints and applying again the same procedure to the resulting fragments; this method needs an additional parameter, the minimum size of the chunks in which the time series is going to be divided. Since we are looking for epochal changes, we have used size = 100 years.
+. The result is shown in Figure \ref{fig:trade.changepoint.multi}, with the vertical dashed line indicating the changepoint found, which shows a vertical dashed line for the changepoint found at \Sexpr{multi_changepoint_year}.
 
 <<trade.changepoints.found, echo=FALSE, message=FALSE>>=
 changepoint_dates_found <- data.frame(
@@ -644,10 +645,12 @@ It should be pointed out that, as shown in this paper, that would not have been 
 \section{Discussion and conclusions}
 \label{sec:conclusions}
 
-In this paper we have followed a methodology for linking statistical results \edit{over a coin hoard database} to historically established facts, by analyzing historical data looking for changepoints and delving into them \edit{using network analysis} before and after the changepoint looking for possible immediate \edit{origins and} causes of those epochal changes.
+In this paper we have followed a methodology for linking statistical results over a coin hoard database to historically established facts, by analyzing historical data looking for changepoints and delving into them using network analysis before and after the changepoint looking for possible immediate origins and causes of those epochal changes.
 
-\edit{The first stage of the analysis establishes} the dates \edit{of the changepoint and, from them, possible factors that influenced the change of regime} of the Western Roman Empire in the Iberian Peninsula, a peripheral part of said empire, by looking at data from the FLAME coin hoard database. We validated the dataset of trade links obtained from that database used \edit{via historical sources, as well as } correlations with \edit{time series representing} lead pollution, giving us a solid foundation for performing this analysis. \edit{Date ranges of coin groups in FLAME coin hoards were then processed following best practices to a time series of trade link {\em density} between different regions.}
-\edit{Using different change point analysis algorithms, w}e found statistically significant changepoints for different time series obtained from that data in a range of years that preceded the actual fall of the Roman Empire \edit{by several decades. Once the changepoints were found, splitting the network of trade links in periods pre and post allows us to examine which nodes in the network have suffered the biggest fall in link density or disappeared altogether; Britain seems to have topped the list of those, followed closely by other nodes in the network; the internal trade density of the Iberian Peninsula shows also a clear decline preceding the changepoint}.
+The first stage of the analysis has established the dates of the changepoint and, from them, possible factors that influenced the change of regime of the Western Roman Empire in the Iberian Peninsula, a peripheral part of said empire, by looking at data from the FLAME coin hoard database. We validated the dataset of trade links obtained from that database used via historical sources, as well as  correlations with time series representing lead pollution, giving us a solid foundation for performing this analysis. Date ranges of coin groups in FLAME coin hoards were then processed following best practices to a time series of trade link {\em density} between different regions.
+Using different change point analysis algorithms, we found statistically significant changepoints for different time series obtained from that data in a range of years that preceded the actual fall of the Roman Empire by several decades. These dates found through changepoint analysis are robust with respect to changes in the imputation of date ranges to specific years.
+
+Once the changepoints were found, splitting the network of trade links in periods pre and post allows us to examine which nodes in the network have suffered the biggest fall in link density or disappeared altogether; Britain seems to have topped the list of those, followed closely by other nodes in the network; the internal trade density of the Iberian Peninsula shows also a clear decline preceding the changepoint.
 
 \edit{After answering the two first research questions with this analysis, we proceed with a second, more qualitative and speculative stage, to answer the second group of research questions.} \edit{Tapping from historical sources, we have found that the causes of the changes found through the changepoint and subsequent network analysis was} the dependence of a mainly commercial economy with the supply of the Roman elite and troops in the British Isles\edit{. T}he first \edit{decreases in trade link density as represented in the coin hoard data came} after the bulk of the \edit{Roman} troops abandoned \edit{Britain} during the last quarter of the 4th century. \edit{A second, and possibly fatal, fall in trade link density arrived} after the isles were left to their own devices \edit{following the second departure of Roman troops and elites in the early 5th century}, which resulted in a collapse of material culture in England. \edit{Due to the proven, and also present in the FLAME data, connection between Britain and the Iberian Peninsula, this was probably a very important factor in the vulnerability of the Iberian Peninsula to the invasions that succeeded in the first half of the 5th century}. \edit{These events} also coincided with the first sack of Rome by the Visigoths \citep{Collins1991}. At any rate, we have established that the \edit{factors that caused the changepoint observed in the trade link density time series are very probably internal, as well as} related to its economic dependence \edit{with} the British Isles \edit{and other parts of the empire. The analysis of the internal link density shows that it was depressed even further shortly before the changepoint and did not indeed pick up until the 7th century}.
 
