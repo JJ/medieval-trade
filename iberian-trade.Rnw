@@ -430,6 +430,10 @@ Before looking for a possible cause, we should try and place the {\em internal} 
 <<trade.changepoint.internal, echo=FALSE, fig.height=4, fig.cap="Changepoint in the time series of intra-Iberian trade link density, with mean before and after the changepoint in red.", message=FALSE>>=
 links_changepoint <- cpt.mean(annual_iberian_links$link_density, method="AMOC")
 internal_links_changepoint_date <- annual_iberian_links$year[links_changepoint@cpts[1]]
+
+links_changepoint_filtered <- cpt.mean(annual_iberian_links_filtered$link_density, method="AMOC")
+internal_links_changepoint_date_filtered <- annual_iberian_links_filtered$year[links_changepoint_filtered@cpts[1]]
+
 ticks <- c(1,100,200,300,400,500)
 ticks.years <- annual_iberian_links$year[ticks]
 
@@ -446,12 +450,17 @@ The changepoint plot with averages before and after it is shown in Figure \ref{f
 
 <<trade.changepoint.multi, echo=FALSE, message=FALSE, fig.cap="Link density graph, showing internal and external link density as well as the changepoint found using the {\\protect\\sf ecp} multi-sequence method.", fig.height=4>>=
 external_iberian_links <- all_annual_iberian_links$link_density - annual_iberian_links$link_density
+external_iberian_links_filtered <- all_annual_iberian_links_filtered$link_density - annual_iberian_links_filtered$link_density
 
 library(ecp)
 z_links <- matrix(c(external_iberian_links, annual_iberian_links$link_density), ncol=2)
+z_links_filtered <- matrix(c(external_iberian_links_filtered, annual_iberian_links_filtered$link_density), ncol=2)
 
 multi_changepoint <- e.divisive(z_links, min.size=100)
 multi_changepoint_year <- annual_iberian_links$year[multi_changepoint$estimate[2]]
+
+multi_changepoint_filtered <- e.divisive(z_links_filtered, min.size=100)
+multi_changepoint_year_filtered <- annual_iberian_links_filtered$year[multi_changepoint_filtered$estimate[2]]
 
 external_internal_df <- data.frame(
   year = annual_iberian_links$year,
@@ -477,9 +486,10 @@ In this case, there are specific methods for finding changepoints in time series
 
 <<trade.changepoints.found, echo=FALSE, message=FALSE>>=
 changepoint_dates_found <- data.frame(
-  Method = c("All links, cpt.meanvar", "All links, Lanzante/Pettitt", "Internal links, cpt.mean", "Multi-sequence, e.divisive"),
+  Method = c("All links, cpt.meanvar", "All links, Lanzante/Pettitt", "All links, Lanzante/Pettitt (filtered)", "Internal links, cpt.mean (+filtered)", "Multi-sequence, e.divisive (+filtered)"),
   changepoint = c(links_changepoint_date[1],
                   all_annual_iberian_links$year[all_links_changepoint_lanzante$estimate],
+                  all_annual_iberian_links_filtered$year[all_links_changepoint_lanzante_filtered$estimate],
                   internal_links_changepoint_date,
                   multi_changepoint_year))
 
