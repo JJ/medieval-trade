@@ -390,13 +390,16 @@ ggplot(links_time_series, aes(x=year)) +
   annotate("text", x=708, y=max(links_time_series$interior_links)*0.6, label="711: Invasion by the Umayyad Caliphate", color="darkgreen", angle=90, vjust=-0.7)
 @
 
-At any rate, any data used in this paper will be published with a free license from the repository at \url{https://github.com/JJ/medieval-trade}, so that it can be validated independently.
+Figure \ref{fig:trade.events} shows some important events happened in the Iberian Peninsula during the period under study. The restoration of Emerita Augusta, which was the capital city of a province that included Spain and Portugal, was restored in 340 while the sons of Constantine were in power. This matches a peak in activity reflected in the internal time series. The end of the Priscillian heresy in 385 \cite{wood2015borders} is followed by a descent in activity, but it is after the Vandal and Sueves invasion in 409 when the activity is totally grounded \cite{wood2015borders}. The Byzantine invasion \cite{pirenne} is reflected by a small increment in activity, which peaks during the stabilization  of the Visigoth kingdom during the early 7th century \cite{kurt2020minting}. The Umayyad invasion in 711 is shown as a small depression, that stabilizes a bit later to a smaller level of activity before the end of the series.
+In general and by visual inspection, the series shows depressions in activity as reflected in the coin hoards after invasions or civil wars, and peaks of varying importance during stable or peaceful periods. The breakdown of links with the Western Roman Empire soon before its downfall is followed by an almost century-long period with very low activity. In general, it can be said that the existing data qualitatively reflect what we know about the history of trade-related activity, thus giving an additional layer of validation to our data.
+
+At any rate, data used in this paper will be published with a free license from the repository at \url{https://github.com/JJ/medieval-trade}, so that it can be validated independently.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Results}
 \label{sec:results}
 
-<<trade.changepoint, echo=FALSE, fig.height=4, fig.cap="Changepoint in the time series of Iberian trade link density, with mean before and after the changepoint in red. This changepoint has been established following the cpt.meanvar method.", message=FALSE, fig.pos="h!tb">>=
+<<trade.changepoint, echo=FALSE, fig.height=4, fig.cap="Changepoint in the time series of density of trade links with the Iberian peninsula, with mean before and after the changepoint in red. This changepoint has been established following the {\\protect\\sf cpt.meanvar} method.", message=FALSE, fig.pos="h!tb">>=
 
 # Function definition
 pad_with_zeros <- function(vec){
