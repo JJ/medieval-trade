@@ -366,10 +366,37 @@ After we have established the validity of the dataset, we will go ahead and try 
 
 <<trade.changepoint.stats, echo=FALSE, message=FALSE>>=
 library(trend)
+
+pad_with_zeros <- function(vec){
+  for( year in min(vec$year):max(vec$year) ){
+    if (!(year %in% vec$year)) {
+      vec <- rbind(vec, data.frame(year=year, link_density=0))
+    }
+  }
+  vec <- vec[order(vec$year), ]
+  return(vec)
+}
+
+annual_iberian_links_filtered <- read.csv("data/annual-iberian-link-probability-filtered.csv",sep=";") %>% filter( year >= min_year & year <= max_year)
+annual_iberian_links_filtered <- pad_with_zeros(annual_iberian_links_filtered)
+
+all_annual_iberian_links_filtered <- read.csv("data/annual-all-iberian-link-probability-filtered.csv", sep=";") %>% filter( year >= min_year & year <= max_year)
+all_annual_iberian_links_filtered <- pad_with_zeros(all_annual_iberian_links_filtered)
+
+
+
+
 all_links_changepoint_lanzante <- lanzante.test(all_annual_iberian_links$link_density, method="rrod.test")
 all_links_changepoint_pettitt <- pettitt.test(all_annual_iberian_links$link_density)
 all_links_changepoint_bu <- bu.test(all_annual_iberian_links$link_density)
 all_links_changepoint_br <- br.test(all_annual_iberian_links$link_density)
+
+all_links_changepoint_lanzante_filtered <- lanzante.test(all_annual_iberian_links_filtered$link_density, method="rrod.test")
+all_links_changepoint_pettitt_filtered <- pettitt.test(all_annual_iberian_links_filtered$link_density)
+all_links_changepoint_bu_filtered <- bu.test(all_annual_iberian_links_filtered$link_density)
+all_links_changepoint_br_filtered <- br.test(all_annual_iberian_links_filtered$link_density)
+
+
 
 all_links_changepoint_stats <- data.frame(
   Method = c("Lanzante", "Pettitt", "Bu", "Br"),
@@ -377,10 +404,14 @@ all_links_changepoint_stats <- data.frame(
                   all_annual_iberian_links$year[all_links_changepoint_pettitt$estimate],
                   all_annual_iberian_links$year[all_links_changepoint_bu$estimate],
                   all_annual_iberian_links$year[all_links_changepoint_br$estimate]),
+  changepoint_filtered = c(all_annual_iberian_links_filtered$year[all_links_changepoint_lanzante_filtered$estimate],
+                                 all_annual_iberian_links_filtered$year[all_links_changepoint_pettitt_filtered$estimate],
+                                 all_annual_iberian_links_filtered$year[all_links_changepoint_bu_filtered$estimate],
+                                 all_annual_iberian_links_filtered$year[all_links_changepoint_br_filtered$estimate]),
   changepoint.decades = c(460,460,400,400))
 
 # center table in page
-kable(all_links_changepoint_stats, caption="Changepoint detection statistics for the Iberian trade links time series. p < 0.05 in all cases. Check text for reference on the last column.", col.names=c("Method", "Changepoint year", "Changepoint (midpoint method)")) %>%
+kable(all_links_changepoint_stats, caption="Changepoint detection statistics for the Iberian trade links time series. p < 0.05 in all cases. Check text for reference on the last column.", col.names=c("Method", "Changepoint year", "Changepoint (filtered)", "Changepoint (midpoint)")) %>%
   kable_styling(full_width = F, position = "center") %>%
   column_spec(1, bold = TRUE) %>%
   column_spec(2, width = "3cm") %>%
