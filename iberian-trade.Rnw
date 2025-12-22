@@ -571,9 +571,11 @@ In this case, there are specific methods for finding changepoints in time series
 
 <<trade.changepoints.found, echo=FALSE, message=FALSE>>=
 changepoint_dates_found <- data.frame(
-  Method = c("All links, cpt.meanvar (+filtered)", "All links, cpt.meanvar (midpoint)","All links, Lanzante/Pettitt", "All links, Lanzante/Pettitt (filtered)", "Internal links, cpt.mean (+filtered)", "Multi-sequence, e.divisive (+filtered)","Multi-sequence, e.divisive (midpoint)"),
+  Method = c("All links, cpt.meanvar (+filtered)", "All links, cpt.meanvar (midpoint)", "All Links, cpt.meanvar (PELT)",
+             "All links, Lanzante/Pettitt", "All links, Lanzante/Pettitt (filtered)", "Internal links, cpt.mean (+filtered)", "Multi-sequence, e.divisive (+filtered)","Multi-sequence, e.divisive (midpoint)"),
   changepoint = c(links_changepoint_date[1],
                   420,
+                  multichangepoint_dates[4],
                   all_annual_iberian_links$year[all_links_changepoint_lanzante$estimate],
                   all_annual_iberian_links_filtered$year[all_links_changepoint_lanzante_filtered$estimate],
                   internal_links_changepoint_date,
@@ -587,7 +589,7 @@ kable(changepoint_dates_found, caption="Changepoints found in the Iberian trade 
   row_spec(0, bold = TRUE)
 @
 
-This would allow us to answer, at least partially, RQ1: yes, there is a statistically significant regime change reflected in the time series of external, internal and aggregated trade links extracted from connections between hoards and mints. Different methods will give us different change points with the same statistical significance, but they all fall within the same \Sexpr{max(changepoint_dates_found$changepoint)-min(changepoint_dates_found$changepoint)}-year period that starts in \Sexpr{min(changepoint_dates_found$changepoint)}.
+This would allow us to answer, at least partially, RQ1: yes, there is a statistically significant regime change reflected in the time series of external, internal and aggregated trade links extracted from connections between hoards and mints. Different methods will give us different change points with the same statistical significance, but they all fall within the same \Sexpr{max(changepoint_dates_found$changepoint)-min(changepoint_dates_found$changepoint)}-year period that starts in \Sexpr{min(changepoint_dates_found$changepoint)}, with a higher density between the years \Sexpr{multichangepoint_dates[4]} and the year 410.
 
 Table \ref{tab:trade.changepoints.found} summarizes the changepoints found using the different methods described above, including results with and without filtering hoards with a long date range and the decade-resolution changepoint \cite{iberian:trade} found for the dataset that uses midpoint imputation (second row); in the case the date found by both method is the same we use "(+filtered)" in the row name. Except for the Lanzante/Pettitt tests, there is no change in the dates found by the different changepoint detection methods. It is specially interesting to find no change in the {\sf e.divisive} method, which being a multi-sequence method, is the most robust of all. Additionally, the changepoint dates, with decadal resolution, found in \cite{iberian:trade} are essentially the same as found with the yearly resolution methods with present in this paper, once again pointing to the robustness of the result.
 
