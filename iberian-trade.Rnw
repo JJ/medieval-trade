@@ -2,7 +2,7 @@
 %  For support, please attach all files needed for compiling as well as the log file, and specify your operating system, LaTeX version, and LaTeX editor.
 
 %=================================================================
-\documentclass[histories,article,submit,pdftex,oneauthor]{Definitions/mdpi}
+\documentclass[complexities,article,submit,pdftex,oneauthor]{Definitions/mdpi}
 \usepackage{xcolor}
 \usepackage{graphicx}
 %=================================================================
