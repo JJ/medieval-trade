@@ -55,7 +55,7 @@ In this research we adopt a data-driven and well-established methodology to iden
 }
 
 % Keywords
-\keyword{Cliometrics, economic history, historiography, changepoint analysis, fall of the Roman Empire, Iberian Peninsula, late Antiquity, Early Middle Ages}
+\keyword{Economic history, historiography, changepoint analysis, fall of the Roman Empire, Iberian Peninsula, late Antiquity, Early Middle Ages}
 
 % The fields PACS, MSC, and JEL may be left empty or commented out if not applicable
 %\PACS{J0101}
