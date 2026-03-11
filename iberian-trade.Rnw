@@ -183,11 +183,19 @@ We have used three \edit{FLAME datasets} from the database:\begin{itemize}
 \item {\bf Mints}, that contains location information on said establishments.
 \end{itemize}
 
-We have made a series of processing steps to create the final datasets used in the paper. These will be described below
+\rev{As an example, let us look at the first row in the hoards dataset, with CoinFindingID 57; it corresponds to a hoard called "El Tesoro de Mérida" and reported by \cite{cruz2005tesoro}; as all other hoards in the database, it needs to have been reported in a published paper to be included. We need to go to the coin groups database to find out how many coin groups are; there are 5 of them with different origins. The mints needs to be checked in the third dataset, and we find that \begin{itemize}
+\item 1 coin comes from mint ID 266, that is, which is unknown.
+\item 6 from mint ID 82: Toledo (Spain).
+\item 4 from mint 83: Zorita de los Canes, also in Spain.
+\item 6 from mint 105: Mérida itself.
+\item 3 from mint 106: Talavera de la Reina, also in Spain (a bit East of Mérida)
+\end{itemize}
+
+We take the start year and end year from the coin group database: 569 and 589, respectively. This will eventually create 4 territory-territory connection (dropping the first one), through a series of processing steps.} These will be described below
 
 \subsubsection{Geolocation}\label{sss:geolocation}
 
-We have {\em geolocated} and assigned the mints and hoards to a specific current territory, using the GeoApify service. These are geographical markings more than actual polities; in many cases, besides, the minting place is not exactly known, in which case it gets assigned to the conventional center of a current territory.
+We have {\em geolocated} and assigned the mints and hoards to a specific current territory, using the GeoApify service. These are geographical markings more than actual polities; in many cases, besides, the minting place is not exactly known, in which case the database assigns it to the conventional center of a current territory. \rev{In the case the database does not identify the minting place, that coin group is dropped; for instance, we would drop the first coin group above for the purposes of this paper.}
 
 In the case we identify current territories with polities in the time under analysis, we will use the most probable one; for instance, Turkey will be identified with the Eastern Roman empire, and Italy as the main site of the Western Roman empire. Please bear in mind that the main focus of this paper is the territories with which the Iberian Peninsula traded (as reflected by hoards) not so much as the polities that controlled those territories. These will be considered insomuch as they affect the interpretation of the results, but not as an important factor to obtain the results.
 
