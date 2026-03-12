@@ -201,12 +201,14 @@ In the case we identify current territories with polities in the time under anal
 
 For instance, if Morocco is a node that shows up in the results, we will take into account only the territory it occupies, and use the fact that it was first a Roman territory and then under the control of the Vandals for additional interpretation within the temporal framework that obtained by the analysis \citep{rousseau2012companion}.
 
-From the result of this step, we have processed hoards and mints to keep only those that are placed in the two countries in the Iberian Peninsula, Spain and Portugal. These two names have been substituted by the generic territory under study, the Iberian Peninsula.
+From the result of this step, we have kept \ref{only those in which the hoard or the mint was located in either of }the two countries in the Iberian Peninsula, Spain and Portugal. These two names have been substituted by the generic territory under study, the Iberian Peninsula.
 
 We were interested in the trade link density, that is, the number of coin groups from one country found in another country, so we processed all files above to obtain that information. We generated two files with this procedure: \begin{itemize}
 \item Iberian-only trade links, which contain only the trade links where the mint and the coin finding (hoard) are in the Iberian Peninsula.
 \item All trade links of hoards found in the Iberian Peninsula or that contain coins minted in it.
 \end{itemize}
+
+\rev{Please note that there is no direction in these links; for convenience the pairs are stored in alphabetical order, but edges are undirected.}
 
 \subsubsection{Processing into a time series}
 
