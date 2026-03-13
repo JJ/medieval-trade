@@ -44,7 +44,6 @@ links_year$n <- NULL
 
 @
 
-
 As indicated, the dataset used is the FLAMES dataset in its September 2024 version. The dataset contains what are called {\em coin groups}, groups of coins minted in the same place and period, several of which form a {\em coin hoard}. Most mints and hoards are geolocated. Coin groups are identified also by the minting period.
 
 From this database we have extracted four fields:\begin{itemize}

@@ -175,7 +175,79 @@ The FLAME database includes many different coin hoards datasets. The definition 
 
 However, that affirmation is made in the context of estimating economic indicators. Our context is more similar to the one indicated by \cite{Preiser-Kapeller2021}, in the sense that we are dealing with connections between nodes in a network. Thus, while the relative strength of this connection will be affected by its interpretation as proxy data and sampling differences, Verboven still concludes that there are several promising fields where empirical archaeo-cliometrics can be applied within the framework of complexity economics.
 
-We are explicitly working in a complex network and using complex network analysis to understand the dynamics behind the data and the historical events that occurred at the same time.
+<<trade.complex.network, echo=FALSE, warning=FALSE, message=F, fig.cap="Degree vs. rank log-log plot, with broken power law fit superposed to data.">>=
+all_links <- read.csv("data/all-links.csv", sep=";")
+all_links <- all_links[!startsWith(all_links$hoard,"Unknown"),]
+all_links <- all_links[!startsWith(all_links$mint,"Unknown"),]
+all_links <- all_links[all_links$num_coins>=1,]
+all_links$weight <- as.numeric(gsub(",", ".", all_links$num_coins))
+library(igraph)
+coin_hoard_graph <- graph_from_data_frame(all_links, directed=FALSE)
+coin_hoard_graph <- simplify(coin_hoard_graph, edge.attr.comb=list(weight="sum", "ignore"))
+coin_hoard_graph$degree <- degree(coin_hoard_graph)
+
+degree_data <- data.frame(names=names(coin_hoard_graph$degree), degree=unlist(coin_hoard_graph$degree))
+degree_data <- degree_data[order(degree_data$degree, decreasing=TRUE),]
+degree_data$rank <- 1:nrow(degree_data)
+
+library(minpack.lm)
+degree_freq <- table(coin_hoard_graph$degree)
+
+
+k <- as.numeric(names(degree_freq))
+pk <- as.numeric(degree_freq) / sum(degree_freq)
+eccdf <- rev(cumsum(rev(pk))) # Calculates P(K >= k)
+
+df <- data.frame(k = k, eccdf = eccdf)
+
+# 4. Define and Fit the Models
+
+# Model A: Pure Power Law
+fit_pl <- nlsLM(eccdf ~ c * k^(-beta),
+                data = df,
+                start = list(c = 1, beta = 1))
+
+# Model B: Power Law with Exponential Cutoff
+fit_cutoff <- nlsLM(eccdf ~ c * k^(-beta) * exp(-lambda * k),
+                    data = df,
+                    start = list(c = 1, beta = 1, lambda = 0.001))
+
+# Model C: Broken Power Law
+# First, define the piecewise function
+broken_pl <- function(k, c, beta1, beta2, k_break) {
+  ifelse(k < k_break,
+         c * k^(-beta1),
+         c * (k_break^(beta2 - beta1)) * k^(-beta2))
+}
+
+# Fit the broken power law
+# Note: k_break can be tricky for algorithms to find continuously.
+# Giving it a median starting point usually helps.
+fit_broken <- nlsLM(eccdf ~ broken_pl(k, c, beta1, beta2, k_break),
+                    data = df,
+                    start = list(c = 1, beta1 = 0.5, beta2 = 2, k_break = median(df$k)),
+                    control = nls.lm.control(maxiter = 1000))
+
+# 5. Model Comparison using AIC
+# Lower AIC indicates a better model fit, accounting for the number of parameters.
+#cat("\n--- AIC Model Comparison ---\n")
+aic_results <- AIC(fit_pl, fit_cutoff, fit_broken)
+#print(aic_results)
+
+# 6. Visual Diagnostics
+plot(df$k, df$eccdf, log = "xy", pch = 16, col = "darkgray",
+     xlab = "Degree (k)", ylab = "P(K >= k)",
+     main = "Degree Distribution: Model Fits")
+
+lines(df$k, predict(fit_broken), col = "green", lwd = 2)
+
+legend("bottomleft",
+       legend = c("Empirical Data", "Broken PL"),
+       col = c("darkgray", "green"),
+       lty = c(NA, 1 ), pch = c(16, NA))
+@
+
+We are explicitly working in a complex network and using complex network analysis to understand the dynamics behind the data and the historical events that occurred at the same time. \rev{The degree-rank distribution for the whole network is plotted in Figure \ref{fig:trade.complex.network}, and exhibits a broken power law distribution, which is an usually considered a good indicator of the existence of an underlying complex system dynamics in physical networks, such as this one.}
 
 \rev{Even a}cknowledging the many biases, to which we have referred above, in the FLAME database, what we can say about these hoards are, in a first approximation, that these coins were physically together at some point in time, and possibly have some value, indicating a connection between the places that printed them and the place where they were buried. Of course, we cannot affirm that when there is no hoard there is no trade, but the fact that the FLAME database is comprehensive reduces bias in the sense; with quantity of data comes quality of data. Finally, since we are analyzing hoards as much as mints and considering them at the same level, the fact that {\em both} disappear in a certain area or the link between two places disappear will be a strong indicative of the depletion of economic activity in that area, at least if we consider big enough areas as we are doing in this paper, a place where trading as well as minting activity took place during an extended period of time.
 

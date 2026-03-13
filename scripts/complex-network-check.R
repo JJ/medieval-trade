@@ -19,6 +19,12 @@ degree_data <- data.frame(names=names(coin_hoard_graph$degree), degree=unlist(co
 degree_data <- degree_data[order(degree_data$degree, decreasing=TRUE),]
 degree_data$rank <- 1:nrow(degree_data)
 
+ggplot( degree_data, aes(x=rank, y=degree)) +
+  geom_point() +
+  scale_x_log10() +
+  scale_y_log10() +
+  theme_minimal()
+
 p_k <- table(degree_data$degree)/length(degree_data$degree)
 pk_df <- data.frame(
   k = as.numeric(names(p_k)),
@@ -30,13 +36,6 @@ ggplot(pk_df, aes(x = k, y = Pk)) +
   scale_x_log10() +
   scale_y_log10() +
   theme_minimal()
-
-ggplot(degree_data, aes(x=degree, y=p_k)) + geom_point() + geom_smooth() +
-  scale_x_log10() + scale_y_log10() +
-  theme_minimal() +
-  labs(title = "Degree Distribution of Coin Hoard Network",
-       x = "Rank (log scale)",
-       y = "Degree (log scale)")
 
 library(dplyr)
 degree_data %>% group_by(degree) %>% summarise(count = n()) -> degree_distribution
