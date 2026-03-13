@@ -282,8 +282,6 @@ In this paper we have established what we will call {\em the Danubian hypothesis
 Proving this hypothesis can be a fruitful future line of work. We would need to look specifically at the coin hoards found in that area and how they evolved, as well as the presence elsewhere of coins minted in the Danube basin. As new data becomes available, it can be used to find the breakpoint with more precision and maybe find other factors or trends that, together, might have led to this specific turn of events.
 
 
-
-
 \section{Funding and acknowledgements}
 This work is supported by the Ministerio espa\~{n}ol de Econom\'{\i}a y
 Competitividad (Spanish Ministry of Competitivity and Economy) under project PID2023-147409NB-C21.
