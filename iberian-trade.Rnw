@@ -245,6 +245,19 @@ legend("bottomleft",
        legend = c("Empirical Data", "Broken PL"),
        col = c("darkgray", "green"),
        lty = c(NA, 1 ), pch = c(16, NA))
+
+transitivity <- transitivity(coin_hoard_graph, type="average")
+nrep <- 100
+Crand <- numeric(nrep)
+
+for(i in 1:nrep){
+  gr <- sample_degseq(degree(coin_hoard_graph), method="vl")
+  Crand[i] <- transitivity(gr, type="average")
+}
+
+Cr <- mean(Crand)
+
+clustering_coefficient_relative <- transitivity / Cr # Computed, but not used since it's a bit higher than 1. This means it's not a small world; this should be expected due to the small network size and its physical constraints.
 @
 
 We are explicitly working in a complex network and using complex network analysis to understand the dynamics behind the data and the historical events that occurred at the same time. \rev{The degree-rank distribution for the whole network is plotted in Figure \ref{fig:trade.complex.network}, and exhibits a broken power law distribution, which is an usually considered a good indicator of the existence of an underlying complex system dynamics \cite{e24111561} in physical networks, such as this one.}
