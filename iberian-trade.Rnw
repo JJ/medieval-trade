@@ -491,7 +491,7 @@ ggplot(links_time_series, aes(x=year)) +
   geom_vline(xintercept=552, linetype="dashed", color="darkgray") +
   annotate("text", x=549, y=max(links_time_series$interior_links)*0.6, label="554: Partly conquered by the Byzantine empire", color="darkgray", angle=90, vjust=-0.7)+
   geom_vline(xintercept=569, linetype="dashed", color="darkblue") +
-  annotate("text", x=566, y=max(links_time_series$interior_links)*0.6, label="569: Liuvigild reign starts", color="darkblue", angle=90, vjust=-0.7)+
+  annotate("text", x=568, y=max(links_time_series$interior_links)*0.6, label="569: Liuvigild reign starts", color="darkblue", angle=90, vjust=-0.7)+
   geom_vline(xintercept=653, linetype="dashed", color="black") +
   annotate("text", x=650, y=max(links_time_series$interior_links)*0.7, label="653: Reassertion of centralized power", color="black", angle=90, vjust=-0.7)+
   geom_vline(xintercept=711, linetype="dashed", color="darkgreen") +
