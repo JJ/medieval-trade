@@ -628,7 +628,7 @@ axis(1, at = ticks, labels=ticks.years)
 
 The changepoint plot with averages before and after it is shown in Figure \ref{fig:trade.changepoint.internal}. The changepoint is in the year \Sexpr{internal_links_changepoint_date[1]}, an earlier date than previously detected, but still in the same range. The interesting thing is that intra-Iberian trade was disrupted very soon after the Battle of Adrianople \citep{burns1973battle}, which might indicate some signs of the decay in the periphery of the empire (the Iberian Peninsula was literally {\em finis terrae}).
 
-<<trade.changepoint.multi, echo=FALSE, message=FALSE, fig.cap="Link density graph, showing internal and external link density as well as the changepoint found using the {\\protect\\sf ecp} multi-sequence method.", fig.height=4>>=
+<<trade.changepoint.multi, echo=FALSE, message=FALSE, fig.cap="Link density graph, showing internal and external link density as well as the changepoint found using the {\\protect\\sf ecp} multi-sequence method.", fig.height=4, fig.pos="h!tb">>=
 external_iberian_links <- all_annual_iberian_links$link_density - annual_iberian_links$link_density
 external_iberian_links_filtered <- all_annual_iberian_links_filtered$link_density - annual_iberian_links_filtered$link_density
 
