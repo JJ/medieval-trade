@@ -721,8 +721,8 @@ regional_links_summary$normalized_trade_link <- ifelse( regional_links_summary$c
 
 regional_links_summary$trade_link <- as.factor(regional_links_summary$cs)
 library(pals)
-links_graph <- ggplot() + geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Iberian Peninsula - Britannia",],aes(x=decade, y=links, color="UK"))+
-  geom_point( data=regional_links_summary[regional_links_summary$trade_link == "Iberian Peninsula - Britannia",],aes(x=decade, y=links, color="UK")) +
+links_graph <- ggplot() + geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Britannia - Iberian Peninsula",],aes(x=decade, y=links, color="Britannia"))+
+  geom_point( data=regional_links_summary[regional_links_summary$trade_link == "Britannia - Iberian Peninsula",],aes(x=decade, y=links, color="Britannia")) +
   geom_line( data=regional_links_summary[regional_links_summary$trade_link == "Iberian Peninsula - Iberian Peninsula",],aes(x=decade, y=links, color="Internal")) +
   geom_point( data=regional_links_summary[regional_links_summary$trade_link == "Iberian Peninsula - Iberian Peninsula",],aes(x=decade, y=links, color="Internal"))
 
@@ -772,10 +772,10 @@ Even taking into account that this average includes some years that might have n
 The peak in link density right before the changepoint in "border" territories such as France and the Netherlands might be due to two different reasons: in times of trouble, when different groups such as the Vandals or the Alans were pressuring from the Rhine \citep{heather2009did} and people resorted to burying their treasures, thus biasing the number of hoards found; but the second reason is that since there were troops fighting in those areas which needed to be supplied, the trade with them increased over other, relatively more peaceful, times. However, inherent biases in the dataset make it impossible to establish, just from data, which of the two reasons was more important or if there was a third, different cause, of these small peaks in trade. At any rate, this is a secondary issue, which only illustrates how network analysis might help establish hypotheses that would then have to be proved using cliometrics using micro or macro data.
 
 <<trade.link.evolution.boxplot, echo=F, message=F, warning=F, fig.cap="Evolution through time of the link density with the main trading partners of the Iberian Peninsula between 250 and 750.", fig.height=5>>=
-top_partner_links <- c("Iberian Peninsula - Britannia",
-                        "Iberian Peninsula - Italy",
-                        "Iberian Peninsula - Turkey",
-                        "France - Iberian Peninsula",
+top_partner_links <- c("Britannia - Iberian Peninsula",
+                        "Iberian Peninsula - Italia",
+                        "Anatolia - Iberian Peninsula",
+                        "Gallia - Iberian Peninsula",
                         "Germany - Iberian Peninsula",
                         "Iberian Peninsula - Iberian Peninsula")
 
