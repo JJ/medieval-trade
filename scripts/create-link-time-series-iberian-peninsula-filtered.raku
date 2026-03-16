@@ -91,7 +91,16 @@ csv( in => convert_to_array_of_hashes(%iberian-links-out), out => "data/annual-i
 csv( in => convert_to_array_of_hashes(%regional-links-out), out => "data/annual-regional-links-filtered.csv", sep => ";", headers => 'auto' );
 
 sub normalize_to_iberian_peninsula( $country ) {
-    return ( $country eq "Spain" || $country eq "Portugal" ) ?? "Iberian Peninsula" !! $country;
+    my $normalized_territory = $country;
+    given $country {
+        when $_ eq "Spain" || $_ eq "Portugal" { $normalized_territory = "Iberian Peninsula"; }
+        when $_ eq "Palestinian Territory" || $_ eq "Israel" { $normalized_territory = "Palestina";}
+        when "United Kingdom" { $normalized_territory = "Britannia";}
+        when "Turkey" { $normalized_territory = "Anatolia";}
+        when "France" { $normalized_territory = "Gallia";}
+        when "Italy" { $normalized_territory = "Italia";}
+    }
+    return $normalized_territory;
 }
 
 sub convert_to_array_of_hashes( %hash ) {
