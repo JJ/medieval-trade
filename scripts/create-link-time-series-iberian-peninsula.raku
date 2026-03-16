@@ -93,6 +93,7 @@ sub normalize_to_iberian_peninsula( $country ) {
     given $country {
         when $_ eq "Spain" || $_ eq "Portugal" { $normalized_territory = "Iberian Peninsula"; }
         when $_ eq "Palestinian Territory" || $_ eq "Israel" { $normalized_territory = "Palestina";}
+        when $_ eq "Sweden" || $_ eq "Denmark" || $_ eq "Norway" { $normalized_territory = "Scandinavia";}
         when "United Kingdom" { $normalized_territory = "Britannia";}
         when "Turkey" { $normalized_territory = "Anatolia";}
         when "France" { $normalized_territory = "Gallia";}
