@@ -122,7 +122,15 @@ For example, \cite{lead:pollution} examined lead pollution and blood-lead levels
 We are going to focus on this paper on the Iberian Peninsula. As a peripheral part of the Roman empire, any disruption might have affected it, but in a different way or in a different time frame. This is why we are especially interested in works that focus on this area, like \cite{oddo2024economic}, \edit{which actually focuses on the whole European part of the Roman Empire}, and \cite{fernandez2017aristocrats}, more focused on the Iberian Peninsula itself.
 Of course, the final fall of the Western Roman Empire should have some kind of impact \citep{martinez18:iberia} \edit{on this area}, since the Roman central administration definitely vanishes by mid 5th century. However, modern historiographical analysis, following Pirenne, tells us to look further than the written record and into other kinds of factors. Two of the most important factors that impacted the whole Roman empire were the Antonine and Cyprian plagues, which happened in the 2nd and 3rd centuries \citep{lead:pollution} and had lasting effects spanning at least five centuries.
 
-Focusing on the Iberian Peninsula, the Visigoth invasion did produce some discontinuity, but trade continued \edit{decreasing} during the 5th and 6th centuries, although most changes were relatively slow \citep{fernandez2017aristocrats}.
+Focusing on the Iberian Peninsula, the Visigoth invasion did produce some discontinuity, but trade continued \edit{decreasing} during the 5th and 6th centuries, although most changes were relatively slow \citep{fernandez2017aristocrats}. \rev{It is evident, as mentioned by \cite{heather2005fall}, that the invasions from peoples coming from beyond the Rhine, including Sueves and Vandals, caused major disruptions in the Iberian Peninsula, as reported by a chronicler called Hydatius. Heather writes (p. 209, op. cit.:}
+
+\begin{quote}
+Fire, rape and pillage in Gaul was thus followed by the forced
+annexation of Spain, but this is only the beginning of the catalogue
+of disasters that followed the breakdown of frontier security in the
+western Empire
+\end{quote}
+
 
 These multitude of factors can produce changes in time series related to economic activity, such as trade, but you need to apply rigorous statistical methods to be able to find the date when it occurs and then work back and try to explain the change in historical trends through the other data, historiographical, environmental, \edit{network} and archaeological, that is available. This approach is called, in general, changepoint analysis, and it has been repeatedly applied to historical data including battle deaths \citep{battle:deaths}, use of force by US presidents \citep{hee2010structural}, analysis of the actual \edit{"for life"} terms served by Venetian doges \citep{histories3010003} and how shifts in marriage patterns explain the different shift points in the Republic of Venice \citep{histories4020012}; the technique was initially created for climate variations \citep{beaulieu2012change} but since then, different algorithms, including Bayesian ones, have been applied to the analysis of historical time series \citep{western_kleykamp_2017}.
 
@@ -482,7 +490,7 @@ ggplot(links_time_series, aes(x=year)) +
   geom_vline(xintercept=552, linetype="dashed", color="darkgray") +
   annotate("text", x=549, y=max(links_time_series$interior_links)*0.6, label="554: Partly conquered by the Byzantine empire", color="darkgray", angle=90, vjust=-0.7)+
   geom_vline(xintercept=569, linetype="dashed", color="darkblue") +
-  annotate("text", x=566, y=max(links_time_series$interior_links)*0.6, label="569: Leovigild reign starts", color="darkblue", angle=90, vjust=-0.7)+
+  annotate("text", x=566, y=max(links_time_series$interior_links)*0.6, label="569: Liuvigild reign starts", color="darkblue", angle=90, vjust=-0.7)+
   geom_vline(xintercept=653, linetype="dashed", color="black") +
   annotate("text", x=650, y=max(links_time_series$interior_links)*0.7, label="653: Reassertion of centralized power", color="black", angle=90, vjust=-0.7)+
   geom_vline(xintercept=711, linetype="dashed", color="darkgreen") +
