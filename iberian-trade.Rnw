@@ -787,7 +787,7 @@ regional_links_pasted_top$relative_to_changepoint <- factor( regional_links_past
 
 ggplot(regional_links_pasted_top, aes( x=cs, y=value, color=relative_to_changepoint))+
   geom_boxplot(notch=T)+theme_minimal()+
-  labs( x="Connection",y="Link density") +
+  labs( x="Connection",y="Link density",color="Period") +
   theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
   scale_y_log10()
 @
@@ -800,7 +800,8 @@ From the analysis above what is clear is that the changepoint is a downstream ev
 
 <<trade.link.evolution.relative, echo=F, message=F, warning=F, fig.cap="Evolution through time of the link density with the main trading partners of the Iberian Peninsula.The red dashed line indicates the computed changepoint.", fig.height=5>>=
 ggplot(regional_links_summary, aes( x=decade, y=links))+geom_bar(stat="identity", position="fill", aes(fill=normalized_trade_link))+
-  scale_fill_manual(values=unname(glasbey()))+theme_minimal()+labs( x="Year",y="Proportion of links") +
+  scale_fill_manual(values=unname(glasbey()))+theme_minimal()+
+  labs( x="Year",y="Proportion of links",fill="Normalized trade links") +
   geom_vline(xintercept = multi_changepoint_year, linetype="dashed", color="red") +
   xlim(c(300,750))
 @
