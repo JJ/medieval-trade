@@ -14,8 +14,8 @@
 \pubvolume{1}
 \issuenum{1}
 \articlenumber{0}
-\pubyear{2025}
-\copyrightyear{2025}
+\pubyear{2026}
+\copyrightyear{2026}
 \datereceived{ }
 % \daterevised{ } % Comment out if no revised date
 \dateaccepted{ }
