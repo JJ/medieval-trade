@@ -91,9 +91,9 @@ Although in many cases the result of stationarity analysis is also called change
 
 \rev{The main research question would be if we can use ancient network data to detect and then explain changes of regime in a peripheral part of the Roman Empire, the Iberian Peninsula. This question can be broken down in series of sub-} questions: \begin{itemize}
 \item{\em \rev{Q}uestion 1}: Is there a changepoint in the Iberian Peninsula trade link time series?
-\item\edit{{\em \rev{Q}uestion 2}: Is there a specific change in the network that can explain that changepoint?}
-\item{\em \rev{Q}uestion \edit{3}}: \edit{If that is the case, can that change in the network be explained by known historically established factors or events?}
-\item\edit{{\em \rev{Q}uestion 4}: Working in the other causal direction, would this be a new factor that would explain the fall of the Roman Empire and thus the end of Antiquity and the beginning of the Middle Ages?}
+\item{\em \rev{Q}uestion 2}: Is there a specific change in the network that can explain that changepoint?
+\item{\em \rev{Q}uestion 3}: If that is the case, can that change in the network be explained by known historically established factors or events?
+\item{\em \rev{Q}uestion 4}: Working in the other causal direction, would this be a new factor that would explain the fall of the Roman Empire and thus the end of Antiquity and the beginning of the Middle Ages?
 \end{itemize}
 
 Solving those issues in turn implies applying a methodology that can lend credibility to the responses obtained in every step; this methodology will work through these stages: \begin{enumerate}
