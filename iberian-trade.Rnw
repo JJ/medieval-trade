@@ -753,8 +753,8 @@ In Figure \ref{fig:trade.link.evolution} we show the evolution in time of the to
 regional_links_pasted_precp <- regional_links_pasted %>% filter( year < multi_changepoint_year )
 regional_links_pasted_postcp <- regional_links_pasted %>% filter( year >= multi_changepoint_year )
 
-regional_links_pasted_precp %>% group_by( cs) %>%  summarise( links =  mean(value)) -> regional_links_summary_precp
-regional_links_pasted_postcp %>% group_by( cs) %>%  summarise( links =  mean(value)) -> regional_links_summary_postcp
+regional_links_pasted_precp %>% group_by(cs) %>%  summarise( links =  mean(value)) -> regional_links_summary_precp
+regional_links_pasted_postcp %>% group_by(cs) %>%  summarise( links =  mean(value)) -> regional_links_summary_postcp
 
 differences_links <- data.frame(
   cs = top_links,
@@ -767,7 +767,7 @@ ggplot(differences_links, aes(x=reorder(cs, -difference), y=difference, fill=cs)
   scale_fill_manual(values=unname(glasbey()))+
   labs( x="Trade link",y="Post/pre changepoint ratio of links") +
   theme_minimal() +
-  scale_y_break(c(0.6, 2))+
+  scale_y_break(c(0.6, 2), scales="free")+
   theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
   theme(legend.position = "none")
 @
