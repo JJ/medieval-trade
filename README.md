@@ -35,22 +35,23 @@ If you want to use the processed data and/or code in this paper, we kindly
 request you to cite:
 
 ```bibtex
-@misc{10481/105018,
-year = {2025},
-month = {7},
-url = {https://hdl.handle.net/10481/105018},
-abstract = {Trade networks reflect societal vitality and are thus essential tools to understand historical dynamics, including epochal events. In this paper we will be looking at the Mediterranean trade network reflected in the FLAME dataset, coin hoards found in the region which establish a link between the place the coins were minted and where they were found. We will use changepoint analysis to identify shift points in this trade network, mapping it to actual events (or conjunction of events), and then analyze the existing network prior and after the events. The trade network has regions (identified as current countries) as nodes, and the number of coins of one place found in another as edges.
-Changepoint analysis for the time series of the number of links in the network finds a statistically significant changepoint with average links before and after the changepoint plotted. Multiple sequence changepoint, including entropy and high-level network measures, will be also presented, and possible causes for these shifts, looking at historical events as well as changes in edge and node (region) betweenness, will be discussed.},
-organization = {This work is supported by the Ministerio español de Economía y Competitividad (Spanish Ministry of Competitivity and Economy) under project PID2023-147409NB-C21.},
-keywords = {trade networks},
-keywords = {Complex networks},
-keywords = {Complex network analysis},
-keywords = {Cliometrics},
-keywords = {Digital humanities},
-title = {Finding changepoints in medieval European and Middle Eastern trade networks},
-author = {Merelo Guervos, Juan Julián},
+@Article{complexities2020012,
+AUTHOR = {Merelo-Guervós, Juan Julián},
+TITLE = {Analyzing Late Antiquity Shifts of Trade Regime in the Iberian Peninsula and Their Causes via Change Point Detection Methods},
+JOURNAL = {Complexities},
+VOLUME = {2},
+YEAR = {2026},
+NUMBER = {2},
+ARTICLE-NUMBER = {12},
+URL = {https://www.mdpi.com/3042-6448/2/2/12},
+ISSN = {3042-6448},
+ABSTRACT = {History attempts to make sense of disparate information by trying to create discourse that lays a series of events with crisp cause–effect relationships in a sequence. Epochal shifts, such as the change from Antiquity to the Middle Ages, are especially complex since they involve a large number of economic, political and even religious factors which occur over long periods and that might overlap and interact through reciprocal feedback mechanisms, making this cause–effects sequence difficult to establish. In this research we adopt a data-driven and well-established methodology to identify, with quantifiable statistical precision, the moment when this shift happened, and from there arrive at its possible causes. We will use historical coin hoard data to find out whether such a shift is detected in a peripheral part of the Roman Empire, the Iberian Peninsula. To do so, we will apply different changepoint analysis methods to a time series of trade links created from that data, and conduct a retrospective analysis based on that result, analyzing the structure of the trade networks before and after the link. Thus, we progress from identifying when the shift happened to identifying where it took place, which in turn allows us to get to investigate why it happened, namely, historical events that could have caused it. This methodology can be used to analyze epochal changes in several steps using time-stamped network data, possibly finding disregarded causes or cause–effect links that could have been overlooked by qualitative methods; in this case, we have applied it to a dataset of coin hoards either found in the Iberian Peninsula or including coins minted there, finding a changepoint in the early 5th century, which, through network analysis, has been linked to a loss of trade with the area of Britannia.},
+DOI = {10.3390/complexities2020012}
 }
+
 ```
+
+Please check out the [`biblio.bib`](biblio.bib) file for all references.
 
 ## Data
 
