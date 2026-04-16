@@ -58,6 +58,11 @@ Data was obtained from the FLAMEs database. [`data-raw`](data-raw/) contains
 unprocessed files, [`data/`](data/) the files once processed, that can be used
 directly.
 
+## AI model
+
+All papers have been uploaded to [this Perplexity AI
+model](https://www.perplexity.ai/spaces/analyzing-late-antiquity-shift-fbYGXOpoQpGPIbHsP3E2gw). Ask
+anything about it.
 ## LICENSE
 
 (c) JJ Merelo, 2025. Data and code are licensed under the [Affero GPL
