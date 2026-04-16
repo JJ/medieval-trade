@@ -11,13 +11,7 @@ The [repository with code, paper source and data is in GitHub](https://github.co
 
 For the time being, these papers:
 
-* For [Statphys 29](https://statphys29.org/): "Finding changepoints in medieval Mediterranean trade networks", check the
-  [paper source](abstract-medieval-trade.Rnw) as well as [the paper](https://github.com/JJ/medieval-trade/releases/download/v1.02/abstract-medieval-trade.pdf). The file
-  [`data/links_year.rds`](data/links_year.rds) contains the data processed for
-  the
-  paper. [`scripts/abstract-medieval-trade.R`](scripts/abstract-medieval-trade.R)
-  contain the extracted script that generates the chart in the paper, slightly
-  modified for the actual poster.
+
 
 * An extended report is published at the UGR institutional repository, ["Finding
   changepoints in medieval European and Middle Eastern trade
@@ -27,6 +21,15 @@ For the time being, these papers:
   the empire, as well as probable the *Via Militaris* that run parallel to it,
   totally changed the trading patterns, decreasing the number of trade links and
   creating economic and finally military and political change.
+
+* For [Statphys 29](https://statphys29.org/): "Finding changepoints in medieval Mediterranean trade networks", check the
+  [paper source](abstract-medieval-trade.Rnw) as well as [the paper](https://github.com/JJ/medieval-trade/releases/download/v1.02/abstract-medieval-trade.pdf). The file
+  [`data/links_year.rds`](data/links_year.rds) contains the data processed for
+  the
+  paper. [`scripts/abstract-medieval-trade.R`](scripts/abstract-medieval-trade.R)
+  contain the extracted script that generates the chart in the paper, slightly
+  modified for the actual poster.
+
 
 If you want to use the processed data and/or code in this paper, we kindly
 request you to cite:
