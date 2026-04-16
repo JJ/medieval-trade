@@ -16,7 +16,9 @@ For the time being, these papers:
   Peninsula and Their Causes via Change Point Detection
   Methods](https://www.mdpi.com/3042-6448/2/2/12) applying change point
   detection to internal/external *trade links* created through *censoring*, thta
-  is assigning link probabilites from coin hoards.
+  is assigning link probabilites from coin hoards. The state of the repository
+  when publishing this paper has been released as [version
+  2.1.1](https://github.com/JJ/medieval-trade/releases/tag/v2.1.1).
 
 * An extended report is published at the UGR institutional repository, ["Finding
   changepoints in medieval European and Middle Eastern trade
