@@ -11,7 +11,12 @@ The [repository with code, paper source and data is in GitHub](https://github.co
 
 For the time being, these papers:
 
-
+* We focus on the periphery of the Roman Empire, namely, Hispania or the Iberian
+  peninsula,  [Analyzing Late Antiquity Shifts of Trade Regime in the Iberian
+  Peninsula and Their Causes via Change Point Detection
+  Methods](https://www.mdpi.com/3042-6448/2/2/12) applying change point
+  detection to internal/external *trade links* created through *censoring*, thta
+  is assigning link probabilites from coin hoards.
 
 * An extended report is published at the UGR institutional repository, ["Finding
   changepoints in medieval European and Middle Eastern trade
