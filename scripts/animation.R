@@ -59,7 +59,7 @@ p <- ggplot() +
   # Trade links layer
   geom_curve(
     data = anim_data,
-    aes(x = lon1, y = lat1, xend = lon2, yend = lat2, linewidth = value, color = value),
+    aes(x = lon1, y = lat1, xend = lon2, yend = lat2, linewidth = value*2, color = value),
     curvature = 0.2, alpha = 0.8
   ) +
   scale_linewidth_continuous(range = c(0.5, 4), guide = "none") +
