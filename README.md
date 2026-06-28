@@ -11,6 +11,8 @@ The [repository with code, paper source and data is in GitHub](https://github.co
 
 For the time being, these papers:
 
+![Animation of trade links analyzed in this paper](historical_trade_links.gif)
+
 * We focus on the periphery of the Roman Empire, namely, Hispania or the Iberian
   peninsula,  [Analyzing Late Antiquity Shifts of Trade Regime in the Iberian
   Peninsula and Their Causes via Change Point Detection
