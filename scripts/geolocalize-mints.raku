@@ -51,8 +51,7 @@ sub MAIN(Str $input-file) {
 
     my @mints = csv(in => $input-file, headers => "auto");
 
-    say @mints.elems ~ " mints read from $input-file";
-    my @header = @mints[0].keys;
+    my @header = reverse @mints[0].keys;
     my @out-header = flat @header, "Country";
     say "Out-header is {@out-header.join(';')}";
 

@@ -1,884 +1,884 @@
-LegendID;location_lat;location_uncertain;location_long;location_title;location_modern_title;location_other_title;ID;Country
-5;31.20009005;0;29.91873190;"Alexandria ad Aegyptum";Alexandria;NA;1;Egypt
-5;36.85291990;0;10.32172450;Carthago;Carthage;Qartaj;2;Tunisia
-5;41.89363823;0;12.49981866;Roma;Rome;NA;3;Italy
-5;35.18549596;0;33.89333844;Salamis-Konstantia;Salamis-Constantia;NA;4;Cyprus
-5;44.41835980;0;12.20352940;Ravenna;Ravenna;NA;5;Italy
-5;45.18332769;0;9.14999694;Ticinum;Pavia;NA;6;Italy
-5;45.46327487;0;9.18661949;Mediolanum;Milan;NA;7;Italy
-5;41.12976130;0;14.78262080;Benevento;Benevento;NA;9;Italy
-5;37.50787720;0;15.08303040;Catania;Catania;NA;10;Italy
-5;40.85177460;0;14.26812440;Neapolis;Naples;NA;11;Italy
-5;37.07547390;0;15.28658610;Syracusae;Syracuse;NA;12;Italy
-5;40.12087520;0;9.01289260;Sardinia;Sardinia;NA;13;Italy
-5;51.43092090;0;-0.09364960;Londinium;London;NA;14;"United Kingdom"
-5;51.28023300;0;1.07890890;Durovernum;Canterbury;NA;15;"United Kingdom"
-5;53.95996510;0;-1.08729790;Eburacum;York;NA;16;"United Kingdom"
-5;49.74999200;0;6.63714330;"Colonia Augusta Treverorum";Trier;NA;17;Germany
-5;49.89406536;0;2.29575251;Ambianum;Amiens;NA;18;France
-5;40.64006290;0;22.94441910;Thessalonika;Thessaloniki;NA;19;Greece
-5;43.83762110;0;10.49506090;Lucca;Lucca;NA;20;Italy
-5;43.72283860;0;10.40168880;Pisa;Pisa;NA;21;Italy
-5;43.93034750;0;10.90785870;Pistoia;Pistoia;NA;22;Italy
-5;40.76725807;0;29.91694217;Nikomedia;Izmit;NA;52;Turkey
-5;40.38000000;0;27.89000000;Kyzikos;Kyzikos;Cyzicus;53;Turkey
-5;44.983333;0;19.616667;Sirmium;Srem;NA;54;Serbia
-5;36.20066300;0;36.16531800;Antioch;Antakya;Hatay;66;Turkey
-5;45.48316266;0;16.37138283;Siscia;Siscia;NA;67;Croatia
-5;40.97101281;0;27.95296653;Heraclea;"Marmara Ereğlisi";NA;68;Turkey
-5;41.64884331;0;-0.88920320;Cesaragusta;Zaragoza;NA;69;Spain
-5;41.90427900;0;-1.72215100;Tirazona;Tarazona;Tirasona;70;Spain
-5;42.30704666;0;-1.96712517;Calagorre;Calahorra;NA;71;Spain
-5;42.50333924;0;-3.01943126;Lebea;Herramélluri;NA;72;Spain
-5;41.11888284;0;1.24449050;Tarracona;Tarragona;NA;73;Spain
-5;41.97894467;0;2.82058540;Gerunda;Gerona;NA;74;Spain
-5;41.38526570;0;2.17362252;Barcinona;Barcelona;NA;75;Spain
-5;42.26051656;0;3.20809453;Rodas;Rosas;NA;76;Spain
-5;40.81259129;0;0.52146725;Dertosa;Tortosa;NA;77;Spain
-5;39.67986330;0;-0.27843850;Sagunto;Sagunto;NA;78;Spain
-5;42.59115713;0;0.32959130;Cestavi;"Gist'in (doubts)";NA;79;Spain
-5;42.44472409;0;0.06640920;Volotania;Boltaña;NA;80;Spain
-5;42.14394601;0;0.28724408;Labeclosa;"Puebla de Castro";NA;81;Spain
-5;39.86385823;0;-4.02363523;Toleto;Toledo;NA;82;Spain
-5;40.33190181;0;-2.88920310;Recopoli;"Zorita de los Canes";NA;83;Spain
-5;39.46990750;0;-0.37628809;Valentia;Valencia;NA;84;Spain
-5;39.78679490;0;-3.47382076;Mentesa;"La Guardia";NA;85;Spain
-5;37.30117206;0;-3.14033047;Acci;Guadix;NA;86;Spain
-5;38.09690974;0;-3.63698028;Castilona;Linares;NA;87;Spain
-5;37.99670611;0;-3.46764561;Beatia;Baeza;NA;88;Spain
-5;37.67359250;0;-1.69683570;Iliocrici;Lorca;NA;89;Spain
-5;38.08552550;0;-0.94805488;Aorariola;Orihuela;NA;90;Spain
-5;42.72421360;0;-4.27404171;Mave;"Santa María de Mave";NA;91;Spain
-5;42.51799971;0;-4.74197917;Saldania;Saldaña;NA;92;Spain
-5;42.74477601;1;-4.28849698;Oliovasio;"Monte Cildá (doubts)";NA;93;Spain
-5;37.39050639;0;-5.98402741;Ispali;Sevilla;NA;94;Spain
-5;37.43519377;0;-6.04275127;Italica;Santiponce;NA;95;Spain
-5;37.47126906;0;-5.64187632;Karmona;Carmona;NA;96;Spain
-5;37.20140644;0;-4.77885459;Roda;"Roda de Andalucia (doubts)";NA;97;Spain
-5;37.88681566;0;-4.77938202;Cordoba;Cordoba;NA;98;Spain
-5;37.71822639;0;-3.97001355;Tucci;Martos;NA;100;Spain
-5;37.17825301;0;-3.59918434;Eliberri;Granada;NA;101;Spain
-5;36.68508477;0;-6.12567330;Asidona;"Jerez de la Frontera";NA;102;Spain
-5;37.01988103;1;-4.55993000;Barbi;"Antequera (doubts)";NA;103;Spain
-5;36.72211316;0;-4.42165868;Malaka;Malaga;NA;104;Spain
-5;38.91424160;0;-6.34914940;Emerita;Merida;NA;105;Spain
-5;39.96288285;0;-4.83045525;Elvora;"Talavera de la Reina";NA;106;Spain
-5;38.72225241;1;-9.13933661;Olisipona;"Lisboa (doubts)";NA;107;Portugal
-5;41.09518019;0;-7.81222466;Lameco;Lamego;NA;108;Portugal
-5;40.20698276;0;-8.43884824;Eminio;Coimbra;NA;109;Portugal
-5;40.65653291;0;-7.91253355;Veseo;Viseu;NA;110;Portugal
-5;40.51706452;1;-8.08025689;Totela;"Tondela (doubts)";NA;111;Portugal
-5;40.95380608;1;-7.79254168;Coleia;"Almofala (doubts)";NA;112;Portugal
-5;40.70973649;1;-7.42734406;Caliabria;"Aldeia Nova - Castelo de Calabre (doubts)";NA;113;Portugal
-5;40.00275742;0;-7.15258443;Egitania;Idanha-a-Velha;NA;114;Portugal
-5;40.29982495;1;-7.43938339;Monecipio;"Terlamonte (doubts, other locations Monsanto and Covilha Velha)";NA;115;Portugal
-5;40.97002703;0;-5.66374442;Salmantica;Salamanca;NA;116;Spain
-5;41.54546520;0;-8.42647707;Bracara;Braga;NA;117;Portugal
-5;41.80611311;0;-6.75673801;Bergancia;"Betanzos - Bragança";NA;118;Portugal
-5;41.74177813;0;-7.47314202;Flavas;Chaves;NA;119;Portugal
-5;41.51304694;1;-7.12686472;Laetera;"Vilar de Ledra (around this area, doubts)";NA;120;Portugal
-5;41.49954120;1;-6.27123110;Palantucio;"Miranda do Douro Area (oppidum plançoulo?)";NA;121;Portugal
-5;41.29144238;0;-7.67996443;Panonias;"Vale de Nogueiras";NA;122;Portugal
-5;41.37824240;1;-6.61041400;Turico;"Vila Morta de Santa Cruz da Vilariça (doubts, other location Guimaraes)";NA;123;Portugal
-5;40.92556025;1;-7.11995526;Aliobrio;"Cidadelhe (doubts, around this area)";NA;125;Portugal
-5;41.20516741;0;-8.33038674;Cepis;"Casteloes de Cepeda";NA;126;Portugal
-5;41.25339876;1;-8.70642665;"Laurencio / Laure";"Lavra (Laurencio sure here, Laure could be a different mint)";NA;127;Portugal
-4;41.58553248;1;-6.94060038;Nandolas;Tras-os-Montes;"area of Tras-os-Montes or Alto Douro but no concrete location has been accepted";128;Portugal
-5;41.21912424;1;-8.28017512;Palentiaca;"concelho de Penafiel";NA;129;Portugal
-5;41.31120436;0;-8.60925724;Toriviana;Alvarelhos;NA;130;Portugal
-5;43.00973839;0;-7.55675822;Luco;Lugo;NA;132;Spain
-5;42.68787414;0;-7.33001547;Inceio;Incio;NA;133;Spain
-5;42.33579014;0;-7.86387967;Aurense;Orense;NA;134;Spain
-5;41.95589799;0;-6.71751327;Calapa;Calabor;NA;135;Spain
-5;42.34101280;1;-6.80761389;Cassavio;"Casaio (doubts)";NA;136;Spain
-5;42.38296620;0;-7.12615221;Georres;Petin;NA;137;Spain
-5;42.16184398;0;-7.09792190;Pincia;Pinza;NA;138;Spain
-5;42.05437971;0;-6.63493927;Senabria;"Puebla de Sanabria";NA;139;Spain
-5;42.61734688;0;-6.41617241;Susarres;Bembibre;NA;140;Spain
-5;42.45515713;0;-6.05375717;Astorica;Astorga;NA;141;Spain
-5;42.59864426;0;-6.72581189;Bergio;Cacabelos;NA;142;Spain
-5;42.45957004;1;-6.76010596;Fraucello;"Ancient Frogelos its location must be around the area Las Medulas";NA;143;Spain
-5;42.59908319;0;-5.56753824;Leione;León;NA;144;Spain
-5;43.16255691;0;-6.54629429;Pesicos;"Cangas de Narcea";NA;145;Spain
-5;43.01916935;0;-6.60470327;Petra;"Piedrafita occidental";NA;146;Spain
-5;41.50347309;0;-5.74678896;Semure;Zamora;NA;147;Spain
-5;41.98540457;0;-5.67040705;Ventosa;"Around Benavente";NA;148;Spain
-5;42.63409707;0;-8.56400476;Conteno;Cuntis;NA;149;Spain
-5;42.77014604;0;-8.26320075;Mertia;Merza;NA;150;Spain
-5;42.66678426;0;-8.72159883;Catora;Catoira;NA;151;Spain
-5;42.04916415;0;-8.64661103;Tude;Tui;NA;152;Spain
-5;41.95107033;1;-8.19191393;Tornio;"around La Burgueria";NA;153;Portugal
-5;40.28142761;1;-8.45399688;Adonis;"Adoes (lots of doubts)";NA;154;Portugal
-5;43.32316950;1;-3.00915030;Amiasios;"Amaia (los of doubts)";NA;155;Spain
-4;42.45492842;1;-6.05324993;Asturie;Astorga;"Probably same mint then Asturica (not in the map)";156;Spain
-4;42.04915186;1;-8.64661070;Decrinos;Tui;"Probably very close to Tude, but still unknown (not in the map)";157;Spain
-4;42.84102862;1;-2.51268038;Tulluco;Alegría-Dulantzi;"Unknown location, maybe around Álava (not in the map)";158;Spain
-4;38.70576401;1;-9.33056729;Vallesalsa;"Río Sousa";"Unknown, probably in the Gallaecia (not in the map)";159;Portugal
-4;42.81923553;1;-2.82779590;"Valle.../ Vallegia";"Iruña Oka";"Unknown, could be in the Gallaecia or Tarraconensis (not in the map)";160;Spain
-5;44.20314200;0;0.61636300;Agenno;Agen;NA;161;France
-5;44.15551400;0;3.09749600;Agaciaco;Aguessac;NA;162;France
-5;46.30007500;0;2.48388300;Atura;Aire;NA;163;France
-5;35.67752600;0;10.10062000;al-Qayrawan;Kairouan;NA;164;Tunisia
-5;47.01433900;0;5.97329500;Alisia;Alaise;NA;165;France
-5;45.78560600;0;5.94395900;Albenno;Albens;NA;166;France
-5;43.92508500;0;2.14864100;Albigia;Albi;NA;167;France
-5;45.57252100;0;2.21729100;Elariaco;Alleyrat;NA;168;France
-4;42.64222216;1;-4.16385394;Amiasio;Amaya;NA;169;Spain
-5;45.73495500;0;7.31307600;Agusta;Aoste;NA;170;Italy
-5;45.76816490;0;13.36871908;Aquileia;Aquileia;Aquilea;171;Italy
-5;53.95905600;0;-1.08153600;"Archbishops of York";"York (uncertain)";NA;172;"United Kingdom"
-5;45.09230600;0;1.93778200;Argentate;Argentat;NA;173;France
-5;43.67664700;0;4.62777700;Arelato;Arles;NA;174;France
-5;46.00420000;0;3.14470000;Artona;Artonne;NA;175;France
-5;45.32994600;0;3.13238000;Actriaco;Autrac;NA;176;France
-5;46.95103100;0;4.29894800;Augusteduno;Autun;NA;177;France
-5;46.87957500;0;7.04094100;Aventeco;Avenches;NA;178;Switzerland
-5;44.43469300;0;3.20149400;Bannaciaco;Banassac;NA;179;France
-5;45.34484400;0;1.81318200;Barro;Bar-sur-Corrèze;Bar;180;France
-5;44.43204600;0;-0.21260100;Vasatis;Bazas;NA;181;France
-5;47.23795300;0;6.02432500;Vesoncione;Besancon;NA;182;France
-5;45.12471300;0;1.72182400;"Biaenate Pago";Beynat;NA;183;France
-5;45.72205000;0;3.33905800;Billiomago;Billom;NA;184;France
-5;44.84122500;0;-0.58003600;Burdegala;Bordeaux;NA;185;France
-5;45.05471300;0;6.03066200;Auseno;Bourg-d'Oisans;NA;186;France
-5;45.58722600;0;5.28281200;Bregusia;Bourgoin;Bourgoin-Jallieu;187;France
-5;45.29529000;0;3.38433000;Brivate;Brioude;"Brioude (including Church of St. Julien)";188;France
-5;44.44950000;0;1.43650000;Cadurca;Cahors;NA;189;France
-5;44.40488900;0;3.07543200;Cannaco;Canac;NA;190;France
-5;42.34000400;1;-6.80535900;Cassavio;Casaio;Casavio;191;Spain
-5;44.85528800;0;-0.52398600;Sanonno;Cenon;NA;192;France
-5;46.78890000;0;4.85296000;Cabilonno;Chalon-Sur-Saone;NA;193;France
-5;45.58341900;0;1.72043800;Cambarisio;Chamberet;NA;194;France
-5;45.56662000;0;5.44240500;Cantoliano;Chantilin;"Chantilin, Saint-Jean-de-Soudain";195;France
-5;45.72872500;0;3.00556600;Catiriaco;Chatrat;NA;196;France
-5;45.03476000;0;3.08766300;Cassoriaco;Chazerat;NA;197;France
-5;44.60611500;0;33.52247800;Chersonesus;Sevastopol;Cherson;198;Russia
-5;43.12235300;0;0.21366500;Begorra;Cieutat;NA;199;France
-5;45.77745500;0;3.08194300;Arvernus;Clermont-Ferrand;NA;200;France
-5;41.02345500;0;28.95518800;Constantinople;Istanbul;Kostantinopolis;201;Turkey
-5;45.21144700;0;1.69157500;Cornilio;Cornil;NA;202;France
-5;46.60335400;0;1.88833400;"Dia Vocontiorum";Die;"Die (Dia Vocontiorum)";204;France
-5;47.32158100;0;5.04147000;Divione;Dijon;NA;205;France
-5;45.16893100;0;2.38356900;Trusciaco;Drugeac;NA;206;France
-5;37.47181500;0;-4.43356200;Egaboro;Cabra;NA;207;Spain
-5;38.91305700;1;-9.03800600;Elissa;"Around Lisbon (uncertain)";"Elissa (?)";208;Portugal
-5;45.22998100;0;1.89681000;Espaniaco;Espagnac;NA;209;France
-5;39.93689800;1;-0.10102800;Ewesis;"Vila Real (exact location uncertain)";NA;210;Spain
-5;42.96412700;0;1.60523200;"Castro Fusci";Foix;NA;211;France
-5;46.19839200;0;6.14229600;Genava;Geneva;NA;212;Switzerland
-5;46.52755900;0;5.42166400;Gaciaco;Gizia;NA;213;France
-5;45.18852900;0;5.72452400;Gracinoble;Grenoble;NA;214;France
-5;37.17825700;0;32.16866300;Isauria;Dereköy/Konya;"Zengibar Kalesi";215;Turkey
-5;44.69374400;0;3.34261000;Gavalorum;Javols;NA;216;France
-5;45.31725900;0;1.32240000;Juliaco;Juillac;NA;217;France
-5;45.49362900;0;1.06247400;Gemeliaco;Jumillac-le-Grand;Jumilhac-le-Grand;218;France
-4;53.95996084;1;-1.08730016;"Kings of Northumbria";NA;NA;220;"United Kingdom"
-5;44.87444500;0;1.48280400;Lanticiaco;Lanzac;NA;221;France
-5;49.28074500;0;-0.69865900;Laure;"Lavra (?)";NA;222;France
-5;41.34824600;1;-8.41102300;Laurentio;"Around Porto (uncertain)";NA;223;Portugal
-5;46.51996200;0;6.63359700;Lausonna;Lausanne;NA;224;Switzerland
-5;43.02686500;0;0.57097600;Cummonigo;"Le Pays de Cominges";Saint-Bertrand-de-Comminges;225;France
-5;45.04276800;0;3.88293600;Anicio;"Le Puy";NA;226;France
-5;45.06433200;0;1.16138000;Lintiniaco;Lentignac;Montignac;227;France
-5;45.82842200;0;3.37952800;Ledoso;Lezoux;NA;228;France
-5;45.75759262;0;4.83231639;Lugdunum;Lyons;NA;229;France
-5;46.30345000;0;4.83250700;Matascone;Mâcon;Macon;230;France
-5;46.16705200;0;2.63126400;Marciliaco;Marcillat;NA;231;France
-5;43.29648200;0;5.36978000;Masilia;Marseilles;NA;232;France
-5;45.21997900;0;2.33661100;Mauriaco;Mauriac;NA;233;France
-5;45.50000000;0;6.50000000;Darantasia;Moutiers-Tarentaise;NA;234;France
-5;43.18427700;0;3.00307800;Narbo;Narbonne;NA;235;France
-5;45.38981200;0;2.27326900;"Novo Vico";"Neuvic d'Ussel";NA;236;France
-3;40.67126786;1;-4.10887974;"No mint";NA;NA;237;Spain
-5;43.19441300;0;-0.60529200;Helorone;Oloron;NA;238;France
-5;47.14266700;0;5.85569300;Oxsello;Osselle;NA;239;France
-5;45.18402900;0;0.72111500;Petrocoris;Perigueux;NA;240;France
-5;41.14824600;0;-8.61102300;Portocale;Porto;Portocolae;241;Portugal
-5;45.89399500;0;3.11493200;Ricomago;Riom;NA;242;France
-5;44.35100100;0;2.57330100;Rutenus;Rodez;NA;243;France
-5;45.66899700;0;3.10913900;Telemate;Saint-Amant-Tallende;Saint-Armand-Tallende;244;France
-5;45.85163300;0;3.17900600;Cariaco;Saint-Beauzire;NA;245;France
-5;43.02686500;0;0.57097600;Conbenas;Saint-Bertrand-de-Comminges;Saint-Bertrand-de-Cominges;246;France
-5;45.27747700;0;6.34534200;Maurienna;Saint-Jean-de-Maurienne;NA;247;France
-5;43.00128000;0;1.13614500;Conserannis;Saint-Lizier;NA;248;France
-5;46.21483500;0;7.00528800;Acauno;Saint-Maurice;"Saint-Maurice (Swiss)";249;Switzerland
-5;45.13585000;0;3.81311500;Vellaos;Saint-Paulien;NA;250;France
-5;43.54415900;0;16.49192100;Salona;Solin;NA;251;Croatia
-5;45.28542400;0;0.95012400;Sagraciaco;Sarrazac;NA;252;France
-5;36.59227100;0;33.94924900;"Seleukeia Isauriae";Silifke;Seleucia;253;Turkey
-3;37.58779775;1;14.15505038;Sicily;NA;Siciliae;254;Italy
-5;46.23117500;0;7.35888000;Sidunis;Sion;NA;255;Switzerland
-5;44.19634700;0;5.94437900;Sisteron;Sisteron;NA;256;France
-5;45.13721200;0;7.05397900;Sicusio;Suse;NA;257;Italy
-5;35.76513400;0;-5.82832400;Tanja;Tangier;NA;258;Morocco
-5;45.99556100;0;2.99921800;Tasgunnago;Tazanat;Charbonnières-les-Vieilles;259;France
-5;34.89620000;0;-1.31540100;Tilmisan;Tlemcen;NA;261;Algeria
-5;43.60446200;0;1.44424700;Tholosa;Toulouse;NA;263;France
-5;32.89667200;0;13.17779200;Tripoli;NA;NA;264;Libya
-3;52.68887338;1;-1.25244105;"Uncertain mint (England)";NA;NA;265;"United Kingdom"
-3;40.27009002;1;-4.63623033;Unknown;NA;NA;266;Spain
-4;37.33836474;1;-4.51263383;"Unknown (Malaka or Cordoba?)";"Malaga or Cordoba";NA;267;Spain
-4;38.91914223;0;-6.34079437;"Unknown (Emerita?)";Mérida;NA;268;Spain
-4;39.83991251;1;-4.01549986;"Unknown (Toleto?)";Toledo;NA;269;Spain
-5;45.23309200;0;7.21158700;Oxxello;Ussel;NA;270;Italy
-5;45.52736600;0;3.33770400;Icciomo;Usson;NA;271;France
-5;45.42433200;0;1.56372800;Userca;Uzerche;NA;272;France
-5;44.01214100;0;4.41967800;Ucece;Uzes;NA;273;France
-5;44.93322800;1;4.89208100;Valentia;"Valence? (But maybe Gap=Vapincum)";Valence;274;France
-5;41.08668000;1;-8.24837500;Vallearitia;"Varzea do Douro (doubts)";NA;275;Portugal
-5;42.81855000;1;-1.64441600;Vallegia;Iruña;Valle…;276;Spain
-5;45.05400200;0;2.93355000;Valligoli;Valuejols;Vallegoles;277;France
-5;45.75421200;0;3.09410500;Vindicco;Vendeix;NA;278;France
-5;43.99619700;1;5.14651800;Venasque;Vendesca?;NA;279;France
-5;49.71666700;0;3.35250000;Vendogilo;Vendeuil;NA;280;France
-5;46.04610000;0;3.18610000;Vindiciaco;Vensat;NA;281;France
-5;46.61211700;0;0.46540700;Vienna;Vienne;NA;282;France
-5;44.48302100;0;4.68984000;Vivarios;Viviers;NA;283;France
-5;46.31451400;0;3.39804800;Vorocio;Vouroux;NA;284;France
-5;45.20804900;0;1.37502000;Isandone;Yssandon;NA;285;France
-5;46.41670000;0;5.73333000;"Antro Vico";"Antre near Vilard d-Heria";NA;286;France
-5;46.39350000;0;5.56614000;Argentao;Arinthod;NA;287;France
-5;47.09810000;0;5.26423400;"Latona Vico";Losne;NA;288;France
-5;46.53750000;0;5.40307000;Cocciaco;Cuisia;NA;289;France
-5;46.46760000;0;5.45265000;Gredaca;Graye-et-Charnay;NA;290;France
-5;47.53640100;0;4.49155200;Alisia;Alize-Sainte-Reine;Alise-Sainte-Reine;291;France
-5;47.02390600;0;4.83804300;Beleno;Beaune;NA;292;France
-5;46.94619900;0;5.90464100;Cluciaco;Clucy;NA;293;France
-5;33.51306905;0;36.30958039;Dimashq;Damascus;NA;329;Syria
-5;34.00862342;0;36.20711855;Heliopolis;Baalbek;"Ba'labaak / بعلبك";330;Lebanon
-5;31.65860200;0;36.32185400;Amman;Amman;Philadelphia;331;Jordan
-5;32.62243400;0;36.11097000;Adraa;Daraa;Adhri'at;332;Syria
-5;32.51913800;0;36.48057300;Busra;Bostra;Bosra;333;Syria
-5;34.73332595;0;36.71666094;Hims;Homs;"Emesa / حمص";334;Syria
-5;34.89362000;0;35.88516900;Tartus;Tartous;NA;335;Syria
-5;32.78923701;0;35.52138059;Tiberias;Tabariya;"Ṭabarīyya / طبرية";336;Israel
-5;32.49675200;0;35.49730200;Baysan;Beit-Shean;Scythopolis;337;Israel
-5;32.23526000;0;35.90377400;Jerash;Jarash;NA;338;Jordan
-5;32.92817500;0;35.07563700;Akka;Acre;NA;339;Israel
-5;32.73944800;0;35.27584000;Sephoris;Saffuriya;NA;340;Israel
-5;31.79681300;0;35.21376900;"Iliya (Ayla)";Jerusalem;"Aelia Capitolina";341;Israel
-5;31.94272600;0;34.88477800;Ludd;Lod;NA;342;Israel
-5;31.87618000;0;34.73809200;Yubna;Yavne;NA;343;Israel
-5;31.92799900;0;34.86234700;al-Ramla;Ramla;NA;344;Israel
-5;31.66448700;0;34.57301600;Askalon;Ashkelon;Asqalan;345;Israel
-5;31.61136700;0;34.89536000;"Bayt Jabrin";"Beit Guvrin";Eleutheropolis;346;Israel
-5;32.22049900;0;35.25688800;Baniyas/Nabulus;Nablus;"Neapolis (Palestine)";347;Palestine
-5;31.50450400;0;34.46543100;Ghazza;Gaza;NA;348;Palestine
-5;32.51149700;0;34.90578600;Qaysariya;Caesarea;NA;349;Israel
-5;35.98333110;0;37.01666232;"Chalcs ad Belum";Qinnasrin;"Qinnasrīn / قنسرين";350;Syria
-4;36.19923830;0;37.16371653;Bercea;Aleppo;"Halab / حلب";351;Syria
-5;36.01030924;0;36.67364961;"Maʿarrat Miṣrīn";"Ma'arrat Misrin";"Maarrat Misrin / Nasrin / معرة مصرين";352;Syria
-5;36.52692400;0;37.95592900;Manbij;Manbij;"Hierapolis Bambyce/Euphratensis";353;Syria
-5;35.90344200;0;36.72574800;Sarmin;Sarmin;NA;354;Syria
-5;36.73333300;0;36.88333300;Qurus;"Ash Shaykh Khurus";Cyrrhus;355;Syria
-5;36.98941000;0;38.37052300;Tanukh/Saruj?;Suruç;NA;356;Turkey
-4;32.89060807;0;36.38482328;Carrhae;Harran;"Hellonopolis / Ḥarrān / حران";357;Syria
-5;37.16038800;0;38.79091600;al-Ruha;Sanliurfa;Edessa;358;Turkey
-5;37.19099600;0;41.34555400;Nisibin;Nusaybin;Nisibis;359;Turkey
-5;38.75638747;1;35.62777706;"al-Madina ma'din amir al-mu'minin";al-Rusafa;Sergiopolis;360;Turkey
-5;47.86556400;0;5.33141600;Lingonas;Langres;NA;361;France
-5;48.24238300;0;5.29803100;Andelao;Andelot;NA;362;France
-5;48.08406400;0;5.54858100;"Mosa Vico";Meuvy;NA;363;France
-5;47.85646600;0;3.97330300;Ternodero;Tonnerre;NA;364;France
-5;49.44045900;0;1.09396600;Rotomo;Rouen;NA;365;France
-5;49.43178300;0;0.81755700;Gemedico;Jumièges;NA;366;France
-5;49.15213000;0;2.11309800;Menoiovilla;Ménouville;NA;367;France
-5;49.27786000;0;1.72361100;Nivialcha;Néaufles-Saint-Martin;NA;368;France
-5;49.30309900;0;1.93637900;Velcassino?;"Le Vexin";NA;369;France
-5;49.27604900;0;-0.70228900;Baiocas;Bayeux;NA;370;France
-5;49.09992000;0;-0.50114400;Apraricia(co);Evrecy;NA;371;France
-5;50.60224900;0;15.33526000;Similiaco;Sémily;NA;372;Czechia
-5;48.68620800;0;-1.35794800;Abrinktas;Avranches;NA;373;France
-5;48.60337800;0;0.17345400;Saius;Sèes;NA;374;France
-5;49.04779200;0;-1.44549100;Custancia;Coutances;NA;375;France
-5;49.11570000;0;-1.09066400;Briuuri;Saint-Lô;NA;376;France
-5;49.63695600;0;-1.62513400;Coriallo;Cherbourg;NA;377;France
-5;47.39004700;0;0.68892700;Turonus;Tours;NA;378;France
-5;47.39004700;0;0.68892700;"Saint Martin's Basilica";Tours;NA;379;France
-5;47.32393400;0;0.40729600;Alingavias;Langeais;NA;380;France
-5;47.41103500;0;0.98369800;Ambacia;Amboise;NA;381;France
-5;47.34132100;0;0.61313200;Ballatetone;Ballan-Miré;NA;382;France
-5;47.28276900;0;0.17888700;Borgoialo;Bourgueil;NA;383;France
-5;47.56924800;0;0.38789600;"Bricca Vico";Brèches;NA;384;France
-5;48.35568800;0;-4.75420200;Briotreite;Biéré;NA;385;France
-5;47.23239200;0;0.91638300;Brixis;"Braye, auj. Reignac";NA;386;France
-5;47.16671800;0;0.24021000;Cainone;Chinon;NA;387;France
-5;44.94706300;0;1.96972900;Condate;Candes;NA;389;France
-5;47.34539000;0;0.95211000;Daria/Dariaco;Dierre;NA;390;France
-5;47.28458200;0;0.78617100;Evira;Esvres;NA;391;France
-5;47.18637800;0;1.09612200;Geniliaco;Génillé;NA;392;France
-5;46.78527600;0;0.86990900;Hicciodero;Yzeures;NA;393;France
-5;47.45922000;0;1.04085800;Limariaco;Limeray;NA;394;France
-5;46.29447900;0;-0.28802600;Medeconno;Mougon;NA;395;France
-5;47.08948900;0;0.89247300;Musicaco;Mouzay;NA;396;France
-5;45.48235600;0;6.09318600;Pauliaco;Pouillé;NA;398;France
-5;46.96392900;0;0.57669900;Silaniaco;Séligny;NA;400;France
-5;45.35450000;0;4.90511000;Solonaco;Sonnay;NA;401;France
-5;47.47157400;0;1.12458300;Vidua;Veuves;NA;402;France
-5;48.00777800;0;0.19953400;Cenomannis;"Le Mans";NA;403;France
-5;47.96928300;0;0.15788200;Alaona;Allonnes;NA;404;France
-5;48.15063700;0;0.12266800;Arciacas;Saint-Jean-d'Assé;NA;405;France
-5;48.19308000;0;0.08666600;Arciaco;Assé-le-Riboul;NA;406;France
-5;48.17524100;0;0.23368000;Balatonno;Ballon;NA;407;France
-5;48.25108600;0;-0.36345100;Bedicco;Bais;NA;408;France
-5;48.14711400;0;0.36219000;Bellofaeto;Beaufay;NA;409;France
-5;47.96750500;0;-0.23551700;Bruciron(no);Brulon;NA;410;France
-5;47.94842700;0;-0.22390100;Cabiliaco;Chevillé;NA;411;France
-5;48.25628600;0;0.16986400;Cirialaco;"Sérillac (comm. De Doucelles)";NA;412;France
-5;48.16991400;0;0.70384000;Corma;Cormes;NA;413;France
-5;48.16851300;0;-0.06021200;Crisciac(o);Crissé;NA;414;France
-5;48.25709200;0;-0.49639200;Diabolentis;Jublains;NA;415;France
-5;46.99820600;0;0.05916000;Lacciaco;Lassay;NA;416;France
-5;47.76043100;0;0.27454000;Matoliaco;Mayet;NA;417;France
-5;47.92013700;0;0.74344000;Matovallo;Saint-Calais;NA;418;France
-5;47.87099300;0;-0.09736300;Noviomo;Noyen-sur-Sarthe;NA;419;France
-5;46.56060000;0;3.29113000;Novovico;Neuvy;NA;420;France
-5;48.11909500;0;0.18261300;Sauliaco;Souillé;NA;421;France
-5;48.49458400;0;-0.13776800;Sirallo;Ciral;NA;422;France
-5;50.18575300;0;3.49759200;Solemnis;Solesmes;NA;423;France
-5;48.04110700;0;-0.47707600;Wagias;Vaiges;NA;424;France
-5;48.11135900;0;-1.68000900;Redonis;Rennes;NA;425;France
-5;48.33903200;0;-1.15555200;Belciaco/Balaciaco;Beaucè;NA;426;France
-5;48.29921300;0;-1.31028000;Vindello;Vendel;NA;428;France
-5;47.47398800;0;-0.55155900;Andecavis;Angers;NA;429;France
-5;47.79813400;0;-1.20337500;Senonas;Senonnes;NA;430;France
-5;47.21851600;0;-1.56023500;Namnetis;Nantes;NA;431;France
-5;47.71940600;0;-1.37572800;Baiorate;Béré;NA;432;France
-5;47.03590000;0;-1.64051800;Deas;"Saint-Philibert de Grandleiu";NA;433;France
-5;47.41281600;0;-1.96936100;Cambidonno;Campbon;NA;434;France
-5;47.65867700;0;-2.75990800;Venetus;Vannes;NA;435;France
-5;48.19785600;0;3.28260600;Senonis;Sens;NA;436;France
-5;48.53096900;0;2.01089900;Dortenco;Dourdan;NA;437;France
-5;48.53538100;0;2.65920000;Mecledore;Melun;NA;438;France
-5;48.43304200;0;2.16113800;Stampas;Étampes;NA;439;France
-5;48.44700400;0;1.48663900;Carnotas;Chartres;NA;440;France
-5;48.22880600;0;1.36361000;Aloia;Alluyes;NA;441;France
-5;47.58768600;0;1.33376400;Bleso;Blois;NA;442;France
-5;48.73591200;0;1.37104900;Dorocas;Dreux;NA;443;France
-5;49.44045900;0;1.09396600;Riomo;Ruan;NA;444;France
-5;47.79551800;0;1.06616800;Vi(n)docino;Vendôme;NA;445;France
-5;47.79540000;0;3.58452000;Autiziodero;Auxerre;NA;446;France
-5;47.64107200;0;2.74131300;Briodro;Briare;NA;447;France
-5;45.18212000;0;5.10186400;Donnaciaco;Donay;NA;448;France
-5;47.45389100;0;3.06091400;Eliniaco;Alligny-près-Cosne;NA;449;France
-5;47.67227100;0;3.87788800;Nenterac(o);Nitry;NA;450;France
-5;48.29716300;0;4.07462600;Tricas;Troyes;NA;451;France
-5;48.53622100;0;4.14229900;Arciaca;Arcis-sur-Aube;NA;452;France
-5;48.37608300;0;4.52837800;Briona;Brienne-la-Vieille;NA;453;France
-5;48.65685000;0;3.75896000;Cupidis;Queudes;NA;454;France
-5;48.62668000;0;3.83179000;Latascone;"La Chapelle-Lasson";NA;455;France
-5;47.90273400;0;1.90860700;Aurelianis;Orléans;NA;456;France
-5;47.56628800;0;2.25508300;Briennone;Brinon-sur-Sauldre;NA;457;France
-5;46.14532000;0;2.23174000;Petraficta;Pierrefitte;NA;459;France
-5;47.91430500;0;1.91159400;Solaso;"Soulas (comm. De Sandillon)";NA;461;France
-5;47.32582000;0;1.30249000;Thaisacas;Thésée;NA;462;France
-5;47.64420700;0;2.05793600;Vosonno;Vouzon;NA;464;France
-5;48.85650600;0;2.35213300;Parisius;Paris;NA;465;France
-5;46.58156800;0;1.98922900;Castra;"Châtre (auj. Arpajon)";NA;466;France
-5;48.93577300;0;2.35802300;Catullaco;Saint-Denis;NA;467;France
-5;48.67870000;0;2.42120000;Draverno;Draveil;NA;468;France
-5;48.61376800;0;2.48034200;Exona;Essonnes;NA;469;France
-5;48.81270000;0;2.34371000;Gentiliaco;Gentilly;NA;470;France
-5;48.63247600;0;2.55096300;Locosancto;Lieusaint;NA;471;France
-5;49.04710000;0;2.62335500;Munciaco;Mousay;NA;472;France
-5;48.71702800;0;2.24685700;Palaciolo;Palaiseau;NA;473;France
-5;48.78307300;0;2.45183700;"Porto Cristoialo";"Port de Créteil (comm. De Saint-Maur-les-Fossés)";NA;474;France
-5;48.42267100;0;-1.47567600;Tremolito;Tremblay;NA;475;France
-5;48.95891500;0;2.89648600;Meldus;Meaux;NA;476;France
-5;48.03697000;0;-1.41431800;Claio;Claye;NA;477;France
-5;48.88535600;0;2.76775000;Columbario;Coulommieres;NA;478;France
-5;48.85531300;0;2.93384200;Crideciaco;Crécy-la-Chapelle;NA;479;France
-5;46.99390300;0;3.15996400;Nevers;Nevers;NA;480;France
-5;46.73301700;0;3.18317400;Cantunaco;Chantenay-Saint-Imbert;NA;482;France
-5;46.78838000;0;3.59777000;Catonaco;Charrin;NA;483;France
-5;46.82842600;0;3.46161000;Dicetia;Decize;NA;484;France
-5;49.75991200;0;6.64449200;Treveris;Trier;NA;485;Germany
-5;50.43542000;0;7.39932500;Antunacco;Andernach;NA;486;Germany
-5;47.40586800;0;9.33616100;Bodovreca;Boppart;NA;487;Switzerland
-5;49.63198600;0;5.16825000;Epocio;Carignan;NA;488;France
-5;49.64944900;0;5.04897400;"Mallo Matiriaco";Mairy;NA;489;France
-5;49.65416700;0;3.79250000;Pontepetrio;Pierrepont;NA;491;France
-5;49.11969600;0;6.17635500;Mettis;Metz;NA;492;France
-5;49.05936800;0;6.12192100;Avanaco;Augny;NA;493;France
-5;48.78132300;0;6.53031500;Bodesio;Vic-sur-Seille;NA;494;France
-5;48.81056200;0;6.71759900;Doso;Dieuze;NA;495;France
-5;43.92990000;0;2.28575000;Marsallo;Marsal;NA;496;France
-5;48.77969100;0;6.56228200;Medianovico;Moyenvic;NA;497;France
-5;48.73567500;0;7.05333000;Sareburgo;Sarrebourg;NA;498;France
-5;48.67626200;0;5.89417600;Tullo;Toul;NA;499;France
-5;48.38610400;0;5.48662500;Granno;Grand;NA;500;France
-5;48.69280500;0;6.18381200;Nanciaco;Nancy;NA;501;France
-5;48.63726300;0;5.37714000;Nasio;Naix-aux-Forges;NA;502;France
-5;48.01799200;0;6.65582500;Novicento;Void;NA;503;France
-5;49.53718500;0;4.53501300;Sauriciaco;Sorcy;NA;504;France
-5;47.01569400;0;4.82805100;Scarponna;"Charpeigne (comm. De Dieulouard)";NA;505;France
-5;48.65749900;0;6.16539600;Vindeoera;Vandœuvre-lès-Nancy;NA;506;France
-5;49.21223600;0;5.62596800;Vereduno;Verdun-sur-Meuse;NA;507;France
-5;49.17313300;0;5.54806800;"Villa Maorin";Moranville;NA;508;France
-5;49.25778900;0;4.03192600;Remus;Reims;NA;509;France
-5;49.33584400;0;5.18018800;"Bridur Corte";Brieulles-sur-Meuse;NA;510;France
-5;45.80589100;0;0.61481600;Mosomo;Mouzon;NA;511;France
-5;49.02336300;0;4.04727300;Oriaco;Oiry;NA;512;France
-5;49.62952500;0;4.50339800;"Vico Santi Remidi";Viel-Saint-Remy;NA;513;France
-5;49.56389200;0;3.62476000;"Lauduno Cloata";Laon;NA;514;France
-5;49.38166700;0;3.32361100;Suessionis;Soissons;NA;515;France
-5;49.09275400;0;3.78788100;Bainissone;"Binson et Orquigny";NA;516;France
-5;45.64937800;0;4.79490100;Chariliaco;Charly;NA;517;France
-5;48.87150000;0;3.44706000;Vindaria;Vendières;NA;518;France
-5;48.95662200;0;4.36288500;Catalaunis;Châlons-sur-Marne;NA;519;France
-5;48.47862100;0;2.54928300;Perta;Perthes;NA;520;France
-5;49.84861100;0;3.28638900;Viromandis;Saint-Quentin;NA;521;France
-5;50.29121000;0;2.77713600;Atravetes;Arras;NA;523;France
-5;50.17596000;0;3.23566100;Camaraco;Cambrai;NA;524;France
-5;50.31522300;0;3.51704600;Falmartis;Famars;NA;525;France
-5;50.60566000;0;3.38782600;Turnaco;Tournai;NA;526;Belgium
-5;49.20654000;0;2.58465800;Silvanectis;Senlis;NA;527;France
-5;49.10353200;0;2.58503100;Plaitiliaco;Plailly;NA;528;France
-5;52.24603700;0;0.71251700;Buriaco;Bury;NA;529;"United Kingdom"
-5;49.16627700;0;2.24449900;Camiliaco;Chambly;NA;530;France
-5;49.89417100;0;2.29569500;Ambianis;Amiens;NA;531;France
-5;49.90829100;0;2.51107300;"Sancti Petri";"Corbie (Church of St. Peter)";NA;532;France
-4;50.06500395;1;1.67621590;Viminao;"Le Vimeu";NA;533;France
-5;50.51389700;0;1.63885100;"Wico in Pontio";Étaples;NA;534;France
-5;50.63633400;0;2.25771900;Taroanna;Thérouanne;NA;535;France
-5;46.79539100;0;-1.31980400;Bononia;Boulogne;NA;536;France
-5;49.99999500;0;8.27102400;Mogontiaco;Mainz;NA;537;Germany
-5;48.87217800;0;2.57654700;Argentorato/Strateburgo;Strasbourg;NA;538;France
-5;49.31655500;0;8.43361500;Spira;Spires;NA;539;Germany
-5;49.66151300;0;8.32120400;Warmacia;Worms;NA;540;Germany
-5;50.93836100;0;6.95997400;Colonia;Cologne;NA;541;Germany
-5;50.69222800;0;6.64726900;Tulbiaco;Zülpich;NA;542;Germany
-5;50.85798500;0;5.69698800;Triecto;Maastricht;NA;543;Netherlands
-5;51.22111000;0;4.39970800;Anderpus;Anvers;NA;544;Belgium
-5;50.52153800;0;5.23574500;Choae;Huy;NA;545;Belgium
-5;50.26121800;0;4.91255700;Deonante;Dinant;NA;546;Belgium
-5;50.46652800;0;4.86618900;Namuco;Namur;NA;547;Belgium
-5;51.97750700;0;5.32693000;Dorestate;Wijk-bij-Duurstede;NA;548;Netherlands
-3;52.95442920;1;5.16357375;Frisia;"Frisia (Roughly provinces of Friesland, Drenthe, Groningen, Overijsel, Noord-Holland)";NA;549;Netherlands
-5;47.55810800;0;7.58782600;Basilia;Basel;NA;550;Switzerland
-5;47.08056900;0;2.39893200;Betoregas;Bourges;NA;551;France
-5;47.48805000;0;2.62984000;Bareloco;Barlieu;NA;552;France
-5;47.23154000;0;2.48862800;Bellomonte;"Beaumont (comm. De Menetou-Salon)";NA;553;France
-5;46.49445600;0;1.36461900;Capudcervi;Sacierges-Saint-Martin;NA;554;France
-5;50.65896800;0;5.88366800;Climone;Clérmont;NA;555;Belgium
-5;46.82677700;0;1.70104300;"Dolus Vico";Déols;NA;556;France
-5;47.20328600;0;1.75340200;Duno;Dun-le-Poëlier;NA;557;France
-5;46.78036800;0;2.50417200;"Mediolano Castro";Melliant;NA;558;France
-5;46.94368700;0;1.31344100;Onaciaco;Palluau;NA;559;France
-5;46.63573000;0;1.38600700;Rivarinna;Rivarennes;NA;560;France
-5;47.45765800;0;2.17994300;Sesemo;Souesmes;NA;561;France
-5;47.22174900;0;2.06914200;Virisione;Vierzon;NA;562;France
-5;45.83542400;0;1.26448500;Lemovecas;Limoges;NA;563;France
-5;45.95841400;0;1.40046300;Ambaciaco;Ambazac;NA;564;France
-5;46.26486300;0;1.63769400;Analiaco;Naillat;NA;565;France
-5;46.04516300;0;1.01737300;Blatomago;Blond;NA;566;France
-5;44.41177400;0;5.74990800;Breciaco;Bersac;NA;567;France
-5;45.93247100;0;0.73824200;Cabiriaco;Chabrac;NA;568;France
-5;45.23557600;0;1.20257800;Campaniaco;Champagnac;NA;569;France
-5;46.05973000;0;2.56279000;Caronno;Charron;NA;570;France
-5;45.60929600;0;1.35329500;Carovicus;Château-Chervix;NA;571;France
-5;45.51141100;0;1.32405300;Cociaco;Coussac-Bonneval;NA;572;France
-5;45.99192100;0;1.27471000;Conpriniaco;Compreignac;NA;573;France
-5;45.63254000;0;1.53521800;Curisiaco;Curzac;NA;574;France
-5;49.13447300;0;5.65511200;Evauno;Evaux;NA;575;France
-5;46.14525400;0;1.51138200;Ferruciaco;"Saint-Étienne de Fursac";NA;576;France
-5;45.06010500;0;-0.69152800;Marciaco;Marsac;NA;577;France
-5;45.80719500;0;1.37131700;Montiniaco;Montignac;NA;578;France
-5;49.03380600;0;6.16081700;"Potincaco Castro";Château-Ponsac;NA;580;France
-5;45.51990000;0;1.20408000;"Sancto Aredio";Saint-Yrieix-la-Perche;NA;581;France
-5;45.31141200;0;1.19697700;Selaniaco;Salagnac;NA;582;France
-5;46.05138500;0;1.85594300;Serotenno;Sardent;NA;583;France
-5;45.90665800;0;2.03498000;Vallaria;Vallière;NA;585;France
-5;45.64967600;0;0.15686600;Icolisima;Angoulème;NA;586;France
-5;45.69044900;0;0.49171000;Orgadoialo;Orgedeuil;NA;587;France
-5;45.74208000;0;-0.62993300;Santonas;Saintes;NA;588;France
-5;45.84500000;0;-0.39416700;Albiaco;Aujac;NA;589;France
-5;46.00903600;0;-0.71189700;Anisiaco;Annezay;NA;590;France
-5;46.58026000;0;0.34019600;Pectavis;Poitiers;NA;591;France
-5;45.97995200;0;0.54208000;Antebrinnaco;Ambernac;NA;592;France
-5;46.47416400;0;-0.56123200;Areduno;Ardin;NA;593;France
-5;46.18635700;0;0.36521300;Benaiasco;Benest;NA;594;France
-5;46.99182200;0;0.34695800;Braia;Braye-sous-Faye;NA;595;France
-5;44.75472800;0;3.07069900;Brionno;Brion;NA;596;France
-5;46.14169700;0;-0.22176800;Briosso;Brioux;NA;597;France
-5;46.39750000;0;-1.02138900;Callaco;Chaillé-les-Marais;NA;598;France
-5;48.93055600;0;-0.85777800;Carvill[…];Carville;NA;599;France
-5;46.42560800;0;0.18819000;Cella;Celle-Lévescault;NA;600;France
-5;46.47070000;0;2.43378000;Curciaco;Courçais;NA;601;France
-5;46.85258500;0;0.54321600;Interamnis;Antran;NA;603;France
-5;46.22716000;0;0.47122300;Jusciaco;Joussé;NA;604;France
-5;46.43861100;0;-0.94861100;Landuconni;"Le Langon";NA;605;France
-5;46.52016300;0;0.33259100;Locoteiaco;Ligugé;NA;606;France
-5;46.85639000;0;-0.01945300;Madronas;Marnes;NA;607;France
-5;44.56205400;0;7.32049200;Medolo;Melle;NA;608;Italy
-5;47.38462378;0;-1.12846366;Mironno;Méron;NA;609;France
-5;47.16305000;0;0.30849800;Neioialo;Nueil;NA;610;France
-5;46.32394600;0;-0.46452100;Noiordo;Niort;NA;611;France
-5;47.13278500;0;-1.74971300;"Porto Vediri";"Le Port Saint-Père";NA;613;France
-5;47.00525400;0;0.27164000;Potento;Pouant;NA;614;France
-5;47.19054600;0;-1.56952900;"Raciate Vico";Rezé;NA;615;France
-5;48.08957900;0;0.65372100;"Sancti Maxentii";Saint-Maixent;NA;616;France
-5;46.58976827;0;-1.11397383;Teodericiaco;"Trizay (Vendée)";Trizay-sur-le-Lay;618;France
-5;46.46715100;0;1.03854000;Tremeolo;"La Trimouille";NA;620;France
-5;49.53741100;0;4.63788900;Turturonno;Tourteron;NA;621;France
-5;46.94538200;0;-0.34539700;Viriliaco;Vrillé;NA;622;France
-5;46.93155400;0;-0.51756500;Vultaconno;Voultegon;NA;623;France
-3;45.35889986;1;34.29932146;Crimea;NA;NA;624;Russia
-3;36.16338320;1;37.06787527;"Unknown (Syria)";NA;NA;625;Syria
-3;30.43801687;1;31.44286751;"Unknown (Egypt)";NA;NA;626;Egypt
-5;30.01796100;0;31.23768400;al-Fustat;Cairo;NA;627;Egypt
-3;34.91184002;1;36.89209294;"Byzantine military mint (mobile?)";NA;NA;628;Syria
-5;47.06050700;0;0.87340100;"Cisomo Vico";Ciran-la-Latte;NA;689;France
-5;50.73743000;0;7.09820700;Bonna;Bonn;NA;930;Germany
-5;51.81256300;0;5.83722600;Noviomagus;Nijmegen;NA;931;Netherlands
-5;50.43683300;0;1.65412200;Airono;Airon-Notre-Dame;NA;932;France
-5;37.38909200;0;-5.98445900;Hispalis;Seville;NA;933;Spain
-5;14.13403200;0;38.74729000;Aksum;Aksum;NA;934;Ethiopia
-5;34.79929400;0;48.51220900;"Hamadān (AH/AHM/KWN AH/KWN AHM)";Hamedan;"Ancient Ecbatana";1355;Iran
-5;36.469722;0;52.350833;"Amul (AM), Tabaristan";Amol;NA;1356;Iran
-5;28.8528648953;0;52.5326816606;"Ardashir-Khwarrah (ART/ARTHŠTR/ ARTHŠTRGDH)";Firuzabad;Gor;1357;Iran
-5;31.31671200;0;48.68438000;"Ohrmazd-Ardashir (AW/AWH)";Ahwaz;"Sūq al-Ahwaz";1358;Iran
-5;32.1887935;0;48.2537285;"Eran-Khwarrah-Shāpūr (AY/AYL[early])";Susa;Bahram;1359;Iran
-3;28.81740500;0;52.96509000;"Biramkobadh (BRM)";?;NA;1360;Iran
-5;29.7779115;0;51.5710073;"Bishapur (BYŠ/BŠHP/BŠHPW)";Faliyan;"Veh Sabur";1361;Iran
-5;28.755075;0;54.544772;"Darabgird (DA/DAL/DALAPKR)";Dārāb;NA;1362;Iran
-5;28.75595100;0;54.55467900;"Jahrum (Near Darabgird) (DA+G/DA+GARWM)";Jahrom;NA;1363;Iran
-5;28.93147600;0;53.64264600;"Fasa (Near Darabgird) (DA+P)";Fasa;NA;1364;Iran
-5;28.91191900;0;50.83672100;"Rew-Ardashir (LYW/ LYWARTHŠT/KWN LYW/GNC LYW)";Bushehr;"Bandar Bushehr";1365;Iran
-3;30.30808500;0;51.95434000;"Dašt-Maysan (DŠ or DŠT)";?;NA;1366;Iran
-5;32.65107000;0;51.67881000;"Gay (GD)";Isfahan;"Jayy / جي";1367;Iran
-5;37.2580556;0;55.1688888888889;"Gurgan-Shahristan (GW[later]/GWL)";Gorgan;Jorjan;1368;Iran
-3;32.283333;1;48.516667;"Khuzistān (HWC)";Khuzestan;NA;1369;Iran
-5;28.4325;0;53.124722;"Karzi (KA/KAL/KALCYDY)";Karzin;Kawad-Khwarrah;1370;Iran
-3;28.85590100;0;54.83276400;"Qubadh Xwarrah (KWAT)";NA;NA;1371;Iran
-5;31.28;0;49.603611;"Ram-Ohrmazd (LAM)";Ramhurmuz;Ramhormozd;1372;Iran
-5;35.594267;0;51.447163;"Ray (LD/LDY/LY)";Tehran;NA;1373;Iran
-3;35.95281;0;52.63545;?;NA;NA;1374;Iran
-5;34.18761;0;48.367981;"Nihawand (NY)";Nahavand;"Mah al-Basra";1375;Iran
-3;30.87551300;0;49.71313500;"Nahr-Tira (NHR)";NA;NA;1376;Iran
-5;29.98083300;0;52.90944400;"Stakhr (ST/STHL)";Istakhr;Estakhr;1377;Iran
-5;29.59048485;0;52.57565215;"Shiraz (Š/ŠY/ŠYLAC)";Shiraz;NA;1378;Iran
-5;28.85298400;0;52.53244600;"Tawwah (TART)";Firuzabad;Firuzabad;1379;Iran
-5;36.56560000;0;53.05880000;"Ṭabarestān (TPWRSTAN)";Sari;"Ancient province of Māzandarān";1380;Iran
-5;32.28046550;0;48.51768850;"Weh-Andiyok-Shapur (WH/WHY)";Gundeshapur;Gondishapour;1381;Iran
-3;28.41233900;0;53.36059600;"Bihqubadh (WYH)";NA;NA;1382;Iran
-5;30.66282600;0;50.30914100;"Weh-az-Amid-Kawad (WYHC)";Behbahan;Arrajan;1383;Iran
-5;31.89218700;0;54.35877000;"Yazd (YZ)";Yazd;NA;1384;Iran
-5;32.03443801;0;44.40310466;"Al-Kūfa (AKWLA)";Kufa;الكوفة;1385;Iraq
-5;33.094703;0;44.5812226667;"Ctesiphon (AS)";"Salman Pak";Asuristan;1387;Iraq
-5;37.012264;0;46.201883;"Adurbadagan (AT)";Ganzak;Azerbaijān;1388;Iran
-5;33.094703;0;44.5812226667;"Mobile Court Mint - Ctesiphon (BBA)";"Salman Pak";Al-Madain;1389;Iraq
-5;30.50810300;0;47.78348900;"Basra (BCRA/BJRA)";Al-Baṣra;NA;1390;Iraq
-5;30.80934250;0;47.56280400;"Maysān (MY)";Naysan;Kark-Meshan;1392;Iraq
-5;30.7826951;0;47.7010833;"Forat-Meshan (PL)";Maghlub;Vahman-Ardashir;1393;Iraq
-5;32.33861;0;45.93362;?;"Kut (80km SE of Kut)";NA;1394;Iraq
-4;32.540791;1;44.22048;"Weh-Kawad (WYH)";Al-Hindiya;NA;1395;Iraq
-4;33.048229;1;44.582087;"Weh-az-Andiôk-Khusro (WYHC)";Al-Madain;"Antiocheia Chosroou";1396;Iraq
-5;36.202448;0;58.798373;"Abarshahr (AP/APL)";Nishapur;Nev-Shapur;1397;Iran
-3;36.78435900;0;65.29174800;"Anbir (ANBYR)";NA;NA;1398;Afghanistan
-5;36.7678774387;0;66.9012833898;"Balkh (BHL)";Balkh;"Ancient Bactria";1399;Afghanistan
-4;34.5;1;47.5;"? (near Bisotun) (BN)";Kermanshah;"Ancient Carmania";1400;Iran
-5;31.4881;0;64.3717;"Bist, Sakastan (BŠT/ BYST)";"Qal`eh-ye Bost";NA;1401;Afghanistan
-5;29.1156331155;1;58.3691478143;"Garm-Kirmān (GLM)";Bam;NA;1402;Iran
-3;36.85472;0;63.90747;?;NA;NA;1403;Turkmenistan
-5;34.346802;0;62.189883;"Herat, Khorasan (HL[later]/HLY/HLYDY/HLYDW)";Herat;NA;1404;Afghanistan
-5;29.43654300;0;55.66864500;"Kirman (KL)";Sirjan;Shiragan;1405;Iran
-5;30.28387270;0;57.08005130;"Kirmān (KRMAN)";Kirmān;NA;1406;Iran
-5;37.669926;0;62.177081;"Marw (ML/MLW/MLWY)";Merw;Bayramaly;1407;Turkmenistan
-3;37.36288200;0;65.20385700;"Marw al-Rudh (MRWRWT)";?;NA;1408;Turkmenistan
-3;29.96604;0;57.64526;?;NA;NA;1409;Iran
-5;28.87209090;0;58.27906210;"Narmāšir (NAR)";Narmashir;NA;1410;Iran
-3;35.75691500;0;62.69897500;"Sarkhas (KH)";NA;NA;1411;Turkmenistan
-5;30.96;0;61.86;"Sakastan (N/S/SK/SKSTN)";Zaranj;Sistan;1412;Afghanistan
-5;42.06742007;0;48.28909081;al-Bab;Derbent;NA;2613;Russia
-5;39.21488560;0;9.10951885;Caralis;Cagliari;NA;2614;Italy
-5;36.33432480;0;6.61617292;"Constantine in Numidia";NA;NA;2615;Algeria
-5;41.73111174;0;12.28626712;Ostia;NA;NA;2616;Italy
-5;45.66688462;0;12.24304019;Treviso;Treviso;NA;2617;Italy
-5;32.69447883;0;45.68479395;Wāsiṭ;NA;"Wasit / واسط";2618;Iraq
-5;36.57741904;0;36.18758917;Alexandretta;NA;NA;2619;Turkey
-5;35.94999543;0;39.01669842;Rakkah;Raqqa;al-Raqqah;3013;Syria
-3;45.50442157;1;3.20800066;"Unknown (Southern Gaul)";NA;NA;3413;France
-3;34.28554878;1;26.83410586;"Unknown (East Roman)";NA;NA;3414;Turkey
-4;44.65863693;1;4.80651678;"Arelato or Lugdunum";"Arles or Lyons";NA;3415;France
-3;46.34540845;1;2.29393791;"Unknown (Gaul)";NA;NA;3813;France
-3;36.18338287;1;18.67812173;"Unknown (Roman)";NA;NA;4213;Italy
-3;38.25543274;1;10.70399255;"Unknown (West Roman)";NA;NA;4214;Italy
-3;43.22518924;1;12.02218040;"Unknown (Italy)";NA;NA;4613;Italy
-3;35.64004873;1;38.78406171;"Unknown (Asia Minor)";NA;NA;4614;Syria
-3;21.85564091;1;42.25697554;"Unknown (Balkans)";NA;NA;4615;"Saudi Arabia"
-3;44.92980194;1;7.98343573;"Gallic mint or Roma";NA;NA;4616;Italy
-3;34.96195366;1;31.93551259;"Unknown (Palestine)";NA;NA;5013;Palestine
-3;33.97199334;1;48.77921799;"Unknown (Sasanian Empire)";NA;NA;5014;Iran
-3;35.81812919;1;31.34023499;"Unknown (Palestine/Jordan)";NA;NA;5015;Palestina
-3;39.44145544;1;35.98942981;"Unknown (al-Jazira)";NA;NA;5016;Turkey
-3;37.68596718;1;34.84343103;"Unknown (Greater Syria)";NA;NA;5017;Turkey
-3;37.68596718;1;36.48565917;"Unknown (North Syria)";NA;NA;5018;Turkey
-3;33.5130695;1;36.3095814;"Unknown (Umayyad)";NA;NA;5019;Syria
-5;36.34368838;0;43.09971206;al-Mawsil;Mosul;الموصل;5413;Iraq
-4;36.72574637;1;35.90343408;Sarmin;NA;NA;5414;Turkey
-4;38.93999491;1;36.67027194;Balih;"Ain al-'Arus (spring)";NA;5415;Turkey
-3;44.57916396;1;40.00468353;Irminiya;NA;NA;5416;Russia
-5;34.52171801;0;31.61608964;Diocletianopolis;"Khirbat a-Sheraf";Sarafa;5813;Bulgaria
-3;37.25999526;1;36.17999841;"Jibrin (Uncertain)";Jibrin;Jabrin;6213;Turkey
-3;40.41659708;1;-3.70379883;"Unknown (Iberia)";NA;NA;6613;Spain
-5;47.49082832;0;3.90916268;Aballo;Avallon;NA;7013;France
-5;48.60527321;0;0.17193755;Sagensis;Sées;Sagiens;7014;France
-5;44.08471889;0;10.04194317;Luna;Luni;Ortonovo;7413;Italy
-4;48.12958319;0;-1.67724447;Armorica;Armorique;Aremorica;7813;France
-5;48.94332914;1;-0.21888350;Solimnli;Soulangy;"Soulangy (Sarry)";7814;France
-5;45.41380770;0;3.72461280;Arelenco;Arlanc;"Arlanc (Puy-de-Dôme";7815;France
-5;47.76540532;0;2.37388797;"Solliaco Vici";Sully-sur-Loire;"Sully-sur-Loire (Loiret)";8213;France
-5;46.04272140;0;1.10423610;Bercillo;Breuilaufa;"Breuilaufa (Haute-Vienne)";8214;France
-5;45.87355236;0;0.71879596;Cabanisio;Chabanais;Chabanès;8215;France
-5;46.54999714;0;-1.00610414;Tidiricia;Thiré;"Thiré (Vendée)";8613;France
-5;46.51660147;0;0.56394437;Teodericia;Tercé;"Tercé (Vienne)";8614;France
-5;46.84360694;0;0.27527075;"Dufciaco Curte Sci Martin";"Church of St. Martin at Doussay (Vienne)";"Église Saint-Martin de Doussay";9013;France
-5;46.06083228;0;0.92054859;Novovico;"Nouic (Haute-Vienne)";Noic;9014;France
-5;47.85161341;0;0.23642760;Beliniancus;Belin;Saint-Ouen-en-Belin;9015;France
-5;46.46728619;0;-0.80705543;Theodeberciaco;Thiverzay;"Thiverzay (Vendée)";9413;France
-5;48.74833207;0;4.62555116;VTVAINOCA;Vitry-le-Brûlé;"Vitry-en-Perthois (Marne)";9415;France
-5;46.51721963;0;0.33111003;"Sci Martini Loco Teiaco";"Saint-Martin de Ligugé";"Abbey of St. Martin of Ligugé";9416;France
-5;47.49999928;0;-2.49999347;Basniaco;"Besné (Loire-Atlantique)";Besné;9422;France
-5;48.41747523;0;-0.33529618;Gavaronno;Javron-les-Chapelles;"Javron (Mayenne)";9816;France
-5;42.69833171;0;23.31993240;Serdica;Sofia;NA;13413;Bulgaria
-4;34.799294;1;48.512209;"Mah (MA/MA/DY)";NA;Media;13414;Iran
-4;34.998625;1;49.338661;"Dinawar?/Dinar? (DYWAN/DYWAS/DYWAT)";"Dinawar?/Shahr-e Ray?";NA;13415;Iran
-3;40.01185995;1;44.58079045;"Armenia (ALM)";Armenia;NA;13416;Armenia
-4;43.94709720;0;12.63076205;Pentapolis;Ancona?;Rimini?;13417;Italy
-5;50.52610246;0;1.59132959;Vuicus;"Quentovic (Pas de Calais)";NA;13814;France
-5;48.06016506;0;-1.19386101;Eterales;Étrelles;NA;14213;France
-5;46.19063240;0;-0.12722839;Marcillaco;Marcillé;NA;14214;France
-5;48.56029299;0;3.29880237;"Pagus Pruvinensis";Provins;NA;14613;France
-5;49.44312695;0;1.09931333;Rotomago;"Saint-Ouen de Rouen Abbey (Seine-Maritime)";NA;15013;France
-5;46.09960261;0;3.19952056;Vatunaco;Gannat;Gatnat;15014;France
-5;49.58055059;0;3.00002271;"Noviomagus Veromanduorum";Noyon;Noviomum;15015;France
-5;49.01340354;0;3.92516168;Emuhliaco;"Moussy (Seine-et-Marne)";Monceiacum;15413;France
-5;47.67741503;0;5.14021395;Calanciaco;"Chalancey (Haute-Marne)";NA;15414;France
-5;48.61390335;0;2.48213496;Corbulium;Innise;Corbeil;15415;France
-5;50.25214520;0;1.88406359;Cresciaco;Crécy-en-Ponthieu;Cressy;15416;France
-5;47.47934264;0;8.21798585;Vindonissa;Windisch;NA;15813;Switzerland
-5;48.54788355;0;5.81037512;Alonum;Allamps;Alun;15814;France
-5;48.07619295;0;-0.01636730;Novovico;Neuvy-en-Champagne;NA;16213;France
-4;47.10233026;0;5.26482825;"Latona Vico";Saint-Jean-de-Losne;NA;16613;France
-5;48.94620245;0;4.81125988;"Niger locus";Noirlieu;Neroloto;17013;France
-5;46.61789922;0;2.81927269;Cerilia;Cerilly;"Cérilly (Allier)";17014;France
-3;48.85669250;1;2.35145704;Scola;"Palace School mint";Scolare;17413;France
-5;49.17418035;0;3.86342946;Calmaciago;Chaumuzy;NA;17414;France
-5;47.49020918;0;4.33286208;Sinemurum;Semur-en-Auxois;NA;17415;France
-5;46.06094448;0;0.77715052;Brilliaco;Brillac;Brilhac;17813;France
-5;46.74427698;0;6.53684269;Urba;Orbe;"Versus Orbam";18213;Switzerland
-5;47.81664426;0;6.38217975;Luxovium;"Luxeuil Abbey";"Lussovio monasterio";18214;France
-5;46.54421431;0;1.75026852;Closis;Cluis;NA;18215;France
-3;48.85669250;1;2.35145704;Palacio;Palace;Palais;18216;France
-5;48.38276395;0;5.93595062;Viskeriacum;Vicherey;Viskerium;18613;France
-5;39.98603410;0;-0.03772924;Castalia;"Castellón de la Plana";Castelona;19013;Spain
-5;45.98591265;0;2.63732791;Caranciaco;Charensat;NA;19014;France
-5;47.46588688;0;1.87433484;Marcilia;Marcilly-en-Gault;NA;19413;France
-4;45.50027243;0;4.24055120;"Armini Vici";"Armagnac, comm. Saint-Just-sur-Loire";NA;19414;France
-5;50.78333324;0;4.66665807;Netis;Nethen;NA;19813;Belgium
-5;49.30916515;0;2.85444173;Castriloci;Champlieu;NA;19814;France
-5;49.57138782;0;3.14416638;Cariciacum;Quierzy;Quierzy-sur-Oise;20213;France
-5;49.47015687;0;2.49606783;Locivelacoro;Lieuvillers;NA;20214;France
-5;47.18241599;0;0.96845574;"Cambortese Pago";Chambourg;Chambourg-sur-Indre;20613;France
-5;48.99096216;0;-0.07597951;Vindovera;Vendeuvre;Vendeuvre-sur-Barse;20614;France
-5;49.78024634;0;6.69290701;Palatiolum;Pfalzel;Palaceolo;21013;Germany
-5;47.59695179;0;6.84834250;"Botanisat Vico";Botans;"Botans (terr. de Belfort)";21014;France
-5;48.64253324;0;5.82495478;"Domnus Germanus";Domgermain;NA;21015;France
-5;49.17247720;0;3.95574034;Camariacum;Chamery;"Cameraco Vico";21016;France
-5;49.63005103;0;5.16646273;Epoissium;"Yvois, comm. Carignan";Ivosium;21413;France
-5;45.66482550;0;3.19071707;Crennom;"Coren (Cantal)";Corent;21814;France
-5;47.99927968;0;-0.71645135;"Inter Amnes";Entrammes;Interamnis;21815;France
-5;47.44366762;0;0.49913990;Paternaco;Pernay;"Parochia Paternacensis";21816;France
-5;44.63637706;0;4.25550815;"Castra Vetera?";Jaujac;Castrevieille;22213;France
-5;48.22340938;0;3.73325459;"Aquis Vico";Aix-en-Othe;Aquis;22214;France
-5;48.33587810;0;-1.12114239;Fluriniacum;Fleurigné;Floriniacum;22613;France
-5;47.35161722;0;-0.76310985;"Calonna Vicus";Chalonnes-sur-Loire;"Cellula Calonnensis";23013;France
-5;45.04597363;0;3.88554598;"Anicium Vellavorum";Puy-en-Velay;"Podium Vellavorum";23014;France
-5;48.58498982;0;5.03681787;Ortus;Eurville-Bienville;"Urtis villa";23413;France
-5;48.98020344;0;2.55894990;Tremollo;Tremblay-en-France;Tremblay-lès-Gonesse;23414;France
-5;46.66143079;0;-0.73237848;Tergiliaco;"La Tardière";NA;23813;France
-5;47.14118755;0;4.87514806;Modeliacus;Meuilley;Mailaco;24213;France
-5;45.77699345;0;-0.78681639;"Sugilione Vico";Soulignonne;NA;24613;France
-5;48.01679873;0;0.33178377;Campaniaco;Champagné;NA;25013;France
-5;47.60398433;0;0.97238138;Sollonaco;Saunay;NA;25014;France
-5;45.36635400;0;1.71440777;Sailusacumen;Seilhac;Salvieso;25015;France
-5;48.98809143;0;1.79247137;Issunis;Issou;Vulcassinus;25413;France
-3;42.61945347;1;-7.86310640;Arros;Arros;NA;25813;Spain
-5;44.07179916;0;2.09647923;Monasterio;Monestiés;NA;25814;France
-5;45.40704095;0;-0.13742427;Condatomagus;Condéon;Condeom;25815;France
-5;48.20913358;0;1.18882146;Ebrora;Yèvres;Evra;25816;France
-5;50.04913206;0;2.53470437;Varinnieo;Varennes-en-Argonne;Wöringen;25817;France
-5;46.22356913;0;0.95920309;"Detarnaco Vico?";Darnac;NA;25818;France
-5;44.51388793;0;3.33916368;"Gredonense castrum";Grèzes;Gredone;25819;France
-5;46.58868175;0;1.51909606;Argentomagus;Argenton-sur-Creuse;Argentone;26213;France
-5;43.95066726;0;4.80660661;Avennio;Avignon;NA;26214;France
-5;44.75360701;0;5.37027250;"Dea Vocontiorum";Die;"Dea Augusta Vocontiorum";26613;France
-5;47.84158759;1;0.58334798;Sabonarias;Saint-Georges-de-la-Couée;"Sancti Iorgi";27013;France
-5;45.41836045;0;0.92087198;Tiverius;Thiviers;"Teverio Vico";27014;France
-5;47.93041399;0;0.08533995;Eovoricum;Voivres-lès-le-Mans;Vodebris;27015;France
-5;47.83178296;0;0.64693074;Venisciaco;Vancé;NA;27016;France
-5;45.86115462;0;1.11504283;Graniaco;Greignac;NA;27413;France
-4;46.06861096;0;0.67461681;Parducio;"Pardoussie, comm. Lessac";Pardoussie;27813;France
-5;47.84673036;1;4.67732107;Masiciacus;"Maisey le Duc?";NA;27814;France
-5;45.46832831;0;0.78138158;"Milico Vico";Milhac-de-Nontron;"Emelius Vicus";27815;France
-5;43.96757687;0;3.43893057;Alsotea;Alzon;"Saint Martin d'Alzon";28213;France
-5;49.24916664;0;-0.79888077;Campaniaco;Campigny;Campinneio;28613;France
-5;47.94940047;0;1.87641893;Sarama;Saran;Saram;28614;France
-5;47.80074085;0;2.13517865;"Vienna Vico";Vienne-en-Val;Ludn(...);29013;France
-5;48.77126147;0;5.16237539;Caturiges;Bar-le-Duc;Barrum;29413;France
-4;47.69721976;1;0.72499433;"Pagus Wastinensis";Gastine;NA;29813;France
-5;46.17579883;0;2.48689603;"Evauno Vici";Évaux-les-Bains;Evaus;29814;France
-5;49.38305190;0;3.34361034;"Sanctus Medardus";"Saint-Médard de Soissons";NA;29815;France
-5;49.62109542;0;3.34439187;Silviaco;Servais;NA;29816;France
-3;10.90942591;1;78.36652807;"Unknown (Southern India)";"Tamil Nadu";NA;30613;India
-5;51.56321398;0;3.49671919;Domburg;Domburg;NA;31013;Netherlands
-4;52.49999604;1;0.99999559;"Unknown (East Anglia)";NA;NA;31014;"United Kingdom"
-5;30.94742377;0;61.82475280;"Zaranj (ZL)";Zaranj;Drangiana;31413;Afghanistan
-5;39.65499483;0;66.97569264;Maracanda;Samarkand;Samarqand;31414;Uzbekistan
-5;35.57997914;0;51.46335973;Rhagae;NA;al-Rayy;31415;Iran
-5;34.43384764;0;69.79308785;Panjhīr;NA;"Banjhīr / ﭙنجهير";31813;Afghanistan
-5;31.55351367;0;49.00771609;"Al- Sus";NA;NA;32214;Iran
-5;35.67765962;0;51.70758471;"Al- Qaṣrān";NA;"al-Sīrājān, Shīrayān";32215;Iran
-5;36.2105896;0;58.79227395;Abrashahr;NA;أبرشهر;32613;Iran
-5;12.38990850;0;43.11119200;Perusia;Perugia;NA;34213;Djibouti
-3;54.56435160;1;32.64753140;"AW/AR (?)";"Unknown (Sassanian)";NA;34613;Russia
-3;7.52312800;1;49.65118200;"Unknown (West Central Europe)";NA;NA;35413;Somalia
-3;21.68355400;1;34.68460500;"Unknown (Eastern Central Mediterranean)";NA;NA;35414;Sudan
-3;29.42309300;1;34.10441400;"Unknown (Eastern Mediterranean)";NA;NA;35415;Egypt
-3;16.31864600;1;42.33976800;"Unknown (around the Adriatic)";NA;NA;35416;Yemen
-3;28.30395000;1;40.69248300;"Unknown (Propontis)";NA;NA;35417;"Saudi Arabia"
-5;30.74327369;0;29.37396980;Fayyum;Fayyum;Limni;35814;Egypt
-5;36.67166700;0;35.63861100;al-Ma'arrah;"Maarat al-Numan";NA;35815;Turkey
-3;15.67787400;1;33.48357200;"Unknown (Africa)";NA;NA;36213;Sudan
-3;18.31101300;1;35.61879100;"Unknown (Central Mediterranean)";NA;NA;36613;Sudan
-5;26.15840100;0;39.75028100;"Alexandria Troas";Dalyan;NA;36614;"Saudi Arabia"
-3;18.883848;1;38.366156;?;"Comitatensian mint";NA;36615;Sudan
-3;52.52;1;13.405;"Unknown (Germany)";NA;NA;37814;Germany
-5;51.088;0;11.6286;"Bad Sulza";"Bad Sulza";NA;37815;Germany
-4;48.3;1;42.05;Arrān;Derbent;أران;38213;Russia
-4;51.6675;1;32.644722;al-Taymara;NA;"Shaqq al-Taymara // التيمره";38214;Ukraine
-4;49.37;1;35.87;Dastawā;NA;دستوا;38215;Ukraine
-4;54.112806;1;35.951056;Qumis;"Shahr-e Qumis";قومس;38216;Russia
-4;48.2;1;31.6;Manadhir;NA;مناذر;38217;Ukraine
-4;48.664722;1;30.649722;Surraq;NA;سرق;38218;Ukraine
-5;39.083333;0;63.566667;"Amul (AMW), Khorasan";Turkmenabat;NA;38613;Turkmenistan
-3;34.991502;1;51.318151;"Eran-asan-kar-Kawad?/Eran-win(n)ard-Kawad?/Eran-khwarrah-Yazdgerd? (AYL[later])";NA;NA;38615;Iran
-3;33.272427;1;47.986912;"Eran-asan-kar-Kawad?/Eran-Khwarrah-Shapur? (AYLAN)";Harsin?/Susa?;NA;38616;Iran
-3;33.713192;1;52.957918;"? (BŠHP/BŠHPW)";NA;NA;38617;Iran
-4;29.9808333;1;52.9094444444444;"?, Fars (BWB)";Fars;NA;38618;Iran
-5;28.5;0;53.560556;"Gahrum (GHL)";Jahrum;Jahrom;39013;Iran
-3;30.286078;1;57.06556;"Ganj/Ganzak? (GNCKL)";NA;NA;39014;Iran
-5;28.260125;0;53.980722;"Guwaim, Fars (GW[earlier]/GWDMY)";Juyom;Joyom;39015;Iran
-3;33.580407;1;53.478092;"? (H)";NA;NA;39016;Iran
-5;30.054698;0;54.373675;"Herat, Istakhr, Fars (HL[earlier])";Harat;Tajabad;39017;Iran
-5;31.883324;0;44.449851;"Al-Hira, Asuristan (HYL)";Kufa;NA;39018;Iraq
-3;33.2277;1;53.42874;"? (KWN BBA)";NA;NA;39019;Iran
-5;36.683333;0;67.683333;"Kholm (HLM)";Kholm;Khulm;39020;Afghanistan
-4;30.8723337;1;55.2716302;"Royan, Fars (LWD/LWDY)";Ar-Rudan?;Rudhan;39021;Iran
-3;33.305836;1;53.017907;"? (NAL/WAL)";NA;NA;39022;Iran
-5;28.292259;0;55.192565;"Purg (PW/PWLGY)";Forg;Furk;39023;Iran
-3;32.880226;1;54.090996;"? (ŠLK)";NA;NA;39024;Iran
-3;32.637706;1;54.356276;"? (WLC)";NA;NA;39026;Iran
-3;32.841763;1;53.735089;"? (S)";NA;NA;39027;Iran
-3;36.2748;0;114.4002;"Unknown (Northern Qi dynasty)";NA;NA;40213;China
-3;34.308333;1;108.858333;"Unknown (Tang Dynasty)";NA;NA;40613;China
-3;34.308333;1;108.858333;"Unknown (Sui Dynasty)";NA;NA;41013;China
-3;34.6197;1;112.4539;"Unknown (Chinese)";NA;NA;41014;China
-5;42.852778;0;89.529167;Gaochang;Khocho;Qocho;41413;China
-3;34.691111;0;135.795556;"Unknown (Japanese)";NA;NA;41414;Japan
-5;49.3367;0;5.1822;Briodurum;Brieulles-sur-Meuse;NA;41813;France
-4;47.3458;0;2.4878;Ivegio;Ivoy-le-Pre;NA;42213;France
-5;49.15;0;0.23;Lexsovias;"Lisieux, Calvados";NA;42613;France
-3;48;1;2;Orione;Orione;"'Unknown mint west of Paris""";42614;France
-3;33.511612;1;36.309102;Pseudo-Damascus;"Unknown (Greater Syria)";NA;43013;Syria
-3;33.511612;1;36.309102;"Al Wafa liLlah (الوفا للّه)";"Unknown (Greater Syria)";NA;43014;Syria
-3;33.713192;1;52.957918;"? (BNG)";NA;NA;43413;Iran
-3;33.713192;1;52.957918;"? (ŠM)";NA;NA;43414;Iran
-3;0;1;0;Saxobacio;NA;NA;43813;(Any)
-4;31.280274;0;47.492662;Abarqubadh;"Unknown (Maysan Governorate)";Abar-Kawad;44213;Iraq
-4;37.8845813;0;-4.7760138;Al-Andalus;Cordoba;NA;44613;Spain
-5;36.7581256;0;66.8980826;Al-Mubaraka;Balkh;NA;44614;Afghanistan
-3;33.0955793;1;44.1749775;Al-Samiya;"Unknown (Iraq)";NA;44615;Iraq
-4;35.677222;0;10.100833;Ifrīqīya;"Unknown (Tunis)";NA;45013;Tunisia
-4;36.4447222;1;47.9013888888889;Mahi;Nahavand/Dinavar;Mahay;45014;Iran
-5;33.3061701;0;44.3872213;"Madinat al-Salam";Baghdad;NA;45413;Iraq
-4;32.03444;1;44.4031125;Al-Hashimiya;Kufa;NA;45414;Iraq
-3;42.261111;1;44.121111;"Unknown (Caucasus)";NA;NA;45813;Georgia
-5;35.9875;0;37.042778;Kinnasrin;Qinnasrin;NA;45814;Syria
-5;45.361944;0;36.471111;Panticapaeum;Kerch;NA;46213;Russia
-3;42.261111;1;44.121111;ZWZWN;"Unknown (Caucasus)";NA;46613;Georgia
-4;30.4952371;1;47.8090981;Al-Furat;Basra;NA;47013;Iraq
-4;33.526354628096;0;68.4179079304021;"Unknown (Nezak)";NA;NA;47413;Afghanistan
-3;33.713192;1;52.957918;"? (LYN)";NA;NA;47414;Iran
-5;33.7474551;0;72.8073364;Taxila;Taxila;NA;47813;Pakistan
-4;34.4785637865307;1;70.5073377020833;"Unknown Kushano-Sassanian mint (S. of Hindu Kush)";Begram/Peshawar;NA;47814;Afghanistan
-4;33.756;1;72.8291;"Unlocalized Kidarite Mint";Gandhara;NA;47815;Pakistan
-4;32.1;0;67.1;"Unknown (Zabulistan)";NA;NA;48613;Afghanistan
-5;36.5425;0;61.158889;Sarahs;Sarakhs;NA;49013;Iran
-4;33.3542328411738;1;44.5652945736612;"Khusrau-Shâdh Hurmuz";Baghdad;NA;49014;Iraq
-4;42.189608;1;59.326172;"Unknown (Khwarazm)";NA;Chorasmia;49413;Turkmenistan
-4;33.34058;1;44.40088;Nahrbuq;Baghdad;NA;49813;Iraq
-3;36.758056;1;66.898056;"Unknown (Hephthalite)";NA;NA;50213;Afghanistan
-4;37.2442466;1;67.283151;"Unknown (Termiz)";Termez;NA;50613;Uzbekistan
-5;39.766667;0;64.423056;Bukhara;Bukhara;NA;51013;Uzbekistan
-5;38.1898889;0;67.9176111111111;Chaganiyan;Budrach;Jumatepa;51413;Uzbekistan
-3;40.4;1;69.4;"Unknown (Sogdian)";NA;NA;51813;Tajikistan
-3;21;1;78;"Unknown (India)";India;NA;52213;India
-4;34;1;69;"Unknown (Kabulistan)";Kabul;NA;52214;Afghanistan
-4;33.756;1;72.8291;"Unlocalized Alchon mint";Gandhara;NA;52613;Pakistan
-5;31.6647972122;0;34.5505214667;Ascalon;Ashkelon;Ashqelon;53013;Israel
-3;47.5;1;17.5;"Unknown (Pannonia)";NA;NA;53413;Hungary
-5;41.3123363;0;69.2787079;Chach;Tashkent;Binkat;53813;Uzbekistan
-5;39.770278;0;68.798889;Ustrushana;Bunjikat;Shahriston;53814;Tajikistan
-3;39.8986218150631;1;64.8986028687959;"Unknown (Central Asia)";NA;NA;53815;Uzbekistan
-5;39.49524;0;67.60931;Pendzhikent;Panjakent;Penjikent;53816;Tajikistan
-5;40.3764879;0;71.7913193;Ferghana;Ferghana;Fergana;53817;Uzbekistan
-5;41.3530181;0;69.5533153;Kabarna;Kavardan;NA;54213;Uzbekistan
-3;47.6406122005003;1;0.66315244322559;Climania;NA;NA;54613;France
-5;27.7103;0;85.3222;Koligram;Kathmandu;NA;55013;Nepal
-5;1.8499;0;43.6914;"Nalanda Mahavihara";Nalanda;NA;55014;Somalia
-4;30.1864;0;71.4886;Multan;Multan;NA;55015;Pakistan
-4;27.0514;0;79.9137;Kannauj;Kannauj;NA;55016;India
-5;21.8902;0;71.8763;Vallabhi;Vallabhipur;Vallabhipura;55017;India
-5;14.5333;0;75.0158;Banavasi;Banavasi;NA;55018;India
-5;25.7662;0;78.2391;Padmavati;Pawaya;Gwalior;55019;India
-5;34.5553;0;69.2075;Kabul;Kabul;NA;55020;Afghanistan
-5;24.093846;0;78.172695;Eran;Eran;NA;55021;India
-5;23.1765;0;75.7885;Ujjain;Ujjain;NA;55022;India
-4;22.3752;0;91.8349;Harikela;Chittagong;NA;55023;Bangladesh
-4;23.4498;0;91.1847;Samatata;Comilla;Cumilla;55024;Bangladesh
-5;14.4276;0;99.8795;Uthong;"U Thong";"Mueang Uthong";55025;Thailand
-5;18.81612;0;95.29176;"Sri Ksetra";"Hmaw Zar";Pyay;55026;Myanmar
-5;20.0053;0;95.3783;Beikthano;Taungdwingyi;NA;55027;Myanmar
-5;22.481667;0;95.8;Hanlin;Shwebo;Halin;55028;Myanmar
-4;20.5861111211;0;93.1905555656;Waithali;Mrauk-U;Vesali;55029;Myanmar
-3;24.7514;0;67.5213;Banbhore;Karachi;Bhambhore;55030;Pakistan
-3;25.881111;0;68.776944;Mansura;Shahdadpur;Brahmanabad;55031;Pakistan
-5;34.416667;0;72.25;"Kashmir Smast";Pirsai;"Kashmir Smats";55032;Pakistan
-5;21.712;0;72.993;Bharuch;Bharuch;"Barigaza (Latin)";55033;India
-3;25;0;72.25;Bhinmal;Bhinmal;Bhillamala;55034;India
-3;23.22;0;72.655;Gujarat;Gujarat;NA;55035;India
-3;26.6;0;73.8;Rajasthan;Rajasthan;NA;55036;India
-3;30.79;0;75.84;Punjab;Punjab;NA;55037;India
-3;22.9734;0;78.6569;"Madhya Pradesh";"Madhya Pradesh";NA;55038;India
-3;27.5706;0;80.0982;"Uttar Pradesh";"Uttar Pradesh";NA;55039;India
-3;25.9644;0;85.2722;Bihar;Bihar;NA;55040;India
-3;21.2787;0;81.8661;Chhattisgarh;Chhattisgarh;NA;55041;India
-3;18.97;0;72.82;Maharashtra;Maharashtra;NA;55042;India
-3;7.8731;0;80.7718;Taprobana;"Sri Lanka";Taprobane;55043;"Sri Lanka"
-3;7.8731;0;80.7718;Taprobana;"Sri Lanka";Taprobane;55044;"Sri Lanka"
-3;25.8943;0;68.5247;Sindh;Sindh;Sind;55045;Pakistan
-3;33.2778;0;75.3412;"Jammu and Kashmir";"Jammu and Kashmir";NA;55046;Pakistan
-3;20.9754;0;85.7513;Odisha;Odisha;Orissa;55047;India
-3;32.1024;0;77.5619;"Himachal Pradesh";"Himachal Pradesh";NA;55048;India
-3;28.4907;0;65.0958;Balochistan;Balochistan;NA;55049;Pakistan
-3;22.9868;0;87.855;"West Bengal";"West Bengal";NA;55050;India
-3;26.2006;0;92.9376;Assam;Assam;NA;55051;India
-3;15.3173;0;75.7139;Karnataka;Karnataka;NA;55052;India
-3;34.2268;0;77.5619;Ladakh;Ladakh;NA;55053;India
-3;15.9129;0;79.74;"Andhra Pradesh";"Andhra Pradesh";NA;55054;India
-3;23.5639;0;91.6761;Tripura;Tripura;NA;55055;India
-3;23.6913;0;85.2722;Jharkhand;Jharkhand;NA;55056;India
-3;34.9526;0;72.3311;"Khyber Pakhtunkhwa";"Khyber Pakhtunkhwa";"North-West Frontier Province";55057;Pakistan
-3;35.8026;0;74.9832;Gilgit-Baltistan;Gilgit-Baltistan;NA;55058;Pakistan
+location_long;location_modern_title;location_other_title;location_lat;location_title;location_uncertain;LegendID;ID;Country
+29.91873190;Alexandria;NA;31.20009005;"Alexandria ad Aegyptum";0;5;1;Egypt
+10.32172450;Carthage;Qartaj;36.85291990;Carthago;0;5;2;Tunisia
+12.49981866;Rome;NA;41.89363823;Roma;0;5;3;Italy
+33.89333844;Salamis-Constantia;NA;35.18549596;Salamis-Konstantia;0;5;4;Cyprus
+12.20352940;Ravenna;NA;44.41835980;Ravenna;0;5;5;Italy
+9.14999694;Pavia;NA;45.18332769;Ticinum;0;5;6;Italy
+9.18661949;Milan;NA;45.46327487;Mediolanum;0;5;7;Italy
+14.78262080;Benevento;NA;41.12976130;Benevento;0;5;9;Italy
+15.08303040;Catania;NA;37.50787720;Catania;0;5;10;Italy
+14.26812440;Naples;NA;40.85177460;Neapolis;0;5;11;Italy
+15.28658610;Syracuse;NA;37.07547390;Syracusae;0;5;12;Italy
+9.01289260;Sardinia;NA;40.12087520;Sardinia;0;5;13;Italy
+-0.09364960;London;NA;51.43092090;Londinium;0;5;14;"United Kingdom"
+1.07890890;Canterbury;NA;51.28023300;Durovernum;0;5;15;"United Kingdom"
+-1.08729790;York;NA;53.95996510;Eburacum;0;5;16;"United Kingdom"
+6.63714330;Trier;NA;49.74999200;"Colonia Augusta Treverorum";0;5;17;Germany
+2.29575251;Amiens;NA;49.89406536;Ambianum;0;5;18;France
+22.94441910;Thessaloniki;NA;40.64006290;Thessalonika;0;5;19;Greece
+10.49506090;Lucca;NA;43.83762110;Lucca;0;5;20;Italy
+10.40168880;Pisa;NA;43.72283860;Pisa;0;5;21;Italy
+10.90785870;Pistoia;NA;43.93034750;Pistoia;0;5;22;Italy
+29.91694217;Izmit;NA;40.76725807;Nikomedia;0;5;52;Turkey
+27.89000000;Kyzikos;Cyzicus;40.38000000;Kyzikos;0;5;53;Turkey
+19.616667;Srem;NA;44.983333;Sirmium;0;5;54;Serbia
+36.16531800;Antakya;Hatay;36.20066300;Antioch;0;5;66;Turkey
+16.37138283;Siscia;NA;45.48316266;Siscia;0;5;67;Croatia
+27.95296653;"Marmara Ereğlisi";NA;40.97101281;Heraclea;0;5;68;Turkey
+-0.88920320;Zaragoza;NA;41.64884331;Cesaragusta;0;5;69;Spain
+-1.72215100;Tarazona;Tirasona;41.90427900;Tirazona;0;5;70;Spain
+-1.96712517;Calahorra;NA;42.30704666;Calagorre;0;5;71;Spain
+-3.01943126;Herramélluri;NA;42.50333924;Lebea;0;5;72;Spain
+1.24449050;Tarragona;NA;41.11888284;Tarracona;0;5;73;Spain
+2.82058540;Gerona;NA;41.97894467;Gerunda;0;5;74;Spain
+2.17362252;Barcelona;NA;41.38526570;Barcinona;0;5;75;Spain
+3.20809453;Rosas;NA;42.26051656;Rodas;0;5;76;Spain
+0.52146725;Tortosa;NA;40.81259129;Dertosa;0;5;77;Spain
+-0.27843850;Sagunto;NA;39.67986330;Sagunto;0;5;78;Spain
+0.32959130;"Gist'in (doubts)";NA;42.59115713;Cestavi;0;5;79;Spain
+0.06640920;Boltaña;NA;42.44472409;Volotania;0;5;80;Spain
+0.28724408;"Puebla de Castro";NA;42.14394601;Labeclosa;0;5;81;Spain
+-4.02363523;Toledo;NA;39.86385823;Toleto;0;5;82;Spain
+-2.88920310;"Zorita de los Canes";NA;40.33190181;Recopoli;0;5;83;Spain
+-0.37628809;Valencia;NA;39.46990750;Valentia;0;5;84;Spain
+-3.47382076;"La Guardia";NA;39.78679490;Mentesa;0;5;85;Spain
+-3.14033047;Guadix;NA;37.30117206;Acci;0;5;86;Spain
+-3.63698028;Linares;NA;38.09690974;Castilona;0;5;87;Spain
+-3.46764561;Baeza;NA;37.99670611;Beatia;0;5;88;Spain
+-1.69683570;Lorca;NA;37.67359250;Iliocrici;0;5;89;Spain
+-0.94805488;Orihuela;NA;38.08552550;Aorariola;0;5;90;Spain
+-4.27404171;"Santa María de Mave";NA;42.72421360;Mave;0;5;91;Spain
+-4.74197917;Saldaña;NA;42.51799971;Saldania;0;5;92;Spain
+-4.28849698;"Monte Cildá (doubts)";NA;42.74477601;Oliovasio;1;5;93;Spain
+-5.98402741;Sevilla;NA;37.39050639;Ispali;0;5;94;Spain
+-6.04275127;Santiponce;NA;37.43519377;Italica;0;5;95;Spain
+-5.64187632;Carmona;NA;37.47126906;Karmona;0;5;96;Spain
+-4.77885459;"Roda de Andalucia (doubts)";NA;37.20140644;Roda;0;5;97;Spain
+-4.77938202;Cordoba;NA;37.88681566;Cordoba;0;5;98;Spain
+-3.97001355;Martos;NA;37.71822639;Tucci;0;5;100;Spain
+-3.59918434;Granada;NA;37.17825301;Eliberri;0;5;101;Spain
+-6.12567330;"Jerez de la Frontera";NA;36.68508477;Asidona;0;5;102;Spain
+-4.55993000;"Antequera (doubts)";NA;37.01988103;Barbi;1;5;103;Spain
+-4.42165868;Malaga;NA;36.72211316;Malaka;0;5;104;Spain
+-6.34914940;Merida;NA;38.91424160;Emerita;0;5;105;Spain
+-4.83045525;"Talavera de la Reina";NA;39.96288285;Elvora;0;5;106;Spain
+-9.13933661;"Lisboa (doubts)";NA;38.72225241;Olisipona;1;5;107;Portugal
+-7.81222466;Lamego;NA;41.09518019;Lameco;0;5;108;Portugal
+-8.43884824;Coimbra;NA;40.20698276;Eminio;0;5;109;Portugal
+-7.91253355;Viseu;NA;40.65653291;Veseo;0;5;110;Portugal
+-8.08025689;"Tondela (doubts)";NA;40.51706452;Totela;1;5;111;Portugal
+-7.79254168;"Almofala (doubts)";NA;40.95380608;Coleia;1;5;112;Portugal
+-7.42734406;"Aldeia Nova - Castelo de Calabre (doubts)";NA;40.70973649;Caliabria;1;5;113;Portugal
+-7.15258443;Idanha-a-Velha;NA;40.00275742;Egitania;0;5;114;Portugal
+-7.43938339;"Terlamonte (doubts, other locations Monsanto and Covilha Velha)";NA;40.29982495;Monecipio;1;5;115;Portugal
+-5.66374442;Salamanca;NA;40.97002703;Salmantica;0;5;116;Spain
+-8.42647707;Braga;NA;41.54546520;Bracara;0;5;117;Portugal
+-6.75673801;"Betanzos - Bragança";NA;41.80611311;Bergancia;0;5;118;Portugal
+-7.47314202;Chaves;NA;41.74177813;Flavas;0;5;119;Portugal
+-7.12686472;"Vilar de Ledra (around this area, doubts)";NA;41.51304694;Laetera;1;5;120;Portugal
+-6.27123110;"Miranda do Douro Area (oppidum plançoulo?)";NA;41.49954120;Palantucio;1;5;121;Portugal
+-7.67996443;"Vale de Nogueiras";NA;41.29144238;Panonias;0;5;122;Portugal
+-6.61041400;"Vila Morta de Santa Cruz da Vilariça (doubts, other location Guimaraes)";NA;41.37824240;Turico;1;5;123;Portugal
+-7.11995526;"Cidadelhe (doubts, around this area)";NA;40.92556025;Aliobrio;1;5;125;Portugal
+-8.33038674;"Casteloes de Cepeda";NA;41.20516741;Cepis;0;5;126;Portugal
+-8.70642665;"Lavra (Laurencio sure here, Laure could be a different mint)";NA;41.25339876;"Laurencio / Laure";1;5;127;Portugal
+-6.94060038;Tras-os-Montes;"area of Tras-os-Montes or Alto Douro but no concrete location has been accepted";41.58553248;Nandolas;1;4;128;Portugal
+-8.28017512;"concelho de Penafiel";NA;41.21912424;Palentiaca;1;5;129;Portugal
+-8.60925724;Alvarelhos;NA;41.31120436;Toriviana;0;5;130;Portugal
+-7.55675822;Lugo;NA;43.00973839;Luco;0;5;132;Spain
+-7.33001547;Incio;NA;42.68787414;Inceio;0;5;133;Spain
+-7.86387967;Orense;NA;42.33579014;Aurense;0;5;134;Spain
+-6.71751327;Calabor;NA;41.95589799;Calapa;0;5;135;Spain
+-6.80761389;"Casaio (doubts)";NA;42.34101280;Cassavio;1;5;136;Spain
+-7.12615221;Petin;NA;42.38296620;Georres;0;5;137;Spain
+-7.09792190;Pinza;NA;42.16184398;Pincia;0;5;138;Spain
+-6.63493927;"Puebla de Sanabria";NA;42.05437971;Senabria;0;5;139;Spain
+-6.41617241;Bembibre;NA;42.61734688;Susarres;0;5;140;Spain
+-6.05375717;Astorga;NA;42.45515713;Astorica;0;5;141;Spain
+-6.72581189;Cacabelos;NA;42.59864426;Bergio;0;5;142;Spain
+-6.76010596;"Ancient Frogelos its location must be around the area Las Medulas";NA;42.45957004;Fraucello;1;5;143;Spain
+-5.56753824;León;NA;42.59908319;Leione;0;5;144;Spain
+-6.54629429;"Cangas de Narcea";NA;43.16255691;Pesicos;0;5;145;Spain
+-6.60470327;"Piedrafita occidental";NA;43.01916935;Petra;0;5;146;Spain
+-5.74678896;Zamora;NA;41.50347309;Semure;0;5;147;Spain
+-5.67040705;"Around Benavente";NA;41.98540457;Ventosa;0;5;148;Spain
+-8.56400476;Cuntis;NA;42.63409707;Conteno;0;5;149;Spain
+-8.26320075;Merza;NA;42.77014604;Mertia;0;5;150;Spain
+-8.72159883;Catoira;NA;42.66678426;Catora;0;5;151;Spain
+-8.64661103;Tui;NA;42.04916415;Tude;0;5;152;Spain
+-8.19191393;"around La Burgueria";NA;41.95107033;Tornio;1;5;153;Portugal
+-8.45399688;"Adoes (lots of doubts)";NA;40.28142761;Adonis;1;5;154;Portugal
+-3.00915030;"Amaia (los of doubts)";NA;43.32316950;Amiasios;1;5;155;Spain
+-6.05324993;Astorga;"Probably same mint then Asturica (not in the map)";42.45492842;Asturie;1;4;156;Spain
+-8.64661070;Tui;"Probably very close to Tude, but still unknown (not in the map)";42.04915186;Decrinos;1;4;157;Spain
+-2.51268038;Alegría-Dulantzi;"Unknown location, maybe around Álava (not in the map)";42.84102862;Tulluco;1;4;158;Spain
+-9.33056729;"Río Sousa";"Unknown, probably in the Gallaecia (not in the map)";38.70576401;Vallesalsa;1;4;159;Portugal
+-2.82779590;"Iruña Oka";"Unknown, could be in the Gallaecia or Tarraconensis (not in the map)";42.81923553;"Valle.../ Vallegia";1;4;160;Spain
+0.61636300;Agen;NA;44.20314200;Agenno;0;5;161;France
+3.09749600;Aguessac;NA;44.15551400;Agaciaco;0;5;162;France
+2.48388300;Aire;NA;46.30007500;Atura;0;5;163;France
+10.10062000;Kairouan;NA;35.67752600;al-Qayrawan;0;5;164;Tunisia
+5.97329500;Alaise;NA;47.01433900;Alisia;0;5;165;France
+5.94395900;Albens;NA;45.78560600;Albenno;0;5;166;France
+2.14864100;Albi;NA;43.92508500;Albigia;0;5;167;France
+2.21729100;Alleyrat;NA;45.57252100;Elariaco;0;5;168;France
+-4.16385394;Amaya;NA;42.64222216;Amiasio;1;4;169;Spain
+7.31307600;Aoste;NA;45.73495500;Agusta;0;5;170;Italy
+13.36871908;Aquileia;Aquilea;45.76816490;Aquileia;0;5;171;Italy
+-1.08153600;"York (uncertain)";NA;53.95905600;"Archbishops of York";0;5;172;"United Kingdom"
+1.93778200;Argentat;NA;45.09230600;Argentate;0;5;173;France
+4.62777700;Arles;NA;43.67664700;Arelato;0;5;174;France
+3.14470000;Artonne;NA;46.00420000;Artona;0;5;175;France
+3.13238000;Autrac;NA;45.32994600;Actriaco;0;5;176;France
+4.29894800;Autun;NA;46.95103100;Augusteduno;0;5;177;France
+7.04094100;Avenches;NA;46.87957500;Aventeco;0;5;178;Switzerland
+3.20149400;Banassac;NA;44.43469300;Bannaciaco;0;5;179;France
+1.81318200;Bar-sur-Corrèze;Bar;45.34484400;Barro;0;5;180;France
+-0.21260100;Bazas;NA;44.43204600;Vasatis;0;5;181;France
+6.02432500;Besancon;NA;47.23795300;Vesoncione;0;5;182;France
+1.72182400;Beynat;NA;45.12471300;"Biaenate Pago";0;5;183;France
+3.33905800;Billom;NA;45.72205000;Billiomago;0;5;184;France
+-0.58003600;Bordeaux;NA;44.84122500;Burdegala;0;5;185;France
+6.03066200;Bourg-d'Oisans;NA;45.05471300;Auseno;0;5;186;France
+5.28281200;Bourgoin;Bourgoin-Jallieu;45.58722600;Bregusia;0;5;187;France
+3.38433000;Brioude;"Brioude (including Church of St. Julien)";45.29529000;Brivate;0;5;188;France
+1.43650000;Cahors;NA;44.44950000;Cadurca;0;5;189;France
+3.07543200;Canac;NA;44.40488900;Cannaco;0;5;190;France
+-6.80535900;Casaio;Casavio;42.34000400;Cassavio;1;5;191;Spain
+-0.52398600;Cenon;NA;44.85528800;Sanonno;0;5;192;France
+4.85296000;Chalon-Sur-Saone;NA;46.78890000;Cabilonno;0;5;193;France
+1.72043800;Chamberet;NA;45.58341900;Cambarisio;0;5;194;France
+5.44240500;Chantilin;"Chantilin, Saint-Jean-de-Soudain";45.56662000;Cantoliano;0;5;195;France
+3.00556600;Chatrat;NA;45.72872500;Catiriaco;0;5;196;France
+3.08766300;Chazerat;NA;45.03476000;Cassoriaco;0;5;197;France
+33.52247800;Sevastopol;Cherson;44.60611500;Chersonesus;0;5;198;Russia
+0.21366500;Cieutat;NA;43.12235300;Begorra;0;5;199;France
+3.08194300;Clermont-Ferrand;NA;45.77745500;Arvernus;0;5;200;France
+28.95518800;Istanbul;Kostantinopolis;41.02345500;Constantinople;0;5;201;Turkey
+1.69157500;Cornil;NA;45.21144700;Cornilio;0;5;202;France
+1.88833400;Die;"Die (Dia Vocontiorum)";46.60335400;"Dia Vocontiorum";0;5;204;France
+5.04147000;Dijon;NA;47.32158100;Divione;0;5;205;France
+2.38356900;Drugeac;NA;45.16893100;Trusciaco;0;5;206;France
+-4.43356200;Cabra;NA;37.47181500;Egaboro;0;5;207;Spain
+-9.03800600;"Around Lisbon (uncertain)";"Elissa (?)";38.91305700;Elissa;1;5;208;Portugal
+1.89681000;Espagnac;NA;45.22998100;Espaniaco;0;5;209;France
+-0.10102800;"Vila Real (exact location uncertain)";NA;39.93689800;Ewesis;1;5;210;Spain
+1.60523200;Foix;NA;42.96412700;"Castro Fusci";0;5;211;France
+6.14229600;Geneva;NA;46.19839200;Genava;0;5;212;Switzerland
+5.42166400;Gizia;NA;46.52755900;Gaciaco;0;5;213;France
+5.72452400;Grenoble;NA;45.18852900;Gracinoble;0;5;214;France
+32.16866300;Dereköy/Konya;"Zengibar Kalesi";37.17825700;Isauria;0;5;215;Turkey
+3.34261000;Javols;NA;44.69374400;Gavalorum;0;5;216;France
+1.32240000;Juillac;NA;45.31725900;Juliaco;0;5;217;France
+1.06247400;Jumillac-le-Grand;Jumilhac-le-Grand;45.49362900;Gemeliaco;0;5;218;France
+-1.08730016;NA;NA;53.95996084;"Kings of Northumbria";1;4;220;"United Kingdom"
+1.48280400;Lanzac;NA;44.87444500;Lanticiaco;0;5;221;France
+-0.69865900;"Lavra (?)";NA;49.28074500;Laure;0;5;222;France
+-8.41102300;"Around Porto (uncertain)";NA;41.34824600;Laurentio;1;5;223;Portugal
+6.63359700;Lausanne;NA;46.51996200;Lausonna;0;5;224;Switzerland
+0.57097600;"Le Pays de Cominges";Saint-Bertrand-de-Comminges;43.02686500;Cummonigo;0;5;225;France
+3.88293600;"Le Puy";NA;45.04276800;Anicio;0;5;226;France
+1.16138000;Lentignac;Montignac;45.06433200;Lintiniaco;0;5;227;France
+3.37952800;Lezoux;NA;45.82842200;Ledoso;0;5;228;France
+4.83231639;Lyons;NA;45.75759262;Lugdunum;0;5;229;France
+4.83250700;Mâcon;Macon;46.30345000;Matascone;0;5;230;France
+2.63126400;Marcillat;NA;46.16705200;Marciliaco;0;5;231;France
+5.36978000;Marseilles;NA;43.29648200;Masilia;0;5;232;France
+2.33661100;Mauriac;NA;45.21997900;Mauriaco;0;5;233;France
+6.50000000;Moutiers-Tarentaise;NA;45.50000000;Darantasia;0;5;234;France
+3.00307800;Narbonne;NA;43.18427700;Narbo;0;5;235;France
+2.27326900;"Neuvic d'Ussel";NA;45.38981200;"Novo Vico";0;5;236;France
+-4.10887974;NA;NA;40.67126786;"No mint";1;3;237;Spain
+-0.60529200;Oloron;NA;43.19441300;Helorone;0;5;238;France
+5.85569300;Osselle;NA;47.14266700;Oxsello;0;5;239;France
+0.72111500;Perigueux;NA;45.18402900;Petrocoris;0;5;240;France
+-8.61102300;Porto;Portocolae;41.14824600;Portocale;0;5;241;Portugal
+3.11493200;Riom;NA;45.89399500;Ricomago;0;5;242;France
+2.57330100;Rodez;NA;44.35100100;Rutenus;0;5;243;France
+3.10913900;Saint-Amant-Tallende;Saint-Armand-Tallende;45.66899700;Telemate;0;5;244;France
+3.17900600;Saint-Beauzire;NA;45.85163300;Cariaco;0;5;245;France
+0.57097600;Saint-Bertrand-de-Comminges;Saint-Bertrand-de-Cominges;43.02686500;Conbenas;0;5;246;France
+6.34534200;Saint-Jean-de-Maurienne;NA;45.27747700;Maurienna;0;5;247;France
+1.13614500;Saint-Lizier;NA;43.00128000;Conserannis;0;5;248;France
+7.00528800;Saint-Maurice;"Saint-Maurice (Swiss)";46.21483500;Acauno;0;5;249;Switzerland
+3.81311500;Saint-Paulien;NA;45.13585000;Vellaos;0;5;250;France
+16.49192100;Solin;NA;43.54415900;Salona;0;5;251;Croatia
+0.95012400;Sarrazac;NA;45.28542400;Sagraciaco;0;5;252;France
+33.94924900;Silifke;Seleucia;36.59227100;"Seleukeia Isauriae";0;5;253;Turkey
+14.15505038;NA;Siciliae;37.58779775;Sicily;1;3;254;Italy
+7.35888000;Sion;NA;46.23117500;Sidunis;0;5;255;Switzerland
+5.94437900;Sisteron;NA;44.19634700;Sisteron;0;5;256;France
+7.05397900;Suse;NA;45.13721200;Sicusio;0;5;257;Italy
+-5.82832400;Tangier;NA;35.76513400;Tanja;0;5;258;Morocco
+2.99921800;Tazanat;Charbonnières-les-Vieilles;45.99556100;Tasgunnago;0;5;259;France
+-1.31540100;Tlemcen;NA;34.89620000;Tilmisan;0;5;261;Algeria
+1.44424700;Toulouse;NA;43.60446200;Tholosa;0;5;263;France
+13.17779200;NA;NA;32.89667200;Tripoli;0;5;264;Libya
+-1.25244105;NA;NA;52.68887338;"Uncertain mint (England)";1;3;265;"United Kingdom"
+-4.63623033;NA;NA;40.27009002;Unknown;1;3;266;Spain
+-4.51263383;"Malaga or Cordoba";NA;37.33836474;"Unknown (Malaka or Cordoba?)";1;4;267;Spain
+-6.34079437;Mérida;NA;38.91914223;"Unknown (Emerita?)";0;4;268;Spain
+-4.01549986;Toledo;NA;39.83991251;"Unknown (Toleto?)";1;4;269;Spain
+7.21158700;Ussel;NA;45.23309200;Oxxello;0;5;270;Italy
+3.33770400;Usson;NA;45.52736600;Icciomo;0;5;271;France
+1.56372800;Uzerche;NA;45.42433200;Userca;0;5;272;France
+4.41967800;Uzes;NA;44.01214100;Ucece;0;5;273;France
+4.89208100;"Valence? (But maybe Gap=Vapincum)";Valence;44.93322800;Valentia;1;5;274;France
+-8.24837500;"Varzea do Douro (doubts)";NA;41.08668000;Vallearitia;1;5;275;Portugal
+-1.64441600;Iruña;Valle…;42.81855000;Vallegia;1;5;276;Spain
+2.93355000;Valuejols;Vallegoles;45.05400200;Valligoli;0;5;277;France
+3.09410500;Vendeix;NA;45.75421200;Vindicco;0;5;278;France
+5.14651800;Vendesca?;NA;43.99619700;Venasque;1;5;279;France
+3.35250000;Vendeuil;NA;49.71666700;Vendogilo;0;5;280;France
+3.18610000;Vensat;NA;46.04610000;Vindiciaco;0;5;281;France
+0.46540700;Vienne;NA;46.61211700;Vienna;0;5;282;France
+4.68984000;Viviers;NA;44.48302100;Vivarios;0;5;283;France
+3.39804800;Vouroux;NA;46.31451400;Vorocio;0;5;284;France
+1.37502000;Yssandon;NA;45.20804900;Isandone;0;5;285;France
+5.73333000;"Antre near Vilard d-Heria";NA;46.41670000;"Antro Vico";0;5;286;France
+5.56614000;Arinthod;NA;46.39350000;Argentao;0;5;287;France
+5.26423400;Losne;NA;47.09810000;"Latona Vico";0;5;288;France
+5.40307000;Cuisia;NA;46.53750000;Cocciaco;0;5;289;France
+5.45265000;Graye-et-Charnay;NA;46.46760000;Gredaca;0;5;290;France
+4.49155200;Alize-Sainte-Reine;Alise-Sainte-Reine;47.53640100;Alisia;0;5;291;France
+4.83804300;Beaune;NA;47.02390600;Beleno;0;5;292;France
+5.90464100;Clucy;NA;46.94619900;Cluciaco;0;5;293;France
+36.30958039;Damascus;NA;33.51306905;Dimashq;0;5;329;Syria
+36.20711855;Baalbek;"Ba'labaak / بعلبك";34.00862342;Heliopolis;0;5;330;Lebanon
+36.32185400;Amman;Philadelphia;31.65860200;Amman;0;5;331;Jordan
+36.11097000;Daraa;Adhri'at;32.62243400;Adraa;0;5;332;Syria
+36.48057300;Bostra;Bosra;32.51913800;Busra;0;5;333;Syria
+36.71666094;Homs;"Emesa / حمص";34.73332595;Hims;0;5;334;Syria
+35.88516900;Tartous;NA;34.89362000;Tartus;0;5;335;Syria
+35.52138059;Tabariya;"Ṭabarīyya / طبرية";32.78923701;Tiberias;0;5;336;Israel
+35.49730200;Beit-Shean;Scythopolis;32.49675200;Baysan;0;5;337;Israel
+35.90377400;Jarash;NA;32.23526000;Jerash;0;5;338;Jordan
+35.07563700;Acre;NA;32.92817500;Akka;0;5;339;Israel
+35.27584000;Saffuriya;NA;32.73944800;Sephoris;0;5;340;Israel
+35.21376900;Jerusalem;"Aelia Capitolina";31.79681300;"Iliya (Ayla)";0;5;341;Israel
+34.88477800;Lod;NA;31.94272600;Ludd;0;5;342;Israel
+34.73809200;Yavne;NA;31.87618000;Yubna;0;5;343;Israel
+34.86234700;Ramla;NA;31.92799900;al-Ramla;0;5;344;Israel
+34.57301600;Ashkelon;Asqalan;31.66448700;Askalon;0;5;345;Israel
+34.89536000;"Beit Guvrin";Eleutheropolis;31.61136700;"Bayt Jabrin";0;5;346;Israel
+35.25688800;Nablus;"Neapolis (Palestine)";32.22049900;Baniyas/Nabulus;0;5;347;Palestine
+34.46543100;Gaza;NA;31.50450400;Ghazza;0;5;348;Palestine
+34.90578600;Caesarea;NA;32.51149700;Qaysariya;0;5;349;Israel
+37.01666232;Qinnasrin;"Qinnasrīn / قنسرين";35.98333110;"Chalcs ad Belum";0;5;350;Syria
+37.16371653;Aleppo;"Halab / حلب";36.19923830;Bercea;0;4;351;Syria
+36.67364961;"Ma'arrat Misrin";"Maarrat Misrin / Nasrin / معرة مصرين";36.01030924;"Maʿarrat Miṣrīn";0;5;352;Syria
+37.95592900;Manbij;"Hierapolis Bambyce/Euphratensis";36.52692400;Manbij;0;5;353;Syria
+36.72574800;Sarmin;NA;35.90344200;Sarmin;0;5;354;Syria
+36.88333300;"Ash Shaykh Khurus";Cyrrhus;36.73333300;Qurus;0;5;355;Syria
+38.37052300;Suruç;NA;36.98941000;Tanukh/Saruj?;0;5;356;Turkey
+36.38482328;Harran;"Hellonopolis / Ḥarrān / حران";32.89060807;Carrhae;0;4;357;Syria
+38.79091600;Sanliurfa;Edessa;37.16038800;al-Ruha;0;5;358;Turkey
+41.34555400;Nusaybin;Nisibis;37.19099600;Nisibin;0;5;359;Turkey
+35.62777706;al-Rusafa;Sergiopolis;38.75638747;"al-Madina ma'din amir al-mu'minin";1;5;360;Turkey
+5.33141600;Langres;NA;47.86556400;Lingonas;0;5;361;France
+5.29803100;Andelot;NA;48.24238300;Andelao;0;5;362;France
+5.54858100;Meuvy;NA;48.08406400;"Mosa Vico";0;5;363;France
+3.97330300;Tonnerre;NA;47.85646600;Ternodero;0;5;364;France
+1.09396600;Rouen;NA;49.44045900;Rotomo;0;5;365;France
+0.81755700;Jumièges;NA;49.43178300;Gemedico;0;5;366;France
+2.11309800;Ménouville;NA;49.15213000;Menoiovilla;0;5;367;France
+1.72361100;Néaufles-Saint-Martin;NA;49.27786000;Nivialcha;0;5;368;France
+1.93637900;"Le Vexin";NA;49.30309900;Velcassino?;0;5;369;France
+-0.70228900;Bayeux;NA;49.27604900;Baiocas;0;5;370;France
+-0.50114400;Evrecy;NA;49.09992000;Apraricia(co);0;5;371;France
+15.33526000;Sémily;NA;50.60224900;Similiaco;0;5;372;Czechia
+-1.35794800;Avranches;NA;48.68620800;Abrinktas;0;5;373;France
+0.17345400;Sèes;NA;48.60337800;Saius;0;5;374;France
+-1.44549100;Coutances;NA;49.04779200;Custancia;0;5;375;France
+-1.09066400;Saint-Lô;NA;49.11570000;Briuuri;0;5;376;France
+-1.62513400;Cherbourg;NA;49.63695600;Coriallo;0;5;377;France
+0.68892700;Tours;NA;47.39004700;Turonus;0;5;378;France
+0.68892700;Tours;NA;47.39004700;"Saint Martin's Basilica";0;5;379;France
+0.40729600;Langeais;NA;47.32393400;Alingavias;0;5;380;France
+0.98369800;Amboise;NA;47.41103500;Ambacia;0;5;381;France
+0.61313200;Ballan-Miré;NA;47.34132100;Ballatetone;0;5;382;France
+0.17888700;Bourgueil;NA;47.28276900;Borgoialo;0;5;383;France
+0.38789600;Brèches;NA;47.56924800;"Bricca Vico";0;5;384;France
+-4.75420200;Biéré;NA;48.35568800;Briotreite;0;5;385;France
+0.91638300;"Braye, auj. Reignac";NA;47.23239200;Brixis;0;5;386;France
+0.24021000;Chinon;NA;47.16671800;Cainone;0;5;387;France
+1.96972900;Candes;NA;44.94706300;Condate;0;5;389;France
+0.95211000;Dierre;NA;47.34539000;Daria/Dariaco;0;5;390;France
+0.78617100;Esvres;NA;47.28458200;Evira;0;5;391;France
+1.09612200;Génillé;NA;47.18637800;Geniliaco;0;5;392;France
+0.86990900;Yzeures;NA;46.78527600;Hicciodero;0;5;393;France
+1.04085800;Limeray;NA;47.45922000;Limariaco;0;5;394;France
+-0.28802600;Mougon;NA;46.29447900;Medeconno;0;5;395;France
+0.89247300;Mouzay;NA;47.08948900;Musicaco;0;5;396;France
+6.09318600;Pouillé;NA;45.48235600;Pauliaco;0;5;398;France
+0.57669900;Séligny;NA;46.96392900;Silaniaco;0;5;400;France
+4.90511000;Sonnay;NA;45.35450000;Solonaco;0;5;401;France
+1.12458300;Veuves;NA;47.47157400;Vidua;0;5;402;France
+0.19953400;"Le Mans";NA;48.00777800;Cenomannis;0;5;403;France
+0.15788200;Allonnes;NA;47.96928300;Alaona;0;5;404;France
+0.12266800;Saint-Jean-d'Assé;NA;48.15063700;Arciacas;0;5;405;France
+0.08666600;Assé-le-Riboul;NA;48.19308000;Arciaco;0;5;406;France
+0.23368000;Ballon;NA;48.17524100;Balatonno;0;5;407;France
+-0.36345100;Bais;NA;48.25108600;Bedicco;0;5;408;France
+0.36219000;Beaufay;NA;48.14711400;Bellofaeto;0;5;409;France
+-0.23551700;Brulon;NA;47.96750500;Bruciron(no);0;5;410;France
+-0.22390100;Chevillé;NA;47.94842700;Cabiliaco;0;5;411;France
+0.16986400;"Sérillac (comm. De Doucelles)";NA;48.25628600;Cirialaco;0;5;412;France
+0.70384000;Cormes;NA;48.16991400;Corma;0;5;413;France
+-0.06021200;Crissé;NA;48.16851300;Crisciac(o);0;5;414;France
+-0.49639200;Jublains;NA;48.25709200;Diabolentis;0;5;415;France
+0.05916000;Lassay;NA;46.99820600;Lacciaco;0;5;416;France
+0.27454000;Mayet;NA;47.76043100;Matoliaco;0;5;417;France
+0.74344000;Saint-Calais;NA;47.92013700;Matovallo;0;5;418;France
+-0.09736300;Noyen-sur-Sarthe;NA;47.87099300;Noviomo;0;5;419;France
+3.29113000;Neuvy;NA;46.56060000;Novovico;0;5;420;France
+0.18261300;Souillé;NA;48.11909500;Sauliaco;0;5;421;France
+-0.13776800;Ciral;NA;48.49458400;Sirallo;0;5;422;France
+3.49759200;Solesmes;NA;50.18575300;Solemnis;0;5;423;France
+-0.47707600;Vaiges;NA;48.04110700;Wagias;0;5;424;France
+-1.68000900;Rennes;NA;48.11135900;Redonis;0;5;425;France
+-1.15555200;Beaucè;NA;48.33903200;Belciaco/Balaciaco;0;5;426;France
+-1.31028000;Vendel;NA;48.29921300;Vindello;0;5;428;France
+-0.55155900;Angers;NA;47.47398800;Andecavis;0;5;429;France
+-1.20337500;Senonnes;NA;47.79813400;Senonas;0;5;430;France
+-1.56023500;Nantes;NA;47.21851600;Namnetis;0;5;431;France
+-1.37572800;Béré;NA;47.71940600;Baiorate;0;5;432;France
+-1.64051800;"Saint-Philibert de Grandleiu";NA;47.03590000;Deas;0;5;433;France
+-1.96936100;Campbon;NA;47.41281600;Cambidonno;0;5;434;France
+-2.75990800;Vannes;NA;47.65867700;Venetus;0;5;435;France
+3.28260600;Sens;NA;48.19785600;Senonis;0;5;436;France
+2.01089900;Dourdan;NA;48.53096900;Dortenco;0;5;437;France
+2.65920000;Melun;NA;48.53538100;Mecledore;0;5;438;France
+2.16113800;Étampes;NA;48.43304200;Stampas;0;5;439;France
+1.48663900;Chartres;NA;48.44700400;Carnotas;0;5;440;France
+1.36361000;Alluyes;NA;48.22880600;Aloia;0;5;441;France
+1.33376400;Blois;NA;47.58768600;Bleso;0;5;442;France
+1.37104900;Dreux;NA;48.73591200;Dorocas;0;5;443;France
+1.09396600;Ruan;NA;49.44045900;Riomo;0;5;444;France
+1.06616800;Vendôme;NA;47.79551800;Vi(n)docino;0;5;445;France
+3.58452000;Auxerre;NA;47.79540000;Autiziodero;0;5;446;France
+2.74131300;Briare;NA;47.64107200;Briodro;0;5;447;France
+5.10186400;Donay;NA;45.18212000;Donnaciaco;0;5;448;France
+3.06091400;Alligny-près-Cosne;NA;47.45389100;Eliniaco;0;5;449;France
+3.87788800;Nitry;NA;47.67227100;Nenterac(o);0;5;450;France
+4.07462600;Troyes;NA;48.29716300;Tricas;0;5;451;France
+4.14229900;Arcis-sur-Aube;NA;48.53622100;Arciaca;0;5;452;France
+4.52837800;Brienne-la-Vieille;NA;48.37608300;Briona;0;5;453;France
+3.75896000;Queudes;NA;48.65685000;Cupidis;0;5;454;France
+3.83179000;"La Chapelle-Lasson";NA;48.62668000;Latascone;0;5;455;France
+1.90860700;Orléans;NA;47.90273400;Aurelianis;0;5;456;France
+2.25508300;Brinon-sur-Sauldre;NA;47.56628800;Briennone;0;5;457;France
+2.23174000;Pierrefitte;NA;46.14532000;Petraficta;0;5;459;France
+1.91159400;"Soulas (comm. De Sandillon)";NA;47.91430500;Solaso;0;5;461;France
+1.30249000;Thésée;NA;47.32582000;Thaisacas;0;5;462;France
+2.05793600;Vouzon;NA;47.64420700;Vosonno;0;5;464;France
+2.35213300;Paris;NA;48.85650600;Parisius;0;5;465;France
+1.98922900;"Châtre (auj. Arpajon)";NA;46.58156800;Castra;0;5;466;France
+2.35802300;Saint-Denis;NA;48.93577300;Catullaco;0;5;467;France
+2.42120000;Draveil;NA;48.67870000;Draverno;0;5;468;France
+2.48034200;Essonnes;NA;48.61376800;Exona;0;5;469;France
+2.34371000;Gentilly;NA;48.81270000;Gentiliaco;0;5;470;France
+2.55096300;Lieusaint;NA;48.63247600;Locosancto;0;5;471;France
+2.62335500;Mousay;NA;49.04710000;Munciaco;0;5;472;France
+2.24685700;Palaiseau;NA;48.71702800;Palaciolo;0;5;473;France
+2.45183700;"Port de Créteil (comm. De Saint-Maur-les-Fossés)";NA;48.78307300;"Porto Cristoialo";0;5;474;France
+-1.47567600;Tremblay;NA;48.42267100;Tremolito;0;5;475;France
+2.89648600;Meaux;NA;48.95891500;Meldus;0;5;476;France
+-1.41431800;Claye;NA;48.03697000;Claio;0;5;477;France
+2.76775000;Coulommieres;NA;48.88535600;Columbario;0;5;478;France
+2.93384200;Crécy-la-Chapelle;NA;48.85531300;Crideciaco;0;5;479;France
+3.15996400;Nevers;NA;46.99390300;Nevers;0;5;480;France
+3.18317400;Chantenay-Saint-Imbert;NA;46.73301700;Cantunaco;0;5;482;France
+3.59777000;Charrin;NA;46.78838000;Catonaco;0;5;483;France
+3.46161000;Decize;NA;46.82842600;Dicetia;0;5;484;France
+6.64449200;Trier;NA;49.75991200;Treveris;0;5;485;Germany
+7.39932500;Andernach;NA;50.43542000;Antunacco;0;5;486;Germany
+9.33616100;Boppart;NA;47.40586800;Bodovreca;0;5;487;Switzerland
+5.16825000;Carignan;NA;49.63198600;Epocio;0;5;488;France
+5.04897400;Mairy;NA;49.64944900;"Mallo Matiriaco";0;5;489;France
+3.79250000;Pierrepont;NA;49.65416700;Pontepetrio;0;5;491;France
+6.17635500;Metz;NA;49.11969600;Mettis;0;5;492;France
+6.12192100;Augny;NA;49.05936800;Avanaco;0;5;493;France
+6.53031500;Vic-sur-Seille;NA;48.78132300;Bodesio;0;5;494;France
+6.71759900;Dieuze;NA;48.81056200;Doso;0;5;495;France
+2.28575000;Marsal;NA;43.92990000;Marsallo;0;5;496;France
+6.56228200;Moyenvic;NA;48.77969100;Medianovico;0;5;497;France
+7.05333000;Sarrebourg;NA;48.73567500;Sareburgo;0;5;498;France
+5.89417600;Toul;NA;48.67626200;Tullo;0;5;499;France
+5.48662500;Grand;NA;48.38610400;Granno;0;5;500;France
+6.18381200;Nancy;NA;48.69280500;Nanciaco;0;5;501;France
+5.37714000;Naix-aux-Forges;NA;48.63726300;Nasio;0;5;502;France
+6.65582500;Void;NA;48.01799200;Novicento;0;5;503;France
+4.53501300;Sorcy;NA;49.53718500;Sauriciaco;0;5;504;France
+4.82805100;"Charpeigne (comm. De Dieulouard)";NA;47.01569400;Scarponna;0;5;505;France
+6.16539600;Vandœuvre-lès-Nancy;NA;48.65749900;Vindeoera;0;5;506;France
+5.62596800;Verdun-sur-Meuse;NA;49.21223600;Vereduno;0;5;507;France
+5.54806800;Moranville;NA;49.17313300;"Villa Maorin";0;5;508;France
+4.03192600;Reims;NA;49.25778900;Remus;0;5;509;France
+5.18018800;Brieulles-sur-Meuse;NA;49.33584400;"Bridur Corte";0;5;510;France
+0.61481600;Mouzon;NA;45.80589100;Mosomo;0;5;511;France
+4.04727300;Oiry;NA;49.02336300;Oriaco;0;5;512;France
+4.50339800;Viel-Saint-Remy;NA;49.62952500;"Vico Santi Remidi";0;5;513;France
+3.62476000;Laon;NA;49.56389200;"Lauduno Cloata";0;5;514;France
+3.32361100;Soissons;NA;49.38166700;Suessionis;0;5;515;France
+3.78788100;"Binson et Orquigny";NA;49.09275400;Bainissone;0;5;516;France
+4.79490100;Charly;NA;45.64937800;Chariliaco;0;5;517;France
+3.44706000;Vendières;NA;48.87150000;Vindaria;0;5;518;France
+4.36288500;Châlons-sur-Marne;NA;48.95662200;Catalaunis;0;5;519;France
+2.54928300;Perthes;NA;48.47862100;Perta;0;5;520;France
+3.28638900;Saint-Quentin;NA;49.84861100;Viromandis;0;5;521;France
+2.77713600;Arras;NA;50.29121000;Atravetes;0;5;523;France
+3.23566100;Cambrai;NA;50.17596000;Camaraco;0;5;524;France
+3.51704600;Famars;NA;50.31522300;Falmartis;0;5;525;France
+3.38782600;Tournai;NA;50.60566000;Turnaco;0;5;526;Belgium
+2.58465800;Senlis;NA;49.20654000;Silvanectis;0;5;527;France
+2.58503100;Plailly;NA;49.10353200;Plaitiliaco;0;5;528;France
+0.71251700;Bury;NA;52.24603700;Buriaco;0;5;529;"United Kingdom"
+2.24449900;Chambly;NA;49.16627700;Camiliaco;0;5;530;France
+2.29569500;Amiens;NA;49.89417100;Ambianis;0;5;531;France
+2.51107300;"Corbie (Church of St. Peter)";NA;49.90829100;"Sancti Petri";0;5;532;France
+1.67621590;"Le Vimeu";NA;50.06500395;Viminao;1;4;533;France
+1.63885100;Étaples;NA;50.51389700;"Wico in Pontio";0;5;534;France
+2.25771900;Thérouanne;NA;50.63633400;Taroanna;0;5;535;France
+-1.31980400;Boulogne;NA;46.79539100;Bononia;0;5;536;France
+8.27102400;Mainz;NA;49.99999500;Mogontiaco;0;5;537;Germany
+2.57654700;Strasbourg;NA;48.87217800;Argentorato/Strateburgo;0;5;538;France
+8.43361500;Spires;NA;49.31655500;Spira;0;5;539;Germany
+8.32120400;Worms;NA;49.66151300;Warmacia;0;5;540;Germany
+6.95997400;Cologne;NA;50.93836100;Colonia;0;5;541;Germany
+6.64726900;Zülpich;NA;50.69222800;Tulbiaco;0;5;542;Germany
+5.69698800;Maastricht;NA;50.85798500;Triecto;0;5;543;Netherlands
+4.39970800;Anvers;NA;51.22111000;Anderpus;0;5;544;Belgium
+5.23574500;Huy;NA;50.52153800;Choae;0;5;545;Belgium
+4.91255700;Dinant;NA;50.26121800;Deonante;0;5;546;Belgium
+4.86618900;Namur;NA;50.46652800;Namuco;0;5;547;Belgium
+5.32693000;Wijk-bij-Duurstede;NA;51.97750700;Dorestate;0;5;548;Netherlands
+5.16357375;"Frisia (Roughly provinces of Friesland, Drenthe, Groningen, Overijsel, Noord-Holland)";NA;52.95442920;Frisia;1;3;549;Netherlands
+7.58782600;Basel;NA;47.55810800;Basilia;0;5;550;Switzerland
+2.39893200;Bourges;NA;47.08056900;Betoregas;0;5;551;France
+2.62984000;Barlieu;NA;47.48805000;Bareloco;0;5;552;France
+2.48862800;"Beaumont (comm. De Menetou-Salon)";NA;47.23154000;Bellomonte;0;5;553;France
+1.36461900;Sacierges-Saint-Martin;NA;46.49445600;Capudcervi;0;5;554;France
+5.88366800;Clérmont;NA;50.65896800;Climone;0;5;555;Belgium
+1.70104300;Déols;NA;46.82677700;"Dolus Vico";0;5;556;France
+1.75340200;Dun-le-Poëlier;NA;47.20328600;Duno;0;5;557;France
+2.50417200;Melliant;NA;46.78036800;"Mediolano Castro";0;5;558;France
+1.31344100;Palluau;NA;46.94368700;Onaciaco;0;5;559;France
+1.38600700;Rivarennes;NA;46.63573000;Rivarinna;0;5;560;France
+2.17994300;Souesmes;NA;47.45765800;Sesemo;0;5;561;France
+2.06914200;Vierzon;NA;47.22174900;Virisione;0;5;562;France
+1.26448500;Limoges;NA;45.83542400;Lemovecas;0;5;563;France
+1.40046300;Ambazac;NA;45.95841400;Ambaciaco;0;5;564;France
+1.63769400;Naillat;NA;46.26486300;Analiaco;0;5;565;France
+1.01737300;Blond;NA;46.04516300;Blatomago;0;5;566;France
+5.74990800;Bersac;NA;44.41177400;Breciaco;0;5;567;France
+0.73824200;Chabrac;NA;45.93247100;Cabiriaco;0;5;568;France
+1.20257800;Champagnac;NA;45.23557600;Campaniaco;0;5;569;France
+2.56279000;Charron;NA;46.05973000;Caronno;0;5;570;France
+1.35329500;Château-Chervix;NA;45.60929600;Carovicus;0;5;571;France
+1.32405300;Coussac-Bonneval;NA;45.51141100;Cociaco;0;5;572;France
+1.27471000;Compreignac;NA;45.99192100;Conpriniaco;0;5;573;France
+1.53521800;Curzac;NA;45.63254000;Curisiaco;0;5;574;France
+5.65511200;Evaux;NA;49.13447300;Evauno;0;5;575;France
+1.51138200;"Saint-Étienne de Fursac";NA;46.14525400;Ferruciaco;0;5;576;France
+-0.69152800;Marsac;NA;45.06010500;Marciaco;0;5;577;France
+1.37131700;Montignac;NA;45.80719500;Montiniaco;0;5;578;France
+6.16081700;Château-Ponsac;NA;49.03380600;"Potincaco Castro";0;5;580;France
+1.20408000;Saint-Yrieix-la-Perche;NA;45.51990000;"Sancto Aredio";0;5;581;France
+1.19697700;Salagnac;NA;45.31141200;Selaniaco;0;5;582;France
+1.85594300;Sardent;NA;46.05138500;Serotenno;0;5;583;France
+2.03498000;Vallière;NA;45.90665800;Vallaria;0;5;585;France
+0.15686600;Angoulème;NA;45.64967600;Icolisima;0;5;586;France
+0.49171000;Orgedeuil;NA;45.69044900;Orgadoialo;0;5;587;France
+-0.62993300;Saintes;NA;45.74208000;Santonas;0;5;588;France
+-0.39416700;Aujac;NA;45.84500000;Albiaco;0;5;589;France
+-0.71189700;Annezay;NA;46.00903600;Anisiaco;0;5;590;France
+0.34019600;Poitiers;NA;46.58026000;Pectavis;0;5;591;France
+0.54208000;Ambernac;NA;45.97995200;Antebrinnaco;0;5;592;France
+-0.56123200;Ardin;NA;46.47416400;Areduno;0;5;593;France
+0.36521300;Benest;NA;46.18635700;Benaiasco;0;5;594;France
+0.34695800;Braye-sous-Faye;NA;46.99182200;Braia;0;5;595;France
+3.07069900;Brion;NA;44.75472800;Brionno;0;5;596;France
+-0.22176800;Brioux;NA;46.14169700;Briosso;0;5;597;France
+-1.02138900;Chaillé-les-Marais;NA;46.39750000;Callaco;0;5;598;France
+-0.85777800;Carville;NA;48.93055600;Carvill[…];0;5;599;France
+0.18819000;Celle-Lévescault;NA;46.42560800;Cella;0;5;600;France
+2.43378000;Courçais;NA;46.47070000;Curciaco;0;5;601;France
+0.54321600;Antran;NA;46.85258500;Interamnis;0;5;603;France
+0.47122300;Joussé;NA;46.22716000;Jusciaco;0;5;604;France
+-0.94861100;"Le Langon";NA;46.43861100;Landuconni;0;5;605;France
+0.33259100;Ligugé;NA;46.52016300;Locoteiaco;0;5;606;France
+-0.01945300;Marnes;NA;46.85639000;Madronas;0;5;607;France
+7.32049200;Melle;NA;44.56205400;Medolo;0;5;608;Italy
+-1.12846366;Méron;NA;47.38462378;Mironno;0;5;609;France
+0.30849800;Nueil;NA;47.16305000;Neioialo;0;5;610;France
+-0.46452100;Niort;NA;46.32394600;Noiordo;0;5;611;France
+-1.74971300;"Le Port Saint-Père";NA;47.13278500;"Porto Vediri";0;5;613;France
+0.27164000;Pouant;NA;47.00525400;Potento;0;5;614;France
+-1.56952900;Rezé;NA;47.19054600;"Raciate Vico";0;5;615;France
+0.65372100;Saint-Maixent;NA;48.08957900;"Sancti Maxentii";0;5;616;France
+-1.11397383;"Trizay (Vendée)";Trizay-sur-le-Lay;46.58976827;Teodericiaco;0;5;618;France
+1.03854000;"La Trimouille";NA;46.46715100;Tremeolo;0;5;620;France
+4.63788900;Tourteron;NA;49.53741100;Turturonno;0;5;621;France
+-0.34539700;Vrillé;NA;46.94538200;Viriliaco;0;5;622;France
+-0.51756500;Voultegon;NA;46.93155400;Vultaconno;0;5;623;France
+34.29932146;NA;NA;45.35889986;Crimea;1;3;624;Russia
+37.06787527;NA;NA;36.16338320;"Unknown (Syria)";1;3;625;Syria
+31.44286751;NA;NA;30.43801687;"Unknown (Egypt)";1;3;626;Egypt
+31.23768400;Cairo;NA;30.01796100;al-Fustat;0;5;627;Egypt
+36.89209294;NA;NA;34.91184002;"Byzantine military mint (mobile?)";1;3;628;Syria
+0.87340100;Ciran-la-Latte;NA;47.06050700;"Cisomo Vico";0;5;689;France
+7.09820700;Bonn;NA;50.73743000;Bonna;0;5;930;Germany
+5.83722600;Nijmegen;NA;51.81256300;Noviomagus;0;5;931;Netherlands
+1.65412200;Airon-Notre-Dame;NA;50.43683300;Airono;0;5;932;France
+-5.98445900;Seville;NA;37.38909200;Hispalis;0;5;933;Spain
+38.74729000;Aksum;NA;14.13403200;Aksum;0;5;934;Ethiopia
+48.51220900;Hamedan;"Ancient Ecbatana";34.79929400;"Hamadān (AH/AHM/KWN AH/KWN AHM)";0;5;1355;Iran
+52.350833;Amol;NA;36.469722;"Amul (AM), Tabaristan";0;5;1356;Iran
+52.5326816606;Firuzabad;Gor;28.8528648953;"Ardashir-Khwarrah (ART/ARTHŠTR/ ARTHŠTRGDH)";0;5;1357;Iran
+48.68438000;Ahwaz;"Sūq al-Ahwaz";31.31671200;"Ohrmazd-Ardashir (AW/AWH)";0;5;1358;Iran
+48.2537285;Susa;Bahram;32.1887935;"Eran-Khwarrah-Shāpūr (AY/AYL[early])";0;5;1359;Iran
+52.96509000;?;NA;28.81740500;"Biramkobadh (BRM)";0;3;1360;Iran
+51.5710073;Faliyan;"Veh Sabur";29.7779115;"Bishapur (BYŠ/BŠHP/BŠHPW)";0;5;1361;Iran
+54.544772;Dārāb;NA;28.755075;"Darabgird (DA/DAL/DALAPKR)";0;5;1362;Iran
+54.55467900;Jahrom;NA;28.75595100;"Jahrum (Near Darabgird) (DA+G/DA+GARWM)";0;5;1363;Iran
+53.64264600;Fasa;NA;28.93147600;"Fasa (Near Darabgird) (DA+P)";0;5;1364;Iran
+50.83672100;Bushehr;"Bandar Bushehr";28.91191900;"Rew-Ardashir (LYW/ LYWARTHŠT/KWN LYW/GNC LYW)";0;5;1365;Iran
+51.95434000;?;NA;30.30808500;"Dašt-Maysan (DŠ or DŠT)";0;3;1366;Iran
+51.67881000;Isfahan;"Jayy / جي";32.65107000;"Gay (GD)";0;5;1367;Iran
+55.1688888888889;Gorgan;Jorjan;37.2580556;"Gurgan-Shahristan (GW[later]/GWL)";0;5;1368;Iran
+48.516667;Khuzestan;NA;32.283333;"Khuzistān (HWC)";1;3;1369;Iran
+53.124722;Karzin;Kawad-Khwarrah;28.4325;"Karzi (KA/KAL/KALCYDY)";0;5;1370;Iran
+54.83276400;NA;NA;28.85590100;"Qubadh Xwarrah (KWAT)";0;3;1371;Iran
+49.603611;Ramhurmuz;Ramhormozd;31.28;"Ram-Ohrmazd (LAM)";0;5;1372;Iran
+51.447163;Tehran;NA;35.594267;"Ray (LD/LDY/LY)";0;5;1373;Iran
+52.63545;NA;NA;35.95281;?;0;3;1374;Iran
+48.367981;Nahavand;"Mah al-Basra";34.18761;"Nihawand (NY)";0;5;1375;Iran
+49.71313500;NA;NA;30.87551300;"Nahr-Tira (NHR)";0;3;1376;Iran
+52.90944400;Istakhr;Estakhr;29.98083300;"Stakhr (ST/STHL)";0;5;1377;Iran
+52.57565215;Shiraz;NA;29.59048485;"Shiraz (Š/ŠY/ŠYLAC)";0;5;1378;Iran
+52.53244600;Firuzabad;Firuzabad;28.85298400;"Tawwah (TART)";0;5;1379;Iran
+53.05880000;Sari;"Ancient province of Māzandarān";36.56560000;"Ṭabarestān (TPWRSTAN)";0;5;1380;Iran
+48.51768850;Gundeshapur;Gondishapour;32.28046550;"Weh-Andiyok-Shapur (WH/WHY)";0;5;1381;Iran
+53.36059600;NA;NA;28.41233900;"Bihqubadh (WYH)";0;3;1382;Iran
+50.30914100;Behbahan;Arrajan;30.66282600;"Weh-az-Amid-Kawad (WYHC)";0;5;1383;Iran
+54.35877000;Yazd;NA;31.89218700;"Yazd (YZ)";0;5;1384;Iran
+44.40310466;Kufa;الكوفة;32.03443801;"Al-Kūfa (AKWLA)";0;5;1385;Iraq
+44.5812226667;"Salman Pak";Asuristan;33.094703;"Ctesiphon (AS)";0;5;1387;Iraq
+46.201883;Ganzak;Azerbaijān;37.012264;"Adurbadagan (AT)";0;5;1388;Iran
+44.5812226667;"Salman Pak";Al-Madain;33.094703;"Mobile Court Mint - Ctesiphon (BBA)";0;5;1389;Iraq
+47.78348900;Al-Baṣra;NA;30.50810300;"Basra (BCRA/BJRA)";0;5;1390;Iraq
+47.56280400;Naysan;Kark-Meshan;30.80934250;"Maysān (MY)";0;5;1392;Iraq
+47.7010833;Maghlub;Vahman-Ardashir;30.7826951;"Forat-Meshan (PL)";0;5;1393;Iraq
+45.93362;"Kut (80km SE of Kut)";NA;32.33861;?;0;5;1394;Iraq
+44.22048;Al-Hindiya;NA;32.540791;"Weh-Kawad (WYH)";1;4;1395;Iraq
+44.582087;Al-Madain;"Antiocheia Chosroou";33.048229;"Weh-az-Andiôk-Khusro (WYHC)";1;4;1396;Iraq
+58.798373;Nishapur;Nev-Shapur;36.202448;"Abarshahr (AP/APL)";0;5;1397;Iran
+65.29174800;NA;NA;36.78435900;"Anbir (ANBYR)";0;3;1398;Afghanistan
+66.9012833898;Balkh;"Ancient Bactria";36.7678774387;"Balkh (BHL)";0;5;1399;Afghanistan
+47.5;Kermanshah;"Ancient Carmania";34.5;"? (near Bisotun) (BN)";1;4;1400;Iran
+64.3717;"Qal`eh-ye Bost";NA;31.4881;"Bist, Sakastan (BŠT/ BYST)";0;5;1401;Afghanistan
+58.3691478143;Bam;NA;29.1156331155;"Garm-Kirmān (GLM)";1;5;1402;Iran
+63.90747;NA;NA;36.85472;?;0;3;1403;Turkmenistan
+62.189883;Herat;NA;34.346802;"Herat, Khorasan (HL[later]/HLY/HLYDY/HLYDW)";0;5;1404;Afghanistan
+55.66864500;Sirjan;Shiragan;29.43654300;"Kirman (KL)";0;5;1405;Iran
+57.08005130;Kirmān;NA;30.28387270;"Kirmān (KRMAN)";0;5;1406;Iran
+62.177081;Merw;Bayramaly;37.669926;"Marw (ML/MLW/MLWY)";0;5;1407;Turkmenistan
+65.20385700;?;NA;37.36288200;"Marw al-Rudh (MRWRWT)";0;3;1408;Turkmenistan
+57.64526;NA;NA;29.96604;?;0;3;1409;Iran
+58.27906210;Narmashir;NA;28.87209090;"Narmāšir (NAR)";0;5;1410;Iran
+62.69897500;NA;NA;35.75691500;"Sarkhas (KH)";0;3;1411;Turkmenistan
+61.86;Zaranj;Sistan;30.96;"Sakastan (N/S/SK/SKSTN)";0;5;1412;Afghanistan
+48.28909081;Derbent;NA;42.06742007;al-Bab;0;5;2613;Russia
+9.10951885;Cagliari;NA;39.21488560;Caralis;0;5;2614;Italy
+6.61617292;NA;NA;36.33432480;"Constantine in Numidia";0;5;2615;Algeria
+12.28626712;NA;NA;41.73111174;Ostia;0;5;2616;Italy
+12.24304019;Treviso;NA;45.66688462;Treviso;0;5;2617;Italy
+45.68479395;NA;"Wasit / واسط";32.69447883;Wāsiṭ;0;5;2618;Iraq
+36.18758917;NA;NA;36.57741904;Alexandretta;0;5;2619;Turkey
+39.01669842;Raqqa;al-Raqqah;35.94999543;Rakkah;0;5;3013;Syria
+3.20800066;NA;NA;45.50442157;"Unknown (Southern Gaul)";1;3;3413;France
+26.83410586;NA;NA;34.28554878;"Unknown (East Roman)";1;3;3414;Turkey
+4.80651678;"Arles or Lyons";NA;44.65863693;"Arelato or Lugdunum";1;4;3415;France
+2.29393791;NA;NA;46.34540845;"Unknown (Gaul)";1;3;3813;France
+18.67812173;NA;NA;36.18338287;"Unknown (Roman)";1;3;4213;Italy
+10.70399255;NA;NA;38.25543274;"Unknown (West Roman)";1;3;4214;Italy
+12.02218040;NA;NA;43.22518924;"Unknown (Italy)";1;3;4613;Italy
+38.78406171;NA;NA;35.64004873;"Unknown (Asia Minor)";1;3;4614;Syria
+42.25697554;NA;NA;21.85564091;"Unknown (Balkans)";1;3;4615;"Saudi Arabia"
+7.98343573;NA;NA;44.92980194;"Gallic mint or Roma";1;3;4616;Italy
+31.93551259;NA;NA;34.96195366;"Unknown (Palestine)";1;3;5013;Palestine
+48.77921799;NA;NA;33.97199334;"Unknown (Sasanian Empire)";1;3;5014;Iran
+31.34023499;NA;NA;35.81812919;"Unknown (Palestine/Jordan)";1;3;5015;Palestina
+35.98942981;NA;NA;39.44145544;"Unknown (al-Jazira)";1;3;5016;Turkey
+34.84343103;NA;NA;37.68596718;"Unknown (Greater Syria)";1;3;5017;Turkey
+36.48565917;NA;NA;37.68596718;"Unknown (North Syria)";1;3;5018;Turkey
+36.3095814;NA;NA;33.5130695;"Unknown (Umayyad)";1;3;5019;Syria
+43.09971206;Mosul;الموصل;36.34368838;al-Mawsil;0;5;5413;Iraq
+35.90343408;NA;NA;36.72574637;Sarmin;1;4;5414;Turkey
+36.67027194;"Ain al-'Arus (spring)";NA;38.93999491;Balih;1;4;5415;Turkey
+40.00468353;NA;NA;44.57916396;Irminiya;1;3;5416;Russia
+31.61608964;"Khirbat a-Sheraf";Sarafa;34.52171801;Diocletianopolis;0;5;5813;Bulgaria
+36.17999841;Jibrin;Jabrin;37.25999526;"Jibrin (Uncertain)";1;3;6213;Turkey
+-3.70379883;NA;NA;40.41659708;"Unknown (Iberia)";1;3;6613;Spain
+3.90916268;Avallon;NA;47.49082832;Aballo;0;5;7013;France
+0.17193755;Sées;Sagiens;48.60527321;Sagensis;0;5;7014;France
+10.04194317;Luni;Ortonovo;44.08471889;Luna;0;5;7413;Italy
+-1.67724447;Armorique;Aremorica;48.12958319;Armorica;0;4;7813;France
+-0.21888350;Soulangy;"Soulangy (Sarry)";48.94332914;Solimnli;1;5;7814;France
+3.72461280;Arlanc;"Arlanc (Puy-de-Dôme";45.41380770;Arelenco;0;5;7815;France
+2.37388797;Sully-sur-Loire;"Sully-sur-Loire (Loiret)";47.76540532;"Solliaco Vici";0;5;8213;France
+1.10423610;Breuilaufa;"Breuilaufa (Haute-Vienne)";46.04272140;Bercillo;0;5;8214;France
+0.71879596;Chabanais;Chabanès;45.87355236;Cabanisio;0;5;8215;France
+-1.00610414;Thiré;"Thiré (Vendée)";46.54999714;Tidiricia;0;5;8613;France
+0.56394437;Tercé;"Tercé (Vienne)";46.51660147;Teodericia;0;5;8614;France
+0.27527075;"Church of St. Martin at Doussay (Vienne)";"Église Saint-Martin de Doussay";46.84360694;"Dufciaco Curte Sci Martin";0;5;9013;France
+0.92054859;"Nouic (Haute-Vienne)";Noic;46.06083228;Novovico;0;5;9014;France
+0.23642760;Belin;Saint-Ouen-en-Belin;47.85161341;Beliniancus;0;5;9015;France
+-0.80705543;Thiverzay;"Thiverzay (Vendée)";46.46728619;Theodeberciaco;0;5;9413;France
+4.62555116;Vitry-le-Brûlé;"Vitry-en-Perthois (Marne)";48.74833207;VTVAINOCA;0;5;9415;France
+0.33111003;"Saint-Martin de Ligugé";"Abbey of St. Martin of Ligugé";46.51721963;"Sci Martini Loco Teiaco";0;5;9416;France
+-2.49999347;"Besné (Loire-Atlantique)";Besné;47.49999928;Basniaco;0;5;9422;France
+-0.33529618;Javron-les-Chapelles;"Javron (Mayenne)";48.41747523;Gavaronno;0;5;9816;France
+23.31993240;Sofia;NA;42.69833171;Serdica;0;5;13413;Bulgaria
+48.512209;NA;Media;34.799294;"Mah (MA/MA/DY)";1;4;13414;Iran
+49.338661;"Dinawar?/Shahr-e Ray?";NA;34.998625;"Dinawar?/Dinar? (DYWAN/DYWAS/DYWAT)";1;4;13415;Iran
+44.58079045;Armenia;NA;40.01185995;"Armenia (ALM)";1;3;13416;Armenia
+12.63076205;Ancona?;Rimini?;43.94709720;Pentapolis;0;4;13417;Italy
+1.59132959;"Quentovic (Pas de Calais)";NA;50.52610246;Vuicus;0;5;13814;France
+-1.19386101;Étrelles;NA;48.06016506;Eterales;0;5;14213;France
+-0.12722839;Marcillé;NA;46.19063240;Marcillaco;0;5;14214;France
+3.29880237;Provins;NA;48.56029299;"Pagus Pruvinensis";0;5;14613;France
+1.09931333;"Saint-Ouen de Rouen Abbey (Seine-Maritime)";NA;49.44312695;Rotomago;0;5;15013;France
+3.19952056;Gannat;Gatnat;46.09960261;Vatunaco;0;5;15014;France
+3.00002271;Noyon;Noviomum;49.58055059;"Noviomagus Veromanduorum";0;5;15015;France
+3.92516168;"Moussy (Seine-et-Marne)";Monceiacum;49.01340354;Emuhliaco;0;5;15413;France
+5.14021395;"Chalancey (Haute-Marne)";NA;47.67741503;Calanciaco;0;5;15414;France
+2.48213496;Innise;Corbeil;48.61390335;Corbulium;0;5;15415;France
+1.88406359;Crécy-en-Ponthieu;Cressy;50.25214520;Cresciaco;0;5;15416;France
+8.21798585;Windisch;NA;47.47934264;Vindonissa;0;5;15813;Switzerland
+5.81037512;Allamps;Alun;48.54788355;Alonum;0;5;15814;France
+-0.01636730;Neuvy-en-Champagne;NA;48.07619295;Novovico;0;5;16213;France
+5.26482825;Saint-Jean-de-Losne;NA;47.10233026;"Latona Vico";0;4;16613;France
+4.81125988;Noirlieu;Neroloto;48.94620245;"Niger locus";0;5;17013;France
+2.81927269;Cerilly;"Cérilly (Allier)";46.61789922;Cerilia;0;5;17014;France
+2.35145704;"Palace School mint";Scolare;48.85669250;Scola;1;3;17413;France
+3.86342946;Chaumuzy;NA;49.17418035;Calmaciago;0;5;17414;France
+4.33286208;Semur-en-Auxois;NA;47.49020918;Sinemurum;0;5;17415;France
+0.77715052;Brillac;Brilhac;46.06094448;Brilliaco;0;5;17813;France
+6.53684269;Orbe;"Versus Orbam";46.74427698;Urba;0;5;18213;Switzerland
+6.38217975;"Luxeuil Abbey";"Lussovio monasterio";47.81664426;Luxovium;0;5;18214;France
+1.75026852;Cluis;NA;46.54421431;Closis;0;5;18215;France
+2.35145704;Palace;Palais;48.85669250;Palacio;1;3;18216;France
+5.93595062;Vicherey;Viskerium;48.38276395;Viskeriacum;0;5;18613;France
+-0.03772924;"Castellón de la Plana";Castelona;39.98603410;Castalia;0;5;19013;Spain
+2.63732791;Charensat;NA;45.98591265;Caranciaco;0;5;19014;France
+1.87433484;Marcilly-en-Gault;NA;47.46588688;Marcilia;0;5;19413;France
+4.24055120;"Armagnac, comm. Saint-Just-sur-Loire";NA;45.50027243;"Armini Vici";0;4;19414;France
+4.66665807;Nethen;NA;50.78333324;Netis;0;5;19813;Belgium
+2.85444173;Champlieu;NA;49.30916515;Castriloci;0;5;19814;France
+3.14416638;Quierzy;Quierzy-sur-Oise;49.57138782;Cariciacum;0;5;20213;France
+2.49606783;Lieuvillers;NA;49.47015687;Locivelacoro;0;5;20214;France
+0.96845574;Chambourg;Chambourg-sur-Indre;47.18241599;"Cambortese Pago";0;5;20613;France
+-0.07597951;Vendeuvre;Vendeuvre-sur-Barse;48.99096216;Vindovera;0;5;20614;France
+6.69290701;Pfalzel;Palaceolo;49.78024634;Palatiolum;0;5;21013;Germany
+6.84834250;Botans;"Botans (terr. de Belfort)";47.59695179;"Botanisat Vico";0;5;21014;France
+5.82495478;Domgermain;NA;48.64253324;"Domnus Germanus";0;5;21015;France
+3.95574034;Chamery;"Cameraco Vico";49.17247720;Camariacum;0;5;21016;France
+5.16646273;"Yvois, comm. Carignan";Ivosium;49.63005103;Epoissium;0;5;21413;France
+3.19071707;"Coren (Cantal)";Corent;45.66482550;Crennom;0;5;21814;France
+-0.71645135;Entrammes;Interamnis;47.99927968;"Inter Amnes";0;5;21815;France
+0.49913990;Pernay;"Parochia Paternacensis";47.44366762;Paternaco;0;5;21816;France
+4.25550815;Jaujac;Castrevieille;44.63637706;"Castra Vetera?";0;5;22213;France
+3.73325459;Aix-en-Othe;Aquis;48.22340938;"Aquis Vico";0;5;22214;France
+-1.12114239;Fleurigné;Floriniacum;48.33587810;Fluriniacum;0;5;22613;France
+-0.76310985;Chalonnes-sur-Loire;"Cellula Calonnensis";47.35161722;"Calonna Vicus";0;5;23013;France
+3.88554598;Puy-en-Velay;"Podium Vellavorum";45.04597363;"Anicium Vellavorum";0;5;23014;France
+5.03681787;Eurville-Bienville;"Urtis villa";48.58498982;Ortus;0;5;23413;France
+2.55894990;Tremblay-en-France;Tremblay-lès-Gonesse;48.98020344;Tremollo;0;5;23414;France
+-0.73237848;"La Tardière";NA;46.66143079;Tergiliaco;0;5;23813;France
+4.87514806;Meuilley;Mailaco;47.14118755;Modeliacus;0;5;24213;France
+-0.78681639;Soulignonne;NA;45.77699345;"Sugilione Vico";0;5;24613;France
+0.33178377;Champagné;NA;48.01679873;Campaniaco;0;5;25013;France
+0.97238138;Saunay;NA;47.60398433;Sollonaco;0;5;25014;France
+1.71440777;Seilhac;Salvieso;45.36635400;Sailusacumen;0;5;25015;France
+1.79247137;Issou;Vulcassinus;48.98809143;Issunis;0;5;25413;France
+-7.86310640;Arros;NA;42.61945347;Arros;1;3;25813;Spain
+2.09647923;Monestiés;NA;44.07179916;Monasterio;0;5;25814;France
+-0.13742427;Condéon;Condeom;45.40704095;Condatomagus;0;5;25815;France
+1.18882146;Yèvres;Evra;48.20913358;Ebrora;0;5;25816;France
+2.53470437;Varennes-en-Argonne;Wöringen;50.04913206;Varinnieo;0;5;25817;France
+0.95920309;Darnac;NA;46.22356913;"Detarnaco Vico?";0;5;25818;France
+3.33916368;Grèzes;Gredone;44.51388793;"Gredonense castrum";0;5;25819;France
+1.51909606;Argenton-sur-Creuse;Argentone;46.58868175;Argentomagus;0;5;26213;France
+4.80660661;Avignon;NA;43.95066726;Avennio;0;5;26214;France
+5.37027250;Die;"Dea Augusta Vocontiorum";44.75360701;"Dea Vocontiorum";0;5;26613;France
+0.58334798;Saint-Georges-de-la-Couée;"Sancti Iorgi";47.84158759;Sabonarias;1;5;27013;France
+0.92087198;Thiviers;"Teverio Vico";45.41836045;Tiverius;0;5;27014;France
+0.08533995;Voivres-lès-le-Mans;Vodebris;47.93041399;Eovoricum;0;5;27015;France
+0.64693074;Vancé;NA;47.83178296;Venisciaco;0;5;27016;France
+1.11504283;Greignac;NA;45.86115462;Graniaco;0;5;27413;France
+0.67461681;"Pardoussie, comm. Lessac";Pardoussie;46.06861096;Parducio;0;4;27813;France
+4.67732107;"Maisey le Duc?";NA;47.84673036;Masiciacus;1;5;27814;France
+0.78138158;Milhac-de-Nontron;"Emelius Vicus";45.46832831;"Milico Vico";0;5;27815;France
+3.43893057;Alzon;"Saint Martin d'Alzon";43.96757687;Alsotea;0;5;28213;France
+-0.79888077;Campigny;Campinneio;49.24916664;Campaniaco;0;5;28613;France
+1.87641893;Saran;Saram;47.94940047;Sarama;0;5;28614;France
+2.13517865;Vienne-en-Val;Ludn(...);47.80074085;"Vienna Vico";0;5;29013;France
+5.16237539;Bar-le-Duc;Barrum;48.77126147;Caturiges;0;5;29413;France
+0.72499433;Gastine;NA;47.69721976;"Pagus Wastinensis";1;4;29813;France
+2.48689603;Évaux-les-Bains;Evaus;46.17579883;"Evauno Vici";0;5;29814;France
+3.34361034;"Saint-Médard de Soissons";NA;49.38305190;"Sanctus Medardus";0;5;29815;France
+3.34439187;Servais;NA;49.62109542;Silviaco;0;5;29816;France
+78.36652807;"Tamil Nadu";NA;10.90942591;"Unknown (Southern India)";1;3;30613;India
+3.49671919;Domburg;NA;51.56321398;Domburg;0;5;31013;Netherlands
+0.99999559;NA;NA;52.49999604;"Unknown (East Anglia)";1;4;31014;"United Kingdom"
+61.82475280;Zaranj;Drangiana;30.94742377;"Zaranj (ZL)";0;5;31413;Afghanistan
+66.97569264;Samarkand;Samarqand;39.65499483;Maracanda;0;5;31414;Uzbekistan
+51.46335973;NA;al-Rayy;35.57997914;Rhagae;0;5;31415;Iran
+69.79308785;NA;"Banjhīr / ﭙنجهير";34.43384764;Panjhīr;0;5;31813;Afghanistan
+49.00771609;NA;NA;31.55351367;"Al- Sus";0;5;32214;Iran
+51.70758471;NA;"al-Sīrājān, Shīrayān";35.67765962;"Al- Qaṣrān";0;5;32215;Iran
+58.79227395;NA;أبرشهر;36.2105896;Abrashahr;0;5;32613;Iran
+43.11119200;Perugia;NA;12.38990850;Perusia;0;5;34213;Djibouti
+32.64753140;"Unknown (Sassanian)";NA;54.56435160;"AW/AR (?)";1;3;34613;Russia
+49.65118200;NA;NA;7.52312800;"Unknown (West Central Europe)";1;3;35413;Somalia
+34.68460500;NA;NA;21.68355400;"Unknown (Eastern Central Mediterranean)";1;3;35414;Sudan
+34.10441400;NA;NA;29.42309300;"Unknown (Eastern Mediterranean)";1;3;35415;Egypt
+42.33976800;NA;NA;16.31864600;"Unknown (around the Adriatic)";1;3;35416;Yemen
+40.69248300;NA;NA;28.30395000;"Unknown (Propontis)";1;3;35417;"Saudi Arabia"
+29.37396980;Fayyum;Limni;30.74327369;Fayyum;0;5;35814;Egypt
+35.63861100;"Maarat al-Numan";NA;36.67166700;al-Ma'arrah;0;5;35815;Turkey
+33.48357200;NA;NA;15.67787400;"Unknown (Africa)";1;3;36213;Sudan
+35.61879100;NA;NA;18.31101300;"Unknown (Central Mediterranean)";1;3;36613;Sudan
+39.75028100;Dalyan;NA;26.15840100;"Alexandria Troas";0;5;36614;"Saudi Arabia"
+38.366156;"Comitatensian mint";NA;18.883848;?;1;3;36615;Sudan
+13.405;NA;NA;52.52;"Unknown (Germany)";1;3;37814;Germany
+11.6286;"Bad Sulza";NA;51.088;"Bad Sulza";0;5;37815;Germany
+42.05;Derbent;أران;48.3;Arrān;1;4;38213;Russia
+32.644722;NA;"Shaqq al-Taymara // التيمره";51.6675;al-Taymara;1;4;38214;Ukraine
+35.87;NA;دستوا;49.37;Dastawā;1;4;38215;Ukraine
+35.951056;"Shahr-e Qumis";قومس;54.112806;Qumis;1;4;38216;Russia
+31.6;NA;مناذر;48.2;Manadhir;1;4;38217;Ukraine
+30.649722;NA;سرق;48.664722;Surraq;1;4;38218;Ukraine
+63.566667;Turkmenabat;NA;39.083333;"Amul (AMW), Khorasan";0;5;38613;Turkmenistan
+51.318151;NA;NA;34.991502;"Eran-asan-kar-Kawad?/Eran-win(n)ard-Kawad?/Eran-khwarrah-Yazdgerd? (AYL[later])";1;3;38615;Iran
+47.986912;Harsin?/Susa?;NA;33.272427;"Eran-asan-kar-Kawad?/Eran-Khwarrah-Shapur? (AYLAN)";1;3;38616;Iran
+52.957918;NA;NA;33.713192;"? (BŠHP/BŠHPW)";1;3;38617;Iran
+52.9094444444444;Fars;NA;29.9808333;"?, Fars (BWB)";1;4;38618;Iran
+53.560556;Jahrum;Jahrom;28.5;"Gahrum (GHL)";0;5;39013;Iran
+57.06556;NA;NA;30.286078;"Ganj/Ganzak? (GNCKL)";1;3;39014;Iran
+53.980722;Juyom;Joyom;28.260125;"Guwaim, Fars (GW[earlier]/GWDMY)";0;5;39015;Iran
+53.478092;NA;NA;33.580407;"? (H)";1;3;39016;Iran
+54.373675;Harat;Tajabad;30.054698;"Herat, Istakhr, Fars (HL[earlier])";0;5;39017;Iran
+44.449851;Kufa;NA;31.883324;"Al-Hira, Asuristan (HYL)";0;5;39018;Iraq
+53.42874;NA;NA;33.2277;"? (KWN BBA)";1;3;39019;Iran
+67.683333;Kholm;Khulm;36.683333;"Kholm (HLM)";0;5;39020;Afghanistan
+55.2716302;Ar-Rudan?;Rudhan;30.8723337;"Royan, Fars (LWD/LWDY)";1;4;39021;Iran
+53.017907;NA;NA;33.305836;"? (NAL/WAL)";1;3;39022;Iran
+55.192565;Forg;Furk;28.292259;"Purg (PW/PWLGY)";0;5;39023;Iran
+54.090996;NA;NA;32.880226;"? (ŠLK)";1;3;39024;Iran
+54.356276;NA;NA;32.637706;"? (WLC)";1;3;39026;Iran
+53.735089;NA;NA;32.841763;"? (S)";1;3;39027;Iran
+114.4002;NA;NA;36.2748;"Unknown (Northern Qi dynasty)";0;3;40213;China
+108.858333;NA;NA;34.308333;"Unknown (Tang Dynasty)";1;3;40613;China
+108.858333;NA;NA;34.308333;"Unknown (Sui Dynasty)";1;3;41013;China
+112.4539;NA;NA;34.6197;"Unknown (Chinese)";1;3;41014;China
+89.529167;Khocho;Qocho;42.852778;Gaochang;0;5;41413;China
+135.795556;NA;NA;34.691111;"Unknown (Japanese)";0;3;41414;Japan
+5.1822;Brieulles-sur-Meuse;NA;49.3367;Briodurum;0;5;41813;France
+2.4878;Ivoy-le-Pre;NA;47.3458;Ivegio;0;4;42213;France
+0.23;"Lisieux, Calvados";NA;49.15;Lexsovias;0;5;42613;France
+2;Orione;"'Unknown mint west of Paris""";48;Orione;1;3;42614;France
+36.309102;"Unknown (Greater Syria)";NA;33.511612;Pseudo-Damascus;1;3;43013;Syria
+36.309102;"Unknown (Greater Syria)";NA;33.511612;"Al Wafa liLlah (الوفا للّه)";1;3;43014;Syria
+52.957918;NA;NA;33.713192;"? (BNG)";1;3;43413;Iran
+52.957918;NA;NA;33.713192;"? (ŠM)";1;3;43414;Iran
+0;NA;NA;0;Saxobacio;1;3;43813;(Any)
+47.492662;"Unknown (Maysan Governorate)";Abar-Kawad;31.280274;Abarqubadh;0;4;44213;Iraq
+-4.7760138;Cordoba;NA;37.8845813;Al-Andalus;0;4;44613;Spain
+66.8980826;Balkh;NA;36.7581256;Al-Mubaraka;0;5;44614;Afghanistan
+44.1749775;"Unknown (Iraq)";NA;33.0955793;Al-Samiya;1;3;44615;Iraq
+10.100833;"Unknown (Tunis)";NA;35.677222;Ifrīqīya;0;4;45013;Tunisia
+47.9013888888889;Nahavand/Dinavar;Mahay;36.4447222;Mahi;1;4;45014;Iran
+44.3872213;Baghdad;NA;33.3061701;"Madinat al-Salam";0;5;45413;Iraq
+44.4031125;Kufa;NA;32.03444;Al-Hashimiya;1;4;45414;Iraq
+44.121111;NA;NA;42.261111;"Unknown (Caucasus)";1;3;45813;Georgia
+37.042778;Qinnasrin;NA;35.9875;Kinnasrin;0;5;45814;Syria
+36.471111;Kerch;NA;45.361944;Panticapaeum;0;5;46213;Russia
+44.121111;"Unknown (Caucasus)";NA;42.261111;ZWZWN;1;3;46613;Georgia
+47.8090981;Basra;NA;30.4952371;Al-Furat;1;4;47013;Iraq
+68.4179079304021;NA;NA;33.526354628096;"Unknown (Nezak)";0;4;47413;Afghanistan
+52.957918;NA;NA;33.713192;"? (LYN)";1;3;47414;Iran
+72.8073364;Taxila;NA;33.7474551;Taxila;0;5;47813;Pakistan
+70.5073377020833;Begram/Peshawar;NA;34.4785637865307;"Unknown Kushano-Sassanian mint (S. of Hindu Kush)";1;4;47814;Afghanistan
+72.8291;Gandhara;NA;33.756;"Unlocalized Kidarite Mint";1;4;47815;Pakistan
+67.1;NA;NA;32.1;"Unknown (Zabulistan)";0;4;48613;Afghanistan
+61.158889;Sarakhs;NA;36.5425;Sarahs;0;5;49013;Iran
+44.5652945736612;Baghdad;NA;33.3542328411738;"Khusrau-Shâdh Hurmuz";1;4;49014;Iraq
+59.326172;NA;Chorasmia;42.189608;"Unknown (Khwarazm)";1;4;49413;Turkmenistan
+44.40088;Baghdad;NA;33.34058;Nahrbuq;1;4;49813;Iraq
+66.898056;NA;NA;36.758056;"Unknown (Hephthalite)";1;3;50213;Afghanistan
+67.283151;Termez;NA;37.2442466;"Unknown (Termiz)";1;4;50613;Uzbekistan
+64.423056;Bukhara;NA;39.766667;Bukhara;0;5;51013;Uzbekistan
+67.9176111111111;Budrach;Jumatepa;38.1898889;Chaganiyan;0;5;51413;Uzbekistan
+69.4;NA;NA;40.4;"Unknown (Sogdian)";1;3;51813;Tajikistan
+78;India;NA;21;"Unknown (India)";1;3;52213;India
+69;Kabul;NA;34;"Unknown (Kabulistan)";1;4;52214;Afghanistan
+72.8291;Gandhara;NA;33.756;"Unlocalized Alchon mint";1;4;52613;Pakistan
+34.5505214667;Ashkelon;Ashqelon;31.6647972122;Ascalon;0;5;53013;Israel
+17.5;NA;NA;47.5;"Unknown (Pannonia)";1;3;53413;Hungary
+69.2787079;Tashkent;Binkat;41.3123363;Chach;0;5;53813;Uzbekistan
+68.798889;Bunjikat;Shahriston;39.770278;Ustrushana;0;5;53814;Tajikistan
+64.8986028687959;NA;NA;39.8986218150631;"Unknown (Central Asia)";1;3;53815;Uzbekistan
+67.60931;Panjakent;Penjikent;39.49524;Pendzhikent;0;5;53816;Tajikistan
+71.7913193;Ferghana;Fergana;40.3764879;Ferghana;0;5;53817;Uzbekistan
+69.5533153;Kavardan;NA;41.3530181;Kabarna;0;5;54213;Uzbekistan
+0.66315244322559;NA;NA;47.6406122005003;Climania;1;3;54613;France
+85.3222;Kathmandu;NA;27.7103;Koligram;0;5;55013;Nepal
+43.6914;Nalanda;NA;1.8499;"Nalanda Mahavihara";0;5;55014;Somalia
+71.4886;Multan;NA;30.1864;Multan;0;4;55015;Pakistan
+79.9137;Kannauj;NA;27.0514;Kannauj;0;4;55016;India
+71.8763;Vallabhipur;Vallabhipura;21.8902;Vallabhi;0;5;55017;India
+75.0158;Banavasi;NA;14.5333;Banavasi;0;5;55018;India
+78.2391;Pawaya;Gwalior;25.7662;Padmavati;0;5;55019;India
+69.2075;Kabul;NA;34.5553;Kabul;0;5;55020;Afghanistan
+78.172695;Eran;NA;24.093846;Eran;0;5;55021;India
+75.7885;Ujjain;NA;23.1765;Ujjain;0;5;55022;India
+91.8349;Chittagong;NA;22.3752;Harikela;0;4;55023;Bangladesh
+91.1847;Comilla;Cumilla;23.4498;Samatata;0;4;55024;Bangladesh
+99.8795;"U Thong";"Mueang Uthong";14.4276;Uthong;0;5;55025;Thailand
+95.29176;"Hmaw Zar";Pyay;18.81612;"Sri Ksetra";0;5;55026;Myanmar
+95.3783;Taungdwingyi;NA;20.0053;Beikthano;0;5;55027;Myanmar
+95.8;Shwebo;Halin;22.481667;Hanlin;0;5;55028;Myanmar
+93.1905555656;Mrauk-U;Vesali;20.5861111211;Waithali;0;4;55029;Myanmar
+67.5213;Karachi;Bhambhore;24.7514;Banbhore;0;3;55030;Pakistan
+68.776944;Shahdadpur;Brahmanabad;25.881111;Mansura;0;3;55031;Pakistan
+72.25;Pirsai;"Kashmir Smats";34.416667;"Kashmir Smast";0;5;55032;Pakistan
+72.993;Bharuch;"Barigaza (Latin)";21.712;Bharuch;0;5;55033;India
+72.25;Bhinmal;Bhillamala;25;Bhinmal;0;3;55034;India
+72.655;Gujarat;NA;23.22;Gujarat;0;3;55035;India
+73.8;Rajasthan;NA;26.6;Rajasthan;0;3;55036;India
+75.84;Punjab;NA;30.79;Punjab;0;3;55037;India
+78.6569;"Madhya Pradesh";NA;22.9734;"Madhya Pradesh";0;3;55038;India
+80.0982;"Uttar Pradesh";NA;27.5706;"Uttar Pradesh";0;3;55039;India
+85.2722;Bihar;NA;25.9644;Bihar;0;3;55040;India
+81.8661;Chhattisgarh;NA;21.2787;Chhattisgarh;0;3;55041;India
+72.82;Maharashtra;NA;18.97;Maharashtra;0;3;55042;India
+80.7718;"Sri Lanka";Taprobane;7.8731;Taprobana;0;3;55043;"Sri Lanka"
+80.7718;"Sri Lanka";Taprobane;7.8731;Taprobana;0;3;55044;"Sri Lanka"
+68.5247;Sindh;Sind;25.8943;Sindh;0;3;55045;Pakistan
+75.3412;"Jammu and Kashmir";NA;33.2778;"Jammu and Kashmir";0;3;55046;Pakistan
+85.7513;Odisha;Orissa;20.9754;Odisha;0;3;55047;India
+77.5619;"Himachal Pradesh";NA;32.1024;"Himachal Pradesh";0;3;55048;India
+65.0958;Balochistan;NA;28.4907;Balochistan;0;3;55049;Pakistan
+87.855;"West Bengal";NA;22.9868;"West Bengal";0;3;55050;India
+92.9376;Assam;NA;26.2006;Assam;0;3;55051;India
+75.7139;Karnataka;NA;15.3173;Karnataka;0;3;55052;India
+77.5619;Ladakh;NA;34.2268;Ladakh;0;3;55053;India
+79.74;"Andhra Pradesh";NA;15.9129;"Andhra Pradesh";0;3;55054;India
+91.6761;Tripura;NA;23.5639;Tripura;0;3;55055;India
+85.2722;Jharkhand;NA;23.6913;Jharkhand;0;3;55056;India
+72.3311;"Khyber Pakhtunkhwa";"North-West Frontier Province";34.9526;"Khyber Pakhtunkhwa";0;3;55057;Pakistan
+74.9832;Gilgit-Baltistan;NA;35.8026;Gilgit-Baltistan;0;3;55058;Pakistan
