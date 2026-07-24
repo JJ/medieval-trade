@@ -20,7 +20,7 @@ sub MAIN(Str $coin-group-file, Str $mint-country-file, Str $coin-findings-file, 
 
     my @coin-groups = csv(in => $coin-group-file, headers => 'auto');
 
-    die "No se puede leer $coin-group-file" unless @coin-groups.elems;
+    die "Can't read $coin-group-file" unless @coin-groups.elems;
 
     my @mints = csv(in => $mint-country-file, headers => 'auto', sep=>";");
     my $mints-set = Set.new( @mints.map( { $_<ID> } ) );
@@ -56,15 +56,15 @@ sub MAIN(Str $coin-group-file, Str $mint-country-file, Str $coin-findings-file, 
                      num_coins => %coin-group<cg_num_coins>);
 
         if %coin-group<cg_start_year> == 0 || %coin-group<cg_start_year> eq "NA" || %coin-group<cg_end_year> eq "NA" {
-            if %coin-group<cg_custom_start_century> > 0 {
-                %link<year> = %coin-group<cg_custom_start_century>*100-50;
-            } elsif %coin-group<cg_custom_end_century> > 0 {
-                %link<year> = %coin-group<cg_custom_end_century>*100-50;
+            if (%coin-group<cg_custom_start_century> > 0) &&   ( %coin-group<cg_custom_end_century> > 0 ) {
+                %link<start_year> = %coin-group<cg_custom_start_century>*100;
+                %link<end_year> = %coin-group<cg_custom_end_century>*100;
             } else {
                 next;
             }
         } else {
-            %link<year> = %coin-group<cg_start_year> + floor( (%coin-group<cg_end_year> - %coin-group<cg_start_year>)/2 );
+            %link<start_year> = %coin-group<cg_start_year>;
+            %link<end_year> = %coin-group<cg_end_year>;
         }
 
         die "Wrong mint %link " ~ %finding-locations unless %link<mint> ~~ Str;
@@ -72,5 +72,5 @@ sub MAIN(Str $coin-group-file, Str $mint-country-file, Str $coin-findings-file, 
 
     }
 
-    csv( in => @links-out, out => $out-file, sep => ";", headers => 'auto' );
+    csv( in => @links-out, out => $out-file, sep => ";", headers => <hoard mint num_coins start_year end_year> );
 }
