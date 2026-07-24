@@ -30,6 +30,13 @@ sub load-coord-cache(--> Hash) {
     return %cache;
 }
 
+sub checkpoint($checkpoint-file, $id) {
+    my $tmp = "$checkpoint-file.tmp";
+    spurt $tmp, $id;
+    rename $tmp, $checkpoint-file;
+}
+
+
 sub MAIN(Str $input-file) {
     die "Set GEOAPIFY_API_KEY in the environment" unless GEOAPI_KEY;
     die "No such file: $input-file" unless $input-file.IO.e;
@@ -81,12 +88,6 @@ sub MAIN(Str $input-file) {
         $out-fh.say($header-csv.string);
     }
 
-    sub checkpoint($id) {
-        my $tmp = "$checkpoint-file.tmp";
-        spurt $tmp, $id;
-        rename $tmp, $checkpoint-file;
-    }
-
     for $start-index ..^ @mints.elems -> $i {
         my $mint = @mints[$i];
         my $mint-lat = $mint<location_lat>;
@@ -123,7 +124,7 @@ sub MAIN(Str $input-file) {
         $out-fh.say($row-csv.string);
         $out-fh.flush;
 
-        checkpoint($mint<ID>);
+        checkpoint($checkpoint-file$mint<ID>);
     }
 
     $out-fh.close;
