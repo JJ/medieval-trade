@@ -68,6 +68,18 @@ Data was obtained from the FLAMEs database. [`data-raw`](data-raw/) contains
 unprocessed files, [`data/`](data/) the files once processed, that can be used
 directly.
 
+When the FLAMEs database is updated, we need to follow the following steps,
+after downloading the latest Excel spreadsheet
+1. Run `scripts/extract-flame-database-sheets.R` (in R) to extract the three
+   relevant files
+2. After geting a GeoApify key, run `scripts/geolocalize-mints.raku`
+3. That adds a location to the mint IDS; they we can create the time series by
+   running `scripts/create-links-time-series-import-export-all-countries.raku`
+   which generates the time series. Best if you do it in the directory
+   "data". These last two scripts are written in [Raku](https://raku.org)
+
+
+
 ## AI model
 
 All papers have been uploaded to [this Perplexity AI
