@@ -49,18 +49,12 @@ sub MAIN(Str $input-file) {
     my $output-file = "$dir/{$stem}-country.$ext";
     my $checkpoint-file = "$dir/.{$stem}-country.checkpoint";
 
-    my $csv = Text::CSV.new(sep => ';');
-    my $in-fh = $in-path.open(:r, :enc<utf8>);
-    my @header = $csv.getline($in-fh).flat;
-    $csv.column_names(@header);
-    my @mints;
-    while my $row = $csv.getline_hr($in-fh) {
-        @mints.push($row);
-    }
-    $in-fh.close;
+    my @mints = csv(in => $input-file, headers => "auto");
 
-    my @out-header = @header;
-    @out-header.push('Country') unless 'Country' (elem) @header;
+    say @mints.elems ~ " mints read from $input-file";
+    my @header = @mints[0].keys;
+    my @out-header = flat @header, "Country";
+    say "Out-header is {@out-header.join(';')}";
 
     my $start-index = 0;
     my $resuming = False;
@@ -88,6 +82,7 @@ sub MAIN(Str $input-file) {
         $out-fh.say($header-csv.string);
     }
 
+    say "Processing mints from row {$start-index + 1} to {@mints.elems}";
     for $start-index ..^ @mints.elems -> $i {
         my $mint = @mints[$i];
         my $mint-lat = $mint<location_lat>;
@@ -97,6 +92,7 @@ sub MAIN(Str $input-file) {
         my $country;
         if %coord-cache{$cache-key}:exists {
             $country = %coord-cache{$cache-key};
+            say "Found in cache $country";
         }
         else {
             my $uri = "https://api.geoapify.com/v1/geocode/reverse?lat=$mint-lat&lon=$mint-lon&apiKey={GEOAPI_KEY}";
