@@ -124,7 +124,7 @@ sub MAIN(Str $input-file) {
         $out-fh.say($row-csv.string);
         $out-fh.flush;
 
-        checkpoint($checkpoint-file$mint<ID>);
+        checkpoint($checkpoint-file, $mint<ID>);
     }
 
     $out-fh.close;
