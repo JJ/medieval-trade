@@ -31,3 +31,4 @@ auto/
 *.rtf
 *.zip
 *.xlsx
+cache/
