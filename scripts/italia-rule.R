@@ -102,3 +102,42 @@ ggraph(italia_post_cp_graph, layout = 'stress') +
   theme_graph() +
   theme(legend.position = "bottom")
 
+library(networkD3)
+
+italia_pre_partners <- pre_cp_data %>%
+  filter(from == "Italia" | to == "Italia") %>%
+  mutate(partner = if_else(from == "Italia", to, from)) %>%
+  select(partner, weight) %>%
+  slice_max( weight, n = 10 )
+
+italia_post_partners <- post_cp_data %>%
+  filter(from == "Italia" | to == "Italia") %>%
+  mutate(partner = if_else(from == "Italia", to, from)) %>%
+  select(partner, weight) %>%
+  slice_max( weight, n = 10 )
+
+sankey_nodes <- data.frame(
+  name = c(paste0("Pre: ", italia_pre_partners$partner),
+           "Italia",
+           paste0("Post: ", italia_post_partners$partner))
+)
+
+italia_node_index <- nrow(italia_pre_partners) # 0-based index of "Italia" node
+
+sankey_links <- rbind(
+  data.frame(
+    source = seq_len(nrow(italia_pre_partners)) - 1,
+    target = italia_node_index,
+    value = italia_pre_partners$weight
+  ),
+  data.frame(
+    source = italia_node_index,
+    target = italia_node_index + seq_len(nrow(italia_post_partners)),
+    value = italia_post_partners$weight
+  )
+)
+
+sankeyNetwork(Links = sankey_links, Nodes = sankey_nodes,
+              Source = "source", Target = "target", Value = "value",
+              NodeID = "name", fontSize = 12, nodeWidth = 30)
+
