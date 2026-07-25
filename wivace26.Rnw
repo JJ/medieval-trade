@@ -42,7 +42,7 @@
 \begin{abstract}
 Complex network analysis and other statistical techniques can be fruitfully applied to historical data to understand dynamics that brought the territory under study to a certain state. In this paper we use the FLAME database to understand when a drastic change of trade regime occurred in the Italian peninsula by looking at mint-hoard links that are evidence of a physical connection between them. By using changepoint analysis to pinpoint precise dates in the time series of these links, and then historical as well as network data to establish the sequence of network collapse, we find that the demise of the Western Roman Empire started at the beginning of the 5th and was precipitated by the Roman troops leaving Britain (and subsequent collapse of trade) and the loss of the river Danube as a practicable communication way. These results yield a a more precise sequence of how and when it reached Italia.
 
-\keywords{Complex Systems  \and Historiography \and Complex Network Analysis.}
+\keywords{Historiography \and Complex Network Analysis.}
 \end{abstract}
 %
 %
@@ -50,7 +50,7 @@ Until the arrival of cliometrics \cite{cliometrics}, history was largely a quali
 
 The caesura between Antiquity and Middle Ages, generally coincident with the fall of the Roman Empire in AD 475, is one such event. The deposition of the Western Roman Emperor marked the beginning of a new era where there was no more an unified polity that spanned the whole Mediterranean basin and beyond. Or did it? That is, is it possible to establish a sequence of events that lead to that foregone conclusion?
 
-There are different ways of analyzing the Roman Empire using complex network analysis, but one that has been proved fruitful so far is to use the FLAME database \cite{FLAME:2023}. This database, latest updated in April 2026, contains geolocated coin hoard data, identifying groups of coins by its geolocated mint. This dataset is processed to attribute every coin group and mint to a territory, which is denominated in the main cases with their traditional name (which can include several countries, like the Iberian Peninsula). Coin hoards have a date range. We attribute a proportion of the total to every year in the date range, to create a dataset that has a mint, a hoard, a year and a {\em link rate}; these compose a time series of trade-like links.
+There are different ways of analyzing the Roman Empire using complex network analysis, but one that has been proved fruitful so far is to use the FLAME database \cite{FLAME:bias}. This database, latest updated in April 2026, contains geolocated coin hoard data, identifying groups of coins by its geolocated mint. This dataset is processed to attribute every coin group and mint to a territory, which is denominated in the main cases with their traditional name (which can include several countries, like the Iberian Peninsula). Coin hoards have a date range. We attribute a proportion of the total to every year in the date range, to create a dataset that has a mint, a hoard, a year and a {\em link rate}; these compose a time series of trade-like links.
 
 We have used so far that data to analyze regime changes in the global network (in its 2024 state) \cite{changepoint.statphys} and the network centered in the Iberian Peninsula \cite{complexities2020012}. In these papers we apply different changepoint analysis methods to find changes of regime in the network of mint-hoard links, and then analyze the resulting network to check what the regime change has brought. What the analysis revealed is that regime change preceded by almost a century the fall, and that it was provoked by node drops (Britannia, \cite{complexities2020012}) creating a cascade of failures, and edge drops occurring elsewhere \cite{changepoint.statphys} provoking a modularization that might eventually result in a network split.
 
@@ -268,11 +268,11 @@ We drill down in the reconfiguration of the network in Figure \ref{fig:wivace26.
 
 This extended abstract shows how complex network analysis, but over all, vision, can be applied to understand better historical dynamics, once they are combined with statistical techniques such as changepoint analysis, that detects changes of regime in single or synchronized time series. It allows us to create a narrative for the fall of the Roman empire backed by numerical analysis: the defeat in the battle of Adrianople, followed by the abandonment of Britannia by the Roman troops, precipitated a collapse in the network that eventually left Italia divided and split from the rest of the European countries and the Mediterranean basin.
 
-This paper has been developed as open science, and source as well as ellaboration steps can be obtained from \url{https://github.com/JJ/medieval-trade}.
 
 \begin{credits}
 \subsubsection{\ackname} This work is supported by the Ministerio espa\~{n}ol de Econom\'{\i}a y
 Competitividad (Spanish Ministry of Competitivity and Economy) under project PID2023-147409NB-C21.
+Source for this paper can be obtained from \url{https://github.com/JJ/medieval-trade}.
 
 \end{credits}
 
