@@ -40,14 +40,12 @@
 \maketitle              % typeset the header of the contribution
 %
 \begin{abstract}
-
+Complex network analysis and other statistical techniques can be fruitfully applied to historical data to understand dynamics that brought the territory under study to a certain state. In this paper we use the FLAME database to understand when a drastic change of trade regime occurred in the Italian peninsula by looking at mint-hoard links that are evidence of a physical connection between them. By using changepoint analysis to pinpoint precise dates in the time series of these links, and then historical as well as network data to establish the sequence of network collapse, we find that the demise of the Western Roman Empire started at the beginning of the 5th and was precipitated by the Roman troops leaving Britain (and subsequent collapse of trade) and the loss of the river Danube as a practicable communication way. These results yield a a more precise sequence of how and when it reached Italia.
 
 \keywords{Complex Systems  \and Historiography \and Complex Network Analysis.}
 \end{abstract}
 %
 %
-\section{Introduction}
-
 Until the arrival of cliometrics \cite{cliometrics}, history was largely a qualitative affair, that enabled historians and historiographers to create narratives based largely on historical sources with their corresponding bias and credibility. Modern historias, starting with Pirenne \cite{pirenne}, advocated for a {\em tout court}, or whole field, approach to history that included input from other sciences; using complex networks in this area is but a small added value to this sequence, however, given the chance to merge in a single model an extended time and territory span, it has been so far a fruitful approach.
 
 The caesura between Antiquity and Middle Ages, generally coincident with the fall of the Roman Empire in AD 475, is one such event. The deposition of the Western Roman Emperor marked the beginning of a new era where there was no more an unified polity that spanned the whole Mediterranean basin and beyond. Or did it? That is, is it possible to establish a sequence of events that lead to that foregone conclusion?
