@@ -7,8 +7,19 @@ italia_intra_links <- italia_links %>% filter(hoard == "Italia" & mint=="Italia"
 italia_links %>% group_by( year ) %>% arrange( year ) %>% summarise( link_density = sum( link_rate )) -> italia_links_year
 italia_intra_links %>% group_by( year ) %>% arrange( year ) %>% summarise( link_density = sum( link_rate )) -> italia_intra_links_year
 
+yearly_entropy <- italia_links %>%
+  # Group the data by year
+  group_by(year) %>%
+  # Calculate the proportion (p) of each link_rate within that year
+  mutate(p = link_rate / sum(link_rate, na.rm = TRUE)) %>%
+  # Filter out rows where p is 0 to avoid log2(0) returning -Inf
+  filter(p > 0) %>%
+  # Compute the Shannon entropy for the year
+  summarise(entropy = -sum(p * log2(p)), .groups = "drop")
+
 library(ggplot2)
 
+ggplot( yearly_entropy, aes(x=year, y=entropy))+ geom_line()+ theme_minimal()
 ggplot( italia_links_year, aes(x=year,y=link_density,color="Total"))+ geom_line()+
   geom_line(data=italia_intra_links_year,aes(y=link_density,color="Intra"))+theme_minimal()
 
@@ -16,13 +27,19 @@ italia_extra_links <- italia_links %>% filter(!(hoard == "Italia" & mint=="Itali
 italia_extra_links%>% group_by( year ) %>% arrange( year ) %>% summarise( link_density = sum( link_rate )) -> italia_extra_links_year
 
 library(ecp)
-z_links <- matrix(c(italia_extra_links_year$link_density, Italia_intra_links_year$link_density), ncol=2)
+z_links <- matrix(c(italia_extra_links_year$link_density, italia_intra_links_year$link_density), ncol=2)
 
 multi_changepoint <- e.divisive(z_links, min.size=100)
 multi_changepoint_year <- italia_extra_links_year$year[multi_changepoint$estimate[2]]
 
 multi_changepoint_50y <- e.divisive(z_links, min.size=50)
 multi_changepoint_year_50y <- italia_extra_links_year$year[multi_changepoint_50y$estimate[2]]
+
+z_links_entropy <- matrix(c(italia_extra_links_year$link_density, italia_intra_links_year$link_density, yearly_entropy$entropy), ncol=3)
+z_links_entropy_scaled <- scale(z_links_entropy)
+multi_changepoint_entropy <- e.divisive(z_links_entropy_scaled, min.size=100)
+multi_changepoint_entropy_year <- italia_extra_links_year$year[multi_changepoint_entropy$estimate[2]]
+
 
 library(igraph)
 

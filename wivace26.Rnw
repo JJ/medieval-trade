@@ -1,0 +1,68 @@
+% This is samplepaper.tex, a sample chapter demonstrating the
+% LLNCS macro package for Springer Computer Science proceedings;
+% Version 2.21 of 2022/01/12
+%
+\documentclass[runningheads]{llncs}
+%
+\usepackage[T1]{fontenc}
+% T1 fonts will be used to generate the final print and online PDFs,
+% so please use T1 fonts in your manuscript whenever possible.
+% Other font encondings may result in incorrect characters.
+%
+\usepackage{graphicx}
+% Used for displaying a sample figure. If possible, figure files should
+% be included in EPS format.
+%
+% If you use the hyperref package, please uncomment the following two lines
+% to display URLs in blue roman font according to Springer's eBook style:
+%\usepackage{color}
+%\renewcommand\UrlFont{\color{blue}\rmfamily}
+%\urlstyle{rm}
+%
+\begin{document}
+%
+\title{All edges lead to Rome: analyzing late antiquity regime shifts using hoard data}
+%
+%\titlerunning{Abbreviated paper title}
+% If the paper title is too long for the running head, you can set
+% an abbreviated paper title here
+%
+\author{Juan J. Merelo-Guervós\inst{1}\orcidID{0000-0002-1385-9741}}
+%
+\authorrunning{JJ Merelo}
+% First names are abbreviated in the running head.
+% If there are more than two authors, 'et al.' is used.
+%
+\institute{Department of Computer Engineering, Automatics and Robotics and CITIC, University of Granada
+\email{jmerelo@ugr.es}\\
+}
+%
+\maketitle              % typeset the header of the contribution
+%
+\begin{abstract}
+
+
+\keywords{Complex Systems  \and Historiography \and Complex Network Analysis.}
+\end{abstract}
+%
+%
+\section{Introduction}
+
+Until the arrival of cliometrics \cite{cliometrics}, history was largely a qualitative affair, that enabled historians and historiographers to create narratives based largely on historical sources with their corresponding bias and credibility. Modern historias, starting with Pirenne \cite{pirenne}, advocated for a {\em tout court}, or whole field, approach to history that included input from other sciences; using complex networks in this area is but a small added value to this sequence, however, given the chance to merge in a single model an extended time and territory span, it has been so far a fruitful approach.
+
+The caesura between Antiquity and Middle Ages, generally coincident with the fall of the Roman Empire in AD 475, is one such event. The deposition of the Western Roman Emperor marked the beginning of a new era where there was no more an unified polity that spanned the whole Mediterranean basin and beyond. Or did it? That is, is it possible to establish a sequence of events that lead to that foregone conclusion?
+
+There are different ways of analyzing the Roman Empire using complex network analysis, but one that has been proved fruitful so far is to use the FLAME database \cite{FLAME:2023}. This database, latest updated in April 2026, contains geolocated coin hoard data, identifying groups of coins by its geolocated mint. This dataset is processed to attribute every coin group and mint to a territory, which is denominated in the main cases with their traditional name (which can include several countries, like the Iberian Peninsula). Coin hoards have a date range. We attribute a proportion of the total to every year in the date range, to create a dataset that has a mint, a hoard, a year and a {\em link rate}; these compose a time series of trade-like links.
+
+We have used so far that data to analyze regime changes in the global network (in its 2024 state) \cite{changepoint.statphys} and the network centered in the Iberian Peninsula \cite{complexities2020012}. In these papers we apply different changepoint analysis methods to find changes of regime in the network of mint-hoard links, and then analyze the resulting network to check what the regime change has brought. What the analysis revealed is that regime change preceded by almost a century the fall, and that it was provoked by node drops (Britannia, \cite{complexities2020012}) creating a cascade of failures, and edge drops occurring elsewhere \cite{changepoint.statphys} provoking a modularization that might eventually result in a network split.
+
+\begin{credits}
+\subsubsection{\ackname} This work is supported by the Ministerio espa\~{n}ol de Econom\'{\i}a y
+Competitividad (Spanish Ministry of Competitivity and Economy) under project PID2023-147409NB-C21.
+
+\end{credits}
+
+\bibliographystyle{splncs04}
+\bibliography{trade-early-medieval,ours,change-point,history}
+
+\end{document}
