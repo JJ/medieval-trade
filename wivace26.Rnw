@@ -56,6 +56,181 @@ There are different ways of analyzing the Roman Empire using complex network ana
 
 We have used so far that data to analyze regime changes in the global network (in its 2024 state) \cite{changepoint.statphys} and the network centered in the Iberian Peninsula \cite{complexities2020012}. In these papers we apply different changepoint analysis methods to find changes of regime in the network of mint-hoard links, and then analyze the resulting network to check what the regime change has brought. What the analysis revealed is that regime change preceded by almost a century the fall, and that it was provoked by node drops (Britannia, \cite{complexities2020012}) creating a cascade of failures, and edge drops occurring elsewhere \cite{changepoint.statphys} provoking a modularization that might eventually result in a network split.
 
+<<wivace26.setup, echo=F, message=F>>=
+knitr::opts_chunk$set(dev = 'cairo_pdf')
+
+library(dplyr)
+
+italia_links <- readRDS("data/flame-time-series-April-2026-filtered.rds") %>% filter( !is.na(link_rate) & (hoard == "Italia" | mint=="Italia") )
+
+italia_intra_links <- italia_links %>% filter(hoard == "Italia" & mint=="Italia")
+
+italia_links %>% group_by( year ) %>% arrange( year ) %>% summarise( link_density = sum( link_rate )) -> italia_links_year
+italia_intra_links %>% group_by( year ) %>% arrange( year ) %>% summarise( link_density = sum( link_rate )) -> italia_intra_links_year
+
+yearly_entropy <- italia_links %>%
+  # Group the data by year
+  group_by(year) %>%
+  # Calculate the proportion (p) of each link_rate within that year
+  mutate(p = link_rate / sum(link_rate, na.rm = TRUE)) %>%
+  # Filter out rows where p is 0 to avoid log2(0) returning -Inf
+  filter(p > 0) %>%
+  # Compute the Shannon entropy for the year
+  summarise(entropy = -sum(p * log2(p)), .groups = "drop")
+@
+
+In this paper, we will look at the data from the center of the network: Italia, the generic and historic name for the Italic Peninsula, which hosted the capital of the Western Roman Empire until its fall. By examining regime changes from this point of view, we will be able to examine more closely which network edges were essential and, by vanishing, precipitated its downfall.
+
+<<wivace26.series, echo=F, message=F, warning=F, fig.cap="Time series of link density for all links with Italia, as well as internal links", fig.height=3, fig.pos="h!tb">>=
+library(ggplot2)
+library(ggalluvial) # Needs to be here
+
+
+# ggplot( yearly_entropy, aes(x=year, y=entropy))+ geom_line()+ theme_minimal()
+ggplot( italia_links_year, aes(x=year,y=link_density,color="Total"))+ geom_line()+
+  geom_line(data=italia_intra_links_year,aes(y=link_density,color="Intra"))+theme_minimal()
+
+italia_extra_links <- italia_links %>% filter(!(hoard == "Italia" & mint=="Italia"))
+italia_extra_links%>% group_by( year ) %>% arrange( year ) %>% summarise( link_density = sum( link_rate )) -> italia_extra_links_year
+
+library(ecp)
+z_links <- matrix(c(italia_extra_links_year$link_density, italia_intra_links_year$link_density), ncol=2)
+
+multi_changepoint <- e.divisive(z_links, min.size=100)
+multi_changepoint_year <- italia_extra_links_year$year[multi_changepoint$estimate[2]]
+
+multi_changepoint_50y <- e.divisive(z_links, min.size=50)
+multi_changepoint_year_50y <- italia_extra_links_year$year[multi_changepoint_50y$estimate[2]]
+
+z_links_entropy <- matrix(c(italia_extra_links_year$link_density, italia_intra_links_year$link_density, yearly_entropy$entropy), ncol=3)
+z_links_entropy_scaled <- scale(z_links_entropy)
+multi_changepoint_entropy <- e.divisive(z_links_entropy_scaled, min.size=100)
+multi_changepoint_entropy_year <- italia_extra_links_year$year[multi_changepoint_entropy$estimate[2]]
+
+
+library(igraph)
+
+italia_links_for_graph <- italia_links %>% rename( from=hoard, to=mint)
+
+library(dplyr)
+
+italia_links_combined <- italia_links_for_graph %>%
+  filter(!startsWith(from, "Unknown") & !startsWith(to, "Unknown")) %>%
+  mutate(
+    standardized_from = pmin(from, to),
+    standardized_to = pmax(from, to)
+  ) %>%
+  # Group by the new node pair and the year
+  group_by(from = standardized_from, to = standardized_to, year) %>%
+  # Sum the link rates for the combined directions
+  summarise(link_rate = sum(link_rate), .groups = "drop")
+
+pre_cp_data <- italia_links_combined %>%
+  filter( year <= multi_changepoint_year) %>%
+  summarise( .by=c(from,to), weight = sum(link_rate))
+
+italia_pre_cp_graph <- graph_from_data_frame( pre_cp_data,
+                                              directed=F )
+
+library(ggraph)
+# Note: Ensure your network object (e.g., igraph or tbl_graph) is loaded
+# Replace 'your_graph_object' with the actual name of your graph variable
+
+ggraph(italia_pre_cp_graph, layout = 'stress') +
+
+  # 1. Map edge weights to line thickness
+  geom_edge_link(aes(linewidth = weight), color = "gray60", alpha = 0.6) +
+ # scale_edge_width(range = c(0.5, 3), name = "Link Rate") +
+
+  # 2. Style the nodes
+  geom_node_point(size = 7, fill = "#E69F00", color = "black", shape = 21) +
+
+  # 3. Add labels that automatically repel away from each other
+  geom_node_text(aes(label = name),
+                 repel = TRUE,
+                 size = 4,
+                 color = "#002B5B",
+                 bg.color = "white", # Adds a slight white halo for readability
+                 bg.r = 0.15) +
+
+  # 4. Clean up the background
+  theme_graph() +
+  theme(legend.position = "bottom")
+
+post_cp_data <- italia_links_combined %>%
+  filter( year >= multi_changepoint_year) %>%
+  summarise( .by=c(from,to), weight = sum(link_rate))
+
+italia_post_cp_graph <- graph_from_data_frame( post_cp_data,
+                                              directed=F )
+
+
+ggraph(italia_post_cp_graph, layout = 'stress') +
+
+  # 1. Map edge weights to line thickness
+  geom_edge_link(aes(linewidth = weight), color = "gray60", alpha = 0.6) +
+  # scale_edge_width(range = c(0.5, 3), name = "Link Rate") +
+
+  # 2. Style the nodes
+  geom_node_point(size = 7, fill = "#E69F00", color = "black", shape = 21) +
+
+  # 3. Add labels that automatically repel away from each other
+  geom_node_text(aes(label = name),
+                 repel = TRUE,
+                 size = 4,
+                 color = "#002B5B",
+                 bg.color = "white", # Adds a slight white halo for readability
+                 bg.r = 0.15) +
+
+  # 4. Clean up the background
+  theme_graph() +
+  theme(legend.position = "bottom")
+
+# 1. Your existing data extraction (Unchanged)
+italia_pre_partners <- pre_cp_data %>%
+  filter(from == "Italia" | to == "Italia") %>%
+  mutate(partner = if_else(from == "Italia", to, from)) %>%
+  select(partner, weight) %>%
+  slice_max(weight, n = 10)
+
+# 2. Extract the same info for the post-changepoint period
+italia_post_partners <- post_cp_data %>%
+  filter(from == "Italia" | to == "Italia") %>%
+  mutate(partner = if_else(from == "Italia", to, from)) %>%
+  select(partner, weight) %>%
+  slice_max(weight, n = 10)
+
+# 3. Combine both periods, keeping any partner that ranked top 10 in either one
+italia_partner_comparison <- bind_rows(
+  italia_pre_partners  %>% mutate(period = "Pre-changepoint"),
+  italia_post_partners %>% mutate(period = "Post-changepoint")
+) %>%
+  tidyr::complete(partner, period, fill = list(weight = 0)) %>%
+  mutate(period = factor(period, levels = c("Pre-changepoint", "Post-changepoint")))
+
+# Order partners by their pre-changepoint trade density
+partner_order <- italia_partner_comparison %>%
+  filter(period == "Pre-changepoint") %>%
+  arrange(weight) %>%
+  pull(partner)
+
+italia_partner_comparison <- italia_partner_comparison %>%
+  mutate(partner = factor(partner, levels = partner_order))
+
+# 4. Grouped bar chart: trade density pre vs post changepoint
+ggplot(italia_partner_comparison, aes(x = weight, y = partner, fill = period)) +
+  geom_col(position = position_dodge(width = 0.75), width = 0.65) +
+  scale_fill_manual(values = c("Pre-changepoint" = "#0072B2", "Post-changepoint" = "#E69F00"),
+                     name = NULL) +
+  labs(x = "Trade link density", y = NULL,
+       title = "Top trading partners of Italia: pre vs post changepoint") +
+  theme_minimal(base_size = 13) +
+  theme(legend.position = "bottom",
+        panel.grid.minor = element_blank(),
+        panel.grid.major.y = element_blank())
+
+@
+
 \begin{credits}
 \subsubsection{\ackname} This work is supported by the Ministerio espa\~{n}ol de Econom\'{\i}a y
 Competitividad (Spanish Ministry of Competitivity and Economy) under project PID2023-147409NB-C21.
