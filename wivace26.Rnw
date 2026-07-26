@@ -21,7 +21,7 @@
 %
 \begin{document}
 %
-\title{All edges lead to Rome: analyzing late antiquity regime shifts using coin hoard data}
+\title{All edges lead to Rome: analyzing Late Antiquity regime shifts using coin hoard data}
 %
 \titlerunning{All edges lead to Rome}
 % If the paper title is too long for the running head, you can set
