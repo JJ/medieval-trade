@@ -47,9 +47,9 @@ Complex network analysis and other statistical techniques can be fruitfully appl
 %
 %
 Until the arrival of cliometrics \cite{cliometrics}, history was largely a qualitative affair that enabled historians and historiographers to create narratives based largely on historical sources with their corresponding bias and credibility. Modern historians, starting with Pirenne \cite{pirenne}, advocated for a {\em tout court}, or whole field, approach to history that included input from other sciences; using complex networks in this area is but a small added value to this sequence; however, given the chance to merge in a single model an extended time and territory span, it has been so far a fruitful approach.
-%
+
 The caesura between Antiquity and the Middle Ages, generally coincident with the fall of the Roman Empire in AD 476, is one such event. The deposition of the Western Roman Emperor marked the beginning of a new era where there was no longer a unified polity that spanned the whole Mediterranean basin and beyond. Or did it? That is, is it possible to establish a sequence of events that led to that foregone conclusion?
-%
+
 There are different ways of analyzing the Roman Empire using complex network analysis, but one that has proven fruitful so far is to use the FLAME database \cite{FLAME:bias}. This database, last updated in April 2026, contains geolocated coin hoard data, identifying groups of coins by their geolocated mint. This dataset is processed to attribute every coin group and mint to a territory, which is designated, in most cases, by its traditional name (which can include several countries, like the Iberian Peninsula). Coin hoards have a date range. We attribute a proportion of the total to every year in the date range to create a dataset that has a mint, a hoard, a year and a {\em link rate}; these compose a time series of trade-like links.
 
 We have so far used this data to analyze regime changes in the global network (in its 2024 state) \cite{changepoint.statphys} and the network centered on the Iberian Peninsula \cite{complexities2020012}. In these papers we apply different changepoint analysis methods to find changes of regime in the network of mint-hoard links, and then analyze the resulting network to check what the regime change has brought. What the analysis revealed is that regime change preceded the fall by almost a century, and that it was provoked by node drops (Britannia, \cite{complexities2020012}) creating a cascade of failures, and edge drops occurring elsewhere \cite{changepoint.statphys} provoking a modularization that might eventually result in a network split.
@@ -133,7 +133,7 @@ Figure \ref{fig:wivace26.series} shows the internal and total time series of tra
 In order to analyze the changepoint, we will create three time series: intra-Italia trade density, extra-Italia trade density (obtained by subtracting the intra-Italia density from the total), and per-year entropy, an interesting indicator of the variability of trade sources, as well as the position of the node in the network.
 
 We will first analyze the multi-stream series that includes only trade density using {\sf e.divisive} from {\sf ecp} \cite{ecp-article}, and a minimum size of 100 years. It generates several changepoints; the most important, showing the largest shift in average trade density before and after, falls in the year \Sexpr{multi_changepoint_year}. After including the entropy time series and re-scaling, the year for the change becomes \Sexpr{multi_changepoint_entropy_year} AD (represented in the right-hand side of Figure \ref{fig:wivace26.series}). We observe that the average exterior trade density falls from \Sexpr{round(mean_total_before,2)} to \Sexpr{round(mean_total_after,2)} after the first changepoint.
-%
+
 In terms of the network, what does this change imply?
 %
 <<wivace26.graphs, echo=F, warning=F, message=F, fig.cap="Representation of the Italia ego network, before the changepoint (left) and after (right). Edges are scaled according to link density value. Scales shown at bottom.", out.width="50%", fig.pos="h!tb", fig.height=4, fig.show='hold'>>=
