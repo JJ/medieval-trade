@@ -58,6 +58,8 @@ We have so far used this data to analyze regime changes in the global network (i
 knitr::opts_chunk$set(dev = 'cairo_pdf')
 
 library(dplyr)
+library(ggplot2)
+library(ecp)
 
 italia_links <- readRDS("data/flame-time-series-April-2026-filtered.rds") %>% filter( !is.na(link_rate) & (hoard == "Italia" | mint=="Italia") )
 
@@ -80,7 +82,6 @@ yearly_entropy <- italia_links %>%
 In this paper, we will look at the data from the center of the network: Italia, the generic and historic name for the Italian Peninsula, which hosted the capital of the Western Roman Empire until its fall. By examining regime changes from this point of view, we will be able to examine more closely which network edges were essential and, by vanishing, precipitated its downfall.
 
 <<wivace26.series, cache=TRUE, echo=F, message=F, warning=F, fig.cap="Time series of link density for all links with Italia, as well as internal links. (Right) Changepoints detected over the intra and extra trade link series, dashed (trade links only), dotted (with entropy). Averages pre and post the first changepoint are shown in dark red.", fig.height=3, fig.pos="h!tb", out.width="50%", fig.show="hold">>=
-library(ggplot2)
 
 # ggplot( yearly_entropy, aes(x=year, y=entropy))+ geom_line()+ theme_minimal()
 ggplot( italia_links_year, aes(x=year,y=link_density,color="Total"))+ geom_line()+
@@ -90,7 +91,6 @@ ggplot( italia_links_year, aes(x=year,y=link_density,color="Total"))+ geom_line(
 italia_extra_links <- italia_links %>% filter(!(hoard == "Italia" & mint=="Italia"))
 italia_extra_links%>% group_by( year ) %>% arrange( year ) %>% summarise( link_density = sum( link_rate )) -> italia_extra_links_year
 
-library(ecp)
 z_links <- matrix(c(italia_extra_links_year$link_density, italia_intra_links_year$link_density), ncol=2)
 
 multi_changepoint <- e.divisive(z_links, min.size=100)
@@ -134,14 +134,39 @@ In order to analyze the changepoint, we will create three time series: intra-Ita
 
 We will first analyze the multi-stream series that includes only trade density using {\sf e.divisive} from {\sf ecp} \cite{ecp-article}, and a minimum size of 100 years. It generates several changepoints; the most important, showing the largest shift in average trade density before and after, falls in the year \Sexpr{multi_changepoint_year}. After including the entropy time series and re-scaling, the year for the change becomes \Sexpr{multi_changepoint_entropy_year} AD (represented in the right-hand side of Figure \ref{fig:wivace26.series}). We observe that the average exterior trade density falls from \Sexpr{round(mean_total_before,2)} to \Sexpr{round(mean_total_after,2)} after the first changepoint.
 
+<<postwivace26.entropy, echo=F, warning=F, message=F, fig.cap="Entropy of the Italia ego network. The dashed line shows the changepoint detected", fig.height=4, fig.pos="h!tb">>=
+entropy_changepoint <- e.divisive(matrix(yearly_entropy$entropy,ncol=1), min.size=100)
+entropy_changepoint_year <- yearly_entropy$year[entropy_changepoint$estimate[2]]
+
+mean_entropy_before <- yearly_entropy %>% filter(year < entropy_changepoint_year) %>% summarise(mean_entropy = mean(entropy)) %>% pull(mean_entropy)
+mean_entropy_after <- yearly_entropy %>% filter(year >= entropy_changepoint_year) %>% summarise(mean_entropy = mean(entropy)) %>% pull(mean_entropy)
+@
+
+It is interesting to see also how the entropy behaves by itself, since it moves the changepoint to a later date. Using the same method, the changepoint for the entropy time series is detected in \Sexpr{entropy_changepoint_year}.
+
+<<postwivace26.entropy.plot, echo=F, warning=F, message=F, fig.cap="Entropy of the Italia ego network. The dashed line shows the changepoint detected", fig.height=4, fig.pos="h!tb">>=
+ggplot(yearly_entropy, aes(x = year, y = entropy )) +
+  geom_line(linewidth = 1) +
+  geom_vline(xintercept = entropy_changepoint_year, linetype = "dashed", color = "darkred", alpha = 0.7) +
+  geom_segment(aes(x = min_year, xend = entropy_changepoint_year,
+                   y = mean_entropy_before, yend = mean_entropy_before),
+               color = "darkred", linewidth = 0.8) +
+  geom_segment(aes(x = entropy_changepoint_year, xend = max_year,
+                   y = mean_entropy_after, yend = mean_entropy_after),
+               color = "darkred", linewidth = 0.8) +
+  theme_minimal() +
+  xlim(c(min_year,max_year))+
+  labs(y = "Entropy", x = "Year")
+@
+
+Figure \ref{fig:postwivace26.entropy.plot} chars entropy, including the changepoint, which occurs years before the main changepoint involving the two time series. And entropy actually goes up: the value before that changepoint is \Sexpr{round(mean_entropy_before,2)}; it increases after that date to \Sexpr{round(mean_entropy_after,2)}. So the number of trade partners and their variability actually start to increase decades before the already commented change of regime occurs.
+
 In terms of the network, what does this change imply?
 %
 <<wivace26.graphs, echo=F, warning=F, message=F, fig.cap="Representation of the Italia ego network, before the changepoint (left) and after (right). Edges are scaled according to link density value. Scales shown at bottom.", out.width="50%", fig.pos="h!tb", fig.height=4, fig.show='hold'>>=
 library(igraph)
 
 italia_links_for_graph <- italia_links %>% rename( from=hoard, to=mint)
-
-library(dplyr)
 
 italia_links_combined <- italia_links_for_graph %>%
   filter(!startsWith(from, "Unknown") & !startsWith(to, "Unknown")) %>%
