@@ -100,9 +100,37 @@ multi_changepoint_50y <- e.divisive(z_links, min.size=50)
 multi_changepoint_year_50y <- italia_extra_links_year$year[multi_changepoint_50y$estimate[2]]
 
 z_links_entropy <- matrix(c(italia_extra_links_year$link_density, italia_intra_links_year$link_density, yearly_entropy$entropy), ncol=3)
-z_links_entropy_scaled <- scale(z_links_entropy)
-multi_changepoint_entropy <- e.divisive(z_links_entropy_scaled, min.size=100)
-multi_changepoint_entropy_year <- italia_extra_links_year$year[multi_changepoint_entropy$estimate[2]]
+
+library(bcp)
+model_with_entropy <- bcp(z_links_entropy)
+
+# 2. Extract the probabilities for every time step
+# (Note: bcp drops the last observation, so probabilities are length N-1)
+probs <- model_with_entropy$posterior.prob
+
+# 3. Find the MAIN changepoint (the single highest probability)
+main_cp <- which.max(probs)
+cat("Main changepoint occurs at index:", main_cp, "\n")
+
+# 4. Create a ranked list of all possible changepoints
+cp_rank <- data.frame(
+  Time_Index = 1:length(probs),
+  Probability = probs,
+  year = min( italia_extra_links_year$year) + (1:length(probs)) - 1)
+
+
+# Sort the dataframe from highest to lowest probability
+cp_rank <- cp_rank[order(-cp_rank$Probability), ]
+
+# View the top 5 most likely changepoints
+head(cp_rank, 5)
+
+multi_changepoint_entropy_year <- italia_extra_links_year$year[main_cp]
+
+# Try also breakpoints
+library(strucchange)
+breakpoints_model <- breakpoints(z_links_entropy ~ 1)
+
 
 # Include changepoints
 cp_year <- multi_changepoint_year
