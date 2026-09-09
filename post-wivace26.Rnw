@@ -186,7 +186,7 @@ ggplot(yearly_entropy, aes(x = year, y = entropy )) +
   labs(y = "Entropy", x = "Year")
 @
 
-Figure \ref{fig:postwivace26.entropy.plot} chars entropy, including the changepoint, which occurs years before the main changepoint involving the two time series. And entropy actually goes up: the value before that changepoint is \Sexpr{round(mean_entropy_before,2)}; it increases after that date to \Sexpr{round(mean_entropy_after,2)}. So the number of trade partners and their variability actually start to increase decades before the already commented change of regime occurs.
+Figure \ref{fig:postwivace26.entropy_plot} chars entropy, including the changepoint, which occurs years before the main changepoint involving the two time series. And entropy actually goes up: the value before that changepoint is \Sexpr{round(mean_entropy_before,2)}; it increases after that date to \Sexpr{round(mean_entropy_after,2)}. So the number of trade partners and their variability actually start to increase decades before the already commented change of regime occurs.
 
 In terms of the network, what does this change imply?
 %
