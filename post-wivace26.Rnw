@@ -110,7 +110,7 @@ probs <- model_with_entropy$posterior.prob
 
 # 3. Find the MAIN changepoint (the single highest probability)
 main_cp <- which.max(probs)
-cat("Main changepoint occurs at index:", main_cp, "\n")
+# cat("Main changepoint occurs at index:", main_cp, "\n")
 
 # 4. Create a ranked list of all possible changepoints
 cp_rank <- data.frame(
@@ -123,14 +123,13 @@ cp_rank <- data.frame(
 cp_rank <- cp_rank[order(-cp_rank$Probability), ]
 
 # View the top 5 most likely changepoints
-head(cp_rank, 5)
+# head(cp_rank, 5)
 
 multi_changepoint_entropy_year <- italia_extra_links_year$year[main_cp]
 
 # Try also breakpoints
 library(strucchange)
 breakpoints_model <- breakpoints(z_links_entropy ~ 1)
-
 
 # Include changepoints
 cp_year <- multi_changepoint_year
@@ -157,10 +156,10 @@ ggplot(italia_extra_links_year, aes(x = year, y = link_density, color = "Extra")
   labs(y = "Link Density", x = "Year", color = "Series")
 @
 
-Figure \ref{fig:wivace26.series} shows the internal and total time series of trade links; it spans the whole dataset. As we see, there are profound changes before the purported fall of the Empire.
+Figure \ref{fig:wivace26.series} shows the internal and general time series of link density; it spans the whole dataset. As we see, there are profound changes before the purported fall of the Empire.
 In order to analyze the changepoint, we will create three time series: intra-Italia trade density, extra-Italia trade density (obtained by subtracting the intra-Italia density from the total), and per-year entropy, an interesting indicator of the variability of trade sources, as well as the position of the node in the network.
 
-We will first analyze the multi-stream series that includes only trade density using {\sf e.divisive} from {\sf ecp} \cite{ecp-article}, and a minimum size of 100 years. It generates several changepoints; the most important, showing the largest shift in average trade density before and after, falls in the year \Sexpr{multi_changepoint_year}. After including the entropy time series and re-scaling, the year for the change becomes \Sexpr{multi_changepoint_entropy_year} AD (represented in the right-hand side of Figure \ref{fig:wivace26.series}). We observe that the average exterior trade density falls from \Sexpr{round(mean_total_before,2)} to \Sexpr{round(mean_total_after,2)} after the first changepoint.
+We will first analyze the multi-stream series that includes only trade density using {\sf e.divisive} from {\sf ecp} \cite{ecp-article}, and a minimum size of 100 years. It generates several changepoints; the most important, showing the largest shift in average trade density before and after, falls in the year \Sexpr{multi_changepoint_year}. After including the entropy time series and re-scaling, the year for the change becomes \Sexpr{multi_changepoint_entropy_year} AD (represented in the right-hand side of Figure \ref{fig:wivace26.series}). We observe that the average exterior trade density falls from \Sexpr{round(mean_total_before,2)} to \Sexpr{round(mean_total_after,2)} after the first changepoint, which occurs at \Sexpr{cp_year}.
 
 <<postwivace26.entropy, echo=F, warning=F, message=F, fig.cap="Entropy of the Italia ego network. The dashed line shows the changepoint detected", fig.height=4, fig.pos="h!tb">>=
 entropy_changepoint <- e.divisive(matrix(yearly_entropy$entropy,ncol=1), min.size=100)
@@ -329,7 +328,8 @@ We have just shown how complex network analysis, but above all, vision, can be a
 \begin{credits}
 \subsubsection{\ackname} This work is supported by the Ministerio espa\~{n}ol de Econom\'{\i}a y
 Competitividad (Spanish Ministry of Competitivity and Economy) under project PID2023-147409NB-C21.
-Source for this paper can be obtained from \url{https://github.com/JJ/medieval-trade}.
+
+Source for this paper can be downloaded from \url{https://github.com/JJ/medieval-trade}.
 
 \end{credits}
 
