@@ -171,7 +171,7 @@ mean_entropy_after <- yearly_entropy %>% filter(year >= entropy_changepoint_year
 
 It is interesting to see also how the entropy behaves by itself, since it moves the changepoint to a later date. Using the same method, the changepoint for the entropy time series is detected in \Sexpr{entropy_changepoint_year}.
 
-<<postwivace26.entropy.plot, echo=F, warning=F, message=F, fig.cap="Entropy of the Italia ego network. The dashed line shows the changepoint detected", fig.height=4, fig.pos="h!tb">>=
+<<postwivace26.entropy_plot, echo=F, warning=F, message=F, fig.cap="Entropy of the Italia ego network. The dashed line shows the changepoint detected", fig.height=4, fig.pos="h!tb">>=
 ggplot(yearly_entropy, aes(x = year, y = entropy )) +
   geom_line(linewidth = 1) +
   geom_vline(xintercept = entropy_changepoint_year, linetype = "dashed", color = "darkred", alpha = 0.7) +
