@@ -125,6 +125,9 @@ map_data <- trade_data %>%
     lat1 = regions_coords$lat[regions_coords$region == focal_region]
   )
 
+# Kept before dropping regions without coordinates, for the partner count
+partner_links <- map_data %>% filter(value > 0) %>% select(partner, year)
+
 missing_coords <- map_data %>% filter(is.na(lon2)) %>% distinct(partner) %>% pull(partner)
 if (length(missing_coords) > 0) {
   warning("No coordinates for: ", paste(missing_coords, collapse = ", "),
@@ -145,10 +148,18 @@ anim_data <- map_data %>%
 # including intra-regional and unknown-partner links, as the "Total" series
 # in wivace26.Rnw
 frame_years <- sort(unique(anim_data$year))
+all_years <- tibble(year = seq(min(frame_years), max(frame_years)))
 focal_totals <- trade_data %>%
   filter(hoard == focal_region | mint == focal_region) %>%
   summarise(total = sum(link_rate), .by = year) %>%
-  right_join(tibble(year = seq(min(frame_years), max(frame_years))), by = "year") %>%
+  right_join(all_years, by = "year") %>%
+  mutate(total = replace_na(total, 0)) %>%
+  arrange(year)
+
+# Number of other (known) regions the focal region trades with each year
+partner_counts <- partner_links %>%
+  summarise(total = n_distinct(partner), .by = year) %>%
+  right_join(all_years, by = "year") %>%
   mutate(total = replace_na(total, 0)) %>%
   arrange(year)
 
@@ -163,29 +174,49 @@ focal_point <- regions_coords %>% filter(region == focal_region)
 map_xlim <- c(-12, 43.5)
 ylim <- c(24, 58.5)
 
-# Side chart, drawn in map coordinates on a strip left of the map
+# Side charts, drawn in map coordinates on strips left and right of the map
 # (gganimate can't animate patchwork compositions).
-# Year runs top to bottom, total trade density left to right.
-chart_strip <- c(-41, map_xlim[1])
-chart_x <- c(-36, -14.5)
-chart_y <- c(ylim[1] + 2, ylim[2] - 6)
-xlim <- c(chart_strip[1], map_xlim[2])
-
-year_range <- range(focal_totals$year)
-max_total <- max(focal_totals$total)
+# Year runs top to bottom, the charted quantity left to right.
+strip_width <- 24
+left_strip <- c(map_xlim[1] - strip_width, map_xlim[1])
+right_strip <- c(map_xlim[2], map_xlim[2] + strip_width)
+xlim <- c(left_strip[1], right_strip[2])
+chart_y <- c(ylim[1] + 2, ylim[2] - 7)
+year_range <- range(all_years$year)
 year_to_y <- function(y) chart_y[2] - (y - year_range[1]) / diff(year_range) * diff(chart_y)
-total_to_x <- function(t) chart_x[1] + t / max_total * diff(chart_x)
 
-# Static layers must not have a `year` column, or transition_manual
-# would filter them; the series uses `yr` instead.
-chart_series <- focal_totals %>%
-  transmute(yr = year, x = total_to_x(total), y = year_to_y(year))
-chart_ticks <- tibble(yr = seq(ceiling(year_range[1] / 100) * 100, year_range[2], by = 100)) %>%
-  mutate(y = year_to_y(yr))
-# Per-frame layers keep `year`, so only the current one is shown
-chart_marker <- focal_totals %>%
-  filter(year %in% frame_years) %>%
-  mutate(x = total_to_x(total), y = year_to_y(year))
+# Layers for one side chart. `series` has columns year and total.
+# Static layers (axes, gridlines) must not have a `year` column, or
+# transition_manual would filter them (they use `yr`). The series itself is
+# revealed as the animation runs: for every frame year there is a copy of
+# the series up to that year, tagged with it in `year`.
+side_chart <- function(series, strip, header, color, max_label) {
+  cx <- c(strip[1] + 4.5, strip[2] - 1.5)
+  max_value <- max(series$total)
+  to_x <- function(v) cx[1] + v / max_value * diff(cx)
+  line_data <- series %>% transmute(yr = year, x = to_x(total), y = year_to_y(year))
+  revealed <- map_dfr(frame_years, \(f) line_data %>% filter(yr <= f) %>% mutate(year = f))
+  ticks <- tibble(yr = seq(ceiling(year_range[1] / 100) * 100, year_range[2], by = 100)) %>%
+    mutate(y = year_to_y(yr))
+  list(
+    annotate("rect", xmin = strip[1], xmax = strip[2],
+             ymin = ylim[1], ymax = ylim[2], fill = "white"),
+    annotate("text", x = cx[1], y = ylim[2] - 4.6, label = header,
+             hjust = 0, vjust = 1, size = 5.5, fontface = "bold", color = "grey30"),
+    geom_segment(data = ticks, aes(x = cx[1], xend = cx[2], y = y, yend = y),
+                 color = "grey90", linewidth = 0.3),
+    geom_text(data = ticks, aes(x = cx[1] - 0.6, y = y, label = yr),
+              hjust = 1, size = 4.5, color = "grey30"),
+    annotate("text", x = cx, y = chart_y[1] - 0.6, label = c("0", max_label(max_value)),
+             hjust = c(0, 1), vjust = 1, size = 4.5, color = "grey30"),
+    # Series up to the current year, filled so it reads as a horizontal
+    # area chart that grows downwards
+    geom_ribbon(data = revealed, aes(y = y, xmin = cx[1], xmax = x),
+                orientation = "y", fill = color, alpha = 0.25),
+    geom_path(data = revealed, aes(x = x, y = y), color = color, linewidth = 0.5)
+  )
+}
+
 focal_sized <- focal_totals %>%
   filter(year %in% frame_years) %>%
   mutate(lon = focal_point$lon, lat = focal_point$lat)
@@ -198,56 +229,26 @@ p <- ggplot() +
     aes(x = long, y = lat, group = group),
     fill = "#f4f1e1", color = "#cccccc", linewidth = 0.2
   ) +
-  # White strip for the side chart, covering the map underneath
-  annotate("rect", xmin = chart_strip[1], xmax = chart_strip[2],
-           ymin = ylim[1], ymax = ylim[2], fill = "white") +
-  annotate("segment", x = chart_strip[2], xend = chart_strip[2],
-           y = ylim[1], yend = ylim[2], color = "grey60", linewidth = 0.4) +
-  # Trade links layer
+  # Trade links layer (drawn before the side strips, so links leaving the
+  # map are hidden under them)
   geom_curve(
     data = anim_data,
     aes(x = lon1, y = lat1, xend = lon2, yend = lat2, linewidth = value, color = value),
     curvature = 0.2, alpha = 0.8
   ) +
-  # Side chart: header, year gridlines and labels, density axis
-  # Title lives here: gganimate (with ggplot2 >= 4.0) ignores the
-  # plot.title theme, leaving a small plain title that clips at the top
-  annotate("text", x = chart_strip[1] + 1, y = ylim[2] - 0.8,
-           label = paste("Trade Link Density:", focal_region),
-           hjust = 0, vjust = 1, size = 8, fontface = "bold", color = "#002B5B") +
-  annotate("text", x = chart_x[1], y = ylim[2] - 3.6, label = "Total trade density",
-           hjust = 0, vjust = 1, size = 5.5, fontface = "bold", color = "grey30") +
-  geom_segment(
-    data = chart_ticks,
-    aes(x = chart_x[1], xend = chart_x[2], y = y, yend = y),
-    color = "grey90", linewidth = 0.3
-  ) +
-  geom_text(
-    data = chart_ticks,
-    aes(x = chart_x[1] - 0.6, y = y, label = yr),
-    hjust = 1, size = 4.5, color = "grey30"
-  ) +
-  annotate("text", x = chart_x, y = chart_y[1] - 0.6,
-           label = c("0", format(signif(max_total, 2), big.mark = ",")),
-           hjust = c(0, 1), vjust = 1, size = 4.5, color = "grey30") +
-  # Side chart: full series, filled so it reads as a horizontal area chart
-  geom_ribbon(
-    data = chart_series,
-    aes(y = y, xmin = chart_x[1], xmax = x),
-    orientation = "y", fill = "#b2182b", alpha = 0.25
-  ) +
-  geom_path(data = chart_series, aes(x = x, y = y), color = "#b2182b", linewidth = 0.5) +
-  # Side chart: current year marker
-  geom_segment(
-    data = chart_marker,
-    aes(x = chart_x[1], xend = chart_x[2], y = y, yend = y),
-    color = "#002B5B", linewidth = 0.6
-  ) +
-  geom_point(
-    data = chart_marker,
-    aes(x = x, y = y),
-    shape = 21, size = 4, fill = "#b2182b", color = "#002B5B", stroke = 1
-  ) +
+  # Left: total trade density; right: number of trading partners
+  side_chart(focal_totals, left_strip, "Total trade density", "#b2182b",
+             function(m) format(signif(m, 2), big.mark = ",")) +
+  side_chart(partner_counts, right_strip, "Trading partners", "#2166ac",
+             function(m) as.character(m)) +
+  annotate("segment", x = c(left_strip[2], right_strip[1]), xend = c(left_strip[2], right_strip[1]),
+           y = ylim[1], yend = ylim[2], color = "grey60", linewidth = 0.4) +
+  # Title lives in the left strip: gganimate (with ggplot2 >= 4.0) ignores
+  # the plot.title theme, leaving a small plain title that clips at the top
+  annotate("text", x = left_strip[1] + 1, y = ylim[2] - 0.8,
+           label = paste0("Trade Link Density\n", focal_region),
+           hjust = 0, vjust = 1, size = 7, fontface = "bold", color = "#002B5B",
+           lineheight = 0.95) +
   # Focal region, area proportional to its total trade that year,
   # over a small fixed dot so the capital is visible even in quiet years
   geom_point(
