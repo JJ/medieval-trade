@@ -97,7 +97,8 @@ regions_coords <- tribble(
   "Turkmenistan", 58.3261, 37.9601,         # Ashgabat
   "Ukraine", 30.5234, 50.4501,              # Kyiv
   "United Arab Emirates", 54.3773, 24.4539, # Abu Dhabi
-  "Uzbekistan", 66.9597, 39.6542            # Samarkand
+  "Uzbekistan", 66.9597, 39.6542,           # Samarkand
+  "Yemen", 45.3256, 15.4300                 # Marib
 )
 
 if (!focal_region %in% regions_coords$region) {
@@ -140,17 +141,56 @@ anim_data <- map_data %>%
   mutate(frame_repeats = if_else(year >= 350 & year <= 500, 5, 1)) %>%
   uncount(frame_repeats)
 
-# 5. Fetch basic polygon map data (No sf/GDAL required!)
+# 5. Total trade of the focal region per year: every link involving it,
+# including intra-regional and unknown-partner links, as the "Total" series
+# in wivace26.Rnw
+frame_years <- sort(unique(anim_data$year))
+focal_totals <- trade_data %>%
+  filter(hoard == focal_region | mint == focal_region) %>%
+  summarise(total = sum(link_rate), .by = year) %>%
+  right_join(tibble(year = seq(min(frame_years), max(frame_years))), by = "year") %>%
+  mutate(total = replace_na(total, 0)) %>%
+  arrange(year)
+
+# 6. Fetch basic polygon map data (No sf/GDAL required!)
 world_map <- map_data("world")
 focal_point <- regions_coords %>% filter(region == focal_region)
 
-# Whole Mediterranean basin (east and west) plus Northern Europe.
-# Links to regions outside this frame (Asia, Horn of Africa...) are still
-# drawn and run off the edge of the map in their direction.
-xlim <- c(-12, 52)
-ylim <- c(24, 64)
+# Whole Mediterranean basin (east and west) up to just North of Denmark
+# and just East of Syria.
+# Links to regions outside this frame (Scandinavia, Mesopotamia, Asia...)
+# are still drawn and run off the edge of the map in their direction.
+map_xlim <- c(-12, 43.5)
+ylim <- c(24, 58.5)
 
-# 6. Build the plot
+# Side chart, drawn in map coordinates on a strip left of the map
+# (gganimate can't animate patchwork compositions).
+# Year runs top to bottom, total trade density left to right.
+chart_strip <- c(-41, map_xlim[1])
+chart_x <- c(-36, -14.5)
+chart_y <- c(ylim[1] + 2, ylim[2] - 6)
+xlim <- c(chart_strip[1], map_xlim[2])
+
+year_range <- range(focal_totals$year)
+max_total <- max(focal_totals$total)
+year_to_y <- function(y) chart_y[2] - (y - year_range[1]) / diff(year_range) * diff(chart_y)
+total_to_x <- function(t) chart_x[1] + t / max_total * diff(chart_x)
+
+# Static layers must not have a `year` column, or transition_manual
+# would filter them; the series uses `yr` instead.
+chart_series <- focal_totals %>%
+  transmute(yr = year, x = total_to_x(total), y = year_to_y(year))
+chart_ticks <- tibble(yr = seq(ceiling(year_range[1] / 100) * 100, year_range[2], by = 100)) %>%
+  mutate(y = year_to_y(yr))
+# Per-frame layers keep `year`, so only the current one is shown
+chart_marker <- focal_totals %>%
+  filter(year %in% frame_years) %>%
+  mutate(x = total_to_x(total), y = year_to_y(year))
+focal_sized <- focal_totals %>%
+  filter(year %in% frame_years) %>%
+  mutate(lon = focal_point$lon, lat = focal_point$lat)
+
+# 7. Build the plot
 p <- ggplot() +
   # Map layer: using standard polygons instead of sf objects
   geom_polygon(
@@ -158,38 +198,98 @@ p <- ggplot() +
     aes(x = long, y = lat, group = group),
     fill = "#f4f1e1", color = "#cccccc", linewidth = 0.2
   ) +
+  # White strip for the side chart, covering the map underneath
+  annotate("rect", xmin = chart_strip[1], xmax = chart_strip[2],
+           ymin = ylim[1], ymax = ylim[2], fill = "white") +
+  annotate("segment", x = chart_strip[2], xend = chart_strip[2],
+           y = ylim[1], yend = ylim[2], color = "grey60", linewidth = 0.4) +
   # Trade links layer
   geom_curve(
     data = anim_data,
     aes(x = lon1, y = lat1, xend = lon2, yend = lat2, linewidth = value, color = value),
     curvature = 0.2, alpha = 0.8
   ) +
-  # Mark the focal region
+  # Side chart: header, year gridlines and labels, density axis
+  # Title lives here: gganimate (with ggplot2 >= 4.0) ignores the
+  # plot.title theme, leaving a small plain title that clips at the top
+  annotate("text", x = chart_strip[1] + 1, y = ylim[2] - 0.8,
+           label = paste("Trade Link Density:", focal_region),
+           hjust = 0, vjust = 1, size = 8, fontface = "bold", color = "#002B5B") +
+  annotate("text", x = chart_x[1], y = ylim[2] - 3.6, label = "Total trade density",
+           hjust = 0, vjust = 1, size = 5.5, fontface = "bold", color = "grey30") +
+  geom_segment(
+    data = chart_ticks,
+    aes(x = chart_x[1], xend = chart_x[2], y = y, yend = y),
+    color = "grey90", linewidth = 0.3
+  ) +
+  geom_text(
+    data = chart_ticks,
+    aes(x = chart_x[1] - 0.6, y = y, label = yr),
+    hjust = 1, size = 4.5, color = "grey30"
+  ) +
+  annotate("text", x = chart_x, y = chart_y[1] - 0.6,
+           label = c("0", format(signif(max_total, 2), big.mark = ",")),
+           hjust = c(0, 1), vjust = 1, size = 4.5, color = "grey30") +
+  # Side chart: full series, filled so it reads as a horizontal area chart
+  geom_ribbon(
+    data = chart_series,
+    aes(y = y, xmin = chart_x[1], xmax = x),
+    orientation = "y", fill = "#b2182b", alpha = 0.25
+  ) +
+  geom_path(data = chart_series, aes(x = x, y = y), color = "#b2182b", linewidth = 0.5) +
+  # Side chart: current year marker
+  geom_segment(
+    data = chart_marker,
+    aes(x = chart_x[1], xend = chart_x[2], y = y, yend = y),
+    color = "#002B5B", linewidth = 0.6
+  ) +
+  geom_point(
+    data = chart_marker,
+    aes(x = x, y = y),
+    shape = 21, size = 4, fill = "#b2182b", color = "#002B5B", stroke = 1
+  ) +
+  # Focal region, area proportional to its total trade that year,
+  # over a small fixed dot so the capital is visible even in quiet years
   geom_point(
     data = focal_point,
     aes(x = lon, y = lat),
-    shape = 21, size = 4, fill = "#b2182b", color = "white", stroke = 1
+    shape = 21, size = 2.5, fill = "#b2182b", color = "white", stroke = 0.6
   ) +
+  geom_point(
+    data = focal_sized,
+    aes(x = lon, y = lat, size = total),
+    shape = 21, fill = "#b2182b", color = "white", stroke = 1, alpha = 0.9
+  ) +
+  scale_size_area(max_size = 18, guide = "none") +
   scale_linewidth_continuous(range = c(0.5, 4), guide = "none") +
-  scale_color_viridis_c(option = "magma", direction = -1, guide = "none") +
+  # Truncate magma before its pale-yellow end so the weakest links (coral)
+  # stand out against both the cream land and the pale teal sea;
+  # strongest links are near-black purple.
+  scale_color_viridis_c(option = "magma", direction = -1, begin = 0, end = 0.75, guide = "none") +
   # Frame the map and fix the aspect ratio so it doesn't look stretched
   coord_fixed(xlim = xlim, ylim = ylim, ratio = 1.3, expand = FALSE) +
   theme_void() +
   theme(
     panel.background = element_rect(fill = "#cce5df", color = NA),
-    plot.title = element_text(size = 20, face = "bold", hjust = 0.5, margin = margin(t = 15, b = 15))
+    plot.background = element_rect(fill = "white", color = NA)
+  ) +
+  # Year drawn inside the map (top-left, over the Atlantic) instead of in
+  # the title (see the title note in the side chart).
+  geom_text(
+    data = distinct(anim_data, year),
+    aes(x = map_xlim[1] + 0.7, y = ylim[2] - 1, label = paste("Year", year)),
+    hjust = 0, vjust = 1, size = 9, fontface = "bold", color = "#002B5B"
   ) +
   # Animation configuration
-  labs(title = paste0("Trade Link Density: ", focal_region, "\nYear: {current_frame}")) +
   transition_manual(year)
 
-# 7. Render
+# 8. Render
 region_slug <- focal_region %>% str_to_lower() %>% str_replace_all("[^a-z0-9]+", "-")
 animate(
   p,
   nframes = nrow(distinct(anim_data, year)) * 2,
   fps = 10,
-  width = 900,
-  height = 840,
+  width = 1600,
+  height = 900,
   renderer = gifski_renderer(paste0("historical_trade_links_", region_slug, ".gif"))
 )
