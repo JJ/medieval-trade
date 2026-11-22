@@ -22,6 +22,16 @@ For the time being, these papers:
   when publishing this paper has been released as [version
   2.1.1](https://github.com/JJ/medieval-trade/releases/tag/v2.1.1).
 
+![Animation of historical trade links with
+Italy](historical_trade_links_italia.gif)
+
+* We applied a similar method to the Italian peninsula, [All edges lead to Rome:
+  analyzing Late Antiquity regime shifts using coin hoard
+  data](https://arxiv.org/abs/2611.18618). The state of the repository [is
+  tagged
+  v1.0Wivace_Arxiv](https://github.com/JJ/medieval-trade/releases/tag/v1.0Wivace_Arxiv).
+
+
 * An extended report is published at the UGR institutional repository, ["Finding
   changepoints in medieval European and Middle Eastern trade
   networks"](https://hdl.handle.net/10481/105018), where the "Danubian
